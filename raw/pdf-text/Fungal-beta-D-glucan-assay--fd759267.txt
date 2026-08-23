@@ -1,0 +1,214 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/4 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+1/4 
+Beta D Glucan assay 
+ 
+FUNGITELL assay for (1,3)--D-glucan: the fungal glucan test is indicated for assessing the likelihood of 
+systemic fungal infection 
+ 
+General information 
+ 
+Turnaround time: This assay is performed every day, Monday-Friday. Turnaround time: 95% within two 
+weekdays, generally available within one weekday. 
+ 
+Sample type/container:  
+ 
+Blood: 
+ 
+• 
+ 4.9 ml clotted blood collected directly from the vein.  
+• 
+Serum tube (Sarstedt S-Monovette white cap) or serum gel tube (brown cap). Blood collected in EDTA 
+tubes cannot be processed for this test and will be rejected.   
+• 
+Please do not remove the cap, do not share the sample. Samples are easily contaminated either during 
+sample collection or laboratory procedures. 
+• 
+Blood samples obtained by heel or finger stick methods or other sample types are not accepted.  
+ 
+Transportation: 
+ 
+• 
+Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic 
+Ziploc bag (preferably with a biohazard label on the outside), as shown below.  
+ 
+• 
+Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations 
+governing the transportation of diagnostic specimens) must be used for transport by road or between 
+Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital 
+grounds). 
+• 
+Please see below for packaging requirements. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/4 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+2/4 
+ 
+For more information - https://mrcm.org.uk/sample-collection/ 
+ 
+Laboratory Information 
+ 
+Biological interval/clinical decision values: 
+ 
+The (1,3)--D-glucan (BDG) test results are expressed in picogram per millilitre (pg/mL) of serum and range 
+from undetectable (<31 pg/mL) to >500 pg/mL. 
+ 
+BDG values of <60 pg/mL are interpreted as negative results. 
+ 
+BDG values ≥80 pg/mL are interpreted as positive. A positive result does not define the presence of disease 
+and should be used in conjunction with other clinical and laboratory findings. 
+ 
+Values from 60 to 79 pg/mL are interpreted as indeterminate. Additional sampling is recommended. 
+ 
+This test is only validated for patients 18 years old and above. Please consult the laboratory for more 
+information if needed. 
+ 
+Clinical Information 
+ 
+No specific time of optimal collection. First clinical indication or follow-up monitoring of invasive fungal 
+infection. At risk patients may require repeat testing. 
+ 
+BDG is present on the cell wall of most fungal species and in case of invasive or deep-seated fungal disease 
+caused by these species, BDG antigenemia is normally detectable by this test. Particularly high levels are 
+typically seen in cases of various forms of invasive Candida infections and Pneumocystis jirovecii pneumonia.  
+ 
+In general, the glucan test has a high negative predictive value and a low positive predictive value. Therefore, 
+in the absence of other evidence of an invasive fungal disease, a negative result may be used to rule out 
+most invasive fungal infections, whilst a positive test result should only trigger further investigations, 
+consideration of both host and clinical factors, and repeat testing.  
+ 
+This test should be used in conjunction with other diagnostic methods, such as high-volume blood cultures, 
+fungal PCRs, histological examination of biopsy samples and radiological examination and interpreted 
+considering the clinical context.  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   3/4 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+3/4 
+ 
+In general, once the diagnosis of invasive fungal disease has been established, repeat testing has little value 
+as the clearance of BDG antigenemia will take time.  However, in cases of deep-seated infections, such as 
+Candida endocarditis, plateauing and/or slowly decreasing values are usually seen when there is good 
+response to treatment. 
+ 
+In some settings (e.g., haemato-oncology) screening may be performed to monitor for evidence of elevated 
+and rising levels of glucan as a potential surrogate marker for invasive fungal disease.  
+ 
+Limitations: 
+ 
+Possible causes of false negatives: 
+• 
+The Fungitell (1,3)--D Glucan assay does not detect certain fungal species, such as the genus 
+Cryptococcus, which produces very low levels of (1,3)--D-glucan. This assay also does not detect the 
+Mucormycetes, such as Lichtheimia, Mucor and Rhizopus, which are not known to produce (1,3)--D-
+glucan. The yeast phase of Blastomyces dermatitidis produces little (1,3)-β-D-glucan and may not be 
+detected by the assay. 
+• 
+Tissue-localised or encapsulated fungal infections that limit the amount of (1,3)-β-D-glucan produced 
+and/or limit its translocation into the bloodstream may result in low or undetectable serum 
+concentrations.  
+ 
+Possible causes of false positives: 
+• 
+Laboratory-based (mainly separating and sharing the sample in an inappropriate, non-BDG-free 
+environment) and sample collection derived contamination 
+• 
+Intravenously administered products, including drugs and blood fractionation products (such as 
+serum albumin, immunoglobulins, and filtered blood plasma) 
+• 
+Intestinal translocation of mycobiome-derived BDG (antigenemia in the absence of fungaemia) 
+following intestinal barrier injury (due to chemotherapy-associated mucositis, intestinal ischemia, 
+mesenteric hypoxia, microbial toxins, viral infection of intestinal tissue, metabolic toxicity, such as in 
+uraemia, large total surface area burns, and protease-producing intestinal enterococci, or sepsis) 
+• 
+Compromised hepatic function and BDG processing 
+• 
+Parenteral nutrition contaminated during manufacturing processes (e.g., filtration) 
+• 
+Invasive use of surgical materials (e.g., gauze and surgical sponges that contain glucan) 
+• 
+Invasive nocardiosis 
+• 
+Fungal glucan levels typically rise early in infection, then decline slowly, only returning to baseline 
+well after successful disease resolution.  
+• 
+Patients require 3-4 days for the restoration of baseline levels of serum (1,3)-D glucan after surgical 
+exposure to BDG-containing sponges and gauzes. 
+ 
+The following sample features may interfere with the test and make processing impossible: 
+• 
+Haemolysis 
+• 
+Sample turbidity caused by lipemia 
+• 
+The presence of visually apparent bilirubin 
+• 
+Turbid or discoloured serum 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   4/4 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+4/4 
+• 
+Elevated levels of immunoglobulin G 
+Repeat testing is recommended in these cases. 
+ 
+References: 
+Finkelman, M.A. Specificity Influences in (1>3) β-D-Glucan-Supported Diagnosis of Invasive Fungal Disease. J. Fungi 2021, 7, 14. 
+https://doi.org/10.3390/jof7010014. 
+ 
+Karageorgopoulos DE, Qu JM, Korbila IP, Zhu YG, Vasileiou VA, Falagas ME. Accuracy of β-D-glucan for the diagnosis of Pneumocystis jirovecii 
+pneumonia: a meta-analysis. Clin Microbiol Infect. 2013 Jan;19(1):39-49. doi: 10.1111/j.1469-0691.2011.03760.x. 
+Assay for (1>3)-β-D-Glucan in Serum, FUNGITELL® ASSAY, Instructions For Use, PN001268-en Rev12, 2023-06-13. 
+ 
+(Last updated November 2024) 

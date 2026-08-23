@@ -1,0 +1,981 @@
+{
+  "$comment": "Practice-setting profiles: which tests a given kind of clinic typically orders. A test joins a profile if it matches core_any (curated high-signal names), or belongs to any category in categories_any, or hits name_any -- unless excluded. Tests matched via core_any are flagged as core:true in the output. These groupings are heuristic and informational, NOT clinical guidance or a substitute for local formularies and professional judgement.",
+  "version": "0.1.0",
+  "profiles": [
+    {
+      "id": "aesthetic-beauty-clinic",
+      "name": "Aesthetic & Beauty Clinic",
+      "description": "Cosmetic and aesthetic medicine: injectables, skin resurfacing, microneedling, hair restoration and wellness optimisation.",
+      "rationale": "Two distinct needs: (1) pre-procedure safety screening before any skin-breaking treatment -- bloodborne virus status, clotting and infection markers; (2) wellness and appearance panels, since skin, hair and nail quality track iron, thyroid, vitamin D, B12 and sex hormone status.",
+      "match": {
+        "core_any": [
+          "ferritin",
+          "serum ferritin",
+          "full blood count",
+          "iron",
+          "transferrin",
+          "vitamin d",
+          "vitamin b12",
+          "serum vitamin b12",
+          "folate",
+          "serum folate",
+          "zinc",
+          "selenium",
+          "thyroid stimulating hormone",
+          "free thyroxine",
+          "thyroid peroxidase",
+          "testosterone",
+          "oestradiol",
+          "shbg",
+          "dhea",
+          "prolactin",
+          "cortisol",
+          "glycated haemoglobin",
+          "glucose",
+          "lipid profile",
+          "cholesterol",
+          "liver function tests",
+          "c-reactive protein",
+          "erythrocyte sedimentation",
+          "hepatitis b (hbv) surface antigen",
+          "hepatitis c antibody",
+          "hiv screen",
+          "oral anticoagulant control",
+          "aptt",
+          "antinuclear antibody",
+          "vitamin a",
+          "vitamin e"
+        ],
+        "categories_any": [
+          "nutrition-micronutrients",
+          "thyroid"
+        ],
+        "name_any": [
+          "allergen specific ige",
+          "mast cell tryptase",
+          "skin antibodies"
+        ],
+        "exclude_name_any": [
+          "dried blood spot",
+          "referral",
+          "csf",
+          "bone marrow",
+          "biopsy",
+          "cord blood",
+          "post mortem",
+          "zinc transporter",
+          "osmolar gap",
+          "insulin antibodies"
+        ]
+      }
+    },
+    {
+      "id": "general-practice",
+      "name": "General Practice / Primary Care",
+      "description": "Everyday community medicine: routine screening, chronic disease monitoring and first-line investigation.",
+      "rationale": "The high-volume core panel that primary care orders daily -- counts, chemistry, glycaemic control, lipids, thyroid and haematinics.",
+      "match": {
+        "core_any": [
+          "full blood count",
+          "liver function tests",
+          "urea",
+          "creatinine",
+          "egfr",
+          "sodium",
+          "potassium",
+          "glycated haemoglobin",
+          "glucose",
+          "lipid profile",
+          "cholesterol",
+          "thyroid stimulating hormone",
+          "ferritin",
+          "vitamin b12",
+          "folate",
+          "vitamin d",
+          "c-reactive protein",
+          "erythrocyte sedimentation",
+          "prostate specific antigen",
+          "calcium",
+          "urate",
+          "faecal immunochemical testing",
+          "coeliac disease antibodies",
+          "albumin creatinine ratio"
+        ],
+        "categories_any": [
+          "clinical-chemistry",
+          "renal-function",
+          "liver-function",
+          "lipids-cardiovascular",
+          "diabetes-metabolic",
+          "thyroid",
+          "nutrition-micronutrients",
+          "inflammation-markers"
+        ],
+        "exclude_name_any": [
+          "referral",
+          "bone marrow",
+          "post mortem",
+          "csf",
+          "biopsy",
+          "dried blood spot"
+        ]
+      }
+    },
+    {
+      "id": "fertility-reproductive",
+      "name": "Fertility & Reproductive Medicine",
+      "description": "Fertility assessment, ovarian reserve, IVF workup and recurrent miscarriage investigation.",
+      "rationale": "Ovarian reserve and gonadotrophin profiling drive treatment choice; thrombophilia and autoimmune screens are standard in recurrent pregnancy loss; infection screening is mandatory before assisted conception.",
+      "match": {
+        "core_any": [
+          "anti-müllerian hormone, amh",
+          "follicle stimulating hormone",
+          "luteinising hormone",
+          "oestradiol",
+          "progesterone",
+          "prolactin",
+          "testosterone",
+          "shbg",
+          "thyroid stimulating hormone",
+          "free thyroxine",
+          "hcg blood",
+          "pregnancy test",
+          "androstenedione",
+          "serum 17-hydroxyprogesterone",
+          "dhea",
+          "cardiolipin",
+          "lupus anticoagulant",
+          "beta 2 glycoprotein",
+          "rubella igg",
+          "hiv screen",
+          "hepatitis b (hbv) surface antigen",
+          "hepatitis c antibody",
+          "syphilis",
+          "ovary antibodies",
+          "testis antibodies",
+          "chlamydia"
+        ],
+        "categories_any": [
+          "reproductive-hormones"
+        ],
+        "exclude_name_any": [
+          "referral",
+          "post mortem",
+          "bone marrow"
+        ]
+      }
+    },
+    {
+      "id": "sexual-health-gum",
+      "name": "Sexual Health / GUM Clinic",
+      "description": "Genitourinary medicine: STI screening, diagnosis, partner notification and PrEP monitoring.",
+      "rationale": "Bloodborne virus and bacterial STI screening form the core, with renal and liver monitoring for antiretroviral therapy.",
+      "match": {
+        "core_any": [
+          "hiv screen",
+          "hiv confirmation",
+          "hiv p24 antigen",
+          "syphilis confirmation",
+          "treponema pallidum screen",
+          "hepatitis b (hbv) surface antigen",
+          "hepatitis b (hbv) core antibodies",
+          "hepatitis c antibody",
+          "hepatitis a total antibody",
+          "herpes simplex",
+          "chlamydia",
+          "gonorrh",
+          "trichomonas",
+          "cd4 count",
+          "dried blood spot syphilis antibody"
+        ],
+        "categories_any": [
+          "sexual-health-sti",
+          "hepatitis"
+        ],
+        "exclude_name_any": [
+          "post mortem",
+          "bone marrow"
+        ]
+      }
+    },
+    {
+      "id": "antenatal-maternity",
+      "name": "Antenatal & Maternity",
+      "description": "Booking bloods, pregnancy surveillance and neonatal screening.",
+      "rationale": "Statutory booking screens (blood group, antibodies, infectious disease, haemoglobinopathy) plus pre-eclampsia and fetomaternal haemorrhage assessment.",
+      "match": {
+        "core_any": [
+          "blood group",
+          "antibody screen and save serum",
+          "antibody titre",
+          "universal antenatal haemoglobinopathy screening",
+          "haemoglobinopathy screening",
+          "kleihauer test",
+          "cord blood investigations",
+          "rubella igg",
+          "hiv screen",
+          "hepatitis b (hbv) surface antigen",
+          "syphilis",
+          "plgf",
+          "hcg blood",
+          "pregnancy test",
+          "full blood count",
+          "ferritin",
+          "thyroid stimulating hormone",
+          "glucose",
+          "bloodspot 17-hydroxyprogesterone",
+          "toxoplasma serology",
+          "human parvovirus b19 igg",
+          "cytomegalovirus"
+        ],
+        "categories_any": [
+          "antenatal-pregnancy",
+          "transfusion",
+          "haemoglobinopathy"
+        ],
+        "exclude_name_any": [
+          "post mortem"
+        ]
+      }
+    },
+    {
+      "id": "womens-health-gynaecology",
+      "name": "Women's Health & Gynaecology",
+      "description": "Menstrual disorders, PCOS, menopause, cervical screening and gynaecological oncology.",
+      "rationale": "Hormonal profiling for PCOS and menopause, tumour markers for ovarian pathology, and cervical cytology.",
+      "match": {
+        "core_any": [
+          "ca125",
+          "oestradiol",
+          "follicle stimulating hormone",
+          "luteinising hormone",
+          "testosterone",
+          "shbg",
+          "prolactin",
+          "anti-müllerian hormone, amh",
+          "progesterone",
+          "thyroid stimulating hormone",
+          "androstenedione",
+          "serum 17-hydroxyprogesterone",
+          "dhea",
+          "full blood count",
+          "ferritin",
+          "hcg blood"
+        ],
+        "categories_any": [
+          "reproductive-hormones",
+          "cytology"
+        ],
+        "exclude_name_any": [
+          "post mortem",
+          "synovial",
+          "bone marrow"
+        ]
+      }
+    },
+    {
+      "id": "weight-management-metabolic",
+      "name": "Weight Management & Metabolic Health",
+      "description": "Obesity services, GLP-1 therapy monitoring, metabolic syndrome and bariatric follow-up.",
+      "rationale": "Glycaemic and lipid control drive therapy; bariatric surgery causes predictable micronutrient deficiencies requiring lifelong surveillance.",
+      "match": {
+        "core_any": [
+          "glycated haemoglobin",
+          "glucose",
+          "insulin",
+          "c-peptide",
+          "lipid profile",
+          "cholesterol",
+          "triglycerides",
+          "liver function tests",
+          "gamma-glutamyl transferase",
+          "thyroid stimulating hormone",
+          "cortisol",
+          "urate",
+          "vitamin d",
+          "vitamin b12",
+          "folate",
+          "ferritin",
+          "iron",
+          "zinc",
+          "selenium",
+          "calcium",
+          "parathyroid hormone",
+          "vitamin a",
+          "vitamin e",
+          "full blood count",
+          "urea",
+          "creatinine",
+          "c-reactive protein"
+        ],
+        "categories_any": [
+          "diabetes-metabolic",
+          "lipids-cardiovascular"
+        ],
+        "exclude_name_any": [
+          "referral",
+          "csf",
+          "post mortem"
+        ]
+      }
+    },
+    {
+      "id": "sports-performance",
+      "name": "Sports & Performance Medicine",
+      "description": "Athlete health screening, overtraining assessment and performance optimisation.",
+      "rationale": "Iron status, muscle damage markers, endocrine axis and hydration/electrolyte balance dominate athlete panels.",
+      "match": {
+        "core_any": [
+          "full blood count",
+          "ferritin",
+          "iron",
+          "transferrin",
+          "vitamin d",
+          "vitamin b12",
+          "folate",
+          "creatine kinase",
+          "lactate",
+          "testosterone",
+          "shbg",
+          "cortisol",
+          "thyroid stimulating hormone",
+          "free thyroxine",
+          "magnesium",
+          "sodium",
+          "potassium",
+          "urea",
+          "creatinine",
+          "liver function tests",
+          "c-reactive protein",
+          "erythrocyte sedimentation",
+          "insulin-like growth factor 1",
+          "growth hormone",
+          "zinc",
+          "reticulocyte count",
+          "erythropoietin"
+        ],
+        "exclude_name_any": [
+          "referral",
+          "csf",
+          "post mortem",
+          "bone marrow"
+        ]
+      }
+    },
+    {
+      "id": "longevity-wellness",
+      "name": "Longevity & Preventive Wellness",
+      "description": "Executive health checks, preventive screening and healthspan-oriented panels.",
+      "rationale": "Broad baseline profiling across cardiometabolic risk, organ function, hormones, nutrition and inflammation.",
+      "match": {
+        "core_any": [
+          "full blood count",
+          "liver function tests",
+          "urea",
+          "creatinine",
+          "egfr",
+          "cystatin c",
+          "lipid profile",
+          "cholesterol",
+          "triglycerides",
+          "glycated haemoglobin",
+          "glucose",
+          "insulin",
+          "thyroid stimulating hormone",
+          "free thyroxine",
+          "testosterone",
+          "oestradiol",
+          "shbg",
+          "dhea",
+          "cortisol",
+          "insulin-like growth factor 1",
+          "vitamin d",
+          "vitamin b12",
+          "folate",
+          "ferritin",
+          "iron",
+          "zinc",
+          "selenium",
+          "magnesium",
+          "c-reactive protein",
+          "nt-probnp",
+          "prostate specific antigen",
+          "urate",
+          "calcium",
+          "homocysteine"
+        ],
+        "categories_any": [
+          "nutrition-micronutrients",
+          "lipids-cardiovascular"
+        ],
+        "exclude_name_any": [
+          "referral",
+          "csf",
+          "post mortem",
+          "bone marrow",
+          "dried blood spot"
+        ]
+      }
+    },
+    {
+      "id": "endocrinology-clinic",
+      "name": "Endocrinology Clinic",
+      "description": "Pituitary, adrenal, thyroid, gonadal and calcium disorders.",
+      "rationale": "Dynamic function testing and hormone axis profiling across all endocrine organs.",
+      "match": {
+        "categories_any": [
+          "endocrinology",
+          "thyroid",
+          "reproductive-hormones",
+          "diabetes-metabolic",
+          "bone-metabolism"
+        ],
+        "exclude_name_any": [
+          "post mortem",
+          "referral"
+        ]
+      }
+    },
+    {
+      "id": "rheumatology-clinic",
+      "name": "Rheumatology Clinic",
+      "description": "Inflammatory arthritis, connective tissue disease, vasculitis and gout.",
+      "rationale": "Autoantibody profiling and inflammatory markers, plus drug monitoring for DMARDs and biologics.",
+      "match": {
+        "core_any": [
+          "thiopurine methyltransferase (tpmt)",
+          "thiopurine metabolites",
+          "methotrexate",
+          "therapeutic drug monitoring of anti-tnf therapies infliximab and adalimumab"
+        ],
+        "categories_any": [
+          "rheumatology",
+          "autoimmunity",
+          "inflammation-markers",
+          "complement"
+        ],
+        "exclude_name_any": [
+          "post mortem"
+        ]
+      }
+    },
+    {
+      "id": "gastroenterology-hepatology",
+      "name": "Gastroenterology & Hepatology",
+      "description": "IBD, coeliac disease, malabsorption, chronic liver disease and viral hepatitis.",
+      "rationale": "Faecal markers and coeliac serology for gut disease; liver panels, autoantibodies and hepatitis serology for hepatology.",
+      "match": {
+        "core_any": [
+          "calprotectin (faeces)",
+          "elastase (faeces)",
+          "faecal immunochemical testing",
+          "coeliac disease antibodies",
+          "liver autoantibody screen",
+          "smooth muscle mitochondrial antibodies",
+          "alpha-1-antitrypsin",
+          "caeruloplasmin",
+          "ferritin",
+          "haemochromatosis c282y, h63d and s65c genotyping",
+          "hfe",
+          "thiopurine methyltransferase (tpmt)",
+          "breath hydrogen test",
+          "jejunal disaccharidases"
+        ],
+        "categories_any": [
+          "gastrointestinal",
+          "liver-function",
+          "hepatitis"
+        ],
+        "exclude_name_any": [
+          "post mortem"
+        ]
+      }
+    },
+    {
+      "id": "nephrology-renal",
+      "name": "Nephrology & Renal Medicine",
+      "description": "Chronic kidney disease, glomerulonephritis, dialysis and renal transplant.",
+      "rationale": "Filtration and proteinuria assessment, glomerular autoantibodies, bone-mineral disturbance and transplant immunosuppression.",
+      "match": {
+        "core_any": [
+          "glomerular basement membrane antibodies",
+          "pla2r antibodies",
+          "anti-neutrophil cytoplasmic antibody (anca)",
+          "complement c3",
+          "complement c4",
+          "parathyroid hormone",
+          "vitamin d",
+          "tacrolimus",
+          "cyclosporin a",
+          "sirolimus",
+          "bk virus pcr",
+          "erythropoietin"
+        ],
+        "categories_any": [
+          "renal-function",
+          "clinical-chemistry"
+        ],
+        "exclude_name_any": [
+          "post mortem",
+          "csf"
+        ]
+      }
+    },
+    {
+      "id": "cardiology-clinic",
+      "name": "Cardiology Clinic",
+      "description": "Chest pain pathways, heart failure, lipid clinics and anticoagulation.",
+      "rationale": "Myocardial injury and heart failure markers, cardiovascular risk lipids and anticoagulant control.",
+      "match": {
+        "core_any": [
+          "troponin t",
+          "bnp (n-terminal pro bnp)",
+          "nt-probnp",
+          "creatine kinase",
+          "lipid profile",
+          "cholesterol",
+          "triglycerides",
+          "oral anticoagulant control (inr)",
+          "inr",
+          "d-dimer",
+          "fdp d-dimers",
+          "urea",
+          "creatinine",
+          "potassium",
+          "digoxin",
+          "full blood count",
+          "glycated haemoglobin",
+          "thyroid stimulating hormone",
+          "cardiac muscle antibodies"
+        ],
+        "categories_any": [
+          "cardiac-markers",
+          "lipids-cardiovascular"
+        ],
+        "exclude_name_any": [
+          "post mortem"
+        ]
+      }
+    },
+    {
+      "id": "neurology-clinic",
+      "name": "Neurology Clinic",
+      "description": "Autoimmune encephalitis, neuromuscular disease, demyelination and CSF diagnostics.",
+      "rationale": "Neuronal and neuromuscular antibody panels plus CSF analysis define the neurology laboratory workload.",
+      "match": {
+        "categories_any": [
+          "neurology-antibodies",
+          "csf-and-fluids"
+        ],
+        "name_any": [
+          "carbamazepine",
+          "phenytoin",
+          "phenobarbitone",
+          "valproate",
+          "lamotrigine",
+          "vitamin b12",
+          "folate"
+        ],
+        "exclude_name_any": [
+          "post mortem",
+          "synovial fluid"
+        ]
+      }
+    },
+    {
+      "id": "oncology-haematology",
+      "name": "Oncology & Haemato-Oncology",
+      "description": "Solid tumour markers, leukaemia/lymphoma diagnosis and myeloma workup.",
+      "rationale": "Tumour markers, flow cytometry panels, paraprotein studies and treatment toxicity monitoring.",
+      "match": {
+        "categories_any": [
+          "tumour-markers",
+          "flow-cytometry",
+          "protein-electrophoresis"
+        ],
+        "core_any": [
+          "bone marrow report",
+          "manual blood film",
+          "full blood count",
+          "lactate dehydrogenase (ldh)",
+          "ß2 microglobulin",
+          "methotrexate",
+          "busulphan",
+          "paraneoplastic neuronal antibodies"
+        ],
+        "exclude_name_any": [
+          "post mortem"
+        ]
+      }
+    },
+    {
+      "id": "travel-clinic",
+      "name": "Travel & Tropical Medicine",
+      "description": "Pre-travel risk assessment and post-travel fever or diarrhoea investigation.",
+      "rationale": "Imported infection screening dominates: malaria, enteric pathogens, arboviruses and vaccine-preventable disease immunity.",
+      "match": {
+        "core_any": [
+          "malarial parasites, detection of",
+          "ova, cysts and parasites",
+          "full blood count",
+          "liver function tests",
+          "hepatitis a total antibody",
+          "hepatitis b (hbv) surface antigen",
+          "typhoid",
+          "salmonella",
+          "schistosom",
+          "dengue",
+          "brucella (referral)",
+          "leptospira (referral)",
+          "q fever serology and pcr (referral)",
+          "rickettsia",
+          "lyme disease",
+          "histoplasma (referral)",
+          "coccidioides (referral)",
+          "blastomyces (referral)",
+          "measles igg",
+          "rubella igg",
+          "varicella zoster igg"
+        ],
+        "categories_any": [
+          "parasitology"
+        ],
+        "exclude_name_any": [
+          "post mortem"
+        ]
+      }
+    },
+    {
+      "id": "occupational-health",
+      "name": "Occupational Health",
+      "description": "Pre-employment screening, immunity checks, exposure monitoring and fitness to work.",
+      "rationale": "Healthcare worker immunity status, bloodborne virus exposure follow-up and workplace metal or solvent exposure monitoring.",
+      "match": {
+        "core_any": [
+          "hepatitis b (hbv) surface antigen",
+          "anti-hepatitis bs antibody virology",
+          "hepatitis c antibody",
+          "hiv screen",
+          "measles igg",
+          "mumps igg",
+          "rubella igg",
+          "varicella zoster igg",
+          "tb gamma interferon release assay (quantiferon)",
+          "full blood count",
+          "liver function tests",
+          "urea",
+          "creatinine",
+          "chromium",
+          "cobalt",
+          "lead",
+          "mercury",
+          "drugs of abuse (urine screen)",
+          "ethanol (drinking alcohol)",
+          "chain-of-custody medico-legal specimens"
+        ],
+        "exclude_name_any": [
+          "post mortem",
+          "csf",
+          "bone marrow"
+        ]
+      }
+    },
+    {
+      "id": "pre-operative-assessment",
+      "name": "Pre-Operative Assessment",
+      "description": "Anaesthetic workup and surgical fitness screening.",
+      "rationale": "Baseline counts, clotting, chemistry, group and save, plus sickle screening where indicated.",
+      "match": {
+        "core_any": [
+          "full blood count",
+          "aptt",
+          "activated partial thromboplastin time",
+          "prothrombin time",
+          "inr",
+          "oral anticoagulant control (inr)",
+          "fibrinogen",
+          "blood group",
+          "antibody screen and save serum",
+          "cross matching",
+          "urea",
+          "creatinine",
+          "egfr",
+          "sodium",
+          "potassium",
+          "glucose",
+          "glycated haemoglobin",
+          "liver function tests",
+          "hbs screening test - urgent/pre-operative (pts >1 yr old)",
+          "hbs screening test",
+          "sickle",
+          "mrsa"
+        ],
+        "exclude_name_any": [
+          "post mortem",
+          "referral"
+        ]
+      }
+    },
+    {
+      "id": "transplant-clinic",
+      "name": "Transplant Clinic",
+      "description": "Solid organ and stem cell transplant assessment and follow-up.",
+      "rationale": "Immunosuppressant drug levels plus opportunistic viral load surveillance define post-transplant monitoring.",
+      "match": {
+        "categories_any": [
+          "transplant-monitoring"
+        ],
+        "core_any": [
+          "cd34 (stem cells)",
+          "cd4 count (t cell count)",
+          "blood group",
+          "cross matching",
+          "urea",
+          "creatinine",
+          "egfr",
+          "full blood count"
+        ],
+        "exclude_name_any": [
+          "post mortem"
+        ]
+      }
+    },
+    {
+      "id": "paediatrics",
+      "name": "Paediatrics & Neonatology",
+      "description": "Newborn screening, paediatric endocrinology and childhood infection.",
+      "rationale": "Blood spot screening, congenital adrenal hyperplasia and neonatal jaundice or sepsis workup.",
+      "match": {
+        "core_any": [
+          "bloodspot 17-hydroxyprogesterone",
+          "sweat tests",
+          "cord blood investigations",
+          "bilirubin (total)",
+          "bilirubin (conjugated/direct)",
+          "faecal reducing substances",
+          "reducing substances (faeces only)",
+          "jejunal disaccharidases",
+          "growth hormone",
+          "insulin-like growth factor 1",
+          "insulin-like growth factor binding protein 3",
+          "serum 17-hydroxyprogesterone",
+          "ammonia",
+          "lactate",
+          "full blood count",
+          "g6pd screen",
+          "g6pd assay",
+          "human parvovirus b19 igm",
+          "enteric virus panel"
+        ],
+        "exclude_name_any": [
+          "post mortem"
+        ]
+      }
+    },
+    {
+      "id": "allergy-clinic",
+      "name": "Allergy & Immunology Clinic",
+      "description": "Allergy diagnosis, anaphylaxis workup and primary immunodeficiency.",
+      "rationale": "Specific IgE and tryptase for allergy; immunoglobulins, complement and lymphocyte function for immunodeficiency.",
+      "match": {
+        "categories_any": [
+          "allergy",
+          "immunodeficiency",
+          "complement"
+        ],
+        "exclude_name_any": [
+          "post mortem"
+        ]
+      }
+    },
+    {
+      "id": "dermatology-clinic",
+      "name": "Dermatology Clinic",
+      "description": "Inflammatory skin disease, skin infection, hair loss and cutaneous autoimmunity.",
+      "rationale": "Skin and connective tissue autoantibodies, fungal skin/nail/hair sampling, and the haematinic and thyroid panels behind alopecia.",
+      "match": {
+        "core_any": [
+          "skin antibodies",
+          "antinuclear antibody (ana)",
+          "double stranded dna antibodies (igg)",
+          "extended sclerosis panel",
+          "myositis antibodies",
+          "ferritin",
+          "iron",
+          "vitamin d",
+          "vitamin b12",
+          "folate",
+          "zinc",
+          "thyroid stimulating hormone",
+          "free thyroxine",
+          "testosterone",
+          "shbg",
+          "dhea - sulphate",
+          "full blood count",
+          "c-reactive protein",
+          "allergen specific ige",
+          "ige (total)"
+        ],
+        "categories_any": [
+          "mycology"
+        ],
+        "exclude_name_any": [
+          "post mortem",
+          "referral",
+          "csf",
+          "bone marrow"
+        ]
+      }
+    },
+    {
+      "id": "critical-care-emergency",
+      "name": "Critical Care & Emergency Medicine",
+      "description": "Acute presentations: sepsis, overdose, trauma and organ failure.",
+      "rationale": "Rapid-turnaround chemistry, blood gases, sepsis markers, coagulation and toxicology drive acute decision-making.",
+      "match": {
+        "core_any": [
+          "full blood count",
+          "urea",
+          "creatinine",
+          "sodium",
+          "potassium",
+          "acid base status",
+          "actual bicarbonate",
+          "lactate",
+          "troponin t",
+          "bnp (n-terminal pro bnp)",
+          "c-reactive protein",
+          "procalcitonin",
+          "blood cultures",
+          "aptt",
+          "prothrombin time",
+          "fibrinogen",
+          "fdp d-dimers",
+          "paracetamol",
+          "salicylate",
+          "ethanol (drinking alcohol)",
+          "carboxyhaemoglobin",
+          "met-haemoglobin",
+          "osmolality (blood and urine)",
+          "beta hydroxybutyrate",
+          "ammonia",
+          "cross matching",
+          "blood group",
+          "xanthochromia screen (csf)",
+          "csf - glucose",
+          "csf - protein",
+          "csf - lactate"
+        ],
+        "categories_any": [
+          "toxicology"
+        ],
+        "exclude_name_any": [
+          "post mortem",
+          "referral"
+        ]
+      }
+    },
+    {
+      "id": "infectious-disease-clinic",
+      "name": "Infectious Diseases Clinic",
+      "description": "Complex infection, fever of unknown origin, HIV medicine and antimicrobial stewardship.",
+      "rationale": "The full microbiology and virology repertoire plus antimicrobial level monitoring.",
+      "match": {
+        "categories_any": [
+          "virology",
+          "bacteriology",
+          "mycology",
+          "parasitology",
+          "molecular-microbiology",
+          "infectious-disease-serology"
+        ],
+        "name_any": [
+          "gentamicin",
+          "vancomycin",
+          "amikacin",
+          "tobramycin"
+        ],
+        "exclude_name_any": [
+          "post mortem"
+        ]
+      }
+    },
+    {
+      "id": "drug-alcohol-services",
+      "name": "Drug & Alcohol Services",
+      "description": "Substance misuse treatment, monitoring and medico-legal testing.",
+      "rationale": "Abstinence monitoring, organ damage assessment and bloodborne virus screening in people who inject drugs.",
+      "match": {
+        "core_any": [
+          "drugs of abuse (urine screen)",
+          "ethanol (drinking alcohol)",
+          "chain-of-custody medico-legal specimens",
+          "gamma-glutamyl transferase",
+          "liver function tests",
+          "full blood count",
+          "hepatitis b (hbv) surface antigen",
+          "hepatitis c antibody",
+          "hiv screen",
+          "dried blood spot hepatitis c rna screening",
+          "dried blood spot syphilis antibody",
+          "hepatitis a total antibody"
+        ],
+        "categories_any": [
+          "toxicology"
+        ],
+        "exclude_name_any": [
+          "post mortem"
+        ]
+      }
+    },
+    {
+      "id": "haematology-clinic",
+      "name": "Haematology Clinic",
+      "description": "Anaemia, bleeding and clotting disorders, and haemoglobinopathy care.",
+      "rationale": "Counts and morphology, coagulation factor assays, thrombophilia genetics and haemoglobin variant analysis.",
+      "match": {
+        "categories_any": [
+          "haematology",
+          "coagulation",
+          "haemoglobinopathy",
+          "transfusion"
+        ],
+        "core_any": [
+          "ferritin",
+          "serum ferritin",
+          "vitamin b12",
+          "folate",
+          "iron",
+          "transferrin (and saturation)",
+          "erythropoietin",
+          "haemochromatosis c282y, h63d and s65c genotyping"
+        ],
+        "exclude_name_any": [
+          "post mortem"
+        ]
+      }
+    },
+    {
+      "id": "microbiology-infection-control",
+      "name": "Microbiology & Infection Prevention",
+      "description": "Hospital infection control, outbreak investigation and screening.",
+      "rationale": "Colonisation screening, resistance detection and reference laboratory typing.",
+      "match": {
+        "core_any": [
+          "antimicrobial susceptibility test (ast)",
+          "mrsa",
+          "blood cultures",
+          "abscesses and deep-seated wound infections",
+          "clostridi"
+        ],
+        "categories_any": [
+          "bacteriology",
+          "molecular-microbiology"
+        ],
+        "exclude_name_any": [
+          "post mortem"
+        ]
+      }
+    }
+  ]
+}

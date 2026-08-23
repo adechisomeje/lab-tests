@@ -1,0 +1,408 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/3 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/3 
+Immunodeficiency (T&B Lymphocyte Subsets) 
+ 
+Contact on 0161 276 6440 to discuss extended panels for investigation of Primary Immunodeficiency 
+General information 
+These tests are most frequently done in patients who are suspected of having an underlying 
+immunodeficiency or are receiving immunosuppressive drugs. For example, cyclosporine reduces T cell 
+numbers, whilst Rituximab reduces B cell numbers. 
+ 
+The relevant tests required will be specified for each individual case. 
+ 
+Specimen transport: Samples should be received by the lab within 24 hours of venepuncture. Maintain 
+samples at room temp. 
+ 
+Repeat frequency: At significant change of clinical symptoms 
+ 
+Special precautions: None 
+Laboratory information 
+Normal reference range: (95% confidence interval) 
+CD marker 
+Age 
+Minimum % 
+Maximum % 
+Minimum cells/mm3 
+Maximum cells/mm3 
+CD3+ 
+Neonates 
+28 
+76 
+600 
+5000 
+" 
+1wk - 2mo 
+60 
+85 
+2300 
+7000 
+" 
+2-5 mo 
+48 
+75 
+2300 
+6500 
+" 
+5-9 mo 
+50 
+77 
+2400 
+6900 
+" 
+9-15 mo 
+54 
+76 
+1600 
+6700 
+" 
+15-24 mo 
+39 
+73 
+1400 
+8000 
+" 
+2-5 y 
+43 
+76 
+900 
+4500 
+" 
+5-10 y 
+55 
+78 
+700 
+4200 
+" 
+10-16 y 
+52 
+78 
+800 
+3500 
+" 
+Adults 
+58 
+86 
+700 
+2100 
+CD3+CD4+ 
+Neonates 
+17 
+52 
+400 
+3500 
+" 
+1wk - 2mo 
+41 
+68 
+1700 
+5300 
+" 
+2-5 mo 
+33 
+58 
+1500 
+5000 
+" 
+5-9 mo 
+33 
+58 
+1400 
+5100 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/3 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/3 
+" 
+9-15 mo 
+31 
+54 
+1000 
+4600 
+" 
+15-24 mo 
+25 
+50 
+900 
+5500 
+" 
+2-5 y 
+23 
+48 
+500 
+2400 
+" 
+5-10 y 
+27 
+53 
+300 
+2000 
+" 
+10-16 y 
+25 
+48 
+400 
+2100 
+" 
+Adults 
+31 
+59 
+300 
+1400 
+CD3+CD8+ 
+Neonates 
+10 
+41 
+200 
+1900 
+" 
+1wk - 2mo 
+9 
+23 
+400 
+1700 
+" 
+2-5 mo 
+11 
+25 
+500 
+1600 
+" 
+5-9 mo 
+13 
+26 
+600 
+2200 
+" 
+9-15 mo 
+12 
+28 
+400 
+2100 
+" 
+15-24 mo 
+11 
+32 
+400 
+2300 
+" 
+2-5 y 
+14 
+33 
+300 
+1600 
+" 
+5-10 y 
+19 
+34 
+300 
+1800 
+" 
+10-16 y 
+9 
+35 
+200 
+1200 
+" 
+Adults 
+12 
+36 
+200 
+900 
+T4:T8 Ratio 
+Adults 
+0.92 
+3.72 
+N/A 
+N/A 
+CD19+ 
+Neonates 
+5 
+22 
+40 
+1100 
+" 
+1wk - 2mo 
+4 
+26 
+600 
+1900 
+" 
+2-5 mo 
+14 
+39 
+600 
+3000 
+" 
+5-9 mo 
+13 
+35 
+700 
+2500 
+" 
+9-15 mo 
+15 
+39 
+600 
+2700 
+" 
+15-24 mo 
+17 
+41 
+600 
+3100 
+" 
+2-5 y 
+14 
+44 
+200 
+2100 
+" 
+5-10 y 
+10 
+31 
+200 
+1600 
+" 
+10-16 y 
+8 
+24 
+200 
+600 
+" 
+Adults 
+3 
+25 
+100 
+500 
+CD3-CD16/56+ 
+Neonates 
+6 
+58 
+100 
+1900 
+" 
+1wk - 2mo 
+3 
+23 
+200 
+1400 
+" 
+2-5 mo 
+2 
+14 
+100 
+1300 
+" 
+5-9 mo 
+2 
+13 
+100 
+1000 
+" 
+9-15 mo 
+3 
+17 
+200 
+1200 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   3/3 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+3/3 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Paediatric reference ranges are from Comans-Bitter WM, et al, "Immunophenotyping of Blood Lymphocytes 
+in Childhood," J Paediatrics, 1997, 130:388-393 
+ 
+ 
+Volume and sample type: EDTA (4ml) blood 
+ 
+Method: Flow Cytometry 
+ 
+Participation in EQA scheme: UK NEQAS LI Immune Monitoring 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 2 
+Clinical information 
+Indications for the test: Suspected cellular immunodeficiency 
+ 
+Factors affecting the test: Age (see normal ranges in tables). Acute infection and immunosuppressive drugs 
+will alter T and B lymphocyte numbers. 
+ 
+  
+(Last updated August 2023) 
+ 
+" 
+15-24 mo 
+3 
+16 
+100 
+1400 
+" 
+2-5 y 
+4 
+23 
+100 
+1000 
+" 
+5-10 y 
+4 
+26 
+90 
+900 
+" 
+10-16 y 
+6 
+27 
+70 
+1200 
+" 
+Adults 
+1 
+19 
+90 
+600 

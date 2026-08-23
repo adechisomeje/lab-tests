@@ -1,0 +1,90 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/2 
+ 
+Laboratory Medicine Care Division 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/2 
+Coeliac Disease Antibodies 
+ 
+IgA anti-tissue transglutaminase, IgG anti-tissue transglutaminase & IgA Endomysial antibodies 
+ 
+General information 
+Indications for the test:  
+Act as a screening test for coeliac disease in patients with suspected gluten sensitivity.   
+With reference to Coeliac Disease NICE guidance NG20 IgA tTG is the first line of investigation for adults and 
+children.  
+If the IgA tTG is negative in a patient on a gluten-containing diet e.g. gluten in more than 1 meal per day for 
+at least 6 weeks prior to testing with normal/low IgA, then coeliac disease is unlikely. An IgA endomysial 
+antibody test is done to confirm all new positives and equivocal results. Coeliac disease is associated with IgA 
+deficiency (IgA deficiency is defined as total IgA less than < 0.04 g/L) and the IgA tTG will be falsely negative 
+in these patients, therefore IgA levels should be checked. 
+This test is specific for coeliac disease, but a jejunal biopsy is recommended for confirmation. Refer to 
+ESPGHAN guidelines for biopsy recommendations in children: 
+https://www.espghan.org/knowledge-center/publications/Clinical-Advice-
+Guides/2020_New_Guidelines_for_the_Diagnosis_of_Paediatric_Coeliac_Disease  
+Sending the right sample for coeliac disease screening: https://mft.nhs.uk/the-
+trust/otherdepartments/laboratory-medicine/information-for-gps/laboratory-medicines-newsletter-for-
+gps/sendingthe-right-sample-for-coeliac-disease-screening/  
+Laboratory Information 
+ 
+Analyte: IgA anti-tissue transglutaminase, IgG anti-tissue transglutaminase & IgA endomysial antibodies 
+Volume and sample type: 4ml serum 
+Turnaround time (calendar days from sample receipt to authorised result):  
+IgA anti-tissue transglutaminase Median 1 
+IgG anti-tissue transglutaminase Median 2 
+IgA endomysial antibody Median: 7 
+Frequency of Analysis: Only to monitor compliance with gluten free diet 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/2 
+ 
+Laboratory Medicine Care Division 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/2 
+ 
+Specimen transport: At room temperature 
+Additional/Special requirements: Haemolysed samples cannot be tested 
+Factors affecting the test: 
+• 
+Becomes negative on gluten free diet.  
+• 
+False Negative in IgA deficiency - our test platform will detect a low IgA level  
+Method: Multiplex flow immunoassay for TTG & immunofluorescence for endomysial antibodies. 
+Participation in EQA Scheme: UK NEQAS scheme for coeliac disease antibodies 
+ 
+Clinical Information 
+ 
+Reference range for IgA tTG & IgG tTG: 0-14.9 kU/L 
+Reference range for IgA Endomysial antibodies: Normal result negative 
+ 
+(Last updated August 2026) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

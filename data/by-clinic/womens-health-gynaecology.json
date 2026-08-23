@@ -1,0 +1,5313 @@
+{
+  "meta": {
+    "profile": "womens-health-gynaecology",
+    "name": "Women's Health & Gynaecology",
+    "version": "0.1.0",
+    "rationale": "Hormonal profiling for PCOS and menopause, tumour markers for ovarian pathology, and cervical cytology.",
+    "test_count": 67
+  },
+  "tests": [
+    {
+      "id": "abdominal-mass-fna",
+      "name": "Abdominal mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "A",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "adrenal-fna",
+      "name": "Adrenal FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "A",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "androstenedione",
+      "name": "Androstenedione",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "A",
+      "categories": [
+        "endocrinology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum",
+          "plasma"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum (lithium hep plasma for WYTH only)",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum (lithium hep plasma for WYTH only)"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "nmol/L",
+        "reference_range": "<= 5.7 nmol/L (adult; 26 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Androstenedione",
+        "match_method": "exact",
+        "units": "nmol/L",
+        "strata": [
+          {
+            "sex": "female",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 14.0,
+            "high": 2.5,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "days",
+              "age_min": "0",
+              "age_max": "14",
+              "low": "None",
+              "high": "2.5"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 15.0,
+            "age_max": 364.0,
+            "high": 5.7,
+            "raw": {
+              "age_unit": "days",
+              "age_min": "15",
+              "age_max": "364",
+              "low": "None",
+              "high": "5.7"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 12.0,
+            "age_max": 24.0,
+            "high": 0.5,
+            "high_op": "lt",
+            "raw": {
+              "age_unit": "months",
+              "age_min": "12",
+              "age_max": "24",
+              "low": "None",
+              "high": "<0.5"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 2.0,
+            "age_max": 3.0,
+            "high": 0.5,
+            "high_op": "lt",
+            "raw": {
+              "age_unit": "years",
+              "age_min": "2",
+              "age_max": "3 (+364 days)",
+              "low": "None",
+              "high": "<0.5"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 4.0,
+            "age_max": 5.0,
+            "high": 0.6,
+            "high_op": "lt",
+            "raw": {
+              "age_unit": "years",
+              "age_min": "4",
+              "age_max": "5 (+364 days)",
+              "low": "None",
+              "high": "<0.6"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 6.0,
+            "age_max": 7.0,
+            "low": 0.1,
+            "high": 1.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "6",
+              "age_max": "7 (+364 days)",
+              "low": "0.1",
+              "high": "1"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 8.0,
+            "age_max": 9.0,
+            "low": 0.1,
+            "high": 1.5,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "8",
+              "age_max": "9 (+364 days)",
+              "low": "0.1",
+              "high": "1.5"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 10.0,
+            "age_max": 11.0,
+            "low": 0.3,
+            "high": 4.3,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "10",
+              "age_max": "11 (+364 days)",
+              "low": "0.3",
+              "high": "4.3"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 13.0,
+            "low": 0.8,
+            "high": 6.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "12",
+              "age_max": "13 (+364 days)",
+              "low": "0.8",
+              "high": "6"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 14.0,
+            "age_max": 15.0,
+            "low": 1.4,
+            "high": 7.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "14",
+              "age_max": "15 (+364 days)",
+              "low": "1.4",
+              "high": "7"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 16.0,
+            "age_max": 17.0,
+            "low": 1.2,
+            "high": 7.4,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "16",
+              "age_max": "17 (+364 days)",
+              "low": "1.2",
+              "high": "7.4"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 18.0,
+            "low": 0.9,
+            "high": 7.5,
+            "raw": {
+              "age_unit": "years",
+              "age_min": ">18 (pre- menopau sal)",
+              "low": "0.9",
+              "high": "7.5"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 18.0,
+            "low": 0.5,
+            "high": 2.9,
+            "raw": {
+              "age_unit": "years",
+              "age_min": ">18 (post- menopau sal)",
+              "low": "0.5",
+              "high": "2.9"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 14.0,
+            "high": 2.5,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "days",
+              "age_min": "0",
+              "age_max": "14",
+              "low": "None",
+              "high": "2.5"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 15.0,
+            "age_max": 364.0,
+            "high": 5.7,
+            "raw": {
+              "age_unit": "days",
+              "age_min": "15",
+              "age_max": "364",
+              "low": "None",
+              "high": "5.7"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 12.0,
+            "age_max": 24.0,
+            "high": 0.5,
+            "high_op": "lt",
+            "raw": {
+              "age_unit": "months",
+              "age_min": "12",
+              "age_max": "24",
+              "low": "None",
+              "high": "<0.5"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 2.0,
+            "age_max": 3.0,
+            "high": 0.4,
+            "high_op": "lt",
+            "raw": {
+              "age_unit": "years",
+              "age_min": "2",
+              "age_max": "3 (+364 days)",
+              "low": "None",
+              "high": "<0.4"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 4.0,
+            "age_max": 5.0,
+            "high": 0.5,
+            "high_op": "lt",
+            "raw": {
+              "age_unit": "years",
+              "age_min": "4",
+              "age_max": "5 (+364 days)",
+              "low": "None",
+              "high": "<0.5"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 6.0,
+            "age_max": 7.0,
+            "low": 0.1,
+            "high": 0.8,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "6",
+              "age_max": "7 (+364 days)",
+              "low": "0.1",
+              "high": "0.8"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 8.0,
+            "age_max": 9.0,
+            "low": 0.1,
+            "high": 1.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "8",
+              "age_max": "9 (+364 days)",
+              "low": "0.1",
+              "high": "1"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 10.0,
+            "age_max": 11.0,
+            "low": 0.2,
+            "high": 1.4,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "10",
+              "age_max": "11 (+364 days)",
+              "low": "0.2",
+              "high": "1.4"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 13.0,
+            "low": 0.3,
+            "high": 2.2,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "12",
+              "age_max": "13 (+364 days)",
+              "low": "0.3",
+              "high": "2.2"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 14.0,
+            "age_max": 15.0,
+            "low": 0.6,
+            "high": 3.3,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "14",
+              "age_max": "15 (+364 days)",
+              "low": "0.6",
+              "high": "3.3"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 16.0,
+            "age_max": 17.0,
+            "low": 1.0,
+            "high": 3.9,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "16",
+              "age_max": "17 (+364 days)",
+              "low": "1",
+              "high": "3.9"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 39.0,
+            "low": 1.2,
+            "high": 4.7,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "18",
+              "age_max": "39 (+364 days)",
+              "low": "1.2",
+              "high": "4.7"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 40.0,
+            "age_max": 67.0,
+            "low": 0.8,
+            "high": 3.1,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "40",
+              "age_max": "67",
+              "low": "0.8",
+              "high": "3.1"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "240 hours",
+        "days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "anti-mullerian-hormone-amh",
+      "name": "Anti-Müllerian Hormone, AMH",
+      "aliases": [
+        "AMH"
+      ],
+      "department": "Biochemistry",
+      "letter": "A",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "pmol/L",
+        "reference_range": "68 - 523.7 pmol/L (adult; 18 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Antimullerian hormone (AMH)",
+        "match_method": "squashed",
+        "units": "pmol/L",
+        "strata": [
+          {
+            "sex": "male",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 3.0,
+            "low": 68.0,
+            "high": 523.7,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "<3",
+              "low": "68",
+              "high": "523.7"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "days",
+            "age_min": 3.0,
+            "age_max": 8.0,
+            "low": 138.3,
+            "high": 1023.7,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Days",
+              "age_min": "3",
+              "age_max": "<8",
+              "low": "138.3",
+              "high": "1023.7"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "days",
+            "age_min": 8.0,
+            "age_max": 11.0,
+            "low": 195.2,
+            "high": 1200.9,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Days",
+              "age_min": "8",
+              "age_max": "<11",
+              "low": "195.2",
+              "high": "1200.9"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "days",
+            "age_min": 11.0,
+            "age_max": 21.0,
+            "low": 140.1,
+            "high": 1130.9,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Days",
+              "age_min": "11",
+              "age_max": "<21",
+              "low": "140.1",
+              "high": "1130.9"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "days",
+            "age_min": 21.0,
+            "age_max": 29.0,
+            "low": 212.0,
+            "high": 951.4,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Days",
+              "age_min": "21",
+              "age_max": "<29",
+              "low": "212",
+              "high": "951.4"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "days",
+            "age_min": 29.0,
+            "age_max": 365.0,
+            "low": 203.8,
+            "high": 971.7,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Days",
+              "age_min": "29",
+              "age_max": "<365",
+              "low": "203.8",
+              "high": "971.7"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 5.0,
+            "low": 268.6,
+            "high": 1229.9,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "<5",
+              "low": "268.6",
+              "high": "1229.9"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 8.0,
+            "low": 206.2,
+            "high": 956.5,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "5",
+              "age_max": "<8",
+              "low": "206.2",
+              "high": "956.5"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 8.0,
+            "age_max": 12.0,
+            "low": 84.0,
+            "high": 976.4,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "8",
+              "age_max": "<12",
+              "low": "84",
+              "high": "976.4"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 15.0,
+            "low": 8.8,
+            "high": 286.8,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "12",
+              "age_max": "<15",
+              "low": "8.8",
+              "high": "286.8"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 15.0,
+            "age_max": 18.0,
+            "low": 16.8,
+            "high": 130.0,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "15",
+              "age_max": "<18",
+              "low": "16.8",
+              "high": "130"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 29.0,
+            "high": 6.7,
+            "high_op": "lt",
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "<29",
+              "low": "None",
+              "high": "</= 6.7"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "days",
+            "age_min": 29.0,
+            "age_max": 365.0,
+            "high": 31.2,
+            "high_op": "lt",
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Days",
+              "age_min": "29",
+              "age_max": "<365",
+              "low": "None",
+              "high": "</= 31.2"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 5.0,
+            "low": 1.3,
+            "high": 43.7,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "<5",
+              "low": "1.3",
+              "high": "43.7"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 8.0,
+            "low": 1.4,
+            "high": 39.5,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Years",
+              "age_min": "5",
+              "age_max": "<8",
+              "low": "1.4",
+              "high": "39.5"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 8.0,
+            "age_max": 12.0,
+            "low": 2.9,
+            "high": 52.8,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Years",
+              "age_min": "8",
+              "age_max": "<12",
+              "low": "2.9",
+              "high": "52.8"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 15.0,
+            "low": 3.0,
+            "high": 46.6,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Years",
+              "age_min": "12",
+              "age_max": "<15",
+              "low": "3",
+              "high": "46.6"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 15.0,
+            "age_max": 18.0,
+            "low": 2.1,
+            "high": 84.1,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Years",
+              "age_min": "15",
+              "age_max": "<18",
+              "low": "2.1",
+              "high": "84.1"
+            }
+          }
+        ]
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals"
+        ]
+      }
+    },
+    {
+      "id": "bile-duct-brushings",
+      "name": "Bile duct brushings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "B",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "bladder-washings",
+      "name": "Bladder washings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "B",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "blood-spot-17-hydroxyprogesterone",
+      "name": "Bloodspot 17-hydroxyprogesterone",
+      "aliases": [
+        "17 OHP (blood spot)"
+      ],
+      "department": "Biochemistry",
+      "letter": "B",
+      "categories": [
+        "endocrinology",
+        "reproductive-hormones"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "dried-blood-spot",
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Whole blood spot",
+        "accepted_specimens": [
+          "Whole blood spot"
+        ],
+        "preferred_specimen": "Whole blood spot"
+      },
+      "analysis": {
+        "units": "nmol/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "17-Hydroxyprogesterone - Blood Spot",
+        "match_method": "fuzzy:1.00",
+        "units": "nmol/L"
+      },
+      "turnaround": {
+        "raw": "1 month",
+        "days": {
+          "min": 30.0,
+          "max": 30.0
+        }
+      },
+      "notes": "17 OHP (blood spot)",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.27,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "bronchial-brushings",
+      "name": "Bronchial brushings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "B",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "bronchial-trap",
+      "name": "Bronchial trap",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "B",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "ca125",
+      "name": "CA125",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "tumour-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma, EDTA plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma",
+          "EDTA plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "kU/L",
+        "reference_range": "0 - 34 kU/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "CA125",
+        "match_method": "exact",
+        "units": "kU/L",
+        "strata": [
+          {
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 150.0,
+            "low": 0.0,
+            "high": 34.0,
+            "raw": {
+              "sex": "F+M",
+              "age_unit": "Years",
+              "age_min": "0",
+              "age_max": "150",
+              "low": "0",
+              "high": "34"
+            }
+          }
+        ]
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals"
+        ]
+      }
+    },
+    {
+      "id": "cervical-cytology",
+      "name": "Cervical Cytology",
+      "aliases": [],
+      "department": "Gynaecological Cytology",
+      "letter": "C",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "dhea-sulfate",
+      "name": "DHEA – sulphate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "D",
+      "categories": [
+        "endocrinology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "failing-metal-on-metal-prosthetic-joints",
+      "name": "Failing metal-on-metal prosthetic joints",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "F",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "features-associated-with-ganglia",
+      "name": "Features associated with ganglia",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "F",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "features-of-juvenile-inflammatory-arthropathy",
+      "name": "Features of Juvenile inflammatory arthropathy",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "F",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "features-of-rheumatoid-disease",
+      "name": "Features of rheumatoid disease",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "F",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "ferritin",
+      "name": "Ferritin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "F",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "12 - 150 μg/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Ferritin",
+        "match_method": "exact",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "400"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "400"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "follicle-stimulating-hormone",
+      "name": "Follicle stimulating hormone",
+      "aliases": [
+        "FSH"
+      ],
+      "department": "Biochemistry",
+      "letter": "F",
+      "categories": [
+        "reproductive-hormones",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "IU/L",
+        "reference_range": "<= 3.1 IU/L (adult; 12 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Follicle Stimulating Hormone (FSH)",
+        "match_method": "exact",
+        "units": "IU/L",
+        "strata": [
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 1.0,
+            "high": 3.1,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "years",
+              "age_min": "0",
+              "age_max": "<1",
+              "low": "NA",
+              "high": "3.1"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 9.0,
+            "high": 2.0,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "years",
+              "age_min": "1",
+              "age_max": "<9",
+              "low": "NA",
+              "high": "2.0"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 9.0,
+            "age_max": 12.0,
+            "low": 0.4,
+            "high": 4.2,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "years",
+              "age_min": "9",
+              "age_max": "<12",
+              "low": "0.4",
+              "high": "4.2"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 150.0,
+            "low": 1.5,
+            "high": 12.4,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "years",
+              "age_min": "12",
+              "age_max": "150",
+              "low": "1.5",
+              "high": "12.4"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 1.0,
+            "low": 1.6,
+            "high": 19.0,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "years",
+              "age_min": "0",
+              "age_max": "<1",
+              "low": "1.6",
+              "high": "19"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 9.0,
+            "low": 0.7,
+            "high": 5.8,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "years",
+              "age_min": "1",
+              "age_max": "<9",
+              "low": "0.7",
+              "high": "5.8"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 9.0,
+            "age_max": 12.0,
+            "low": 0.5,
+            "high": 7.6,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "years",
+              "age_min": "9",
+              "age_max": "<12",
+              "low": "0.5",
+              "high": "7.6"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 150.0,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "years",
+              "age_min": "12",
+              "age_max": "150",
+              "low": "Depends on cycle- report as comment"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "follicular",
+            "low": 3.5,
+            "high": 12.5,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Follicular",
+              "low": "3.5",
+              "high": "12.5"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "mid - cycle",
+            "low": 4.7,
+            "high": 21.5,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Mid - cycle",
+              "low": "4.7",
+              "high": "21.5"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "luteal",
+            "low": 1.7,
+            "high": 7.7,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Luteal",
+              "low": "1.7",
+              "high": "7.7"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "post menopa usal",
+            "low": 25.8,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Post menopa usal",
+              "low": "25.8",
+              "high": "none"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "notes": "FSH",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "full-blood-count-and-automated-differential",
+      "name": "Full blood count and automated differential",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "glomerular-basement-membrane-antibodies",
+      "name": "Glomerular basement membrane antibodies",
+      "aliases": [],
+      "description": "Diagnostic test for Goodpasture's syndrome (anti GBM disease)",
+      "department": "Immunology",
+      "letter": "G",
+      "categories": [
+        "renal-function",
+        "reproductive-hormones",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "Please notify the laboratory if you require an anti GBM antibody result urgently (phone: 0161 276 6440)."
+      },
+      "analysis": {
+        "method": "Multiplex Flow Immunoassay",
+        "reference_range": "<0-0.9 AI",
+        "interferences": "A small number of patients with other renal diseases - systemic vasculitis, SLE and mixed connective tissue disease may exhibit borderline titres.",
+        "eqa_scheme": "UK NEQAS for Autoimmune Serology ANCA and GBM"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "Rapidly progressive glomerulonephritis.",
+        "repeat_frequency": "At significant change of clinical symptoms and post treatment monitoring"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Glomerular-basement-membrane-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "glycogen-special-stain",
+      "name": "Glycogen – Special Stain",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "G",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "gram-ve-ve-sepsis",
+      "name": "Gram +ve/-ve sepsis",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "G",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "hcg-blood-pregnancy-and-as-tumour-marker",
+      "name": "HCG blood (pregnancy and as tumour marker)",
+      "aliases": [
+        "Human Chorionic Gonadotrophin"
+      ],
+      "department": "Biochemistry",
+      "letter": "H",
+      "categories": [
+        "reproductive-hormones",
+        "tumour-markers",
+        "antenatal-pregnancy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "notes": "Pregnancy test (blood); Human Chorionic Gonadotrophin",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "high-risk-hpv-test-of-cure",
+      "name": "High Risk HPV Test of Cure",
+      "aliases": [],
+      "department": "Gynaecological Cytology",
+      "letter": "H",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "high-risk-hpv-triage",
+      "name": "High Risk HPV triage",
+      "aliases": [],
+      "department": "Gynaecological Cytology",
+      "letter": "H",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "immunocytochemistry",
+      "name": "Immunocytochemistry",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "I",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "inflammatory-non-inflammatory-bursitis",
+      "name": "Inflammatory/non-inflammatory bursitis",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "I",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "liver-fna",
+      "name": "Liver FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "L",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "lung-fna",
+      "name": "Lung FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "L",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "luteinising-hormone",
+      "name": "Luteinising Hormone",
+      "aliases": [
+        "LH"
+      ],
+      "department": "Biochemistry",
+      "letter": "L",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "IU/L",
+        "reference_range": "2.4 - 12.6 IU/L (adult; 10 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Luteinising Hormone (LH)",
+        "match_method": "exact",
+        "units": "IU/L",
+        "strata": [
+          {
+            "sex": "male",
+            "age_unit": "months",
+            "age_min": 0.0,
+            "age_max": 6.0,
+            "high": 6.1,
+            "raw": {
+              "sex": "M",
+              "age_unit": "months",
+              "age_min": "0",
+              "age_max": "<6",
+              "low": "NA",
+              "high": "6.1"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "months to years",
+            "age_min": 6.0,
+            "age_max": 11.0,
+            "high": 1.2,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Months to years",
+              "age_min": "6months",
+              "age_max": "<11 years",
+              "low": "NA",
+              "high": "1.2"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 11.0,
+            "age_max": 14.0,
+            "high": 1.9,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "11",
+              "age_max": "<14",
+              "low": "NA",
+              "high": "1.9"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 14.0,
+            "age_max": 150.0,
+            "low": 1.7,
+            "high": 8.6,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "14",
+              "age_max": "150",
+              "low": "1.7",
+              "high": "8.6"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "months",
+            "age_min": 0.0,
+            "age_max": 6.0,
+            "high": 8.1,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Months",
+              "age_min": "0",
+              "age_max": "<6",
+              "low": "NA",
+              "high": "8.1"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "months to years",
+            "age_min": 6.0,
+            "age_max": 11.0,
+            "high": 1.2,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Months to years",
+              "age_min": "6 months",
+              "age_max": "<11 years",
+              "low": "NA",
+              "high": "1.2"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 11.0,
+            "age_max": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "11",
+              "age_max": "150"
+            }
+          },
+          {
+            "low": 2.4,
+            "high": 12.6,
+            "raw": {
+              "age_min": "Follicular",
+              "low": "2.4",
+              "high": "12.6"
+            }
+          },
+          {
+            "low": 14.0,
+            "high": 95.6,
+            "raw": {
+              "age_min": "Mid-cycle",
+              "low": "14",
+              "high": "95.6"
+            }
+          },
+          {
+            "low": 1.0,
+            "high": 11.4,
+            "raw": {
+              "age_min": "Luteal",
+              "low": "1",
+              "high": "11.4"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "notes": "LH",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "lymph-node-fna",
+      "name": "Lymph node FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "L",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "mediastinal-mass-fna",
+      "name": "Mediastinal mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "M",
+      "categories": [
+        "sexual-health-sti",
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "mucin-special-stain",
+      "name": "Mucin – Special Stain",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "M",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "neck-fna",
+      "name": "Neck FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "N",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "non-specific-inflammatory-arthropathies",
+      "name": "Non-specific inflammatory arthropathies",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "N",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "non-specific-non-inflammatory-arthropathies",
+      "name": "Non-specific non-inflammatory arthropathies",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "N",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "oesophageal-brushings",
+      "name": "Oesophageal brushings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "O",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "estradiol",
+      "name": "Oestradiol",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "O",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "pmol/L",
+        "reference_range": "45 - 854 pmol/L (adult; 17 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Oestradiol",
+        "match_method": "exact",
+        "units": "pmol/L",
+        "strata": [
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 55.0,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "years",
+              "age_min": "18",
+              "age_max": "55"
+            }
+          },
+          {
+            "age_unit": "years",
+            "low": 45.0,
+            "high": 854.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "follicular",
+              "low": "45",
+              "high": "854"
+            }
+          },
+          {
+            "low": 151.0,
+            "high": 1461.0,
+            "raw": {
+              "age_min": "Mid-Cycle",
+              "low": "151",
+              "high": "1461"
+            }
+          },
+          {
+            "low": 82.0,
+            "high": 1251.0,
+            "raw": {
+              "age_min": "luteal",
+              "low": "82",
+              "high": "1251"
+            }
+          },
+          {
+            "high": 77.0,
+            "raw": {
+              "age_min": "Post menopau sal",
+              "high": "77"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 15.0,
+            "age_max": 365.0,
+            "high": 78.0,
+            "raw": {
+              "age_unit": "Days",
+              "age_min": "15",
+              "age_max": "Up to 365",
+              "high": "78"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 9.0,
+            "high": 19.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "Up to 9",
+              "high": "19"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 9.0,
+            "age_max": 11.0,
+            "high": 170.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "9",
+              "age_max": "Up to 11",
+              "high": "170"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 11.0,
+            "age_max": 12.0,
+            "high": 354.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "11",
+              "age_max": "Up to 12",
+              "high": "354"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 14.0,
+            "low": 21.0,
+            "high": 664.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "12",
+              "age_max": "Up to 14",
+              "low": "21",
+              "high": "664"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 14.0,
+            "age_max": 18.0,
+            "high": 996.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "14",
+              "age_max": "Up to 18",
+              "high": "996"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 41.0,
+            "high": 159.0,
+            "raw": {
+              "sex": "Males",
+              "age_unit": "years",
+              "age_min": "18",
+              "age_max": "150",
+              "low": "41",
+              "high": "159"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 15.0,
+            "age_max": 365.0,
+            "high": 78.0,
+            "raw": {
+              "age_unit": "Days",
+              "age_min": "15",
+              "age_max": "Up to 365",
+              "high": "78"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 11.0,
+            "high": 28.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "Up to 11",
+              "high": "28"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 11.0,
+            "age_max": 13.0,
+            "high": 82.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "11",
+              "age_max": "Up to 13",
+              "high": "82"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 13.0,
+            "age_max": 15.0,
+            "high": 89.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "13",
+              "age_max": "Up to 15",
+              "high": "89"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 15.0,
+            "age_max": 18.0,
+            "high": 132.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "15",
+              "age_max": "Up to 18",
+              "high": "132"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours immunoassa y, 8 days lcms",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "osteoarthritis",
+      "name": "Osteoarthritis",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "O",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "ovarian-cyst-fna",
+      "name": "Ovarian cyst FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "O",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "ovary-antibodies",
+      "name": "Ovary antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "O",
+      "categories": [
+        "reproductive-hormones",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunofluorescence",
+        "reference_range": "Neg",
+        "interferences": "Patients may also have adrenal and thyroid antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 6, 95th percentile - 17",
+        "days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected premature ovarian failure (15-50% of patients have positive antibodies)",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Ovary-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "pancreatic-fna",
+      "name": "Pancreatic FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "P",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "paratesticular-fna",
+      "name": "Paratesticular FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "P",
+      "categories": [
+        "sexual-health-sti",
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "post-trachelectomy-cytology",
+      "name": "Post Trachelectomy Cytology",
+      "aliases": [],
+      "department": "Gynaecological Cytology",
+      "letter": "P",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "pregnancy-test-blood",
+      "name": "Pregnancy test (blood)",
+      "aliases": [],
+      "description": "Pseudonyms: beat Human chorionic gonadotrophin; βHCG; Pregnancy Test; Germ-cell Tumour marker Collection container (blood): Adults - serum (with gel separator, 4.9mL Sarstedt brown top) Paediatrics - lithium heparin plasma (1.2mL Sarstedt orange top tube) Collection container (urine): Adults - NOT AVAILABLE Paediatrics - Point-of-Care Testing (POCT) Specimen transport/special precautions: Urine pregnancy tests are performed as POCT tests across RMCH Method principle: The Roche electrochemiluminesence immunoassay ECLIA combines a sandwich antigen- antibody reaction with two hCG-specific monoclonal mouse antibodies (biotinylated and ruthenium-labelled) on the surface of a magnetic microbead. Biological reference ranges: Blood: Reported with the following comment: “QUANTITATIVE HCG USED AS A PREGNANCY TEST: A result of >25 IU/L would normally indicate a positive test. But a result of <25IU/L does not exclude early pregnancy.” Blood as a tumour marker: <3 months up to 50 IU/L >3 months female: up to 5 IU/L >3 months male: up to 3 IU/L Post-menopausal women: up to 8 IU/L hCG, produced in the placenta, partially passes the placental barrier. Newborn serum beta hCG concentrations are approximately1/400th of the corresponding maternal serum concentrations, resulting in Biochemistry neonate beta hCG levels of 10-50 IU/L at birth. Clearance half-life is approximately 2-3 days. Therefore, by 3 months of age, levels comparable to adults should be reached.",
+      "department": "Biochemistry",
+      "letter": "P",
+      "categories": [
+        "reproductive-hormones",
+        "antenatal-pregnancy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        }
+      ],
+      "analysis": {
+        "interferences": "A very low serum hCG does not exclude pregnancy. False negative results can occur in very early or abnormal pregnancy.\n\nAn ectopic pregnancy cannot be diagnosed using hCG alone. Levels should be repeated after 48h.\n\nhCG can be produced by non-germ cell tumours (e.g. small cell carcinoma of the lung). Because of the existence of multiple forms of hCG and their varying detection by different assay formulations, it is important to be aware of the stated characteristics of the assay used. Assays for oncological use should ideally detect all forms of hCG.\n\nThe “high-dose hook effect” means that occasionally very high levels (>1 to 2 million IU/L) may return apparently much lower values (typically in the hundreds). A result that is unexpected or does not fit the clinical picture must be checked on dilution."
+      },
+      "turnaround": {
+        "raw": "Blood: Urgent HCH results are available within 1 hour of receipt of the specimen in the laboratory. Otherwise results are typically available within four hours.",
+        "days": {
+          "min": 0.04,
+          "max": 0.04
+        }
+      },
+      "notes": "See HCG blood",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/01/Human-chorionic-gonadotrophin.pdf",
+        "detail_type": "pdf",
+        "last_updated": "June 2017",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.18,
+        "has_detail_sheet": true,
+        "present": [
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "progesterone",
+      "name": "Progesterone",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "P",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "nmol/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Progesterone",
+        "match_method": "exact",
+        "units": "nmol/L",
+        "notes": "No reference range, autocomment: Progesterone level >30 nmol/L on day 21/mid-luteal phase sample is consistent with ovulation"
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.27,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "prolactin",
+      "name": "Prolactin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "P",
+      "categories": [
+        "endocrinology",
+        "reproductive-hormones"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "mU/L",
+        "reference_range": "65 - 648 mU/L (adult; 24 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Prolactin",
+        "match_method": "exact",
+        "units": "mU/L",
+        "strata": [
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 86.0,
+            "high": 324.0,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "18",
+              "age_max": "150",
+              "low": "86",
+              "high": "324"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 17.0,
+            "low": 65.0,
+            "high": 648.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "12",
+              "age_max": "17",
+              "low": "65",
+              "high": "648"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 9.0,
+            "age_max": 11.0,
+            "low": 60.0,
+            "high": 750.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "9",
+              "age_max": "11",
+              "low": "60",
+              "high": "750"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 8.0,
+            "low": 69.0,
+            "high": 593.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "5",
+              "age_max": "8",
+              "low": "69",
+              "high": "593"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 2.0,
+            "age_max": 4.0,
+            "low": 82.0,
+            "high": 967.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "2",
+              "age_max": "4",
+              "low": "82",
+              "high": "967"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 1.0,
+            "low": 93.0,
+            "high": 1063.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "1",
+              "low": "93",
+              "high": "1063"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 9.0,
+            "age_max": 12.0,
+            "low": 148.0,
+            "high": 1105.0,
+            "raw": {
+              "age_unit": "Months",
+              "age_min": "9",
+              "age_max": "12",
+              "low": "148",
+              "high": "1105"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 6.0,
+            "age_max": 8.0,
+            "low": 121.0,
+            "high": 2213.0,
+            "raw": {
+              "age_unit": "Months",
+              "age_min": "6",
+              "age_max": "8",
+              "low": "121",
+              "high": "2213"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 3.0,
+            "age_max": 5.0,
+            "low": 113.0,
+            "high": 2813.0,
+            "raw": {
+              "age_unit": "Months",
+              "age_min": "3",
+              "age_max": "5",
+              "low": "113",
+              "high": "2813"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 61.0,
+            "age_max": 90.0,
+            "low": 151.0,
+            "high": 2820.0,
+            "raw": {
+              "age_unit": "Days",
+              "age_min": "61",
+              "age_max": "90",
+              "low": "151",
+              "high": "2820"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 31.0,
+            "age_max": 60.0,
+            "low": 689.0,
+            "high": 4208.0,
+            "raw": {
+              "age_unit": "Days",
+              "age_min": "31",
+              "age_max": "60",
+              "low": "689",
+              "high": "4208"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 30.0,
+            "low": 900.0,
+            "high": 6751.0,
+            "raw": {
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "30",
+              "low": "900",
+              "high": "6751"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 102.0,
+            "high": 496.0,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Years",
+              "age_min": "18",
+              "age_max": "150",
+              "low": "102",
+              "high": "496"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 17.0,
+            "low": 84.0,
+            "high": 813.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "12",
+              "age_max": "17",
+              "low": "84",
+              "high": "813"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 9.0,
+            "age_max": 11.0,
+            "low": 65.0,
+            "high": 740.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "9",
+              "age_max": "11",
+              "low": "65",
+              "high": "740"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 8.0,
+            "low": 66.0,
+            "high": 630.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "5",
+              "age_max": "8",
+              "low": "66",
+              "high": "630"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 2.0,
+            "age_max": 4.0,
+            "low": 81.0,
+            "high": 864.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "2",
+              "age_max": "4",
+              "low": "81",
+              "high": "864"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 1.0,
+            "low": 96.0,
+            "high": 1165.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "1",
+              "low": "96",
+              "high": "1165"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 9.0,
+            "age_max": 12.0,
+            "low": 148.0,
+            "high": 1105.0,
+            "raw": {
+              "age_unit": "Months",
+              "age_min": "9",
+              "age_max": "12",
+              "low": "148",
+              "high": "1105"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 6.0,
+            "age_max": 8.0,
+            "low": 121.0,
+            "high": 2213.0,
+            "raw": {
+              "age_unit": "Months",
+              "age_min": "6",
+              "age_max": "8",
+              "low": "121",
+              "high": "2213"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 3.0,
+            "age_max": 5.0,
+            "low": 113.0,
+            "high": 2813.0,
+            "raw": {
+              "age_unit": "Months",
+              "age_min": "3",
+              "age_max": "5",
+              "low": "113",
+              "high": "2813"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 61.0,
+            "age_max": 90.0,
+            "low": 151.0,
+            "high": 2820.0,
+            "raw": {
+              "age_unit": "Days",
+              "age_min": "61",
+              "age_max": "90",
+              "low": "151",
+              "high": "2820"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 31.0,
+            "age_max": 60.0,
+            "low": 689.0,
+            "high": 4208.0,
+            "raw": {
+              "age_unit": "Days",
+              "age_min": "31",
+              "age_max": "60",
+              "low": "689",
+              "high": "4208"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 30.0,
+            "low": 900.0,
+            "high": 6751.0,
+            "raw": {
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "30",
+              "low": "900",
+              "high": "6751"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "renal-fna",
+      "name": "Renal FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "R",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "retroperitoneal-mass-fna",
+      "name": "Retroperitoneal mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "R",
+      "categories": [
+        "cytology",
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "salivary-gland-fna",
+      "name": "Salivary gland FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "S",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "sero-negative-arthropathies",
+      "name": "Sero-negative arthropathies",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "S",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "sero-negative-spondylarthropathies",
+      "name": "Sero-negative spondylarthropathies",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "S",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "serum-17-hydroxyprogesterone",
+      "name": "Serum 17-hydroxyprogesterone",
+      "aliases": [
+        "17 OHP (serum)"
+      ],
+      "department": "Biochemistry",
+      "letter": "S",
+      "categories": [
+        "endocrinology",
+        "reproductive-hormones"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "nmol/L",
+        "reference_range": "<= 2.4 nmol/L (adult; 13 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "17-hydroxyprogesterone",
+        "match_method": "fuzzy:1.00",
+        "units": "nmol/L",
+        "strata": [
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_max": 1.0,
+            "high": 2.4,
+            "high_op": "lte",
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "N/A",
+              "age_max": "Up to 1",
+              "low": "None",
+              "high": "≤2.4"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 5.0,
+            "high": 2.6,
+            "high_op": "lte",
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "Up to 5",
+              "low": "None",
+              "high": "≤2.6"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 10.0,
+            "high": 2.1,
+            "high_op": "lte",
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "5",
+              "age_max": "Up to 10",
+              "low": "None",
+              "high": "≤2.1"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 10.0,
+            "age_max": 15.0,
+            "high": 3.9,
+            "high_op": "lte",
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "10",
+              "age_max": "Up to 15",
+              "low": "None",
+              "high": "≤3.9"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 15.0,
+            "age_max": 20.0,
+            "low": 1.3,
+            "high": 6.9,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "15",
+              "age_max": "Up to 20",
+              "low": "1.3",
+              "high": "6.9"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 20.0,
+            "age_max": 40.0,
+            "low": 0.9,
+            "high": 6.3,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "20",
+              "age_max": "Up to 40",
+              "low": "0.9",
+              "high": "6.3"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 40.0,
+            "age_max": 60.0,
+            "low": 0.7,
+            "high": 5.2,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "40",
+              "age_max": "Up to 60",
+              "low": "0.7",
+              "high": "5.2"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 60.0,
+            "age_max": 80.0,
+            "low": 0.7,
+            "high": 4.4,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "Years",
+              "age_min": "60",
+              "age_max": "Up to 80",
+              "low": "0.7",
+              "high": "4.4"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_max": 1.0,
+            "high": 2.3,
+            "high_op": "lte",
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Years",
+              "age_min": "N/A",
+              "age_max": "Up to 1",
+              "low": "None",
+              "high": "≤2.3"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 5.0,
+            "high": 1.9,
+            "high_op": "lte",
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "Up to 5",
+              "low": "None",
+              "high": "≤1.9"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 10.0,
+            "high": 1.8,
+            "high_op": "lte",
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Years",
+              "age_min": "5",
+              "age_max": "Up to 10",
+              "low": "None",
+              "high": "≤1.8"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 10.0,
+            "age_max": 15.0,
+            "high": 7.2,
+            "high_op": "lte",
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Years",
+              "age_min": "10",
+              "age_max": "Up to 15",
+              "low": "None",
+              "high": "≤7.2"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 15.0,
+            "low": 0.4,
+            "high": 5.0,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Years",
+              "age_min": "15",
+              "age_max": "unspecified",
+              "low": "0.4",
+              "high": "5"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "240 hours",
+        "days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "notes": "17-OHP",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "serum-ferritin",
+      "name": "Serum ferritin",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "S",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "12 - 150 μg/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Ferritin",
+        "match_method": "fuzzy:1.00",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "400"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "400"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "shbg",
+      "name": "SHBG",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "S",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "nmol/L",
+        "reference_range": "36 - 229 nmol/L (adult; 19 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Sex Hormone Binding Globulin (SHBG)",
+        "match_method": "abbreviation",
+        "units": "nmol/L",
+        "strata": [
+          {
+            "sex": "female",
+            "age_unit": "days",
+            "age_min": 4.0,
+            "age_max": 31.0,
+            "low": 14.0,
+            "high": 120.0,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "days",
+              "age_min": "4",
+              "age_max": "31",
+              "low": "14",
+              "high": "120"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 36.0,
+            "high": 229.0,
+            "raw": {
+              "age_unit": "months",
+              "age_min": "1",
+              "age_max": "12",
+              "low": "36",
+              "high": "229"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 7.0,
+            "low": 42.0,
+            "high": 189.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "1",
+              "age_max": "7 + 364 days",
+              "low": "42",
+              "high": "189"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 8.0,
+            "age_max": 10.0,
+            "low": 26.0,
+            "high": 162.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "8",
+              "age_max": "10 +364 days",
+              "low": "26",
+              "high": "162"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 11.0,
+            "age_max": 12.0,
+            "low": 15.0,
+            "high": 108.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "11",
+              "age_max": "12 + 364 days",
+              "low": "15",
+              "high": "108"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 13.0,
+            "age_max": 14.0,
+            "low": 11.0,
+            "high": 98.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "13",
+              "age_max": "14 +364 days",
+              "low": "11",
+              "high": "98"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 15.0,
+            "age_max": 16.0,
+            "low": 10.0,
+            "high": 84.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "15",
+              "age_max": "16 + 364 days",
+              "low": "10",
+              "high": "84"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 17.0,
+            "age_max": 17.0,
+            "low": 11.0,
+            "high": 155.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "17",
+              "age_max": "17 + 364 days",
+              "low": "11",
+              "high": "155"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 49.0,
+            "low": 32.0,
+            "high": 128.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "18",
+              "age_max": "49 + 364 days",
+              "low": "32",
+              "high": "128"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 50.0,
+            "low": 27.0,
+            "high": 128.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "≥50",
+              "age_max": "unspecified",
+              "low": "27",
+              "high": "128"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "days",
+            "age_min": 4.0,
+            "age_max": 31.0,
+            "low": 14.0,
+            "high": 120.0,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "days",
+              "age_min": "4",
+              "age_max": "31",
+              "low": "14",
+              "high": "120"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 36.0,
+            "high": 229.0,
+            "raw": {
+              "age_unit": "months",
+              "age_min": "1",
+              "age_max": "12",
+              "low": "36",
+              "high": "229"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 7.0,
+            "low": 42.0,
+            "high": 189.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "1",
+              "age_max": "7 + 364 days",
+              "low": "42",
+              "high": "189"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 8.0,
+            "age_max": 10.0,
+            "low": 26.0,
+            "high": 162.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "8",
+              "age_max": "10 + 364 days",
+              "low": "26",
+              "high": "162"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 11.0,
+            "age_max": 12.0,
+            "low": 15.0,
+            "high": 108.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "11",
+              "age_max": "12 + 364 days",
+              "low": "15",
+              "high": "108"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 13.0,
+            "age_max": 14.0,
+            "low": 11.0,
+            "high": 98.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "13",
+              "age_max": "14 + 364 days",
+              "low": "11",
+              "high": "98"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 15.0,
+            "age_max": 17.0,
+            "low": 10.0,
+            "high": 50.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "15",
+              "age_max": "17 + 364 days",
+              "low": "10",
+              "high": "50"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 49.0,
+            "low": 18.0,
+            "high": 54.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "18",
+              "age_max": "49 + 364 days",
+              "low": "18",
+              "high": "54"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 50.0,
+            "low": 21.0,
+            "high": 77.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "≥50",
+              "age_max": "unspecified",
+              "low": "21",
+              "high": "77"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "240 hours",
+        "days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "splenic-fna",
+      "name": "Splenic FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "S",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "subcutaneous-mass-fna",
+      "name": "Subcutaneous mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "S",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "testicular-fna",
+      "name": "Testicular FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "T",
+      "categories": [
+        "sexual-health-sti",
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "testis-antibodies",
+      "name": "Testis antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "T",
+      "categories": [
+        "reproductive-hormones",
+        "autoimmunity",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunofluorescence",
+        "reference_range": "Negative",
+        "interferences": "Patients may also have adrenal, thyroid and islet cell antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 6, 95th percentile - 17",
+        "days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "clinical": {
+        "indications": "Infertility, endocrine polyglandular disorders",
+        "repeat_frequency": "significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Testis-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "testosterone",
+      "name": "Testosterone",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "T",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "nmol/L",
+        "reference_range": "6.7 - 25.7 nmol/L (adult; 2 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Testosterone (Roche)",
+        "match_method": "exact",
+        "units": "nmol/L",
+        "strata": [
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 49.0,
+            "low": 8.6,
+            "high": 29.0,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "years",
+              "age_min": "18",
+              "age_max": "49 + 364 days",
+              "low": "8.6",
+              "high": "29"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 50.0,
+            "low": 6.7,
+            "high": 25.7,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "≥50",
+              "age_max": "unspecified",
+              "low": "6.7",
+              "high": "25.7"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "240 hours",
+        "days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "thyroid-fna",
+      "name": "Thyroid FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "T",
+      "categories": [
+        "thyroid",
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": false
+        },
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "thyroid-stimulating-hormone",
+      "name": "Thyroid Stimulating Hormone",
+      "aliases": [
+        "TSH"
+      ],
+      "department": "Biochemistry",
+      "letter": "T",
+      "categories": [
+        "thyroid",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mu/L",
+        "reference_range": "0.27 - 4.2 mu/L (adult; 7 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Thyroid Stimulating Hormone (TSH)",
+        "match_method": "exact",
+        "units": "mu/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 0.27,
+            "high": 4.2,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥18",
+              "age_max": "150",
+              "low": "0.27",
+              "high": "4.2"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 18.0,
+            "low": 0.27,
+            "high": 4.2,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥12",
+              "age_max": "<18",
+              "low": "0.27",
+              "high": "4.2"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 7.0,
+            "age_max": 12.0,
+            "low": 0.6,
+            "high": 4.84,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥7",
+              "age_max": "<12",
+              "low": "0.6",
+              "high": "4.84"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 7.0,
+            "low": 0.7,
+            "high": 5.97,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥1",
+              "age_max": "<7",
+              "low": "0.7",
+              "high": "5.97"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "months",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 1.02,
+            "high": 6.8,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Months",
+              "age_min": "≥1",
+              "age_max": "<12",
+              "low": "1.02",
+              "high": "6.8"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 4.0,
+            "age_max": 30.0,
+            "low": 1.23,
+            "high": 9.7,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Days",
+              "age_min": "≥4",
+              "age_max": "<30",
+              "low": "1.23",
+              "high": "9.7"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 3.0,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "days",
+              "age_min": "≥0",
+              "age_max": "≤3",
+              "low": "No ranges"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "notes": "TSH",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "ureteric-washing",
+      "name": "Ureteric washing",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "U",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "urethral-washing",
+      "name": "Urethral washing",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "U",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "vault-cytology",
+      "name": "Vault Cytology",
+      "aliases": [],
+      "department": "Gynaecological Cytology",
+      "letter": "V",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "vulval-cytology",
+      "name": "Vulval Cytology",
+      "aliases": [],
+      "department": "Gynaecological Cytology",
+      "letter": "V",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "wear-and-or-loosening-of-prosthetic-joints",
+      "name": "Wear and/or loosening of prosthetic joints",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "W",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    }
+  ]
+}

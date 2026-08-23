@@ -1,0 +1,59 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Laboratory Medicine Care Division 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+Liver Autoantibody Screen 
+ 
+General information 
+ 
+Smooth muscle antibodies at a high titre are associated with chronic active hepatitis, and at low titres are 
+more likely to be triggered by infection. Mitochondrial antibodies are associated with primary biliary 
+cirrhosis. 
+ 
+Further information on interpretation of autoantibody patterns: Autoimmune Hepatitis: Serum 
+Autoantibodies in Clinical Practice - PMC (nih.gov) 
+ 
+Specimen transport: At room temperature 
+ 
+Repeat frequency: At significant change of clinical symptoms 
+ 
+Special precautions: None 
+ 
+Laboratory information 
+ 
+Analytes: Smooth muscle antibodies, mitochondrial antibodies, liver kidney microsomal (LKM) antibodies, 
+and gastric parietal cell (GPC) antibodies 
+ 
+Normal reference range: Negative 
+ 
+Volume and sample type: 4ml serum 
+ 
+Method: Immunofluorescence 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median – 3 
+ 
+Participation in EQA scheme: UK NEQAS for Liver Antibodies & UK NEQAS for Anaemia Related Antigens 
+ 
+Clinical information 
+ 
+Indications for the test: 
+Gastric parietal cells: Pernicious anaemia (PA), atrophic gastritis and are seen in 5-10% of healthy individuals. 
+Present in the early stages of PA, frequently diminish with disease progression. 
+ 
+Factors affecting the test: Unable to determine gastric parietal cell antibodies in the presence of 
+mitochondrial antibodies. 
+ 
+ 
+(Last updated August 2026) 

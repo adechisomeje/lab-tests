@@ -1,0 +1,1047 @@
+{
+  "$comment": "Clinical domain categories. Rules are transparent and editable: a test joins a category if any name_any substring hits its name/aliases, any text_any substring hits its description/indications, or its department is listed in department_any -- unless an exclude_* rule fires. All matching is case-insensitive substring matching.",
+  "version": "0.1.0",
+  "categories": [
+    {
+      "id": "haematology",
+      "name": "Haematology",
+      "description": "Blood counts, morphology and red/white cell disorders.",
+      "match": {
+        "name_any": [
+          "full blood count",
+          "fbc",
+          "blood film",
+          "reticulocyte",
+          "esr",
+          "erythrocyte sedimentation",
+          "plasma viscosity",
+          "haptoglob",
+          "g6pd",
+          "eosinophil",
+          "leucocyte",
+          "white cell",
+          "platelet count",
+          "manual blood film",
+          "cold agglutinin"
+        ],
+        "department_any": [
+          "Haematology"
+        ]
+      }
+    },
+    {
+      "id": "coagulation",
+      "name": "Coagulation & Haemostasis",
+      "description": "Clotting screens, factor assays, anticoagulant monitoring and thrombophilia.",
+      "match": {
+        "name_any": [
+          "aptt",
+          "activated partial thromboplastin",
+          "prothrombin time",
+          "inr",
+          "anticoagulant control",
+          "antithrombin",
+          "fibrinogen",
+          "d-dimer",
+          "fibrin degradation",
+          "factor ii",
+          "factor v",
+          "factor vii",
+          "factor viii",
+          "factor ix",
+          "factor x",
+          "factor xi",
+          "factor xii",
+          "protein c",
+          "protein s",
+          "lupus anticoagulant",
+          "bleeding time",
+          "platelets aggregation",
+          "ristocetin",
+          "ripa",
+          "heparin control",
+          "thrombophilia",
+          "von willebrand"
+        ]
+      }
+    },
+    {
+      "id": "transfusion",
+      "name": "Transfusion Medicine",
+      "description": "Blood grouping, compatibility testing and antenatal transfusion serology.",
+      "match": {
+        "name_any": [
+          "blood group",
+          "cross match",
+          "crossmatch",
+          "antibody screen and save",
+          "antibody titre",
+          "direct antiglobulin",
+          "blood transfusion",
+          "kleihauer",
+          "cord blood",
+          "group and save"
+        ]
+      }
+    },
+    {
+      "id": "clinical-chemistry",
+      "name": "General Clinical Chemistry",
+      "description": "Core serum chemistry: electrolytes, proteins, enzymes and acid-base.",
+      "match": {
+        "name_any": [
+          "sodium",
+          "potassium",
+          "chloride",
+          "bicarbonate",
+          "urea",
+          "anion-gap",
+          "osmolality",
+          "osmolar gap",
+          "total protein",
+          "albumin",
+          "acid base",
+          "electrolytes",
+          "ph (blood",
+          "magnesium",
+          "lactate",
+          "ammonia",
+          "cholinesterase",
+          "orosomucoid"
+        ],
+        "department_any": [
+          "Biochemistry"
+        ]
+      }
+    },
+    {
+      "id": "renal-function",
+      "name": "Renal Function",
+      "description": "Kidney function, filtration rate and urinary protein assessment.",
+      "match": {
+        "name_any": [
+          "creatinine",
+          "egfr",
+          "estimated gfr",
+          "cystatin c",
+          "acute kidney injury",
+          "albumin creatinine ratio",
+          "albumin excretion",
+          "micro albumin",
+          "creatinine clearance",
+          "urate",
+          "renin",
+          "aldosterone",
+          "pla2r",
+          "glomerular basement membrane"
+        ]
+      }
+    },
+    {
+      "id": "liver-function",
+      "name": "Liver Function & Hepatology",
+      "description": "Hepatic enzymes, bilirubin, synthetic function and liver autoimmunity.",
+      "match": {
+        "name_any": [
+          "liver function",
+          "alanine aminotransferase",
+          "aspartate aminotransferase",
+          "aminotransferase",
+          "alkaline phosphatase",
+          "alkaline phosphate",
+          "gamma-glutamyl",
+          "bilirubin",
+          "bile acids",
+          "caeruloplasmin",
+          "alpha-1-antitrypsin",
+          "liver autoantibody",
+          "smooth muscle mitochondrial",
+          "procollagen iii",
+          "ammonia"
+        ]
+      }
+    },
+    {
+      "id": "bone-metabolism",
+      "name": "Bone & Mineral Metabolism",
+      "description": "Calcium homeostasis, vitamin D, parathyroid function and bone turnover markers.",
+      "match": {
+        "name_any": [
+          "calcium",
+          "phosphate",
+          "parathyroid hormone",
+          "vitamin d",
+          "dihydroxy vitamin d",
+          "ctx",
+          "procollagen n terminal",
+          "alkaline phosphate isoenzymes",
+          "bone turnover"
+        ]
+      }
+    },
+    {
+      "id": "endocrinology",
+      "name": "Endocrinology",
+      "description": "Pituitary, adrenal and general hormone axis testing.",
+      "match": {
+        "name_any": [
+          "cortisol",
+          "growth hormone",
+          "insulin-like growth factor",
+          "acth",
+          "prolactin",
+          "aldosterone",
+          "renin",
+          "androstenedione",
+          "17-hydroxyprogesterone",
+          "17 ohp",
+          "metadrenaline",
+          "catecholamine",
+          "dhea",
+          "c-peptide",
+          "dynamic function"
+        ]
+      }
+    },
+    {
+      "id": "thyroid",
+      "name": "Thyroid Function",
+      "description": "Thyroid hormones, TSH and thyroid autoantibodies.",
+      "match": {
+        "name_any": [
+          "thyroid",
+          "tsh",
+          "thyroxine",
+          "tri-iodothyronine",
+          "triiodothyronine",
+          "free t3",
+          "free t4",
+          "tpo",
+          "thyroid peroxidase",
+          "tsh receptor"
+        ]
+      }
+    },
+    {
+      "id": "reproductive-hormones",
+      "name": "Reproductive Hormones & Fertility",
+      "description": "Sex steroids, gonadotrophins and ovarian reserve markers.",
+      "match": {
+        "name_any": [
+          "testosterone",
+          "oestradiol",
+          "estradiol",
+          "progesterone",
+          "follicle stimulating",
+          "luteinising hormone",
+          "luteinizing hormone",
+          "anti-müllerian",
+          "anti-mullerian",
+          "amh",
+          "shbg",
+          "sex hormone binding",
+          "prolactin",
+          "hcg",
+          "pregnancy test",
+          "ovary antibodies",
+          "testis antibodies",
+          "semen"
+        ]
+      }
+    },
+    {
+      "id": "diabetes-metabolic",
+      "name": "Diabetes & Metabolic",
+      "description": "Glycaemic control, insulin dynamics and diabetes autoimmunity.",
+      "match": {
+        "name_any": [
+          "glucose",
+          "glycated haemoglobin",
+          "hba1c",
+          "insulin",
+          "c-peptide",
+          "beta hydroxybutyrate",
+          "ketone",
+          "autoimmune diabetes",
+          "glutamic acid decarboxylase",
+          "zinc transporter 8",
+          "znt8",
+          "ia2",
+          "insulin antibodies",
+          "free fatty acids"
+        ]
+      }
+    },
+    {
+      "id": "lipids-cardiovascular",
+      "name": "Lipids & Cardiovascular Risk",
+      "description": "Cholesterol fractions, triglycerides and cardiovascular risk profiling.",
+      "match": {
+        "name_any": [
+          "cholesterol",
+          "lipid profile",
+          "triglyceride",
+          "hdl",
+          "ldl",
+          "lipoprotein",
+          "apolipoprotein"
+        ]
+      }
+    },
+    {
+      "id": "cardiac-markers",
+      "name": "Cardiac Markers",
+      "description": "Myocardial injury and heart failure biomarkers.",
+      "match": {
+        "name_any": [
+          "troponin",
+          "bnp",
+          "nt-probnp",
+          "creatine kinase",
+          "cardiac muscle antibodies",
+          "myoglobin"
+        ]
+      }
+    },
+    {
+      "id": "nutrition-micronutrients",
+      "name": "Nutrition & Micronutrients",
+      "description": "Haematinics, vitamins and nutritional status markers.",
+      "match": {
+        "name_any": [
+          "ferritin",
+          "vitamin b12",
+          "folate",
+          "iron",
+          "transferrin",
+          "haematinics",
+          "intrinisic factor",
+          "intrinsic factor",
+          "vitamin a",
+          "vitamin d",
+          "vitamin e",
+          "tocopherol",
+          "retinol",
+          "zinc",
+          "selenium",
+          "copper",
+          "magnesium"
+        ],
+        "exclude_name_any": [
+          "zinc transporter"
+        ]
+      }
+    },
+    {
+      "id": "trace-elements-toxicology",
+      "name": "Trace Elements & Metals",
+      "description": "Metal and trace element quantification, including implant surveillance.",
+      "match": {
+        "name_any": [
+          "chromium",
+          "cobalt",
+          "copper",
+          "selenium",
+          "zinc",
+          "lead",
+          "mercury",
+          "aluminium",
+          "manganese"
+        ],
+        "exclude_name_any": [
+          "zinc transporter"
+        ]
+      }
+    },
+    {
+      "id": "therapeutic-drug-monitoring",
+      "name": "Therapeutic Drug Monitoring",
+      "description": "Drug level measurement to guide dosing and avoid toxicity.",
+      "match": {
+        "name_any": [
+          "amikacin",
+          "gentamicin",
+          "tobramycin",
+          "vancomycin",
+          "digoxin",
+          "lithium",
+          "carbamazepine",
+          "phenytoin",
+          "phenobarbitone",
+          "valproate",
+          "lamotrigine",
+          "theophylline",
+          "methotrexate",
+          "ciclosporin",
+          "cyclosporin",
+          "tacrolimus",
+          "sirolimus",
+          "busulphan",
+          "thiopental",
+          "thiopurine",
+          "tpmt",
+          "anti-tnf",
+          "infliximab",
+          "adalimumab",
+          "therapeutic drug"
+        ]
+      }
+    },
+    {
+      "id": "toxicology",
+      "name": "Toxicology & Drugs of Abuse",
+      "description": "Poisoning, overdose and substance misuse screening.",
+      "match": {
+        "name_any": [
+          "paracetamol",
+          "salicylate",
+          "drugs of abuse",
+          "ethanol",
+          "alcohol",
+          "carboxyhaemoglobin",
+          "met-haemoglobin",
+          "chain-of-custody",
+          "toxicology"
+        ]
+      }
+    },
+    {
+      "id": "tumour-markers",
+      "name": "Tumour Markers",
+      "description": "Serum markers used in cancer detection and monitoring.",
+      "match": {
+        "name_any": [
+          "ca125",
+          "cea",
+          "afp",
+          "prostate specific antigen",
+          "psa",
+          "tumour marker",
+          "ß2 microglobulin",
+          "b2 microglobulin",
+          "beta 2 microglobulin",
+          "paraneoplastic"
+        ]
+      }
+    },
+    {
+      "id": "autoimmunity",
+      "name": "Autoimmunity & Autoantibodies",
+      "description": "Autoantibody testing for systemic and organ-specific autoimmune disease.",
+      "match": {
+        "name_any": [
+          "antinuclear",
+          "ana",
+          "anca",
+          "double stranded dna",
+          "crithidia",
+          "rheumatoid factor",
+          "cyclic citrullinated",
+          "ccp",
+          "cardiolipin",
+          "beta 2 glycoprotein",
+          "myositis",
+          "histone",
+          "adrenal antibody",
+          "skin antibodies",
+          "coeliac",
+          "gliadin",
+          "endomysial",
+          "liver autoantibody",
+          "myeloperoxidase",
+          "pr3",
+          "extended sclerosis",
+          "scleroderma",
+          "antibod"
+        ],
+        "department_any": [
+          "Immunology"
+        ],
+        "exclude_name_any": [
+          "cd34",
+          "cd4 count",
+          "stem cells",
+          "hepatitis",
+          "hbv",
+          "hcv",
+          "hiv",
+          "syphilis",
+          "treponema",
+          "measles",
+          "mumps",
+          "rubella",
+          "varicella",
+          "zoster",
+          "cytomegalovirus",
+          "cmv",
+          "epstein barr",
+          "ebv",
+          "toxoplasma",
+          "parvovirus",
+          "htlv",
+          "lyme",
+          "brucella",
+          "legionella",
+          "streptococcal",
+          "staphylococcal",
+          "q fever",
+          "campylobacter",
+          "leptospira",
+          "bartonella",
+          "ehrlichia",
+          "precipitins",
+          "quantiferon",
+          "gamma interferon"
+        ]
+      }
+    },
+    {
+      "id": "allergy",
+      "name": "Allergy",
+      "description": "IgE-mediated allergy and mast cell activation testing.",
+      "match": {
+        "name_any": [
+          "allergen specific ige",
+          "ige (total)",
+          "total ige",
+          "mast cell tryptase",
+          "tryptase",
+          "precipitins",
+          "farmer's lung",
+          "avian precipitins",
+          "aspergillus fumigatus precipitins"
+        ]
+      }
+    },
+    {
+      "id": "immunodeficiency",
+      "name": "Immunodeficiency & Cellular Immunology",
+      "description": "Lymphocyte subsets, neutrophil function and primary immunodeficiency workup.",
+      "match": {
+        "name_any": [
+          "lymphocyte subsets",
+          "immunodeficiency",
+          "cd4 count",
+          "t cell count",
+          "cd34",
+          "stem cells",
+          "neutrophil function",
+          "dhr",
+          "leukocyte adhesion",
+          "l-selectin",
+          "double negative t cell",
+          "t cell activation",
+          "b cell maturation",
+          "naïve memory",
+          "naive memory",
+          "immunoglobulins",
+          "igg subclasses",
+          "immunoglobulin d",
+          "free light chains",
+          "mannose binding lectin"
+        ]
+      }
+    },
+    {
+      "id": "complement",
+      "name": "Complement",
+      "description": "Complement pathway components, function and regulatory proteins.",
+      "match": {
+        "name_any": [
+          "complement",
+          "c1q",
+          "c1 esterase",
+          "c3 nephritic",
+          "ch50",
+          "ap100",
+          "haemolytic complement"
+        ]
+      }
+    },
+    {
+      "id": "protein-electrophoresis",
+      "name": "Protein Electrophoresis & Paraproteins",
+      "description": "Serum/urine electrophoresis, immunofixation and light chain analysis.",
+      "match": {
+        "name_any": [
+          "protein electrophoresis",
+          "immunofixation",
+          "bence jones",
+          "urinary light chains",
+          "free light chains",
+          "paraprotein",
+          "cryoglobulin"
+        ]
+      }
+    },
+    {
+      "id": "infectious-disease-serology",
+      "name": "Infectious Disease Serology",
+      "description": "Antibody and antigen testing for infectious agents.",
+      "match": {
+        "name_any": [
+          "serology",
+          "igg",
+          "igm",
+          "antibody",
+          "antigen",
+          "avidity",
+          "precipitin",
+          "quantiferon",
+          "gamma interferon"
+        ],
+        "department_any": [
+          "Virology",
+          "Vaccine Evaluation Unit"
+        ]
+      }
+    },
+    {
+      "id": "virology",
+      "name": "Virology",
+      "description": "Viral detection, serology and viral load monitoring.",
+      "match": {
+        "name_any": [
+          "virus",
+          "viral",
+          "cmv",
+          "cytomegalovirus",
+          "ebv",
+          "epstein barr",
+          "hiv",
+          "hepatitis",
+          "measles",
+          "mumps",
+          "rubella",
+          "varicella",
+          "zoster",
+          "parvovirus",
+          "adenovirus",
+          "norovirus",
+          "rotavirus",
+          "influenza",
+          "sars-cov",
+          "covid",
+          "respiratory syncytial",
+          "rsv",
+          "herpes",
+          "hsv",
+          "htlv",
+          "mpox",
+          "orthopox",
+          "bk virus",
+          "jc virus",
+          "enterovirus",
+          "parechovirus",
+          "polyoma"
+        ],
+        "department_any": [
+          "Virology"
+        ]
+      }
+    },
+    {
+      "id": "bacteriology",
+      "name": "Bacteriology",
+      "description": "Bacterial culture, identification and susceptibility testing.",
+      "match": {
+        "name_any": [
+          "culture",
+          "swab",
+          "wound",
+          "abscess",
+          "urine culture",
+          "msu",
+          "sputum",
+          "blood culture",
+          "antimicrobial susceptibility",
+          "mrsa",
+          "clostridi",
+          "salmonella",
+          "shigella",
+          "campylobacter",
+          "legionella",
+          "pneumococcal",
+          "streptococc",
+          "staphylococc",
+          "neisseria",
+          "meningococc",
+          "tuberculosis",
+          "mycobacter",
+          "helicobacter",
+          "bacteriolog"
+        ],
+        "department_any": [
+          "Bacteriology",
+          "Microbiology",
+          "Meningococcal Reference Unit"
+        ]
+      }
+    },
+    {
+      "id": "mycology",
+      "name": "Mycology",
+      "description": "Fungal culture, identification and antifungal susceptibility.",
+      "match": {
+        "name_any": [
+          "fungal",
+          "fungi",
+          "mycolog",
+          "candida",
+          "aspergillus",
+          "cryptococc",
+          "dermatophyte",
+          "yeast",
+          "mould",
+          "galactomannan",
+          "histoplasma",
+          "blastomyces",
+          "coccidioides",
+          "skin scraping",
+          "nail clipping",
+          "hair sample"
+        ],
+        "department_any": [
+          "Mycology"
+        ]
+      }
+    },
+    {
+      "id": "parasitology",
+      "name": "Parasitology",
+      "description": "Parasite detection in blood, stool and tissue.",
+      "match": {
+        "name_any": [
+          "parasit",
+          "malaria",
+          "ova, cysts",
+          "ova cysts",
+          "cryptosporidium",
+          "giardia",
+          "entamoeba",
+          "schistosom",
+          "filaria",
+          "toxoplasma",
+          "leishman",
+          "trypanosom",
+          "worm",
+          "helminth"
+        ]
+      }
+    },
+    {
+      "id": "molecular-microbiology",
+      "name": "Molecular Microbiology",
+      "description": "PCR and nucleic acid amplification for infectious agents.",
+      "match": {
+        "name_any": [
+          "pcr",
+          "nucleic acid",
+          "genotype",
+          "viral load",
+          "rna screening",
+          "molecular"
+        ],
+        "department_any": [
+          "Molecular Microbiology"
+        ]
+      }
+    },
+    {
+      "id": "sexual-health-sti",
+      "name": "Sexual Health & STI",
+      "description": "Sexually transmitted infection screening and confirmation.",
+      "match": {
+        "name_any": [
+          "hiv",
+          "syphilis",
+          "treponema",
+          "chlamydia",
+          "gonorrh",
+          "trichomonas",
+          "herpes simplex",
+          "genital",
+          "hepatitis b",
+          "hepatitis c",
+          "sti"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis",
+      "name": "Viral Hepatitis",
+      "description": "Hepatitis A-E serology, antigen and molecular testing.",
+      "match": {
+        "name_any": [
+          "hepatitis",
+          "hbsag",
+          "anti-hbc",
+          "anti-hbe",
+          "hbeag",
+          "hcv",
+          "hbv",
+          "hav"
+        ]
+      }
+    },
+    {
+      "id": "antenatal-pregnancy",
+      "name": "Antenatal & Pregnancy",
+      "description": "Screening and monitoring in pregnancy.",
+      "match": {
+        "name_any": [
+          "antenatal",
+          "pregnancy test",
+          "hcg",
+          "kleihauer",
+          "cord blood",
+          "plgf",
+          "rubella igg",
+          "universal antenatal",
+          "maternal"
+        ]
+      }
+    },
+    {
+      "id": "haemoglobinopathy",
+      "name": "Haemoglobinopathy",
+      "description": "Sickle cell, thalassaemia and haemoglobin variant screening.",
+      "match": {
+        "name_any": [
+          "haemoglobinopathy",
+          "hbs screening",
+          "sickle",
+          "thalassaem",
+          "haemoglobin variant",
+          "dna testing for the haemoglobinopathies"
+        ]
+      }
+    },
+    {
+      "id": "genetics-molecular",
+      "name": "Genetics & Molecular Diagnostics",
+      "description": "Germline and somatic genetic testing.",
+      "match": {
+        "name_any": [
+          "mutation",
+          "genotyping",
+          "genotype",
+          "dna testing",
+          "factor v leiden",
+          "prothrombin g20210a",
+          "haemochromatosis",
+          "hfe",
+          "c282y",
+          "h63d",
+          "tpmt",
+          "gene"
+        ]
+      }
+    },
+    {
+      "id": "flow-cytometry",
+      "name": "Flow Cytometry",
+      "description": "Cell surface marker analysis and haemato-oncology panels.",
+      "match": {
+        "name_any": [
+          "acute leukaemia panel",
+          "chronic lymphocytic",
+          "lymphoma panel",
+          "b cell maturation",
+          "t cell activation",
+          "double negative t cell",
+          "cd34",
+          "cd4 count",
+          "lymphocyte subsets",
+          "platelet glycoprotein",
+          "ema binding",
+          "flow cytometry",
+          "immunophenotyp"
+        ]
+      }
+    },
+    {
+      "id": "cytology",
+      "name": "Cytology",
+      "description": "Cervical, non-gynaecological and fluid cytology.",
+      "match": {
+        "department_any": [
+          "Non-Gynaecology Cytology",
+          "Gynaecological Cytology",
+          "Synovial Fluid Cytology"
+        ],
+        "name_any": [
+          "cytology",
+          "fna",
+          "fine needle",
+          "smear",
+          "cervical sample"
+        ]
+      }
+    },
+    {
+      "id": "histopathology",
+      "name": "Histopathology",
+      "description": "Tissue diagnosis, biopsy and surgical specimen reporting.",
+      "match": {
+        "department_any": [
+          "Histopathology"
+        ],
+        "name_any": [
+          "histopathology",
+          "biopsy",
+          "tissue",
+          "frozen section",
+          "post mortem",
+          "muscle biopsy",
+          "renal biopsy"
+        ]
+      }
+    },
+    {
+      "id": "csf-and-fluids",
+      "name": "CSF & Body Fluids",
+      "description": "Cerebrospinal, synovial, pleural and other body fluid analysis.",
+      "match": {
+        "name_any": [
+          "csf",
+          "cerebrospinal",
+          "synovial",
+          "pleural",
+          "ascitic",
+          "peritoneal",
+          "xanthochromia",
+          "sterile fluid",
+          "joint fluid"
+        ]
+      }
+    },
+    {
+      "id": "gastrointestinal",
+      "name": "Gastrointestinal",
+      "description": "Gut function, malabsorption and faecal testing.",
+      "match": {
+        "name_any": [
+          "faecal",
+          "faeces",
+          "calprotectin",
+          "elastase",
+          "reducing substances",
+          "jejunal disaccharidases",
+          "breath hydrogen",
+          "coeliac",
+          "faecal immunochemical",
+          "fit",
+          "stool",
+          "enteric"
+        ]
+      }
+    },
+    {
+      "id": "inflammation-markers",
+      "name": "Inflammation Markers",
+      "description": "Acute phase reactants and general markers of inflammation.",
+      "match": {
+        "name_any": [
+          "c-reactive protein",
+          "crp",
+          "esr",
+          "erythrocyte sedimentation",
+          "procalcitonin",
+          "plasma viscosity",
+          "orosomucoid",
+          "serum amyloid"
+        ]
+      }
+    },
+    {
+      "id": "neurology-antibodies",
+      "name": "Neurological Antibodies",
+      "description": "Antibody testing in autoimmune and paraneoplastic neurological disease.",
+      "match": {
+        "name_any": [
+          "acetyl choline receptor",
+          "acetylcholine receptor",
+          "musk",
+          "muscle specific tyrosine",
+          "aquaporin",
+          "nmo",
+          "nmda",
+          "caspr",
+          "lgi1",
+          "gabab",
+          "ampa receptor",
+          "ganglioside",
+          "myelin",
+          "mog",
+          "mag",
+          "basal ganglia",
+          "voltage-gated",
+          "paraneoplastic",
+          "neuronal antibodies"
+        ]
+      }
+    },
+    {
+      "id": "rheumatology",
+      "name": "Rheumatology & Connective Tissue",
+      "description": "Testing for inflammatory arthritis and connective tissue disease.",
+      "match": {
+        "name_any": [
+          "rheumatoid factor",
+          "cyclic citrullinated",
+          "ccp",
+          "antinuclear",
+          "double stranded dna",
+          "myositis",
+          "extended sclerosis",
+          "scleroderma",
+          "urate",
+          "synovial",
+          "hla-b27",
+          "anca"
+        ]
+      }
+    },
+    {
+      "id": "transplant-monitoring",
+      "name": "Transplant Monitoring",
+      "description": "Immunosuppressant levels and post-transplant infection surveillance.",
+      "match": {
+        "name_any": [
+          "tacrolimus",
+          "ciclosporin",
+          "cyclosporin",
+          "sirolimus",
+          "bk virus",
+          "cmv",
+          "ebv",
+          "transplant",
+          "donor"
+        ]
+      }
+    },
+    {
+      "id": "respiratory",
+      "name": "Respiratory",
+      "description": "Respiratory infection and lung-related immunology.",
+      "match": {
+        "name_any": [
+          "respiratory",
+          "sputum",
+          "bronchoalveolar",
+          "bal",
+          "legionella",
+          "pneumococcal",
+          "influenza",
+          "pertussis",
+          "aspergillus",
+          "farmer's lung",
+          "avian precipitins",
+          "tuberculosis",
+          "quantiferon"
+        ]
+      }
+    }
+  ]
+}

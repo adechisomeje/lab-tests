@@ -1,0 +1,89 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/2 
+L-Selectin Shedding assay 
+ 
+General information 
+ 
+L-selectin shedding from the surface of leucocytes is a marker of activation. Toll-like receptors (TLRs) employ 
+complex signalling pathways to generate an appropriate response to bacteria and viruses. A defect in these 
+pathways can result in an impaired or absent immune response. This test is used to measure the amount of 
+L-Selectin (CD62L) shed from the surface of neutrophils before and after stimulation of the TLR pathway. The 
+test can help identify patients with defects in their toll-like receptor signalling pathway and can be used to 
+diagnose IRAK-4, MyD88 and UNC93B deficiency. 
+ 
+Assay Interferences: Blood anticoagulated with EDTA preservative is not acceptable as it is acts as a calcium 
+chelator (most cellular functions require calcium) therefore sub optimal results may be generated. 
+Quality of the sample received: Pre-activation of the samples can occur due to for example, infection or 
+inadvertent activation caused by sample collection or transport to the lab with a concomitant reduction in 
+CD62L expression. 
+ 
+Laboratory information 
+ 
+Units: % of neutrophils positive for CD62L expression 
+ 
+Specimen type: A minimum of 1ml blood in preservative-free heparin, with the sample <8hrs old. The 
+department should be notified prior to venepuncture of the intention to request a L-Selectin shedding test 
+(phone: 0161-276-6440 or extension 66440). In order to obtain a fresh uncompromised sample the whole 
+blood for this assay must be received in a sterile universal container of preservative free heparin (10 
+units/mL). An age matched quality control sample from a normal donor should be supplied along with the 
+patient’s sample. 
+ 
+Frequency of analysis: Repeat only indicated if the test has failed (particularly if the control sample has 
+failed). 
+ 
+Turnaround times (calendar days from sample receipt to authorised result): Mean - 2. 
+ 
+Specimen transport: At room temperature. Sample must be received <8hrs old and before 12 noon on 
+weekdays only (not including bank holidays) to allow for processing and analysis. 
+ 
+Method: Flow cytometry 
+ 
+Participation in EQA Scheme: An EQA scheme is not available for this assay 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/2 
+Clinical Information 
+ 
+Reference range: A normal healthy patient sample should have >80% CD62L expression on the un-stimulated 
+cells and shed <10% CD62L in response to all TLR agonists. The cell activator, Phorbol myristate acetate 
+(PMA) is included as a positive control. 
+ 
+Interpretation: Patients with IRAK-4 or MyD88 deficiency will still express CD62L after treatment with 
+lipopolysaccharide (LPS, TLR4 agonist) and the compound CL097 (TLR7/8 agonist) but have lost CD62L 
+expression as a result of treatment with PMA. UNC-93B deficient patients will still express CD62L with CL097 
+but have lost CD62L with both LPS and PMA. 
+ 
+ 
+(Last updated February 2024) 

@@ -1,0 +1,58 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+EMA Binding Assay (HS Screen) 
+ 
+General information 
+ 
+The assay is useful in the diagnosis of Hereditary Spherocytosis (HS). The results should be interpreted 
+alongside a full blood count and morphological assessment of a peripheral blood film. These are not 
+performed by this laboratory and must be interpreted as per local guidelines.    
+ 
+Specimen transport: At room temperature. 
+ 
+Repeat frequency:  At significant change of clinical symptoms, or if the patient is <6 months of age and the 
+results are not consistent with the clinical pattern please repeat when >6 months of age. 
+ 
+Special precautions: The assay should be carried out on blood that is <24 hours old. Samples can be stored 
+at 4°C prior to analysis. 
+ 
+Laboratory information 
+ 
+Normal reference range: Normal 
+ 
+Volume and sample type: 1ml EDTA blood 
+ 
+Method: Flow cytometry 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 4 
+ 
+Clinical information 
+ 
+Indications for the test: Diagnosis of Hereditary Spherocytosis 
+ 
+Factors affecting the test:  Samples will be rejected if >72 hours old. 
+ 
+False positive results may occur for a wide spectrum of clinical conditions and rare red cell disorders unrelated 
+to cytoskeleton defects e.g. Hereditary pyropoikilocytosis, Cryohydrocytosis, Congenital dyserythropoietic 
+anaemia, South-East Asian ovalocytosis. Therefore caution is required when a positive test result for HS is not 
+compatible with the clinical presentation and red cell morphology.  
+ 
+(Bolton-Maggs et al (2011) Guidelines for the diagnosis and management of hereditary spherocytosis – 2011 
+update. British Journal of Haematology, 156, 37-49) 
+ 
+ 
+(Last updated August 2023) 

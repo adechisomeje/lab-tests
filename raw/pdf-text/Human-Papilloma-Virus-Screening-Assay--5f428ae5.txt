@@ -1,0 +1,51 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Division of Laboratory Medicine 
+ 
+Molecular Microbiology 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+Human Papilloma Virus Screening Assay 
+ 
+General information 
+ 
+Collection container (including preservatives): Surepath container 
+ 
+ 
+  
+Specimen type: Cervical smear, swabs, biopsies, paraffin wax sections 
+ 
+Specimen transport: Ambient or refrigerated 
+ 
+Minimum volume of sample: 600µl 
+ 
+Laboratory information 
+ 
+Measurement units: Threshold cycle (CT) 
+ 
+Turnaround time: PCR result available in 3-4 days 
+ 
+Sample types for referral for genotyping:  
+1. Tissue (MUST be formalin fixed paraffin embedded FFPE). Fresh tissue cannot be tested.  
+2. Swabs (Tested but reported with a comment indicating it is not a validated sample type).  
+ 
+Clinical information 
+ 
+Clinical decision points: Not applicable 
+ 
+Factors known to significantly affect the results: False negative results may occur for a variety of reasons, 
+for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the 
+detectable limit of the assay. New and emerging variants may also occur which may not be detected by this 
+assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility. 
+ 
+ 
+(Last updated November 2023) 

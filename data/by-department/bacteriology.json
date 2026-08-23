@@ -1,0 +1,2135 @@
+{
+  "meta": {
+    "department": "Bacteriology",
+    "version": "0.1.0",
+    "test_count": 31
+  },
+  "tests": [
+    {
+      "id": "abscesses-and-deep-seated-wound-infections",
+      "name": "Abscesses and Deep-Seated Wound Infections",
+      "aliases": [
+        "Pus"
+      ],
+      "description": "Abscesses are accumulations of pus in the tissues and any organism isolated from them may be of significance. They occur in many parts of the body as superficial infections or as deep-seated infections associated with any internal organ.",
+      "department": "Bacteriology",
+      "letter": "A",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab",
+          "pus",
+          "body-fluid"
+        ],
+        "specimen_type_raw": "Abscess pus, abscess swab, deep-seated pus swab, post-operative wound swab, wound exudates.",
+        "container": "Use aseptic technique. Collect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.\n\nAvoid accidental injury when pus is aspirated.",
+        "minimum_volume_raw": "Minimum volume of 1mL of pus.\n\nBacteriology Swabs should be well soaked in pus. The liquid in the eSwab should NOT be discarded. The laboratory cannot process samples with <1ml of liquid remaining in the swab and these samples will be discarded.",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "Collect specimens before antimicrobial therapy where possible.\n\nSamples of pus are preferred to swabs. However, pus swabs are often received (when using swabs, the deepest part of the wound should be sampled, avoiding the superficial microflora).\n\nUnless otherwise stated, swabs for bacterial and fungal culture should be taken with liquid eSwabs.\n\nPus eSwab for Oxford Road Campus\n\nCollect specimens other than swabs into appropriate CE marked leak proof containers and place in sealed plastic bags.",
+        "transport": "Specimens should be transported and processed as soon as possible.\n\nThe volume of specimen influences the transport time that is acceptable. Large volumes of purulent material maintain the viability of anaerobes for longer.",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "The recovery of anaerobes is compromised if the transport time exceeds 3hr"
+      },
+      "turnaround": {
+        "provisional_raw": "1 day",
+        "final_raw": "Direct culture 5-7 days",
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "final_working_days": {
+          "min": 5.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/12/Abscesses-and-Deep-Seated-Wounds.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "antibiotic-susceptibility-tests",
+      "name": "Antibiotic Susceptibility Tests",
+      "aliases": [
+        "AST",
+        "Antimicrobial Susceptibility Test"
+      ],
+      "description": "Antimicrobial susceptibility tests are performed using disc diffusion (EUCAST and BSAC methods), Gradient strip (Etest) and Broth Microdilution (BMD) using VitekXL systems (Biomerieux, UK) to establish the antibiotic options available for an identified organism. AST are performed on bacterial and fungal isolates from a variety of clinical specimens.",
+      "department": "Bacteriology",
+      "letter": "A",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "analysis": {
+        "units": "ETest & Vitek AST: MIC (Minimum Inhibitory Concentration)\n\nDisc diffusion: zone sizes in mm\n\nReported in qualitative terms as: (S) Sensitive (I) Susceptible at increased exposure (R) Resistant",
+        "clinical_decision_points": "Clinical information relating to the sample site, sample type, PMH, previous antimicrobial therapy, current antimicrobial therapy, underlying immune status of the patient, travel history (including hospital stays abroad), presence of indwelling or prosthetic material will all influence the whether AST are performed and the panel of antimicrobials tested.",
+        "interferences": "Delayed results may occur when the bacteria / fungi isolated is slow growing.\n\nIsolates referred to reference units for specialist AST e.g. Actinomyces, Tb will take considerably longer, Medical Microbiologists will provide advice.\n\nBacteriology Multi drug resistant isolates with limited treatment options may undergo secondary AST, Medical Microbiologists will provide advice."
+      },
+      "turnaround": {
+        "provisional_raw": "1-2 days",
+        "final_raw": "Usually 3-4 days Slow growing species e.g. Tb and species that are referred to reference centres will take longer",
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 2.0
+        },
+        "final_working_days": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      },
+      "notes": "Antimicrobial Susceptibility Test; AST",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Antimicrobial-Susceptibility-Test-AST.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.27,
+        "has_detail_sheet": true,
+        "present": [
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "blood-cultures",
+      "name": "Blood Cultures",
+      "aliases": [],
+      "description": "Bloodstream Infection, Sepsis, Neonatal Sepsis, Infective endocarditis, Prosthetic valve endocarditis (PVE), Bacteraemia. The Blood Culture system can also be used for small volumes of the following sterile fluids to aid the recovery of fastidious organisms, for example but not limited to, CAPD/peritoneal fluids (Ascites), Joint Fluids (Prosthetic & Natural), and Stem Cell fluids. For all other sterile fluids please refer to the Sterile Fluids (Bacteriology) section.",
+      "department": "Bacteriology",
+      "letter": "B",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood",
+          "body-fluid"
+        ],
+        "specimen_type_raw": "Venous blood, arterial blood, peripheral blood, sterile fluids\n\nBD BACTEC bottles",
+        "container": "Collect specimens in BD Bactec bottles using aseptic technique. The bottles should be stored at room temperature before use.",
+        "volume": {
+          "value": 10.0,
+          "unit": "mL"
+        },
+        "collection": "A blood culture set is defined as one aerobic (Silver/Blue Top) and one anaerobic (Purple top) bottle. This set is also suitable for patients on antibiotics, or where fungaemia is suspected.\n\nFor infants and neonates, a single Peds aerobic bottle (Pink top) may be requested.\n\nFor small volume sterile fluids such as Pacemaker fluids & Stem cells, a single Peds aerobic bottle (Pink top) should be used.\n\nBacteriology\n\nPlease refer to MFT sepsis pathway for guidance.\n\nTake two consecutive sets from two separate venepuncture sites during any 24hr period for each septic episode. For neonates, take a single low-volume Peds aerobic bottle Take two sets during the first hour in cases of severe sepsis prior to commencing antibiotic treatment, provided this does not significantly delay antibiotic administration.\n\nTake at least three sets during a 24hr period where the patient has suspected infective endocarditis.",
+        "transport": "Collect specimens before antimicrobial therapy where possible. Samples should be taken as soon as possible after a spike of fever. Samples should not be refrigerated.\n\nInoculated bottles should be incubated as soon as possible, and within a maximum of four hours. The four hour turnaround time from collection to incubation for blood culture samples reflects their clinical significance.",
+        "special_precautions": "• Use aseptic technique. • Inspect the blood culture bottles for damage. • Do not use blood culture bottles which are bulging at the rubber seal as this may be a sign of bacterial growth and contamination. • Ensure that the blood culture bottles have not exceeded their expiry date. • Do not re-sheathe needles."
+      },
+      "analysis": {
+        "units": "Growth detected or not detected",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Any recent antimicrobial therapy can have a significant effect on blood culture results by decreasing the sensitivity of the test. This may be of particular importance in those patients receiving prophylactic antibiotics and who are at high risk of bloodstream infections. If patients have received previous antimicrobial treatment, bacteraemia should be considered even if blood culture results are negative. There is a direct relationship between blood volume and yield, with approximately a 3% increase in yield per mL of blood cultured. False negatives may occur if inadequate blood culture volumes are submitted.",
+        "limitations": "It is estimated that 2-5% of positives samples may be missed if bottles are pre-incubated, these organisms may fail to trip the threshold algorithm of the continuous monitoring blood culture machine. This may occur with Abiotrophia species (nutritionally variant streptococci), S. pneumoniae which have undergone a degree of autolysis, and fastidious organisms which are unable to grow on routine solid culture media. Organisms may include:\n\n• Campylobacter species. • Helicobacter species. • Capnophilic organisms. • Slow-growing anaerobes\n\nPlease find below the link to the local Blood Culture Policy, which outlines, among other details, the required blood culture volume and the necessity for urgent transportation of the bottles to the laboratory.\n\nhttps://intranet.mft.nhs.uk/documents/policies/1072"
+      },
+      "turnaround": {
+        "provisional_raw": "Negative result 2 days",
+        "final_raw": "6 days for final negative results, 7 days for positive results",
+        "provisional_working_days": {
+          "min": 2.0,
+          "max": 2.0
+        },
+        "final_working_days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Blood-Cultures.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "clostridium-difficile-gdh-and-toxin",
+      "name": "Clostridium difficile GDH and Toxin",
+      "aliases": [],
+      "description": "C. difficile is a Gram positive, spore forming, strictly anaerobic rod, so named because of the difficulty in original culture and characterisation. Toxigenic strains produce large protein toxins A and B, both being major virulence factors. Most diseases associated with C. difficile are intestinal though C. difficile may be isolated from blood or tissues. The laboratory uses the three-step testing algorthim recommended by the Department of Health and Social Care. This involves the specimen being tested using C.difficile GDH EIA, C.difficile Toxin EIA and C.difficile toxin PCR assays.",
+      "department": "Bacteriology",
+      "letter": "C",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "faeces"
+        ],
+        "specimen_type_raw": "Faeces",
+        "container": "Collect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "Specimen may be passed into a clean, dry, disposable bedpan or similar container and transferred into a CE marked leak proof container. The specimen is unsatisfactory if any residual soap, detergent or disinfectant remains in the pan.",
+        "transport": "Compliance with current postal and transportation regulations is essential.\n\nClinical samples should be collected into a sterile leak-proof container in a sealed plastic bag. Specimens should be transported and processed as soon as possible. If processing is delayed refrigeration is preferable to storage at room temperature.",
+        "special_precautions": "Formed/semi-formed stools are unsuitable for investigation for C. difficile.\n\nBacteriology"
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "The detection of C. difficile is dependent on the number of organisms present in the sample, reliable results are dependent on correct specimen collection, handling, and storage.",
+        "limitations": "Interpretation of toxin results in children less than 16 years old should be treated with caution."
+      },
+      "turnaround": {
+        "provisional_raw": "1 day",
+        "final_raw": "1 day. Please note that a 1-day TAT for high-risk samples cannot be achieved as the sample requires a clearance of CL3 pathogens before C.difficile toxin testing on DS2 analyser can be performed.",
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "final_working_days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Clostridium-difficile-GDH-EIA-and-Toxin-EIA-and-Toxin-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "contact-lens",
+      "name": "Contact lens",
+      "aliases": [],
+      "department": "Bacteriology",
+      "letter": "C",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "specimen_type_raw": "Contact lens",
+        "container": "Contact lens case or Sterile container with saline",
+        "minimum_volume_raw": "Not applicable",
+        "transport": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable.\n\nPlease send contact lens in solution or sterile saline, not dry contact lenses"
+      },
+      "analysis": {
+        "interferences": "The sample should be sent to the laboratory without delay"
+      },
+      "turnaround": {
+        "raw": "2-3 working days for culture Acanthameoba investigations 7 working days Fungal Culture 5 working days",
+        "days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2021/11/Contact-lens.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2021",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "corneal-scrape-bacteriology",
+      "name": "Corneal Scrape (Bacteriology)",
+      "aliases": [],
+      "description": "Keratitis is an inflammation of the cornea, which is a serious condition requiring prompt and meticulous investigation, and may progress to perforation and blindness if treatment is unsuccessful. Predisposing factors include prior ocular disease, wearing contact lenses and use of topical corticosteroids. The condition may be caused by a wide range of bacteria, fungi and parasites. Agar plates for bacterial, fungal or acanthamoebal culture, which are inoculated directly at the patient's side, are incubated immediately on receipt in the laboratory.",
+      "department": "Bacteriology",
+      "letter": "C",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "specimen_type_raw": "Aqueous and vitreous humour, corneal scrapings",
+        "container": "Kits are available 24 hours a day from the stock fridge within Autolab reception MRI; should infection with fungi or Acanthamoeba be suspected additional kits are available from the Autolab reception.\n\nThe Scrape kit contains 3 culture plates and a glass slide within slide carrier and an instruction sheet\n\nThe kit label indicates when the kit expires; kits should not be used after the expiry date and unused kits should be returned to microbiology.",
+        "minimum_volume_raw": "Corneal scrapings should be of sufficient quantity to make a visible deposit on a microscope slide and to inoculate culture plates.\n\nIf insufficient specimen to make an impression smear and inoculate plates, cultures should be the priority.",
+        "collection": "Use aseptic technique. For each scrape of the eye a fresh needle must be used.\n\n1. Preparing the Gram Stain: Clear/wipe the infected area by removing as much cellular material as possible using a syringe needle and spread this evenly over the scribed area of the glass slide. 2. Innoculating the Culture plates: Scrape the infected area using a fresh needle and inoculate the surface of the agar with a large “C” streak. (if the syringe needle is dug deep into the agar this will delay signs of bacterial growth)\n\nAcanthameoba plates should be labelled on the lid of the plate as labelling the agar side obstructs the visualisation of the plate down the microscope.",
+        "transport": "Specimens should be transported and processed as soon as possible.",
+        "special_precautions": "Collect specimens before antimicrobial therapy where possible.\n\nBacteriology"
+      },
+      "analysis": {
+        "interferences": "Where media and smears are inoculated at the patient's side they must be transported immediately to the laboratory for processing."
+      },
+      "turnaround": {
+        "raw": "2-3 working days for culture 30 - 60 mins for microscopy if telephoned in advance",
+        "days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Corneal-Scrape-bacteriology.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2017",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "csf",
+      "name": "CSF",
+      "aliases": [
+        "Cerebrospinal fluid"
+      ],
+      "description": "Meningitis is defined as inflammation of the meninges. This process may be acute or chronic and infective or non-infective. Many infective agents have been shown to cause meningitis, including viruses, bacteria, fungi and parasites. Royal Manchester Children's Hospital is a specialist paediatric neurology centre; as such CSF obtained from ventricular shunts and shunts removed during revision may also be submitted to the laboratory for microscopy and culture.",
+      "department": "Bacteriology",
+      "letter": "C",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf"
+        ],
+        "specimen_type_raw": "Cerebrospinal Fluid",
+        "container": "Collect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.",
+        "minimum_volume_raw": "For routine cell count & culture; ideally a minimum volume of 1 mL For Mycobacteria sp., culture (Tb), at least 6mL where possible; such investigations cannot be performed outside of normal hours CSF is normally collected sequentially into three or more separate containers which should be numbered consecutively.",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "Use aseptic technique. Collect specimens into appropriate CE marked leak proof containers and place in sealed plastic bag.",
+        "transport": "Specimens should be transported and processed as soon as possible. CSFs should not be podded.",
+        "special_precautions": "Always contact the laboratory when sending a CSF sample. Send sample 3 (or the last sample if more than 3 taken) to Microbiology. Outside of normal hours contact the on-call Biomedical Scientist through the main switchboard."
+      },
+      "analysis": {
+        "units": "Cell count x106/L\n\nBacteriology",
+        "interferences": "Cells disintegrate and a delay may produce a cell count that does not reflect the clinical situation of the patient.\n\nThe laboratory will be unable to perform cell counts on clotted samples."
+      },
+      "turnaround": {
+        "raw": "30 mins to 1 hour for microscopy 2-3 working days for culture",
+        "days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/12/CSF.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "culture",
+      "name": "Culture",
+      "aliases": [],
+      "description": "Bacterio mft. on of Labo logy .nhs.uk/lab Cultu Gener Collectio containe eSwab for Specime travel. Collectio collectin Specime Minimu process Special p Delays o Labora Measure Biologic Turnaro oratory Me boratoryme ure al informa on container ers and trans r Oxford Rd Cam en type: Plea on: Use asep ng sample. Sa en transport m volume o samples wit precautions of over 48hr atory info ement units cal reference ound time fo edicine edicine ation r (including p sport specim mpus ase state ana ptic techniqu amples with t: Specimens of sample: 1m th <1ml of liq : If processin are undesira ormation s: Not applica e units: Not a r provisiona preservative mens in seale atomical site e. Liquid eSw insufficient should be tr ml. The liqui quid remainin ng is delayed able. able applicable l result (wor es): Collect sp d plastic bag on request wabs contain liquid will be ransported a d in the eSw ng in the sw d, refrigeratio rking days): pecimens in gs. form and rec n 1ml of liqu e discarded and processe wab should N ab and these on is prefera 2 days appropriate cent clinical id. No liquid ed as soon as OT be discar e samples wi ble to storag e CE marked history inclu should be d s possible. rded. The lab ill be discard ge at ambien leak proof uding any for iscarded wh boratory can ed. nt temperatu reign en nnot ure.",
+      "department": "Bacteriology",
+      "letter": "C",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Collect specimens before antimicrobial therapy where possible. Specimens should be transported and processed as soon as possible"
+      },
+      "turnaround": {
+        "final_raw": "2-3 days",
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Culture.pdf",
+        "detail_type": "pdf",
+        "last_updated": "September 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.18,
+        "has_detail_sheet": true,
+        "present": [
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cystic-fibrosis",
+      "name": "Cystic Fibrosis",
+      "aliases": [],
+      "description": "Cystic fibrosis (CF) is caused by a defect in the CF transmembrane conductance regulator gene that affects the transport of ions and water across the epithelium. This leads to progressive pulmonary disease associated with pulmonary infections, which are the major cause of morbidity and mortality in CF patients. The major pathogens are S. aureus, H. influenza (usually non-encapsulated in CF patients), S. pneumoniae, Burkholderia and Pseudomonads, particularly mucoid P. aeruginosa strains. Strains of P. aeruginosa with differing antibiotic susceptibilities may be isolated from a single sample.",
+      "department": "Bacteriology",
+      "letter": "C",
+      "categories": [
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab",
+          "sputum-respiratory",
+          "body-fluid"
+        ],
+        "specimen_type_raw": "Respiratory specimens; Sputum and Cough Swabs (Paediatric use only)",
+        "container": "Collect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.\n\nSputum/Pleural Fluids/BALs Cough Swabs (Paediatric CF)",
+        "minimum_volume_raw": "5mL",
+        "volume": {
+          "value": 5.0,
+          "unit": "mL"
+        },
+        "collection": "Use aseptic technique.",
+        "transport": "Specimens should be transported and processed as soon as possible. Paediatric postal samples should be submitted using the kit provided by the Microbiology Laboratory.",
+        "special_precautions": "Some complex identification can take several weeks to confirm identity.\n\nIf processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Not applicable\n\nBacteriology",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Specimens should be transported and processed as soon as possible. The recovery rate of Haemophilus sp., is reduced the longer the time taken to transport the specimen."
+      },
+      "turnaround": {
+        "raw": "Negative results available at 2 working days and positives generally within 8 working days.",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/12/Cystic-Fibrosis.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "ear",
+      "name": "Ear",
+      "aliases": [],
+      "department": "Bacteriology",
+      "letter": "E",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab"
+        ],
+        "specimen_type_raw": "Ear Swab",
+        "container": "Collect using a single liquid eSwab and transport in sealed plastic bags. Numbers and frequency of specimen collection are dependent on clinical condition of patient. Fine wire swabs can be used for inner ear swabs where necessary; these swabs should be transported promptly to the laboratory to prevent desiccation.",
+        "minimum_volume_raw": "1ml. Liquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "For investigation of fungal infection, scrapings of material from the ear canal are preferred although swabs can also be used.\n\nLiquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded.",
+        "transport": "Collect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.\n\nCollect using a single liquid eSwab and transport in sealed plastic bags.\n\nFor investigation of fungal infection, use an appropriate method to transport scrapings of material from the ear canal.",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable.\n\nBacteriology"
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Collect specimens before antimicrobial therapy where possible"
+      },
+      "turnaround": {
+        "provisional_raw": "1 day",
+        "final_raw": "2-3 days",
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Ear.pdf",
+        "detail_type": "pdf",
+        "last_updated": "September 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "eye",
+      "name": "Eye",
+      "aliases": [],
+      "description": "Bacterio mft. on of Labo logy .nhs.uk/lab Eye a Gener Collectio marked Any ava Swabs fo Liquid eS insufficie Specime Small sy submiss Specime Delays o Minimu Labora Measure Biologic Turnaro Turnaro oratory Me boratoryme and Can al informa on container leak proof c ilable pus sh or bacterial a Swabs conta ent liquid wi en type: Pus yringes (0.25m ion. en transport of over 48hr m volume o atory info ement units cal reference ound time fo ound time to edicine edicine nalicular ation r (including p ontainers an hould be sam and fungal cu ain 1ml of liq ill be discard ml) containin t: If processin are undesira of sample: 1m ormation s: Not applica e units: Not a r provisiona o final result r Pus preservative nd place in se mpled as well ulture should uid. No liqui ed ng pus will b ng is delayed able. ml able applicable l result (wor (working da es): Collect sp ealed plastic as the lesio d be taken w id should be Ey e accepted, d, refrigeratio rking days): ays): 2-3 days pecimens ot bags n of interest with a single discarded w ye Swab but the need on is prefera 1 day s her than swa . liquid eSwab when collectin dle MUST be ble to storag abs into app b. ng sample. S e removed be ge at ambien ropriate CE Samples with efore nt temperatu h ure.",
+      "department": "Bacteriology",
+      "letter": "E",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Collect specimens before antimicrobial therapy where possible, and preferably before application of local anaesthetic.",
+        "limitations": "Superficial swabs, although not ideal, may be all that is available. Deep-seated samples if available should be sought."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Eye-and-Canalicular-Pus.pdf",
+        "detail_type": "pdf",
+        "last_updated": "September 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.09,
+        "has_detail_sheet": true,
+        "present": [
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "faecal-bacteria-parasite-pcr-serosep-dx",
+      "name": "Faeces Bacteria/Parasite PCR – Serosep DX",
+      "aliases": [],
+      "description": "All diagnostic faecal samples, except single organism screens, are tested for the following organisms: Campylobacter jejuni/coli/lari., Salmonella enterica sp., Shiga-toxin producing E.coli (STEC) including 0157, Enteroinvasive E. coli/Shigella sp, Vibrio cholerae/parahaemolyticus, Yersinia enterocolitica, Cryptosporidium parvum/hominis, Giardia and Entamoeba histolytica. Faecal samples submitted from patients with suspected food poisoning, or foreign travel history to Asia/Africa/South America, will have additional Salmonella enrichment culture performed. Food poisoning samples will also have additional culture performed for Staphylococcus aureus, Bacillus cereus., Clostridium perfringens, atypical Vibrio sp. and Listeria monocytogenes.",
+      "department": "Bacteriology",
+      "letter": "F",
+      "categories": [
+        "parasitology",
+        "molecular-microbiology",
+        "gastrointestinal"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "travel-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "faeces"
+        ],
+        "specimen_type_raw": "Faeces",
+        "container": "Collect specimens in appropriate CE marked leak proof containers",
+        "minimum_volume_raw": "A liquid specimen of 1-2 mL is sufficient. 2 gram (large pea-size) of solid specimen",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "Specimen may be passed into a clean, dry, disposable bedpan or similar container and transferred into an appropriate CE marked leak proof containers and place in sealed plastic bags.\n\nPlease do not send additional faeces to the laboratory collected within the same 24-hour period as the last sample sent. Additional faeces received that was collected within the same 24 hour period will not be processed.\n\nRequest form: The microbiological examination of faeces is complex and requires a full clinical history including the possibility of food poisoning, foreign travel with the countries visited and the dates, and antimicrobial therapy, as well as the more basic information. Failure to give this information may mean important pathogens are not isolated.",
+        "transport": "If processing is delayed, refrigeration is preferable to storage at ambient temperature\n\nBacteriology",
+        "special_precautions": "The specimen is unsatisfactory if any residual soap, detergent or disinfectant remains in the pan. Sample should avoid contamination with urine or the toilet bowl"
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable"
+      },
+      "turnaround": {
+        "provisional_raw": "1 day",
+        "final_raw": "2-3 days",
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Faeces-Bacteria-Parasite-PCR-Serosep-DX.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "fluids-from-normally-sterile-sites",
+      "name": "Fluids from Normally Sterile Sites",
+      "aliases": [
+        "Joint fluids",
+        "Sterile fluids"
+      ],
+      "description": "The detection of organisms in fluids that are normally sterile indicates significant infection, which can be life- threatening. Specimens may be taken primarily for culture or this may be incidental to the prime reason for obtaining the specimen. Blood cultures may be positive with the same infecting organism, and occasionally may be positive when culture of the fluid fails to reveal the organism. Fluids will be sterile in the absence of infection, as will \"sympathetic effusions\", and those of immunological or traumatic origin and those due to metabolic disease or heart failure. Signs of infection may be difficult to detect clinically in patients whose joints are already inflamed due to rheumatological conditions. This is important because these patients are at increased risk of joint sepsis.",
+      "department": "Bacteriology",
+      "letter": "F",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "synovial-fluid",
+          "body-fluid"
+        ],
+        "specimen_type_raw": "Universal container: Amniotic fluid, bursa fluid, pericardial fluid, joint fluid, peritoneal/CAPD fluid (ascites), pleural fluid, dialysis fluid. Sterile fluids such as Ascitic Fluids, CAPD fluids, Joint Fluids can be sent in blood culture bottles - use standard set of BC bottles (Aerobic & Anaerobic bottle). For small volume samples - use Paediatric bottle. Pleural Fluids (Not Pleural Drains) should be sent in a set of blood culture bottles for culture plus an additional universal container for a Gram stain Capped Syringes: Vitreous aspirates & other intra ocular fluids should be injected into a Blood Culture bottle set with a small syringe of fluid submitted for a Gram stain. The needle MUST be removed before submission for the laboratory. Cell differentials are performed in Cytology, separate sample and request required\n\nBacteriology",
+        "container": "Use aseptic technique. Collect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.",
+        "minimum_volume_raw": "Ideally, a minimum volume of 1 mL.\n\nLarge volume - specimens such as peritoneal fluid and ascitic fluid may contain very low numbers of organisms which are usually received in adequate quantities and require concentration to increase the likelihood of successful culture.\n\nSmall volume - fluids such as synovial fluids may be received in inadequate volumes, which may impede the recovery of organisms.\n\nEnrichment culture is performed on all fluids from normally sterile sites to enhance the recovery of bacterial pathogens.",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "Collect specimens before antimicrobial therapy where possible.",
+        "transport": "Specimens should be transported and processed as soon as possible",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable.\n\nBacteriology performs differentials, therefore one sterile pot is required and one set of blood culture"
+      },
+      "analysis": {
+        "units": "X10 6/L for cell count",
+        "clinical_decision_points": "Positive microscopy and/or Positive Culture results are telephoned to the requesting physician"
+      },
+      "turnaround": {
+        "provisional_raw": "30-60 mins for microscopy & Gram Stain, when telephoned as urgent.",
+        "final_raw": "2- 3 days for direct culture result 5 days for enriched culture result\n\nBacteriology",
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "notes": "Joint fluids; sterile fluids",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Fluids-from-Normally-Sterile-Sites.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "genital-specimens-for-culture",
+      "name": "Genital specimens for culture",
+      "aliases": [],
+      "department": "Bacteriology",
+      "letter": "G",
+      "categories": [
+        "bacteriology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab",
+          "pus",
+          "sputum-respiratory",
+          "body-fluid",
+          "semen"
+        ],
+        "specimen_type_raw": "High vaginal swab (HVS), vaginal discharge, vulval swab, labial swab, cervical swab, endocervical swab, penile swab, urethral swab, genital ulcer swab, semen, screening swabs for N. gonorrhoeae, aspirates from bartholin's gland, fallopian tube, tubo-ovarian abscess, pouch of Douglas fluid, intra-uterine contraceptive device (IUCD), products of conception.\n\nWire swabs are permitted for use with Utheral samples where required and they should be transported to the laboratory as soon as possible to prevent specimen degregation.\n\nHigh Vaginal swabs (HVS) are not suitable for the isolation of N. gonorrhoeae, Endocervical swabs should be submitted.\n\nAspirates\n\nGenital/throat eSwab Urethral Swab\n\nCharcoal swab for Trichomonas",
+        "container": "CE marked leak proof container",
+        "minimum_volume_raw": "Fluids and pus - preferably a minimum volume of 1mL.\n\nLiquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "Use aseptic technique. Collect specimens in appropriate CE marked leak proof containers and transport in sealed plastic bags. Collect swabs into appropriate transport medium and transport in sealed plastic bags.\n\nGenital tract swabs Cervical and high vaginal swabs should be taken with the aid of a speculum. It is important to avoid vulval contamination of the swab. For Trichomonas only, the posterior fornix, including any obvious candidal plaques should be swabbed using a charcoal swab. If pelvic infection, including gonorrhoea, is suspected, the cervix should be swabbed Separate samples should be collected into appropriate transport media for detection of viruses or C. trachomatis.\n\nBacteriology High vaginal swabs After the introduction of the speculum, the eSwab should be rolled firmly over the surface of the vaginal vault. Please use an eSwab and ensure the liquid remains in the tube.\n\nCervical swabs After introduction of the speculum to the vagina, the swab should be rotated inside the endocervix. Please use an eSwab and ensure the liquid remains in the tube.\n\nUrethral swabs Contamination with micro-organisms from the vulva or the foreskin should be avoided. Thin swabs are available for collection of specimens. The patient should not have passed urine for at least one hour. For males, if a discharge is not apparent, attempts should be made to \"milk\" exudate from the penis. The swab is gently passed through the urethral meatus and rotated. Place the thin swab in Amies transport medium with charcoal.\n\nIntrauterine contraceptive devices (IUCDs) The entire device should be sent.\n\nRectal swabs Rectal swabs are taken via a proctoscope.\n\nThroat swabs Throat swabs should be taken from the tonsillar area and/or posterior pharynx avoiding the tongue and uvula.\n\nFluids and pus These are taken from the fallopian tubes, tubo-ovarian and Bartholin's abscesses, etc... during surgery\n\nLiquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded.",
+        "transport": "Specimens should be transported and processed as soon as possible.",
+        "special_precautions": "Endocervical swabs for gonorrhoea investigation should not be refrigerated"
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "HVS swabs for gonorrhoea investigation should not be refrigerated as this significantly reduces the recovery rate"
+      },
+      "turnaround": {
+        "provisional_raw": "30-60 mins for microscopy 1 day for culture",
+        "final_raw": "2-3 days\n\nBacteriology",
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Genital-Specimens-for-Culture.pdf",
+        "detail_type": "pdf",
+        "last_updated": "September 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "helicobacter-pylori",
+      "name": "Helicobacter pylori",
+      "aliases": [],
+      "description": "Infection with H. pylori is associated with peptic ulceration. There is evidence that it may play an important role in non-ulcer dyspepsia.",
+      "department": "Bacteriology",
+      "letter": "H",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "faeces"
+        ],
+        "specimen_type_raw": "Faeces",
+        "container": "Collect specimens in appropriate CE marked leak proof containers",
+        "minimum_volume_raw": "A liquid specimen of 1-2 mL is sufficient. 1 gram of solid specimen",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "Specimen may be passed into a clean, dry, disposable bedpan or similar container and transferred into an appropriate CE marked leak proof containers and place in sealed plastic bags.",
+        "transport": "If processing is delayed, refrigeration is preferable to storage at ambient temperature",
+        "special_precautions": "The specimen is unsatisfactory if any residual soap, detergent or disinfectant remains in the pan."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "None known"
+      },
+      "turnaround": {
+        "provisional_raw": "2 days",
+        "final_raw": "2-3 days\n\nBacteriology",
+        "provisional_working_days": {
+          "min": 2.0,
+          "max": 2.0
+        },
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Helicobacter-pylori.pdf",
+        "detail_type": "pdf",
+        "last_updated": "March 2018",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "helicobacter-pylori-in-gastric-biopsies",
+      "name": "Helicobacter pylori in Gastric Biopsies",
+      "aliases": [
+        "Gastric Biopsies for Helicobacter pylori"
+      ],
+      "department": "Bacteriology",
+      "letter": "H",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "tissue"
+        ],
+        "specimen_type_raw": "Gastric biopsies - This is the specimen of choice for the culture of H. pylori",
+        "container": "CE marked leak proof container in a sealed plastic bag. The biopsy should be placed in a small, sterile container such as a bijou bottle, containing a small amount (approximately 100μL) of sterile isotonic saline to preserve moisture.",
+        "minimum_volume_raw": "At the discretion of the endoscopist as it depends on the individual patient",
+        "collection": "Before antimicrobial therapy where possible\n\nGastric biopsy specimens are usually taken from the gastric antrum at endoscopy, and sometimes from the body depending on location of inflammation",
+        "transport": "Specimens should be transported and processed as soon as possible (preferably within 6h)",
+        "special_precautions": "It is important to maintain a moist atmosphere during transport."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Sensitivity of the microscopy may be reduced if the biopsy is submerged in the saline, because mucus globules form and production of a satisfactory smear becomes difficult."
+      },
+      "turnaround": {
+        "raw": "Culture result within 10 days",
+        "days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "notes": "Gastric Biopsies for Helicobacter pylori",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Gastric-Biopsies-for-Helicobacter-pylori.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "intravascular-cannulae",
+      "name": "Intravascular cannulae",
+      "aliases": [
+        "Tips"
+      ],
+      "description": "Please note the tips from Urinary catheters are not suitable for Microbiological analysis.",
+      "department": "Bacteriology",
+      "letter": "I",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "specimen_type_raw": "Line tips (eg CVP or Hickman lines),",
+        "container": "Intravascular cannulae/Tips should be collected in CE marked leak proof container",
+        "minimum_volume_raw": "Cut off 4 cm of the tip.",
+        "collection": "Collect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.",
+        "transport": "Specimens should be transported and processed as soon as possible. If processing is delayed, refrigeration is preferable to storage at ambient temperature.",
+        "special_precautions": "Disinfect the skin around the cannula entry site, remove cannula using aseptic technique, and cut off 4cm of the tip into an appropriate CE marked leak proof container using sterile scissors. Place in sealed plastic bags for transport.\n\nCannulae should only be sent if there is evidence of infection."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable"
+      },
+      "turnaround": {
+        "provisional_raw": "1 day",
+        "final_raw": "2-3 days\n\nBacteriology",
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "notes": "Tips",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Tips-Intravascular-cannulae.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "mouth-swab",
+      "name": "Mouth swab",
+      "aliases": [],
+      "department": "Bacteriology",
+      "letter": "M",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab"
+        ],
+        "specimen_type_raw": "Mouth Swab",
+        "container": "Collect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.\n\nCollect with liquid eSwab and transport in sealed plastic bags.",
+        "minimum_volume_raw": "1ml. Liquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "Collect specimens before antimicrobial therapy where possible. To assure that the preconditions of the sampling for oral infections are comparable it is advised that patients should not: 1. Eat or drink within 2 hours 2. Brush their teeth within 2 hours 3. Use any mouth rinse of disinfectant within 2 hours prior to sampling If possible samples should be taken in the morning under fasting conditions. Unless otherwise indicated collect each swab for bacterial and/or fungal culture and place in appropriate transport medium. Collect specimens other than swabs into appropriate CE marked leak proof containers and place in sealed plastic bags Sample pus if present otherwise sample any lesions or inflamed areas. A tongue depressor or spatula may be helpful to aid vision and avoid contamination from other parts of the mouth.\n\nLiquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded.\n\nSpecimen transport (e.g at room temperature, or within 4 hrs): Use aseptic technique. Unless otherwise stated, swabs for bacterial and fungal culture should taken with a liquid eSwab.",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature.\n\nDelays of over 48hr are undesirable.\n\nBacteriology"
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Collect specimens before antimicrobial therapy where possible.\n\nSpecimens should be transported and processed as soon as possible."
+      },
+      "turnaround": {
+        "provisional_raw": "1 day",
+        "final_raw": "2-3 days",
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Mouth-swab.pdf",
+        "detail_type": "pdf",
+        "last_updated": "September 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "mrsa",
+      "name": "MRSA",
+      "aliases": [],
+      "description": "Most MRSA infections are healthcare-associated, but an increasing number of infections are community- acquired, with patients having no established risk factors for acquisition of MRSA. While infections with community-acquired MRSA (CA-MRSA) are usually mild they can be severe.",
+      "department": "Bacteriology",
+      "letter": "M",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "urine",
+          "swab",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "Swab from Nose, Groin and manipulated wound sites. Perineal swabs will be accepted if agreed with your local IPC Team. Urine, Sputum and manipulated sites will be accepted if they are within local guidance and agreed with the IPC Team. Double MRSA eSwab (nose & groin/perineum only)\n\nSingle eSwab (wound sites)\n\nNOTE: Urine sample requested for MRSA screen must be sent in urine boric acid container (below)",
+        "container": "Collection using Liquid eSwabs under the direction of your local IPC Team.",
+        "minimum_volume_raw": "1ml. Liquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded\n\nBacteriology",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "Use aseptic technique Double MRSA eSwab (N+G, or Peri): Dampen swab with one drop of sterile saline. Do not use the liquid from the eSwab as the whole amount is needed for the test. Do not use excessive force, pressure or bending when collecting the swab or it could break. Apply label vertically.\n\nBacteriology\n\nSingle MRSA eSWAB (all other sites): Dampen swab with one drop of sterile saline. Do not use the liquid from the eSwab as the whole amount is needed for the test. Do not use excessive force, pressure or bending when collecting the swab or it could break\n\nLiquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded.",
+        "transport": "Specimens should be transported and processed as soon as possible.",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable. The white swabs should be used for nose swab as nose is the highest area of MRSA colonisation. The white swab swab should remain in the sample tube and is transferred to the laboratory.\n\nPink swab should NEVER transferred to the lab."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Collect specimens before antimicrobial therapy where possible."
+      },
+      "turnaround": {
+        "raw": "Negative screen at 1 working day Positive MRSA result with sensitivities at 2 working days",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/MRSA.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "mycobacteria-microscopy-culture",
+      "name": "Mycobacteria – microscopy/culture",
+      "aliases": [
+        "Mycobacterium PCR",
+        "TB examination (microscopy)"
+      ],
+      "department": "Bacteriology",
+      "letter": "M",
+      "categories": [
+        "bacteriology",
+        "molecular-microbiology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "bone-marrow",
+          "csf",
+          "urine",
+          "sputum-respiratory",
+          "body-fluid",
+          "tissue"
+        ],
+        "specimen_type_raw": "Sputum, gastric washing, sterile site body fluids (CSF, pleural fluids etc), urine, skin or tissue biopsies, bone marrow, bronchoalveolar washings, blood, post-mortem specimens, bone",
+        "container": "Use aseptic technique. Collect specimens in appropriate CE marked leak proof containers and transport in sealed plastic bags.",
+        "minimum_volume_raw": "1mL of Sputum 5mL of BAL 6mL of CSF 1-5mL of bone marrow or blood for the BD Bactec Myco/F Lytic Culture Bottle",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "If sample volume is insufficient for both, culture is usually preferred to microscopy due to greater sensitivity.\n\nBD Bactec Myco/F Lytic Culture Bottle (1-5ml)",
+        "transport": "Specimens should be transported and processed as soon as possible. Specimens should be transported and received in the laboratory within one working day of collection and processed as soon as possible. Requirements of individual testing laboratories should be referred to. If processing is delayed, refrigeration is preferable to storage at ambient temperature (this does not include blood culture bottles must not be refrigerated)\n\nBlood and Bone Marrow Request the TB blood culture bottles (as shown above) from the laboratory on 0161 276 4424, and request a porter to collect. These bottles MUST NOT be sent via the pod system.\n\nSputum specimens Sputum specimens should be relatively fresh (less than 1 day old) to minimise contamination. Purulent specimens are best. Three samples of ≥5mL should be collected approximately 8-24 hours apart with at least one from early morning.\n\nSamples taken early morning (ie shortly after patient waking) have the greatest yield. When the cough is dry, physiotherapy, postural drainage or inhalation of nebulised saline (‘sputum induction') before expectoration\n\nBacteriology may be helpful.\n\nBronchoalveolar lavage/bronchial washings These may be sent if spontaneous or induced sputum is unavailable or if such specimens are AFB smear negative. Note: Contamination of the bronchoscope with tap water, which may contain environmental Mycobacterium species, should be avoided. Minimum sample size is preferably 5mL.\n\nUrine specimens Whole urine specimens should be collected in the early morning on three consecutive days in a CE marked leak proof container (that does not contain boric acid), and placed in a sealed plastic bag.\n\nSterile site body fluids Sterile site body fluids (CSF, pleural fluid, etc) will normally not require decontamination, and can be inoculated directly to neutral media. However, sterile site body fluids can be treated with acid if necessary. Collect aseptically as much (eg>6mL in adults) CSF sample as possible into a CE Marked leak proof container in a sealed plastic bag. If only a small volume is available after initial lumbar puncture, and the findings of cell counts and protein suggest TB meningitis, a second procedure should be considered to obtain a larger volume to improve chances of achieving positive cultures.\n\nIt should be noted that pleural or pericardial fluids are not very sensitive samples for the detection of M. tuberculosis, and that a concurrent pleural or pericardial biopsy taken with the fluid is more useful. A negative result on these fluids does not rule out the diagnosis.",
+        "special_precautions": "For the initial diagnosis of mycobacterial infection all specimens should be fresh and taken, whenever possible, before anti-tubercular treatment is started. ‘Other' antimicrobials may also have significant anti-mycobacterial activity, notably the fluoroquinolones such as ciprofloxacin, levofloxacin or moxifloxacin, and the macrolides such as clarithromycin or azithromycin.\n\nAny samples taken where the patient is suspected of having TB MUST be divided within theatre so as to provide sufficient samples for Histology (sent in formalin) and Microbiology (Sent in an empty sterile container)."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "EDTA, even in trace amounts, inhibits the growth of some Mycobacterium species."
+      },
+      "turnaround": {
+        "raw": "Urgent microscopy available within 2 hours\n\nBacteriology Culture 3 weeks (incubation continued for 6 weeks) Mycobacterium PCR available within 3 working days",
+        "days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "notes": "TB examination",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/12/Mycobacteria-%E2%80%93-Culture-Sensitivity-and-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "nose-swab",
+      "name": "Nose Swab",
+      "aliases": [],
+      "description": "Nasal colonisation with Staphylococcus aureus increases the risk of staphylococcal infections at other sites of the body such as postoperative wounds and dialysis access sites. Single organism nasal screens for Staphylococcus aureus may be requested as part of a PVL outbreak as part of a IPC investigation. For Bordetella pertussis investigation please see Pernasal Swab: https://mft.nhs.uk/the-trust/other- departments/laboratory-medicine/manchester-medical-microbiology-partnership/repertoire-of- tests/#pernasal",
+      "department": "Bacteriology",
+      "letter": "N",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab"
+        ],
+        "specimen_type_raw": "Nose Swab",
+        "container": "Collect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.\n\nCollect using liquid eSwabs and transport in sealed plastic bags.",
+        "minimum_volume_raw": "1ml. Liquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "Collect specimens before antimicrobial therapy where possible. Plain sterile cotton wool swab. Sample the anterior nares by gently rotating the swab over the mucosal surface.\n\nUnless otherwise stated, swabs for bacterial and fungal culture should be taken with a liquid eSwab\n\nLiquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded.",
+        "transport": "Specimens should be transported and processed as soon as possible. If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable\n\nBacteriology",
+        "interferences": "Special considerations to minimise deterioration If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable.",
+        "limitations": "Nasal swabs should not be taken to investigate the presence of Bordetella pertussis."
+      },
+      "turnaround": {
+        "provisional_raw": "2 days",
+        "final_raw": "2-3 days",
+        "provisional_working_days": {
+          "min": 2.0,
+          "max": 2.0
+        },
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Nose-Swab.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "ova-cysts-and-parasites",
+      "name": "Ova, Cysts and Parasites",
+      "aliases": [
+        "Bilharzia",
+        "Cryptosporidium",
+        "Entamoeba",
+        "Giardia lamblia",
+        "Parasites",
+        "Schistosoma haematobium"
+      ],
+      "description": "As part of our quality improvements for the Parasitology service within the Microbiology department at MFT, we have outlined the current testing requirements to provide an efficient service for the investigation of ova, cysts and parasites (OCP) from samples other than blood. Our aim is to clarify the requesting and selection of appropriate enteric samples for the examination of ova, cysts and parasites. Pathogen Sample required Comment Cryptosporidium parvum/hominis, Giardia lamblia and Entamoeba histolytica Faeces There is NO NEED to request OCP All enteric samples for bacteria/parasite PCR will automatically be tested for these. Other parasitic infestations 3 faecal samples over a period of 10 days OCP investigation must be requested Samples labelled and dated:- 1of 3, 2of 3 and 3of 3. Information required: - • Foreign travel history • Blood eosinophil count • Duration of diarrhoea • Presence/absence of abdominal symptoms • Evidence of malabsorption • HIV/Immunosupression Threadworm. (E. vermicularis ova.) Dry Peri-anal swab in 2ml saline Rotate a saline moistened swab around the anus of the child first thing in the morning. Peri-anal kits are supplied from the Enteric Laboratory upon request- Please contact 0161 276 6734. Bilharzia (Schistosomahaematobium) Urine Total urine volume collected between 10am and 2pm. Alternatively a 24hr collection of terminal samples of urine may be obtained. Microsporidia Faeces Modified trichrome is not a test the laboratory performs and is referred to another laboratory. This test should be specifically requested on the request form after discussion with a Microbiologist. Worms seen in stool Worm Please send actual worm seen in a universal container Bacteriology If any other types of samples require testing, or other parasite investigations required, please contact the Microbiology department on 0161 276 6717. If amoebic dysentery is suspected and clinical advice needed, please tel 0161 276 6333 On occasions, we may need to refer samples to a reference laboratory for specialised testing procedures and further samples may be necessary. Please see list of tests and referral laboratories (https://mft.nhs.uk/the- trust/other-departments/laboratory-medicine/manchester-medical-microbiology-partnership/referral- laboratories/)",
+      "department": "Bacteriology",
+      "letter": "O",
+      "categories": [
+        "parasitology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "notes": "Bilharzia; Cryptosporidium; Entamoeba; Giardia lamblia; Parasites; Schistosoma haematobium",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Ova-Cysts-and-Parasites.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.09,
+        "has_detail_sheet": true,
+        "present": [
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "peritoneal-fluids",
+      "name": "Peritoneal Fluids",
+      "aliases": [],
+      "description": "Continuous ambulatory peritoneal dialysis (CAPD) is used as an alternative to haemodialysis for the management of patients with end-stage renal failure.",
+      "department": "Bacteriology",
+      "letter": "P",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "specimen_type_raw": "In a sealed plastic bag with a request form.\n\nCell count = Sterile leakproof container in a sealed plastic bag containing 20mL of fluid for microscopy. Culture = Inoculated BD BACTEC Plus Aerobic/Anaerobic (blue/purple) BC bottles.",
+        "container": "Withdraw fluid aseptically from the injection port of the plastic dialysate bag with a sterile needle and syringe and transfer to a CE marked leak proof containers and place in sealed plastic bag.",
+        "minimum_volume_raw": "Minimum volume of10mL.\n\nIf blood culture bottles are used they should be inoculated aseptically with 5-10 mL of dialysate",
+        "volume": {
+          "value": 10.0,
+          "unit": "mL"
+        },
+        "collection": "Use aseptic technique.\n\nCollect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.\n\nLarge volumes or whole dialysate bags may require special transportation according to local protocols. They should be transported in rigid, leakproof outer containers.",
+        "transport": "Specimens should be transported and processed as soon as possible",
+        "special_precautions": "Collect specimens before antimicrobial therapy where possible.\n\nBacteriology performs differentials, therefore one sterile pot is required and one set of blood culture"
+      },
+      "analysis": {
+        "units": "Cell count x 106 per litre",
+        "interferences": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "turnaround": {
+        "raw": "2 - 7 working days for culture 30 - 60 mins for cell count. Telephone the laboratory in advance for urgent microscopy\n\nBacteriology",
+        "days": {
+          "min": 2.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Peritoneal-Fluids.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "rapid-routine-carbapenemase-producing-enterobacteriaceae-cpe-screen",
+      "name": "Rapid/routine Carbapenemase-Producing Enterobacteriaceae (CPE) Screen",
+      "aliases": [
+        "CPE screen",
+        "Carbapenemase-Producing Enterobacteriaceae (CPE) Screen"
+      ],
+      "description": "(CPE) Screen In response to the increasing numbers of CPE producing clinical isolates of Enterobacteriaceae the Infection Control Consultant and Microbiology department have produced a protocol for CPE screening and detection. The isolation of a clinical CPE isolate prompts the Infection Prevention & Control Team to screen all possible patient contacts to reduce the transmission of resistance enzymes within the Trust. Rapid & routine CPE screens are processed on a molecular platform; culture is only performed on positive samples for epidemiological & monitoring purposes.",
+      "department": "Bacteriology",
+      "letter": "R",
+      "categories": [
+        "tumour-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "faeces",
+          "swab",
+          "pus"
+        ],
+        "specimen_type_raw": "Screening of faeces/rectal swabs\n\nSamples are stored in Microbiology for 7 days should any additional tests be requested.",
+        "container": "Swab: Double headed Red topped swab; available from Microbiology. Please note Charcoal swabs are unsuitable for this test at the Oxford Road campus and will not be processed.",
+        "transport": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable.\n\nType and minimum volume of sample: Not applicable",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "units": "Threshold Cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Faecal material must be visible on the cotton tip of the swab; failure to provide faecal material may produce a false negative screening result.\n\nSome faecal products may prove inhibitory to the PCR process; samples will be reported as inhibitory and a repeat will be requested."
+      },
+      "turnaround": {
+        "raw": "Rapid CPE Screens: Designated wards agreed with IPC\n\nBacteriology Trafford Transfers: 2-4 hours from receipt into Microbiology Reception. The laboratory MUST be telephoned prior to the patient(s) being sampled.\n\nSamples should be received in the laboratory before 6pm (Mon-Fri) and before 4pm (Weekends/Bank Holidays)\n\nRoutine CPE Screen: Designated wards agreed with IPC 24-72hrs",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "notes": "CPE screen; Carbapenemase-Producing Enterobacteriaceae (CPE) Screen",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Rapid-Routine-Carbapenemase-Producing-Enterobacteriaceae-CPE-Screen.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "respiratory-specimens",
+      "name": "Respiratory specimens",
+      "aliases": [
+        "Sputum"
+      ],
+      "department": "Bacteriology",
+      "letter": "R",
+      "categories": [
+        "bacteriology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "sputum-respiratory",
+          "body-fluid"
+        ],
+        "specimen_type_raw": "Bronchial aspirate, transthoracic aspirate, bronchoalveolar lavage, transtracheal aspirate, bronchial brushings, protected catheter specimens, bronchial washings, endotracheal tube specimens, sputum - expectorated",
+        "minimum_volume_raw": "1 mL",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "All specimens should be fresh and taken before antimicrobial treatment is started. Sputum samples for routine culture that are not 'purulent' or 'mucopurulent' will not be tested by the microbiology laboratory.",
+        "transport": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable.",
+        "special_precautions": "Do not submit samples with push top lids or with Trap tubing still attached. These samples are prone to leaking which poses a safety risk to individuals involved in transportation and receipt of sample as well as risking contamination of the sample. Please ensure samples are sent in standard universal tubes with screw top lids (as per photos above). Samples that fail to comply may be rejected."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend. Sputum may be refrigerated for up to 2-3 h without an appreciable loss of pathogens. Any delay beyond this time may allow overgrowth of Gram-negative bacilli, and Haemophilus species and S. pneumoniae may be rendered non-viable"
+      },
+      "turnaround": {
+        "provisional_raw": "2 days",
+        "final_raw": "2-3 days Sputum investigation requiring fungal investigation is up to 7 days\n\nBacteriology",
+        "provisional_working_days": {
+          "min": 2.0,
+          "max": 2.0
+        },
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "notes": "Sputum",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Respiratory-Samples-for-Culture.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "stem-cell-sterility-check",
+      "name": "Stem cell sterility check",
+      "aliases": [],
+      "description": "Stem cells samples are submitted from two clinical teams: • Cellular Therapeutics Ltd, Grafton Street Unit (Manchester University) Dr Ryan Guest (Purple top & Pink Top Bottle) • Stem Cell Unit, Haematology Department MFT, Wendy Ogden (Single Pink Top Bottle)",
+      "department": "Bacteriology",
+      "letter": "S",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "cells"
+        ],
+        "specimen_type_raw": "A Paediatric (pink top) blood culture bottle requires 1-3ml of stem cell product. An Anaerobic (purple top) blood culture bottle requires 5-8 ml of stem cell product.\n\nBacteriology\n\nDo not exceed the manufacturer's recommended maximum volume for each bottle as shown on label.",
+        "container": "Collect specimens in BD Bactec bottle using aseptic technique. Bactec bottles should be stored at room temperature before use.",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        },
+        "collection": "Culture bottles are prepared during stem cell processing and stem cell product manufacture to ensure the stem cells have not been contaminated with bacteria.",
+        "transport": "Samples should not be refrigerated.\n\nInoculated bottles should be incubated as soon as possible, and within a maximum of four hours. The four hour turnaround time from collection to incubation for blood culture samples reflects their clinical significance.",
+        "special_precautions": "Use aseptic technique. Inspect the blood culture bottles for damage. Ensure that the blood culture bottles have not exceeded their expiry date. Do not re-sheathe needles."
+      },
+      "analysis": {
+        "units": "Growth detected or not detected",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Any recent antimicrobial therapy can have a significant effect on blood culture results by decreasing the sensitivity of the test.",
+        "limitations": "It is estimated that 2-5% of positives samples may be missed if bottles are pre-incubated, these organisms may fail to trip the threshold algorithm of the continuous monitoring blood culture machine. This may occur with Abiotrophia species (nutritionally variant streptococci), S. pneumoniae which have undergone a degree of autolysis, and fastidious organisms which are unable to grow on routine solid culture media.\n\nOrganisms may include:  Campylobacter species  Helicobacter species  Capnophilic organisms  Slow-growing anaerobes"
+      },
+      "turnaround": {
+        "provisional_raw": "Negative result 3 days",
+        "final_raw": "10 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Stem-Cell-Sterility-Check.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "throat-swab",
+      "name": "Throat Swab",
+      "aliases": [],
+      "department": "Bacteriology",
+      "letter": "T",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab"
+        ],
+        "specimen_type_raw": "Swab",
+        "container": "Collect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.\n\nCollect using liquid eSwabs and transport in sealed plastic bags.",
+        "minimum_volume_raw": "1ml.\n\nLiquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "Throat swab taken from the tonsillar area and/or posterior pharynx, should be taken avoiding the tongue and uvula.\n\nLiquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded.",
+        "transport": "Specimens should be transported and processed as soon as possible.",
+        "special_precautions": "Fastidious anaerobes, such as Fusobacterium necrophorum, will not be recovered from samples that are delayed.\n\nWhen Diptheria is suspected, advice from a Consultant Microbiologist should be sought prior to sample submission.\n\nScarlet fever presentations should be noted on the request form as they are notifiable.\n\nPharyngeal swabs for N.meningitidis carriage should be clearly labelled.\n\nPharyngeal swabs for N.gonorrhoeaecarriage are not advised; inoculation directly onto culture media at the time of collection within a GUM clinic is recommended."
+      },
+      "analysis": {
+        "units": "Not applicable\n\nBacteriology",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Collect specimens before antimicrobial therapy where possible"
+      },
+      "turnaround": {
+        "provisional_raw": "1 day",
+        "final_raw": "2-3 days",
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Throat-Swab-for-Culture.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "tissue-and-biopsies",
+      "name": "Tissue and biopsies",
+      "aliases": [],
+      "description": "A biopsy may be defined as a portion of tissue removed from the living body for further examination. Ideally these specimens should be discussed with the laboratory prior to sampling to ensure that transport and processing are timely and appropriate tests are performed Routine Fungal Culture Only is performed by the Microbiology Department. For any samples requiring Complex or Extended Fungal Investigation, please send a separate sample to the Mycology Reference Centre Mycology (MRCM).",
+      "department": "Bacteriology",
+      "letter": "T",
+      "categories": [
+        "histopathology"
+      ],
+      "clinic_profiles": [],
+      "specimen": {
+        "types": [
+          "tissue"
+        ],
+        "specimen_type_raw": "Tissue, Biopsy\n\nUlcer Biopsy",
+        "container": "Tissue or biopsy material in a microbiologically CE marked leak proof container without formalin.",
+        "minimum_volume_raw": "Large enough to carry out all microscopy preparations and cultures.",
+        "collection": "Collect specimens before antimicrobial therapy where possible.",
+        "transport": "Specimens should be transported and processed as soon as possible\n\nNOTE: heart valve tissues can be requested as urgent samples to avoid delay in processing and to ensure an adequate sample tracking.",
+        "special_precautions": "If specimen is small, place it in sterile water to prevent desiccation."
+      },
+      "analysis": {
+        "units": "Not applicable\n\nBacteriology",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Specimens received in formol-saline are not suitable for culture. If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48 hr are undesirable."
+      },
+      "turnaround": {
+        "provisional_raw": "Gram stain 30mins - 2hours within receipt into the Microbiology laboratory, on request. Culture 1 day",
+        "final_raw": "5-7 days",
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "final_working_days": {
+          "min": 5.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Tissue-and-Biopsies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "urines",
+      "name": "Urines",
+      "aliases": [],
+      "description": "Urinary tract infection (UTI) results from the presence and multiplication of microorganisms in one or more structures of the urinary tract with associated tissue invasion. This can give rise to a wide variety of clinical syndromes. These include acute and chronic pyelonephritis (kidney and renal pelvis), cystitis (bladder), urethritis (urethra), epididymitis (epididymis) and prostatitis (prostate gland). Infection may spread to surrounding tissues (eg perinephric abscess) or to the bloodstream. The microscopical presence of White Blood Cells (WBC) is quantified and correlated to bacterial growth to diagnose a urinary tract infection. The presence of Red Blood Cells (RBC) and epithelial cells is also reported.",
+      "department": "Bacteriology",
+      "letter": "U",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "urine",
+          "body-fluid"
+        ],
+        "specimen_type_raw": "Urine: Clean catch urine (CCU) Mid stream urine (MSU) Supra pubic aspirate (SPA) Bladder urine & Catheter urine",
+        "container": "Collect specimens in 10 ml Monovette containing Boric Acid and transport specimens in sealed plastic bags.\n\nSpecimens not received in 10 ml Monovette containing Boric Acid will be rejected. Exceptions will be made for paediatric urine samples on babies up to 3 months, where the volume is less than 10ml. A universal container will be accepted for these patients.\n\nBacteriology",
+        "minimum_volume_raw": "A minimum volume of 1mL\n\nFor Mycobacteria culture collect 3 consecutive early morning urine samples in 200mL containers",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "Before sending to the laboratory urines should be screened in the clinical setting using dipsticks that are able to detect both leucocyte esterase and nitrites. This will give an almost immediate indication as to whether UTI is likely and for the need to culture in all but a few patient groups. There is a strict rejection policy in place for urine samples that are submitted without the relevant information or screening. Urine catheter tips will not be processed. There is no such thing as a routine MSU or CSU. Specimens should be sent only on clinical grounds. MSU and clean catch urines are the most commonly collected specimens and are recommended for routine use.\n\nSuprapubic aspirate (SPA) is seen as the \"gold standard\" but is usually reserved for clarification of equivocal results from voided urine in infants and small children. Before SPA is attempted it is preferable to use ultrasound guidance to determine the presence of urine in the bladder.\n\nBacteriology",
+        "transport": "Delays and storage at room temperature allow organisms to multiply which generates results that do not reflect the true clinical situation. Where delays in processing are unavoidable, refrigeration at 4°C is essential.\n\nSamples >48 hours old are not suitable for testing and a repeat sample should be collected.",
+        "special_precautions": "Specimens should be transported and processed within 4 hr"
+      },
+      "analysis": {
+        "units": "X106/L (WBC/RBC) Urine culture is quantified (cfu)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Collect specimens before antimicrobial therapy where possible."
+      },
+      "turnaround": {
+        "raw": "30 - 60 mins for cell count if laboratory contacted prior to sending 1-3 working days for culture",
+        "days": {
+          "min": 1.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Urines.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "vre-screening",
+      "name": "VRE screening",
+      "aliases": [],
+      "department": "Bacteriology",
+      "letter": "V",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab"
+        ],
+        "specimen_type_raw": "Liquid eSwab",
+        "container": "Unless otherwise stated, swabs for bacterial and fungal culture should be taken with a liquid eSwab\n\nLiquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded.",
+        "minimum_volume_raw": "Not applicable",
+        "transport": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable",
+        "special_precautions": "Rectal swabs should be submitted under the direction of the Infection Control Team or Consultant Microbiologist."
+      },
+      "analysis": {
+        "units": "1ml",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Specimens should be transported and processed as soon as possible to prevent deterioration."
+      },
+      "turnaround": {
+        "provisional_raw": "2 days",
+        "final_raw": "3 - 4 days",
+        "provisional_working_days": {
+          "min": 2.0,
+          "max": 2.0
+        },
+        "final_working_days": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/VRE-Infection-Control-Screen.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "wounds-skin-superficial-non-surgical",
+      "name": "Wounds – Skin, Superficial, Non-surgical",
+      "aliases": [
+        "Skin, superficial, non-surgical wounds"
+      ],
+      "description": "Infections of the skin and subcutaneous tissues are caused by a wide range of organisms. Organisms isolated from a clinically infected wound may be clinically significant but this decision needs to be made in conjunction with clinical details. Examination of biopsies might be more effective for diagnosis than swabs (See Tissue & Biopsy Section)",
+      "department": "Bacteriology",
+      "letter": "W",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab",
+          "pus"
+        ],
+        "container": "Unless otherwise stated, swabs for bacterial and fungal culture should then be taken using a liquid eSwab. Samples of pus/exudate, if present, are preferred to swabs",
+        "minimum_volume_raw": "1ml. The liquid in the eSwab should NOT be discarded. The laboratory cannot process samples with <1ml of liquid remaining in the swab and these samples will be discarded.",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "Sample a representative part of the lesion. Swabbing dry crusted areas is unlikely to yield the causative pathogen. If specimens are taken from ulcers, the debris on the ulcer should be removed and the ulcer should be cleaned with saline.",
+        "transport": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable",
+        "special_precautions": "If only a minute amount of pus or exudate is available it is preferable to send a pus/exudate swab in transport medium to minimise the risk of desiccation during transport."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Collect specimens before antimicrobial therapy where possible.\n\nSpecimens should be transported and processed as soon as possible to prevent deterioration."
+      },
+      "turnaround": {
+        "provisional_raw": "1 day",
+        "final_raw": "2-3 days\n\nBacteriology",
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "notes": "Skin, superficial, non-surgical wounds",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Wounds-Skin-Superficial-Non-surgical.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    }
+  ]
+}

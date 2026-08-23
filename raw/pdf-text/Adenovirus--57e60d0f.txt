@@ -1,0 +1,57 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Division of Laboratory Medicine 
+ 
+Molecular Microbiology 
+mft.nhs.uk/laboratorymedicine 
+1/1
+Adenovirus 
+ 
+General information             
+ 
+Collection container (including preservatives): CE marked leak proof container 
+ 
+Collection: EDTA Blood (EDTA Tube), Eye swab (Virus Transport Media)   
+ 
+Specimen transport: Ambient or refrigerated 
+ 
+Compliance with current postal and transportation regulations is essential.  Clinical samples should be 
+collected into a leak‐proof container in a sealed plastic bag.  Appropriate hazard labelling according to local 
+policy should be applied.  Specimens should be transported and processed as soon as possible.    
+ 
+Minimum volume of sample: Minimum volume 500µl 
+ 
+Special precautions: If processing is delayed, refrigeration is preferable to storage at room temperature. 
+ 
+ 
+Laboratory information 
+ 
+Measurement units: Threshold cycle (CT) 
+ 
+Biological reference units: Not applicable 
+ 
+Turnaround time for provisional result (working days): 3 days  
+Turnaround time to final result (working days): 4 days 
+ 
+ 
+Clinical information 
+ 
+Clinical decision points: Not applicable 
+ 
+Factors known to significantly affect the results: False negative results may occur for a variety of reasons, 
+for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the 
+detectable limit of the assay. 
+ 
+New and emerging variants may also occur which may not be detected by this assay. Towards the limit of 
+detection of an assay sampling variation will result in lower reproducibility. 
+                     
+(Last updated December 2014) 

@@ -1,0 +1,51 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+Chronic lymphocytic/lymphoma panel 
+ 
+General information 
+ 
+Panel of markers used: CD3, CD5, CD19, CD23, CD79b, Kappa chains, Lambda chains, FMC7, CD38 
+(optional markers: CD10, CD11c, CD25, CD103). 
+ 
+Specimen transport: At room temperature. Samples should be received within 24 hours of collection 
+ 
+Repeat frequency: Post treatment monitoring, suspected relapse and MRD 
+ 
+Special precautions: Do not refrigerate samples 
+ 
+Laboratory information 
+ 
+Reporting units: Percentage of the population of cells of interest 
+ 
+Volume and sample type: 5mls EDTA blood, bone marrow or fluid samples (e.g. ascitic fluid, bronchoalveolar 
+lavage, CSF, EBUS, fine needle aspirates or pleural fluids) 
+ 
+Method: Flow cytometry 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median – 2 
+ 
+Participation in EQA Scheme: UK NEQAS Leukaemia Immunophenotyping Part 1 and 2 
+ 
+Clinical information 
+ 
+Indications for the test: Haematological malignancies involving lymphoid cells, to confirm relapse, to confirm 
+remission 
+ 
+Factors affecting the test: Specimens should be ideally <24 hours old and never more than 48 hours old 
+ 
+ 
+(Last updated August 2022) 

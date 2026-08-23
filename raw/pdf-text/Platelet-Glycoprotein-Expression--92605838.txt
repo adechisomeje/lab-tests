@@ -1,0 +1,59 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Laboratory Medicine Care Division 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+Platelet Glycoprotein Expression 
+ 
+General information 
+Platelet glycoprotein expression is useful in the diagnosis of Glanzmann's thrombasthenia and 
+BernardSoulier syndrome. These hereditary platelet disorders are characterised by selective deficiencies of 
+platelet membrane glycoproteins. 
+ 
+Specimen transport: At room temperature 
+ 
+Repeat frequency: At significant change of clinical symptoms 
+ 
+Special precautions: The assay should be carried out on blood that is < 24 hours old. Samples can be stored 
+at 4°C prior to analysis. Blood should be taken in to sodium citrate anticoagulant. 
+ 
+Laboratory information 
+ 
+Normal range: >90% positive platelets 
+ 
+Volume and sample type: 5ml citrate blood 
+ 
+Method: Flow cytometric analysis of CD41, CD42b & CD61 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median – 2 
+ 
+Participation in EQA Scheme: No formal scheme available. We perform a clinical review of abnormal results 
+against other laboratory data and clinical information to assure results fit with the clinical diagnosis. 
+ 
+Clinical information 
+ 
+Indications for the test: Prolonged bleeding in infancy, haemorrhage, family history 
+ 
+Factors affecting the test: This assay is not recommended for patients with thrombocytopenia (<100 x 109/L) 
+ 
+Interpretation: In Bernard-Soulier syndrome GPIb/IX/V (CD42b) is absent or dysfunctional. In Glanzmann 
+thrombasthenia GPIIb/IIIa (CD41/CD61) is absent or dysfunctional. A mild decrease in the expression suggest 
+a variant or heterozygous state. 
+ 
+The CD61 clone (SZ21) bears the platelet alloantigen PlA1 (HPA-1a). Used in flow cytometry, it shows a 
+markedly reduced reactivity with platelets bearing the PlA2 (HPA-1b) allele. As described in the IFU, studies 
+indicate that 70% of individuals are PlA1/PlA1, 27% PlA1/PlA2, and 3% PlA2/PlA2. Therefore, reduced CD61 
+binding may be observed in a percentage of healthy individuals. 
+ 
+(Last updated June 2026) 

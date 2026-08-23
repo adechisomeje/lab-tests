@@ -1,0 +1,62 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Laboratory Medicine Care Division 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+Free Light Chains 
+ 
+General information 
+ 
+This test measures immunoglobulin light chains not incorporated into intact immunoglobulin molecules. 
+Serum levels are increased when production is increased (myeloma) or excretion is impaired (renal failure) 
+ 
+Demystifying Serum Free Light Chains – a guide for primary care: https://mft.nhs.uk/the-
+trust/otherdepartments/laboratory-medicine/information-for-gps/laboratory-medicines-newsletter-
+forgps/demystifying-serum-free-light-chains-a-guide-for-primary-care/  
+ 
+Specimen transport: At room temperature 
+ 
+Repeat frequency: Initial diagnosis, post treatment monitoring for suspected relapse 
+ 
+Special precautions: Should be measured alongside immunoglobulins and electrophoresis 
+ 
+Laboratory information 
+ 
+Normal reference range: 
+• 
+Ratio 0.26-1.65 
+• 
+Free κ = 3.30-19.40 mg/L 
+• 
+Free λ = 5.71-26.30 mg/L 
+ 
+Volume and sample type: 4ml serum 
+ 
+Method: Turbidimetry 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 3 
+ 
+Participation in EQA Scheme: UK NEQAS for Monoclonal Protein identification 
+ 
+Clinical information 
+ 
+Indications for the test: May be used as part of the diagnostic strategy for myeloma. This test has largely 
+superseded Bence Jones protein (urine immunofixation). 
+Monitoring in some cases of myeloma. 
+ 
+Factors affecting the test: Antigen excess can cause falsely low serum FLC results. Some monoclonal light 
+chains (particularly k FLC) do not dilute in a linear fashion and may be underestimated. FLC results can be 
+artificially elevated when an IgM monoclonal protein is present. 
+ 
+(Last updated January 2026) 

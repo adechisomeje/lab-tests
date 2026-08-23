@@ -1,0 +1,60 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+Double stranded DNA antibodies (IgG) 
+ 
+General information 
+The presence of autoantibodies to double stranded DNA is strongly suggestive of SLE, although they are 
+detected in only 40-60% of patients with this disease. 
+ 
+Specimen transport: At room temperature 
+ 
+Repeat frequency: We recommend not repeating this test more than once a month, unless the patient is 
+undergoing plasmapheresis 
+ 
+Special precautions: None 
+ 
+Laboratory information 
+ 
+Normal reference range: 0-9.9 IU/mL 
+ 
+Volume and sample type: 4ml serum 
+ 
+Method: Multiplex flow immunoassay and Immunofluorescence 
+ 
+Participation in EQA Scheme: Nuclear and Related Antigens  
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 2 
+ 
+Clinical information 
+ 
+Indications for the test: Diagnosis and monitoring of lupus 
+ 
+Factors affecting the test: We use two assays to detect DNA antibodies: 
+• 
+Crithidia is a source of pure double stranded DNA and gives a qualitative result 
+• 
+The multiplex assay can be contaminated by single stranded DNA, but gives quantitative results 
+ 
+The following configurations can be seen: 
+• 
+Crithidia Positive + multiplex flow immunoassay positive = indicates active lupus 
+• 
+Crithidia Negative + multiplex flow immunoassay positive = indicates single stranded DNA antibodies, 
+usually triggered by infection or drugs 
+ 
+ 
+(Last updated August 2023) 

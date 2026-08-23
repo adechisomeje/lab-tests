@@ -1,0 +1,57 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Division of Laboratory Medicine 
+ 
+Vaccine Evaluation Unit 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+Functional antibody to Neisseria meningitides serogroup B by 
+Serum Bactericidal Antibody Assay (SBA) 
+ 
+General information 
+ 
+Collection container (including preservatives): Clotted blood sample tube (no preservative) 
+ 
+Specimen type: Clotted Blood/serum, paired sera 
+ 
+Specimen transport: Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing 
+instruction 650 
+ 
+Minimum volume of sample: Minimum volume 0.6mL 
+ 
+Special precautions: If the serum bactericidal activity is reported with the comment ‘SBA titre includes non‐
+complement mediated lysis’, then the result must be interpreted with caution.  If in doubt, please telephone 
+0161 276 6791 for advice. If processing is delayed, refrigeration is preferable to storage at ambient 
+temperature. 
+ 
+Delays of over 48hr are undesirable.    
+ 
+Laboratory information 
+ 
+Measurement units: SBA Titres expressed as the reciprocal of the final serum dilution giving ≥ 50% killing at 
+60 minutes calculated from the number of colony forming units (cfu) in the control 
+ 
+Biological reference units: Not applicable 
+ 
+Turnaround time: 28 Working Days 
+ 
+Clinical information 
+ 
+Clinical decision points: For putative protection against serogroup B, the SBA titre must be ≥ 4 for at least 2 
+of the 3 strains used. 
+ 
+Factors known to significantly affect the results:  As this is a 'killing type' assay using live bacteria, antibiotics 
+can impact on results.  A control to monitor this is included in the assay. 
+ 
+The effect and impact of Eculizumab therapy on this assay is currently under investigation 
+    
+(Last updated December 2014) 

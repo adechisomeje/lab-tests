@@ -1,0 +1,4181 @@
+{
+  "meta": {
+    "profile": "sexual-health-gum",
+    "name": "Sexual Health / GUM Clinic",
+    "version": "0.1.0",
+    "rationale": "Bloodborne virus and bacterial STI screening form the core, with renal and liver monitoring for antiretroviral therapy.",
+    "test_count": 51
+  },
+  "tests": [
+    {
+      "id": "activated-partial-thromboplastin-time",
+      "name": "Activated partial thromboplastin time",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "A",
+      "categories": [
+        "coagulation",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "anti-hepatitis-bs-antibody-virology",
+      "name": "Anti-Hepatitis Bs antibody Virology",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "A",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "mI U/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Hepatitis-B-virus-HBV-surface-antibody-Anti-HBs.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "cd4-count-t-cell-count",
+      "name": "CD4 count (T cell count)",
+      "aliases": [],
+      "description": "The CD4 count is used to monitor disease progression in HIV infection. For example, patients with counts below 200 x 106/L are at risk of pneumocystis pneumonia and should received antibiotic prophylaxis. CD4 counts are also used to inform decision making on anti-retroviral therapy. BHIVA publish guidelines on CD4 counts and their interpretation: www.aidsmap.com Apart from HIV infection, the CD4 count can be reduced by acute and chronic stress, including infections and physical or psychological stress. CD4 counts are also affected by daily circadian rhythms and the menstrual cycle.",
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "5ml EDTA blood CD Marker Age Minimum % Maximum % Minimum cells/mm3 Maximum cells/mm3 CD3+CD4+ Neonates 17 52 400 3500 \" 1 wk - 2 mo 41 68 1700 5300 \" 2-5 mo 33 58 1500 5000 \" 5-9 mo 33 58 1400 5100 \" 9-15 mo 31 54 1000 4600 \" 15-24 mo 25 50 900 5500 \" 2-5 y 23 48 500 2400 \" 5-10 y 27 53 300 2000 \" 10-16 y 25 28 400 2100 \" Adults 31 59 300 1400\n\nImmunology",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "volume": {
+          "value": 5.0,
+          "unit": "mL"
+        },
+        "transport": "An EDTA specimen should arrive in the lab on the same day or within 48 hours maximum. Samples should be stored and transported at room temperature and not refrigerated.",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Flow cytometry - single platform",
+        "reference_range": "(95% confidence interval)\n\nPaediatric reference ranges are from Comans-Bitter WM, et al, \"Immunophenotyping of Blood Lymphocytes in Childhood,\" J Paediatrics, 1997, 130:388-393",
+        "interferences": "Because physiological stress can affect results, avoid testing during acute infections, postoperatively etc. Always try and do monitoring tests at the same time of day. In women, try to do monitoring tests at the same phase of the menstrual cycle.",
+        "eqa_scheme": "UK NEQAS Immune Monitoring Scheme"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "For use as a monitoring tool in serologically confirmed HIV infection. Should not be used in an attempt to diagnose HIV infection.",
+        "repeat_frequency": "Three times a year in asymptomatic patients, more frequently in those with symptoms or when medication is being changed."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/CD4-count-T-cell-count.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "chlamydia-trachomatis-neisseria-gonorrhoea-trichomonas-vaginalis-mycoplasma-geni",
+      "name": "Chlamydia trachomatis, Neisseria gonorrhoea, Trichomonas vaginalis, Mycoplasma genitalium NAATs",
+      "aliases": [],
+      "description": "vaginalis, Mycoplasma genitalium NAATs",
+      "department": "Molecular Microbiology",
+      "letter": "C",
+      "categories": [
+        "bacteriology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "plasma",
+          "urine",
+          "swab",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "For Chlamydia/ Gonococcal PCR the following samples are accepted: urine, swabs such as vaginal/vulval, cervical, throat, rectal, eye, penile, urethral, genital. Trichomonas Vaginalis and Mycoplasma Genitalium PCR the following samples are accepted: urine, vaginal/vulval or cervical swabs. From male patients, urine only.",
+        "container": "cobas® PCR media tube cobas® PCR Dual Swab Collection Kit",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "Specimens should be collected and handled following the recommended guidelines on the collection packs:\n\nMale and female urine specimens\n\nMale and female urines must be collected in a sterile container and transferred to the cobas® PCR media tube within 24 hours of collection. After transfer, specimens can then be stored at 2-300C for up to 3 months prior to testing.\n\nUrine specimens must fill the cobas® PCR media tube between the 2 black urine fill lines (shown below). If the amount of urine is above or below these lines the specimen will not be tested by the laboratory.\n\nUrine specimen with 2 black urine fill lines\n\nVaginal, throat and anorectal specimens\n\nWoven polyester swab used to collect vaginal, throat and anorectal specimens\n\nMolecular Microbiology Only the larger woven polyester swab (shown above) included in the cobas® PCR Dual Swab Collection Kit should be used to collect vaginal, rectal and throat specimens. Specimens may be stored in cobas® PCR media at 2-30°C for up to 3 months.\n\nEndocervical specimens\n\nThe larger woven polyester swab (shown above) included in the cobas® PCR Dual Swab Collection Kit should be used first to remove any cervical secretions followed by the smaller flocked swab (shown below) to collect the endocervical specimen.\n\nFlocked swab used to collect endocervical specimens\n\nPlease ensure the correct swab is used for the test requested or the sample cannot be processed. Please note only ONE swab should be returned in the specimen tube.\n\nSpecimens may be stored in cobas® PCR media at 2-30°C for up to 3 months.",
+        "transport": "Transport at ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "Patient consent must be obtained for both Chlamdyia and Gonococcal testing. Single tests cannot be accepted for either Chlamydia or Gonorrhoea. If consent for both cannot be obtained, please contact the laboratory for information on alternative laboratories that provide a single analyte service.\n\nSpecimens received more than 3 months after collection will not be tested by the laboratory.\n\nOnly the woven polyester swab or flocked swabs contained in the cobas® PCR Dual Swab Collection Kit will be accepted for testing.\n\nSwab specimens received with no swab or 2 swabs will not be tested by the laboratory.\n\nCobas® PCR media that has expired will not be tested.\n\nPlease ensure the request form clearly states the specimen type and the required test.\n\nPlease ensure the swabs are not inverted in the tube, i.e. the specimen collection end should be placed in the liquid media."
+      },
+      "analysis": {
+        "units": "Relative Light Units (RLU)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Samples must be kept at ambient temperature.\n\nWhere possible, check that swabs are visually clear of stool, mucus or blood as these can interfere with the assay. Other known factors include, some over the counter feminine hygiene, lubricants or prescriptions. Where possible, request patient avoids applying these 24 hours prior to sample collection.\n\nFalse negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of target below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days\n\nFor urgent tests please contact the laboratory\n\nM. genitalium antibiotic resistance testing is a referral test with a significantly longer turnaround time, please refer to the UKHSA BRD user manual.",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Chlamydia-trachomatis-Neisseria-gonorrhoea-Trichomonas-vaginalis-NAATs.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cord-blood-investigations",
+      "name": "Cord blood investigations",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "C",
+      "categories": [
+        "transfusion",
+        "sexual-health-sti",
+        "antenatal-pregnancy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "coronavirus-covid-19-testing-for-sars-cov-2",
+      "name": "Coronavirus COVID-19 Testing for SARS-CoV-2",
+      "aliases": [],
+      "description": "Coronavirus COVID-19 Testing for SARS-CoV-2",
+      "department": "Molecular Microbiology",
+      "letter": "C",
+      "categories": [
+        "virology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "The following samples must be sent:\n\n• Upper respiratory tract (nose and throat swab or NPA) • Lower respiratory tract if possible (sputum, BAL or ETA)\n\nThe Laboratory can test for SARS-CoV-2 on a nose and throat swab. Swab each site with a separate swab and place both swabs in one tube of Virus Transport Medium (VTM). If a patient is producing sputum then please send sputum as well as a nose and throat swab.\n\nIf a nose/throat swab is collected, swab the throat first and then the nose.\n\nRefer to national guidance at https://www.gov.uk/government/publications/wuhan-novel-coronavirus-guidance-for-clinical-diagnostic- laboratories",
+        "container": "• This guidance should be used for sending samples to PHL Manchester for COVID-19 testing following identification of the patient that meets the national case definition. Refer to national guidance at https://www.gov.uk/government/publications/wuhan-novel-coronavirus-initial-investigation-of-possible- cases/investigation-and-initial-clinical-management-of-possible-cases-of-wuhan-novel-coronavirus-wn-cov- infection#interim-definition-possible-cases • The regional COVID-19 request form (E28 form) must be completed https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/86826 4/PHE_2019-COVID-19_Testing_Request_Form_E28.pdf",
+        "minimum_volume_raw": "Minimum volume 700μl",
+        "transport": "Arrange transport to PHL Manchester - Label package clearly for Virology with ‘PRIORITY 10' label. - Virology Reception, 3rd Floor, Clinical Sciences Building One, MRI, M13 9WL or, out of hours, - Central Specimen Reception, Ground Floor, Clinical Sciences Building One, MRI, M13 9WL - Packages should be labelled with ‘PRIORITY 10‘ for all specimens for COVID-19 testing, with the exception of known positive patients. - Packages should be labelled with ‘PRIORITY 20' for all known positive COVID-19 patients' specimens. Samples must be sent in Category B transport containers. Follow the diagram below for instructions on packaging samples to send for testing.\n\nMolecular Microbiology\n\n• Please keep the specimen separate from other pathology specimens. • All other pathology specimens should be transported in the usual way so they are not delayed.",
+        "special_precautions": "All samples must be sent in accordance with Cat B transport guidance.\n\nIf processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Positive or Negative",
+        "clinical_decision_points": "Not applicable\n\nPlace samples into a bubble wrap envelope with absorbent pad and seal Place samples into plastic cylinder and seal the top. Include the request form outside of the cylinder Place cylinder into Cat B transport box Seal the box using the blue sticker provided"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Coronavirus-COVID-19.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cystic-fibrosis",
+      "name": "Cystic Fibrosis",
+      "aliases": [],
+      "description": "Cystic fibrosis (CF) is caused by a defect in the CF transmembrane conductance regulator gene that affects the transport of ions and water across the epithelium. This leads to progressive pulmonary disease associated with pulmonary infections, which are the major cause of morbidity and mortality in CF patients. The major pathogens are S. aureus, H. influenza (usually non-encapsulated in CF patients), S. pneumoniae, Burkholderia and Pseudomonads, particularly mucoid P. aeruginosa strains. Strains of P. aeruginosa with differing antibiotic susceptibilities may be isolated from a single sample.",
+      "department": "Bacteriology",
+      "letter": "C",
+      "categories": [
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab",
+          "sputum-respiratory",
+          "body-fluid"
+        ],
+        "specimen_type_raw": "Respiratory specimens; Sputum and Cough Swabs (Paediatric use only)",
+        "container": "Collect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.\n\nSputum/Pleural Fluids/BALs Cough Swabs (Paediatric CF)",
+        "minimum_volume_raw": "5mL",
+        "volume": {
+          "value": 5.0,
+          "unit": "mL"
+        },
+        "collection": "Use aseptic technique.",
+        "transport": "Specimens should be transported and processed as soon as possible. Paediatric postal samples should be submitted using the kit provided by the Microbiology Laboratory.",
+        "special_precautions": "Some complex identification can take several weeks to confirm identity.\n\nIf processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Not applicable\n\nBacteriology",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Specimens should be transported and processed as soon as possible. The recovery rate of Haemophilus sp., is reduced the longer the time taken to transport the specimen."
+      },
+      "turnaround": {
+        "raw": "Negative results available at 2 working days and positives generally within 8 working days.",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/12/Cystic-Fibrosis.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "dna-testing-for-the-haemoglobinopathies",
+      "name": "DNA Testing for the Haemoglobinopathies",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "D",
+      "categories": [
+        "sexual-health-sti",
+        "haemoglobinopathy",
+        "genetics-molecular",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "dried-blood-spot-hepatitis-c-rna-screening",
+      "name": "Dried blood spot Hepatitis C RNA screening",
+      "aliases": [],
+      "description": "This service is designed for those patients on whom it is difficult to obtain venous blood, especially for intra venous drug users. Contact the laboratory for supply of postal packs containing all necessary items for using this service. Paediatric/infant packs are available on request",
+      "department": "Virology",
+      "letter": "D",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "dried-blood-spot"
+        ],
+        "specimen_type_raw": "Dried blood spot card",
+        "container": "Envelope with desiccant",
+        "minimum_volume_raw": "7mm Dried blood spot card",
+        "collection": "Virology",
+        "transport": "No special needs",
+        "special_precautions": "Ensure blood spot has dried and submit with desiccant pouch enclosed. Do not send back used/unused lancets."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Spots too small, not all spots filled with blood"
+      },
+      "turnaround": {
+        "provisional_raw": "5 days Turn round time to final result (working days): 7 days",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Dried-blood-Spot-Hepatitis-C-RNA-Screening.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "dried-blood-spot-syphilis-antibody",
+      "name": "Dried blood spot Syphilis antibody",
+      "aliases": [],
+      "description": "This service is designed for those patients on whom it is difficult to obtain venous blood, especially for intra venous drug users. Contact the laboratory for supply of postal packs containing all necessary items for using this service. Paediatric/infant packs are available on request",
+      "department": "Virology",
+      "letter": "D",
+      "categories": [
+        "infectious-disease-serology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "dried-blood-spot"
+        ],
+        "specimen_type_raw": "Dried blood spot card",
+        "container": "Envelope with desiccant",
+        "minimum_volume_raw": "7mm Dried blood spot card",
+        "transport": "No special needs\n\nVirology",
+        "special_precautions": "Ensure blood spot has dried and submit with desiccant pouch enclosed. Do not send back used/unused lancets."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Spots too small, not all spots filled with blood"
+      },
+      "turnaround": {
+        "provisional_raw": "5 days for screen",
+        "final_raw": "7 days for confirmation",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Dried-Blood-Spot-Syphilis-antibody.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "egfr-estimated-gfr",
+      "name": "eGfR (estimated GfR)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "E",
+      "categories": [
+        "renal-function",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "ml/min/1.73 m2",
+        "reference_range": ">= 90 ml/min/1.73 m2"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Estimated Glomerular Filtration Rate CKD-EPI 2012 (EGFR)",
+        "match_method": "abbreviation",
+        "units": "ml/min/1.73 m2",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "y",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 90.0,
+            "raw": {
+              "sex": "all",
+              "age_unit": "Y",
+              "age_min": "18",
+              "age_max": "150",
+              "low": "90*",
+              "high": "none"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "faecal-immunochemical-testing",
+      "name": "Faecal immunochemical testing",
+      "aliases": [
+        "FIT"
+      ],
+      "department": "Biochemistry",
+      "letter": "F",
+      "categories": [
+        "sexual-health-sti",
+        "gastrointestinal"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        }
+      ],
+      "notes": "FIT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "follicle-stimulating-hormone",
+      "name": "Follicle stimulating hormone",
+      "aliases": [
+        "FSH"
+      ],
+      "department": "Biochemistry",
+      "letter": "F",
+      "categories": [
+        "reproductive-hormones",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "IU/L",
+        "reference_range": "<= 3.1 IU/L (adult; 12 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Follicle Stimulating Hormone (FSH)",
+        "match_method": "exact",
+        "units": "IU/L",
+        "strata": [
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 1.0,
+            "high": 3.1,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "years",
+              "age_min": "0",
+              "age_max": "<1",
+              "low": "NA",
+              "high": "3.1"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 9.0,
+            "high": 2.0,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "years",
+              "age_min": "1",
+              "age_max": "<9",
+              "low": "NA",
+              "high": "2.0"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 9.0,
+            "age_max": 12.0,
+            "low": 0.4,
+            "high": 4.2,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "years",
+              "age_min": "9",
+              "age_max": "<12",
+              "low": "0.4",
+              "high": "4.2"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 150.0,
+            "low": 1.5,
+            "high": 12.4,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "years",
+              "age_min": "12",
+              "age_max": "150",
+              "low": "1.5",
+              "high": "12.4"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 1.0,
+            "low": 1.6,
+            "high": 19.0,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "years",
+              "age_min": "0",
+              "age_max": "<1",
+              "low": "1.6",
+              "high": "19"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 9.0,
+            "low": 0.7,
+            "high": 5.8,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "years",
+              "age_min": "1",
+              "age_max": "<9",
+              "low": "0.7",
+              "high": "5.8"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 9.0,
+            "age_max": 12.0,
+            "low": 0.5,
+            "high": 7.6,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "years",
+              "age_min": "9",
+              "age_max": "<12",
+              "low": "0.5",
+              "high": "7.6"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 150.0,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "years",
+              "age_min": "12",
+              "age_max": "150",
+              "low": "Depends on cycle- report as comment"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "follicular",
+            "low": 3.5,
+            "high": 12.5,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Follicular",
+              "low": "3.5",
+              "high": "12.5"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "mid - cycle",
+            "low": 4.7,
+            "high": 21.5,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Mid - cycle",
+              "low": "4.7",
+              "high": "21.5"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "luteal",
+            "low": 1.7,
+            "high": 7.7,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Luteal",
+              "low": "1.7",
+              "high": "7.7"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "post menopa usal",
+            "low": 25.8,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "Post menopa usal",
+              "low": "25.8",
+              "high": "none"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "notes": "FSH",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "genital-specimens-for-culture",
+      "name": "Genital specimens for culture",
+      "aliases": [],
+      "department": "Bacteriology",
+      "letter": "G",
+      "categories": [
+        "bacteriology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab",
+          "pus",
+          "sputum-respiratory",
+          "body-fluid",
+          "semen"
+        ],
+        "specimen_type_raw": "High vaginal swab (HVS), vaginal discharge, vulval swab, labial swab, cervical swab, endocervical swab, penile swab, urethral swab, genital ulcer swab, semen, screening swabs for N. gonorrhoeae, aspirates from bartholin's gland, fallopian tube, tubo-ovarian abscess, pouch of Douglas fluid, intra-uterine contraceptive device (IUCD), products of conception.\n\nWire swabs are permitted for use with Utheral samples where required and they should be transported to the laboratory as soon as possible to prevent specimen degregation.\n\nHigh Vaginal swabs (HVS) are not suitable for the isolation of N. gonorrhoeae, Endocervical swabs should be submitted.\n\nAspirates\n\nGenital/throat eSwab Urethral Swab\n\nCharcoal swab for Trichomonas",
+        "container": "CE marked leak proof container",
+        "minimum_volume_raw": "Fluids and pus - preferably a minimum volume of 1mL.\n\nLiquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "Use aseptic technique. Collect specimens in appropriate CE marked leak proof containers and transport in sealed plastic bags. Collect swabs into appropriate transport medium and transport in sealed plastic bags.\n\nGenital tract swabs Cervical and high vaginal swabs should be taken with the aid of a speculum. It is important to avoid vulval contamination of the swab. For Trichomonas only, the posterior fornix, including any obvious candidal plaques should be swabbed using a charcoal swab. If pelvic infection, including gonorrhoea, is suspected, the cervix should be swabbed Separate samples should be collected into appropriate transport media for detection of viruses or C. trachomatis.\n\nBacteriology High vaginal swabs After the introduction of the speculum, the eSwab should be rolled firmly over the surface of the vaginal vault. Please use an eSwab and ensure the liquid remains in the tube.\n\nCervical swabs After introduction of the speculum to the vagina, the swab should be rotated inside the endocervix. Please use an eSwab and ensure the liquid remains in the tube.\n\nUrethral swabs Contamination with micro-organisms from the vulva or the foreskin should be avoided. Thin swabs are available for collection of specimens. The patient should not have passed urine for at least one hour. For males, if a discharge is not apparent, attempts should be made to \"milk\" exudate from the penis. The swab is gently passed through the urethral meatus and rotated. Place the thin swab in Amies transport medium with charcoal.\n\nIntrauterine contraceptive devices (IUCDs) The entire device should be sent.\n\nRectal swabs Rectal swabs are taken via a proctoscope.\n\nThroat swabs Throat swabs should be taken from the tonsillar area and/or posterior pharynx avoiding the tongue and uvula.\n\nFluids and pus These are taken from the fallopian tubes, tubo-ovarian and Bartholin's abscesses, etc... during surgery\n\nLiquid eSwabs contain 1ml of liquid. No liquid should be discarded when collecting sample. Samples with insufficient liquid will be discarded.",
+        "transport": "Specimens should be transported and processed as soon as possible.",
+        "special_precautions": "Endocervical swabs for gonorrhoea investigation should not be refrigerated"
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "HVS swabs for gonorrhoea investigation should not be refrigerated as this significantly reduces the recovery rate"
+      },
+      "turnaround": {
+        "provisional_raw": "30-60 mins for microscopy 1 day for culture",
+        "final_raw": "2-3 days\n\nBacteriology",
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Genital-Specimens-for-Culture.pdf",
+        "detail_type": "pdf",
+        "last_updated": "September 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "haptoglobulin-estimation",
+      "name": "Haptoglobulin Estimation",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "H",
+      "categories": [
+        "haematology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "hcv-genotyping",
+      "name": "HCV genotyping",
+      "aliases": [],
+      "description": "HCV genotyping would only be performed on an HCV viral load positive patient.",
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "hepatitis",
+        "genetics-molecular"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA blood",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3.0 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        },
+        "transport": "Whole bloods/EDTA samples should be processed in the laboratory within 24hrs @ 2- 25C. Please send to the laboratory as soon as possible.",
+        "special_precautions": "Haemolysed specimens can be inhibitory; where this is unavoidable, such as with post- mortem samples, the laboratory should be contacted (0161-276-8843)."
+      },
+      "analysis": {
+        "units": "Results presented as genotype",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "raw": "The results of all tests will be available within 5-7 working days after receipt of the specimen in the laboratory, and may be available sooner by prior arrangement",
+        "days": {
+          "min": 5.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/12/HCV-Genotyping.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-a-total-antibody-igg-and-igm",
+      "name": "Hepatitis A total antibody (IgG and IgM)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis Assay interference and generation of anomalous results can occur when a patients' sample contains:  Heterophile antibodies  Animal serum products (from routine exposure to animals)  Human mouse monoclonal antibodies (patients who receive  Preparations of mouse monoclonal antibodies for diagnosis or therapy)"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Hepatitis-A-Total-antibody-IgG-and-IgM.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-a-virus-hav-igm",
+      "name": "Hepatitis A virus (HAV) IgM",
+      "aliases": [
+        "HAV"
+      ],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis\n\nAssay interference and generation of anomalous results can occur when a patients' sample contains:  Heterophile antibodies  Animal serum products (from routine exposure to animals)  Human mouse monoclonal antibodies (patients who receive preparations of mouse monoclonal antibodies for diagnosis or therapy)"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Hepatitis-A-virus-HAV-IgM.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-hbv-confirmation",
+      "name": "Hepatitis B (HBV) confirmation",
+      "aliases": [
+        "HBV confirmation"
+      ],
+      "description": "This test consists of HBsAg, anti-HBcore and anti-HBs and may also include tests for Hepatitis B e antigen, Hepatitis B e antibody and Hepatitis B core IgM",
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable"
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "raw": "3 days",
+        "days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "notes": "HBV confirmation",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Hepatitis-B-virus-HBV-confirmation.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-hbv-core-antibodies",
+      "name": "Hepatitis B (HBV) core antibodies",
+      "aliases": [
+        "HBV core antibodies"
+      ],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "notes": "HBV core antibodies",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Hepatitis-B-virus-HBV-core-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-hbv-core-antibody-dried-blood-spot",
+      "name": "Hepatitis B (HBV) core antibody – Dried Blood Spot",
+      "aliases": [
+        "Dried blood spot Hepatitis B core antibody",
+        "HBV core antibody – Dried Blood Spot"
+      ],
+      "description": "This service is designed for those patients on whom it is difficult to obtain venous blood, especially for intra venous drug users. Contact the laboratory for supply of postal packs containing all necessary items for using this service. Paediatric/infant packs are available on request",
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "dried-blood-spot"
+        ],
+        "specimen_type_raw": "Dried blood spot card",
+        "container": "Envelope with desiccant",
+        "minimum_volume_raw": "7mm diameter blood spot",
+        "transport": "No special needs\n\nVirology",
+        "special_precautions": "Ensure blood spot has dried and submit with desiccant pouch enclosed. Do not send back used/unused lancets."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Spots too small, not all spots filled with blood"
+      },
+      "turnaround": {
+        "provisional_raw": "4 days",
+        "final_raw": "5 days",
+        "provisional_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        },
+        "final_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "notes": "Dried blood spot Hepatitis B core antibody",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Hepatitis-B-virus-HBV-core-antibody-Dried-Blood-Spot.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-hbv-core-igm-anti-hbc-igm",
+      "name": "Hepatitis B (HBV) core IgM (anti-HBc IgM)",
+      "aliases": [
+        "HBV core IgM"
+      ],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "No special needs",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "S/CO",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Hepatitis-B-virus-HBV-core-IgM-Anti-HBc-IgM.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-hbv-surface-antigen-hbsag",
+      "name": "Hepatitis B (HBV) surface antigen (HBsAg)",
+      "aliases": [
+        "Anti HBs",
+        "HBV surface antibody",
+        "HBsAg",
+        "Hepatitis B (HBV) surface antibody (Anti-HBs)"
+      ],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "4.9 ml blood tube or 7.5ml blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis, mutation"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days. Hepatitis B virus surface antigen confirmation is 6 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "notes": "HBV surface antibody; anti HBs; HBsAg",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Hepatitis-B-virus-HBV-surface-antigen-HBsAg.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-hbv-surface-antigen-hbsag-dried-blood-spot",
+      "name": "Hepatitis B (HBV) surface antigen (HBsAg) – Dried Blood Spot",
+      "aliases": [
+        "Dried blood spot Hepatitis B surface antigen"
+      ],
+      "description": "Spot) This service is designed for those patients on whom it is difficult to obtain venous blood, especially for intra venous drug users. Contact the laboratory for supply of postal packs containing all necessary items for using this service. Paediatric/infant packs are available on request",
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "dried-blood-spot"
+        ],
+        "specimen_type_raw": "Dried blood spot card",
+        "container": "Envelope with desiccant",
+        "minimum_volume_raw": "7mm diameter blood spot",
+        "collection": "Virology",
+        "transport": "No special needs",
+        "special_precautions": "Ensure blood spot has dried and submit with desiccant pouch enclosed. Do not send back used/unused lancets."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Spots too small, not all spots filled with blood"
+      },
+      "turnaround": {
+        "provisional_raw": "4 days",
+        "final_raw": "5 days",
+        "provisional_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        },
+        "final_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "notes": "Dried blood spot Hepatitis B surface antigen",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Hepatitis-B-virus-HBV-surface-antigen-HBsAg-Dried-Blood-Spot.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-virus-hbv-e-antigen-hbeag-and-e-antibody-anti-hbe",
+      "name": "Hepatitis B virus (HBV) e antigen (HBeAg) and e antibody (Anti-HBe)",
+      "aliases": [
+        "Hepatitis B e antibody",
+        "Hepatitis B e antigen"
+      ],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "notes": "Hepatitis B e antibody; Hepatitis B e antigen",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Hepatitis-B-virus-HBV-e-antigen-HBeAg-and-e-antibody-Anti%E2%80%90HBe.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-virus-genotyping-and-resistance-markers",
+      "name": "Hepatitis B virus Genotyping and Resistance Markers",
+      "aliases": [
+        "HBV resistance markers"
+      ],
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "sexual-health-sti",
+        "hepatitis",
+        "genetics-molecular"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA blood",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        },
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "raw": "The results of all tests will be available within 5-7 working days after receipt of the specimen in the laboratory, and may be available sooner by prior arrangement",
+        "days": {
+          "min": 5.0,
+          "max": 7.0
+        }
+      },
+      "notes": "HBV resistance markers",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/HBV-Resistance-Markers.pdf",
+        "detail_type": "pdf",
+        "last_updated": "September 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-virus-viral-load",
+      "name": "Hepatitis B virus viral load",
+      "aliases": [],
+      "department": "Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "specimen_type_raw": "EDTA plasma and serum samples",
+        "container": "Blood should be collected in SSTTM Serum Separation Tubes, BD Vacutainer® PPTTM Plasma Preparation Tubes or in sterile tubes using EDTA as the anticoagulant. Whole blood collected in EDTA tubes may be stored and/or transported for up to 24 hours at 2°C to 25°C. If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable.",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3.0 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        }
+      },
+      "analysis": {
+        "units": "IU/mL\n\nDynamic range: The dynamic range for this assay is 10-1x109 copies/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Factors known to significantly affect the results: False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/03/Hepatitis-B-virus-viral-load.pdf",
+        "detail_type": "pdf",
+        "last_updated": "March 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-c-antibody-hcv-screen-and-confirmation",
+      "name": "Hepatitis C antibody (HCV) screen and confirmation",
+      "aliases": [
+        "Anti-HCV antibody screen and confirmation"
+      ],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL Venous Blood",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "raw": "Routine 3-4 working days. Please contact the laboratory if urgent for 4 hour turnaround (screen only)",
+        "days": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      },
+      "notes": "Anti-HCV antibody screen and confirmation",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Hepatitis-C-antibody-HCV-screen-and-confirmation.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-c-antibody-hcv-screen-and-confirmation-dried-blood-spot",
+      "name": "Hepatitis C antibody (HCV) screen and confirmation – Dried Blood Spot",
+      "aliases": [
+        "Dried blood spot Hepatitis C antibody",
+        "Dried blood spot Hepatitis C genotyping"
+      ],
+      "description": "Spot) This service is designed for those patients on whom it is difficult to obtain venous blood, especially for intra venous drug users. Contact the laboratory for supply of postal packs containing all necessary items for using this service. Paediatric/infant packs are available on request",
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis",
+        "genetics-molecular"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "dried-blood-spot"
+        ],
+        "specimen_type_raw": "Dried blood spot card",
+        "container": "Envelope with desiccant",
+        "minimum_volume_raw": "7mm diameter blood spot",
+        "collection": "Virology",
+        "transport": "No special needs",
+        "special_precautions": "Ensure blood spot has dried and submit with desiccant pouch enclosed. Do not send back used/unused lancets."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Spots too small, not all spots filled with blood"
+      },
+      "turnaround": {
+        "provisional_raw": "5 days for screen",
+        "final_raw": "7 days for confirmation",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "notes": "Dried blood spot Hepatitis C genotyping",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Hepatitis-C-antibody-HCV-screen-and-confirmation-Dried-Blood-Spot.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-c-qualitative-pcr-and-genotype-if-hcv-antibody-is-reactive-dried-blood",
+      "name": "Hepatitis C qualitative PCR and genotype if HCV antibody is reactive – Dried Blood Spot",
+      "aliases": [],
+      "description": "This service is designed for those patients on whom it is difficult to obtain venous blood, especially for intra venous drug users. Contact the laboratory for supply of postal packs containing all necessary items for using this service. Paediatric/infant packs are available on request",
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti",
+        "hepatitis",
+        "genetics-molecular"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "dried-blood-spot"
+        ],
+        "specimen_type_raw": "Dried blood spot card",
+        "container": "Envelope with desiccant",
+        "minimum_volume_raw": "7mm diameter blood spot",
+        "transport": "No special needs\n\nVirology",
+        "special_precautions": "Ensure blood spot has dried and submit with desiccant pouch enclosed. Do not send back used/unused lancets."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Spots too small, not all spots filled with blood"
+      },
+      "turnaround": {
+        "provisional_raw": "5 days",
+        "final_raw": "7 days",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Hepatitis-C-qualitative-PCR-Dried-Blood-Spot.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-c-viral-load",
+      "name": "Hepatitis C viral load",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "specimen_type_raw": "EDTA plasma and serum samples",
+        "container": "Blood should be collected in SSTTM Serum Separation Tubes, BD Vacutainer® PPTTM Plasma Preparation Tubes or in sterile tubes using EDTA as the anticoagulant. Whole blood collected in EDTA tubes may be stored and/or transported for up to 24 hours at 2°C to 25°C. If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable.",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3.0 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        }
+      },
+      "analysis": {
+        "units": "IU/mL\n\nDynamic range: The dynamic range for this assay is 15-1x108 copies/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Factors known to significantly affect the results: False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days Turnaround time for final result (working days): 4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/03/Hepatitis-C-viral-load.pdf",
+        "detail_type": "pdf",
+        "last_updated": "March 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.volume",
+          "analysis.units"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-d-delta-antibody",
+      "name": "Hepatitis D (delta) antibody",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "raw": "4-6 working days",
+        "days": {
+          "min": 4.0,
+          "max": 6.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Hepatitis-D-delta-antibody.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-e-igg-referral",
+      "name": "Hepatitis E IgG (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/manchester-medical-microbiology-partnership/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "hepatitis-e-igm",
+      "name": "Hepatitis E IgM",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Highly Lipaemic, iceteric and haemolysed samples."
+      },
+      "turnaround": {
+        "raw": "3-4 working days",
+        "days": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Hepatitis-E-IgM.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "herpes-simplex-1-2-antibody-igg-type-specific-total-igm-and-total-igg",
+      "name": "Herpes simplex 1/2 antibody (IgG type specific, Total IgM and Total IgG)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Herpes-simplex-1-2-antibody-IgG-type-specific-Total-IgM-and-Total-IgG.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "herpes-simplex-virus-types-1-and-2-pcr",
+      "name": "Herpes simplex virus types 1 and 2 PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "csf",
+          "swab"
+        ],
+        "specimen_type_raw": "EDTA blood, CSF, Lesion Swab, Eye Swab, Viterous Tap",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "Minimum volume 500μl",
+        "collection": "Samples for PCR testing should be collected according to local protocols. Ideally, a separate sample for PCR processing should be obtained.",
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Threshold Cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "2 days",
+        "final_raw": "3 days",
+        "provisional_working_days": {
+          "min": 2.0,
+          "max": 2.0
+        },
+        "final_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Herpes-simplex-virus-types-1-and-2-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hiv-1-and-2-antibody-and-p24-antigen-screen-dried-blood-spot",
+      "name": "HIV 1 and 2 antibody and p24 antigen screen – Dried Blood Spot",
+      "aliases": [
+        "Dried blood spot HIV Ag/Ab"
+      ],
+      "description": "This service is designed for those patients on whom it is difficult to obtain venous blood, especially for intra venous drug users. Contact the laboratory for supply of postal packs containing all necessary items for using this service. Paediatric/infant packs are available on request",
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "dried-blood-spot"
+        ],
+        "specimen_type_raw": "Dried blood spot card",
+        "container": "Envelope with desiccant",
+        "minimum_volume_raw": "7mm diameter blood spot",
+        "collection": "Virology",
+        "transport": "No special needs",
+        "special_precautions": "Ensure blood spot has dried and submit with desiccant pouch enclosed. Do not send back used/unused lancets."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Spots too small, not all spots filled with blood"
+      },
+      "turnaround": {
+        "provisional_raw": "5 days for screen",
+        "final_raw": "7 days for confirmation",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "notes": "Dried blood spot HIV Ag/Ab",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/HIV-1-and-2-antibody-and-p24-antigen-screen-Dried-Blood-Spot.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "hiv-confirmation-screen-test-plus-at-least-two-further-tests-for-hiv-1-2-virolog",
+      "name": "HIV confirmation (screen test plus at least two further tests for HIV 1/2) Virology",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "4 days",
+        "final_raw": "6 days",
+        "provisional_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        },
+        "final_working_days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/HIV-confirmation-screen-test-plus-at-least-2-further-tests-for-HIV-1-2.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hiv-p24-antigen-virology",
+      "name": "HIV p24 antigen Virology",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "3mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "pg/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Not known"
+      },
+      "turnaround": {
+        "provisional_raw": "4 days",
+        "final_raw": "6 days",
+        "provisional_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        },
+        "final_working_days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/HIV-p24-Antigen.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hiv-resistance-integrase-tropism-molecular-microbiology",
+      "name": "HIV resistance, integrase, tropism Molecular Microbiology",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA Blood",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3.0 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        },
+        "collection": "Freshly drawn whole blood in EDTA",
+        "transport": "Blood to arrive at the laboratory within 6 hours of being drawn",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "turnaround": {
+        "provisional_raw": "7 days",
+        "final_raw": "10 days Urgent results available by prior arrangement",
+        "provisional_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        },
+        "final_working_days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/HIV-resistance-integrase-tropism.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hiv-screen-4th-generation-hiv1-and-2-antibody-and-p24-antigen",
+      "name": "HIV screen (4th generation: HIV1 and 2 antibody and p24 antigen)",
+      "aliases": [
+        "Anti-HIV 1 and 2 antibody and p24 antigen screen"
+      ],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL blood tube",
+        "minimum_volume_raw": "2mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "raw": "3-4 days\n\nSame day testing offered, contact the laboratory for 4 hour turnaround (screen and confirmation for same day request only)",
+        "days": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      },
+      "notes": "Anti-HIV 1 and 2 antibody and p24 antigen screen",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/HIV-screen-4th-generation-HIV1-and-2-antibody-and-p24-antigen.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hiv-1-viral-load",
+      "name": "HIV-1 viral load",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA Blood",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3.0 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        },
+        "collection": "Freshly drawn whole blood in EDTA",
+        "transport": "Whole bloods/EDTA samples should be processed in the laboratory within 24hrs @ 2- 25C. Please send to the laboratory as soon as possible.",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 24hr are undesirable."
+      },
+      "analysis": {
+        "units": "Copies/mL\n\nDynamic range: The dynamic range for this assay is 40-1x107 copies/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "4 days",
+        "final_raw": "5 days",
+        "provisional_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        },
+        "final_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/HIV‐1-viral-load.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "mediastinal-mass-fna",
+      "name": "Mediastinal mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "M",
+      "categories": [
+        "sexual-health-sti",
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "paraneoplastic-neuronal-antibodies",
+      "name": "Paraneoplastic Neuronal Antibodies",
+      "aliases": [],
+      "description": "Paraneoplastic Neuronal Antibodies Analysis includes antibodies to Amphiphysin, CV2, PNMA2(Ma2), Ri, Yo, Hu, Recoverin, SOX1, Titin, Zic4, and GAD65 and Tr (DNER). Used to determine if an underlying malignancy exists alongside neurological disease. Please note: Antibodies to Ma1 are no longer performed in this laboratory.",
+      "department": "Immunology",
+      "letter": "P",
+      "categories": [
+        "tumour-markers",
+        "autoimmunity",
+        "sexual-health-sti",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunoblot",
+        "reference_range": "Negative",
+        "interferences": "Interferences may be possible by administration of intravenous immunoglobulins (so-called IVIG). At present no further interferences by drugs are known. After plasmapheresis preliminary positive results may become weak or negative.",
+        "eqa_scheme": "UK NEQAS for Paraneoplastic Antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 5",
+        "days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "clinical": {
+        "indications": "Cerebellar degeneration, encephalitis, neuropathy",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/07/Paraneoplastic-Neuronal-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "June 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "paratesticular-fna",
+      "name": "Paratesticular FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "P",
+      "categories": [
+        "sexual-health-sti",
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "pneumocystis-jirovecii-pcr",
+      "name": "Pneumocystis jirovecii PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "P",
+      "categories": [
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "swab",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "EDTA blood, BAL, sputum (Swabs can be tested - but are not accredited)",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "500μl",
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Threshold Cyle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/12/Pneumocystis-jirovecii-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "syphilis-confirmation-including-immunoblot",
+      "name": "Syphilis confirmation including Immunoblot",
+      "aliases": [
+        "Syphilis IgM",
+        "Treponema pallidum confirmation"
+      ],
+      "department": "Virology",
+      "letter": "S",
+      "categories": [
+        "infectious-disease-serology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf"
+        ],
+        "specimen_type_raw": "Clotted Blood, CSF",
+        "container": "6mL blood tube Clean container for CSF",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "1.5 mL blood 0.5 mL CSF",
+        "volume": {
+          "value": 1.5,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "5 days",
+        "final_raw": "7 days",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "notes": "Syphilis IgM; Treponema pallidum confirmation",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Syphilis-Confirmation-including-Immunoblot.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "testicular-fna",
+      "name": "Testicular FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "T",
+      "categories": [
+        "sexual-health-sti",
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "testis-antibodies",
+      "name": "Testis antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "T",
+      "categories": [
+        "reproductive-hormones",
+        "autoimmunity",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunofluorescence",
+        "reference_range": "Negative",
+        "interferences": "Patients may also have adrenal, thyroid and islet cell antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 6, 95th percentile - 17",
+        "days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "clinical": {
+        "indications": "Infertility, endocrine polyglandular disorders",
+        "repeat_frequency": "significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Testis-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "thyroid-stimulating-hormone",
+      "name": "Thyroid Stimulating Hormone",
+      "aliases": [
+        "TSH"
+      ],
+      "department": "Biochemistry",
+      "letter": "T",
+      "categories": [
+        "thyroid",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mu/L",
+        "reference_range": "0.27 - 4.2 mu/L (adult; 7 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Thyroid Stimulating Hormone (TSH)",
+        "match_method": "exact",
+        "units": "mu/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 0.27,
+            "high": 4.2,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥18",
+              "age_max": "150",
+              "low": "0.27",
+              "high": "4.2"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 18.0,
+            "low": 0.27,
+            "high": 4.2,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥12",
+              "age_max": "<18",
+              "low": "0.27",
+              "high": "4.2"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 7.0,
+            "age_max": 12.0,
+            "low": 0.6,
+            "high": 4.84,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥7",
+              "age_max": "<12",
+              "low": "0.6",
+              "high": "4.84"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 7.0,
+            "low": 0.7,
+            "high": 5.97,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥1",
+              "age_max": "<7",
+              "low": "0.7",
+              "high": "5.97"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "months",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 1.02,
+            "high": 6.8,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Months",
+              "age_min": "≥1",
+              "age_max": "<12",
+              "low": "1.02",
+              "high": "6.8"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 4.0,
+            "age_max": 30.0,
+            "low": 1.23,
+            "high": 9.7,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Days",
+              "age_min": "≥4",
+              "age_max": "<30",
+              "low": "1.23",
+              "high": "9.7"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 3.0,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "days",
+              "age_min": "≥0",
+              "age_max": "≤3",
+              "low": "No ranges"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "notes": "TSH",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "treponema-pallidum-screen",
+      "name": "Treponema pallidum screen",
+      "aliases": [
+        "Syphilis antibody",
+        "Treponema pallidum (syphilis) PCR"
+      ],
+      "department": "Virology",
+      "letter": "T",
+      "categories": [
+        "infectious-disease-serology",
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood",
+          "csf"
+        ],
+        "specimen_type_raw": "Venous Blood , CSF, Viterous tap",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "notes": "Syphilis antibody; Treponema pallidum (syphilis) PCR",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Syphilis-Treponema-pallidum-screen.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    }
+  ]
+}

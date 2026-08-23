@@ -1,0 +1,205 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/3 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/3 
+B Cell Maturation Panel 
+ 
+General information 
+ 
+Assay Principles:  This test is usually done in conjunction with lymphocyte subsets surface markers (ID), in 
+which case a separate sample is not required. Abnormalities may be found mainly in patients with common 
+variable immunodeficiency (CVID).  This assay can aid in the classification of CVID and the prediction of its 
+prognosis.  
+ 
+By measuring the levels of IgD and CD27 markers on the surface of CD19 positive B cells the following B cell 
+subsets can be identified: “Switched, memory B cells”, “non-switched, memory B cells” and “non-switched, 
+naïve B cells”. The full panel of identified B cell subsets in this test is included in the table below. 
+ 
+Assay interferences: Samples that contain very low numbers or no B (CD19 positive) lymphocytes (≤2%) are 
+not analysed. Older samples may exhibit loss of surface antigens and therefore the sample should be as fresh 
+as possible. 
+ 
+Frequency of analysis: Once at diagnosis 
+ 
+Laboratory information 
+ 
+Analyte: B Cell Maturation Panel 
+ 
+Units: % (as percentage of all CD19+ B cells) 
+ 
+Specimen type: Peripheral blood - EDTA  
+ 
+Turnaround times: 1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00 
+ 
+Additional/special requirements: Note that samples should be received in the laboratory no later than 3pm 
+on a Friday. Samples should be kept at room temperature. 
+ 
+Specimen transport: At room temperature 
+ 
+Method: Flow Cytometry 
+ 
+Participation in EQA scheme: No formal scheme available. We perform a clinical review of abnormal results 
+against other laboratory data and clinical information to assure results fit with the clinical diagnosis. 
+ 
+Clinical information 
+ 
+Interpretation: Use of B cell phenotyping in the investigation/monitoring of immunodeficiency should be 
+discussed with the appropriate Consultant Immunologist (adult or paediatric).  
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/3 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/3 
+The B cell subsets that are reported are detailed in the below table. Reference ranges are not available for 
+most of these cells groups and any results should be discussed with a consultant immunologist. 
+ 
+B cell subset 
+Immunophenotype 
+Clinical comments 
+Naïve 
+IgM+ IgD+ CD27- 
+ 
+Unswitched memory 
+IgM+ IgD+ CD27+ 
+ 
+Reduced in CVID 
+Reduction may be associated with granulomatous 
+disease 
+Switched memory 
+IgM- IgD- CD27+ 
+*also see reference range 
+below 
+ 
+Inverse correlates with serum IgA and IgG levels 
+Reduced in CVID 
+Severe reduction associated with granulomatous 
+disease 
+< 2% CSM classifies as SmB- (EUROCLASS) 
+- 
+Associated with low IgG and IgA at time of 
+diagnosis; low absolute numbers of 
+marginal zone B-cells and low absolute 
+and relative numbers of plasmablasts 
+- 
+increased association with splenomegaly 
+and granulomatous disease 
+Transitional 
+IgD+ IgM+ CD27- CD24+ 
+CD38+ 
+ 
+Expansion associated with lymphadenopathy 
+CD 21 low 
+CD21- CD38- 
+Increased in autoimmune (AI) disease and 
+immunodeficiencies  
+Rare in healthy controls but found in AI disease 
+(EUROCLASS) 
+Increased numbers associated with splenomegaly 
+and granulomatous disease in CVID 
+Plasmablasts 
+IgD-IgM-CD24-
+CD27+CD38hi 
+Expanded in IgG4 Related Disease, low in healthy 
+controls.  
+Elevated counts may also be seen in other immune 
+conditions 
+Serum IgG4 levels do not correlate with disease 
+activity or treatment 
+Reduced in numbers in CVID  
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   3/3 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+3/3 
+Reference range:  CD 27+/IgD- expression on switched memory B cell range is age-dependent1. The frequency of 
+≥ 2% switched memory B cells proposed as cut-off values in Wehr et al2 can be applied to individuals ≥ 4 years of 
+age but not to younger individuals.  
+ 
+ 
+References:  
+1. Morbach, H., Eichhorn, E.M., Liese, J.G. and Girschick, H.J. (2010). Reference values for B cell 
+subpopulations from infancy to adulthood. Clinical and Experimental Immunology, [online] 162(2), 
+pp.271–279. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2996594/  
+ 
+2. Wehr, C., Kivioja, T., Schmitt, C., Ferry, B., Witte, T., Eren, E., Vlkova, M., Hernandez, M., Detkova, D., 
+Bos, P.R., Poerksen, G., von Bernuth, H., Baumann, U., Goldacker, S., Gutenberger, S., Schlesier, M., 
+Bergeron-van der Cruyssen, F., Le Garff, M., Debré, P. and Jacobs, R. (2008). The EUROclass trial: 
+defining subgroups in common variable immunodeficiency. Blood, [online] 111(1), pp.77–85. 
+Available at: https://pubmed.ncbi.nlm.nih.gov/17898316/. 
+ 
+ 
+ 
+(Last updated February 2024) 
+ 
+Age dependent CD27+ IgD- Reference ranges suggested by H Morbach et al (2010)1** 
+Age (years)  
+0-1 
+2-3 
+4-5 
+6-10 
+11-18 
+19-25 
+26-50 
+Median 
+(% of all CD19+ B 
+cell) 
+1 
+2.6 
+5.6 
+6.5 
+5.4 
+9.4 
+13.2 
+Interquartile ranges 
+(25th and 75th 
+percentile)  
+0.1-1.9 
+1.5-4.1 
+3.3-7.4 
+5.2-12.1 
+3.3-9.6 
+7.2-12.7 
+9.2-18.9 
+** Mobarch H et al (2010): This was a study done on 221 healthy individuals aged 1 month to 50 years in 
+Germany. 

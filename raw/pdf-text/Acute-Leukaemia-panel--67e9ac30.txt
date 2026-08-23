@@ -1,0 +1,50 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+Acute Leukaemia panel 
+ 
+General information 
+ 
+Panel of markers used: CD2, CD10, CD13, CD14, CD19, CD33, CD34, CD79a, CD117, Tdt, MPO 
+ 
+Specimen transport: At room temperature in EDTA tube. Samples should be received within 24 hours of 
+collection 
+ 
+Repeat frequency: Post treatment monitoring, suspected relapse and MRD 
+ 
+Special precautions: Do not refrigerate samples 
+ 
+Laboratory information 
+ 
+Reporting units: Percentage of the population of cells of interest 
+ 
+Volume and sample type: 5mls EDTA blood, bone marrow or fluid samples (e.g. ascitic fluid, bronchoalveolar 
+lavage, CSF, EBUS, fine needle aspirates or pleural fluids) 
+ 
+Method: Flow cytometry 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median – 2 
+ 
+Participation in EQA Scheme: UK NEQAS Leukaemia Immunophenotyping Part 1 and 2 
+ 
+Clinical information 
+ 
+Indications for the test: Suspected acute leukaemia, to confirm relapse, to confirm remission 
+ 
+Factors affecting the test: Specimens should be ideally <24 hours old and never more than 48 hours old 
+ 
+ 
+(Last updated March 2022) 

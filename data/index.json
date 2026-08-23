@@ -1,0 +1,6416 @@
+{
+  "meta": {
+    "name": "lab-tests",
+    "version": "0.1.0",
+    "generated": "2026-08-23",
+    "test_count": 508
+  },
+  "tests": [
+    {
+      "id": "1-25-dihydroxy-vitamin-d-dhvd",
+      "name": "1,25-dihydroxy vitamin D (DHVD)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "bone-metabolism",
+        "nutrition-micronutrients"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "abdominal-mass-fna",
+      "name": "Abdominal mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "abscesses-and-deep-seated-wound-infections",
+      "name": "Abscesses and Deep-Seated Wound Infections",
+      "aliases": [
+        "Pus"
+      ],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "swab",
+        "pus",
+        "body-fluid"
+      ]
+    },
+    {
+      "id": "acetyl-choline-receptor-antibodies",
+      "name": "Acetyl Choline Receptor Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "acid-base-status",
+      "name": "Acid base status",
+      "aliases": [
+        "Gases"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "acid-fast-bacilli-mycobacteria-special-stain",
+      "name": "Acid fast bacilli (mycobacteria) Special Stain",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "activated-partial-thromboplastin-time",
+      "name": "Activated partial thromboplastin time",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation",
+        "sexual-health-sti"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "actual-bicarbonate",
+      "name": "Actual bicarbonate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "acute-kidney-injury-score",
+      "name": "Acute kidney injury score",
+      "aliases": [
+        "AKI"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "renal-function"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "acute-leukaemia-panel",
+      "name": "Acute Leukaemia Panel",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "flow-cytometry"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "bone-marrow",
+        "csf",
+        "sputum-respiratory",
+        "body-fluid"
+      ]
+    },
+    {
+      "id": "adenovirus",
+      "name": "Adenovirus",
+      "aliases": [],
+      "department": "Microbiology",
+      "categories": [
+        "virology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "adrenal-antibody",
+      "name": "Adrenal antibody",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "adrenal-fna",
+      "name": "Adrenal FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "afp",
+      "name": "AFP",
+      "aliases": [
+        "Alpha-feto-protein"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "tumour-markers"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "alanine-aminotransferase",
+      "name": "Alanine Aminotransferase",
+      "aliases": [
+        "ALT"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "liver-function"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "albumin",
+      "name": "Albumin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "albumin-creatinine-ratio-acr",
+      "name": "Albumin Creatinine Ratio (ACR)",
+      "aliases": [
+        "ACR"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry",
+        "renal-function"
+      ],
+      "specimens": [
+        "urine"
+      ]
+    },
+    {
+      "id": "albumin-excretion-urine-micro-albumin",
+      "name": "Albumin excretion (urine micro albumin)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry",
+        "renal-function"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "aldosterone",
+      "name": "Aldosterone",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "renal-function",
+        "endocrinology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "heparinised-plasma"
+      ]
+    },
+    {
+      "id": "alkaline-phosphatase",
+      "name": "Alkaline Phosphatase",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "liver-function"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "alkaline-phosphate-isoenzymes",
+      "name": "Alkaline Phosphate isoenzymes",
+      "aliases": [
+        "ALP"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "liver-function",
+        "bone-metabolism"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "allergen-specific-ige",
+      "name": "Allergen Specific IgE",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "allergy"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "alpha-1-antitrypsin",
+      "name": "Alpha-1-Antitrypsin",
+      "aliases": [
+        "A1AT"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "liver-function"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "amikacin",
+      "name": "Amikacin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "aminotransferase",
+      "name": "Aminotransferase",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "liver-function"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "ammonia",
+      "name": "Ammonia",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry",
+        "liver-function"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "androstenedione",
+      "name": "Androstenedione",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "endocrinology"
+      ],
+      "specimens": [
+        "serum",
+        "plasma"
+      ]
+    },
+    {
+      "id": "anion-gap",
+      "name": "Anion-Gap",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": [
+        "fluoride-plasma",
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "anti-c1q",
+      "name": "Anti C1q",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "complement"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "anti-myelin-oligodendrocyte-glycoprotein-mog-antibodies",
+      "name": "Anti Myelin oligodendrocyte glycoprotein (MOG) Antibodies",
+      "aliases": [
+        "MOG"
+      ],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "anti-basal-ganglia-abs",
+      "name": "Anti-Basal Ganglia Abs",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "antibiotic-susceptibility-tests",
+      "name": "Antibiotic Susceptibility Tests",
+      "aliases": [
+        "AST",
+        "Antimicrobial Susceptibility Test"
+      ],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "antibody-screen-and-save-serum",
+      "name": "Antibody screen and save serum",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "transfusion",
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "antibody-titre",
+      "name": "Antibody titre",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "transfusion",
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "anticoagulant-control-heparin-control-oral-anticoagulant-control-inr",
+      "name": "Anticoagulant Control – Heparin control; Oral Anticoagulant Control (INR)",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "anti-cyclic-citrullinated-peptide-ccp",
+      "name": "Anti-Cyclic citrullinated peptide (CCP)",
+      "aliases": [
+        "CCP",
+        "Cyclic citrullinated peptide (CCP)"
+      ],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "rheumatology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "anti-hepatitis-bs-antibody-virology",
+      "name": "Anti-Hepatitis Bs antibody Virology",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "anti-mullerian-hormone-amh",
+      "name": "Anti-Müllerian Hormone, AMH",
+      "aliases": [
+        "AMH"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "anti-neutrophil-cytoplasmic-antibody-anca",
+      "name": "Anti-neutrophil cytoplasmic antibody (ANCA)",
+      "aliases": [
+        "ANCA"
+      ],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "rheumatology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "antinuclear-antibody-ana",
+      "name": "Antinuclear antibody (ANA)",
+      "aliases": [
+        "ANA",
+        "ENA antibodies includes: Ro (SS-A 52, SSA-60), La (SS-B), Sm, Sm/RNP, RNP (RNP A, RNP 68), Ribosomal P, Chromatin, Jo-1, and Scl-70",
+        "Ribosomal"
+      ],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "rheumatology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "antithrombin",
+      "name": "Antithrombin",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "ap100-alternative-pathway-haemolytic-complement",
+      "name": "AP100 Alternative Pathway Haemolytic Complement",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "complement"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "aptt",
+      "name": "APTT",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "aquaporin-4",
+      "name": "Aquaporin 4",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "ascitic-fluid",
+      "name": "Ascitic fluid",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "aspartate-aminotransferase",
+      "name": "Aspartate Aminotransferase",
+      "aliases": [
+        "AST"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "liver-function"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "aspergillus-fumigatus-precipitins",
+      "name": "Aspergillus fumigatus precipitins",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "allergy",
+        "infectious-disease-serology",
+        "mycology",
+        "respiratory"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "aspergillus-galactomannan",
+      "name": "Aspergillus galactomannan",
+      "aliases": [],
+      "department": "Mycology",
+      "categories": [
+        "mycology",
+        "respiratory"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "serum",
+        "csf",
+        "sputum-respiratory"
+      ]
+    },
+    {
+      "id": "aspergillus-pcr",
+      "name": "Aspergillus PCR",
+      "aliases": [
+        "Invasive infection with Aspergillus"
+      ],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "mycology",
+        "molecular-microbiology",
+        "respiratory"
+      ],
+      "specimens": [
+        "csf",
+        "sputum-respiratory"
+      ]
+    },
+    {
+      "id": "aspergillus-pcr-on-respiratory-samples",
+      "name": "Aspergillus PCR on respiratory samples",
+      "aliases": [],
+      "department": "Mycology",
+      "categories": [
+        "mycology",
+        "molecular-microbiology",
+        "respiratory"
+      ],
+      "specimens": [
+        "csf",
+        "sputum-respiratory",
+        "body-fluid"
+      ]
+    },
+    {
+      "id": "autoimmune-diabetes-marker-panel",
+      "name": "Autoimmune diabetes marker panel",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "diabetes-metabolic"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "avian-precipitins",
+      "name": "Avian precipitins",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "allergy",
+        "infectious-disease-serology",
+        "respiratory"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "b-cell-maturation-panel",
+      "name": "B Cell Maturation Panel",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "bartonella-referral",
+      "name": "Bartonella (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "bence-jones-protein-urinary-light-chains-urine-immunofixation",
+      "name": "Bence Jones protein (Urinary light chains) Urine immunofixation",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "protein-electrophoresis"
+      ],
+      "specimens": [
+        "urine"
+      ]
+    },
+    {
+      "id": "beta-2-glycoprotein-igg-and-igm",
+      "name": "Beta 2 Glycoprotein (IgG and IgM)",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "beta-hydroxybutyrate",
+      "name": "Beta Hydroxybutyrate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "diabetes-metabolic"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "bicarbonate",
+      "name": "Bicarbonate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "bile-acids",
+      "name": "Bile acids",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "liver-function"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "bile-duct-brushings",
+      "name": "Bile duct brushings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "bilirubin-conjugated-direct",
+      "name": "Bilirubin (conjugated/direct)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "liver-function"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "bilirubin-total",
+      "name": "Bilirubin (total)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "liver-function"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "bk-virus-pcr",
+      "name": "BK virus PCR",
+      "aliases": [
+        "Polyoma viruses (BK)"
+      ],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "transplant-monitoring"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "csf",
+        "urine"
+      ]
+    },
+    {
+      "id": "bladder-washings",
+      "name": "Bladder washings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "blastomyces-referral",
+      "name": "Blastomyces (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "mycology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "bleeding-time",
+      "name": "Bleeding Time",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "blood-cultures",
+      "name": "Blood Cultures",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "whole-blood",
+        "body-fluid"
+      ]
+    },
+    {
+      "id": "blood-group",
+      "name": "Blood group",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "transfusion"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "blood-transfusion",
+      "name": "Blood Transfusion",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "transfusion"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "blood-spot-17-hydroxyprogesterone",
+      "name": "Bloodspot 17-hydroxyprogesterone",
+      "aliases": [
+        "17 OHP (blood spot)"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "endocrinology",
+        "reproductive-hormones"
+      ],
+      "specimens": [
+        "dried-blood-spot",
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "bnp-n-terminal-pro-bnp",
+      "name": "BNP (N-terminal pro BNP)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "cardiac-markers"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "bocavirus-pcr-referral",
+      "name": "Bocavirus PCR (referral)",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "bone-marrow-report",
+      "name": "Bone marrow report",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "bordetella-pertussis-pcr",
+      "name": "Bordetella pertussis PCR",
+      "aliases": [
+        "Bordetella pertussis culture",
+        "Pernasal swab (for pertussis)"
+      ],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "bacteriology",
+        "molecular-microbiology",
+        "respiratory"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "breath-hydrogen-test",
+      "name": "Breath Hydrogen Test",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "gastrointestinal"
+      ],
+      "specimens": [
+        "breath"
+      ]
+    },
+    {
+      "id": "bronchial-brushings",
+      "name": "Bronchial brushings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "bronchial-trap",
+      "name": "Bronchial trap",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "bronchoalveolar-lavage",
+      "name": "Bronchoalveolar lavage",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "respiratory"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "brucella-referral",
+      "name": "Brucella (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "busulfan",
+      "name": "Busulphan",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "c1-esterase-inhibitor",
+      "name": "C1 esterase inhibitor",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "complement"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "c1-esterase-inhibitor-functional-test",
+      "name": "C1 esterase inhibitor functional test",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "complement"
+      ],
+      "specimens": [
+        "citrated-plasma"
+      ]
+    },
+    {
+      "id": "c1q",
+      "name": "C1q",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "complement"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "c3-nephritic-factor",
+      "name": "C3 nephritic factor",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "complement"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "ca125",
+      "name": "CA125",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "tumour-markers"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "caeruloplasmin",
+      "name": "Caeruloplasmin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "liver-function"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "calcium-blood-and-urine",
+      "name": "Calcium (blood and urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "bone-metabolism"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "calcium-ionized",
+      "name": "Calcium ionized",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "bone-metabolism"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "calcium-plasma-total",
+      "name": "Calcium, plasma, total",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "bone-metabolism"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "calprotectin-faecal",
+      "name": "Calprotectin (faeces)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "gastrointestinal"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "campylobacter-serology-referral",
+      "name": "Campylobacter serology (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "bacteriology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "candida-pcr",
+      "name": "Candida PCR",
+      "aliases": [
+        "Invasive infection with Candida"
+      ],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "mycology",
+        "molecular-microbiology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "csf",
+        "swab",
+        "sputum-respiratory"
+      ]
+    },
+    {
+      "id": "candida-precipitins-referral",
+      "name": "Candida precipitins (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "allergy",
+        "infectious-disease-serology",
+        "mycology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "carbamazepine",
+      "name": "Carbamazepine",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "carboxyhaemoglobin",
+      "name": "Carboxyhaemoglobin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "toxicology",
+        "neurology-antibodies"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "cardiac-muscle-antibodies",
+      "name": "Cardiac muscle antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "cardiac-markers",
+        "autoimmunity"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "cardiolipin-igg-and-igm-antibodies",
+      "name": "Cardiolipin (IgG and IgM) antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "caspr-lgi1-antibodies",
+      "name": "CASPR & LGi1 Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "catecholamine-urine",
+      "name": "Catecholamines (urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "endocrinology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "cd34-stem-cells",
+      "name": "CD34 (Stem cells)",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "specimens": [
+        "bone-marrow",
+        "whole-blood",
+        "tissue",
+        "cells"
+      ]
+    },
+    {
+      "id": "cd4-count-t-cell-count",
+      "name": "CD4 count (T cell count)",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "cea",
+      "name": "CEA",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "tumour-markers"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "cerebrospinal-fluid",
+      "name": "Cerebrospinal fluid",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "cervical-cytology",
+      "name": "Cervical Cytology",
+      "aliases": [],
+      "department": "Gynaecological Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "ch50-complement-activity-classical-pathway",
+      "name": "CH50 complement activity Classical Pathway",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "complement"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "chain-of-custody-medico-legal-specimens",
+      "name": "Chain-of-custody medico-legal specimens",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "toxicology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "chlamydia-trachomatis-neisseria-gonorrhoea-trichomonas-vaginalis-mycoplasma-geni",
+      "name": "Chlamydia trachomatis, Neisseria gonorrhoea, Trichomonas vaginalis, Mycoplasma genitalium NAATs",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "bacteriology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "plasma",
+        "urine",
+        "swab",
+        "sputum-respiratory"
+      ]
+    },
+    {
+      "id": "chloride",
+      "name": "Chloride",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "cholesterol",
+      "name": "Cholesterol",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "lipids-cardiovascular"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "cholinesterase",
+      "name": "Cholinesterase",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "chromium",
+      "name": "Chromium",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "trace-elements-toxicology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "chronic-lymphocytic-lymphoma-panel",
+      "name": "Chronic lymphocytic/lymphoma panel",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "flow-cytometry"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "bone-marrow",
+        "csf",
+        "sputum-respiratory",
+        "body-fluid"
+      ]
+    },
+    {
+      "id": "clostridium-difficile-gdh-and-toxin",
+      "name": "Clostridium difficile GDH and Toxin",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "faeces"
+      ]
+    },
+    {
+      "id": "cmv-cytomegalovirus-antiviral-resistance-markers",
+      "name": "CMV (cytomegalovirus) antiviral resistance markers",
+      "aliases": [
+        "Cytomegalovirus anitviral resistance markers"
+      ],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "transplant-monitoring"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "cmv-cytomegalovirus-igg",
+      "name": "CMV (cytomegalovirus) IgG",
+      "aliases": [
+        "Cytomegalovirus (CMV) IgG"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "transplant-monitoring"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "cmv-cytomegalovirus-igg-avidity",
+      "name": "CMV (cytomegalovirus) IgG avidity",
+      "aliases": [
+        "Cytomegalovirus (CMV) IgG avidity"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "transplant-monitoring"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "cmv-cytomegalovirus-igm",
+      "name": "CMV (Cytomegalovirus) IgM",
+      "aliases": [
+        "Cytomegalovirus (CMV) IgM"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "transplant-monitoring"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "cmv-cytomegalovirus-viral-load",
+      "name": "CMV (cytomegalovirus) viral load",
+      "aliases": [
+        "Cytomegalovirus viral load"
+      ],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "transplant-monitoring"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "cobalt",
+      "name": "Cobalt",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "trace-elements-toxicology",
+        "respiratory"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "coccidioides-referral",
+      "name": "Coccidioides (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "mycology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "coeliac-disease-antibodies",
+      "name": "Coeliac Disease Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "gastrointestinal"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "cold-agglutinin-titres-4-c",
+      "name": "Cold agglutinin titres (4°C)",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "complement-c3",
+      "name": "Complement C3",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "complement"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "complement-c4",
+      "name": "Complement C4",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "complement"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "contact-lens",
+      "name": "Contact lens",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "copper-blood-and-urine",
+      "name": "Copper (blood and urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "nutrition-micronutrients",
+        "trace-elements-toxicology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "cord-blood-investigations",
+      "name": "Cord blood investigations",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "transfusion",
+        "sexual-health-sti",
+        "antenatal-pregnancy"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "corneal-scrape-bacteriology",
+      "name": "Corneal Scrape (Bacteriology)",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "corneal-scrape-virology",
+      "name": "Corneal Scrape (Virology)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "coronavirus-covid-19-testing-for-sars-cov-2",
+      "name": "Coronavirus COVID-19 Testing for SARS-CoV-2",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "swab",
+        "sputum-respiratory"
+      ]
+    },
+    {
+      "id": "cortisol",
+      "name": "Cortisol",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "endocrinology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "c-peptide",
+      "name": "C-peptide",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "endocrinology",
+        "diabetes-metabolic"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "c-reactive-protein-crp",
+      "name": "C-reactive protein (CRP)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "inflammation-markers"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "creatine-kinase",
+      "name": "Creatine Kinase",
+      "aliases": [
+        "CK"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "cardiac-markers"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "creatinine-blood-and-urine",
+      "name": "Creatinine (blood and urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "renal-function"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "creatinine-clearance",
+      "name": "Creatinine clearance",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "renal-function"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum",
+        "urine"
+      ]
+    },
+    {
+      "id": "crithidia-antibodies",
+      "name": "Crithidia antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "cross-matching",
+      "name": "Cross matching",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "transfusion"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "cryoglobulins",
+      "name": "Cryoglobulins",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "protein-electrophoresis"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "serum"
+      ]
+    },
+    {
+      "id": "cryptococcal-antigen",
+      "name": "Cryptococcal antigen",
+      "aliases": [],
+      "department": "Mycology",
+      "categories": [
+        "infectious-disease-serology",
+        "mycology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "serum",
+        "csf"
+      ]
+    },
+    {
+      "id": "cryptococcus-antigen",
+      "name": "Cryptococcus antigen",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "mycology"
+      ],
+      "specimens": [
+        "csf"
+      ]
+    },
+    {
+      "id": "csf",
+      "name": "CSF",
+      "aliases": [
+        "Cerebrospinal fluid"
+      ],
+      "department": "Bacteriology",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "specimens": [
+        "csf"
+      ]
+    },
+    {
+      "id": "csf-glucose",
+      "name": "CSF – Glucose",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "diabetes-metabolic",
+        "csf-and-fluids"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "csf-lactate",
+      "name": "CSF – Lactate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry",
+        "csf-and-fluids"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "fluoride-plasma"
+      ]
+    },
+    {
+      "id": "csf-protein",
+      "name": "CSF – Protein",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "specimens": [
+        "csf"
+      ]
+    },
+    {
+      "id": "ctx",
+      "name": "CTX",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "bone-metabolism"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "culture",
+      "name": "Culture",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "cyclosporin-a",
+      "name": "Cyclosporin A",
+      "aliases": [
+        "Ciclosporin"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring",
+        "transplant-monitoring"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "cystatin-c",
+      "name": "Cystatin C",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "renal-function"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "cystic-fibrosis",
+      "name": "Cystic Fibrosis",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "swab",
+        "sputum-respiratory",
+        "body-fluid"
+      ]
+    },
+    {
+      "id": "dhea-sulfate",
+      "name": "DHEA – sulphate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "endocrinology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "dermatophytes-and-non-dermatophytes",
+      "name": "Dermatophytes and non-dermatophytes",
+      "aliases": [],
+      "department": "Mycology",
+      "categories": [
+        "mycology"
+      ],
+      "specimens": [
+        "tissue",
+        "skin-hair-nail"
+      ]
+    },
+    {
+      "id": "digoxin",
+      "name": "Digoxin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "diphtheria-igg-antibody-determination",
+      "name": "Diphtheria IgG antibody determination",
+      "aliases": [],
+      "department": "Vaccine Evaluation Unit",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "direct-antiglobulin-test",
+      "name": "Direct Antiglobulin Test",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "transfusion"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "dna-testing-for-the-haemoglobinopathies",
+      "name": "DNA Testing for the Haemoglobinopathies",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "sexual-health-sti",
+        "haemoglobinopathy",
+        "genetics-molecular",
+        "neurology-antibodies"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "double-negative-t-cell-dnt-panel",
+      "name": "Double Negative T Cell (DNT) panel",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "double-stranded-dna-antibodies-igg",
+      "name": "Double stranded DNA antibodies (IgG)",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "rheumatology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "dried-blood-spot-hepatitis-c-rna-screening",
+      "name": "Dried blood spot Hepatitis C RNA screening",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "specimens": [
+        "dried-blood-spot"
+      ]
+    },
+    {
+      "id": "dried-blood-spot-syphilis-antibody",
+      "name": "Dried blood spot Syphilis antibody",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "dried-blood-spot"
+      ]
+    },
+    {
+      "id": "drugs-of-abuse-urine-screen",
+      "name": "Drugs of abuse (urine screen)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "toxicology"
+      ],
+      "specimens": [
+        "urine"
+      ]
+    },
+    {
+      "id": "ear",
+      "name": "Ear",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "swab"
+      ]
+    },
+    {
+      "id": "ebv-ebna",
+      "name": "EBV (EBNA)",
+      "aliases": [
+        "EBNA",
+        "Epstein Barr Virus (EBNA) confirmation"
+      ],
+      "department": "Virology",
+      "categories": [
+        "virology",
+        "transplant-monitoring"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "citrated-plasma"
+      ]
+    },
+    {
+      "id": "egfr-estimated-gfr",
+      "name": "eGfR (estimated GfR)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "renal-function",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "ehrlichia-if-referral",
+      "name": "Ehrlichia IF (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "elastase-faecal",
+      "name": "Elastase (faeces)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "gastrointestinal"
+      ],
+      "specimens": [
+        "faeces"
+      ]
+    },
+    {
+      "id": "electrolytes-urine",
+      "name": "Electrolytes (urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "electron-microscopy",
+      "name": "Electron microscopy",
+      "aliases": [],
+      "department": "Histopathology",
+      "categories": [
+        "histopathology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "ema-binding-assay-for-hereditary-spherocytosis",
+      "name": "EMA binding assay for Hereditary Spherocytosis",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "flow-cytometry"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "enteric-virus-panel",
+      "name": "Enteric Virus Panel",
+      "aliases": [
+        "Adenovirus 40/41 (Enteric) PCR",
+        "Astrovirus PCR",
+        "Norovirus PCR",
+        "Rotavirus PCR – enteric",
+        "Sapovirus PCR – enteric"
+      ],
+      "department": "Virology",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "gastrointestinal"
+      ],
+      "specimens": [
+        "faeces"
+      ]
+    },
+    {
+      "id": "enterovirus-and-parechovirus-pcr",
+      "name": "Enterovirus and parechovirus PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "csf",
+        "faeces",
+        "swab",
+        "sputum-respiratory"
+      ]
+    },
+    {
+      "id": "enzyme-histochemistry",
+      "name": "Enzyme histochemistry",
+      "aliases": [],
+      "department": "Histopathology",
+      "categories": [
+        "histopathology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "epo",
+      "name": "EPO",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "epstein-barr-virus-screening",
+      "name": "Epstein Barr Virus screening",
+      "aliases": [
+        "EBV VCA IgG – screening",
+        "EBV VCA IgM – screening",
+        "Epstein Barr Virus (EBV) IgG – screening",
+        "Epstein Barr Virus (EBV) IgM – screening"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "transplant-monitoring"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "ebv-epstein-barr-virus-viral-load",
+      "name": "EBV (Epstein Barr virus) viral load",
+      "aliases": [
+        "EBV (Epstein Barr Virus) viral load"
+      ],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "transplant-monitoring"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "erythrocyte-sedimentation-rate-esr",
+      "name": "Erythrocyte Sedimentation Rate (ESR)",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology",
+        "inflammation-markers"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "erythropoietin",
+      "name": "Erythropoietin",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "ethanol-drinking-alcohol",
+      "name": "Ethanol (drinking alcohol)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "toxicology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "extended-sclerosis-panel",
+      "name": "Extended Sclerosis Panel",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "rheumatology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "citrated-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "eye",
+      "name": "Eye",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "factor-ii-assay",
+      "name": "Factor II assay",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "factor-ix-assay",
+      "name": "Factor IX assay",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "factor-ix-inhibitors",
+      "name": "Factor IX inhibitors",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "factor-v-assay",
+      "name": "Factor V assay",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "factor-v-leiden-mutation-screen",
+      "name": "Factor V Leiden Mutation screen",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation",
+        "genetics-molecular"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "factor-vii-assay",
+      "name": "Factor VII assay",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "factor-viii-assay",
+      "name": "Factor VIII assay",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "factor-viii-inhibitors",
+      "name": "Factor VIII inhibitors",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "factor-x-assay",
+      "name": "Factor X assay",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "factor-xi-assay",
+      "name": "Factor XI assay",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "factor-xii-assay",
+      "name": "Factor XII assay",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "faecal-immunochemical-testing",
+      "name": "Faecal immunochemical testing",
+      "aliases": [
+        "FIT"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "sexual-health-sti",
+        "gastrointestinal"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "faecal-reducing-substances",
+      "name": "Faecal reducing substances",
+      "aliases": [
+        "Stool for Sugar chromatography (paediatric only)"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "gastrointestinal"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "faecal-bacteria-parasite-pcr-serosep-dx",
+      "name": "Faeces Bacteria/Parasite PCR – Serosep DX",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "parasitology",
+        "molecular-microbiology",
+        "gastrointestinal"
+      ],
+      "specimens": [
+        "faeces"
+      ]
+    },
+    {
+      "id": "failing-metal-on-metal-prosthetic-joints",
+      "name": "Failing metal-on-metal prosthetic joints",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "farmer-s-lung-precipitins",
+      "name": "Farmer’s lung precipitins",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "allergy",
+        "infectious-disease-serology",
+        "respiratory"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "fbc",
+      "name": "FBC",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "fdp-d-dimers",
+      "name": "FDP D-Dimers",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "features-associated-with-ganglia",
+      "name": "Features associated with ganglia",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "features-of-juvenile-inflammatory-arthropathy",
+      "name": "Features of Juvenile inflammatory arthropathy",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "features-of-rheumatoid-disease",
+      "name": "Features of rheumatoid disease",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "ferritin",
+      "name": "Ferritin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "fibrin-degradation-products",
+      "name": "Fibrin Degradation Products",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "fibrinogen",
+      "name": "Fibrinogen",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "flucytosine",
+      "name": "Flucytosine",
+      "aliases": [],
+      "department": "Mycology",
+      "categories": [
+        "mycology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "serum",
+        "csf"
+      ]
+    },
+    {
+      "id": "fluids-from-normally-sterile-sites",
+      "name": "Fluids from Normally Sterile Sites",
+      "aliases": [
+        "Joint fluids",
+        "Sterile fluids"
+      ],
+      "department": "Bacteriology",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "specimens": [
+        "synovial-fluid",
+        "body-fluid"
+      ]
+    },
+    {
+      "id": "folate-serum-and-red-cell",
+      "name": "Folate (serum and red cell)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "follicle-stimulating-hormone",
+      "name": "Follicle stimulating hormone",
+      "aliases": [
+        "FSH"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "reproductive-hormones",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "free-fatty-acids",
+      "name": "Free fatty acids",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "diabetes-metabolic"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "free-light-chains",
+      "name": "Free Light Chains",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency",
+        "protein-electrophoresis"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "free-t4",
+      "name": "Free thyroxine",
+      "aliases": [
+        "Free T4"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "thyroid"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "free-t3",
+      "name": "Free Tri-iodothyronine",
+      "aliases": [
+        "Free T3"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "thyroid"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "full-blood-count-and-automated-differential",
+      "name": "Full blood count and automated differential",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "fungal-beta-d-glucan-assay",
+      "name": "Fungal beta D glucan assay",
+      "aliases": [],
+      "department": "Mycology",
+      "categories": [
+        "mycology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "serum"
+      ]
+    },
+    {
+      "id": "fungi-special-stain",
+      "name": "Fungi – Special Stain",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "mycology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "g6pd-assay-if-screen-gives-intermediate-or-reduced-result",
+      "name": "G6PD Assay (if screen gives intermediate or reduced result)",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "g6pd-screen",
+      "name": "G6PD Screen",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "gabab-receptor-ampa-receptor-1-2-antibodies",
+      "name": "GABAb receptor & AMPA receptor 1/2 antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "galactomannan-referral",
+      "name": "Galactomannan referral",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "mycology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "gamma-glutamyl-transferase",
+      "name": "Gamma-glutamyl transferase",
+      "aliases": [
+        "GGT"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "liver-function"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "ganglioside-abs-gm1",
+      "name": "Ganglioside Abs GM1",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "ganglioside-abs-gq1b",
+      "name": "Ganglioside Abs GQ1b",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "genital-specimens-for-culture",
+      "name": "Genital specimens for culture",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "swab",
+        "pus",
+        "sputum-respiratory",
+        "body-fluid",
+        "semen"
+      ]
+    },
+    {
+      "id": "gentamicin",
+      "name": "Gentamicin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "glandular-fever-screening-test",
+      "name": "Glandular fever screening test",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "glomerular-basement-membrane-antibodies",
+      "name": "Glomerular basement membrane antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "renal-function",
+        "reproductive-hormones",
+        "autoimmunity"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "glucose",
+      "name": "Glucose",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "diabetes-metabolic"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "glutamic-acid-decarboxylase-antibodies",
+      "name": "Glutamic Acid Decarboxylase Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "diabetes-metabolic",
+        "autoimmunity"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "glycated-haemoglobin",
+      "name": "Glycated Haemoglobin",
+      "aliases": [
+        "HbA1c"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "diabetes-metabolic",
+        "neurology-antibodies"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "glycogen-special-stain",
+      "name": "Glycogen – Special Stain",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "gout-urate-crystals",
+      "name": "Gout (urate crystals)",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "renal-function",
+        "rheumatology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "gram-ve-ve-sepsis",
+      "name": "Gram +ve/-ve sepsis",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "growth-hormone",
+      "name": "Growth Hormone",
+      "aliases": [
+        "hGH"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "endocrinology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "haematinics-serum-intrinisic-factor-antibodies",
+      "name": "Haematinics – Serum intrinisic factor antibodies",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "nutrition-micronutrients",
+        "autoimmunity"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "haemochromatosis-c282y-h63d-and-s65c-genotyping",
+      "name": "Haemochromatosis C282Y, H63D and S65C genotyping",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "genetics-molecular"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "haemoglobinopathy-screening",
+      "name": "Haemoglobinopathy Screening",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haemoglobinopathy",
+        "neurology-antibodies"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "haemophilius-influenze-type-b-antibody",
+      "name": "Haemophilius influenze type b antibody",
+      "aliases": [],
+      "department": "Vaccine Evaluation Unit",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "haptoglobulin-estimation",
+      "name": "Haptoglobulin Estimation",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology",
+        "sexual-health-sti"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "hbs-screening-test-urgent-pre-operative-pts-1-yr-old",
+      "name": "HbS Screening Test – Urgent/pre-operative (Pts >1 yr Old)",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haemoglobinopathy"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "hcg-blood-pregnancy-and-as-tumour-marker",
+      "name": "HCG blood (pregnancy and as tumour marker)",
+      "aliases": [
+        "Human Chorionic Gonadotrophin"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "reproductive-hormones",
+        "tumour-markers",
+        "antenatal-pregnancy"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "hcv-genotyping",
+      "name": "HCV genotyping",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "hepatitis",
+        "genetics-molecular"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "helicobacter-pylori",
+      "name": "Helicobacter pylori",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "faeces"
+      ]
+    },
+    {
+      "id": "helicobacter-pylori-in-gastric-biopsies",
+      "name": "Helicobacter pylori in Gastric Biopsies",
+      "aliases": [
+        "Gastric Biopsies for Helicobacter pylori"
+      ],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "tissue"
+      ]
+    },
+    {
+      "id": "heparin-control",
+      "name": "Heparin control",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "hepatitis-a-total-antibody-igg-and-igm",
+      "name": "Hepatitis A total antibody (IgG and IgM)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "hepatitis"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "hepatitis-a-virus-hav-igm",
+      "name": "Hepatitis A virus (HAV) IgM",
+      "aliases": [
+        "HAV"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "hepatitis"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "hepatitis-b-hbv-confirmation",
+      "name": "Hepatitis B (HBV) confirmation",
+      "aliases": [
+        "HBV confirmation"
+      ],
+      "department": "Virology",
+      "categories": [
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "hepatitis-b-hbv-core-antibodies",
+      "name": "Hepatitis B (HBV) core antibodies",
+      "aliases": [
+        "HBV core antibodies"
+      ],
+      "department": "Virology",
+      "categories": [
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "hepatitis-b-hbv-core-antibody-dried-blood-spot",
+      "name": "Hepatitis B (HBV) core antibody – Dried Blood Spot",
+      "aliases": [
+        "Dried blood spot Hepatitis B core antibody",
+        "HBV core antibody – Dried Blood Spot"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "specimens": [
+        "dried-blood-spot"
+      ]
+    },
+    {
+      "id": "hepatitis-b-hbv-core-igm-anti-hbc-igm",
+      "name": "Hepatitis B (HBV) core IgM (anti-HBc IgM)",
+      "aliases": [
+        "HBV core IgM"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "hepatitis-b-hbv-surface-antigen-hbsag",
+      "name": "Hepatitis B (HBV) surface antigen (HBsAg)",
+      "aliases": [
+        "Anti HBs",
+        "HBV surface antibody",
+        "HBsAg",
+        "Hepatitis B (HBV) surface antibody (Anti-HBs)"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "hepatitis-b-hbv-surface-antigen-hbsag-dried-blood-spot",
+      "name": "Hepatitis B (HBV) surface antigen (HBsAg) – Dried Blood Spot",
+      "aliases": [
+        "Dried blood spot Hepatitis B surface antigen"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "specimens": [
+        "dried-blood-spot"
+      ]
+    },
+    {
+      "id": "hepatitis-b-virus-hbv-e-antigen-hbeag-and-e-antibody-anti-hbe",
+      "name": "Hepatitis B virus (HBV) e antigen (HBeAg) and e antibody (Anti-HBe)",
+      "aliases": [
+        "Hepatitis B e antibody",
+        "Hepatitis B e antigen"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "hepatitis-b-virus-genotyping-and-resistance-markers",
+      "name": "Hepatitis B virus Genotyping and Resistance Markers",
+      "aliases": [
+        "HBV resistance markers"
+      ],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "sexual-health-sti",
+        "hepatitis",
+        "genetics-molecular"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "hepatitis-b-virus-viral-load",
+      "name": "Hepatitis B virus viral load",
+      "aliases": [],
+      "department": "Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "serum"
+      ]
+    },
+    {
+      "id": "hepatitis-c-antibody-hcv-screen-and-confirmation",
+      "name": "Hepatitis C antibody (HCV) screen and confirmation",
+      "aliases": [
+        "Anti-HCV antibody screen and confirmation"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "hepatitis-c-antibody-hcv-screen-and-confirmation-dried-blood-spot",
+      "name": "Hepatitis C antibody (HCV) screen and confirmation – Dried Blood Spot",
+      "aliases": [
+        "Dried blood spot Hepatitis C antibody",
+        "Dried blood spot Hepatitis C genotyping"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis",
+        "genetics-molecular"
+      ],
+      "specimens": [
+        "dried-blood-spot"
+      ]
+    },
+    {
+      "id": "hepatitis-c-qualitative-pcr-and-genotype-if-hcv-antibody-is-reactive-dried-blood",
+      "name": "Hepatitis C qualitative PCR and genotype if HCV antibody is reactive – Dried Blood Spot",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti",
+        "hepatitis",
+        "genetics-molecular"
+      ],
+      "specimens": [
+        "dried-blood-spot"
+      ]
+    },
+    {
+      "id": "hepatitis-c-viral-load",
+      "name": "Hepatitis C viral load",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "serum"
+      ]
+    },
+    {
+      "id": "hepatitis-d-delta-antibody",
+      "name": "Hepatitis D (delta) antibody",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "hepatitis"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "hepatitis-e-igg-referral",
+      "name": "Hepatitis E IgG (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "hepatitis"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "hepatitis-e-igm",
+      "name": "Hepatitis E IgM",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "hepatitis"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "herpes-simplex-1-2-antibody-igg-type-specific-total-igm-and-total-igg",
+      "name": "Herpes simplex 1/2 antibody (IgG type specific, Total IgM and Total IgG)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "herpes-simplex-virus-types-1-and-2-pcr",
+      "name": "Herpes simplex virus types 1 and 2 PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "csf",
+        "swab"
+      ]
+    },
+    {
+      "id": "hfe",
+      "name": "HFE",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "genetics-molecular"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "high-risk-hpv-test-of-cure",
+      "name": "High Risk HPV Test of Cure",
+      "aliases": [],
+      "department": "Gynaecological Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "high-risk-hpv-triage",
+      "name": "High Risk HPV triage",
+      "aliases": [],
+      "department": "Gynaecological Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "histone-abs",
+      "name": "Histone Abs",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "histopathology-paediatric-histopathology",
+      "name": "Histopathology – Paediatric Histopathology",
+      "aliases": [],
+      "department": "Histopathology",
+      "categories": [
+        "histopathology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "histopathology-routine-adult-histopathology",
+      "name": "Histopathology – Routine (adult) Histopathology",
+      "aliases": [],
+      "department": "Histopathology",
+      "categories": [
+        "histopathology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "histoplasma-referral",
+      "name": "Histoplasma (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "mycology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "hiv-1-and-2-antibody-and-p24-antigen-screen-dried-blood-spot",
+      "name": "HIV 1 and 2 antibody and p24 antigen screen – Dried Blood Spot",
+      "aliases": [
+        "Dried blood spot HIV Ag/Ab"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "dried-blood-spot"
+      ]
+    },
+    {
+      "id": "hiv-confirmation-screen-test-plus-at-least-two-further-tests-for-hiv-1-2-virolog",
+      "name": "HIV confirmation (screen test plus at least two further tests for HIV 1/2) Virology",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "virology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "hiv-p24-antigen-virology",
+      "name": "HIV p24 antigen Virology",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "hiv-resistance-integrase-tropism-molecular-microbiology",
+      "name": "HIV resistance, integrase, tropism Molecular Microbiology",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "hiv-screen-4th-generation-hiv1-and-2-antibody-and-p24-antigen",
+      "name": "HIV screen (4th generation: HIV1 and 2 antibody and p24 antigen)",
+      "aliases": [
+        "Anti-HIV 1 and 2 antibody and p24 antigen screen"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "hiv-1-viral-load",
+      "name": "HIV-1 viral load",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "human-herpes-virus-6-7",
+      "name": "Human Herpes virus 6 & 7",
+      "aliases": [
+        "HHV6 & 7 PCR"
+      ],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "csf",
+        "sputum-respiratory"
+      ]
+    },
+    {
+      "id": "human-papilloma-virus-screening",
+      "name": "Human Papilloma Virus Screening",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology"
+      ],
+      "specimens": [
+        "swab"
+      ]
+    },
+    {
+      "id": "human-parvovirus-b19-igg",
+      "name": "Human Parvovirus B19 IgG",
+      "aliases": [
+        "Parvovirus B19 IgG"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "human-parvovirus-b19-igm",
+      "name": "Human Parvovirus B19 IgM",
+      "aliases": [
+        "Parvovirus B19 IgM"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "human-parvovirus-b19-viral-load",
+      "name": "Human Parvovirus B19 viral load",
+      "aliases": [
+        "Parvovirus B19 viral load"
+      ],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "tissue"
+      ]
+    },
+    {
+      "id": "human-t-lymphotropic-virus-htlv-1-and-2",
+      "name": "Human T Lymphotropic virus (HTLV) 1 and 2",
+      "aliases": [
+        "HTLV 1 and 2 antibody"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "ia2",
+      "name": "IA2",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "diabetes-metabolic"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "ige-total",
+      "name": "IgE (Total)",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "allergy"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "igg-subclasses",
+      "name": "IgG subclasses",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency",
+        "infectious-disease-serology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "immunocytochemistry",
+      "name": "Immunocytochemistry",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "immunodeficiency-t-b-lymphocyte-subsets",
+      "name": "Immunodeficiency (T&B Lymphocyte Subsets)",
+      "aliases": [
+        "T&B Lymphocyte Subsets"
+      ],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "immunofluorescence-histopathology",
+      "name": "Immunofluorescence Histopathology",
+      "aliases": [],
+      "department": "Histopathology",
+      "categories": [
+        "histopathology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "immunoglobulin-d-igd",
+      "name": "Immunoglobulin D, IgD",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "immunoglobulins-igg-iga-igm",
+      "name": "Immunoglobulins (IgG, IgA, IgM)",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency",
+        "infectious-disease-serology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "inflammatory-non-inflammatory-bursitis",
+      "name": "Inflammatory/non-inflammatory bursitis",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "inr",
+      "name": "INR",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "insulin",
+      "name": "Insulin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "diabetes-metabolic"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "insulin-antibodies",
+      "name": "Insulin Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "diabetes-metabolic",
+        "autoimmunity"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "insulin-like-growth-factor-1",
+      "name": "Insulin-like Growth Factor 1",
+      "aliases": [
+        "IGF-1"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "endocrinology",
+        "diabetes-metabolic"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "insulin-like-growth-factor-binding-protein-3",
+      "name": "Insulin-like Growth Factor Binding Protein 3",
+      "aliases": [
+        "IGFBP-3"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "endocrinology",
+        "diabetes-metabolic"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "intravascular-cannulae",
+      "name": "Intravascular cannulae",
+      "aliases": [
+        "Tips"
+      ],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "iron",
+      "name": "Iron",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "isavuconazole",
+      "name": "Isavuconazole",
+      "aliases": [],
+      "department": "Mycology",
+      "categories": [
+        "mycology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "serum"
+      ]
+    },
+    {
+      "id": "itraconazole",
+      "name": "Itraconazole",
+      "aliases": [],
+      "department": "Mycology",
+      "categories": [
+        "mycology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "serum"
+      ]
+    },
+    {
+      "id": "jc-virus-pcr",
+      "name": "JC virus PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "csf",
+        "urine"
+      ]
+    },
+    {
+      "id": "jejunal-disaccharidases",
+      "name": "Jejunal Disaccharidases",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "gastrointestinal"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "kleihauer-test",
+      "name": "Kleihauer test",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "transfusion",
+        "antenatal-pregnancy"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "lactate",
+      "name": "Lactate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": [
+        "fluoride-plasma"
+      ]
+    },
+    {
+      "id": "lactate-dehydrogenase-ldh",
+      "name": "Lactate Dehydrogenase (LDH)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "lamotrigine",
+      "name": "Lamotrigine",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "legionella-urinary-antigen-detection",
+      "name": "Legionella urinary antigen detection",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "bacteriology",
+        "respiratory"
+      ],
+      "specimens": [
+        "urine"
+      ]
+    },
+    {
+      "id": "leptospira-referral",
+      "name": "Leptospira (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "leukocyte-adhesion-deficiency-lad-markers",
+      "name": "Leukocyte Adhesion Deficiency (LAD) Markers",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "lipase-blood-and-fluid",
+      "name": "Lipase (blood and fluid)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "lipid-profile-incl-total-cholesterol-ldl-hdl-triglyceride",
+      "name": "Lipid profile incl. total cholesterol, LDL, HDL, triglyceride",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "lipids-cardiovascular"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "lithium-serum",
+      "name": "Lithium (serum)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "liver-autoantibody-screen",
+      "name": "Liver autoantibody screen",
+      "aliases": [
+        "GPC",
+        "Gastric Parietal Cell (GPC)",
+        "LKM",
+        "Liver Kidney Microsomal (LKM)",
+        "Mitochondrial antibodies"
+      ],
+      "department": "Immunology",
+      "categories": [
+        "liver-function",
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "liver-fna",
+      "name": "Liver FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "liver-function-tests",
+      "name": "Liver Function Tests",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "liver-function"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "l-selectin-shedding-assay",
+      "name": "L-Selectin Shedding assay",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "lung-fna",
+      "name": "Lung FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "lupus-anticoagulant",
+      "name": "Lupus anticoagulant",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "luteinising-hormone",
+      "name": "Luteinising Hormone",
+      "aliases": [
+        "LH"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "lyme-disease",
+      "name": "Lyme Disease",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": [
+        "plasma",
+        "whole-blood",
+        "csf"
+      ]
+    },
+    {
+      "id": "lymph-node-fna",
+      "name": "Lymph node FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "magnesium-blood-and-urine",
+      "name": "Magnesium (Blood and Urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry",
+        "nutrition-micronutrients",
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "malarial-parasites-detection-of",
+      "name": "Malarial parasites, detection of",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "parasitology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "mannose-binding-lectins",
+      "name": "Mannose Binding Lectins",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "manual-blood-film",
+      "name": "Manual blood film",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "mast-cell-tryptase",
+      "name": "Mast Cell Tryptase",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "allergy"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "measles-igg",
+      "name": "Measles IgG",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "measles-igm",
+      "name": "Measles IgM",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "measles-virus-pcr",
+      "name": "Measles virus PCR",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "specimens": [
+        "urine",
+        "swab",
+        "sputum-respiratory"
+      ]
+    },
+    {
+      "id": "mediastinal-mass-fna",
+      "name": "Mediastinal mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "sexual-health-sti",
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "meningococcal-dna-detection-by-pcr-multiplex-with-pneumococcal-dna-pcr",
+      "name": "Meningococcal DNA detection by PCR (multiplex with Pneumococcal DNA PCR)",
+      "aliases": [
+        "Pneumococcal PCR"
+      ],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "bacteriology",
+        "molecular-microbiology",
+        "respiratory"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "csf",
+        "body-fluid"
+      ]
+    },
+    {
+      "id": "metadrenalines",
+      "name": "Metadrenalines",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "endocrinology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "met-haemoglobin",
+      "name": "Met-haemoglobin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "toxicology",
+        "neurology-antibodies"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "methotrexate",
+      "name": "Methotrexate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "mouth-swab",
+      "name": "Mouth swab",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "swab"
+      ]
+    },
+    {
+      "id": "mpox-orthopox-pcr",
+      "name": "Mpox/Orthopox PCR",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "specimens": [
+        "swab"
+      ]
+    },
+    {
+      "id": "mrsa",
+      "name": "MRSA",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "urine",
+        "swab",
+        "sputum-respiratory"
+      ]
+    },
+    {
+      "id": "mucin-special-stain",
+      "name": "Mucin – Special Stain",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "mumps-igg",
+      "name": "Mumps IgG",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "mumps-igm",
+      "name": "Mumps IgM",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "muscle-specific-tyrosine-kinase-musk",
+      "name": "Muscle Specific Tyrosine Kinase (MUSK)",
+      "aliases": [
+        "MUSK"
+      ],
+      "department": "Immunology",
+      "categories": [
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "mycobacteria-microscopy-culture",
+      "name": "Mycobacteria – microscopy/culture",
+      "aliases": [
+        "Mycobacterium PCR",
+        "TB examination (microscopy)"
+      ],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology",
+        "molecular-microbiology"
+      ],
+      "specimens": [
+        "bone-marrow",
+        "csf",
+        "urine",
+        "sputum-respiratory",
+        "body-fluid",
+        "tissue"
+      ]
+    },
+    {
+      "id": "mycoplasma-pcr",
+      "name": "Mycoplasma PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "molecular-microbiology"
+      ],
+      "specimens": [
+        "csf",
+        "swab",
+        "sputum-respiratory"
+      ]
+    },
+    {
+      "id": "myelin-associated-glycoprotein-mag",
+      "name": "Myelin Associated Glycoprotein (MAG)",
+      "aliases": [
+        "MAG"
+      ],
+      "department": "Immunology",
+      "categories": [
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "myeloperoxidase-mpo-antibodies",
+      "name": "Myeloperoxidase (MPO) antibodies",
+      "aliases": [
+        "MPO"
+      ],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "myositis-antibodies",
+      "name": "Myositis Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "rheumatology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "naive-memory-and-effector-t-cell-subsets",
+      "name": "Naïve Memory and Effector T Cell Subsets",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "neck-fna",
+      "name": "Neck FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "neisseria-meningitidis-functional-antibody-to-serogroup-b-by-serum-bactericidal",
+      "name": "Neisseria meningitidis: Functional antibody to serogroup B by Serum Bactericidal Antibody Assay (SBA)",
+      "aliases": [
+        "Functional antibody to Neisseria meningitidis serogroup B by Serum Bactericidal Antibody Assay (SBA)"
+      ],
+      "department": "Vaccine Evaluation Unit",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "bacteriology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "neisseria-meningitidis-functional-antibody-to-serogroups-a-c-w-and-y-by-internat",
+      "name": "Neisseria meningitidis: Functional antibody to serogroups A, C, W and Y by internationally standardised serum bactericidal antibody assays",
+      "aliases": [],
+      "department": "Vaccine Evaluation Unit",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "bacteriology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "neisseria-meningitidis-minimum-inhibitory-concentration",
+      "name": "Neisseria meningitidis: Minimum inhibitory concentration",
+      "aliases": [],
+      "department": "Meningococcal Reference Unit",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "swab"
+      ]
+    },
+    {
+      "id": "neisseria-meningitidis-serogrouping-and-outer-membrane-typing",
+      "name": "Neisseria meningitidis: Serogrouping and outer membrane typing",
+      "aliases": [
+        "Neisseria meningitidis isolate characterisation",
+        "Polysaccharide antigen detection"
+      ],
+      "department": "Meningococcal Reference Unit",
+      "categories": [
+        "infectious-disease-serology",
+        "bacteriology"
+      ],
+      "specimens": [
+        "swab"
+      ]
+    },
+    {
+      "id": "neutrophil-function-dhr-test",
+      "name": "Neutrophil Function (DHR) Test",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "nmda-n-methyl-d-aspartate-receptor-antibodies",
+      "name": "NMDA – N-methyl-D-aspartate receptor antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum",
+        "plasma",
+        "csf"
+      ]
+    },
+    {
+      "id": "non-specific-inflammatory-arthropathies",
+      "name": "Non-specific inflammatory arthropathies",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "non-specific-non-inflammatory-arthropathies",
+      "name": "Non-specific non-inflammatory arthropathies",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "nose-swab",
+      "name": "Nose Swab",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "swab"
+      ]
+    },
+    {
+      "id": "nt-probnp",
+      "name": "NT-proBNP",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "cardiac-markers"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "oesophageal-brushings",
+      "name": "Oesophageal brushings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "estradiol",
+      "name": "Oestradiol",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "oral-anticoagulant-control-inr",
+      "name": "Oral Anticoagulant Control (INR)",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "orosomucoid",
+      "name": "Orosomucoid",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry",
+        "inflammation-markers"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "osmolality-blood-and-urine",
+      "name": "Osmolality (Blood and Urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "osmolar-gap-calculated-as-calculated-osmolality-measured-osmolality-calculated-o",
+      "name": "Osmolar Gap (calculated as: calculated osmolality – measured osmolality. Calculated osmolality is 2 x (Na + K) + glucose + urea)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry",
+        "diabetes-metabolic"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "osteoarthritis",
+      "name": "Osteoarthritis",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "ova-cysts-and-parasites",
+      "name": "Ova, Cysts and Parasites",
+      "aliases": [
+        "Bilharzia",
+        "Cryptosporidium",
+        "Entamoeba",
+        "Giardia lamblia",
+        "Parasites",
+        "Schistosoma haematobium"
+      ],
+      "department": "Bacteriology",
+      "categories": [
+        "parasitology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "ovarian-cyst-fna",
+      "name": "Ovarian cyst FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "ovary-antibodies",
+      "name": "Ovary antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "reproductive-hormones",
+        "autoimmunity"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "pancreatic-fna",
+      "name": "Pancreatic FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "paracetamol",
+      "name": "Paracetamol",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "toxicology"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "paraneoplastic-neuronal-antibodies",
+      "name": "Paraneoplastic Neuronal Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "tumour-markers",
+        "autoimmunity",
+        "sexual-health-sti",
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "paratesticular-fna",
+      "name": "Paratesticular FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "sexual-health-sti",
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "parathyroid-hormone",
+      "name": "Parathyroid hormone",
+      "aliases": [
+        "PTH"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "bone-metabolism",
+        "thyroid"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "heparinised-plasma"
+      ]
+    },
+    {
+      "id": "perinatal-post-mortems",
+      "name": "Perinatal post mortems",
+      "aliases": [],
+      "department": "Histopathology",
+      "categories": [
+        "histopathology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "peritoneal-fluid",
+      "name": "Peritoneal fluid",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "peritoneal-fluids",
+      "name": "Peritoneal Fluids",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "peritoneal-washings",
+      "name": "Peritoneal washings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "ph-blood-and-urine",
+      "name": "pH (blood and urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "phenobarbital",
+      "name": "Phenobarbitone",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "phenytoin",
+      "name": "Phenytoin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "phosphate-blood-and-urine",
+      "name": "Phosphate (blood and urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "bone-metabolism"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "pla2r-antibodies",
+      "name": "PLA2R Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "renal-function",
+        "autoimmunity"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "plasma-viscosity",
+      "name": "Plasma viscosity",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology",
+        "inflammation-markers"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "platelet-glycoprotein-expression",
+      "name": "Platelet Glycoprotein Expression",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "flow-cytometry"
+      ],
+      "specimens": [
+        "citrated-plasma"
+      ]
+    },
+    {
+      "id": "platelets-aggregation-studies",
+      "name": "Platelets Aggregation Studies",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "pleural-fluid",
+      "name": "Pleural fluid",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "plgf",
+      "name": "PLGF",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "antenatal-pregnancy"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "pneumococcal-urinary-antigen-detection",
+      "name": "Pneumococcal urinary antigen detection",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "bacteriology",
+        "respiratory"
+      ],
+      "specimens": [
+        "urine"
+      ]
+    },
+    {
+      "id": "pneumocystis-jirovecii-pcr",
+      "name": "Pneumocystis jirovecii PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "swab",
+        "sputum-respiratory"
+      ]
+    },
+    {
+      "id": "posaconazole",
+      "name": "Posaconazole",
+      "aliases": [],
+      "department": "Mycology",
+      "categories": [
+        "mycology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "serum"
+      ]
+    },
+    {
+      "id": "post-trachelectomy-cytology",
+      "name": "Post Trachelectomy Cytology",
+      "aliases": [],
+      "department": "Gynaecological Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "potassium",
+      "name": "Potassium",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "pr3-autoantibodies-canca",
+      "name": "PR3 autoantibodies (cANCA)",
+      "aliases": [
+        "cANCA"
+      ],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "rheumatology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "pregnancy-test-blood",
+      "name": "Pregnancy test (blood)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "reproductive-hormones",
+        "antenatal-pregnancy"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "procalcitonin",
+      "name": "Procalcitonin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "inflammation-markers"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "procollagen-iii-peptide",
+      "name": "Procollagen III Peptide",
+      "aliases": [
+        "P3NP",
+        "PIIINP"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "liver-function"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "progesterone",
+      "name": "Progesterone",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "prolactin",
+      "name": "Prolactin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "endocrinology",
+        "reproductive-hormones"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "prostate-specific-antigen",
+      "name": "Prostate Specific Antigen",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "tumour-markers",
+        "infectious-disease-serology"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "protein-c",
+      "name": "Protein C",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "protein-s",
+      "name": "Protein S",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "prothrombin-time",
+      "name": "Prothrombin time",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "prothrombin-g20210a-mutation-screen",
+      "name": "Prothrombin G20210A Mutation screen",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "genetics-molecular"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "pseudogout-pyrophosphate-crystals",
+      "name": "Pseudogout (pyrophosphate crystals)",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "bone-metabolism"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "pvis",
+      "name": "PVIS",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "q-fever-serology-and-pcr-referral",
+      "name": "Q Fever Serology and PCR (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "molecular-microbiology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "quiescent-gout-urate-crystals",
+      "name": "Quiescent gout (urate crystals)",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "renal-function",
+        "rheumatology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "rapid-routine-carbapenemase-producing-enterobacteriaceae-cpe-screen",
+      "name": "Rapid/routine Carbapenemase-Producing Enterobacteriaceae (CPE) Screen",
+      "aliases": [
+        "CPE screen",
+        "Carbapenemase-Producing Enterobacteriaceae (CPE) Screen"
+      ],
+      "department": "Bacteriology",
+      "categories": [
+        "tumour-markers"
+      ],
+      "specimens": [
+        "faeces",
+        "swab",
+        "pus"
+      ]
+    },
+    {
+      "id": "reducing-substances-faecal-only",
+      "name": "Reducing substances (faeces only)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "gastrointestinal"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "renal-fna",
+      "name": "Renal FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "renin-concentration",
+      "name": "Renin concentration",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "renal-function",
+        "endocrinology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "resin-embedding-thin-sectioning-electron-microscopy",
+      "name": "Resin embedding/thin sectioning Electron Microscopy",
+      "aliases": [],
+      "department": "Histopathology",
+      "categories": [
+        "histopathology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "respiratory-specimens",
+      "name": "Respiratory specimens",
+      "aliases": [
+        "Sputum"
+      ],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology",
+        "respiratory"
+      ],
+      "specimens": [
+        "sputum-respiratory",
+        "body-fluid"
+      ]
+    },
+    {
+      "id": "respiratory-virus-pcr",
+      "name": "Respiratory virus PCR",
+      "aliases": [
+        "Adenovirus (respiratory infection)",
+        "Respiratory screen"
+      ],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "respiratory"
+      ],
+      "specimens": [
+        "swab",
+        "sputum-respiratory",
+        "body-fluid"
+      ]
+    },
+    {
+      "id": "reticulocyte-count",
+      "name": "Reticulocyte count",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haematology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "retroperitoneal-mass-fna",
+      "name": "Retroperitoneal mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology",
+        "csf-and-fluids"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "rheumatoid-factor",
+      "name": "Rheumatoid factor",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity",
+        "rheumatology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "ripa",
+      "name": "RIPA",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "ristocetin-induced-platelet-aggregation-ripa",
+      "name": "Ristocetin induced platelet aggregation (RIPA)",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "coagulation"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "routine-haemoglobinopathy-screening",
+      "name": "Routine haemoglobinopathy screening",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "haemoglobinopathy",
+        "neurology-antibodies"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "rubella-avidity-referral",
+      "name": "Rubella Avidity (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "rubella-igg",
+      "name": "Rubella IgG",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "antenatal-pregnancy"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "rubella-igm",
+      "name": "Rubella IgM",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "salicylate",
+      "name": "Salicylate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "toxicology"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "salivary-gland-fna",
+      "name": "Salivary gland FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "selenium",
+      "name": "Selenium",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "nutrition-micronutrients",
+        "trace-elements-toxicology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "sero-negative-arthropathies",
+      "name": "Sero-negative arthropathies",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "sero-negative-spondylarthropathies",
+      "name": "Sero-negative spondylarthropathies",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "serum-17-hydroxyprogesterone",
+      "name": "Serum 17-hydroxyprogesterone",
+      "aliases": [
+        "17 OHP (serum)"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "endocrinology",
+        "reproductive-hormones"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "serum-ferritin",
+      "name": "Serum ferritin",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "serum-folate",
+      "name": "Serum folate",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "serum-intrinisic-factor-antibodies",
+      "name": "Serum intrinisic factor antibodies",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "nutrition-micronutrients",
+        "autoimmunity"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "serum-protein-electrophoresis",
+      "name": "Serum Protein Electrophoresis",
+      "aliases": [
+        "Serum paraprotein identification/quantification"
+      ],
+      "department": "Immunology",
+      "categories": [
+        "protein-electrophoresis"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "serum-vitamin-b12",
+      "name": "Serum vitamin B12",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "shbg",
+      "name": "SHBG",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "sirolimus",
+      "name": "Sirolimus",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring",
+        "transplant-monitoring"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "skin-antibodies",
+      "name": "Skin antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "autoimmunity"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "smooth-muscle-mitochondrial-antibodies",
+      "name": "Smooth muscle mitochondrial antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "liver-function",
+        "autoimmunity"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "sodium-blood-and-urine",
+      "name": "Sodium (blood and urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "splenic-fna",
+      "name": "Splenic FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "sputum",
+      "name": "Sputum",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "bacteriology",
+        "respiratory"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "beta2-microglobulin",
+      "name": "ß2 Microglobulin",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "tumour-markers"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "staphylococcal-serology-ast-referral",
+      "name": "Staphylococcal serology – AST (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "bacteriology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "stem-cell-sterility-check",
+      "name": "Stem cell sterility check",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "cells"
+      ]
+    },
+    {
+      "id": "streptococcal-serology-antistreptolysin-o-aso",
+      "name": "Streptococcal serology – Antistreptolysin O (ASO)",
+      "aliases": [
+        "ASO"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "bacteriology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "streptococcus-pneumoniae-serology",
+      "name": "Streptococcus pneumoniae serology",
+      "aliases": [
+        "Pneumococcal serotype-specific IgG"
+      ],
+      "department": "Vaccine Evaluation Unit",
+      "categories": [
+        "infectious-disease-serology",
+        "bacteriology",
+        "respiratory"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "subcutaneous-mass-fna",
+      "name": "Subcutaneous mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "sweat-tests",
+      "name": "Sweat tests",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "syphilis-confirmation-including-immunoblot",
+      "name": "Syphilis confirmation including Immunoblot",
+      "aliases": [
+        "Syphilis IgM",
+        "Treponema pallidum confirmation"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "csf"
+      ]
+    },
+    {
+      "id": "t-cell-activation-panel",
+      "name": "T Cell Activation Panel",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "tacrolimus-fk506-prograf",
+      "name": "Tacrolimus (FK506, prograf)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring",
+        "transplant-monitoring"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "tb-gamma-interferon-release-assay-quantiferon",
+      "name": "TB Gamma Interferon Release Assay (Quantiferon)",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "infectious-disease-serology",
+        "respiratory"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "testicular-fna",
+      "name": "Testicular FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "sexual-health-sti",
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "testis-antibodies",
+      "name": "Testis antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "reproductive-hormones",
+        "autoimmunity",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "testosterone",
+      "name": "Testosterone",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "tetanus-antibodies",
+      "name": "Tetanus antibodies",
+      "aliases": [],
+      "department": "Vaccine Evaluation Unit",
+      "categories": [
+        "autoimmunity"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "theophylline",
+      "name": "Theophylline",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "therapeutic-drug-monitoring-of-anti-tnf-therapies-infliximab-and-adalimumab",
+      "name": "Therapeutic Drug Monitoring of anti-TNF therapies Infliximab and Adalimumab",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "thiopental",
+      "name": "Thiopental",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "thiopurine-metabolites",
+      "name": "Thiopurine metabolites",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "thiopurine-methyl-transferase-tpmt",
+      "name": "Thiopurine Methyltransferase (TPMT)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring",
+        "genetics-molecular"
+      ],
+      "specimens": [
+        "edta-whole-blood"
+      ]
+    },
+    {
+      "id": "throat-swab",
+      "name": "Throat Swab",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "swab"
+      ]
+    },
+    {
+      "id": "thyroid-fna",
+      "name": "Thyroid FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "thyroid",
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "thyroid-peroxidase-tpo-antibodies",
+      "name": "Thyroid peroxidase (TPO) antibodies",
+      "aliases": [
+        "TPO"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "thyroid",
+        "autoimmunity"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "thyroid-stimulating-hormone",
+      "name": "Thyroid Stimulating Hormone",
+      "aliases": [
+        "TSH"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "thyroid",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "tissue-and-biopsies",
+      "name": "Tissue and biopsies",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "histopathology"
+      ],
+      "specimens": [
+        "tissue"
+      ]
+    },
+    {
+      "id": "tobramycin",
+      "name": "Tobramycin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "total-protein",
+      "name": "Total Protein",
+      "aliases": [
+        "Protein creatinine ratio (urine)"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "coagulation",
+        "clinical-chemistry",
+        "renal-function"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "toxoplasma-pcr",
+      "name": "Toxoplasma PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "parasitology",
+        "molecular-microbiology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "csf"
+      ]
+    },
+    {
+      "id": "toxoplasma-serology-avidity",
+      "name": "Toxoplasma serology (avidity)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "parasitology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "toxoplasma-serology-igg",
+      "name": "Toxoplasma serology (IgG)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "parasitology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "toxoplasma-serology-igm",
+      "name": "Toxoplasma serology (IgM)",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "parasitology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "transferrin-and-saturation",
+      "name": "Transferrin (and saturation)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "treponema-pallidum-screen",
+      "name": "Treponema pallidum screen",
+      "aliases": [
+        "Syphilis antibody",
+        "Treponema pallidum (syphilis) PCR"
+      ],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "specimens": [
+        "whole-blood",
+        "csf"
+      ]
+    },
+    {
+      "id": "triglycerides",
+      "name": "Triglycerides",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "lipids-cardiovascular"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "t3-free-t3",
+      "name": "Triiodothyronine (free T3)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "thyroid"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "troponin-t",
+      "name": "Troponin T",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "cardiac-markers"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "tsh-receptor-antibodies",
+      "name": "TSH Receptor Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "thyroid",
+        "autoimmunity"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "type-i-procollagen-n-terminal-peptide",
+      "name": "Type I Procollagen N terminal Peptide",
+      "aliases": [
+        "P1NP"
+      ],
+      "department": "Biochemistry",
+      "categories": [
+        "bone-metabolism"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "universal-antenatal-haemoglobinopathy-screening",
+      "name": "Universal Antenatal Haemoglobinopathy Screening",
+      "aliases": [],
+      "department": "Haematology",
+      "categories": [
+        "antenatal-pregnancy",
+        "haemoglobinopathy",
+        "neurology-antibodies"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "urate-blood-and-urine",
+      "name": "Urate (blood and urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "renal-function",
+        "rheumatology"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "urea-blood-and-urine",
+      "name": "Urea (blood and urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "ureteric-washing",
+      "name": "Ureteric washing",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "urethral-washing",
+      "name": "Urethral washing",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "urine-voided-catheterised-instrumented-or-from-ileal-conduit",
+      "name": "Urine (voided, catheterised, instrumented or from ileal conduit)",
+      "aliases": [
+        "Urine Culture"
+      ],
+      "department": "Non-Gynaecology Cytology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "urines",
+      "name": "Urines",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "urine",
+        "body-fluid"
+      ]
+    },
+    {
+      "id": "valproate",
+      "name": "Valproate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "vancomycin",
+      "name": "Vancomycin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "varicella-zoster-igg",
+      "name": "Varicella Zoster IgG",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "varicella-zoster-igm",
+      "name": "Varicella Zoster IgM",
+      "aliases": [],
+      "department": "Virology",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "specimens": [
+        "whole-blood"
+      ]
+    },
+    {
+      "id": "varicella-zoster-virus-pcr",
+      "name": "Varicella-zoster virus PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "csf",
+        "swab"
+      ]
+    },
+    {
+      "id": "vault-cytology",
+      "name": "Vault Cytology",
+      "aliases": [],
+      "department": "Gynaecological Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "vitamin-a-retinol",
+      "name": "Vitamin A (retinol)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "vitamin-b12",
+      "name": "Vitamin B12",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "vitamin-d",
+      "name": "Vitamin D",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "bone-metabolism",
+        "nutrition-micronutrients"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "vitamin-e-tocopherol",
+      "name": "Vitamin E (Tocopherol)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "specimens": [
+        "heparinised-plasma",
+        "serum"
+      ]
+    },
+    {
+      "id": "voltage-gated-calcium-channel-antibodies",
+      "name": "Voltage-Gated Calcium Channel Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "bone-metabolism",
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "voltage-gated-potassium-channel-antibodies",
+      "name": "Voltage-Gated Potassium Channel Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "clinical-chemistry",
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "voriconazole",
+      "name": "Voriconazole",
+      "aliases": [],
+      "department": "Mycology",
+      "categories": [
+        "mycology"
+      ],
+      "specimens": [
+        "edta-whole-blood",
+        "serum"
+      ]
+    },
+    {
+      "id": "vre-screening",
+      "name": "VRE screening",
+      "aliases": [],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "swab"
+      ]
+    },
+    {
+      "id": "vulval-cytology",
+      "name": "Vulval Cytology",
+      "aliases": [],
+      "department": "Gynaecological Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "wear-and-or-loosening-of-prosthetic-joints",
+      "name": "Wear and/or loosening of prosthetic joints",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "categories": [
+        "cytology"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "wounds-skin-superficial-non-surgical",
+      "name": "Wounds – Skin, Superficial, Non-surgical",
+      "aliases": [
+        "Skin, superficial, non-surgical wounds"
+      ],
+      "department": "Bacteriology",
+      "categories": [
+        "bacteriology"
+      ],
+      "specimens": [
+        "swab",
+        "pus"
+      ]
+    },
+    {
+      "id": "xanthochromia-screen-csf",
+      "name": "Xanthochromia Screen (CSF)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "specimens": [
+        "csf"
+      ]
+    },
+    {
+      "id": "yeasts-and-moulds",
+      "name": "Yeasts and Moulds",
+      "aliases": [
+        "CSF Bilirubin",
+        "CSF Xanthochromia"
+      ],
+      "department": "Mycology",
+      "categories": [
+        "liver-function",
+        "mycology",
+        "csf-and-fluids"
+      ],
+      "specimens": []
+    },
+    {
+      "id": "zinc",
+      "name": "Zinc",
+      "aliases": [],
+      "department": "Biochemistry",
+      "categories": [
+        "nutrition-micronutrients",
+        "trace-elements-toxicology"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    },
+    {
+      "id": "zinc-transporter-8-znt8-antibodies",
+      "name": "Zinc Transporter 8 (ZnT8) antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "categories": [
+        "diabetes-metabolic",
+        "autoimmunity"
+      ],
+      "specimens": [
+        "serum"
+      ]
+    }
+  ]
+}

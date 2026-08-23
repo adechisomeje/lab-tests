@@ -1,0 +1,53 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+Acetylcholine receptor antibody 
+ 
+General information 
+ 
+Acts as a confirmatory test for myasthenia gravis. 
+ 
+Specimen transport: At room temperature 
+ 
+Repeat frequency: At change of clinical symptoms 
+ 
+Special precautions: None 
+ 
+Laboratory information 
+ 
+Normal reference range: 0 - 0.60 nmol/L 
+ 
+Volume and sample type: 4ml serum 
+ 
+Method: ELISA 
+ 
+Assay Interferences: Do not use lipaemic or haemolysed serum samples. 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 7 
+ 
+Clinical information 
+ 
+Indications for the test: 90% of patients with generalised myasthenia gravis and about 60-70% of patients 
+with ocular myasthenia have detectable AChR antibodies. Can be used to monitor disease activity, but 
+antibodies may persist in 60% of patients even if disease is in remission. 
+ 
+The assay also detects antibodies to the foetal form of the AChR in mother of foetuses with Arthrogryposis 
+multiplex congenital. 
+ 
+Participation in EQA Scheme: UK NEQAS for Acetylcholine receptor antibody 
+ 
+ 
+(Last updated June 2023) 

@@ -1,0 +1,91 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/2 
+ 
+Division of Laboratory Medicine 
+ 
+Molecular Microbiology 
+mft.nhs.uk/laboratorymedicine 
+1/2 
+CMV (Cytomegalovirus) antiviral resistance markers 
+ 
+CMV viral load positive bloods. Complete CMV antiviral resistance genotypic screening including 
+ 
+UL97: Nucleotide sequencing of the CMV phosphotransferase gene for the identification of mutations 
+encoding resistance to ganciclovir and maribavir. 
+ 
+UL54: Nucleotide sequencing of the DNA polymerase gene for the identification of mutations encoding 
+resistance to ganciclovir, foscarnet and cidofovir. 
+ 
+ 
+General information  
+ 
+Collection container (including preservatives): 
+CE marked leak proof container 
+EDTA blood tube 
+ 
+Specimen type: EDTA blood                                                                  
+ 
+Specimen transport: Ambient or refrigerated 
+ 
+For PCR for confirmation of active CMV infection and monitoring of antiviral therapy please send 4mL of 
+EDTA blood.  This should be stored at 4°C and dispatched as soon as possible after being drawn.   
+ 
+If longer storage is unavoidable, serum or plasma may be stored frozen, but should not be repeatedly frozen 
+and thawed. In special circumstances, 0.5mL of serum or plasma can be tested, but for such small volumes 
+avoid using a large container but use a small capacity container with a screw‐cap, such as an Eppendorff 
+tube. 
+ 
+Minimum volume of sample: 3.0 mL 
+ 
+Special precautions: If processing is delayed, refrigeration is preferable to storage at ambient temperature. 
+Delays of over 48hr are undesirable.    
+ 
+ 
+Laboratory information 
+ 
+Measurement units: mL Wild type / resistant mutation 
+ 
+Biological reference units: Not applicable 
+ 
+Turnaround time for provisional result (working days): 5 days  
+Turnaround time to final result (working days): 7 days 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/2 
+ 
+Division of Laboratory Medicine 
+ 
+Molecular Microbiology 
+mft.nhs.uk/laboratorymedicine 
+2/2 
+ 
+Clinical information 
+ 
+Clinical decision points: Not applicable 
+Factors known to significantly affect the results: 
+ 
+False negative results may occur for a variety of reasons, for example inappropriate timing of sample 
+collection, inappropriate sample, presence of virus below the detectable limit of the assay. 
+ 
+New and emerging variants may also occur which may not be detected by this assay. Towards the limit of 
+detection of an assay sampling variation will result in lower reproducibility. 
+                     
+(Last updated November 2023) 
+     

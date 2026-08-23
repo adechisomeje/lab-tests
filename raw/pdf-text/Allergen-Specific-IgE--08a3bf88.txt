@@ -1,0 +1,55 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+Division of Laboratory Medicine 
+ 
+Immunology 
+Allergen Specific IgE 
+ 
+General information 
+Measurement of allergen specific IgE is of value where skin testing is difficult for any reason. Over 100 
+specific allergens are routinely available. Any requests for allergens that are unusual should be discussed 
+with a clinician. 
+ 
+Specimen transport: At room temperature 
+ 
+Repeat frequency: >1 year unless marked changes in allergic condition 
+ 
+Special precautions: None 
+ 
+Laboratory information 
+ 
+Normal reference range: <0.35 kAU/L 
+ 
+Volume and sample type: 4ml serum (8ml required for multiple allergens) 
+ 
+Method: ImmunoCAP 1000 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median – 3 
+ 
+Participation in EQA Scheme: UK NEQAS for Specific IgE and UK NEQAS for Allergen Component Testing 
+ 
+Clinical information 
+ 
+Indications for the test: Allergic conditions when allergen is suspected and mentioned on request 
+ 
+Factors affecting the test: Total IgE >3000ku/L increases the incidence of false positive (low level) 
+specific IgE. IgE <30 ku/L associated with false negative specific IgE. Similarly, very low IgE levels (<2.0 
+kU/L) may result in a false negative result and possibly indicate an underlying immunodeficiency; 
+measurement of immunoglobulins is recommended. 
+ 
+A STAR in the RAST: Allergy testing guidance for primary care: https://mft.nhs.uk/the-trust/other-
+departments/laboratory-medicine/information-for-gps/laboratory-medicines-newsletter-for-gps/a-star-in-
+the-rast-allergy-testing-guidance-for-primary-care/  
+ 
+(Last updated August 2026) 

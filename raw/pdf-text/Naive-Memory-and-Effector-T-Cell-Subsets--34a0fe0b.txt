@@ -1,0 +1,120 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/2 
+Naïve, Memory and Effector T Cell Subsets 
+ 
+General information 
+ 
+Assay principles: This test is usually done in conjunction with lymphocyte subsets surface markers (ID), in 
+which case a separate sample is not required. This assay is used in the investigation of Naïve, Memory, and 
+Effector (NME) T cells in various clinical contexts including autoimmune diseases, immunodeficiency states, 
+T-cell recovery post hematopoietic stem cell transplant, DiGeorge syndrome, and as a measure for T-cell 
+immune competence. These T cells subsets can be identified by their expression of cell-surface markers 
+CD45RA and CD27 and are reported as a % gated on CD4 and CD8. 
+ 
+Assay interferences: Older samples may exhibit loss of surface antigens and therefore the sample should be 
+as fresh as possible. 
+ 
+Laboratory information 
+ 
+Analyte: Naïve, Memory and Effector T Cell Subsets Panel 
+ 
+Units: % 
+ 
+Specimen type: Peripheral blood - EDTA  
+ 
+Frequency of analysis: Dependent on clinical indication 
+ 
+Turnaround times: 1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00 
+ 
+Specimen transport: At room temperature 
+ 
+Additional/special requirements: Note that samples should be received in the laboratory no later than 3pm 
+on a Friday. Samples should be kept at room temperature. 
+ 
+Method: Flow Cytometry 
+ 
+Participation in EQA Scheme: N/A 
+ 
+Clinical information 
+ 
+Interpretation: Use of this panel in the investigation/monitoring of immunodeficiency should be discussed 
+with the appropriate Consultant Immunologist (adult or paediatric).  
+ 
+The T cell subsets that are reported are detailed in the below table. These subsets are reported for both helper 
+(CD4) and cytotoxic (CD8) T cells. Reference ranges are not available for most of these cells groups and any 
+results should be discussed with a consultant immunologist. 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/2 
+ 
+T cell subset *either CD4 or CD8 
+Immunophenotype 
+Clinical comments 
+Naïve 
+CD197+ (CCR7) CD45RA+ 
+Decreased in autoimmune 
+disease (AI) / 
+lymphoproliferation in CVID 
+Central memory 
+CD197+ (CCR7) CD45RA- 
+Possibly decreased in AI 
+cytopenia 
+Effector memory 
+CD197- (CCR7) CD45RA- 
+No clear clinical association 
+Effector / terminally 
+differentiated 
+CD197- (CCR7) CD45RA+ 
+Possibly increased in AI / 
+lymphoproliferation in CVID 
+Early differentiated 
+CD28+ CD27+ 
+Decreased in AI / 
+lymphoproliferation in CVID 
+Intermediate differentiated 
+CD28- CD27+ 
+No clear clinical association 
+Late differentiated 
+CD28- CD27- 
+Possibly increased in AI / 
+lymphoproliferation in CVID 
++ Senescent 
+CD57+ (based on CD57 and SS) 
+Increased in Activated PI3K 
+delta syndrome (APDS) 
+Exhausted 
+CD279+ (PD1) 
+No clear clinical association 
+ 
+Naïve T cells are also assessed as part of newborn Severe Combined Immunodeficiency (SCID) screening, in 
+which context low numbers of naïve cells may support SCID. 
+(Last updated February 2024) 

@@ -1,0 +1,448 @@
+{
+  "meta": {
+    "department": "Synovial Fluid Cytology",
+    "version": "0.1.0",
+    "test_count": 15
+  },
+  "tests": [
+    {
+      "id": "failing-metal-on-metal-prosthetic-joints",
+      "name": "Failing metal-on-metal prosthetic joints",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "F",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "features-associated-with-ganglia",
+      "name": "Features associated with ganglia",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "F",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "features-of-juvenile-inflammatory-arthropathy",
+      "name": "Features of Juvenile inflammatory arthropathy",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "F",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "features-of-rheumatoid-disease",
+      "name": "Features of rheumatoid disease",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "F",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "gout-urate-crystals",
+      "name": "Gout (urate crystals)",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "G",
+      "categories": [
+        "renal-function",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "gram-ve-ve-sepsis",
+      "name": "Gram +ve/-ve sepsis",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "G",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "inflammatory-non-inflammatory-bursitis",
+      "name": "Inflammatory/non-inflammatory bursitis",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "I",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "non-specific-inflammatory-arthropathies",
+      "name": "Non-specific inflammatory arthropathies",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "N",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "non-specific-non-inflammatory-arthropathies",
+      "name": "Non-specific non-inflammatory arthropathies",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "N",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "osteoarthritis",
+      "name": "Osteoarthritis",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "O",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "pseudogout-pyrophosphate-crystals",
+      "name": "Pseudogout (pyrophosphate crystals)",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "P",
+      "categories": [
+        "bone-metabolism"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "quiescent-gout-urate-crystals",
+      "name": "Quiescent gout (urate crystals)",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "Q",
+      "categories": [
+        "renal-function",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "sero-negative-arthropathies",
+      "name": "Sero-negative arthropathies",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "S",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "sero-negative-spondylarthropathies",
+      "name": "Sero-negative spondylarthropathies",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "S",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "wear-and-or-loosening-of-prosthetic-joints",
+      "name": "Wear and/or loosening of prosthetic joints",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "W",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    }
+  ]
+}

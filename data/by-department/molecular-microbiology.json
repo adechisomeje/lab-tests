@@ -1,0 +1,2007 @@
+{
+  "meta": {
+    "department": "Molecular Microbiology",
+    "version": "0.1.0",
+    "test_count": 27
+  },
+  "tests": [
+    {
+      "id": "aspergillus-pcr",
+      "name": "Aspergillus PCR",
+      "aliases": [
+        "Invasive infection with Aspergillus"
+      ],
+      "department": "Molecular Microbiology",
+      "letter": "A",
+      "categories": [
+        "mycology",
+        "molecular-microbiology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "Sputum, BAL, CSF",
+        "container": "CE marked leak proof container",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "transport": "Ambient or refrigerated\n\nTransport at ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "Samples should be stored at 4°C and dispatched as soon as possible after being drawn"
+      },
+      "analysis": {
+        "units": "Threshold cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend\n\nMolecular Microbiology False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay.\n\nNew and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "5 days",
+        "final_raw": "7 days\n\nIf urgent please contact the laboratory",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "notes": "Invasive infection with Aspergillus",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Aspergillus-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "bk-virus-pcr",
+      "name": "BK virus PCR",
+      "aliases": [
+        "Polyoma viruses (BK)"
+      ],
+      "department": "Molecular Microbiology",
+      "letter": "B",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "transplant-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "nephrology-renal",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "csf",
+          "urine"
+        ],
+        "specimen_type_raw": "EDTA whole blood, CSF, urine",
+        "container": "CE marked leak proof container or 5mL EDTA blood collection tube",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "Minimum volume 500μl",
+        "transport": "Compliance with current postal and transportation regulations is essential\n\nClinical samples should be collected into a leak-proof container in a sealed plastic bag. Appropriate hazard labelling according to local policy should be applied. Specimens should be transported and processed as soon as possible. If processing is delayed refrigeration is preferable to storage at room temperature.",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "Copies/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay.\n\nNew and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "notes": "Polyoma viruses (BK)",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/BK-virus-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "bocavirus-pcr-referral",
+      "name": "Bocavirus PCR (referral)",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "B",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/manchester-medical-microbiology-partnership/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "bordetella-pertussis-pcr",
+      "name": "Bordetella pertussis PCR",
+      "aliases": [
+        "Bordetella pertussis culture",
+        "Pernasal swab (for pertussis)"
+      ],
+      "description": "Specimen type and collection container:  Pernasal swab  Nose and/or throat swab (virus transport medium)  BAL/Sputum (sterile container)  NPA (Sterile container)",
+      "department": "Molecular Microbiology",
+      "letter": "B",
+      "categories": [
+        "bacteriology",
+        "molecular-microbiology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "minimum_volume_raw": "Minimum volume 500μL",
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "None known"
+      },
+      "analysis": {
+        "units": "Threshold cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend\n\nFalse negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "final_raw": "3-4 working days",
+        "final_working_days": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      },
+      "notes": "Bordetella pertussis culture; Pernasal swab (for pertussis)",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Bordetella-pertussis-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "candida-pcr",
+      "name": "Candida PCR",
+      "aliases": [
+        "Invasive infection with Candida"
+      ],
+      "department": "Molecular Microbiology",
+      "letter": "C",
+      "categories": [
+        "mycology",
+        "molecular-microbiology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "csf",
+          "swab",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "EDTA Blood , Sputum, CSF, BAL, swabs",
+        "container": "EDTA blood collection tube",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "transport": "Ambient or refrigerated\n\nTransport at ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650\n\nType and minimum volume of sample: 5mL of EDTA blood\n\nA minimum of 1mL of a bronchoalveolar lavage in a sterile screw-capped plastic container should arrive at the laboratory within 1 working day. The sample should not be frozen, but should be stored at 4°C before dispatch, and kept cool during transport to the laboratory. Non invasive samples such as sputum and EDTA- blood may be used if BAL is unobtainable.\n\nA minimum of 0.5mL of whole CSF. Do not centrifuge. Use a small capacity screw capped container. Special precautions Samples should be stored at 4°C and dispatched as soon as possible after being drawn. If longer storage is unavoidable, serum or plasma may be stored frozen, but should not be repeatedly frozen and thawed. In special circumstances, 0.5mL of serum or plasma can be tested, but for such small volumes avoid using a large container; use a small capacity container with a screw cap, such as an Eppendorff tube."
+      },
+      "analysis": {
+        "units": "Threshold Cycle (CT)",
+        "clinical_decision_points": "Not applicable\n\nMolecular Microbiology",
+        "interferences": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend\n\nFalse negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay.\n\nNew and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "notes": "Invasive infection with Candida",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Candida-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units"
+        ]
+      }
+    },
+    {
+      "id": "chlamydia-trachomatis-neisseria-gonorrhoea-trichomonas-vaginalis-mycoplasma-geni",
+      "name": "Chlamydia trachomatis, Neisseria gonorrhoea, Trichomonas vaginalis, Mycoplasma genitalium NAATs",
+      "aliases": [],
+      "description": "vaginalis, Mycoplasma genitalium NAATs",
+      "department": "Molecular Microbiology",
+      "letter": "C",
+      "categories": [
+        "bacteriology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "plasma",
+          "urine",
+          "swab",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "For Chlamydia/ Gonococcal PCR the following samples are accepted: urine, swabs such as vaginal/vulval, cervical, throat, rectal, eye, penile, urethral, genital. Trichomonas Vaginalis and Mycoplasma Genitalium PCR the following samples are accepted: urine, vaginal/vulval or cervical swabs. From male patients, urine only.",
+        "container": "cobas® PCR media tube cobas® PCR Dual Swab Collection Kit",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "Specimens should be collected and handled following the recommended guidelines on the collection packs:\n\nMale and female urine specimens\n\nMale and female urines must be collected in a sterile container and transferred to the cobas® PCR media tube within 24 hours of collection. After transfer, specimens can then be stored at 2-300C for up to 3 months prior to testing.\n\nUrine specimens must fill the cobas® PCR media tube between the 2 black urine fill lines (shown below). If the amount of urine is above or below these lines the specimen will not be tested by the laboratory.\n\nUrine specimen with 2 black urine fill lines\n\nVaginal, throat and anorectal specimens\n\nWoven polyester swab used to collect vaginal, throat and anorectal specimens\n\nMolecular Microbiology Only the larger woven polyester swab (shown above) included in the cobas® PCR Dual Swab Collection Kit should be used to collect vaginal, rectal and throat specimens. Specimens may be stored in cobas® PCR media at 2-30°C for up to 3 months.\n\nEndocervical specimens\n\nThe larger woven polyester swab (shown above) included in the cobas® PCR Dual Swab Collection Kit should be used first to remove any cervical secretions followed by the smaller flocked swab (shown below) to collect the endocervical specimen.\n\nFlocked swab used to collect endocervical specimens\n\nPlease ensure the correct swab is used for the test requested or the sample cannot be processed. Please note only ONE swab should be returned in the specimen tube.\n\nSpecimens may be stored in cobas® PCR media at 2-30°C for up to 3 months.",
+        "transport": "Transport at ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "Patient consent must be obtained for both Chlamdyia and Gonococcal testing. Single tests cannot be accepted for either Chlamydia or Gonorrhoea. If consent for both cannot be obtained, please contact the laboratory for information on alternative laboratories that provide a single analyte service.\n\nSpecimens received more than 3 months after collection will not be tested by the laboratory.\n\nOnly the woven polyester swab or flocked swabs contained in the cobas® PCR Dual Swab Collection Kit will be accepted for testing.\n\nSwab specimens received with no swab or 2 swabs will not be tested by the laboratory.\n\nCobas® PCR media that has expired will not be tested.\n\nPlease ensure the request form clearly states the specimen type and the required test.\n\nPlease ensure the swabs are not inverted in the tube, i.e. the specimen collection end should be placed in the liquid media."
+      },
+      "analysis": {
+        "units": "Relative Light Units (RLU)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Samples must be kept at ambient temperature.\n\nWhere possible, check that swabs are visually clear of stool, mucus or blood as these can interfere with the assay. Other known factors include, some over the counter feminine hygiene, lubricants or prescriptions. Where possible, request patient avoids applying these 24 hours prior to sample collection.\n\nFalse negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of target below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days\n\nFor urgent tests please contact the laboratory\n\nM. genitalium antibiotic resistance testing is a referral test with a significantly longer turnaround time, please refer to the UKHSA BRD user manual.",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Chlamydia-trachomatis-Neisseria-gonorrhoea-Trichomonas-vaginalis-NAATs.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cmv-cytomegalovirus-antiviral-resistance-markers",
+      "name": "CMV (cytomegalovirus) antiviral resistance markers",
+      "aliases": [
+        "Cytomegalovirus anitviral resistance markers"
+      ],
+      "description": "CMV viral load positive bloods. Complete CMV antiviral resistance genotypic screening including UL97: Nucleotide sequencing of the CMV phosphotransferase gene for the identification of mutations encoding resistance to ganciclovir and maribavir. UL54: Nucleotide sequencing of the DNA polymerase gene for the identification of mutations encoding resistance to ganciclovir, foscarnet and cidofovir.",
+      "department": "Molecular Microbiology",
+      "letter": "C",
+      "categories": [
+        "virology",
+        "transplant-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA blood",
+        "container": "CE marked leak proof container EDTA blood tube",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3.0 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        },
+        "transport": "Ambient or refrigerated\n\nFor PCR for confirmation of active CMV infection and monitoring of antiviral therapy please send 4mL of EDTA blood. This should be stored at 4°C and dispatched as soon as possible after being drawn.\n\nIf longer storage is unavoidable, serum or plasma may be stored frozen, but should not be repeatedly frozen and thawed. In special circumstances, 0.5mL of serum or plasma can be tested, but for such small volumes avoid using a large container but use a small capacity container with a screw-cap, such as an Eppendorff tube.",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "mL Wild type / resistant mutation",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay.\n\nNew and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "5 days",
+        "final_raw": "7 days\n\nMolecular Microbiology",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "notes": "Cytomegalovirus anitviral resistance markers",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/12/CMV-Cytomegalovirus-antiviral-resistance-markers.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cmv-cytomegalovirus-viral-load",
+      "name": "CMV (cytomegalovirus) viral load",
+      "aliases": [
+        "Cytomegalovirus viral load"
+      ],
+      "description": "Molecula mft. on of Labo ar Microbiolo .nhs.uk/lab Cytom Genera Collectio card Specime Urine Specime Minimu Special p Labora Measure Biologic Turnaro Turnaro Turnaro in the la Clinica Clinical d oratory Me ogy boratoryme megalo al informatio on container en type: en transport m volume o precautions atory info ement units cal reference ound time fo ound time to ound time: T boratory, an al informa decision poi edicine edicine virus vi on r (including p t: Ambient or of sample: M : None know ormation s: IU/ml e units: Not a r provisiona o final result he results of nd usually wi ation nts: Not app ral load preservative r refrigerated inimum volu wn applicable l result (wor (working da f all tests will thin 24 hour plicable d es): CE marke EDTA b d ume 500μl rking days): ays): 3 days l be available rs. ed leak proo lood 2 days e within 3 wo f container, orking days a EDTA blood after receipt tube or Guth t of the speci hrie imen",
+      "department": "Molecular Microbiology",
+      "letter": "C",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "transplant-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "analysis": {
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "notes": "Cytomegalovirus viral load",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Cytomegalovirus-viral-load.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2017",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.09,
+        "has_detail_sheet": true,
+        "present": [
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "coronavirus-covid-19-testing-for-sars-cov-2",
+      "name": "Coronavirus COVID-19 Testing for SARS-CoV-2",
+      "aliases": [],
+      "description": "Coronavirus COVID-19 Testing for SARS-CoV-2",
+      "department": "Molecular Microbiology",
+      "letter": "C",
+      "categories": [
+        "virology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "The following samples must be sent:\n\n• Upper respiratory tract (nose and throat swab or NPA) • Lower respiratory tract if possible (sputum, BAL or ETA)\n\nThe Laboratory can test for SARS-CoV-2 on a nose and throat swab. Swab each site with a separate swab and place both swabs in one tube of Virus Transport Medium (VTM). If a patient is producing sputum then please send sputum as well as a nose and throat swab.\n\nIf a nose/throat swab is collected, swab the throat first and then the nose.\n\nRefer to national guidance at https://www.gov.uk/government/publications/wuhan-novel-coronavirus-guidance-for-clinical-diagnostic- laboratories",
+        "container": "• This guidance should be used for sending samples to PHL Manchester for COVID-19 testing following identification of the patient that meets the national case definition. Refer to national guidance at https://www.gov.uk/government/publications/wuhan-novel-coronavirus-initial-investigation-of-possible- cases/investigation-and-initial-clinical-management-of-possible-cases-of-wuhan-novel-coronavirus-wn-cov- infection#interim-definition-possible-cases • The regional COVID-19 request form (E28 form) must be completed https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/86826 4/PHE_2019-COVID-19_Testing_Request_Form_E28.pdf",
+        "minimum_volume_raw": "Minimum volume 700μl",
+        "transport": "Arrange transport to PHL Manchester - Label package clearly for Virology with ‘PRIORITY 10' label. - Virology Reception, 3rd Floor, Clinical Sciences Building One, MRI, M13 9WL or, out of hours, - Central Specimen Reception, Ground Floor, Clinical Sciences Building One, MRI, M13 9WL - Packages should be labelled with ‘PRIORITY 10‘ for all specimens for COVID-19 testing, with the exception of known positive patients. - Packages should be labelled with ‘PRIORITY 20' for all known positive COVID-19 patients' specimens. Samples must be sent in Category B transport containers. Follow the diagram below for instructions on packaging samples to send for testing.\n\nMolecular Microbiology\n\n• Please keep the specimen separate from other pathology specimens. • All other pathology specimens should be transported in the usual way so they are not delayed.",
+        "special_precautions": "All samples must be sent in accordance with Cat B transport guidance.\n\nIf processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Positive or Negative",
+        "clinical_decision_points": "Not applicable\n\nPlace samples into a bubble wrap envelope with absorbent pad and seal Place samples into plastic cylinder and seal the top. Include the request form outside of the cylinder Place cylinder into Cat B transport box Seal the box using the blue sticker provided"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Coronavirus-COVID-19.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "enterovirus-and-parechovirus-pcr",
+      "name": "Enterovirus and parechovirus PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "E",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "csf",
+          "faeces",
+          "swab",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "EDTA blood, CSF, Swab, Faeces, Respiratory samples",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "Minimum 500μl",
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Threshold cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "None known"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Enterovirus-and-Parechovirus-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "ebv-epstein-barr-virus-viral-load",
+      "name": "EBV (Epstein Barr virus) viral load",
+      "aliases": [
+        "EBV (Epstein Barr Virus) viral load"
+      ],
+      "department": "Molecular Microbiology",
+      "letter": "E",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "transplant-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "transplant-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA blood",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "500μl",
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Copies/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay.\n\nNew and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "2 days",
+        "final_raw": "3 days",
+        "provisional_working_days": {
+          "min": 2.0,
+          "max": 2.0
+        },
+        "final_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "notes": "EBV viral load",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/10/Epstein-Barr-virus-viral-load.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hcv-genotyping",
+      "name": "HCV genotyping",
+      "aliases": [],
+      "description": "HCV genotyping would only be performed on an HCV viral load positive patient.",
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "hepatitis",
+        "genetics-molecular"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA blood",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3.0 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        },
+        "transport": "Whole bloods/EDTA samples should be processed in the laboratory within 24hrs @ 2- 25C. Please send to the laboratory as soon as possible.",
+        "special_precautions": "Haemolysed specimens can be inhibitory; where this is unavoidable, such as with post- mortem samples, the laboratory should be contacted (0161-276-8843)."
+      },
+      "analysis": {
+        "units": "Results presented as genotype",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "raw": "The results of all tests will be available within 5-7 working days after receipt of the specimen in the laboratory, and may be available sooner by prior arrangement",
+        "days": {
+          "min": 5.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/12/HCV-Genotyping.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-virus-genotyping-and-resistance-markers",
+      "name": "Hepatitis B virus Genotyping and Resistance Markers",
+      "aliases": [
+        "HBV resistance markers"
+      ],
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "sexual-health-sti",
+        "hepatitis",
+        "genetics-molecular"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA blood",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        },
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "raw": "The results of all tests will be available within 5-7 working days after receipt of the specimen in the laboratory, and may be available sooner by prior arrangement",
+        "days": {
+          "min": 5.0,
+          "max": 7.0
+        }
+      },
+      "notes": "HBV resistance markers",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/HBV-Resistance-Markers.pdf",
+        "detail_type": "pdf",
+        "last_updated": "September 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-c-viral-load",
+      "name": "Hepatitis C viral load",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "specimen_type_raw": "EDTA plasma and serum samples",
+        "container": "Blood should be collected in SSTTM Serum Separation Tubes, BD Vacutainer® PPTTM Plasma Preparation Tubes or in sterile tubes using EDTA as the anticoagulant. Whole blood collected in EDTA tubes may be stored and/or transported for up to 24 hours at 2°C to 25°C. If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable.",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3.0 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        }
+      },
+      "analysis": {
+        "units": "IU/mL\n\nDynamic range: The dynamic range for this assay is 15-1x108 copies/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Factors known to significantly affect the results: False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days Turnaround time for final result (working days): 4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/03/Hepatitis-C-viral-load.pdf",
+        "detail_type": "pdf",
+        "last_updated": "March 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.volume",
+          "analysis.units"
+        ]
+      }
+    },
+    {
+      "id": "herpes-simplex-virus-types-1-and-2-pcr",
+      "name": "Herpes simplex virus types 1 and 2 PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "csf",
+          "swab"
+        ],
+        "specimen_type_raw": "EDTA blood, CSF, Lesion Swab, Eye Swab, Viterous Tap",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "Minimum volume 500μl",
+        "collection": "Samples for PCR testing should be collected according to local protocols. Ideally, a separate sample for PCR processing should be obtained.",
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Threshold Cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "2 days",
+        "final_raw": "3 days",
+        "provisional_working_days": {
+          "min": 2.0,
+          "max": 2.0
+        },
+        "final_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Herpes-simplex-virus-types-1-and-2-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hiv-resistance-integrase-tropism-molecular-microbiology",
+      "name": "HIV resistance, integrase, tropism Molecular Microbiology",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA Blood",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3.0 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        },
+        "collection": "Freshly drawn whole blood in EDTA",
+        "transport": "Blood to arrive at the laboratory within 6 hours of being drawn",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "turnaround": {
+        "provisional_raw": "7 days",
+        "final_raw": "10 days Urgent results available by prior arrangement",
+        "provisional_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        },
+        "final_working_days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/HIV-resistance-integrase-tropism.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hiv-1-viral-load",
+      "name": "HIV-1 viral load",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA Blood",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3.0 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        },
+        "collection": "Freshly drawn whole blood in EDTA",
+        "transport": "Whole bloods/EDTA samples should be processed in the laboratory within 24hrs @ 2- 25C. Please send to the laboratory as soon as possible.",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 24hr are undesirable."
+      },
+      "analysis": {
+        "units": "Copies/mL\n\nDynamic range: The dynamic range for this assay is 40-1x107 copies/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "4 days",
+        "final_raw": "5 days",
+        "provisional_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        },
+        "final_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/HIV‐1-viral-load.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "human-herpes-virus-6-7",
+      "name": "Human Herpes virus 6 & 7",
+      "aliases": [
+        "HHV6 & 7 PCR"
+      ],
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "csf",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "EDTA blood, CSF, BAL",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "Minimum volume 500μl",
+        "transport": "Ambient or refrigerated\n\nCompliance with current postal and transportation regulations is essential.\n\nClinical samples should be collected into a sterile leak-proof container in a sealed plastic bag. Appropriate hazard labelling according to local policy should be applied. Specimens should be transported and processed as soon as possible. If processing is delayed, refrigeration is preferable to storage at room temperature.",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Threshold Cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "5 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "notes": "HHV6 & 7 PCR",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/HHV6-7-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "human-papilloma-virus-screening",
+      "name": "Human Papilloma Virus Screening",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab"
+        ],
+        "specimen_type_raw": "Cervical smear, swabs, biopsies, paraffin wax sections",
+        "container": "Surepath container",
+        "minimum_volume_raw": "600μl",
+        "transport": "Ambient or refrigerated"
+      },
+      "analysis": {
+        "units": "Threshold cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "raw": "PCR result available in 3-4 days\n\nSample types for referral for genotyping: 1. Tissue (MUST be formalin fixed paraffin embedded FFPE). Fresh tissue cannot be tested. 2. Swabs (Tested but reported with a comment indicating it is not a validated sample type).",
+        "days": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/12/Human-Papilloma-Virus-Screening-Assay.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "human-parvovirus-b19-viral-load",
+      "name": "Human Parvovirus B19 viral load",
+      "aliases": [
+        "Parvovirus B19 viral load"
+      ],
+      "description": "Slapped cheek syndrome, Fifth disease",
+      "department": "Molecular Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "tissue"
+        ],
+        "specimen_type_raw": "EDTA blood, Amniotic Fluid, Tissues",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "500μl",
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Copies/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "raw": "3-4 working days\n\nTissues take longer to process which can sometimes increase the turnaround time.",
+        "days": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      },
+      "notes": "Parvovirus B19 viral load",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Human-Parvovirus-B19-viral-load.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2017",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "jc-virus-pcr",
+      "name": "JC virus PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "J",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "csf",
+          "urine"
+        ],
+        "specimen_type_raw": "EDTA blood, urine, CSF",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "Minimum volume 500μl",
+        "transport": "Compliance with current postal and transportation regulations is essential. Clinical samples should be collected into a sterile leak-proof container in a sealed plastic bag. Appropriate hazard labelling according to local policy should be applied. Specimens should be transported and processed as soon as possible. If processing is delayed refrigeration is preferable to storage at room temperature.",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Copies/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/JC-virus-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "meningococcal-dna-detection-by-pcr-multiplex-with-pneumococcal-dna-pcr",
+      "name": "Meningococcal DNA detection by PCR (multiplex with Pneumococcal DNA PCR)",
+      "aliases": [
+        "Pneumococcal PCR"
+      ],
+      "description": "PCR) The Meningococcal Reference Unit provides a separate manual that is distributed to all users of the unit, and is also available on https://www.gov.uk/government/publications/meningococcal-reference-unit-mru-user- manual",
+      "department": "Molecular Microbiology",
+      "letter": "M",
+      "categories": [
+        "bacteriology",
+        "molecular-microbiology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "csf",
+          "body-fluid"
+        ],
+        "specimen_type_raw": "EDTA blood, CSF, pleural fluid, DNA extracts Where a CSF sample is available, this should be sent in addition to an EDTA blood sample",
+        "container": "EDTA Blood tube CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "Minimum volume of 500μL",
+        "collection": "CE marked leak proof container",
+        "transport": "Ambient or refrigerated Specimen type and transport:  EDTA blood sample collected on admission should be sent to the Meningococcal Reference Unit (MRU) if PCR confirmation is required. Heparinised, clotted blood, serum or citrated samples can be tested, but EDTA is preferred.  Whole CSF (i.e. an uncentrifuged specimen) should be sent in small sterile containers such as a sterile 2mL screw capped vial (rather than universal containers).",
+        "special_precautions": "Remember to also collect blood cultures and a throat swab for bacteriology and label these clearly for meningococcal investigation."
+      },
+      "analysis": {
+        "units": "Threshold Cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Any specimens for PCR tests should be stored at 4OC and not frozen prior to transport.\n\nThe likelihood of a positive result decreases as the interval of sampling after starting antibiotics lengthens. Samples for PCR taken more than 48 hours after commencement of antibiotic therapy are unlikely to give useful results. CSF may remain “positive” for longer periods."
+      },
+      "turnaround": {
+        "raw": "Negative results and Meningococcal Serogroup B positive results, are typically available within 24 hours of receipt. Samples requiring serogroup confirmation and samples confirmed positive for Pneumococcal are available within 48 hours. Urgent samples may be processed sooner providing the laboratory is notified in advance of receipt\n\nMeningococcal Reference Unit Same day (if received by 10.00am)\n\nResults on specimens received up to 10.00am on Monday - Friday are normally available between 4.30pm and 5.00pm on the same day.\n\nPositive results will be telephoned following serogroup confirmation up to 5.30pm, or as soon as possible on the morning of the next working day, when printed reports will also be sent out.\n\nUrgent turnaround times Arrangements to accept couriered urgent samples for PCR or other investigations must be agreed with the MRU before the samples are sent. Failure to do so may result in the specimen(s) not being tested in a timely fashion",
+        "provisional_raw": "1-2 days",
+        "final_raw": "2 days",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 2.0
+        },
+        "final_working_days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "notes": "Pneumococcal PCR",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Meningococcal-DNA-detection-by-PCR-including-Pneumococcal-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "mycoplasma-pcr",
+      "name": "Mycoplasma PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "M",
+      "categories": [
+        "molecular-microbiology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf",
+          "swab",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "Nose and Throat Swabs, Respiratory samples, CSF",
+        "container": "CE marked leak proof container",
+        "minimum_volume_raw": "Minimum 500μl",
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Threshold cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "None known"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Mycoplasma-pneumoniae-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2017",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "pneumocystis-jirovecii-pcr",
+      "name": "Pneumocystis jirovecii PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "P",
+      "categories": [
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "swab",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "EDTA blood, BAL, sputum (Swabs can be tested - but are not accredited)",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "500μl",
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Threshold Cyle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/12/Pneumocystis-jirovecii-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "respiratory-virus-pcr",
+      "name": "Respiratory virus PCR",
+      "aliases": [
+        "Adenovirus (respiratory infection)",
+        "Respiratory screen"
+      ],
+      "description": "Respiratory screen including 1) Influenza A including H1N1 (avian types: contact lab) 2) Influenza B 3) Parainfluenza viruses 1,2,3 4) Respiratory syncytial virus 5) Metapneumovirus 6) Adenovirus 7) Rhinovirus Specimen type and container:  Nose and/or throat swab (virus transport medium)  BAL/Sputum (sterile container)  NPA (Sterile container)",
+      "department": "Molecular Microbiology",
+      "letter": "R",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "swab",
+          "sputum-respiratory",
+          "body-fluid"
+        ],
+        "specimen_type_raw": "Only nasopharyngeal (NP) swabs and nasopharyngeal aspirates (NPA) collected from patients with signs and symptoms of respiratory infection",
+        "container": "Nasopharyngeal (NP) swabs should be collected into a laboratory approved virus transport medium. Nasopharyngeal aspirates should be collected into a laboratory approved container.\n\nAny interference with the extraction and amplification of influenza A, B and RSV in any given patient sample will be identified by a negative result for the internal control. These will then be re-tested and reported as ‘Sample inhibitory for respiratory PCR'.",
+        "minimum_volume_raw": "Minimum volume 500μl",
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "For avian flu please contact the laboratory with full travel history"
+      },
+      "analysis": {
+        "units": "Threshold cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend\n\nFalse negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility.\n\nMolecular Microbiology\n\nIn order to provide the most clinically beneficial, operationally efficient and cost effective service the laboratory employs a number of multiplex assays and testing algorithms, which are based on UK Standards for Microbiology Investigations; it is normal practice to use these even when not all tests within the multiplex or algorithm are requested.\n\nIt is our policy to report all results along with the requested result to provide as much information as possible to aid diagnosis\n\nDuring an outbreak of Influenza the laboratory offers a more rapid test (4 hours). The test detects influenza A, B and RSV."
+      },
+      "turnaround": {
+        "provisional_raw": "2 days",
+        "final_raw": "3 days",
+        "provisional_working_days": {
+          "min": 2.0,
+          "max": 2.0
+        },
+        "final_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "notes": "Respiratory screen; adenovirus",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Respiratory-virus-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "toxoplasma-pcr",
+      "name": "Toxoplasma PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "T",
+      "categories": [
+        "parasitology",
+        "molecular-microbiology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "csf"
+        ],
+        "specimen_type_raw": "EDTA blood, amniotic fluid, CSF",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "500μl",
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "Please send to the laboratory without delay"
+      },
+      "analysis": {
+        "units": "Threshold Cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend.\n\nFalse negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Toxoplasma-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "varicella-zoster-virus-pcr",
+      "name": "Varicella-zoster virus PCR",
+      "aliases": [],
+      "description": "Chickenpox, Shingles, Encephalitis, meningitis, rash, lesion",
+      "department": "Molecular Microbiology",
+      "letter": "V",
+      "categories": [
+        "virology",
+        "molecular-microbiology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "csf",
+          "swab"
+        ],
+        "specimen_type_raw": "EDTA blood, CSF, Swabs, Viterous tap",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "Minimum volume 500μl",
+        "transport": "Ambient or refrigerated\n\nCompliance with current postal and transportation regulations is essential\n\nClinical samples should be collected into a sterile leak-proof container in a sealed plastic bag. Appropriate hazard labelling according to local policy should be applied. Specimens should be transported and processed as soon as possible.",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at room temperature."
+      },
+      "analysis": {
+        "units": "Threshold Cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend\n\nFalse negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Varicella-zoster-virus-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    }
+  ]
+}

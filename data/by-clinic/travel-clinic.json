@@ -1,0 +1,1474 @@
+{
+  "meta": {
+    "profile": "travel-clinic",
+    "name": "Travel & Tropical Medicine",
+    "version": "0.1.0",
+    "rationale": "Imported infection screening dominates: malaria, enteric pathogens, arboviruses and vaccine-preventable disease immunity.",
+    "test_count": 22
+  },
+  "tests": [
+    {
+      "id": "blastomyces-referral",
+      "name": "Blastomyces (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "B",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/manchester-medical-microbiology-partnership/opening-hours-clinical-advice-and-results-line/virology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "brucella-referral",
+      "name": "Brucella (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "B",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/manchester-medical-microbiology-partnership/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "coccidioides-referral",
+      "name": "Coccidioides (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "C",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/manchester-medical-microbiology-partnership/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "faecal-bacteria-parasite-pcr-serosep-dx",
+      "name": "Faeces Bacteria/Parasite PCR – Serosep DX",
+      "aliases": [],
+      "description": "All diagnostic faecal samples, except single organism screens, are tested for the following organisms: Campylobacter jejuni/coli/lari., Salmonella enterica sp., Shiga-toxin producing E.coli (STEC) including 0157, Enteroinvasive E. coli/Shigella sp, Vibrio cholerae/parahaemolyticus, Yersinia enterocolitica, Cryptosporidium parvum/hominis, Giardia and Entamoeba histolytica. Faecal samples submitted from patients with suspected food poisoning, or foreign travel history to Asia/Africa/South America, will have additional Salmonella enrichment culture performed. Food poisoning samples will also have additional culture performed for Staphylococcus aureus, Bacillus cereus., Clostridium perfringens, atypical Vibrio sp. and Listeria monocytogenes.",
+      "department": "Bacteriology",
+      "letter": "F",
+      "categories": [
+        "parasitology",
+        "molecular-microbiology",
+        "gastrointestinal"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "travel-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "faeces"
+        ],
+        "specimen_type_raw": "Faeces",
+        "container": "Collect specimens in appropriate CE marked leak proof containers",
+        "minimum_volume_raw": "A liquid specimen of 1-2 mL is sufficient. 2 gram (large pea-size) of solid specimen",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "Specimen may be passed into a clean, dry, disposable bedpan or similar container and transferred into an appropriate CE marked leak proof containers and place in sealed plastic bags.\n\nPlease do not send additional faeces to the laboratory collected within the same 24-hour period as the last sample sent. Additional faeces received that was collected within the same 24 hour period will not be processed.\n\nRequest form: The microbiological examination of faeces is complex and requires a full clinical history including the possibility of food poisoning, foreign travel with the countries visited and the dates, and antimicrobial therapy, as well as the more basic information. Failure to give this information may mean important pathogens are not isolated.",
+        "transport": "If processing is delayed, refrigeration is preferable to storage at ambient temperature\n\nBacteriology",
+        "special_precautions": "The specimen is unsatisfactory if any residual soap, detergent or disinfectant remains in the pan. Sample should avoid contamination with urine or the toilet bowl"
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable"
+      },
+      "turnaround": {
+        "provisional_raw": "1 day",
+        "final_raw": "2-3 days",
+        "provisional_working_days": {
+          "min": 1.0,
+          "max": 1.0
+        },
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Faeces-Bacteria-Parasite-PCR-Serosep-DX.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "full-blood-count-and-automated-differential",
+      "name": "Full blood count and automated differential",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "hepatitis-a-total-antibody-igg-and-igm",
+      "name": "Hepatitis A total antibody (IgG and IgM)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis Assay interference and generation of anomalous results can occur when a patients' sample contains:  Heterophile antibodies  Animal serum products (from routine exposure to animals)  Human mouse monoclonal antibodies (patients who receive  Preparations of mouse monoclonal antibodies for diagnosis or therapy)"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Hepatitis-A-Total-antibody-IgG-and-IgM.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-hbv-surface-antigen-hbsag",
+      "name": "Hepatitis B (HBV) surface antigen (HBsAg)",
+      "aliases": [
+        "Anti HBs",
+        "HBV surface antibody",
+        "HBsAg",
+        "Hepatitis B (HBV) surface antibody (Anti-HBs)"
+      ],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "4.9 ml blood tube or 7.5ml blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis, mutation"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days. Hepatitis B virus surface antigen confirmation is 6 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "notes": "HBV surface antibody; anti HBs; HBsAg",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Hepatitis-B-virus-HBV-surface-antigen-HBsAg.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-hbv-surface-antigen-hbsag-dried-blood-spot",
+      "name": "Hepatitis B (HBV) surface antigen (HBsAg) – Dried Blood Spot",
+      "aliases": [
+        "Dried blood spot Hepatitis B surface antigen"
+      ],
+      "description": "Spot) This service is designed for those patients on whom it is difficult to obtain venous blood, especially for intra venous drug users. Contact the laboratory for supply of postal packs containing all necessary items for using this service. Paediatric/infant packs are available on request",
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "dried-blood-spot"
+        ],
+        "specimen_type_raw": "Dried blood spot card",
+        "container": "Envelope with desiccant",
+        "minimum_volume_raw": "7mm diameter blood spot",
+        "collection": "Virology",
+        "transport": "No special needs",
+        "special_precautions": "Ensure blood spot has dried and submit with desiccant pouch enclosed. Do not send back used/unused lancets."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Spots too small, not all spots filled with blood"
+      },
+      "turnaround": {
+        "provisional_raw": "4 days",
+        "final_raw": "5 days",
+        "provisional_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        },
+        "final_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "notes": "Dried blood spot Hepatitis B surface antigen",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Hepatitis-B-virus-HBV-surface-antigen-HBsAg-Dried-Blood-Spot.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "histoplasma-referral",
+      "name": "Histoplasma (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/manchester-medical-microbiology-partnership/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "leptospira-referral",
+      "name": "Leptospira (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "L",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/manchester-medical-microbiology-partnership/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "liver-function-tests",
+      "name": "Liver Function Tests",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "L",
+      "categories": [
+        "liver-function"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "lyme-disease",
+      "name": "Lyme Disease",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "L",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "plasma",
+          "whole-blood",
+          "csf"
+        ],
+        "specimen_type_raw": "Venous Blood (sera or plasma); CSF is also accepted - this will be sent to the referral laboratory",
+        "container": "6mL clotted blood tube CE marked leak proof container",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650.\n\nSend to lab immediately for same day testing, delays are not desirable. If not sent immediately or transport delay expected - store at 2-8°C, testing must be done within 6 days.",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Index",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Lyme-IgG-IgM.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "malarial-parasites-detection-of",
+      "name": "Malarial parasites, detection of",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "M",
+      "categories": [
+        "parasitology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "measles-igg",
+      "name": "Measles IgG",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "M",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "AU/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Measles-IgG.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "ova-cysts-and-parasites",
+      "name": "Ova, Cysts and Parasites",
+      "aliases": [
+        "Bilharzia",
+        "Cryptosporidium",
+        "Entamoeba",
+        "Giardia lamblia",
+        "Parasites",
+        "Schistosoma haematobium"
+      ],
+      "description": "As part of our quality improvements for the Parasitology service within the Microbiology department at MFT, we have outlined the current testing requirements to provide an efficient service for the investigation of ova, cysts and parasites (OCP) from samples other than blood. Our aim is to clarify the requesting and selection of appropriate enteric samples for the examination of ova, cysts and parasites. Pathogen Sample required Comment Cryptosporidium parvum/hominis, Giardia lamblia and Entamoeba histolytica Faeces There is NO NEED to request OCP All enteric samples for bacteria/parasite PCR will automatically be tested for these. Other parasitic infestations 3 faecal samples over a period of 10 days OCP investigation must be requested Samples labelled and dated:- 1of 3, 2of 3 and 3of 3. Information required: - • Foreign travel history • Blood eosinophil count • Duration of diarrhoea • Presence/absence of abdominal symptoms • Evidence of malabsorption • HIV/Immunosupression Threadworm. (E. vermicularis ova.) Dry Peri-anal swab in 2ml saline Rotate a saline moistened swab around the anus of the child first thing in the morning. Peri-anal kits are supplied from the Enteric Laboratory upon request- Please contact 0161 276 6734. Bilharzia (Schistosomahaematobium) Urine Total urine volume collected between 10am and 2pm. Alternatively a 24hr collection of terminal samples of urine may be obtained. Microsporidia Faeces Modified trichrome is not a test the laboratory performs and is referred to another laboratory. This test should be specifically requested on the request form after discussion with a Microbiologist. Worms seen in stool Worm Please send actual worm seen in a universal container Bacteriology If any other types of samples require testing, or other parasite investigations required, please contact the Microbiology department on 0161 276 6717. If amoebic dysentery is suspected and clinical advice needed, please tel 0161 276 6333 On occasions, we may need to refer samples to a reference laboratory for specialised testing procedures and further samples may be necessary. Please see list of tests and referral laboratories (https://mft.nhs.uk/the- trust/other-departments/laboratory-medicine/manchester-medical-microbiology-partnership/referral- laboratories/)",
+      "department": "Bacteriology",
+      "letter": "O",
+      "categories": [
+        "parasitology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "notes": "Bilharzia; Cryptosporidium; Entamoeba; Giardia lamblia; Parasites; Schistosoma haematobium",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Ova-Cysts-and-Parasites.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.09,
+        "has_detail_sheet": true,
+        "present": [
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "q-fever-serology-and-pcr-referral",
+      "name": "Q Fever Serology and PCR (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "Q",
+      "categories": [
+        "infectious-disease-serology",
+        "molecular-microbiology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/manchester-medical-microbiology-partnership/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "rubella-igg",
+      "name": "Rubella IgG",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "R",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "antenatal-pregnancy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "IU/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Rubella-IgG.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "toxoplasma-pcr",
+      "name": "Toxoplasma PCR",
+      "aliases": [],
+      "department": "Molecular Microbiology",
+      "letter": "T",
+      "categories": [
+        "parasitology",
+        "molecular-microbiology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "csf"
+        ],
+        "specimen_type_raw": "EDTA blood, amniotic fluid, CSF",
+        "container": "CE marked leak proof container",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "500μl",
+        "transport": "Ambient or refrigerated",
+        "special_precautions": "Please send to the laboratory without delay"
+      },
+      "analysis": {
+        "units": "Threshold Cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend.\n\nFalse negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Toxoplasma-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "toxoplasma-serology-avidity",
+      "name": "Toxoplasma serology (avidity)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "T",
+      "categories": [
+        "infectious-disease-serology",
+        "parasitology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "No special needs",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "Low avidity; High avidity",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "5 days",
+        "final_raw": "7 days",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Toxoplasma-avidity.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "toxoplasma-serology-igg",
+      "name": "Toxoplasma serology (IgG)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "T",
+      "categories": [
+        "infectious-disease-serology",
+        "parasitology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "No special needs",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "IU/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Toxoplasma-IgG.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "toxoplasma-serology-igm",
+      "name": "Toxoplasma serology (IgM)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "T",
+      "categories": [
+        "infectious-disease-serology",
+        "parasitology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "No special needs",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "IU/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "5 days",
+        "final_raw": "7 days",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/12/Toxoplasma-IgM.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "varicella-zoster-igg",
+      "name": "Varicella Zoster IgG",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "V",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "No special needs",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "mIU/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days\n\nIf urgent please contact the laboratory for 4 hours turnaround.",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Varicella-zoster-IgG.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    }
+  ]
+}

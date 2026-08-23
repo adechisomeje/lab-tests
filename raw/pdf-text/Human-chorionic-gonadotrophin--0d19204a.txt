@@ -1,0 +1,113 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/2 
+ 
+Division of Laboratory Medicine 
+ 
+Biochemistry 
+mft.nhs.uk/laboratorymedicine 
+1/2
+Human chorionic gonadotrophin; HCG 
+ 
+Pseudonyms: beat Human chorionic gonadotrophin; βHCG; Pregnancy Test; Germ‐cell Tumour marker 
+ 
+General information 
+ 
+Collection container (blood):  
+ 
+Adults – serum (with gel separator, 4.9mL Sarstedt brown top) 
+ 
+Paediatrics – lithium heparin plasma (1.2mL Sarstedt orange top tube) 
+ 
+Collection container (urine): 
+ 
+Adults – NOT AVAILABLE 
+ 
+Paediatrics – Point‐of‐Care Testing (POCT) 
+ 
+Specimen transport/special precautions: Urine pregnancy tests are performed as POCT tests across RMCH 
+ 
+Laboratory information 
+ 
+Method principle: The Roche electrochemiluminesence immunoassay ECLIA combines a sandwich antigen‐
+antibody reaction with two hCG‐specific monoclonal mouse antibodies (biotinylated and ruthenium‐labelled) 
+on the surface of a magnetic microbead. 
+ 
+Biological reference ranges: 
+ 
+Blood: 
+ 
+Reported with the following comment: 
+ 
+“QUANTITATIVE HCG USED AS A PREGNANCY TEST: A result of >25 IU/L would normally indicate a positive 
+test. But a result of <25IU/L does not exclude early pregnancy.” 
+ 
+Blood as a tumour marker: 
+ 
+<3 months up to 50 IU/L 
+>3 months female: up to 5 IU/L 
+>3 months male: up to 3 IU/L 
+Post‐menopausal women: up to 8 IU/L 
+hCG, produced in the placenta, partially passes the placental barrier. Newborn serum beta hCG 
+concentrations are approximately1/400th of the corresponding maternal serum concentrations, resulting in 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/2 
+ 
+Division of Laboratory Medicine 
+ 
+Biochemistry 
+mft.nhs.uk/laboratorymedicine 
+2/2
+neonate beta hCG levels of 10‐50 IU/L at birth. Clearance half‐life is approximately 2‐3 days. Therefore, by 3 
+months of age, levels comparable to adults should be reached. 
+ 
+Turnaround times: 
+ 
+Blood: Urgent HCH results are available within 1 hour of receipt of the specimen in the laboratory. Otherwise 
+results are typically available within four hours. 
+ 
+Clinical information 
+ 
+In RMCH, pregnancy tests are routinely performed prior to invasive abdominal surgery or high dose 
+radiological procedures for all females who have started their periods or who are older than 13 years of age. 
+ 
+The test is also used to help diagnose and monitor germ cell tumours. 
+ 
+Factors known to significantly affect the results: 
+ 
+A very low serum hCG does not exclude pregnancy. False negative results can occur in very early or abnormal 
+pregnancy. 
+ 
+An ectopic pregnancy cannot be diagnosed using hCG alone. Levels should be repeated after 48h. 
+ 
+hCG can be produced by non‐germ cell tumours (e.g. small cell carcinoma of the lung). Because of the 
+existence of multiple forms of hCG and their varying detection by different assay formulations, it is 
+important to be aware of the stated characteristics of the assay used. Assays for oncological use should 
+ideally detect all forms of hCG. 
+ 
+The “high‐dose hook effect” means that occasionally very high levels (>1 to 2 million IU/L) may return 
+apparently much lower values (typically in the hundreds). A result that is unexpected or does not fit the 
+clinical picture must be checked on dilution. 
+ 
+Further information: 
+ 
+General info on HCG http://www.acb.org.uk/docs/default‐source/amalc/hcg.pdf  
+RMCH pregnancy testing guideline is available on the intranet 
+ 
+(Last updated June 2017) 

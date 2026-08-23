@@ -1,0 +1,109 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/2 
+Zinc Transporter 8 (ZnT8) antibodies 
+ 
+General Information 
+ 
+The assessment of autoantibodies to pancreatic β cell antigens is an important serological marker of type 1 
+diabetes mellitus (Type 1 DM). The antigens recognised by these antibodies include Zinc transporter 8 
+(ZnT8), insulinoma associated antigen 2 (IA-2), glutamic acid decarboxylase (GAD) GAD65kDa isoform and 
+insulin. 
+ 
+The epitopes principally recognised by ZnT8 antibodies reside in residues 268-369 of the C terminal domain. 
+Single nucleotide polymorphisms at the 325 residue lead to expression of arginine (R), tryptophan (W) or, 
+rarely, glutamine (Q). Autoantibodies have been discovered that are known to be specific to either the R or 
+W alleles or residue 325 non-specific. Autoantibodies specific to the Q allele are extremely rare. In a study of 
+1170 children with a genetic predisposition to diabetes, 58 went on to develop ZnT8 autoantibodies. Of 
+these antibodies, the majority (67.7%) could recognise all alleles and only 15.5% were reactive to a single 
+allele, none of which were reactive only to the Q allele (Achenbach et al, 2009). The RSR kit will detect the R, 
+W and reside 325 non-specific alleles. 
+  
+ZnT8 antibodies can be ordered individually, or as part of a panel containing ZnT8 antibodies, IA-2 antibodies 
+and GAD antibodies. 
+ 
+Assay interferences: Haemolysed and lipaemic samples should not be used. 
+ 
+Laboratory Information 
+ 
+Analyte: Zinc transporter 8 (ZnT8) antibodies 
+ 
+Units: U/mL 
+ 
+Specimen type: Serum (Brown top serum gel bottle) 
+ 
+Frequency of analysis: At initial diagnosis and in patients with suspected type 1 diabetes. Highest accuracy 
+seen at initial presentation. 
+ 
+Turnaround times: 10 days 
+ 
+Specimen transport: At room temperature 
+ 
+Additional/special requirements: None 
+ 
+Method: ELISA 
+ 
+Participation in EQA scheme: UK NEQAS for Diabetic Markers 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/2 
+ 
+Clinical information 
+ 
+Interpretation: Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical 
+symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes 
+diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity 
+increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 
+70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA 
+positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states 
+the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific 
+autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic 
+uncertainty after the use of autoantibody testing.   
+ 
+Reference Range: Negative is <10 U/mL 
+ 
+ 
+Achenbach, P., Lampasona, V. and Landherr, U. (2009) Autoantibodies to zinc transporter 8 and SLC30A8 
+genotype stratify type 1 diabetes risk. Diabetologia, 52, 1881-1888 
+Polly J. Bingley (2010) Clinical Applications of Diabetes Antibody Testing, The Journal of Clinical Endocrinology 
+& Metabolism, 95, 25–33 
+ 
+(Last updated July 2023) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

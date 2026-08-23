@@ -1,0 +1,57 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Laboratory Medicine Care Division 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+Farmer’s lung precipitins 
+ 
+General information 
+These tests detect the presence of IgG antibodies to Micropolysporium faeni (Farmer's lung precipitins). 
+Please note from April 2022 the laboratory no longer tests for Thermoactinomyces vulgaris. 
+ 
+Specimen transport: At room temperature 
+ 
+Repeat frequency: At significant change of clinical symptoms 
+ 
+Special precautions: None 
+ 
+Laboratory information 
+ 
+Normal reference range: 
+• 
+Micropolysporium faeni - 0 - 22 mg/L 
+ 
+Volume and sample type: 4ml serum 
+ 
+Method: FEIA (Fluoroenzyme Immunoassay) 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 4 
+ 
+Participation in EQA Scheme: UK NEQAS for FUNGAL and RELATED ANTIGENS 
+ 
+Clinical information 
+ 
+Indications for the test: Hypersensitivity to Micropolysporium faeni is a common cause of Farmer's lung, 
+hypersensitivity pneumonitis occurring 12 to 24 hours after exposure to mouldy hay. 
+ 
+Factors affecting the test: In some cases of farmer's lung, hypersensitivity to other fungal species may be 
+implicated. 
+ 
+The absence of IgG to Micropolysporium faeni does not rule the diagnosis out. These antibodies can be 
+found in some healthy individuals. The presence of these antibodies supports, but does not confirm, a 
+diagnosis of farmer's lung. There are numerous other causes of hypersensitivity pneumonitis including other 
+fungal spores and occupational antigens. Please discuss with the laboratory if these may be incriminated. 
+ 
+ 
+(Last updated August 2026) 

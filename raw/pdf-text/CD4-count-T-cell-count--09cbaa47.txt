@@ -1,0 +1,157 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/2 
+CD4 count (T cell count) - for patients with known HIV serology 
+General information 
+The CD4 count is used to monitor disease progression in HIV infection. For example, patients with counts 
+below 200 x 106/L are at risk of pneumocystis pneumonia and should received antibiotic prophylaxis. CD4 
+counts are also used to inform decision making on anti-retroviral therapy. BHIVA publish guidelines on CD4 
+counts and their interpretation: www.aidsmap.com 
+ 
+Apart from HIV infection, the CD4 count can be reduced by acute and chronic stress, including infections and 
+physical or psychological stress. CD4 counts are also affected by daily circadian rhythms and the menstrual 
+cycle. 
+ 
+Specimen transport: An EDTA specimen should arrive in the lab on the same day or within 48 hours 
+maximum. Samples should be stored and transported at room temperature and not refrigerated. 
+ 
+Repeat frequency: Three times a year in asymptomatic patients, more frequently in those with symptoms or 
+when medication is being changed. 
+ 
+Special precautions: None 
+Laboratory information 
+Normal reference range: (95% confidence interval) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Paediatric reference ranges are from Comans-Bitter WM, et al, "Immunophenotyping of Blood Lymphocytes 
+in Childhood," J Paediatrics, 1997, 130:388-393 
+ 
+Volume and sample type: 5ml EDTA blood 
+CD Marker 
+Age 
+Minimum % 
+Maximum % 
+Minimum cells/mm3 
+Maximum cells/mm3 
+CD3+CD4+ 
+Neonates 
+17 
+52 
+400 
+3500 
+" 
+1 wk - 2 mo 
+41 
+68 
+1700 
+5300 
+" 
+2-5 mo 
+33 
+58 
+1500 
+5000 
+" 
+5-9 mo 
+33 
+58 
+1400 
+5100 
+" 
+9-15 mo 
+31 
+54 
+1000 
+4600 
+" 
+15-24 mo 
+25 
+50 
+900 
+5500 
+" 
+2-5 y 
+23 
+48 
+500 
+2400 
+" 
+5-10 y 
+27 
+53 
+300 
+2000 
+" 
+10-16 y 
+25 
+28 
+400 
+2100 
+" 
+Adults 
+31 
+59 
+300 
+1400 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/2 
+Method: Flow cytometry - single platform 
+ 
+Participation in EQA scheme: UK NEQAS Immune Monitoring Scheme 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 1 
+Clinical information 
+Indications for the test: For use as a monitoring tool in serologically confirmed HIV infection. Should not be 
+used in an attempt to diagnose HIV infection. 
+ 
+Factors affecting the test: Because physiological stress can affect results, avoid testing during acute 
+infections, postoperatively etc. Always try and do monitoring tests at the same time of day. In women, try to 
+do monitoring tests at the same phase of the menstrual cycle. 
+  
+  
+ 
+(Last updated October 2020) 
+ 

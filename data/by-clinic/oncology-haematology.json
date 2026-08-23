@@ -1,0 +1,2304 @@
+{
+  "meta": {
+    "profile": "oncology-haematology",
+    "name": "Oncology & Haemato-Oncology",
+    "version": "0.1.0",
+    "rationale": "Tumour markers, flow cytometry panels, paraprotein studies and treatment toxicity monitoring.",
+    "test_count": 28
+  },
+  "tests": [
+    {
+      "id": "acute-leukaemia-panel",
+      "name": "Acute Leukaemia Panel",
+      "aliases": [],
+      "description": "Panel of markers used: CD2, CD10, CD13, CD14, CD19, CD33, CD34, CD79a, CD117, Tdt, MPO",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "bone-marrow",
+          "csf",
+          "sputum-respiratory",
+          "body-fluid"
+        ],
+        "specimen_type_raw": "5mls EDTA blood, bone marrow or fluid samples (e.g. ascitic fluid, bronchoalveolar lavage, CSF, EBUS, fine needle aspirates or pleural fluids)",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "volume": {
+          "value": 5.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature in EDTA tube. Samples should be received within 24 hours of collection",
+        "special_precautions": "Do not refrigerate samples"
+      },
+      "analysis": {
+        "method": "Flow cytometry",
+        "interferences": "Specimens should be ideally <24 hours old and never more than 48 hours old",
+        "eqa_scheme": "UK NEQAS Leukaemia Immunophenotyping Part 1 and 2"
+      },
+      "turnaround": {
+        "raw": "Median - 2",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected acute leukaemia, to confirm relapse, to confirm remission",
+        "repeat_frequency": "Post treatment monitoring, suspected relapse and MRD"
+      },
+      "notes": "Can include: CD2, CD10, CD13, CD14, CD19, CD33, CD34, cytoCD79a, CD117, cytoTdT, cytoMPO",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2022/03/Acute-Leukaemia-panel.pdf",
+        "detail_type": "pdf",
+        "last_updated": "March 2022",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "afp",
+      "name": "AFP",
+      "aliases": [
+        "Alpha-feto-protein"
+      ],
+      "department": "Biochemistry",
+      "letter": "A",
+      "categories": [
+        "tumour-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "kIU/L",
+        "reference_range": "0 - 103990 kIU/L (adult; 13 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Alpha-feto protein (AFP)",
+        "match_method": "exact",
+        "units": "kIU/L",
+        "strata": [
+          {
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 2.0,
+            "low": 0.0,
+            "high": 103990.0,
+            "raw": {
+              "sex": "M+F",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "<2",
+              "low": "0",
+              "high": "103990"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 2.0,
+            "age_max": 8.0,
+            "low": 0.0,
+            "high": 60750.0,
+            "raw": {
+              "sex": "M+F",
+              "age_unit": "Days",
+              "age_min": "≥2",
+              "age_max": "<8",
+              "low": "0",
+              "high": "60750"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 8.0,
+            "age_max": 15.0,
+            "low": 0.0,
+            "high": 48590.0,
+            "raw": {
+              "sex": "M+F",
+              "age_unit": "Days",
+              "age_min": "≥8",
+              "age_max": "<15",
+              "low": "0",
+              "high": "48590"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 15.0,
+            "age_max": 22.0,
+            "low": 0.0,
+            "high": 19000.0,
+            "raw": {
+              "sex": "M+F",
+              "age_unit": "Days",
+              "age_min": "≥15",
+              "age_max": "<22",
+              "low": "0",
+              "high": "19000"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 22.0,
+            "age_max": 29.0,
+            "low": 0.0,
+            "high": 5500.0,
+            "raw": {
+              "sex": "M+F",
+              "age_unit": "Days",
+              "age_min": "≥22",
+              "age_max": "<29",
+              "low": "0",
+              "high": "5500"
+            }
+          },
+          {
+            "age_unit": "weeks",
+            "age_min": 5.0,
+            "age_max": 6.0,
+            "low": 0.0,
+            "high": 4750.0,
+            "raw": {
+              "sex": "M+F",
+              "age_unit": "Weeks",
+              "age_min": "≥5",
+              "age_max": "<6",
+              "low": "0",
+              "high": "4750"
+            }
+          },
+          {
+            "age_unit": "weeks",
+            "age_min": 6.0,
+            "age_max": 8.0,
+            "low": 0.0,
+            "high": 1650.0,
+            "raw": {
+              "sex": "M+F",
+              "age_unit": "Weeks",
+              "age_min": "≥6",
+              "age_max": "<8",
+              "low": "0",
+              "high": "1650"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 2.0,
+            "age_max": 3.0,
+            "low": 0.0,
+            "high": 850.0,
+            "raw": {
+              "sex": "M+F",
+              "age_unit": "Months",
+              "age_min": "≥2",
+              "age_max": "<3",
+              "low": "0",
+              "high": "850"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 3.0,
+            "age_max": 4.0,
+            "low": 0.0,
+            "high": 350.0,
+            "raw": {
+              "sex": "M+F",
+              "age_unit": "Months",
+              "age_min": "≥3",
+              "age_max": "<4",
+              "low": "0",
+              "high": "350"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 4.0,
+            "age_max": 5.0,
+            "low": 0.0,
+            "high": 100.0,
+            "raw": {
+              "sex": "M+F",
+              "age_unit": "Months",
+              "age_min": "≥4",
+              "age_max": "<5",
+              "low": "0",
+              "high": "100"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 5.0,
+            "age_max": 9.0,
+            "low": 0.0,
+            "high": 3.0,
+            "raw": {
+              "sex": "M+F",
+              "age_unit": "Months",
+              "age_min": "≥5",
+              "age_max": "<9",
+              "low": "0",
+              "high": "3"
+            }
+          },
+          {
+            "age_unit": "months/ years",
+            "age_min": 9.0,
+            "age_max": 18.0,
+            "low": 0.0,
+            "high": 5.0,
+            "raw": {
+              "sex": "M+F",
+              "age_unit": "Months/ Years",
+              "age_min": "≥9",
+              "age_max": "<18",
+              "low": "0",
+              "high": "5"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 18.0,
+            "low": 0.0,
+            "high": 6.0,
+            "raw": {
+              "sex": "M+F",
+              "age_unit": "Years",
+              "age_min": "≥18",
+              "age_max": "unspecified",
+              "low": "0",
+              "high": "6"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "notes": "Alpha-feto-protein",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "b-cell-maturation-panel",
+      "name": "B Cell Maturation Panel",
+      "aliases": [],
+      "description": "Assay Principles: This test is usually done in conjunction with lymphocyte subsets surface markers (ID), in which case a separate sample is not required. Abnormalities may be found mainly in patients with common variable immunodeficiency (CVID). This assay can aid in the classification of CVID and the prediction of its prognosis. By measuring the levels of IgD and CD27 markers on the surface of CD19 positive B cells the following B cell subsets can be identified: “Switched, memory B cells”, “non-switched, memory B cells” and “non-switched, naïve B cells”. The full panel of identified B cell subsets in this test is included in the table below.",
+      "department": "Immunology",
+      "letter": "B",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "Peripheral blood - EDTA",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "transport": "At room temperature",
+        "additional_requirements": "Note that samples should be received in the laboratory no later than 3pm on a Friday. Samples should be kept at room temperature."
+      },
+      "analysis": {
+        "analyte": "B Cell Maturation Panel",
+        "method": "Flow Cytometry",
+        "units": "% (as percentage of all CD19+ B cells)",
+        "reference_range": "CD 27+/IgD- expression on switched memory B cell range is age-dependent1. The frequency of ≥ 2% switched memory B cells proposed as cut-off values in Wehr et al2 can be applied to individuals ≥ 4 years of age but not to younger individuals.",
+        "interferences": "Samples that contain very low numbers or no B (CD19 positive) lymphocytes (≤2%) are not analysed. Older samples may exhibit loss of surface antigens and therefore the sample should be as fresh as possible.",
+        "eqa_scheme": "No formal scheme available. We perform a clinical review of abnormal results against other laboratory data and clinical information to assure results fit with the clinical diagnosis.",
+        "frequency_of_analysis": "Once at diagnosis"
+      },
+      "turnaround": {
+        "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
+      },
+      "clinical": {
+        "interpretation": "Use of B cell phenotyping in the investigation/monitoring of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric).\n\nImmunology The B cell subsets that are reported are detailed in the below table. Reference ranges are not available for most of these cells groups and any results should be discussed with a consultant immunologist.\n\nB cell subset Immunophenotype Clinical comments Naïve IgM+ IgD+ CD27-\n\nUnswitched memory IgM+ IgD+ CD27+\n\nReduced in CVID Reduction may be associated with granulomatous disease Switched memory IgM- IgD- CD27+ *also see reference range below\n\nInverse correlates with serum IgA and IgG levels Reduced in CVID Severe reduction associated with granulomatous disease < 2% CSM classifies as SmB- (EUROCLASS) - Associated with low IgG and IgA at time of diagnosis; low absolute numbers of marginal zone B-cells and low absolute and relative numbers of plasmablasts - increased association with splenomegaly and granulomatous disease Transitional IgD+ IgM+ CD27- CD24+ CD38+\n\nExpansion associated with lymphadenopathy CD 21 low CD21- CD38- Increased in autoimmune (AI) disease and immunodeficiencies Rare in healthy controls but found in AI disease (EUROCLASS) Increased numbers associated with splenomegaly and granulomatous disease in CVID Plasmablasts IgD-IgM-CD24- CD27+CD38hi Expanded in IgG4 Related Disease, low in healthy controls. Elevated counts may also be seen in other immune conditions Serum IgG4 levels do not correlate with disease activity or treatment Reduced in numbers in CVID\n\nImmunology",
+        "references": "1. Morbach, H., Eichhorn, E.M., Liese, J.G. and Girschick, H.J. (2010). Reference values for B cell subpopulations from infancy to adulthood. Clinical and Experimental Immunology, [online] 162(2), pp.271-279. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2996594/\n\n2. Wehr, C., Kivioja, T., Schmitt, C., Ferry, B., Witte, T., Eren, E., Vlkova, M., Hernandez, M., Detkova, D., Bos, P.R., Poerksen, G., von Bernuth, H., Baumann, U., Goldacker, S., Gutenberger, S., Schlesier, M., Bergeron-van der Cruyssen, F., Le Garff, M., Debré, P. and Jacobs, R. (2008). The EUROclass trial: defining subgroups in common variable immunodeficiency. Blood, [online] 111(1), pp.77-85. Available at: https://pubmed.ncbi.nlm.nih.gov/17898316/.\n\nAge dependent CD27+ IgD- Reference ranges suggested by H Morbach et al (2010)1** Age (years) 0-1 2-3 4-5 6-10 11-18 19-25 26-50 Median (% of all CD19+ B cell) 1 2.6 5.6 6.5 5.4 9.4 13.2 Interquartile ranges (25th and 75th percentile) 0.1-1.9 1.5-4.1 3.3-7.4 5.2-12.1 3.3-9.6 7.2-12.7 9.2-18.9 ** Mobarch H et al (2010): This was a study done on 221 healthy individuals aged 1 month to 50 years in Germany."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/B-Cell-Maturation-Panel.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "bence-jones-protein-urinary-light-chains-urine-immunofixation",
+      "name": "Bence Jones protein (Urinary light chains) Urine immunofixation",
+      "aliases": [],
+      "description": "When a normal plasma cell produces immunoglobulin it always produces an excess of the light chains; this normal polyclonal excess is excreted in the urine and can be detected in highly concentrated urine. Bence Jones proteins, however, are monoclonal free light chains that are produced in excess by neoplastic plasma cells. They can be detected in urine and their presence aids the diagnosis of Multiple Myeloma, Waldenström's macroglobulinaemia, Chronic Lymphocytic Leukaemia and Amyloidosis. Light chain myeloma is particularly associated with renal tubular damage.",
+      "department": "Immunology",
+      "letter": "B",
+      "categories": [
+        "protein-electrophoresis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "urine"
+        ],
+        "specimen_type_raw": "20ml urine",
+        "volume": {
+          "value": 20.0,
+          "unit": "mL"
+        },
+        "transport": "Specimen should ideally be sent fresh",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunofixation",
+        "reference_range": "Absent",
+        "interferences": "24 hour urine is more sensitive. Polyclonal free light chains may be found with renal tubular damage, old age, chronic inflammatory conditions (like RA).\n\nMonoclonal light chains may also be found associated with prostatic problems in older men.",
+        "eqa_scheme": "UK NEQAS for Monoclonal Proteins and Binding Site Urine Paraprotein Scheme"
+      },
+      "turnaround": {
+        "raw": "Median - 5",
+        "days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected myeloma, Waldenström's macroglobulinaemia, rarely lymphoma.",
+        "repeat_frequency": "Post treatment monitoring and MRD as required"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/Bence-Jones-Protein-Urinary-light-chains-Urine-immunofixation.pdf",
+        "detail_type": "pdf",
+        "last_updated": "September 2021",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "bone-marrow-report",
+      "name": "Bone marrow report",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "B",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "busulfan",
+      "name": "Busulphan",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "B",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "ca125",
+      "name": "CA125",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "tumour-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma, EDTA plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma",
+          "EDTA plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "kU/L",
+        "reference_range": "0 - 34 kU/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "CA125",
+        "match_method": "exact",
+        "units": "kU/L",
+        "strata": [
+          {
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 150.0,
+            "low": 0.0,
+            "high": 34.0,
+            "raw": {
+              "sex": "F+M",
+              "age_unit": "Years",
+              "age_min": "0",
+              "age_max": "150",
+              "low": "0",
+              "high": "34"
+            }
+          }
+        ]
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals"
+        ]
+      }
+    },
+    {
+      "id": "cd34-stem-cells",
+      "name": "CD34 (Stem cells)",
+      "aliases": [],
+      "description": "Also see below for CD3 rare event/CAR-T cell panel Autologous peripheral blood stem cell transplants are used in the treatment of haematological malignancies. The patient's haematopoietic system is stimulated to produce stem cells that are released from the bone marrow into the peripheral blood circulation. The objective of the predictive CD34 stem cell count is to provide an indication of the best timing for apheresis. After collection the CD34 count and viability are used to monitor the quality of harvested cells and to provide an indication as to the likelihood of the collection being sufficient for engraftment. This procedure may be repeated until a clinically significant yield is achieved for transplantation to take place. In allogenic donation, stem cells from a Matched Unrelated Donor (MUD) are used. The number of stem cells to be infused must be above a certain level to ensure marrow engraftment.",
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "bone-marrow",
+          "whole-blood",
+          "tissue",
+          "cells"
+        ],
+        "specimen_type_raw": "Peripheral blood stem cell harvest, DLI, cord blood or bone marrow in heparin and tissue culture medium.",
+        "tube": {
+          "type": "lithium-heparin",
+          "cap_colour": "Green"
+        },
+        "transport": "At room temperature or frozen",
+        "special_precautions": "Immunology should be notified that a CD34 stem cell count is urgent and when to expect the sample."
+      },
+      "analysis": {
+        "method": "Flow cytometry",
+        "reference_range": "No normal reference ranges are provided.",
+        "interferences": "A delay in processing the sample can affect viability\n\nImmunology\n\nCD3 rare event/CAR-T cell panel",
+        "eqa_scheme": "UK NEQAS CD34+ Stem Cell Enumeration Programme"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "Stem Cell Transplantation, CAR-T cell therapy and DLI",
+        "repeat_frequency": "Each day or stem cell harvest"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/CD34-Stem-cells.pdf",
+        "detail_type": "pdf",
+        "last_updated": "June 2021",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cd4-count-t-cell-count",
+      "name": "CD4 count (T cell count)",
+      "aliases": [],
+      "description": "The CD4 count is used to monitor disease progression in HIV infection. For example, patients with counts below 200 x 106/L are at risk of pneumocystis pneumonia and should received antibiotic prophylaxis. CD4 counts are also used to inform decision making on anti-retroviral therapy. BHIVA publish guidelines on CD4 counts and their interpretation: www.aidsmap.com Apart from HIV infection, the CD4 count can be reduced by acute and chronic stress, including infections and physical or psychological stress. CD4 counts are also affected by daily circadian rhythms and the menstrual cycle.",
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "5ml EDTA blood CD Marker Age Minimum % Maximum % Minimum cells/mm3 Maximum cells/mm3 CD3+CD4+ Neonates 17 52 400 3500 \" 1 wk - 2 mo 41 68 1700 5300 \" 2-5 mo 33 58 1500 5000 \" 5-9 mo 33 58 1400 5100 \" 9-15 mo 31 54 1000 4600 \" 15-24 mo 25 50 900 5500 \" 2-5 y 23 48 500 2400 \" 5-10 y 27 53 300 2000 \" 10-16 y 25 28 400 2100 \" Adults 31 59 300 1400\n\nImmunology",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "volume": {
+          "value": 5.0,
+          "unit": "mL"
+        },
+        "transport": "An EDTA specimen should arrive in the lab on the same day or within 48 hours maximum. Samples should be stored and transported at room temperature and not refrigerated.",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Flow cytometry - single platform",
+        "reference_range": "(95% confidence interval)\n\nPaediatric reference ranges are from Comans-Bitter WM, et al, \"Immunophenotyping of Blood Lymphocytes in Childhood,\" J Paediatrics, 1997, 130:388-393",
+        "interferences": "Because physiological stress can affect results, avoid testing during acute infections, postoperatively etc. Always try and do monitoring tests at the same time of day. In women, try to do monitoring tests at the same phase of the menstrual cycle.",
+        "eqa_scheme": "UK NEQAS Immune Monitoring Scheme"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "For use as a monitoring tool in serologically confirmed HIV infection. Should not be used in an attempt to diagnose HIV infection.",
+        "repeat_frequency": "Three times a year in asymptomatic patients, more frequently in those with symptoms or when medication is being changed."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/CD4-count-T-cell-count.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cea",
+      "name": "CEA",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "tumour-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "specimen_type_raw": "Fluid, plain",
+        "accepted_specimens": [
+          "Fluid",
+          "plain"
+        ],
+        "preferred_specimen": "Fluid"
+      },
+      "analysis": {
+        "units": "μg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "CEA (Fluid)",
+        "match_method": "exact",
+        "units": "μg/L"
+      },
+      "turnaround": {
+        "raw": "96 hours",
+        "days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.18,
+        "has_detail_sheet": false,
+        "present": [
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "chronic-lymphocytic-lymphoma-panel",
+      "name": "Chronic lymphocytic/lymphoma panel",
+      "aliases": [],
+      "description": "Panel of markers used: CD3, CD5, CD19, CD23, CD79b, Kappa chains, Lambda chains, FMC7, CD38 (optional markers: CD10, CD11c, CD25, CD103).",
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "bone-marrow",
+          "csf",
+          "sputum-respiratory",
+          "body-fluid"
+        ],
+        "specimen_type_raw": "5mls EDTA blood, bone marrow or fluid samples (e.g. ascitic fluid, bronchoalveolar lavage, CSF, EBUS, fine needle aspirates or pleural fluids)",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "volume": {
+          "value": 5.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature. Samples should be received within 24 hours of collection",
+        "special_precautions": "Do not refrigerate samples"
+      },
+      "analysis": {
+        "method": "Flow cytometry",
+        "interferences": "Specimens should be ideally <24 hours old and never more than 48 hours old",
+        "eqa_scheme": "UK NEQAS Leukaemia Immunophenotyping Part 1 and 2"
+      },
+      "turnaround": {
+        "raw": "Median - 2",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "clinical": {
+        "indications": "Haematological malignancies involving lymphoid cells, to confirm relapse, to confirm remission",
+        "repeat_frequency": "Post treatment monitoring, suspected relapse and MRD"
+      },
+      "notes": "Can include: CD2, CD3, CD4, CD5, CD8, CD10, CD11c, CD16/CD56, CD19, CD23, CD25, CD38, CD79b, FMC7, Kappa and lambda light chains on B cells",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/Chronic-lymphocytic-lymphoma-panel.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2022",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cryoglobulins",
+      "name": "Cryoglobulins",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "protein-electrophoresis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum maintained at 37°C and 4ml EDTA (plasma) blood maintained at 37°C.",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "Samples in Thermos at 37°C. Contact the laboratory to arrange collection of the Thermos flask.",
+        "special_precautions": "The samples must be taken into a pre-warmed syringes and then pre-warmed tubes. They must be transported at 37°C in a Thermos flask. Always contact the laboratory before bleeding the patient. There is a 3pm cut off for the acceptance of cryoglobulin samples."
+      },
+      "analysis": {
+        "method": "Immunofixation",
+        "reference_range": "Not normally detected",
+        "interferences": "Any minor variations in temperature (1°C)",
+        "eqa_scheme": "Pilot UK NEQAS for Cryoproteins"
+      },
+      "turnaround": {
+        "raw": "Median - 7",
+        "days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "clinical": {
+        "indications": "• Lymphoproliferative disease (Monoclonal) • Connective tissue disease: SLE, Sjogren's, Raynaud's and cutaneous vasculitis. • There is almost always a low C4 in cryoglobulinaemia",
+        "repeat_frequency": "At significant change of clinical symptoms."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Cryoglobulins.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "double-negative-t-cell-dnt-panel",
+      "name": "Double Negative T Cell (DNT) panel",
+      "aliases": [],
+      "description": "Assay principles: This test is usually done in conjunction with lymphocyte subsets surface markers (ID), in which case a separate sample is not required. This assay is used in the investigation of Autoimmune Lymphoproliferative Syndrome (ALPS) also known as Canale-Smith syndrome. Patients with ALPS have an increase in a normally rare population of T cells that are alpha beta T-cell receptor (TCR) positive, and negative for both CD4 and CD8 (double negative T cells - DNTs). An ALPS-like phenotype could be identified in other immunological and haematological conditions and if this result is unexpected, please discuss with adult or paediatric immunology.",
+      "department": "Immunology",
+      "letter": "D",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "Peripheral blood - EDTA",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "transport": "At room temperature",
+        "additional_requirements": "Note that samples should be received in the laboratory no later than 3pm on a Friday. Samples should be kept at room temperature."
+      },
+      "analysis": {
+        "analyte": "Double Negative T Cell (DNT) Panel",
+        "method": "Flow Cytometry",
+        "units": "%",
+        "interferences": "Older samples may exhibit loss of surface antigens and therefore the sample should be as fresh as possible.",
+        "eqa_scheme": "N/A",
+        "frequency_of_analysis": "Dependent on clinical indication"
+      },
+      "turnaround": {
+        "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
+      },
+      "clinical": {
+        "interpretation": "Use of this panel in the investigation of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric).",
+        "references": "Immunology • Revised diagnostic criteria and classification for the autoimmune lymphoproliferative syndrome (ALPS): report from the 2009 NIH International Workshop. Joao B Oliveira et al. Blood, 2010 Oct 7;116(14):e35-40."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/Double-Negative-T-cells.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "ema-binding-assay-for-hereditary-spherocytosis",
+      "name": "EMA binding assay for Hereditary Spherocytosis",
+      "aliases": [],
+      "description": "The assay is useful in the diagnosis of Hereditary Spherocytosis (HS). The results should be interpreted alongside a full blood count and morphological assessment of a peripheral blood film. These are not performed by this laboratory and must be interpreted as per local guidelines.",
+      "department": "Immunology",
+      "letter": "E",
+      "categories": [
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "1ml EDTA blood",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature.",
+        "special_precautions": "The assay should be carried out on blood that is <24 hours old. Samples can be stored at 4°C prior to analysis."
+      },
+      "analysis": {
+        "method": "Flow cytometry",
+        "reference_range": "Normal",
+        "interferences": "Samples will be rejected if >72 hours old.\n\nFalse positive results may occur for a wide spectrum of clinical conditions and rare red cell disorders unrelated to cytoskeleton defects e.g. Hereditary pyropoikilocytosis, Cryohydrocytosis, Congenital dyserythropoietic anaemia, South-East Asian ovalocytosis. Therefore caution is required when a positive test result for HS is not compatible with the clinical presentation and red cell morphology.\n\n(Bolton-Maggs et al (2011) Guidelines for the diagnosis and management of hereditary spherocytosis - 2011 update. British Journal of Haematology, 156, 37-49)"
+      },
+      "turnaround": {
+        "raw": "Median - 4",
+        "days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "clinical": {
+        "indications": "Diagnosis of Hereditary Spherocytosis",
+        "repeat_frequency": "At significant change of clinical symptoms, or if the patient is <6 months of age and the results are not consistent with the clinical pattern please repeat when >6 months of age."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/EMA-Binding-Assay-HS-Screen.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "free-light-chains",
+      "name": "Free Light Chains",
+      "aliases": [],
+      "description": "Free Light Chains This test measures immunoglobulin light chains not incorporated into intact immunoglobulin molecules. Serum levels are increased when production is increased (myeloma) or excretion is impaired (renal failure) Demystifying Serum Free Light Chains - a guide for primary care: https://mft.nhs.uk/the- trust/otherdepartments/laboratory-medicine/information-for-gps/laboratory-medicines-newsletter- forgps/demystifying-serum-free-light-chains-a-guide-for-primary-care/",
+      "department": "Immunology",
+      "letter": "F",
+      "categories": [
+        "immunodeficiency",
+        "protein-electrophoresis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "Should be measured alongside immunoglobulins and electrophoresis"
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "• Ratio 0.26-1.65 • Free κ = 3.30-19.40 mg/L • Free λ = 5.71-26.30 mg/L",
+        "interferences": "Antigen excess can cause falsely low serum FLC results. Some monoclonal light chains (particularly k FLC) do not dilute in a linear fashion and may be underestimated. FLC results can be artificially elevated when an IgM monoclonal protein is present.",
+        "eqa_scheme": "UK NEQAS for Monoclonal Protein identification"
+      },
+      "turnaround": {
+        "raw": "Median - 3",
+        "days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "clinical": {
+        "indications": "May be used as part of the diagnostic strategy for myeloma. This test has largely superseded Bence Jones protein (urine immunofixation). Monitoring in some cases of myeloma.",
+        "repeat_frequency": "Initial diagnosis, post treatment monitoring for suspected relapse"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/01/Free-Light-Chains.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "full-blood-count-and-automated-differential",
+      "name": "Full blood count and automated differential",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "hcg-blood-pregnancy-and-as-tumour-marker",
+      "name": "HCG blood (pregnancy and as tumour marker)",
+      "aliases": [
+        "Human Chorionic Gonadotrophin"
+      ],
+      "department": "Biochemistry",
+      "letter": "H",
+      "categories": [
+        "reproductive-hormones",
+        "tumour-markers",
+        "antenatal-pregnancy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "notes": "Pregnancy test (blood); Human Chorionic Gonadotrophin",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "immunodeficiency-t-b-lymphocyte-subsets",
+      "name": "Immunodeficiency (T&B Lymphocyte Subsets)",
+      "aliases": [
+        "T&B Lymphocyte Subsets"
+      ],
+      "description": "Contact on 0161 276 6440 to discuss extended panels for investigation of Primary Immunodeficiency These tests are most frequently done in patients who are suspected of having an underlying immunodeficiency or are receiving immunosuppressive drugs. For example, cyclosporine reduces T cell numbers, whilst Rituximab reduces B cell numbers. The relevant tests required will be specified for each individual case.",
+      "department": "Immunology",
+      "letter": "I",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA (4ml) blood",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "Samples should be received by the lab within 24 hours of venepuncture. Maintain samples at room temp.",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Flow Cytometry",
+        "reference_range": "(95% confidence interval) CD marker Age Minimum % Maximum % Minimum cells/mm3 Maximum cells/mm3 CD3+ Neonates 28 76 600 5000 \" 1wk - 2mo 60 85 2300 7000 \" 2-5 mo 48 75 2300 6500 \" 5-9 mo 50 77 2400 6900 \" 9-15 mo 54 76 1600 6700 \" 15-24 mo 39 73 1400 8000 \" 2-5 y 43 76 900 4500 \" 5-10 y 55 78 700 4200 \" 10-16 y 52 78 800 3500 \" Adults 58 86 700 2100 CD3+CD4+ Neonates 17 52 400 3500 \" 1wk - 2mo 41 68 1700 5300 \" 2-5 mo 33 58 1500 5000 \" 5-9 mo 33 58 1400 5100\n\nImmunology \" 9-15 mo 31 54 1000 4600 \" 15-24 mo 25 50 900 5500 \" 2-5 y 23 48 500 2400 \" 5-10 y 27 53 300 2000 \" 10-16 y 25 48 400 2100 \" Adults 31 59 300 1400 CD3+CD8+ Neonates 10 41 200 1900 \" 1wk - 2mo 9 23 400 1700 \" 2-5 mo 11 25 500 1600 \" 5-9 mo 13 26 600 2200 \" 9-15 mo 12 28 400 2100 \" 15-24 mo 11 32 400 2300 \" 2-5 y 14 33 300 1600 \" 5-10 y 19 34 300 1800 \" 10-16 y 9 35 200 1200 \" Adults 12 36 200 900 T4:T8 Ratio Adults 0.92 3.72 N/A N/A CD19+ Neonates 5 22 40 1100 \" 1wk - 2mo 4 26 600 1900 \" 2-5 mo 14 39 600 3000 \" 5-9 mo 13 35 700 2500 \" 9-15 mo 15 39 600 2700 \" 15-24 mo 17 41 600 3100 \" 2-5 y 14 44 200 2100 \" 5-10 y 10 31 200 1600 \" 10-16 y 8 24 200 600 \" Adults 3 25 100 500 CD3-CD16/56+ Neonates 6 58 100 1900 \" 1wk - 2mo 3 23 200 1400 \" 2-5 mo 2 14 100 1300 \" 5-9 mo 2 13 100 1000 \" 9-15 mo 3 17 200 1200\n\nImmunology\n\nPaediatric reference ranges are from Comans-Bitter WM, et al, \"Immunophenotyping of Blood Lymphocytes in Childhood,\" J Paediatrics, 1997, 130:388-393",
+        "interferences": "Age (see normal ranges in tables). Acute infection and immunosuppressive drugs will alter T and B lymphocyte numbers.\n\n\" 15-24 mo 3 16 100 1400 \" 2-5 y 4 23 100 1000 \" 5-10 y 4 26 90 900 \" 10-16 y 6 27 70 1200 \" Adults 1 19 90 600",
+        "eqa_scheme": "UK NEQAS LI Immune Monitoring"
+      },
+      "turnaround": {
+        "raw": "Median - 2",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected cellular immunodeficiency",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "notes": "T&B Lymphocyte Subsets",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Immunodeficiency-TB-Lymphocyte-Subsets.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "lactate-dehydrogenase-ldh",
+      "name": "Lactate Dehydrogenase (LDH)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "L",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "IU/L",
+        "reference_range": "139 - 249 IU/L (adult; 6 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Lactate Dehydrogenase (LDH)",
+        "match_method": "exact",
+        "units": "IU/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 15.0,
+            "age_max": 150.0,
+            "low": 139.0,
+            "high": 249.0,
+            "raw": {
+              "sex": "ALL",
+              "age_unit": "Years",
+              "age_min": "15",
+              "age_max": "150",
+              "low": "139",
+              "high": "249"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 10.0,
+            "age_max": 14.0,
+            "low": 163.0,
+            "high": 279.0,
+            "raw": {
+              "sex": "MALE",
+              "age_unit": "Years",
+              "age_min": "10",
+              "age_max": "14",
+              "low": "163",
+              "high": "279"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 10.0,
+            "age_max": 14.0,
+            "low": 163.0,
+            "high": 269.0,
+            "raw": {
+              "sex": "FEMALE",
+              "age_unit": "Years",
+              "age_min": "10",
+              "age_max": "14",
+              "low": "163",
+              "high": "269"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 9.0,
+            "low": 196.0,
+            "high": 314.0,
+            "raw": {
+              "sex": "ALL",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "9",
+              "low": "196",
+              "high": "314"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 15.0,
+            "age_max": 364.0,
+            "low": 169.0,
+            "high": 435.0,
+            "raw": {
+              "sex": "ALL",
+              "age_unit": "Days",
+              "age_min": "15",
+              "age_max": "364",
+              "low": "169",
+              "high": "435"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 14.0,
+            "low": 30.0,
+            "high": 1143.0,
+            "raw": {
+              "sex": "ALL",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "14",
+              "low": "30",
+              "high": "1143"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "manual-blood-film",
+      "name": "Manual blood film",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "M",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "methotrexate",
+      "name": "Methotrexate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "M",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "μmol/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Methotrexate",
+        "match_method": "exact",
+        "units": "μmol/L"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.18,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units"
+        ]
+      }
+    },
+    {
+      "id": "paraneoplastic-neuronal-antibodies",
+      "name": "Paraneoplastic Neuronal Antibodies",
+      "aliases": [],
+      "description": "Paraneoplastic Neuronal Antibodies Analysis includes antibodies to Amphiphysin, CV2, PNMA2(Ma2), Ri, Yo, Hu, Recoverin, SOX1, Titin, Zic4, and GAD65 and Tr (DNER). Used to determine if an underlying malignancy exists alongside neurological disease. Please note: Antibodies to Ma1 are no longer performed in this laboratory.",
+      "department": "Immunology",
+      "letter": "P",
+      "categories": [
+        "tumour-markers",
+        "autoimmunity",
+        "sexual-health-sti",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunoblot",
+        "reference_range": "Negative",
+        "interferences": "Interferences may be possible by administration of intravenous immunoglobulins (so-called IVIG). At present no further interferences by drugs are known. After plasmapheresis preliminary positive results may become weak or negative.",
+        "eqa_scheme": "UK NEQAS for Paraneoplastic Antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 5",
+        "days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "clinical": {
+        "indications": "Cerebellar degeneration, encephalitis, neuropathy",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/07/Paraneoplastic-Neuronal-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "June 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "platelet-glycoprotein-expression",
+      "name": "Platelet Glycoprotein Expression",
+      "aliases": [],
+      "description": "Platelet Glycoprotein Expression Platelet glycoprotein expression is useful in the diagnosis of Glanzmann's thrombasthenia and BernardSoulier syndrome. These hereditary platelet disorders are characterised by selective deficiencies of platelet membrane glycoproteins.",
+      "department": "Immunology",
+      "letter": "P",
+      "categories": [
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "citrated-plasma"
+        ],
+        "specimen_type_raw": "5ml citrate blood",
+        "tube": {
+          "type": "sodium-citrate",
+          "cap_colour": "Light blue"
+        },
+        "volume": {
+          "value": 5.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "The assay should be carried out on blood that is < 24 hours old. Samples can be stored at 4°C prior to analysis. Blood should be taken in to sodium citrate anticoagulant."
+      },
+      "analysis": {
+        "method": "Flow cytometric analysis of CD41, CD42b & CD61",
+        "reference_range": ">90% positive platelets",
+        "interferences": "This assay is not recommended for patients with thrombocytopenia (<100 x 109/L)",
+        "eqa_scheme": "No formal scheme available. We perform a clinical review of abnormal results against other laboratory data and clinical information to assure results fit with the clinical diagnosis."
+      },
+      "turnaround": {
+        "raw": "Median - 2",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "clinical": {
+        "indications": "Prolonged bleeding in infancy, haemorrhage, family history",
+        "interpretation": "In Bernard-Soulier syndrome GPIb/IX/V (CD42b) is absent or dysfunctional. In Glanzmann thrombasthenia GPIIb/IIIa (CD41/CD61) is absent or dysfunctional. A mild decrease in the expression suggest a variant or heterozygous state.\n\nThe CD61 clone (SZ21) bears the platelet alloantigen PlA1 (HPA-1a). Used in flow cytometry, it shows a markedly reduced reactivity with platelets bearing the PlA2 (HPA-1b) allele. As described in the IFU, studies indicate that 70% of individuals are PlA1/PlA1, 27% PlA1/PlA2, and 3% PlA2/PlA2. Therefore, reduced CD61 binding may be observed in a percentage of healthy individuals.",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/06/Platelet-Glycoprotein-Expression.pdf",
+        "detail_type": "pdf",
+        "last_updated": "June 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "prostate-specific-antigen",
+      "name": "Prostate Specific Antigen",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "P",
+      "categories": [
+        "tumour-markers",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "0 - 2.5 μg/L (adult; 5 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Prostate Specific Antigen (PSA)",
+        "match_method": "exact",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 39.0,
+            "raw": {
+              "sex": "MALE",
+              "age_unit": "Years",
+              "age_min": "18",
+              "age_max": "39",
+              "low": "NONE",
+              "high": "NONE"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 40.0,
+            "age_max": 49.0,
+            "low": 0.0,
+            "high": 2.5,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "40",
+              "age_max": "49",
+              "low": "0",
+              "high": "2.5"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 50.0,
+            "age_max": 59.0,
+            "low": 0.0,
+            "high": 3.5,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "50",
+              "age_max": "59",
+              "low": "0",
+              "high": "3.5"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 60.0,
+            "age_max": 69.0,
+            "low": 0.0,
+            "high": 4.5,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "60",
+              "age_max": "69",
+              "low": "0",
+              "high": "4.5"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 70.0,
+            "age_max": 79.0,
+            "low": 0.0,
+            "high": 6.5,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "70",
+              "age_max": "79",
+              "low": "0",
+              "high": "6.5"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "rapid-routine-carbapenemase-producing-enterobacteriaceae-cpe-screen",
+      "name": "Rapid/routine Carbapenemase-Producing Enterobacteriaceae (CPE) Screen",
+      "aliases": [
+        "CPE screen",
+        "Carbapenemase-Producing Enterobacteriaceae (CPE) Screen"
+      ],
+      "description": "(CPE) Screen In response to the increasing numbers of CPE producing clinical isolates of Enterobacteriaceae the Infection Control Consultant and Microbiology department have produced a protocol for CPE screening and detection. The isolation of a clinical CPE isolate prompts the Infection Prevention & Control Team to screen all possible patient contacts to reduce the transmission of resistance enzymes within the Trust. Rapid & routine CPE screens are processed on a molecular platform; culture is only performed on positive samples for epidemiological & monitoring purposes.",
+      "department": "Bacteriology",
+      "letter": "R",
+      "categories": [
+        "tumour-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "faeces",
+          "swab",
+          "pus"
+        ],
+        "specimen_type_raw": "Screening of faeces/rectal swabs\n\nSamples are stored in Microbiology for 7 days should any additional tests be requested.",
+        "container": "Swab: Double headed Red topped swab; available from Microbiology. Please note Charcoal swabs are unsuitable for this test at the Oxford Road campus and will not be processed.",
+        "transport": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable.\n\nType and minimum volume of sample: Not applicable",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "units": "Threshold Cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Faecal material must be visible on the cotton tip of the swab; failure to provide faecal material may produce a false negative screening result.\n\nSome faecal products may prove inhibitory to the PCR process; samples will be reported as inhibitory and a repeat will be requested."
+      },
+      "turnaround": {
+        "raw": "Rapid CPE Screens: Designated wards agreed with IPC\n\nBacteriology Trafford Transfers: 2-4 hours from receipt into Microbiology Reception. The laboratory MUST be telephoned prior to the patient(s) being sampled.\n\nSamples should be received in the laboratory before 6pm (Mon-Fri) and before 4pm (Weekends/Bank Holidays)\n\nRoutine CPE Screen: Designated wards agreed with IPC 24-72hrs",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "notes": "CPE screen; Carbapenemase-Producing Enterobacteriaceae (CPE) Screen",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Rapid-Routine-Carbapenemase-Producing-Enterobacteriaceae-CPE-Screen.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "serum-protein-electrophoresis",
+      "name": "Serum Protein Electrophoresis",
+      "aliases": [
+        "Serum paraprotein identification/quantification"
+      ],
+      "description": "Serum Protein Electrophoresis & Paraprotein identification/ quantification Additional information is provided under Immunoglobulins IgG, IgA, IgM and Bence Jones protein (Urine Immunofixation).",
+      "department": "Immunology",
+      "letter": "S",
+      "categories": [
+        "protein-electrophoresis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "Note: Plasma is unsuitable for this test"
+      },
+      "analysis": {
+        "method": "Capillary Zone Electrophoresis + immunofixation",
+        "reference_range": "Not applicable",
+        "interferences": "Fibrinogen in plasma sample or haemolysed sample",
+        "eqa_scheme": "UK NEQAS for Monoclonal Protein identification and INSTAND CZE EQA Scheme"
+      },
+      "turnaround": {
+        "raw": "Median - 5",
+        "days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "clinical": {
+        "indications": "Paraproteinaemia, MGUS, chronic lymphoid malignancy. Serum paraprotein quantitation for monitoring myeloma treatment.",
+        "repeat_frequency": "Initial diagnosis, post treatment. Monitoring for suspected relapse."
+      },
+      "notes": "Serum paraprotein identification/quantification",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/01/Serum-Protein-Electrophoresis-PPC.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "beta2-microglobulin",
+      "name": "ß2 Microglobulin",
+      "aliases": [],
+      "description": "High levels are seen in myeloma",
+      "department": "Immunology",
+      "letter": "S",
+      "categories": [
+        "tumour-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "0.8-2.2 mg/L",
+        "interferences": "Elevated levels are associated with renal impairment. Chronic dialysis.\n\nInterferences: In very rare cases of gammopathy, type IgM (Waldenström's macroglobulinemia) in particular, may cause unreliable results.",
+        "eqa_scheme": "UK NEQAS for β2Microglobulin scheme"
+      },
+      "turnaround": {
+        "raw": "Median: 2",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "clinical": {
+        "indications": "Useful for monitoring turnover in myeloma and lymphoma. For diagnostic purposes, the results should always be assessed in conjunction with the patient's medical history, clinical examination, and other findings",
+        "repeat_frequency": "Post treatment monitoring"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/s2-Microglobulin.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "t-cell-activation-panel",
+      "name": "T Cell Activation Panel",
+      "aliases": [],
+      "description": "Assay principles: This test is usually done in conjunction with lymphocyte subsets surface markers (ID), in which case a separate sample is not required. This assay measures the levels of CD25 and HLA-DR expression on CD4+ T cells which have been activated from an immune response to a pathogen. Activated T cells are a hallmark of the combined immunodeficiency, Omenn's syndrome. Rare immunodeficiencies exist where activation markers can be absent from immune cells e.g. HLA-Dr in Bare Lymphocyte Syndrome (type 2) and CD25 in IL-2 receptor deficiency. More specifically, analysis of CD25 expression may be useful in the diagnosis of IPEX syndrome.",
+      "department": "Immunology",
+      "letter": "T",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "Peripheral blood - EDTA",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "transport": "At room temperature",
+        "additional_requirements": "Note that samples should be received in the laboratory no later than 3pm on a Friday. Samples should be kept at room temperature."
+      },
+      "analysis": {
+        "analyte": "T Cell Activation Panel",
+        "method": "Flow Cytometry",
+        "units": "%",
+        "interferences": "Older samples may exhibit loss of surface antigens and therefore the sample should be as fresh as possible.",
+        "eqa_scheme": "N/A",
+        "frequency_of_analysis": "Dependent on clinical indication"
+      },
+      "turnaround": {
+        "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
+      },
+      "clinical": {
+        "interpretation": "Use of this panel in the investigation/monitoring of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric)."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/T-Cell-Activation-Panel.pdf",
+        "detail_type": "pdf",
+        "last_updated": "April 2021",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    }
+  ]
+}

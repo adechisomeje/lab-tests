@@ -1,0 +1,2275 @@
+{
+  "meta": {
+    "profile": "allergy-clinic",
+    "name": "Allergy & Immunology Clinic",
+    "version": "0.1.0",
+    "rationale": "Specific IgE and tryptase for allergy; immunoglobulins, complement and lymphocyte function for immunodeficiency.",
+    "test_count": 31
+  },
+  "tests": [
+    {
+      "id": "allergen-specific-ige",
+      "name": "Allergen Specific IgE",
+      "aliases": [],
+      "description": "Allergen Specific IgE Measurement of allergen specific IgE is of value where skin testing is difficult for any reason. Over 100 specific allergens are routinely available. Any requests for allergens that are unusual should be discussed with a clinician.",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "allergy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum (8ml required for multiple allergens)",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "ImmunoCAP 1000",
+        "reference_range": "<0.35 kAU/L",
+        "interferences": "Total IgE >3000ku/L increases the incidence of false positive (low level) specific IgE. IgE <30 ku/L associated with false negative specific IgE. Similarly, very low IgE levels (<2.0 kU/L) may result in a false negative result and possibly indicate an underlying immunodeficiency; measurement of immunoglobulins is recommended.\n\nA STAR in the RAST: Allergy testing guidance for primary care: https://mft.nhs.uk/the-trust/other- departments/laboratory-medicine/information-for-gps/laboratory-medicines-newsletter-for-gps/a-star-in- the-rast-allergy-testing-guidance-for-primary-care/",
+        "eqa_scheme": "UK NEQAS for Specific IgE and UK NEQAS for Allergen Component Testing"
+      },
+      "turnaround": {
+        "raw": "Median - 3",
+        "days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "clinical": {
+        "indications": "Allergic conditions when allergen is suspected and mentioned on request",
+        "repeat_frequency": ">1 year unless marked changes in allergic condition"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Allergen-Specific-IgE.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "anti-c1q",
+      "name": "Anti C1q",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "EIA",
+        "reference_range": "<15U/mL",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "HIV, SLE with renal involvement",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Anti-C1q.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "ap100-alternative-pathway-haemolytic-complement",
+      "name": "AP100 Alternative Pathway Haemolytic Complement",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum on ice",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "All samples from outside the hospital should be transported on an ice pack. Transport at room temperature is acceptable within this hospital if the sample is delivered to the Immunology laboratory within 3 hours on weekdays only (not including bank holidays).",
+        "special_precautions": "Transport as soon as possible to lab. It is important that this is done to avoid reduction in activity that can occur with time."
+      },
+      "analysis": {
+        "method": "ELISA",
+        "reference_range": "30 - 113 % complement activity",
+        "interferences": "If screened too soon after acute infection leads to false (positive) results due to complement activation. Some complement components are temperature sensitive and it is important that the samples should be delivered to the lab in a timely manner and on ice",
+        "eqa_scheme": "INSTAND Complement Analysis EQA scheme"
+      },
+      "turnaround": {
+        "raw": "Median - 6",
+        "days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected primary immunodeficiencies involving complement components e.g. recurrent infections and in the investigation of complement mediated renal disease.",
+        "repeat_frequency": "At significant change in symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/10/AP100-Alternative-Pathway-Haemolytic-Complement.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "aspergillus-fumigatus-precipitins",
+      "name": "Aspergillus fumigatus precipitins",
+      "aliases": [],
+      "description": "Precipitin testing: These tests detect the presence of IgG antibodies to Aspergillus fumigatus, Aspergillus precipitins - see also: Farmer's lung and Avian Precipitins",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "allergy",
+        "infectious-disease-serology",
+        "mycology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "FEIA (Fluoroenzyme immunoassay)",
+        "reference_range": "0-40 mg/L",
+        "interferences": "Aspergillus antibodies are not a recommended test for the investigation of the majority of cases of invasive aspergillosis in immunocompromised hosts.\n\nInterpreting results: IgG antibodies are infrequent in healthy individuals.\n\nImmunology In hypersensitivity pneumonitis, IgG antibodies are usually present alone. IgG antibodies, without IgE antibodies can also be seen in some cases of sub acute invasive aspergillus.\n\nIn bronchopulmonary aspergillosis and aspergilloma a mixture of IgE and IgG antibodies are usually present. Bronchopulmonary aspergillosis can be caused by species other than A. fumigatus: if there is a high index of suspicion, we can send a sample to the reference laboratory to look for antibodies to other Aspergillus species. In allergic rhinitis and asthma, where aspergillus is a relevant allergen, IgE antibodies dominate.",
+        "eqa_scheme": "UK NEQAS for FUNGAL and RELATED ANTIGENS"
+      },
+      "turnaround": {
+        "raw": "Median - 4",
+        "days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "clinical": {
+        "indications": "Allergic bronchopulmonary aspergillosis - IgG antibodies are a useful aid to diagnosis in the following settings:\n\n• Bronchopulmonary aspergillosis; usually presents as deteriorating or brittle asthma. IgE antibodies should also be checked. • Aspergilloma; these may form in cavities or bronchiectatic lung. For example, this test is used to check for aspergilloma in patients with cystic fibrosis. • Hypersensitivity pneumonitis 24 hours after inhalation of spores.",
+        "repeat_frequency": "On appearance of new symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Aspergillus-fumigatus-precipitins.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "avian-precipitins",
+      "name": "Avian precipitins",
+      "aliases": [],
+      "description": "These tests detect the presence of IgG antibodies to pigeon and budgerigar.",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "allergy",
+        "infectious-disease-serology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "FEIA (Fluoroenzyme immunoassay)",
+        "reference_range": "Pigeon 0 - 38 mg/L, Budgie 0 - 8 mg/L",
+        "interferences": "Positive results are seen in some healthy individuals exposed to birds.",
+        "eqa_scheme": "UK NEQAS for FUNGAL and RELATED ANTIGENS"
+      },
+      "turnaround": {
+        "raw": "Median - 4",
+        "days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "clinical": {
+        "indications": "Respiratory symptoms associated with avian exposure",
+        "repeat_frequency": "On appearance of new symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Avian-precipitins.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "b-cell-maturation-panel",
+      "name": "B Cell Maturation Panel",
+      "aliases": [],
+      "description": "Assay Principles: This test is usually done in conjunction with lymphocyte subsets surface markers (ID), in which case a separate sample is not required. Abnormalities may be found mainly in patients with common variable immunodeficiency (CVID). This assay can aid in the classification of CVID and the prediction of its prognosis. By measuring the levels of IgD and CD27 markers on the surface of CD19 positive B cells the following B cell subsets can be identified: “Switched, memory B cells”, “non-switched, memory B cells” and “non-switched, naïve B cells”. The full panel of identified B cell subsets in this test is included in the table below.",
+      "department": "Immunology",
+      "letter": "B",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "Peripheral blood - EDTA",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "transport": "At room temperature",
+        "additional_requirements": "Note that samples should be received in the laboratory no later than 3pm on a Friday. Samples should be kept at room temperature."
+      },
+      "analysis": {
+        "analyte": "B Cell Maturation Panel",
+        "method": "Flow Cytometry",
+        "units": "% (as percentage of all CD19+ B cells)",
+        "reference_range": "CD 27+/IgD- expression on switched memory B cell range is age-dependent1. The frequency of ≥ 2% switched memory B cells proposed as cut-off values in Wehr et al2 can be applied to individuals ≥ 4 years of age but not to younger individuals.",
+        "interferences": "Samples that contain very low numbers or no B (CD19 positive) lymphocytes (≤2%) are not analysed. Older samples may exhibit loss of surface antigens and therefore the sample should be as fresh as possible.",
+        "eqa_scheme": "No formal scheme available. We perform a clinical review of abnormal results against other laboratory data and clinical information to assure results fit with the clinical diagnosis.",
+        "frequency_of_analysis": "Once at diagnosis"
+      },
+      "turnaround": {
+        "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
+      },
+      "clinical": {
+        "interpretation": "Use of B cell phenotyping in the investigation/monitoring of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric).\n\nImmunology The B cell subsets that are reported are detailed in the below table. Reference ranges are not available for most of these cells groups and any results should be discussed with a consultant immunologist.\n\nB cell subset Immunophenotype Clinical comments Naïve IgM+ IgD+ CD27-\n\nUnswitched memory IgM+ IgD+ CD27+\n\nReduced in CVID Reduction may be associated with granulomatous disease Switched memory IgM- IgD- CD27+ *also see reference range below\n\nInverse correlates with serum IgA and IgG levels Reduced in CVID Severe reduction associated with granulomatous disease < 2% CSM classifies as SmB- (EUROCLASS) - Associated with low IgG and IgA at time of diagnosis; low absolute numbers of marginal zone B-cells and low absolute and relative numbers of plasmablasts - increased association with splenomegaly and granulomatous disease Transitional IgD+ IgM+ CD27- CD24+ CD38+\n\nExpansion associated with lymphadenopathy CD 21 low CD21- CD38- Increased in autoimmune (AI) disease and immunodeficiencies Rare in healthy controls but found in AI disease (EUROCLASS) Increased numbers associated with splenomegaly and granulomatous disease in CVID Plasmablasts IgD-IgM-CD24- CD27+CD38hi Expanded in IgG4 Related Disease, low in healthy controls. Elevated counts may also be seen in other immune conditions Serum IgG4 levels do not correlate with disease activity or treatment Reduced in numbers in CVID\n\nImmunology",
+        "references": "1. Morbach, H., Eichhorn, E.M., Liese, J.G. and Girschick, H.J. (2010). Reference values for B cell subpopulations from infancy to adulthood. Clinical and Experimental Immunology, [online] 162(2), pp.271-279. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2996594/\n\n2. Wehr, C., Kivioja, T., Schmitt, C., Ferry, B., Witte, T., Eren, E., Vlkova, M., Hernandez, M., Detkova, D., Bos, P.R., Poerksen, G., von Bernuth, H., Baumann, U., Goldacker, S., Gutenberger, S., Schlesier, M., Bergeron-van der Cruyssen, F., Le Garff, M., Debré, P. and Jacobs, R. (2008). The EUROclass trial: defining subgroups in common variable immunodeficiency. Blood, [online] 111(1), pp.77-85. Available at: https://pubmed.ncbi.nlm.nih.gov/17898316/.\n\nAge dependent CD27+ IgD- Reference ranges suggested by H Morbach et al (2010)1** Age (years) 0-1 2-3 4-5 6-10 11-18 19-25 26-50 Median (% of all CD19+ B cell) 1 2.6 5.6 6.5 5.4 9.4 13.2 Interquartile ranges (25th and 75th percentile) 0.1-1.9 1.5-4.1 3.3-7.4 5.2-12.1 3.3-9.6 7.2-12.7 9.2-18.9 ** Mobarch H et al (2010): This was a study done on 221 healthy individuals aged 1 month to 50 years in Germany."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/B-Cell-Maturation-Panel.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "c1-esterase-inhibitor",
+      "name": "C1 esterase inhibitor",
+      "aliases": [],
+      "description": "Should always request C4 at the same time",
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "0.16 - 0.32 g/L",
+        "interferences": "None",
+        "eqa_scheme": "UK NEQAS for C1 Inhibitor & Functional Complement and INSTAND Complement Analysis"
+      },
+      "turnaround": {
+        "raw": "Median - 4",
+        "days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected type I hereditary angioedema. This disease causes recurrent attacks of abdominal pain or swellings. The complement component C4 is almost always low in HAE. This is used as a reliable screen for the disease.",
+        "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/C1-esterase-inhibitor.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "c1-esterase-inhibitor-functional-test",
+      "name": "C1 esterase inhibitor functional test",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "citrated-plasma"
+        ],
+        "specimen_type_raw": "4ml sodium citrate blood",
+        "tube": {
+          "type": "sodium-citrate",
+          "cap_colour": "Light blue"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "All samples from outside the hospital should be transported on an ice pack. Transport at room temperature is acceptable within this hospital if the sample is delivered to the Immunology laboratory within 3 hours and before 3pm on weekdays only (not including bank holidays).",
+        "special_precautions": "The correct sample tube must be used (sodium citrate). It is important that the sample is transported to the immunology lab correctly."
+      },
+      "analysis": {
+        "method": "Colorimetric test",
+        "reference_range": "70 - 130% Normal",
+        "interferences": "Also seen in acquired C1-inhibitor deficiency in older patients where it is associated with myeloma/lymphoma.",
+        "eqa_scheme": "UK NEQAS for C1 Inhibitor & Functional Complement and INSTAND Complement Analysis"
+      },
+      "turnaround": {
+        "raw": "Median - 6",
+        "days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "clinical": {
+        "indications": "Angioedema associated with low C4 when C1-esterase inhibitor is normal or high.",
+        "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/C1-esterase-inhibitor-functional-test.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "c1q",
+      "name": "C1q",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature. Sample should be frozen if not dispatched immediately to the referral lab.",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "RID",
+        "reference_range": "50-250 mg/L",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "• Levels are reduced in acquired angioedema • Levels are also reduced in urticarial vasculitis - a complication of SLE • Sjögren's syndrome, cryoglobulinaemia and hepatitis C infection",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/C1q.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "c3-nephritic-factor",
+      "name": "C3 nephritic factor",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Electrophoresis",
+        "reference_range": "Negative",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Mesangiocapilliary glomerulonephritis, only performed if C3 is low <0.3 g/L",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/C3-nephritic-factor.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "candida-precipitins-referral",
+      "name": "Candida precipitins (referral)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "C",
+      "categories": [
+        "allergy",
+        "infectious-disease-serology",
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/manchester-medical-microbiology-partnership/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "cd34-stem-cells",
+      "name": "CD34 (Stem cells)",
+      "aliases": [],
+      "description": "Also see below for CD3 rare event/CAR-T cell panel Autologous peripheral blood stem cell transplants are used in the treatment of haematological malignancies. The patient's haematopoietic system is stimulated to produce stem cells that are released from the bone marrow into the peripheral blood circulation. The objective of the predictive CD34 stem cell count is to provide an indication of the best timing for apheresis. After collection the CD34 count and viability are used to monitor the quality of harvested cells and to provide an indication as to the likelihood of the collection being sufficient for engraftment. This procedure may be repeated until a clinically significant yield is achieved for transplantation to take place. In allogenic donation, stem cells from a Matched Unrelated Donor (MUD) are used. The number of stem cells to be infused must be above a certain level to ensure marrow engraftment.",
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "bone-marrow",
+          "whole-blood",
+          "tissue",
+          "cells"
+        ],
+        "specimen_type_raw": "Peripheral blood stem cell harvest, DLI, cord blood or bone marrow in heparin and tissue culture medium.",
+        "tube": {
+          "type": "lithium-heparin",
+          "cap_colour": "Green"
+        },
+        "transport": "At room temperature or frozen",
+        "special_precautions": "Immunology should be notified that a CD34 stem cell count is urgent and when to expect the sample."
+      },
+      "analysis": {
+        "method": "Flow cytometry",
+        "reference_range": "No normal reference ranges are provided.",
+        "interferences": "A delay in processing the sample can affect viability\n\nImmunology\n\nCD3 rare event/CAR-T cell panel",
+        "eqa_scheme": "UK NEQAS CD34+ Stem Cell Enumeration Programme"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "Stem Cell Transplantation, CAR-T cell therapy and DLI",
+        "repeat_frequency": "Each day or stem cell harvest"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/CD34-Stem-cells.pdf",
+        "detail_type": "pdf",
+        "last_updated": "June 2021",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cd4-count-t-cell-count",
+      "name": "CD4 count (T cell count)",
+      "aliases": [],
+      "description": "The CD4 count is used to monitor disease progression in HIV infection. For example, patients with counts below 200 x 106/L are at risk of pneumocystis pneumonia and should received antibiotic prophylaxis. CD4 counts are also used to inform decision making on anti-retroviral therapy. BHIVA publish guidelines on CD4 counts and their interpretation: www.aidsmap.com Apart from HIV infection, the CD4 count can be reduced by acute and chronic stress, including infections and physical or psychological stress. CD4 counts are also affected by daily circadian rhythms and the menstrual cycle.",
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "5ml EDTA blood CD Marker Age Minimum % Maximum % Minimum cells/mm3 Maximum cells/mm3 CD3+CD4+ Neonates 17 52 400 3500 \" 1 wk - 2 mo 41 68 1700 5300 \" 2-5 mo 33 58 1500 5000 \" 5-9 mo 33 58 1400 5100 \" 9-15 mo 31 54 1000 4600 \" 15-24 mo 25 50 900 5500 \" 2-5 y 23 48 500 2400 \" 5-10 y 27 53 300 2000 \" 10-16 y 25 28 400 2100 \" Adults 31 59 300 1400\n\nImmunology",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "volume": {
+          "value": 5.0,
+          "unit": "mL"
+        },
+        "transport": "An EDTA specimen should arrive in the lab on the same day or within 48 hours maximum. Samples should be stored and transported at room temperature and not refrigerated.",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Flow cytometry - single platform",
+        "reference_range": "(95% confidence interval)\n\nPaediatric reference ranges are from Comans-Bitter WM, et al, \"Immunophenotyping of Blood Lymphocytes in Childhood,\" J Paediatrics, 1997, 130:388-393",
+        "interferences": "Because physiological stress can affect results, avoid testing during acute infections, postoperatively etc. Always try and do monitoring tests at the same time of day. In women, try to do monitoring tests at the same phase of the menstrual cycle.",
+        "eqa_scheme": "UK NEQAS Immune Monitoring Scheme"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "For use as a monitoring tool in serologically confirmed HIV infection. Should not be used in an attempt to diagnose HIV infection.",
+        "repeat_frequency": "Three times a year in asymptomatic patients, more frequently in those with symptoms or when medication is being changed."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/CD4-count-T-cell-count.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "ch50-complement-activity-classical-pathway",
+      "name": "CH50 complement activity Classical Pathway",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "All samples from outside the hospital should be transported on an ice pack. Transport at room temperature is acceptable within this hospital if the sample is delivered to the Immunology laboratory within 3 hours on weekdays only (not including bank holidays).",
+        "special_precautions": "Sample must be received by the laboratory no more than 3 hours post sample collection. If samples are likely to take longer than 3 hours to be delivered post venepuncture, they must be centrifuged, and the separated serum sample transported on ice to avoid reduction in activity that can occur with time."
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "41.68 - 95.06 U/mL",
+        "interferences": "If screened too soon after acute infection leads to falsely abnormal results due to complement activation. Some complement components are temperature sensitive and it is important that the samples should be delivered to the lab in a timely manner and on ice.",
+        "eqa_scheme": "INSTAND Complement Analysis EQA scheme"
+      },
+      "turnaround": {
+        "raw": "Median - 7",
+        "days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected complement deficiency e.g. meningococcal infection",
+        "repeat_frequency": "At significant change in symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/10/CH50-complement-activity-Classical-Pathway.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "complement-c3",
+      "name": "Complement C3",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": true
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "0.75-1.65g/L",
+        "interferences": "Traumatic venepuncture or delay in transport may lead to falsely low levels.",
+        "eqa_scheme": "UK NEQAS Specific protein and UK NEQAS C1 Inhibitor and functional complement schemes"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "Monitoring of SLE. Post streptococcal glomerulonephritis and other conditions of complement activation",
+        "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Complement-C3.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "complement-c4",
+      "name": "Complement C4",
+      "aliases": [],
+      "description": "Useful in monitoring a wide range of inflammatory and autoimmune disorders. Single point determinations are of limited value and serial measurements are recommended.",
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": true
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "0.14-0.54 g/L",
+        "interferences": "Traumatic venepuncture and delay in transport can lead to false negative results due to in vitro activation.",
+        "eqa_scheme": "UK NEQAS Specific protein and UK NEQAS C1 Inhibitor and functional complement schemes"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "Pre-eclampsia, angioedema without urticaria, genetic deficiency, active SLE (associated with low C3) and sepsis (associated with low C3).",
+        "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/06/Complement-C4.pdf",
+        "detail_type": "pdf",
+        "last_updated": "June 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "double-negative-t-cell-dnt-panel",
+      "name": "Double Negative T Cell (DNT) panel",
+      "aliases": [],
+      "description": "Assay principles: This test is usually done in conjunction with lymphocyte subsets surface markers (ID), in which case a separate sample is not required. This assay is used in the investigation of Autoimmune Lymphoproliferative Syndrome (ALPS) also known as Canale-Smith syndrome. Patients with ALPS have an increase in a normally rare population of T cells that are alpha beta T-cell receptor (TCR) positive, and negative for both CD4 and CD8 (double negative T cells - DNTs). An ALPS-like phenotype could be identified in other immunological and haematological conditions and if this result is unexpected, please discuss with adult or paediatric immunology.",
+      "department": "Immunology",
+      "letter": "D",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "Peripheral blood - EDTA",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "transport": "At room temperature",
+        "additional_requirements": "Note that samples should be received in the laboratory no later than 3pm on a Friday. Samples should be kept at room temperature."
+      },
+      "analysis": {
+        "analyte": "Double Negative T Cell (DNT) Panel",
+        "method": "Flow Cytometry",
+        "units": "%",
+        "interferences": "Older samples may exhibit loss of surface antigens and therefore the sample should be as fresh as possible.",
+        "eqa_scheme": "N/A",
+        "frequency_of_analysis": "Dependent on clinical indication"
+      },
+      "turnaround": {
+        "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
+      },
+      "clinical": {
+        "interpretation": "Use of this panel in the investigation of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric).",
+        "references": "Immunology • Revised diagnostic criteria and classification for the autoimmune lymphoproliferative syndrome (ALPS): report from the 2009 NIH International Workshop. Joao B Oliveira et al. Blood, 2010 Oct 7;116(14):e35-40."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/Double-Negative-T-cells.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "farmer-s-lung-precipitins",
+      "name": "Farmer’s lung precipitins",
+      "aliases": [],
+      "description": "Farmer's lung precipitins These tests detect the presence of IgG antibodies to Micropolysporium faeni (Farmer's lung precipitins). Please note from April 2022 the laboratory no longer tests for Thermoactinomyces vulgaris.",
+      "department": "Immunology",
+      "letter": "F",
+      "categories": [
+        "allergy",
+        "infectious-disease-serology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "FEIA (Fluoroenzyme Immunoassay)",
+        "reference_range": "• Micropolysporium faeni - 0 - 22 mg/L",
+        "interferences": "In some cases of farmer's lung, hypersensitivity to other fungal species may be implicated.\n\nThe absence of IgG to Micropolysporium faeni does not rule the diagnosis out. These antibodies can be found in some healthy individuals. The presence of these antibodies supports, but does not confirm, a diagnosis of farmer's lung. There are numerous other causes of hypersensitivity pneumonitis including other fungal spores and occupational antigens. Please discuss with the laboratory if these may be incriminated.",
+        "eqa_scheme": "UK NEQAS for FUNGAL and RELATED ANTIGENS"
+      },
+      "turnaround": {
+        "raw": "Median - 4",
+        "days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "clinical": {
+        "indications": "Hypersensitivity to Micropolysporium faeni is a common cause of Farmer's lung, hypersensitivity pneumonitis occurring 12 to 24 hours after exposure to mouldy hay.",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Farmers-lung-precipitins.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "free-light-chains",
+      "name": "Free Light Chains",
+      "aliases": [],
+      "description": "Free Light Chains This test measures immunoglobulin light chains not incorporated into intact immunoglobulin molecules. Serum levels are increased when production is increased (myeloma) or excretion is impaired (renal failure) Demystifying Serum Free Light Chains - a guide for primary care: https://mft.nhs.uk/the- trust/otherdepartments/laboratory-medicine/information-for-gps/laboratory-medicines-newsletter- forgps/demystifying-serum-free-light-chains-a-guide-for-primary-care/",
+      "department": "Immunology",
+      "letter": "F",
+      "categories": [
+        "immunodeficiency",
+        "protein-electrophoresis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "Should be measured alongside immunoglobulins and electrophoresis"
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "• Ratio 0.26-1.65 • Free κ = 3.30-19.40 mg/L • Free λ = 5.71-26.30 mg/L",
+        "interferences": "Antigen excess can cause falsely low serum FLC results. Some monoclonal light chains (particularly k FLC) do not dilute in a linear fashion and may be underestimated. FLC results can be artificially elevated when an IgM monoclonal protein is present.",
+        "eqa_scheme": "UK NEQAS for Monoclonal Protein identification"
+      },
+      "turnaround": {
+        "raw": "Median - 3",
+        "days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "clinical": {
+        "indications": "May be used as part of the diagnostic strategy for myeloma. This test has largely superseded Bence Jones protein (urine immunofixation). Monitoring in some cases of myeloma.",
+        "repeat_frequency": "Initial diagnosis, post treatment monitoring for suspected relapse"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/01/Free-Light-Chains.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "ige-total",
+      "name": "IgE (Total)",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "I",
+      "categories": [
+        "allergy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum, 8ml if multiple Specific IgE tests",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunoassay (Phadia 1000)",
+        "reference_range": "Age specific",
+        "interferences": "Total IgE >3000kU/L increases the incidence of false positive (low level) specific IgE. IgE <30 kU/L associated with false negative specific IgE. Similarly, very low IgE levels (<2.0 kU/L) may indicate an underlying immunodeficiency; measurement of immunoglobulins is recommended.",
+        "eqa_scheme": "UK NEQAS for TOTAL IgE\n\nAge range Total IgE (kU/L) 0 days to 6 weeks < 5.2 6 weeks to 3 months < 9.2 3 to 6 months < 16.4 6 to 9 months < 22.6 9 to 12 months < 29.2 1 to 2 years < 51.7 2 to 3 years < 72.0 3 to 4 years < 90.0 4 to 5 years < 108.0 5 to 6 years < 126.0 6 to 7 years < 142.0 7 to 8 years < 160.0 8 to 9 years < 176.0 9 to 10 years < 192.0 Above 10 years < 114.0\n\nImmunology"
+      },
+      "turnaround": {
+        "raw": "Median - 3",
+        "days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "clinical": {
+        "indications": "Patients with suspected allergy (atopic disease). Main use of the test is to help interpret specific IgE levels.",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/IgE-Total.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "igg-subclasses",
+      "name": "IgG subclasses",
+      "aliases": [],
+      "description": "IgG1, IgG2, IgG3, IgG4 IgG1, IgG3 & IgG4 immunoglobulins are predominantly directed against protein antigens, while IgG2 antibodies are directed towards polysaccharide antigens. IgG1 is the major contributor to total IgG. Low IgG1 can be seen in primary or secondary immunodeficiency but often does not occur in isolation. Low IgG2 concentration may be observed in individuals susceptible to bacterial infections. The clinical significance of low/absent IgG3 and IgG4 is uncertain.",
+      "department": "Immunology",
+      "letter": "I",
+      "categories": [
+        "immunodeficiency",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "Age specific",
+        "interferences": "None",
+        "eqa_scheme": "UK NEQAS for IgG SUBCLASSES"
+      },
+      "turnaround": {
+        "raw": "Median - 4 Age IgG1 g/l IgG2 g/L IgG3 g/L IgG4 g/L 0-2 years 1.940-8.420 0.225-3.000 0.186-0.853 0.005-0.784 2-4 years 3.150-9.450 0.360-2.250 0.173-0.673 0.010-0.537 4-6 years 3.060-9.450 0.605-3.450 0.099-1.221 0.018-1.125 6-8 years 2.880-9.180 0.440-3.750 0.155-0.853 0.004-0.992 8-10 years 4.320-10.200 0.720-4.300 0.127-0.853 0.019-0.932 10-12 years 4.230-10.600 0.760-3.550 0.173-1.730 0.016-1.150 12-14 years 3.420-11.500 1.000-4.550 0.283-1.250 0.037-1.360 14-18 years 3.150-8.550 0.640-4.950 0.230-1.960 0.110-1.570 >18 years 3.824-9.286 2.418-7.003 0.218-1.761 0.039-0.864\n\nImmunology",
+        "days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "clinical": {
+        "indications": "History of bacterial sinopulmonary infection and IgG between 5-16g/L. History of/or failure to respond to polysaccharide vaccines, pancreatitis (history of recurrent infections - not viral), or abscesses or (failure to respond to immunisation) AND (Total IgG < 0.1 g/l). Samples not meeting these requirements will be rejected.",
+        "repeat_frequency": "Not within 6 months"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/10/IgG-subclasses.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "immunodeficiency-t-b-lymphocyte-subsets",
+      "name": "Immunodeficiency (T&B Lymphocyte Subsets)",
+      "aliases": [
+        "T&B Lymphocyte Subsets"
+      ],
+      "description": "Contact on 0161 276 6440 to discuss extended panels for investigation of Primary Immunodeficiency These tests are most frequently done in patients who are suspected of having an underlying immunodeficiency or are receiving immunosuppressive drugs. For example, cyclosporine reduces T cell numbers, whilst Rituximab reduces B cell numbers. The relevant tests required will be specified for each individual case.",
+      "department": "Immunology",
+      "letter": "I",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA (4ml) blood",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "Samples should be received by the lab within 24 hours of venepuncture. Maintain samples at room temp.",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Flow Cytometry",
+        "reference_range": "(95% confidence interval) CD marker Age Minimum % Maximum % Minimum cells/mm3 Maximum cells/mm3 CD3+ Neonates 28 76 600 5000 \" 1wk - 2mo 60 85 2300 7000 \" 2-5 mo 48 75 2300 6500 \" 5-9 mo 50 77 2400 6900 \" 9-15 mo 54 76 1600 6700 \" 15-24 mo 39 73 1400 8000 \" 2-5 y 43 76 900 4500 \" 5-10 y 55 78 700 4200 \" 10-16 y 52 78 800 3500 \" Adults 58 86 700 2100 CD3+CD4+ Neonates 17 52 400 3500 \" 1wk - 2mo 41 68 1700 5300 \" 2-5 mo 33 58 1500 5000 \" 5-9 mo 33 58 1400 5100\n\nImmunology \" 9-15 mo 31 54 1000 4600 \" 15-24 mo 25 50 900 5500 \" 2-5 y 23 48 500 2400 \" 5-10 y 27 53 300 2000 \" 10-16 y 25 48 400 2100 \" Adults 31 59 300 1400 CD3+CD8+ Neonates 10 41 200 1900 \" 1wk - 2mo 9 23 400 1700 \" 2-5 mo 11 25 500 1600 \" 5-9 mo 13 26 600 2200 \" 9-15 mo 12 28 400 2100 \" 15-24 mo 11 32 400 2300 \" 2-5 y 14 33 300 1600 \" 5-10 y 19 34 300 1800 \" 10-16 y 9 35 200 1200 \" Adults 12 36 200 900 T4:T8 Ratio Adults 0.92 3.72 N/A N/A CD19+ Neonates 5 22 40 1100 \" 1wk - 2mo 4 26 600 1900 \" 2-5 mo 14 39 600 3000 \" 5-9 mo 13 35 700 2500 \" 9-15 mo 15 39 600 2700 \" 15-24 mo 17 41 600 3100 \" 2-5 y 14 44 200 2100 \" 5-10 y 10 31 200 1600 \" 10-16 y 8 24 200 600 \" Adults 3 25 100 500 CD3-CD16/56+ Neonates 6 58 100 1900 \" 1wk - 2mo 3 23 200 1400 \" 2-5 mo 2 14 100 1300 \" 5-9 mo 2 13 100 1000 \" 9-15 mo 3 17 200 1200\n\nImmunology\n\nPaediatric reference ranges are from Comans-Bitter WM, et al, \"Immunophenotyping of Blood Lymphocytes in Childhood,\" J Paediatrics, 1997, 130:388-393",
+        "interferences": "Age (see normal ranges in tables). Acute infection and immunosuppressive drugs will alter T and B lymphocyte numbers.\n\n\" 15-24 mo 3 16 100 1400 \" 2-5 y 4 23 100 1000 \" 5-10 y 4 26 90 900 \" 10-16 y 6 27 70 1200 \" Adults 1 19 90 600",
+        "eqa_scheme": "UK NEQAS LI Immune Monitoring"
+      },
+      "turnaround": {
+        "raw": "Median - 2",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected cellular immunodeficiency",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "notes": "T&B Lymphocyte Subsets",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Immunodeficiency-TB-Lymphocyte-Subsets.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "immunoglobulin-d-igd",
+      "name": "Immunoglobulin D, IgD",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "I",
+      "categories": [
+        "immunodeficiency"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "IgD has a relatively short half life. Samples should arrive in the lab within 24 hours or stored at 4°C if there is a delay in transport."
+      },
+      "analysis": {
+        "method": "ELISA",
+        "reference_range": "2-100 KU/L",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Familial Mediterranean Fever, underlying immunodeficiency.",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Immunoglobulin-D-IgD.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "immunoglobulins-igg-iga-igm",
+      "name": "Immunoglobulins (IgG, IgA, IgM)",
+      "aliases": [],
+      "description": "Immunoglobulins are tested at ORC and Wythenshawe in Biochemistry under Immunology UKAS 8195 scope. IgG: Marked polyclonal IgG elevation is seen in HIV, Sjögren's, and Sarcoidosis. Less marked elevation in chronic inflammatory and infective conditions. IgA: raised in elderly, chronic infection, cirrhotic liver disease IgM: raised primary biliary cirrhosis, acute infection, EBV, CMV, TB",
+      "department": "Immunology",
+      "letter": "I",
+      "categories": [
+        "immunodeficiency",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "Age specific (5th - 95th centiles) Age specific reference ranges for total serum IgG, IgA and IgM (as recommended by Pathology Harmony)\n\nAge IgG g/L IgA g/L IgM g/L Cord 5.2 - 18.0 <0.02 0.02 - 0.2 0-2 weeks 5.0 - 17.0 0.01 - 0.08 0.05 - 0.2 2-6 weeks 3.9 - 13.0 0.02 - 0.15 0.08 - 0.4 6-12 weeks 2.1 - 7.7 0.05 - 0.4 0.15 - 0.7 3-6 months 2.4 - 8.8 0.10 - 0.5 0.2 - 1.0 6-9 months 3.0 - 9.0 0.15 - 0.7 0.4 - 1.6 9-12 months 3.0 - 10.9 0.20 - 0.7 0.6 - 2.1 1-2 years 3.1 - 13.8 0.3 - 1.2 0.5 - 2.2 2-3 years 3.7 - 15.8 0.3 - 1.3 0.5 - 2.2 3-6 years 4.9 - 16.1 0.4 - 2.0 0.5 - 2.0 6-9 years 5.4 - 16.1 0.5 - 2.4 0.5 - 1.8 9-12 years 5.4 - 16.1 0.7 - 2.5 0.5 - 1.8 12-15 years 5.4 - 16.1 0.8 - 2.8 0.5 - 1.9 15-45 years 6.0 - 16.0 0.8 - 2.8 0.5 - 1.9 Over 45 6.0 - 16.0 0.8 - 4.0 0.5 - 2.0\n\nImmunology",
+        "interferences": "Age (e.g. Transient neonatal hypogammaglobulinaemia), primary/secondary immunodeficiency, acute infections, treatment with immunosuppressive drugs, intravenous or subcutaneous immunoglobulin preparations.",
+        "eqa_scheme": "UK NEQAS Specific protein scheme & UK NEQAS for Monoclonal Protein identification"
+      },
+      "turnaround": {
+        "raw": "Median - 2",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "clinical": {
+        "indications": "• Recurrent infections • Suspected myeloma, Waldenstrom's macroglobulinaemia, lymphoma, connective tissue disease.",
+        "repeat_frequency": "Not within six months - exempt for monitoring myeloma and immunodeficiency"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/10/Immunoglobulins-IgG-IgA-IgM.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "leukocyte-adhesion-deficiency-lad-markers",
+      "name": "Leukocyte Adhesion Deficiency (LAD) Markers",
+      "aliases": [],
+      "description": "Leucocyte adhesion deficiency (LAD) is a rare autosomal recessive disorder that is characterised by the inability of neutrophils to migrate from blood vessels to the sites of infection. Patients with LAD present with a marked leucocytosis and recurrent infections. In the neonate with LAD a presenting feature is a delay in the separation of the umbilical cord. The primary mechanism for neutrophil adhesion to vascular endothelium is β2-integrin, LFA-1 (CD11a/CD18) and Mac-1 (CD11b/CD18) being the two dominant subunits, and LAD type I is due to a deficiency of these surface markers.",
+      "department": "Immunology",
+      "letter": "L",
+      "categories": [
+        "immunodeficiency"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "Peripheral blood - EDTA",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "transport": "At room temperature."
+      },
+      "analysis": {
+        "method": "Flow cytometry",
+        "units": "%",
+        "reference_range": "Normal expression >90% for each marker",
+        "interferences": "Older samples may exhibit loss of surface antigens and therefore the sample should be as fresh as possible.",
+        "eqa_scheme": "No formal EQA scheme is possible (as a fresh sample is required). Internal QA is performed by periodically re-testing well-defined patients with the condition."
+      },
+      "turnaround": {
+        "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
+      },
+      "clinical": {
+        "repeat_frequency": "Repeat only indicated following bone marrow transplantation of an affected individual."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/11/Leukocyte-Adhesion-Deficiency-LAD-Markers.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "l-selectin-shedding-assay",
+      "name": "L-Selectin Shedding assay",
+      "aliases": [],
+      "description": "L-selectin shedding from the surface of leucocytes is a marker of activation. Toll-like receptors (TLRs) employ complex signalling pathways to generate an appropriate response to bacteria and viruses. A defect in these pathways can result in an impaired or absent immune response. This test is used to measure the amount of L-Selectin (CD62L) shed from the surface of neutrophils before and after stimulation of the TLR pathway. The test can help identify patients with defects in their toll-like receptor signalling pathway and can be used to diagnose IRAK-4, MyD88 and UNC93B deficiency.",
+      "department": "Immunology",
+      "letter": "L",
+      "categories": [
+        "immunodeficiency"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "A minimum of 1ml blood in preservative-free heparin, with the sample <8hrs old. The department should be notified prior to venepuncture of the intention to request a L-Selectin shedding test (phone: 0161-276-6440 or extension 66440). In order to obtain a fresh uncompromised sample the whole blood for this assay must be received in a sterile universal container of preservative free heparin (10 units/mL). An age matched quality control sample from a normal donor should be supplied along with the patient's sample.",
+        "tube": {
+          "type": "lithium-heparin",
+          "cap_colour": "Green"
+        },
+        "transport": "At room temperature. Sample must be received <8hrs old and before 12 noon on weekdays only (not including bank holidays) to allow for processing and analysis."
+      },
+      "analysis": {
+        "method": "Flow cytometry",
+        "units": "% of neutrophils positive for CD62L expression",
+        "reference_range": "A normal healthy patient sample should have >80% CD62L expression on the un-stimulated cells and shed <10% CD62L in response to all TLR agonists. The cell activator, Phorbol myristate acetate (PMA) is included as a positive control.",
+        "interferences": "Blood anticoagulated with EDTA preservative is not acceptable as it is acts as a calcium chelator (most cellular functions require calcium) therefore sub optimal results may be generated. Quality of the sample received: Pre-activation of the samples can occur due to for example, infection or inadvertent activation caused by sample collection or transport to the lab with a concomitant reduction in CD62L expression.",
+        "eqa_scheme": "An EQA scheme is not available for this assay\n\nImmunology",
+        "frequency_of_analysis": "Repeat only indicated if the test has failed (particularly if the control sample has failed).\n\nTurnaround times (calendar days from sample receipt to authorised result): Mean - 2."
+      },
+      "clinical": {
+        "interpretation": "Patients with IRAK-4 or MyD88 deficiency will still express CD62L after treatment with lipopolysaccharide (LPS, TLR4 agonist) and the compound CL097 (TLR7/8 agonist) but have lost CD62L expression as a result of treatment with PMA. UNC-93B deficient patients will still express CD62L with CL097 but have lost CD62L with both LPS and PMA."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/L-Selectin-Shedding-assay.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "analysis.reference_range",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "mannose-binding-lectins",
+      "name": "Mannose Binding Lectins",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "M",
+      "categories": [
+        "immunodeficiency"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "ELISA",
+        "reference_range": ">1300ng/ml",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Recurrent infections in childhood",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Immunology Department Camelia Botnar Laboratories Level 4 Great Ormond Street Hospital London WC1N 3JH",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Mannose-Binding-Lectins.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "mast-cell-tryptase",
+      "name": "Mast Cell Tryptase",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "M",
+      "categories": [
+        "allergy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "For suspected anaphylaxis the first sample should be obtained as soon as possible after the patient's condition has been stabilised."
+      },
+      "analysis": {
+        "method": "FEIA (Fluoroenzyme Immunoassay)",
+        "reference_range": "0-12.9 ug/l",
+        "interferences": "Tryptase levels decline following an adverse reaction. The decline in tryptase levels can be confirmed providing that two blood samples are obtained (each indicating the time it was taken). 40% of the Manchester population is alpha tryptase deficient. This may affect the normal range but future research is needed.",
+        "eqa_scheme": "UK NEQAS for Tryptase"
+      },
+      "turnaround": {
+        "raw": "Median - 4",
+        "days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected acute allergic reactions, anaphylaxis, suspected Mastocytosis",
+        "repeat_frequency": "For suspected anaphylaxis samples should be taken as soon as possible after emergency treatment, 1-2 hours post treatment (but no later than 4 hours post) and a baseline sample at >24 hrs post treatment. For mastocytosis repeat after 1 year or following significant clinical change."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Mast-Cell-Tryptase.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "naive-memory-and-effector-t-cell-subsets",
+      "name": "Naïve Memory and Effector T Cell Subsets",
+      "aliases": [],
+      "description": "Assay principles: This test is usually done in conjunction with lymphocyte subsets surface markers (ID), in which case a separate sample is not required. This assay is used in the investigation of Naïve, Memory, and Effector (NME) T cells in various clinical contexts including autoimmune diseases, immunodeficiency states, T-cell recovery post hematopoietic stem cell transplant, DiGeorge syndrome, and as a measure for T-cell immune competence. These T cells subsets can be identified by their expression of cell-surface markers CD45RA and CD27 and are reported as a % gated on CD4 and CD8.",
+      "department": "Immunology",
+      "letter": "N",
+      "categories": [
+        "immunodeficiency"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "Peripheral blood - EDTA",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "transport": "At room temperature",
+        "additional_requirements": "Note that samples should be received in the laboratory no later than 3pm on a Friday. Samples should be kept at room temperature."
+      },
+      "analysis": {
+        "analyte": "Naïve, Memory and Effector T Cell Subsets Panel",
+        "method": "Flow Cytometry",
+        "units": "%",
+        "interferences": "Older samples may exhibit loss of surface antigens and therefore the sample should be as fresh as possible.",
+        "eqa_scheme": "N/A",
+        "frequency_of_analysis": "Dependent on clinical indication"
+      },
+      "turnaround": {
+        "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
+      },
+      "clinical": {
+        "interpretation": "Use of this panel in the investigation/monitoring of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric).\n\nThe T cell subsets that are reported are detailed in the below table. These subsets are reported for both helper (CD4) and cytotoxic (CD8) T cells. Reference ranges are not available for most of these cells groups and any results should be discussed with a consultant immunologist.\n\nImmunology\n\nT cell subset *either CD4 or CD8 Immunophenotype Clinical comments Naïve CD197+ (CCR7) CD45RA+ Decreased in autoimmune disease (AI) / lymphoproliferation in CVID Central memory CD197+ (CCR7) CD45RA- Possibly decreased in AI cytopenia Effector memory CD197- (CCR7) CD45RA- No clear clinical association Effector / terminally differentiated CD197- (CCR7) CD45RA+ Possibly increased in AI / lymphoproliferation in CVID Early differentiated CD28+ CD27+ Decreased in AI / lymphoproliferation in CVID Intermediate differentiated CD28- CD27+ No clear clinical association Late differentiated CD28- CD27- Possibly increased in AI / lymphoproliferation in CVID + Senescent CD57+ (based on CD57 and SS) Increased in Activated PI3K delta syndrome (APDS) Exhausted CD279+ (PD1) No clear clinical association\n\nNaïve T cells are also assessed as part of newborn Severe Combined Immunodeficiency (SCID) screening, in which context low numbers of naïve cells may support SCID."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/Naive-Memory-and-Effector-T-Cell-Subsets.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "neutrophil-function-dhr-test",
+      "name": "Neutrophil Function (DHR) Test",
+      "aliases": [],
+      "description": "Chronic Granulomatous disease (CGD) is an inherited immunodeficiency resulting from the inability of an individual's neutrophils to produce superoxide ions because of defective NADPH oxidase. Normally this series of reactions, which is better known as the 'neutrophil respiratory burst' or oxidative burst, results in the production of hydrogen peroxide, hypochlorous acid and other reactive oxygen species. The end products of this process are highly toxic to ingested microorganisms and the process has long been recognized as an essential part of the host's innate immunity. It is a first line of defence against acute bacterial and fungal infections. CGD patients suffer from recurrent life-threatening bacterial infections from birth, although some patients present later in life.",
+      "department": "Immunology",
+      "letter": "N",
+      "categories": [
+        "immunodeficiency"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "1mL of peripheral blood in heparin must be received, with the sample <4 hours old. In addition, a fresh, age (adult for adult, child for child) and sex matched control sample is required. EDTA blood is not suitable for this test.",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature. Samples must be received before 3pm on weekdays only (not including bank holidays)."
+      },
+      "analysis": {
+        "method": "Flow cytometry",
+        "units": "Stimulation Index.",
+        "reference_range": "Normal",
+        "interferences": "Temperature, delay in processing and sample type. MPO deficiency may cause false positive results.\n\nInterpretation of results: A relevant interpretive comment will be added by the laboratory.",
+        "eqa_scheme": "No formal EQA scheme is possible (as a fresh sample is required). Internal QA is performed by periodically re-testing well-defined patients with the condition."
+      },
+      "turnaround": {
+        "raw": "Mean - 2.",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "clinical": {
+        "indications": "This assay can be used to identify patients with CGD as well as carriers of the defective gene responsible for the condition.",
+        "repeat_frequency": "Repeat only indicated if the test has failed (particularly if the control sample has failed) or following bone marrow transplantation of an affected individual."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/Neutrophil-Function-DHR-Test.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.73,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "t-cell-activation-panel",
+      "name": "T Cell Activation Panel",
+      "aliases": [],
+      "description": "Assay principles: This test is usually done in conjunction with lymphocyte subsets surface markers (ID), in which case a separate sample is not required. This assay measures the levels of CD25 and HLA-DR expression on CD4+ T cells which have been activated from an immune response to a pathogen. Activated T cells are a hallmark of the combined immunodeficiency, Omenn's syndrome. Rare immunodeficiencies exist where activation markers can be absent from immune cells e.g. HLA-Dr in Bare Lymphocyte Syndrome (type 2) and CD25 in IL-2 receptor deficiency. More specifically, analysis of CD25 expression may be useful in the diagnosis of IPEX syndrome.",
+      "department": "Immunology",
+      "letter": "T",
+      "categories": [
+        "immunodeficiency",
+        "flow-cytometry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "Peripheral blood - EDTA",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "transport": "At room temperature",
+        "additional_requirements": "Note that samples should be received in the laboratory no later than 3pm on a Friday. Samples should be kept at room temperature."
+      },
+      "analysis": {
+        "analyte": "T Cell Activation Panel",
+        "method": "Flow Cytometry",
+        "units": "%",
+        "interferences": "Older samples may exhibit loss of surface antigens and therefore the sample should be as fresh as possible.",
+        "eqa_scheme": "N/A",
+        "frequency_of_analysis": "Dependent on clinical indication"
+      },
+      "turnaround": {
+        "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
+      },
+      "clinical": {
+        "interpretation": "Use of this panel in the investigation/monitoring of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric)."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/T-Cell-Activation-Panel.pdf",
+        "detail_type": "pdf",
+        "last_updated": "April 2021",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    }
+  ]
+}

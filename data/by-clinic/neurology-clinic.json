@@ -1,0 +1,3067 @@
+{
+  "meta": {
+    "profile": "neurology-clinic",
+    "name": "Neurology Clinic",
+    "version": "0.1.0",
+    "rationale": "Neuronal and neuromuscular antibody panels plus CSF analysis define the neurology laboratory workload.",
+    "test_count": 45
+  },
+  "tests": [
+    {
+      "id": "acetyl-choline-receptor-antibodies",
+      "name": "Acetyl Choline Receptor Antibodies",
+      "aliases": [],
+      "description": "Acts as a confirmatory test for myasthenia gravis.",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "ELISA",
+        "reference_range": "0 - 0.60 nmol/L",
+        "interferences": "Do not use lipaemic or haemolysed serum samples.",
+        "eqa_scheme": "UK NEQAS for Acetylcholine receptor antibody"
+      },
+      "turnaround": {
+        "raw": "Median - 7",
+        "days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "clinical": {
+        "indications": "90% of patients with generalised myasthenia gravis and about 60-70% of patients with ocular myasthenia have detectable AChR antibodies. Can be used to monitor disease activity, but antibodies may persist in 60% of patients even if disease is in remission.\n\nThe assay also detects antibodies to the foetal form of the AChR in mother of foetuses with Arthrogryposis multiplex congenital.",
+        "repeat_frequency": "At change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/06/Acetylcholine-receptor-antibody.pdf",
+        "detail_type": "pdf",
+        "last_updated": "June 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "anti-myelin-oligodendrocyte-glycoprotein-mog-antibodies",
+      "name": "Anti Myelin oligodendrocyte glycoprotein (MOG) Antibodies",
+      "aliases": [
+        "MOG"
+      ],
+      "description": "(Referred Test) MOG antibodies have been reported in some people who have transverse myelitis and/or optic neuritis and/or acute disseminated encephalomyelitis and Aquaporin 4 antibody negative neuromyelitis optica. MOG antibodies are found on the myelin sheath rather than the astrocyte as in Aquaporin 4 antibodies and cause damage to the myelin.",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Cell based assay",
+        "reference_range": "Negative"
+      },
+      "turnaround": {
+        "raw": "Median - 16",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "repeat_frequency": "Significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology The Churchill Hospital Old Road Headington Oxford OX3 7LJ",
+      "notes": "MOG",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Anti-Myelin-oligodendrocyte-glycoprotein-MOG-Antibodies-Referred-Test.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "anti-basal-ganglia-abs",
+      "name": "Anti-Basal Ganglia Abs",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Western Blot",
+        "reference_range": "Negative",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Sydenham's chorea",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Institute of Neurology National Hospital for Neurology and Neurosurgery Queens Square London WC1N 3BG",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Anti-Basal-Ganglia-Abs.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "aquaporin-4",
+      "name": "Aquaporin 4",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Aquaporin 4 transfected cell assay",
+        "reference_range": "Negative",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Neuromyelitis Optica (optic neuritis, transverse myelitis), Devic's disease",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology The Churchill Hospital Old Road Headington Oxford OX3 7LJ",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Aquaporin-4-NMO-Neuro-Myelitis-Optica-Abs.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "ascitic-fluid",
+      "name": "Ascitic fluid",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "A",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "carbamazepine",
+      "name": "Carbamazepine",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Carbamazepine",
+        "match_method": "exact",
+        "units": "mg/L",
+        "notes": "Not age or gender specific 4.0 - 12.0 mg/L <25 mg/L not usually seriously toxic >26 mg/l associated with life threatening toxicity"
+      },
+      "turnaround": {
+        "raw": "Urgent 2 hours, routine 4 hours",
+        "days": {
+          "min": 0.08,
+          "max": 0.08
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.27,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "carboxyhaemoglobin",
+      "name": "Carboxyhaemoglobin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "toxicology",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "caspr-lgi1-antibodies",
+      "name": "CASPR & LGi1 Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "serum 1ml",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Cell based assay",
+        "reference_range": "Cell Based assay - no reference range"
+      },
+      "turnaround": {
+        "raw": "14 days",
+        "days": {
+          "min": 14.0,
+          "max": 14.0
+        }
+      },
+      "clinical": {
+        "indications": "CASPR2 (Contactin Associated Protein 2) and LGi1 (leucine-rich glioma inactivated 1) antibodies are subunits of the potassium channel complex (VGKC). When the antibodies target LGI1 or CASPR2 they cause an encephalitis often termed limbic encephalitis.",
+        "repeat_frequency": "significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology The Churchill Hospital Old Road Headington Oxford OX3 7LJ",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/01/CASPR-LGi1-Antibodies-referred-test.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "cerebrospinal-fluid",
+      "name": "Cerebrospinal fluid",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "C",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "csf",
+      "name": "CSF",
+      "aliases": [
+        "Cerebrospinal fluid"
+      ],
+      "description": "Meningitis is defined as inflammation of the meninges. This process may be acute or chronic and infective or non-infective. Many infective agents have been shown to cause meningitis, including viruses, bacteria, fungi and parasites. Royal Manchester Children's Hospital is a specialist paediatric neurology centre; as such CSF obtained from ventricular shunts and shunts removed during revision may also be submitted to the laboratory for microscopy and culture.",
+      "department": "Bacteriology",
+      "letter": "C",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf"
+        ],
+        "specimen_type_raw": "Cerebrospinal Fluid",
+        "container": "Collect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.",
+        "minimum_volume_raw": "For routine cell count & culture; ideally a minimum volume of 1 mL For Mycobacteria sp., culture (Tb), at least 6mL where possible; such investigations cannot be performed outside of normal hours CSF is normally collected sequentially into three or more separate containers which should be numbered consecutively.",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "Use aseptic technique. Collect specimens into appropriate CE marked leak proof containers and place in sealed plastic bag.",
+        "transport": "Specimens should be transported and processed as soon as possible. CSFs should not be podded.",
+        "special_precautions": "Always contact the laboratory when sending a CSF sample. Send sample 3 (or the last sample if more than 3 taken) to Microbiology. Outside of normal hours contact the on-call Biomedical Scientist through the main switchboard."
+      },
+      "analysis": {
+        "units": "Cell count x106/L\n\nBacteriology",
+        "interferences": "Cells disintegrate and a delay may produce a cell count that does not reflect the clinical situation of the patient.\n\nThe laboratory will be unable to perform cell counts on clotted samples."
+      },
+      "turnaround": {
+        "raw": "30 mins to 1 hour for microscopy 2-3 working days for culture",
+        "days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/12/CSF.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "csf-glucose",
+      "name": "CSF – Glucose",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "diabetes-metabolic",
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "analysis": {
+        "units": "mmol/L",
+        "reference_range": "2.2 - 4.4 mmol/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "CSF glucose",
+        "match_method": "exact",
+        "units": "mmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 150.0,
+            "low": 2.2,
+            "high": 4.4,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "150",
+              "low": "2.2",
+              "high": "4.4"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "months",
+            "age_min": 2.0,
+            "age_max": 12.0,
+            "low": 1.9,
+            "high": 5.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Months",
+              "age_min": "2",
+              "age_max": "12",
+              "low": "1.9",
+              "high": "5"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 29.0,
+            "age_max": 58.0,
+            "low": 1.6,
+            "high": 5.6,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Days",
+              "age_min": "29",
+              "age_max": "58",
+              "low": "1.6",
+              "high": "5.6"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 28.0,
+            "low": 1.9,
+            "high": 5.6,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "28",
+              "low": "1.9",
+              "high": "5.6"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": false,
+        "present": [
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "csf-lactate",
+      "name": "CSF – Lactate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "clinical-chemistry",
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "fluoride-plasma"
+        ],
+        "specimen_type_raw": "Fluoride oxalate [F-EDTA / F- LiHep also OK]",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "accepted_specimens": [
+          "Fluoride oxalate [F-EDTA / F- LiHep also OK]"
+        ],
+        "preferred_specimen": "Fluoride oxalate [F-EDTA / F- LiHep also OK]"
+      },
+      "analysis": {
+        "units": "mmol/L",
+        "reference_range": "1.1 - 2.4 mmol/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "CSF lactate",
+        "match_method": "exact",
+        "units": "mmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 1.1,
+            "high": 2.4,
+            "raw": {
+              "sex": "all",
+              "age_unit": "all",
+              "low": "1.1",
+              "high": "2.4"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "Urgent 2 hours, routine 4 hours",
+        "days": {
+          "min": 0.08,
+          "max": 0.08
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "csf-protein",
+      "name": "CSF – Protein",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf"
+        ],
+        "specimen_type_raw": "CSF, plain",
+        "accepted_specimens": [
+          "CSF",
+          "plain"
+        ],
+        "preferred_specimen": "CSF"
+      },
+      "analysis": {
+        "units": "g/L",
+        "reference_range": "0.15 - 0.45 g/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "CSF total protein",
+        "match_method": "fuzzy:1.00",
+        "units": "g/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "months/ years",
+            "age_min": 2.0,
+            "age_max": 150.0,
+            "low": 0.15,
+            "high": 0.45,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Months/ Years",
+              "age_min": "2",
+              "age_max": "150",
+              "low": "0.15",
+              "high": "0.45"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "weeks/ months",
+            "age_min": 4.0,
+            "age_max": 2.0,
+            "low": 0.2,
+            "high": 0.7,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Weeks/ Months",
+              "age_min": "4",
+              "age_max": "2",
+              "low": "0.2",
+              "high": "0.7"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days/ weeks",
+            "age_min": 7.0,
+            "age_max": 4.0,
+            "low": 0.2,
+            "high": 0.8,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Days/ weeks",
+              "age_min": "7",
+              "age_max": "4",
+              "low": "0.2",
+              "high": "0.8"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 7.0,
+            "low": 0.4,
+            "high": 1.1,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "7",
+              "low": "0.4",
+              "high": "1.1"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "dna-testing-for-the-haemoglobinopathies",
+      "name": "DNA Testing for the Haemoglobinopathies",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "D",
+      "categories": [
+        "sexual-health-sti",
+        "haemoglobinopathy",
+        "genetics-molecular",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "fluids-from-normally-sterile-sites",
+      "name": "Fluids from Normally Sterile Sites",
+      "aliases": [
+        "Joint fluids",
+        "Sterile fluids"
+      ],
+      "description": "The detection of organisms in fluids that are normally sterile indicates significant infection, which can be life- threatening. Specimens may be taken primarily for culture or this may be incidental to the prime reason for obtaining the specimen. Blood cultures may be positive with the same infecting organism, and occasionally may be positive when culture of the fluid fails to reveal the organism. Fluids will be sterile in the absence of infection, as will \"sympathetic effusions\", and those of immunological or traumatic origin and those due to metabolic disease or heart failure. Signs of infection may be difficult to detect clinically in patients whose joints are already inflamed due to rheumatological conditions. This is important because these patients are at increased risk of joint sepsis.",
+      "department": "Bacteriology",
+      "letter": "F",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "synovial-fluid",
+          "body-fluid"
+        ],
+        "specimen_type_raw": "Universal container: Amniotic fluid, bursa fluid, pericardial fluid, joint fluid, peritoneal/CAPD fluid (ascites), pleural fluid, dialysis fluid. Sterile fluids such as Ascitic Fluids, CAPD fluids, Joint Fluids can be sent in blood culture bottles - use standard set of BC bottles (Aerobic & Anaerobic bottle). For small volume samples - use Paediatric bottle. Pleural Fluids (Not Pleural Drains) should be sent in a set of blood culture bottles for culture plus an additional universal container for a Gram stain Capped Syringes: Vitreous aspirates & other intra ocular fluids should be injected into a Blood Culture bottle set with a small syringe of fluid submitted for a Gram stain. The needle MUST be removed before submission for the laboratory. Cell differentials are performed in Cytology, separate sample and request required\n\nBacteriology",
+        "container": "Use aseptic technique. Collect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.",
+        "minimum_volume_raw": "Ideally, a minimum volume of 1 mL.\n\nLarge volume - specimens such as peritoneal fluid and ascitic fluid may contain very low numbers of organisms which are usually received in adequate quantities and require concentration to increase the likelihood of successful culture.\n\nSmall volume - fluids such as synovial fluids may be received in inadequate volumes, which may impede the recovery of organisms.\n\nEnrichment culture is performed on all fluids from normally sterile sites to enhance the recovery of bacterial pathogens.",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "collection": "Collect specimens before antimicrobial therapy where possible.",
+        "transport": "Specimens should be transported and processed as soon as possible",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable.\n\nBacteriology performs differentials, therefore one sterile pot is required and one set of blood culture"
+      },
+      "analysis": {
+        "units": "X10 6/L for cell count",
+        "clinical_decision_points": "Positive microscopy and/or Positive Culture results are telephoned to the requesting physician"
+      },
+      "turnaround": {
+        "provisional_raw": "30-60 mins for microscopy & Gram Stain, when telephoned as urgent.",
+        "final_raw": "2- 3 days for direct culture result 5 days for enriched culture result\n\nBacteriology",
+        "final_working_days": {
+          "min": 2.0,
+          "max": 3.0
+        }
+      },
+      "notes": "Joint fluids; sterile fluids",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Fluids-from-Normally-Sterile-Sites.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "folate-serum-and-red-cell",
+      "name": "Folate (serum and red cell)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "F",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "3.9 - 20 μg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Folate (blood)",
+        "match_method": "exact",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 3.9,
+            "high": 20.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "low": "3.9",
+              "high": "20"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "gabab-receptor-ampa-receptor-1-2-antibodies",
+      "name": "GABAb receptor & AMPA receptor 1/2 antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "G",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "serum 1ml",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Cell based assay",
+        "reference_range": "Cell Based assay - no reference range"
+      },
+      "turnaround": {
+        "raw": "14 days",
+        "days": {
+          "min": 14.0,
+          "max": 14.0
+        }
+      },
+      "clinical": {
+        "indications": "Antibodies against GABAb receptors (GABAb receptors are the G-protein-coupled receptors (GPCRs) for γ-aminobutyric acid (GABA), the main inhibitory neurotransmitter in the central nervous system) and α-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid (AMPA) receptors can be detected in paraneoplastic syndrome and classical limbic encephalitis with early and prominent seizures. The antibodies may be present together with other autoantibodies in around 50% of cases (antibodies against GAD-65, VGCC, and TPO).",
+        "repeat_frequency": "significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology The Churchill Hospital Old Road Headington Oxford OX3 7LJ",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/01/GABAb-receptor-AMPA-receptor-1-2-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "ganglioside-abs-gm1",
+      "name": "Ganglioside Abs GM1",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "G",
+      "categories": [
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "ELISA",
+        "reference_range": "0-200 titre",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile: 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Guillian-barre syndrome, chronic demyelinating polyneuropathy, Multifocal motorneuropathy",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Glasgow Neuroimmunology Laboratory Level 1B Laboratory Medicine & Facilities building Department of Immunology Southern General Hospital 1345 Govan Road Glasgow GS1 4TF",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/03/Ganglioside-Abs-GM1.pdf",
+        "detail_type": "pdf",
+        "last_updated": "March 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "ganglioside-abs-gq1b",
+      "name": "Ganglioside Abs GQ1b",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "G",
+      "categories": [
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "ELISA",
+        "reference_range": "0-25 titre",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Miller-Fisher Syndrome",
+        "repeat_frequency": "At significant change of clinical symptom"
+      },
+      "referred_to": "Glasgow Neuroimmunology Laboratory Level 1B Laboratory Medicine & Facilities building Department of Immunology Southern General Hospital 1345 Govan Road Glasgow GS1 4TF",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/03/Ganglioside-Abs-GQ1b.pdf",
+        "detail_type": "pdf",
+        "last_updated": "March 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "glycated-haemoglobin",
+      "name": "Glycated Haemoglobin",
+      "aliases": [
+        "HbA1c"
+      ],
+      "department": "Biochemistry",
+      "letter": "G",
+      "categories": [
+        "diabetes-metabolic",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        }
+      ],
+      "notes": "HbA1c",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "haemoglobinopathy-screening",
+      "name": "Haemoglobinopathy Screening",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "H",
+      "categories": [
+        "haemoglobinopathy",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "lamotrigine",
+      "name": "Lamotrigine",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "L",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "magnesium-blood-and-urine",
+      "name": "Magnesium (Blood and Urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "M",
+      "categories": [
+        "clinical-chemistry",
+        "nutrition-micronutrients",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": false
+        },
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mmol/L",
+        "reference_range": "0.7 - 1 mmol/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Magnesium",
+        "match_method": "exact",
+        "units": "mmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "low": 0.7,
+            "high": 1.0,
+            "raw": {
+              "sex": "all",
+              "low": "0.7",
+              "high": "1"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "met-haemoglobin",
+      "name": "Met-haemoglobin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "M",
+      "categories": [
+        "toxicology",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "muscle-specific-tyrosine-kinase-musk",
+      "name": "Muscle Specific Tyrosine Kinase (MUSK)",
+      "aliases": [
+        "MUSK"
+      ],
+      "department": "Immunology",
+      "letter": "M",
+      "categories": [
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "RIA",
+        "reference_range": "Negative",
+        "interferences": "None\n\n(Last Update January 2025)"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Patients suspected of Myasthenia gravis and who are acetylcholine receptor antibody negative.",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "The Neuroscience Laboratories The Walton Centre NHS Foundation Trust Lower Lane Fazakerley Liverpool Merseyside L9 7LJ 0151 556 3262 wcf-tr.Neurobiochemistry@nhs.net",
+      "notes": "MUSK",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/01/Muscle-Specific-Tyrosine-Kinase-MUSK.pdf",
+        "detail_type": "pdf",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "myelin-associated-glycoprotein-mag",
+      "name": "Myelin Associated Glycoprotein (MAG)",
+      "aliases": [
+        "MAG"
+      ],
+      "department": "Immunology",
+      "letter": "M",
+      "categories": [
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "ELISA",
+        "reference_range": "Neg = <1000 BTU (Boulman Time Unit)",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "IgM monoclonal neuropathy",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology The Churchill Hospital Old Road Headington Oxford OX3 7LJ",
+      "notes": "MAG",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Myelin-Associated-Glycoprotein-MAG.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "nmda-n-methyl-d-aspartate-receptor-antibodies",
+      "name": "NMDA – N-methyl-D-aspartate receptor antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "N",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum",
+          "plasma",
+          "csf"
+        ],
+        "specimen_type_raw": "A paired 0.5mL serum and 0.5mL CSF sample, although plasma is acceptable.",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 0.5,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Cell based assay/Immunofluorescence Microscopy",
+        "reference_range": "Negative"
+      },
+      "turnaround": {
+        "raw": "(calendar days from sample receipt to authorised result): Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "NMDA receptor antibodies are associated with the different sub units of the NMDA receptor. Antibodies to the delta or NR2 subunits of NMDA receptor are associated with limbic encephalitis, systemic lupus erythematosus (SLE), ataxia and epilepsia partialis continua. Antibodies against the NR1, NR2A and NR2B subunits of the NMDA are found in patients presenting with psychiatric symptoms, amnesia, seizures, dyskinesias, autonomic dysfunction and loss of consciousness. In women younger than 45 years, a form of encephalitis associated with ovarian teratoma and presenting with seizures and psychiatric symptoms has been described.\n\nImmunology For additional information please see our referral laboratory's user guide: http://www.ouh.nhs.uk/immunology/diagnostic-tests/tests-catalogue/nmda-antibodies.aspx",
+        "repeat_frequency": "At change of clinical symptoms"
+      },
+      "referred_to": "Clinical Laboratory Immunology Churchill Hospital Churchill Drive Old Road Headington Oxford OX3 7LE UK",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/NMDA-%E2%80%93-N-methyl-D-aspartate-receptor-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2018",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "paraneoplastic-neuronal-antibodies",
+      "name": "Paraneoplastic Neuronal Antibodies",
+      "aliases": [],
+      "description": "Paraneoplastic Neuronal Antibodies Analysis includes antibodies to Amphiphysin, CV2, PNMA2(Ma2), Ri, Yo, Hu, Recoverin, SOX1, Titin, Zic4, and GAD65 and Tr (DNER). Used to determine if an underlying malignancy exists alongside neurological disease. Please note: Antibodies to Ma1 are no longer performed in this laboratory.",
+      "department": "Immunology",
+      "letter": "P",
+      "categories": [
+        "tumour-markers",
+        "autoimmunity",
+        "sexual-health-sti",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunoblot",
+        "reference_range": "Negative",
+        "interferences": "Interferences may be possible by administration of intravenous immunoglobulins (so-called IVIG). At present no further interferences by drugs are known. After plasmapheresis preliminary positive results may become weak or negative.",
+        "eqa_scheme": "UK NEQAS for Paraneoplastic Antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 5",
+        "days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "clinical": {
+        "indications": "Cerebellar degeneration, encephalitis, neuropathy",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/07/Paraneoplastic-Neuronal-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "June 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "peritoneal-fluid",
+      "name": "Peritoneal fluid",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "P",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "peritoneal-fluids",
+      "name": "Peritoneal Fluids",
+      "aliases": [],
+      "description": "Continuous ambulatory peritoneal dialysis (CAPD) is used as an alternative to haemodialysis for the management of patients with end-stage renal failure.",
+      "department": "Bacteriology",
+      "letter": "P",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "specimen_type_raw": "In a sealed plastic bag with a request form.\n\nCell count = Sterile leakproof container in a sealed plastic bag containing 20mL of fluid for microscopy. Culture = Inoculated BD BACTEC Plus Aerobic/Anaerobic (blue/purple) BC bottles.",
+        "container": "Withdraw fluid aseptically from the injection port of the plastic dialysate bag with a sterile needle and syringe and transfer to a CE marked leak proof containers and place in sealed plastic bag.",
+        "minimum_volume_raw": "Minimum volume of10mL.\n\nIf blood culture bottles are used they should be inoculated aseptically with 5-10 mL of dialysate",
+        "volume": {
+          "value": 10.0,
+          "unit": "mL"
+        },
+        "collection": "Use aseptic technique.\n\nCollect specimens in appropriate CE marked leak proof containers and transport specimens in sealed plastic bags.\n\nLarge volumes or whole dialysate bags may require special transportation according to local protocols. They should be transported in rigid, leakproof outer containers.",
+        "transport": "Specimens should be transported and processed as soon as possible",
+        "special_precautions": "Collect specimens before antimicrobial therapy where possible.\n\nBacteriology performs differentials, therefore one sterile pot is required and one set of blood culture"
+      },
+      "analysis": {
+        "units": "Cell count x 106 per litre",
+        "interferences": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "turnaround": {
+        "raw": "2 - 7 working days for culture 30 - 60 mins for cell count. Telephone the laboratory in advance for urgent microscopy\n\nBacteriology",
+        "days": {
+          "min": 2.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Peritoneal-Fluids.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "peritoneal-washings",
+      "name": "Peritoneal washings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "P",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "phenobarbital",
+      "name": "Phenobarbitone",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "P",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mg/L",
+        "reference_range": "10 - 40 mg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Phenobarbital",
+        "match_method": "exact",
+        "units": "mg/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 10.0,
+            "high": 40.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "low": "10",
+              "high": "40"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "Urgent 2 hours, routine 4 hours",
+        "days": {
+          "min": 0.08,
+          "max": 0.08
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "phenytoin",
+      "name": "Phenytoin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "P",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Phenytoin (blood)",
+        "match_method": "exact",
+        "units": "mg/L",
+        "notes": "Not age or gender specific 5-20 mg/L"
+      },
+      "turnaround": {
+        "raw": "Urgent 2 hours, routine 4 hours",
+        "days": {
+          "min": 0.08,
+          "max": 0.08
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.27,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "pleural-fluid",
+      "name": "Pleural fluid",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "P",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "retroperitoneal-mass-fna",
+      "name": "Retroperitoneal mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "R",
+      "categories": [
+        "cytology",
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "routine-haemoglobinopathy-screening",
+      "name": "Routine haemoglobinopathy screening",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "R",
+      "categories": [
+        "haemoglobinopathy",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "serum-folate",
+      "name": "Serum folate",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "S",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "3.9 - 20 μg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Folate (blood)",
+        "match_method": "fuzzy:1.00",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 3.9,
+            "high": 20.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "low": "3.9",
+              "high": "20"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "serum-vitamin-b12",
+      "name": "Serum vitamin B12",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "S",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plaqsma (paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plaqsma (paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "ng/L",
+        "reference_range": "197 - 771 ng/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Serum Vitamin B12",
+        "match_method": "exact",
+        "units": "ng/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 197.0,
+            "high": 771.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "age_min": "All",
+              "age_max": "All",
+              "low": "197",
+              "high": "771"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "universal-antenatal-haemoglobinopathy-screening",
+      "name": "Universal Antenatal Haemoglobinopathy Screening",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "U",
+      "categories": [
+        "antenatal-pregnancy",
+        "haemoglobinopathy",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "valproate",
+      "name": "Valproate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "V",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mg/L",
+        "reference_range": "50 - 100 mg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Valproate",
+        "match_method": "exact",
+        "units": "mg/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 50.0,
+            "high": 100.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "low": "50",
+              "high": "100"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "Urgent 2 hours, routine 4 hours",
+        "days": {
+          "min": 0.08,
+          "max": 0.08
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "vitamin-b12",
+      "name": "Vitamin B12",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "V",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plaqsma (paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plaqsma (paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "ng/L",
+        "reference_range": "197 - 771 ng/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Serum Vitamin B12",
+        "match_method": "fuzzy:1.00",
+        "units": "ng/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 197.0,
+            "high": 771.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "age_min": "All",
+              "age_max": "All",
+              "low": "197",
+              "high": "771"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "voltage-gated-calcium-channel-antibodies",
+      "name": "Voltage-Gated Calcium Channel Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "V",
+      "categories": [
+        "bone-metabolism",
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "RIA",
+        "reference_range": "0-45 pmol",
+        "interferences": "VGCC antibodies may be found with paraneoplastic neuronal antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Lambert Eaton Myasthenic syndrome, cerebellar degeneration",
+        "repeat_frequency": "significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology The Churchill Hospital Old Road Headington Oxford OX3 7LJ",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Voltage-Gated-Calcium-Channel-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "voltage-gated-potassium-channel-antibodies",
+      "name": "Voltage-Gated Potassium Channel Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "V",
+      "categories": [
+        "clinical-chemistry",
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "RIA",
+        "reference_range": "0-100 pmol",
+        "interferences": "Approx 20% of patients with VGKC antibodies will have an underlying thymoma. Patients may have Myasthenia gravis with or without acetylcholine receptor antibodies."
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Peripheral nerve hyperexcitability, neuromyotonia, Morvan's syndrome.",
+        "repeat_frequency": "significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology The Churchill Hospital Old Road Headington Oxford OX3 7LJ",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Voltage-Gated-Potassium-Channel-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "xanthochromia-screen-csf",
+      "name": "Xanthochromia Screen (CSF)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "X",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf"
+        ],
+        "specimen_type_raw": "CSF plain",
+        "accepted_specimens": [
+          "CSF plain"
+        ],
+        "preferred_specimen": "CSF plain"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Xanthochromia Screen (CSF)",
+        "match_method": "exact",
+        "notes": "interpretive comments"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.09,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types"
+        ]
+      }
+    },
+    {
+      "id": "yeasts-and-moulds",
+      "name": "Yeasts and Moulds",
+      "aliases": [
+        "CSF Bilirubin",
+        "CSF Xanthochromia"
+      ],
+      "description": "Identification and susceptibility testing of yeasts and moulds Identification and susceptibility testing of all medically important yeasts and moulds",
+      "department": "Mycology",
+      "letter": "Y",
+      "categories": [
+        "liver-function",
+        "mycology",
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "container": "Category 2 pure cultures as per Microbiology guidelines. Do NOT send suspected or confirmed Category 3 pathogens (contact the laboratory in advance for guidance as needed).\n\nTransportation • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between\n\nLaboratory Medicine Care Division\n\nMycology Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). • Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/"
+      },
+      "analysis": {
+        "reference_range": "MIC concentrations are provided as mg/litre.\n\nAll reported clinical breakpoints are species-specific in accordance with EUCAST guidelines, with the exception of caspofungin breakpoints, provided by Clinical Laboratory Standards Institute (CLSI).\n\nWhere interpretation of an MIC is absent, there is insufficient evidence to set a breakpoint for the species and/or drug (see EUCAST guidance for clinical interpretation)."
+      },
+      "turnaround": {
+        "raw": "shown below from when the culture is available for testing.\n\nIdentification is performed by conventional methods, including MALDI-ToF. Molecular sequencing identification is available at extra charge when required. Yeasts: 1-3 days Longer for some slow-growing yeasts and if molecular sequence-based identification is required.\n\nMoulds: 1-3 days Longer for some slow-growing moulds Longer (7-10 days) if molecular sequence-based identification is required.\n\nSusceptibility testing is performed by broth micro-dilution method using European Committee on Antimicrobial Susceptibility Testing (EUCAST) standards to establish minimum inhibitory concentrations (MICs) for yeasts and MICs and minimum effective concentrations (MECs) for moulds. Interpretations are provided for species and drugs with breakpoints. Yeasts: 1-3 days Longer for some slow-growing yeasts and some drugs.\n\nMoulds: 3-5 days Longer for some slow-growing moulds and some drugs.",
+        "days": {
+          "min": 1.0,
+          "max": 3.0
+        }
+      },
+      "clinical": {
+        "references": "https://www.eucast.org/fungi-afst/methodology-and-instructions/ast-of-yeasts/ https://www.eucast.org/fungi-afst/methodology-and-instructions/ast-of-moulds/ https://www.eucast.org/fungi-afst/clinical-breakpoints-and-interpretation/clinical-breakpoint-table/"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Identification-and-susceptibility-testing-of-yeasts-and-moulds.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.container",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    }
+  ]
+}

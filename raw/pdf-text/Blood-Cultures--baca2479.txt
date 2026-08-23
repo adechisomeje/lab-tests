@@ -1,0 +1,173 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/3 
+ 
+Division of Laboratory Medicine 
+ 
+Bacteriology 
+mft.nhs.uk/laboratorymedicine 
+1/3 
+Blood Cultures 
+ 
+Bloodstream Infection, Sepsis, Neonatal Sepsis, Infective endocarditis, Prosthetic valve endocarditis (PVE), 
+Bacteraemia. 
+ 
+The Blood Culture system can also be used for small volumes of the following sterile fluids to aid the 
+recovery of fastidious organisms, for example but not limited to, CAPD/peritoneal fluids (Ascites), Joint Fluids 
+(Prosthetic & Natural), and Stem Cell fluids. For all other sterile fluids please refer to the Sterile Fluids 
+(Bacteriology) section. 
+ 
+General information 
+ 
+ 
+ 
+ 
+ 
+ 
+Collection container (including preservatives): Collect specimens in BD Bactec bottles using aseptic 
+technique. The bottles should be stored at room temperature before use. 
+ 
+Specimen type: Venous blood, arterial blood, peripheral blood, sterile fluids 
+ 
+  
+BD BACTEC bottles 
+ 
+ 
+Collection: A blood culture set is defined as one aerobic (Silver/Blue Top) and one anaerobic (Purple top) 
+bottle. This set is also suitable for patients on antibiotics, or where fungaemia is suspected. 
+ 
+For infants and neonates, a single Peds aerobic bottle (Pink top) may be requested.  
+ 
+For small volume sterile fluids such as Pacemaker fluids & Stem cells, a single Peds aerobic bottle (Pink top) 
+should be used. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/3 
+ 
+Division of Laboratory Medicine 
+ 
+Bacteriology 
+mft.nhs.uk/laboratorymedicine 
+2/3 
+ 
+Please refer to MFT sepsis pathway for guidance. 
+ 
+Take two consecutive sets from two separate venepuncture sites during any 24hr period for each septic 
+episode. For neonates, take a single low-volume Peds aerobic bottle Take two sets during the first hour in 
+cases of severe sepsis prior to commencing antibiotic treatment, provided this does not significantly delay 
+antibiotic administration. 
+ 
+Take at least three sets during a 24hr period where the patient has suspected infective endocarditis.       
+ 
+Specimen transport: 
+ 
+ 
+Collect specimens before antimicrobial therapy where possible. Samples should be taken as soon as possible 
+after a spike of fever.  Samples should not be refrigerated. 
+ 
+Inoculated bottles should be incubated as soon as possible, and within a maximum of four hours. The four 
+hour turnaround time from collection to incubation for blood culture samples reflects their clinical 
+significance.  
+ 
+Type and volume of sample: 
+ 
+• 
+Adults – Purple top and Silver/Blue top bottles. Inoculate up to 10mL to each bottle. 
+• 
+Children – Pink top bottle. Inoculate up to 3mL 
+• 
+Neonates – Pink top bottle. Inoculate preferably 1-2mL 
+ 
+Do not exceed the manufacturer’s recommended maximum volume for each bottle as shown on label. The 
+minimum volume (shown on blood culture bottles) should be met where possible to comply with 
+manufacturer’s requirements. 
+ 
+Special precautions: 
+ 
+• 
+Use aseptic technique. 
+• 
+Inspect the blood culture bottles for damage. 
+• 
+Do not use blood culture bottles which are bulging at the rubber seal as this may be a sign of 
+bacterial growth and contamination. 
+• 
+Ensure that the blood culture bottles have not exceeded their expiry date. 
+• 
+Do not re-sheathe needles. 
+ 
+ 
+Laboratory information 
+ 
+Measurement units: Growth detected or not detected 
+ 
+Biological reference units: Not applicable 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   3/3 
+ 
+Division of Laboratory Medicine 
+ 
+Bacteriology 
+mft.nhs.uk/laboratorymedicine 
+3/3 
+Turnaround time for provisional result (working days): Negative result 2 days  
+Turnaround time to final result (working days): 6 days for final negative results, 7 days for positive results 
+ 
+ 
+Clinical information 
+ 
+Clinical decision points: Not applicable 
+ 
+Factors known to significantly affect the results: Any recent antimicrobial therapy can have a significant 
+effect on blood culture results by decreasing the sensitivity of the test. This may be of particular importance 
+in those patients receiving prophylactic antibiotics and who are at high risk of bloodstream infections. If 
+patients have received previous antimicrobial treatment, bacteraemia should be considered even if blood 
+culture results are negative. There is a direct relationship between blood volume and yield, with 
+approximately a 3% increase in yield per mL of blood cultured. False negatives may occur if inadequate blood 
+culture volumes are submitted. 
+ 
+Limitations: It is estimated that 2-5% of positives samples may be missed if bottles are pre-incubated, these 
+organisms may fail to trip the threshold algorithm of the continuous monitoring blood culture machine.  This 
+may occur with Abiotrophia species (nutritionally variant streptococci), S. pneumoniae which have 
+undergone a degree of autolysis, and fastidious organisms which are unable to grow on routine solid culture 
+media. Organisms may include: 
+ 
+• Campylobacter species. 
+• Helicobacter species. 
+• Capnophilic organisms. 
+• Slow-growing anaerobes 
+ 
+Please find below the link to the local Blood Culture Policy, which outlines, among other details, the 
+required blood culture volume and the necessity for urgent transportation of the bottles to the 
+laboratory. 
+ 
+https://intranet.mft.nhs.uk/documents/policies/1072 
+ 
+ 
+ 
+(Last updated November 2025) 

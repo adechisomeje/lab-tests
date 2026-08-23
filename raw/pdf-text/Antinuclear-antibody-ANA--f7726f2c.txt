@@ -1,0 +1,168 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/3 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/3 
+Antinuclear antibody (ANA)  
+ 
+General information  
+ 
+'Antinuclear antibody' refers to an old test for IgG against nuclear components, detected by 
+immunofluorescence (see below). This test has been superseded by faster, more reproducible parallel tests 
+for each of the nuclear components, namely ENA (extractable nuclear antigens SS-A (SS-A52, SS-A60) (Ro), 
+SS-B (La), Sm, Sm/RNP, RNP (RNPA, RNP 68), Ribo P, Chromatin, Jo-1 and Scl-70), DNA and centromere. 
+Antibodies to extractable nuclear antigens are of use in the classification of clinical subsets of connective 
+tissue diseases and in providing prognostic information. 
+ 
+When you request ANA we will perform the above tests; if any are positive this will be indicated as a positive 
+ANA. Please see also DNA antibodies page.  
+ 
+Specimen transport: At room temperature  
+ 
+Repeat frequency: Not more than once a year, unless clinical picture has changed  
+ 
+Special precautions: None  
+ 
+Laboratory information  
+ 
+Normal reference range: ANA – Neg, ENAs <0-0.9AI, Scl-70 0-1.6 
+ 
+Volume and sample type: 4ml serum 
+ 
+Method: Multiplex flow immunoassay  
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median – 2 
+ 
+Participation in EQA Scheme: UK NEQAS for Nuclear and Related Antigens and UK NEQAS for Digital ANA 
+(Image based) 
+ 
+Clinical information  
+ 
+Indications for the test: Suspected SLE, connective tissue disease, hepatitis or drug induced lupus. Some of 
+the specific associations of positive results are described below: 
+• 
+Anti-centromere – limited cutaneous systemic sclerosis, primary biliary cirrhosis 
+• 
+Anti-Ro (SS-A) – SLE, Sjögren's syndrome, neonatal lupus, congenital heart block 
+• 
+Anti-La (SS-B) – SLE, Sjögren's syndrome, neonatal lupus, congenital heart block 
+• 
+Anti-Sm – SLE 
+• 
+Anti-RNP 68 – SLE, Mixed connective tissue disease  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/3 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/3 
+• 
+Anti-Scl 70 – Progressive systemic sclerosis (generalised scleroderma)  
+• 
+Anti-Jo-1 – Polymyositis, Dermatomyositis  
+• 
+Anti-Ribo P – SLE with psychiatric symptoms 
+• 
+Anti-Chromatin – SLE with nephritis  
+ 
+Factors affecting the test: False positives may be seen during infection and are more common with 
+increasing patient age. For these reasons positive results have a low predictive value in the absence of 
+clinical signs of the diseases indicated above. ANA should not, therefore, be used as a 'screen' in patients 
+with vague symptoms and signs.  
+ 
+ 
+Immunofluorescent antinuclear antibody (IFANA)  
+ 
+General information  
+ 
+This is the immunofluorescence assay for detecting IgG ANA antibodies. It is not performed routinely for ANA 
+antibodies by the laboratory (see above) but is available upon specific request. 
+ 
+Specimen transport: At room temperature  
+ 
+Repeat frequency: Not more than once a year, unless clinical picture has changed  
+ 
+Special precautions: None  
+ 
+Laboratory information  
+ 
+Normal reference range: Negative 
+ 
+Volume and sample type: 4ml serum  
+ 
+Method: Indirect immunofluorescence 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median – 5 
+ 
+Participation in EQA Scheme: UK NEQAS for Nuclear and Related Antigens  
+ 
+Clinical information  
+ 
+Indications for the test: Suspected SLE, connective tissue disease, hepatitis or drug induced lupus, where the 
+routine ANA is negative. This test can also be useful particularly in the context of investigation of 
+autoimmune hepatitis. 
+Some commonly seen staining patterns are highlighted below: 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   3/3 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+3/3 
+• 
+Centromere pattern – limited cutaneous systemic sclerosis, primary biliary cirrhosis 
+• 
+Homogeneous pattern – SLE, autoimmune hepatitis, Juvenile Idiopathic Arthritis, mixed connective 
+tissue disease 
+• 
+Speckled pattern – SLE, Sjögren's syndrome, autoimmune myopathy, systemic sclerosis, mixed 
+connective tissue disease; note speckled ANA can be associated with antibodies to SS-A and SS-B 
+which carry a risk of neonatal lupus and congenital heart block 
+• 
+Nucleolar pattern – systemic sclerosis, systemic sclerosis-autoimmune myopathy overlap and can be 
+seen in other connective tissue diseases 
+• 
+Multiple nuclear dots patterns – primary biliary cirrhosis, autoimmune myopathy and other 
+autoimmune/inflammatory conditions 
+ 
+ 
+Factors affecting the test: False positives may be seen during infection and are more common with 
+increasing patient age. For these reasons positive results have a low predictive value in the absence of 
+clinical signs of the diseases indicated above. ANA should not, therefore, be used as a 'screen' in patients 
+with vague symptoms and signs.  
+ 
+ 
+(Last updated February 2024) 

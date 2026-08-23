@@ -1,0 +1,1055 @@
+{
+  "meta": {
+    "department": "Non-Gynaecology Cytology",
+    "version": "0.1.0",
+    "test_count": 37
+  },
+  "tests": [
+    {
+      "id": "abdominal-mass-fna",
+      "name": "Abdominal mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "A",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "acid-fast-bacilli-mycobacteria-special-stain",
+      "name": "Acid fast bacilli (mycobacteria) Special Stain",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "A",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "adrenal-fna",
+      "name": "Adrenal FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "A",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "ascitic-fluid",
+      "name": "Ascitic fluid",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "A",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "bile-duct-brushings",
+      "name": "Bile duct brushings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "B",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "bladder-washings",
+      "name": "Bladder washings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "B",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "bronchial-brushings",
+      "name": "Bronchial brushings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "B",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "bronchial-trap",
+      "name": "Bronchial trap",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "B",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "bronchoalveolar-lavage",
+      "name": "Bronchoalveolar lavage",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "B",
+      "categories": [
+        "respiratory"
+      ],
+      "clinic_profiles": [],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "cerebrospinal-fluid",
+      "name": "Cerebrospinal fluid",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "C",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "fungi-special-stain",
+      "name": "Fungi – Special Stain",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "F",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "glycogen-special-stain",
+      "name": "Glycogen – Special Stain",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "G",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "immunocytochemistry",
+      "name": "Immunocytochemistry",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "I",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "liver-fna",
+      "name": "Liver FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "L",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "lung-fna",
+      "name": "Lung FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "L",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "lymph-node-fna",
+      "name": "Lymph node FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "L",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "mediastinal-mass-fna",
+      "name": "Mediastinal mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "M",
+      "categories": [
+        "sexual-health-sti",
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "mucin-special-stain",
+      "name": "Mucin – Special Stain",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "M",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "neck-fna",
+      "name": "Neck FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "N",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "oesophageal-brushings",
+      "name": "Oesophageal brushings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "O",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "ovarian-cyst-fna",
+      "name": "Ovarian cyst FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "O",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "pancreatic-fna",
+      "name": "Pancreatic FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "P",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "paratesticular-fna",
+      "name": "Paratesticular FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "P",
+      "categories": [
+        "sexual-health-sti",
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "peritoneal-fluid",
+      "name": "Peritoneal fluid",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "P",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "peritoneal-washings",
+      "name": "Peritoneal washings",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "P",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "pleural-fluid",
+      "name": "Pleural fluid",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "P",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "renal-fna",
+      "name": "Renal FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "R",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "retroperitoneal-mass-fna",
+      "name": "Retroperitoneal mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "R",
+      "categories": [
+        "cytology",
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "salivary-gland-fna",
+      "name": "Salivary gland FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "S",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "splenic-fna",
+      "name": "Splenic FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "S",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "sputum",
+      "name": "Sputum",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "S",
+      "categories": [
+        "bacteriology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "subcutaneous-mass-fna",
+      "name": "Subcutaneous mass FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "S",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "testicular-fna",
+      "name": "Testicular FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "T",
+      "categories": [
+        "sexual-health-sti",
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "thyroid-fna",
+      "name": "Thyroid FNA",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "T",
+      "categories": [
+        "thyroid",
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": false
+        },
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "ureteric-washing",
+      "name": "Ureteric washing",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "U",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "urethral-washing",
+      "name": "Urethral washing",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "U",
+      "categories": [
+        "cytology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "urine-voided-catheterised-instrumented-or-from-ileal-conduit",
+      "name": "Urine (voided, catheterised, instrumented or from ileal conduit)",
+      "aliases": [
+        "Urine Culture"
+      ],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "U",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    }
+  ]
+}

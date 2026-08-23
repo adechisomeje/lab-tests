@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "department": "Histopathology",
+    "version": "0.1.0",
+    "test_count": 7
+  },
+  "tests": [
+    {
+      "id": "electron-microscopy",
+      "name": "Electron microscopy",
+      "aliases": [],
+      "department": "Histopathology",
+      "letter": "E",
+      "categories": [
+        "histopathology"
+      ],
+      "clinic_profiles": [],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/histopathology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "enzyme-histochemistry",
+      "name": "Enzyme histochemistry",
+      "aliases": [],
+      "department": "Histopathology",
+      "letter": "E",
+      "categories": [
+        "histopathology"
+      ],
+      "clinic_profiles": [],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/histopathology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "histopathology-paediatric-histopathology",
+      "name": "Histopathology – Paediatric Histopathology",
+      "aliases": [],
+      "department": "Histopathology",
+      "letter": "H",
+      "categories": [
+        "histopathology"
+      ],
+      "clinic_profiles": [],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/histopathology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "histopathology-routine-adult-histopathology",
+      "name": "Histopathology – Routine (adult) Histopathology",
+      "aliases": [],
+      "department": "Histopathology",
+      "letter": "H",
+      "categories": [
+        "histopathology"
+      ],
+      "clinic_profiles": [],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/histopathology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "immunofluorescence-histopathology",
+      "name": "Immunofluorescence Histopathology",
+      "aliases": [],
+      "department": "Histopathology",
+      "letter": "I",
+      "categories": [
+        "histopathology"
+      ],
+      "clinic_profiles": [],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/histopathology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "perinatal-post-mortems",
+      "name": "Perinatal post mortems",
+      "aliases": [],
+      "department": "Histopathology",
+      "letter": "P",
+      "categories": [
+        "histopathology"
+      ],
+      "clinic_profiles": [],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/histopathology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "resin-embedding-thin-sectioning-electron-microscopy",
+      "name": "Resin embedding/thin sectioning Electron Microscopy",
+      "aliases": [],
+      "department": "Histopathology",
+      "letter": "R",
+      "categories": [
+        "histopathology"
+      ],
+      "clinic_profiles": [],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/histopathology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    }
+  ]
+}

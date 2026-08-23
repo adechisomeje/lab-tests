@@ -1,0 +1,16 @@
+# Source PDFs: 48MB, re-downloadable with `make fetch`, and redistributing the
+# provider's original documents is the riskier licensing choice. The extracted
+# text in raw/pdf-text/ IS tracked, so the build is reproducible without them.
+raw/pdfs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store

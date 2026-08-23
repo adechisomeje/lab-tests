@@ -1,0 +1,79 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/2 
+Leukocyte Adhesion Deficiency (LAD) Markers 
+ 
+General information 
+ 
+Leucocyte adhesion deficiency (LAD) is a rare autosomal recessive disorder that is characterised by the 
+inability of neutrophils to migrate from blood vessels to the sites of infection. 
+ 
+Patients with LAD present with a marked leucocytosis and recurrent infections. In the neonate with LAD a 
+presenting feature is a delay in the separation of the umbilical cord. 
+ 
+The primary mechanism for neutrophil adhesion to vascular endothelium is β2-integrin, LFA-1 (CD11a/CD18) 
+and Mac-1 (CD11b/CD18) being the two dominant subunits, and LAD type I is due to a deficiency of these 
+surface markers. 
+ 
+Assay interferences: Older samples may exhibit loss of surface antigens and therefore the sample should be 
+as fresh as possible. 
+ 
+ 
+Laboratory information 
+ 
+Analytes: CD11a, CD11b and CD18 
+ 
+Units: % 
+ 
+Specimen type: Peripheral blood - EDTA  
+ 
+Method: Flow cytometry 
+ 
+Reference range: Normal expression >90% for each marker 
+ 
+Specimen transport: At room temperature. 
+ 
+Repeat frequency: Repeat only indicated following bone marrow transplantation of an affected individual. 
+ 
+Turnaround times: 1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00 
+ 
+Participation in EQA scheme: No formal EQA scheme is possible (as a fresh sample is required). Internal QA 
+is performed by periodically re-testing well-defined patients with the condition. 
+ 
+ 
+Clinical information 
+ 
+Interpretation of results: A relevant interpretive comment will be added by the laboratory. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/2 
+ 
+ 
+(Last updated October 2023) 

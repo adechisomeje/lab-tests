@@ -1,0 +1,3112 @@
+{
+  "meta": {
+    "profile": "haematology-clinic",
+    "name": "Haematology Clinic",
+    "version": "0.1.0",
+    "rationale": "Counts and morphology, coagulation factor assays, thrombophilia genetics and haemoglobin variant analysis.",
+    "test_count": 67
+  },
+  "tests": [
+    {
+      "id": "activated-partial-thromboplastin-time",
+      "name": "Activated partial thromboplastin time",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "A",
+      "categories": [
+        "coagulation",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "antibody-screen-and-save-serum",
+      "name": "Antibody screen and save serum",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "A",
+      "categories": [
+        "transfusion",
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "antibody-titre",
+      "name": "Antibody titre",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "A",
+      "categories": [
+        "transfusion",
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "anticoagulant-control-heparin-control-oral-anticoagulant-control-inr",
+      "name": "Anticoagulant Control – Heparin control; Oral Anticoagulant Control (INR)",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "A",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "antithrombin",
+      "name": "Antithrombin",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "A",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "aptt",
+      "name": "APTT",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "A",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "bleeding-time",
+      "name": "Bleeding Time",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "B",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "blood-group",
+      "name": "Blood group",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "B",
+      "categories": [
+        "transfusion"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "blood-transfusion",
+      "name": "Blood Transfusion",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "B",
+      "categories": [
+        "transfusion"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "bone-marrow-report",
+      "name": "Bone marrow report",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "B",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "cold-agglutinin-titres-4-c",
+      "name": "Cold agglutinin titres (4°C)",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "C",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "cord-blood-investigations",
+      "name": "Cord blood investigations",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "C",
+      "categories": [
+        "transfusion",
+        "sexual-health-sti",
+        "antenatal-pregnancy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "cross-matching",
+      "name": "Cross matching",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "C",
+      "categories": [
+        "transfusion"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "direct-antiglobulin-test",
+      "name": "Direct Antiglobulin Test",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "D",
+      "categories": [
+        "transfusion"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "dna-testing-for-the-haemoglobinopathies",
+      "name": "DNA Testing for the Haemoglobinopathies",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "D",
+      "categories": [
+        "sexual-health-sti",
+        "haemoglobinopathy",
+        "genetics-molecular",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "epo",
+      "name": "EPO",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "E",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "erythrocyte-sedimentation-rate-esr",
+      "name": "Erythrocyte Sedimentation Rate (ESR)",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "E",
+      "categories": [
+        "haematology",
+        "inflammation-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "erythropoietin",
+      "name": "Erythropoietin",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "E",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "factor-ii-assay",
+      "name": "Factor II assay",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "factor-ix-assay",
+      "name": "Factor IX assay",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "factor-ix-inhibitors",
+      "name": "Factor IX inhibitors",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "factor-v-assay",
+      "name": "Factor V assay",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "factor-v-leiden-mutation-screen",
+      "name": "Factor V Leiden Mutation screen",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation",
+        "genetics-molecular"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "factor-vii-assay",
+      "name": "Factor VII assay",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "factor-viii-assay",
+      "name": "Factor VIII assay",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "factor-viii-inhibitors",
+      "name": "Factor VIII inhibitors",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "factor-x-assay",
+      "name": "Factor X assay",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "factor-xi-assay",
+      "name": "Factor XI assay",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "factor-xii-assay",
+      "name": "Factor XII assay",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "fbc",
+      "name": "FBC",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "fdp-d-dimers",
+      "name": "FDP D-Dimers",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "ferritin",
+      "name": "Ferritin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "F",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "12 - 150 μg/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Ferritin",
+        "match_method": "exact",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "400"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "400"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "fibrin-degradation-products",
+      "name": "Fibrin Degradation Products",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "fibrinogen",
+      "name": "Fibrinogen",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "folate-serum-and-red-cell",
+      "name": "Folate (serum and red cell)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "F",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "3.9 - 20 μg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Folate (blood)",
+        "match_method": "exact",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 3.9,
+            "high": 20.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "low": "3.9",
+              "high": "20"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "full-blood-count-and-automated-differential",
+      "name": "Full blood count and automated differential",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "g6pd-assay-if-screen-gives-intermediate-or-reduced-result",
+      "name": "G6PD Assay (if screen gives intermediate or reduced result)",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "G",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "g6pd-screen",
+      "name": "G6PD Screen",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "G",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "glandular-fever-screening-test",
+      "name": "Glandular fever screening test",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "G",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "haemochromatosis-c282y-h63d-and-s65c-genotyping",
+      "name": "Haemochromatosis C282Y, H63D and S65C genotyping",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "H",
+      "categories": [
+        "genetics-molecular"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "haemoglobinopathy-screening",
+      "name": "Haemoglobinopathy Screening",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "H",
+      "categories": [
+        "haemoglobinopathy",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "haptoglobulin-estimation",
+      "name": "Haptoglobulin Estimation",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "H",
+      "categories": [
+        "haematology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "hbs-screening-test-urgent-pre-operative-pts-1-yr-old",
+      "name": "HbS Screening Test – Urgent/pre-operative (Pts >1 yr Old)",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "H",
+      "categories": [
+        "haemoglobinopathy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "heparin-control",
+      "name": "Heparin control",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "H",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "inr",
+      "name": "INR",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "I",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "iron",
+      "name": "Iron",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "I",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "μmol/L",
+        "reference_range": "10 - 30 μmol/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Iron",
+        "match_method": "exact",
+        "units": "μmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "weeks/ years",
+            "age_min": 4.0,
+            "age_max": 1.0,
+            "low": 10.0,
+            "high": 30.0,
+            "raw": {
+              "sex": "all",
+              "age_unit": "Weeks/ Years",
+              "age_min": "4",
+              "age_max": "1",
+              "low": "10",
+              "high": "30"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 10.0,
+            "low": 5.0,
+            "high": 25.0,
+            "raw": {
+              "sex": "all",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "10",
+              "low": "5",
+              "high": "25"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 10.0,
+            "age_max": 18.0,
+            "low": 10.0,
+            "high": 25.0,
+            "raw": {
+              "sex": "all",
+              "age_unit": "Years",
+              "age_min": "10",
+              "age_max": "18",
+              "low": "10",
+              "high": "25"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 5.8,
+            "high": 34.5,
+            "raw": {
+              "sex": "all",
+              "age_unit": "Years",
+              "age_min": "18",
+              "age_max": "150",
+              "low": "5.8",
+              "high": "34.5"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "kleihauer-test",
+      "name": "Kleihauer test",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "K",
+      "categories": [
+        "transfusion",
+        "antenatal-pregnancy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "lupus-anticoagulant",
+      "name": "Lupus anticoagulant",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "L",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "manual-blood-film",
+      "name": "Manual blood film",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "M",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "oral-anticoagulant-control-inr",
+      "name": "Oral Anticoagulant Control (INR)",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "O",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "plasma-viscosity",
+      "name": "Plasma viscosity",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "P",
+      "categories": [
+        "haematology",
+        "inflammation-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "platelets-aggregation-studies",
+      "name": "Platelets Aggregation Studies",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "P",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "protein-c",
+      "name": "Protein C",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "P",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "protein-s",
+      "name": "Protein S",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "P",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "prothrombin-time",
+      "name": "Prothrombin time",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "P",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "pvis",
+      "name": "PVIS",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "P",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "reticulocyte-count",
+      "name": "Reticulocyte count",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "R",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "ripa",
+      "name": "RIPA",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "R",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "ristocetin-induced-platelet-aggregation-ripa",
+      "name": "Ristocetin induced platelet aggregation (RIPA)",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "R",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "routine-haemoglobinopathy-screening",
+      "name": "Routine haemoglobinopathy screening",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "R",
+      "categories": [
+        "haemoglobinopathy",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "serum-ferritin",
+      "name": "Serum ferritin",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "S",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "12 - 150 μg/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Ferritin",
+        "match_method": "fuzzy:1.00",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "400"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "400"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "serum-folate",
+      "name": "Serum folate",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "S",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "3.9 - 20 μg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Folate (blood)",
+        "match_method": "fuzzy:1.00",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 3.9,
+            "high": 20.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "low": "3.9",
+              "high": "20"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "serum-vitamin-b12",
+      "name": "Serum vitamin B12",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "S",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plaqsma (paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plaqsma (paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "ng/L",
+        "reference_range": "197 - 771 ng/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Serum Vitamin B12",
+        "match_method": "exact",
+        "units": "ng/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 197.0,
+            "high": 771.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "age_min": "All",
+              "age_max": "All",
+              "low": "197",
+              "high": "771"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "total-protein",
+      "name": "Total Protein",
+      "aliases": [
+        "Protein creatinine ratio (urine)"
+      ],
+      "department": "Biochemistry",
+      "letter": "T",
+      "categories": [
+        "coagulation",
+        "clinical-chemistry",
+        "renal-function"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "analysis": {
+        "units": "g/L",
+        "reference_range": "51 - 80 g/L (adult; 5 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Protein, total",
+        "match_method": "fuzzy:1.00",
+        "units": "g/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 15.0,
+            "low": 51.0,
+            "high": 80.0,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "<15",
+              "low": "51",
+              "high": "80"
+            }
+          },
+          {
+            "age_unit": "days/ye ars",
+            "age_min": 15.0,
+            "age_max": 1.0,
+            "low": 43.0,
+            "high": 69.0,
+            "raw": {
+              "age_unit": "Days/Ye ars",
+              "age_min": "15",
+              "age_max": "<1",
+              "low": "43",
+              "high": "69"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 6.0,
+            "low": 59.0,
+            "high": 73.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "<6",
+              "low": "59",
+              "high": "73"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 6.0,
+            "age_max": 9.0,
+            "low": 62.0,
+            "high": 75.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "6",
+              "age_max": "<9",
+              "low": "62",
+              "high": "75"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 9.0,
+            "low": 63.0,
+            "high": 78.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "9",
+              "age_max": "unspecified",
+              "low": "63",
+              "high": "78"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "notes": "Protein creatine ratio",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": false,
+        "present": [
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "transferrin-and-saturation",
+      "name": "Transferrin (and saturation)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "T",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "g/L",
+        "reference_range": "1.04 - 2.24 g/L (adult; 3 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Transferrin",
+        "match_method": "exact",
+        "units": "g/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "months/ years",
+            "age_min": 2.0,
+            "age_max": 1.0,
+            "low": 1.04,
+            "high": 2.24,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Months/ Years",
+              "age_min": "2",
+              "age_max": "1",
+              "low": "1.04",
+              "high": "2.24"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 17.0,
+            "low": 2.2,
+            "high": 3.37,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "17",
+              "low": "2.2",
+              "high": "3.37"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 17.0,
+            "age_max": 150.0,
+            "low": 2.0,
+            "high": 3.6,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Years",
+              "age_min": "17",
+              "age_max": "150",
+              "low": "2",
+              "high": "3.6"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "universal-antenatal-haemoglobinopathy-screening",
+      "name": "Universal Antenatal Haemoglobinopathy Screening",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "U",
+      "categories": [
+        "antenatal-pregnancy",
+        "haemoglobinopathy",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "vitamin-b12",
+      "name": "Vitamin B12",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "V",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plaqsma (paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plaqsma (paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "ng/L",
+        "reference_range": "197 - 771 ng/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Serum Vitamin B12",
+        "match_method": "fuzzy:1.00",
+        "units": "ng/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 197.0,
+            "high": 771.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "age_min": "All",
+              "age_max": "All",
+              "low": "197",
+              "high": "771"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    }
+  ]
+}

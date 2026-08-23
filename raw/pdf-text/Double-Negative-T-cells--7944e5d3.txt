@@ -1,0 +1,81 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/2 
+Double Negative T Cell (DNT) panel 
+ 
+General information 
+ 
+Assay principles: This test is usually done in conjunction with lymphocyte subsets surface markers (ID), in 
+which case a separate sample is not required. This assay is used in the investigation of Autoimmune 
+Lymphoproliferative Syndrome (ALPS) also known as Canale-Smith syndrome. 
+ 
+Patients with ALPS have an increase in a normally rare population of T cells that are alpha beta T-cell 
+receptor (TCR) positive, and negative for both CD4 and CD8 (double negative T cells - DNTs). 
+An ALPS-like phenotype could be identified in other immunological and haematological conditions and if this 
+result is unexpected, please discuss with adult or paediatric immunology.  
+ 
+Assay interferences: Older samples may exhibit loss of surface antigens and therefore the sample should be 
+as fresh as possible. 
+ 
+Laboratory information 
+ 
+Analyte: Double Negative T Cell (DNT) Panel 
+ 
+Units: % 
+ 
+Specimen type: Peripheral blood - EDTA  
+ 
+Method: Flow Cytometry 
+ 
+Frequency of analysis: Dependent on clinical indication 
+ 
+Turnaround times: 1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00 
+ 
+Specimen transport: At room temperature 
+ 
+Additional/special requirements: Note that samples should be received in the laboratory no later than 3pm 
+on a Friday. Samples should be kept at room temperature. 
+ 
+Participation in EQA Scheme: N/A 
+ 
+Clinical information 
+ 
+Interpretation: Use of this panel in the investigation of immunodeficiency should be discussed with the 
+appropriate Consultant Immunologist (adult or paediatric).  
+ 
+References:  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/2 
+• 
+Revised diagnostic criteria and classification for the autoimmune lymphoproliferative syndrome 
+(ALPS): report from the 2009 NIH International Workshop. Joao B Oliveira et al. Blood, 2010 Oct 
+7;116(14):e35-40. 
+(Last updated February 2024) 

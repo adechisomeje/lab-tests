@@ -1,0 +1,157 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/3 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+1/3 
+Aspergillus quantitative PCR on respiratory samples 
+ 
+ELITech Aspergillus PCR: this test is indicated to support a diagnosis of Aspergillus-related lung disease. 
+ 
+General information 
+ 
+Turnaround time: This assay is performed twice weekly, on Tuesday and Friday morning. Turnaround time: 
+95% within 7 days of sample receipt. 
+ 
+Sample type/container:  
+ 
+Bronchoalveolar lavage fluid (BALF) samples: 
+ 
+• 
+Send minimum of 1-2 mL collected into appropriate UKCA/CE-marked sterile leakproof container.  
+• 
+Do not send containers with trap tubing still attached. These samples are prone to leaking and 
+contamination. The trap tubing must be replaced with a secure screw cap lid prior to placing in the 
+specimen bag. 
+ 
+Other sample types: 
+• 
+The test is only validated for BALF. 
+• 
+The test can be performed on other body fluids such as sputum, pleural fluid, and cerebrospinal fluid 
+(CSF) but clear evidence-based guidance for interpretation of the results cannot be provided. 
+ 
+Transportation 
+ 
+• 
+Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed 
+plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.  
+  
+Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing 
+the transportation of diagnostic specimens) must be used for transport by road or between Manchester 
+University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). Please see 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/3 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+2/3 
+below for packaging requirements.
+ 
+For more information - https://mrcm.org.uk/sample-collection/ 
+ 
+Laboratory Information 
+ 
+Biological interval/clinical decision values: 
+ 
+The ELITech Aspergillus PCR results are expressed as copies/mL of Aspergillus spp. 18S rDNA; Cq values are 
+also provided. 
+ 
+Values of <120 copies/mL are interpreted as negative results. 
+ 
+Values >210 copies/mL are interpreted as positive results. 
+ 
+Values from 120 to 210 copies/mL are interpreted as indeterminate results and may reflect colonisation but 
+do not exclude infection with Aspergillus. Testing of additional samples and/or use of additional diagnostic 
+tests (Aspergillus galactomannan and high-volume fungal culture) is recommended to clarify the diagnosis. 
+ 
+A single negative result does not rule out the diagnosis of invasive aspergillosis (IA). Repeat testing and 
+additional alternative modalities of testing are recommended if the result is negative, but disease is 
+suspected. 
+ 
+Conversely, a single positive Aspergillus PCR does not solely constitute the diagnosis of IA and testing of 
+additional samples and/or use of additional diagnostic tests is needed. Recent data requires the need for 2 
+consecutive positive results in BAL as positive mycological criterion for IA. According to EORTC/MSGERC 
+criteria, the combination of a positive Aspergillus PCR with two weak positive or a single positive GM test 
+result (e.g., one in serum/plasma (≥ 0.7) or one in BALF (≥ 0.8)), may suggest the presence of IA. 
+ 
+Clinical Information 
+ 
+No specific time of optimal collection. First clinical indication of pulmonary or invasive aspergillosis. 
+ 
+This assay detects the 18S rDNA of Aspergillus fumigatus, Aspergillus terreus, Aspergillus niger and possibly 
+other species of Aspergillus. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   3/3 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+3/3 
+ 
+Assay for the quantitative detection of Aspergillus species genomic DNA extracted from respiratory 
+specimens from the lower respiratory tract, as an aid to the diagnosis of invasive and non-invasive 
+pulmonary aspergillosis. The results need to be interpreted in the context of the clinical condition of the 
+patient and other diagnostic test results. 
+ 
+This test should be used in conjunction with other diagnostic procedures and biomarkers to increase the 
+likelihood of diagnosing aspergillosis.  
+ 
+Limitations: 
+ 
+Possible causes of false negatives: 
+False negative results may occur for a variety of reasons, for example inappropriate quality or volume of 
+sample and antifungal prophylaxis interference with assay.  
+ 
+Possible causes of false positives: 
+False positive results may occur if genera closely related to Aspergillus spp., e.g. Penicillium spp., are also 
+present in the sample and detected due to the sequence similarity in the 18S rDNA. 
+ 
+ 
+ 
+References: 
+ELITech Aspergillus spp. ELITe MGB Kit product insert, SCH mRTS110PLD, 28/07/2023, Review 10 
+ 
+Donnelly JP, Chen SC, Kauffman CA, et al., Revision and Update of the Consensus Definitions of Invasive Fungal Disease From the European 
+Organization for Research and Treatment of Cancer and the Mycoses Study Group Education and Research Consortium, Clinical Infectious Diseases, 
+Volume 71, Issue 6, 15 September 2020, Pages 1367–1376, https://doi.org/10.1093/cid/ciz1008. 
+ 
+White PL, Bretagne S, Caliendo AM, et al., Aspergillus Polymerase Chain Reaction—An Update on Technical Recommendations, Clinical Applications, 
+and Justification for Inclusion in the Second Revision of the EORTC/MSGERC Definitions of Invasive Fungal Disease, Clinical Infectious Diseases, 
+Volume 72, Issue Supplement_2, 15 March 2021, Pages S95–S101, https://doi.org/10.1093/cid/ciaa1865. 
+ 
+Ullmann AJ, Aguado JM, Arikan-Akdagli S, et al., Diagnosis and management of Aspergillus diseases: executive summary of the 2017 ESCMID-ECMM-
+ERS guideline. Clin Microbiol Infect. 2018 May;24 Suppl 1:e1-e38. doi: 10.1016/j.cmi.2018.01.002. 
+ 
+(Last updated November 2025) 

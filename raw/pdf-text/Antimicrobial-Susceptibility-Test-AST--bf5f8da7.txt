@@ -1,0 +1,80 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/2 
+ 
+Division of Laboratory Medicine 
+ 
+Bacteriology 
+mft.nhs.uk/laboratorymedicine 
+1/2 
+Antimicrobial Susceptibility Test (AST) 
+ 
+General information 
+ 
+Antimicrobial susceptibility tests are performed using disc diffusion (EUCAST and BSAC methods), Gradient 
+strip (Etest) and Broth Microdilution (BMD) using VitekXL systems (Biomerieux, UK) to establish the antibiotic 
+options available for an identified organism.    
+ 
+AST are performed on bacterial and fungal isolates from a variety of clinical specimens. 
+    
+ 
+Laboratory information 
+ 
+Measurement units: ETest & Vitek AST: MIC (Minimum Inhibitory Concentration) 
+ 
+Disc diffusion: zone sizes in mm 
+ 
+Reported in qualitative terms as: 
+(S) Sensitive 
+(I) Susceptible at increased exposure   
+(R) Resistant 
+ 
+Biological reference units: 
+MIC: ug/L 
+ 
+Turnaround time for provisional result (working days): 1‐2 days  
+Turnaround time to final result (working days): Usually 3‐4 days 
+Slow growing species e.g. Tb and species that are referred to reference centres will take longer 
+ 
+ 
+Clinical information 
+ 
+Clinical decision points: Clinical information relating to the sample site, sample type, PMH, previous 
+antimicrobial therapy,  current antimicrobial therapy, underlying immune status of the patient, travel history 
+(including hospital stays abroad), presence of indwelling or prosthetic material will all influence the whether 
+AST are performed and the panel of antimicrobials tested.   
+ 
+Factors known to significantly affect the results: Delayed results may occur when the bacteria / fungi 
+isolated is slow growing. 
+ 
+Isolates referred to reference units for specialist AST e.g. Actinomyces, Tb will take considerably longer, 
+Medical Microbiologists will provide advice. 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/2 
+ 
+Division of Laboratory Medicine 
+ 
+Bacteriology 
+mft.nhs.uk/laboratorymedicine 
+2/2 
+Multi drug resistant isolates with limited treatment options may undergo secondary AST, Medical 
+Microbiologists will provide advice. 
+ 
+(Last updated November 2024) 

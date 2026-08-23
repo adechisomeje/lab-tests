@@ -1,0 +1,25 @@
+{
+  "$comment": "Provider-level specimen collection guidance. Order of draw is safety-relevant and PROVIDER-SPECIFIC: published sequences genuinely disagree with each other, so this records what each provider documents, quotes the source, and explicitly names the tubes it does not cover rather than guessing.",
+  "version": "0.1.0",
+  "providers": [
+    {
+      "id": "mft-nhs",
+      "name": "Manchester University NHS Foundation Trust",
+      "order_of_draw": {
+        "source_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/specimen-requirements/",
+        "source_quote": "When taking a series of blood specimens, it essential that the serum sample is taken first, followed by lithium heparin samples then the fluoride samples and any EDTA tubes last of all.",
+        "sequence": ["plain-serum", "serum-gel", "lithium-heparin", "fluoride-oxalate", "edta"],
+        "unspecified": ["sodium-citrate", "trace-element"],
+        "rationale": "Failure to adhere to this sequence causes carryover of anticoagulants and preservatives between tubes, producing spurious and invalid results.",
+        "conflicts_with_clsi": true,
+        "conflict_note": "This provider places EDTA last. The CLSI H3-A6 consensus order places sodium citrate first and fluoride/oxalate last, i.e. the reverse for those two tubes. Neither is universally correct: follow your own laboratory's standard operating procedure. This library reports the provider's documented order and warns on tubes the provider does not cover."
+      },
+      "handling": [
+        "Avoid haemolysis, drip contamination and prolonged venous constriction.",
+        "Avoid adverse temperatures: over 30 degrees C or below 10 degrees C unless otherwise stated.",
+        "Ensure thorough and immediate mixing of blood with anticoagulant for plasma samples.",
+        "Do not transfer blood from one tube to another."
+      ]
+    }
+  ]
+}

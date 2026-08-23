@@ -1,0 +1,144 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/3 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/3 
+CD34 (Stem cell) count and viability 
+ 
+Also see below for CD3 rare event/CAR-T cell panel 
+ 
+General information 
+ 
+Autologous peripheral blood stem cell transplants are used in the treatment of haematological malignancies. 
+The patient’s haematopoietic system is stimulated to produce stem cells that are released from the bone 
+marrow into the peripheral blood circulation. The objective of the predictive CD34 stem cell count is to 
+provide an indication of the best timing for apheresis. After collection the CD34 count and viability are used 
+to monitor the quality of harvested cells and to provide an indication as to the likelihood of the collection 
+being sufficient for engraftment. This procedure may be repeated until a clinically significant yield is 
+achieved for transplantation to take place. 
+ 
+In allogenic donation, stem cells from a Matched Unrelated Donor (MUD) are used. The number of stem cells 
+to be infused must be above a certain level to ensure marrow engraftment. 
+ 
+Specimen transport: At room temperature or frozen 
+ 
+Repeat frequency: Each day or stem cell harvest 
+ 
+Special precautions: Immunology should be notified that a CD34 stem cell count is urgent and when to 
+expect the sample. 
+ 
+Laboratory information 
+ 
+Normal reference range: No normal reference ranges are provided. 
+ 
+Volume and sample type: Peripheral blood stem cell harvest, cord blood or bone marrow in heparin and 
+tissue culture medium. 
+ 
+Method: Flow cytometry 
+ 
+Participation in EQA scheme: UK NEQAS CD34+ Stem Cell Enumeration Programme 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 1 
+ 
+Clinical information 
+ 
+Indications for the test: Stem Cell Transplantation 
+ 
+Factors affecting the test: A delay in processing the sample can affect viability 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/3 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/3 
+ 
+ 
+ 
+CD3 rare event/CAR-T cell panel 
+ 
+General information 
+ 
+There are several reasons a CD3 absolute count and viability may be requested by a clinician. The CD3 
+absolute count is measured in stem cell transplant products when it is important that the number of CD3 T 
+cells present is as low as possible (rare event testing), to prevent Graft versus Host disease. 
+ 
+CAR-T therapy is a new type of cancer treatment that uses the immune system to kill cancer cells in patients 
+with B cell lymphoma and B cell acute lymphoblastic leukaemia. CAR-T therapy works by modifying a 
+patient’s own T cells and infusing them back into the patient. 
+ 
+Donor Lymphocyte Infusion (DLI) is a form of immunotherapy used for patients that have received Matched 
+Unrelated Donor (MUD) transplants and can eliminate the need for a second transplant in some patients 
+who have relapsed. DLIs are used to induce remission of the patient’s disease by a process called ‘graft 
+versus tumour’ effect. The donor T cells will attack and control the growth of the residual malignant cells and 
+lead the patient into remission. The viability of these lymphocytes is measured to determine whether the 
+cells are still living so they can be used for treatment. 
+ 
+Specimen transport: At room temperature or frozen 
+ 
+Repeat frequency: Pre- and post-transplant 
+ 
+Special precautions: Immunology should be notified that a sample is urgent and when to expect the sample. 
+ 
+Laboratory information 
+ 
+Normal reference range: No normal reference ranges are provided. 
+ 
+Volume and sample type: Peripheral blood stem cell harvest, DLI, cord blood or bone marrow in heparin and 
+tissue culture medium. 
+ 
+Method: Flow cytometry 
+ 
+Participation in EQA scheme: UK NEQAS for Immune Monitoring 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 1 
+ 
+ 
+Clinical information 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   3/3 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+3/3 
+ 
+Indications for the test: Stem Cell Transplantation, CAR-T cell therapy and DLI 
+ 
+Factors affecting the test: A delay in processing the sample can affect viability 
+ 
+ 
+ 
+(Last updated June 2021) 

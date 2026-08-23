@@ -1,0 +1,58 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Division of Laboratory Medicine 
+ 
+Molecular Microbiology 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+Hepatitis C viral load 
+ 
+General information 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Collection container (including preservatives): Blood should be collected in SST™ Serum Separation Tubes, 
+BD Vacutainer® PPT™ Plasma Preparation Tubes or in sterile tubes using EDTA as the anticoagulant.  
+Whole blood collected in EDTA tubes may be stored and/or transported for up to 24 hours at 2°C to 25°C. If 
+processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are 
+undesirable. 
+ 
+Specimen type: EDTA plasma and serum samples 
+ 
+Minimum volume of sample: 3.0 mL 
+ 
+ 
+Laboratory information 
+ 
+Measurement units: IU/mL 
+ 
+Dynamic range: The dynamic range for this assay is 15-1x108 copies/mL 
+ 
+Turnaround time for provisional result (working days): 3 days 
+Turnaround time for final result (working days): 4 days 
+ 
+Clinical information 
+ 
+Clinical decision points: Not applicable 
+ 
+Factors known to significantly affect the results: Factors known to significantly affect the results: False 
+negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, 
+inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants 
+may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling 
+variation will result in lower reproducibility. 
+ 
+ 
+(Last updated March 2023) 

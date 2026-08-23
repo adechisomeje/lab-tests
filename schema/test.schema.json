@@ -1,0 +1,457 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/adechisomeje/lab-tests/schema/test.schema.json",
+  "title": "Laboratory Test",
+  "description": "A single medical laboratory test, its specimen requirements, analytical characteristics, turnaround time and categorisation.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "department",
+    "source"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable slug identifier, unique within the dataset."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Test name as published by the source laboratory."
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Synonyms and abbreviations that resolve to this test."
+    },
+    "description": {
+      "type": "string",
+      "description": "Free-text summary from the source spec sheet."
+    },
+    "department": {
+      "type": "string",
+      "description": "Laboratory department that performs the test."
+    },
+    "letter": {
+      "type": "string",
+      "description": "A-Z index section the test was listed under."
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Clinical domain category ids (see taxonomy/categories.json)."
+    },
+    "clinic_profiles": {
+      "type": "array",
+      "description": "Practice settings that typically order this test.",
+      "items": {
+        "type": "object",
+        "required": [
+          "profile",
+          "core"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "profile": {
+            "type": "string",
+            "description": "Profile id (see taxonomy/clinic-profiles.json)."
+          },
+          "core": {
+            "type": "boolean",
+            "description": "True when curated as a core test for that setting, false when included via a broader category rule."
+          }
+        }
+      }
+    },
+    "specimen": {
+      "type": "object",
+      "description": "What to collect and how to handle it.",
+      "additionalProperties": false,
+      "properties": {
+        "types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "serum",
+              "plasma",
+              "whole-blood",
+              "edta-whole-blood",
+              "citrated-plasma",
+              "fluoride-plasma",
+              "heparinised-plasma",
+              "dried-blood-spot",
+              "urine",
+              "csf",
+              "faeces",
+              "swab",
+              "pus",
+              "sputum-respiratory",
+              "synovial-fluid",
+              "body-fluid",
+              "tissue",
+              "bone-marrow",
+              "saliva",
+              "semen",
+              "skin-hair-nail",
+              "breath",
+              "sweat",
+              "cells"
+            ]
+          },
+          "description": "Normalised specimen vocabulary."
+        },
+        "specimen_type_raw": {
+          "type": "string",
+          "description": "Specimen wording exactly as published."
+        },
+        "container": {
+          "type": "string",
+          "description": "Collection container and preservative requirements."
+        },
+        "tube": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "edta",
+                "sodium-citrate",
+                "fluoride-oxalate",
+                "lithium-heparin",
+                "trace-element",
+                "serum-gel",
+                "plain-serum"
+              ]
+            },
+            "cap_colour": {
+              "type": "string",
+              "description": "Conventional UK vacutainer cap colour."
+            }
+          }
+        },
+        "minimum_volume_raw": {
+          "type": "string"
+        },
+        "volume": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "unit": {
+              "type": "string",
+              "enum": [
+                "mL"
+              ]
+            }
+          },
+          "description": "Parsed numeric volume, normalised to millilitres."
+        },
+        "collection": {
+          "type": "string"
+        },
+        "transport": {
+          "type": "string"
+        },
+        "special_precautions": {
+          "type": "string"
+        },
+        "additional_requirements": {
+          "type": "string"
+        },
+        "preferred_specimen": {
+          "type": "string",
+          "description": "Preferred specimen, as listed first by the source."
+        },
+        "accepted_specimens": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "All accepted specimen options, in the source's preference order."
+        }
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "analyte": {
+          "type": "string"
+        },
+        "method": {
+          "type": "string",
+          "description": "Analytical platform or technique."
+        },
+        "units": {
+          "type": "string"
+        },
+        "reference_range": {
+          "type": "string",
+          "description": "Reference interval as published. Method- and population-specific."
+        },
+        "clinical_decision_points": {
+          "type": "string"
+        },
+        "interferences": {
+          "type": "string"
+        },
+        "limitations": {
+          "type": "string"
+        },
+        "false_positives": {
+          "type": "string"
+        },
+        "false_negatives": {
+          "type": "string"
+        },
+        "eqa_scheme": {
+          "type": "string",
+          "description": "External quality assessment scheme participation."
+        },
+        "frequency_of_analysis": {
+          "type": "string"
+        }
+      }
+    },
+    "turnaround": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "raw": {
+          "type": "string"
+        },
+        "provisional_raw": {
+          "type": "string"
+        },
+        "final_raw": {
+          "type": "string"
+        },
+        "days": {
+          "$ref": "#/$defs/dayRange"
+        },
+        "provisional_working_days": {
+          "$ref": "#/$defs/dayRange"
+        },
+        "final_working_days": {
+          "$ref": "#/$defs/dayRange"
+        }
+      }
+    },
+    "clinical": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "indications": {
+          "type": "string"
+        },
+        "interpretation": {
+          "type": "string"
+        },
+        "repeat_frequency": {
+          "type": "string"
+        },
+        "references": {
+          "type": "string"
+        }
+      }
+    },
+    "referred_to": {
+      "type": "string",
+      "description": "Referral laboratory when not performed in-house."
+    },
+    "notes": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "provider",
+        "retrieved"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "provider": {
+          "type": "string",
+          "description": "Provider id (see meta.sources)."
+        },
+        "az_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "detail_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "detail_type": {
+          "type": "string",
+          "enum": [
+            "pdf",
+            "page"
+          ]
+        },
+        "detail_available": {
+          "type": "boolean",
+          "description": "False when the published detail link no longer resolves."
+        },
+        "department_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "last_updated": {
+          "type": "string",
+          "description": "Revision date stated on the source document."
+        },
+        "retrieved": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "completeness": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "How much requirement detail this record carries. Useful for filtering.",
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "has_detail_sheet": {
+          "type": "boolean"
+        },
+        "present": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "reference_intervals": {
+      "type": "object",
+      "description": "Age- and sex-stratified reference intervals linked from a source document.",
+      "required": [
+        "source",
+        "matched_name",
+        "match_method"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "matched_name": {
+          "type": "string",
+          "description": "Test name in the source document."
+        },
+        "match_method": {
+          "type": "string",
+          "description": "How the link was made: exact, squashed, abbreviation, or fuzzy:<score>. Fuzzy links are heuristic - audit before relying on them."
+        },
+        "units": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "strata": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "sex": {
+                "type": "string",
+                "enum": [
+                  "all",
+                  "male",
+                  "female"
+                ]
+              },
+              "age_unit": {
+                "type": "string"
+              },
+              "age_min": {
+                "type": "number"
+              },
+              "age_max": {
+                "type": "number"
+              },
+              "low": {
+                "type": "number"
+              },
+              "high": {
+                "type": "number"
+              },
+              "low_op": {
+                "type": "string",
+                "enum": [
+                  "lt",
+                  "lte",
+                  "gt",
+                  "gte"
+                ]
+              },
+              "high_op": {
+                "type": "string",
+                "enum": [
+                  "lt",
+                  "lte",
+                  "gt",
+                  "gte"
+                ]
+              },
+              "raw": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "dayRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min",
+        "max"
+      ],
+      "properties": {
+        "min": {
+          "type": "number",
+          "minimum": 0
+        },
+        "max": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "description": "Parsed turnaround expressed in days; min equals max for a single stated figure."
+    }
+  }
+}

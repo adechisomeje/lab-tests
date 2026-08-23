@@ -1,0 +1,166 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/3 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+1/3 
+Cryptococcal antigen lateral flow test 
+ 
+IMMY CrAg lateral flow assay for cryptococcal antigen.  
+ 
+General information 
+ 
+Turnaround time: This assay is performed on demand. Turnaround time: >95% within one working day. 
+ 
+Sample type/container: 
+ 
+Blood: 
+ 
+ 
+• 
+4.9 ml clotted blood 
+• 
+Clotted blood – send minimum serum volume of 0.5 ml. 
+• 
+Serum tube (Sarstedt S-Monovette white cap) or serum gel tube (brown cap). Blood collected in 
+EDTA tubes will be rejected. 
+• 
+Non-haemolysed specimens must be provided. 
+• 
+Please do not remove the cap before sending for testing nor share the sample to avoid laboratory 
+contamination. 
+ 
+Cerebrospinal fluid (CSF): 
+ 
+• 
+Send minimum of 50 µl collected into an appropriate UKCA/CE-marked sterile leak-proof container.  
+ 
+Transportation: 
+ 
+• 
+Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic 
+Ziploc bag (preferably with a biohazard label on the outside), as shown below.  
+ 
+ 
+• 
+Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations 
+governing the transportation of diagnostic specimens) must be used for transport by road or 
+between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe 
+hospital grounds). 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/3 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+2/3 
+• 
+Please see below for packaging requirements.
+ 
+For more information - https://mrcm.org.uk/sample-collection/ 
+ 
+Laboratory Information 
+ 
+Biological interval/clinical decision values: 
+ 
+Negative or positive by lateral flow (using IMMY CrAg LFA). 
+ 
+Positive results are provided as a titre, e.g., 1:5 – 1:2560. The titre is reported as the highest dilution that 
+yields a positive test result. Further titrations are performed if positive at 1:2560.  
+ 
+Clinical Information 
+ 
+Indications for testing: 
+• Testing for cryptococcal capsular antigen is one of the most reliable methods for the diagnosis of 
+cryptococcosis. 
+• Suspected cryptococcosis, including cryptococcal meningitis, pulmonary and disseminated disease, in both 
+immunocompromised, e.g., HIV-positive, and immunocompetent patients. 
+ 
+A positive test is indicative of infection, but low titres should be interpreted with caution. 
+ 
+Limitations: 
+The assay performance characteristics have not been established for samples other than CSF, plasma, whole 
+blood, or serum. 
+ 
+The predictive value of a positive or negative serologic result depends on the pretest likelihood of 
+cryptococcal disease being present. This test can be used in the context of screening and diagnosis of 
+cryptococcal diseases in at-risk populations. 
+ 
+Titres obtained by the IMMY CrAg LFA are not equivalent to titres obtained by other cryptococcal antigen 
+tests. 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   3/3 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+3/3 
+Possible causes of false negatives: 
+Testing haemolysed serum samples could lead to false negatives due to the high background colour on the 
+strip. 
+ 
+Non-encapsulated and weakly encapsulated strains that can cause disease in severely immunocompromised 
+patients may lead to false negative results. 
+ 
+Although rare, extremely high concentrations (>0.140 mg/ml) of cryptococcal antigen can result in weak test 
+lines and, in extreme instances, yield negative test results. The risk of this affecting test interpretation is 
+minimised by testing serial dilutions of the sample. 
+ 
+The assay has not been evaluated for potential interference related to specimen pre-treatment with 2-
+mercaptoethanol, or with specimens including the following substances: caffeine, ascorbic acid, itraconazole, 
+amphotericin B, paracetamol or acetylsalicylic acid. 
+ 
+Possible causes of false positives: 
+According to published reports, Trichosporon beigelii can cause false positives. 
+ 
+High levels (> 40 ug/ml) of human anti-mouse antibodies (HAMA) may cause false positive test results. 
+ 
+At high concentrations (>0.1 mg/mL), antigens from Paracoccidiodes brasiliensis exhibited some cross-
+reactivity. Cross-reactivity has been described with 10% of serum samples that were Aspergillus 
+galactomannan positive. 
+ 
+The CrAg lateral flow assay was evaluated for cross-reactivity against a panel of patient serum specimens. All 
+the following showed no cross-reactivity: penicilliosis, sporothrichosis, syphilis, rubella, mycoplasmosis, 
+toxoplasmosis, CMV, blastomycosis, coccidiodomycosis, histoplasmosis, candidiasis, rheumatoid factor.  
+ 
+This assay was not evaluated for cross-reactivity against the following organisms or pathologies: 
+Fungal: Candida dubliniensis, C. tropicalis, C. parapsilosis, Pichia kudriavzevii, Nakaseomyces glabratus, 
+Cladosporium trichoides, Pneumocystis jirovecii, zygomycetes. 
+Non-fungal: Antinuclear antibody, hepatitis A and C virus, Staphylococcus aureus, Streptococcus pneumoniae, 
+Neisseria meningitidis, Salmonella typhi, Mycobacterium tuberculosis. 
+ 
+References: 
+Cryptococcal Antigen lateral Flow assay for the detection of cryptococcal antigen, IMMY Inc. Doc PIS-00107, Rev. 2, 2024-09-19. 
+(Last updated January 2025) 

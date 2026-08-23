@@ -1,0 +1,3028 @@
+{
+  "meta": {
+    "profile": "antenatal-maternity",
+    "name": "Antenatal & Maternity",
+    "version": "0.1.0",
+    "rationale": "Statutory booking screens (blood group, antibodies, infectious disease, haemoglobinopathy) plus pre-eclampsia and fetomaternal haemorrhage assessment.",
+    "test_count": 40
+  },
+  "tests": [
+    {
+      "id": "antibody-screen-and-save-serum",
+      "name": "Antibody screen and save serum",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "A",
+      "categories": [
+        "transfusion",
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "antibody-titre",
+      "name": "Antibody titre",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "A",
+      "categories": [
+        "transfusion",
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "blood-group",
+      "name": "Blood group",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "B",
+      "categories": [
+        "transfusion"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "blood-transfusion",
+      "name": "Blood Transfusion",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "B",
+      "categories": [
+        "transfusion"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "blood-spot-17-hydroxyprogesterone",
+      "name": "Bloodspot 17-hydroxyprogesterone",
+      "aliases": [
+        "17 OHP (blood spot)"
+      ],
+      "department": "Biochemistry",
+      "letter": "B",
+      "categories": [
+        "endocrinology",
+        "reproductive-hormones"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "dried-blood-spot",
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Whole blood spot",
+        "accepted_specimens": [
+          "Whole blood spot"
+        ],
+        "preferred_specimen": "Whole blood spot"
+      },
+      "analysis": {
+        "units": "nmol/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "17-Hydroxyprogesterone - Blood Spot",
+        "match_method": "fuzzy:1.00",
+        "units": "nmol/L"
+      },
+      "turnaround": {
+        "raw": "1 month",
+        "days": {
+          "min": 30.0,
+          "max": 30.0
+        }
+      },
+      "notes": "17 OHP (blood spot)",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.27,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "cmv-cytomegalovirus-antiviral-resistance-markers",
+      "name": "CMV (cytomegalovirus) antiviral resistance markers",
+      "aliases": [
+        "Cytomegalovirus anitviral resistance markers"
+      ],
+      "description": "CMV viral load positive bloods. Complete CMV antiviral resistance genotypic screening including UL97: Nucleotide sequencing of the CMV phosphotransferase gene for the identification of mutations encoding resistance to ganciclovir and maribavir. UL54: Nucleotide sequencing of the DNA polymerase gene for the identification of mutations encoding resistance to ganciclovir, foscarnet and cidofovir.",
+      "department": "Molecular Microbiology",
+      "letter": "C",
+      "categories": [
+        "virology",
+        "transplant-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA blood",
+        "container": "CE marked leak proof container EDTA blood tube",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3.0 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        },
+        "transport": "Ambient or refrigerated\n\nFor PCR for confirmation of active CMV infection and monitoring of antiviral therapy please send 4mL of EDTA blood. This should be stored at 4°C and dispatched as soon as possible after being drawn.\n\nIf longer storage is unavoidable, serum or plasma may be stored frozen, but should not be repeatedly frozen and thawed. In special circumstances, 0.5mL of serum or plasma can be tested, but for such small volumes avoid using a large container but use a small capacity container with a screw-cap, such as an Eppendorff tube.",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "mL Wild type / resistant mutation",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay.\n\nNew and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "5 days",
+        "final_raw": "7 days\n\nMolecular Microbiology",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "notes": "Cytomegalovirus anitviral resistance markers",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/12/CMV-Cytomegalovirus-antiviral-resistance-markers.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cmv-cytomegalovirus-igg",
+      "name": "CMV (cytomegalovirus) IgG",
+      "aliases": [
+        "Cytomegalovirus (CMV) IgG"
+      ],
+      "department": "Virology",
+      "letter": "C",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "transplant-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "No special needs",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "AU/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days For urgent tests please contact the laboratory for 4 hour turnaround",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "notes": "Cytomegalovirus (CMV) IgG",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Cytomegalovirus-CMV-IgG.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "cmv-cytomegalovirus-igg-avidity",
+      "name": "CMV (cytomegalovirus) IgG avidity",
+      "aliases": [
+        "Cytomegalovirus (CMV) IgG avidity"
+      ],
+      "department": "Virology",
+      "letter": "C",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "transplant-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2ml Venous Blood",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "No special needs",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "5 days",
+        "final_raw": "7 days",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "notes": "Cytomegalovirus (CMV) IgG avidity",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Cytomegalovirus-CMV-IgG-avidity.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "cmv-cytomegalovirus-igm",
+      "name": "CMV (Cytomegalovirus) IgM",
+      "aliases": [
+        "Cytomegalovirus (CMV) IgM"
+      ],
+      "description": "Specific CMV IgM assay is useful in distinguishing individuals who have acquired the infection recently from those who have not. Further information may be gained from IgG avidity testing where IgM is reactive.",
+      "department": "Virology",
+      "letter": "C",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "transplant-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "No special needs",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "notes": "Cytomegalovirus (CMV) IgM",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Cytomegalovirus-CMV-IgM.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cmv-cytomegalovirus-viral-load",
+      "name": "CMV (cytomegalovirus) viral load",
+      "aliases": [
+        "Cytomegalovirus viral load"
+      ],
+      "description": "Molecula mft. on of Labo ar Microbiolo .nhs.uk/lab Cytom Genera Collectio card Specime Urine Specime Minimu Special p Labora Measure Biologic Turnaro Turnaro Turnaro in the la Clinica Clinical d oratory Me ogy boratoryme megalo al informatio on container en type: en transport m volume o precautions atory info ement units cal reference ound time fo ound time to ound time: T boratory, an al informa decision poi edicine edicine virus vi on r (including p t: Ambient or of sample: M : None know ormation s: IU/ml e units: Not a r provisiona o final result he results of nd usually wi ation nts: Not app ral load preservative r refrigerated inimum volu wn applicable l result (wor (working da f all tests will thin 24 hour plicable d es): CE marke EDTA b d ume 500μl rking days): ays): 3 days l be available rs. ed leak proo lood 2 days e within 3 wo f container, orking days a EDTA blood after receipt tube or Guth t of the speci hrie imen",
+      "department": "Molecular Microbiology",
+      "letter": "C",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "transplant-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "analysis": {
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "notes": "Cytomegalovirus viral load",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Cytomegalovirus-viral-load.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2017",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.09,
+        "has_detail_sheet": true,
+        "present": [
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cord-blood-investigations",
+      "name": "Cord blood investigations",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "C",
+      "categories": [
+        "transfusion",
+        "sexual-health-sti",
+        "antenatal-pregnancy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "cross-matching",
+      "name": "Cross matching",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "C",
+      "categories": [
+        "transfusion"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "csf-glucose",
+      "name": "CSF – Glucose",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "diabetes-metabolic",
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "analysis": {
+        "units": "mmol/L",
+        "reference_range": "2.2 - 4.4 mmol/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "CSF glucose",
+        "match_method": "exact",
+        "units": "mmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 150.0,
+            "low": 2.2,
+            "high": 4.4,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "150",
+              "low": "2.2",
+              "high": "4.4"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "months",
+            "age_min": 2.0,
+            "age_max": 12.0,
+            "low": 1.9,
+            "high": 5.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Months",
+              "age_min": "2",
+              "age_max": "12",
+              "low": "1.9",
+              "high": "5"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 29.0,
+            "age_max": 58.0,
+            "low": 1.6,
+            "high": 5.6,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Days",
+              "age_min": "29",
+              "age_max": "58",
+              "low": "1.6",
+              "high": "5.6"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 28.0,
+            "low": 1.9,
+            "high": 5.6,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "28",
+              "low": "1.9",
+              "high": "5.6"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": false,
+        "present": [
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "direct-antiglobulin-test",
+      "name": "Direct Antiglobulin Test",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "D",
+      "categories": [
+        "transfusion"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "dna-testing-for-the-haemoglobinopathies",
+      "name": "DNA Testing for the Haemoglobinopathies",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "D",
+      "categories": [
+        "sexual-health-sti",
+        "haemoglobinopathy",
+        "genetics-molecular",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "dried-blood-spot-syphilis-antibody",
+      "name": "Dried blood spot Syphilis antibody",
+      "aliases": [],
+      "description": "This service is designed for those patients on whom it is difficult to obtain venous blood, especially for intra venous drug users. Contact the laboratory for supply of postal packs containing all necessary items for using this service. Paediatric/infant packs are available on request",
+      "department": "Virology",
+      "letter": "D",
+      "categories": [
+        "infectious-disease-serology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "dried-blood-spot"
+        ],
+        "specimen_type_raw": "Dried blood spot card",
+        "container": "Envelope with desiccant",
+        "minimum_volume_raw": "7mm Dried blood spot card",
+        "transport": "No special needs\n\nVirology",
+        "special_precautions": "Ensure blood spot has dried and submit with desiccant pouch enclosed. Do not send back used/unused lancets."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Spots too small, not all spots filled with blood"
+      },
+      "turnaround": {
+        "provisional_raw": "5 days for screen",
+        "final_raw": "7 days for confirmation",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Dried-Blood-Spot-Syphilis-antibody.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "ferritin",
+      "name": "Ferritin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "F",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "12 - 150 μg/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Ferritin",
+        "match_method": "exact",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "400"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "400"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "full-blood-count-and-automated-differential",
+      "name": "Full blood count and automated differential",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "glucose",
+      "name": "Glucose",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "G",
+      "categories": [
+        "diabetes-metabolic"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "haemoglobinopathy-screening",
+      "name": "Haemoglobinopathy Screening",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "H",
+      "categories": [
+        "haemoglobinopathy",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "hbs-screening-test-urgent-pre-operative-pts-1-yr-old",
+      "name": "HbS Screening Test – Urgent/pre-operative (Pts >1 yr Old)",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "H",
+      "categories": [
+        "haemoglobinopathy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "hcg-blood-pregnancy-and-as-tumour-marker",
+      "name": "HCG blood (pregnancy and as tumour marker)",
+      "aliases": [
+        "Human Chorionic Gonadotrophin"
+      ],
+      "department": "Biochemistry",
+      "letter": "H",
+      "categories": [
+        "reproductive-hormones",
+        "tumour-markers",
+        "antenatal-pregnancy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": false
+        }
+      ],
+      "notes": "Pregnancy test (blood); Human Chorionic Gonadotrophin",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "hepatitis-b-hbv-surface-antigen-hbsag",
+      "name": "Hepatitis B (HBV) surface antigen (HBsAg)",
+      "aliases": [
+        "Anti HBs",
+        "HBV surface antibody",
+        "HBsAg",
+        "Hepatitis B (HBV) surface antibody (Anti-HBs)"
+      ],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "4.9 ml blood tube or 7.5ml blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis, mutation"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days. Hepatitis B virus surface antigen confirmation is 6 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "notes": "HBV surface antibody; anti HBs; HBsAg",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Hepatitis-B-virus-HBV-surface-antigen-HBsAg.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-hbv-surface-antigen-hbsag-dried-blood-spot",
+      "name": "Hepatitis B (HBV) surface antigen (HBsAg) – Dried Blood Spot",
+      "aliases": [
+        "Dried blood spot Hepatitis B surface antigen"
+      ],
+      "description": "Spot) This service is designed for those patients on whom it is difficult to obtain venous blood, especially for intra venous drug users. Contact the laboratory for supply of postal packs containing all necessary items for using this service. Paediatric/infant packs are available on request",
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "dried-blood-spot"
+        ],
+        "specimen_type_raw": "Dried blood spot card",
+        "container": "Envelope with desiccant",
+        "minimum_volume_raw": "7mm diameter blood spot",
+        "collection": "Virology",
+        "transport": "No special needs",
+        "special_precautions": "Ensure blood spot has dried and submit with desiccant pouch enclosed. Do not send back used/unused lancets."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Spots too small, not all spots filled with blood"
+      },
+      "turnaround": {
+        "provisional_raw": "4 days",
+        "final_raw": "5 days",
+        "provisional_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        },
+        "final_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "notes": "Dried blood spot Hepatitis B surface antigen",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Hepatitis-B-virus-HBV-surface-antigen-HBsAg-Dried-Blood-Spot.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "hiv-screen-4th-generation-hiv1-and-2-antibody-and-p24-antigen",
+      "name": "HIV screen (4th generation: HIV1 and 2 antibody and p24 antigen)",
+      "aliases": [
+        "Anti-HIV 1 and 2 antibody and p24 antigen screen"
+      ],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL blood tube",
+        "minimum_volume_raw": "2mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "raw": "3-4 days\n\nSame day testing offered, contact the laboratory for 4 hour turnaround (screen and confirmation for same day request only)",
+        "days": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      },
+      "notes": "Anti-HIV 1 and 2 antibody and p24 antigen screen",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/HIV-screen-4th-generation-HIV1-and-2-antibody-and-p24-antigen.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "human-parvovirus-b19-igg",
+      "name": "Human Parvovirus B19 IgG",
+      "aliases": [
+        "Parvovirus B19 IgG"
+      ],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "infectious-disease-serology",
+        "virology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "notes": "Parvovirus B19 IgG",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Human-Parvovirus-B19-IgG.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "kleihauer-test",
+      "name": "Kleihauer test",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "K",
+      "categories": [
+        "transfusion",
+        "antenatal-pregnancy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "osmolar-gap-calculated-as-calculated-osmolality-measured-osmolality-calculated-o",
+      "name": "Osmolar Gap (calculated as: calculated osmolality – measured osmolality. Calculated osmolality is 2 x (Na + K) + glucose + urea)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "O",
+      "categories": [
+        "clinical-chemistry",
+        "diabetes-metabolic"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "plgf",
+      "name": "PLGF",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "P",
+      "categories": [
+        "antenatal-pregnancy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "none"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Placental Growth Factor (PLGF), Soluble FMS Tyrosine Kinase-1 (SFLT), SFLT:PLGF ratio",
+        "match_method": "abbreviation",
+        "units": "none",
+        "notes": "comment: Clinical decision points: sFlt:PLGF ratio is used in suspected pre-eclampsia not confirmed by clinical assessment <37 weeks. Clinical pathway includes clinical assessment of maternal symptoms, BP, proteinuria,other markers and foetal assessment in conjunction with sFlt:PLGF ratio: sFlt:PLGF ratio <38 pre-eclampsia excluded for next 7 days sFlt:PLGF ratio >38 to <85 Intermediate result, increased surveillance sFlt:PLGF ratio >85 diagnosis of pre-eclampsia/placental disease confirmed Note a positive ratio is not an isolated indication for delivery <37 weeks."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.18,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units"
+        ]
+      }
+    },
+    {
+      "id": "pregnancy-test-blood",
+      "name": "Pregnancy test (blood)",
+      "aliases": [],
+      "description": "Pseudonyms: beat Human chorionic gonadotrophin; βHCG; Pregnancy Test; Germ-cell Tumour marker Collection container (blood): Adults - serum (with gel separator, 4.9mL Sarstedt brown top) Paediatrics - lithium heparin plasma (1.2mL Sarstedt orange top tube) Collection container (urine): Adults - NOT AVAILABLE Paediatrics - Point-of-Care Testing (POCT) Specimen transport/special precautions: Urine pregnancy tests are performed as POCT tests across RMCH Method principle: The Roche electrochemiluminesence immunoassay ECLIA combines a sandwich antigen- antibody reaction with two hCG-specific monoclonal mouse antibodies (biotinylated and ruthenium-labelled) on the surface of a magnetic microbead. Biological reference ranges: Blood: Reported with the following comment: “QUANTITATIVE HCG USED AS A PREGNANCY TEST: A result of >25 IU/L would normally indicate a positive test. But a result of <25IU/L does not exclude early pregnancy.” Blood as a tumour marker: <3 months up to 50 IU/L >3 months female: up to 5 IU/L >3 months male: up to 3 IU/L Post-menopausal women: up to 8 IU/L hCG, produced in the placenta, partially passes the placental barrier. Newborn serum beta hCG concentrations are approximately1/400th of the corresponding maternal serum concentrations, resulting in Biochemistry neonate beta hCG levels of 10-50 IU/L at birth. Clearance half-life is approximately 2-3 days. Therefore, by 3 months of age, levels comparable to adults should be reached.",
+      "department": "Biochemistry",
+      "letter": "P",
+      "categories": [
+        "reproductive-hormones",
+        "antenatal-pregnancy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        }
+      ],
+      "analysis": {
+        "interferences": "A very low serum hCG does not exclude pregnancy. False negative results can occur in very early or abnormal pregnancy.\n\nAn ectopic pregnancy cannot be diagnosed using hCG alone. Levels should be repeated after 48h.\n\nhCG can be produced by non-germ cell tumours (e.g. small cell carcinoma of the lung). Because of the existence of multiple forms of hCG and their varying detection by different assay formulations, it is important to be aware of the stated characteristics of the assay used. Assays for oncological use should ideally detect all forms of hCG.\n\nThe “high-dose hook effect” means that occasionally very high levels (>1 to 2 million IU/L) may return apparently much lower values (typically in the hundreds). A result that is unexpected or does not fit the clinical picture must be checked on dilution."
+      },
+      "turnaround": {
+        "raw": "Blood: Urgent HCH results are available within 1 hour of receipt of the specimen in the laboratory. Otherwise results are typically available within four hours.",
+        "days": {
+          "min": 0.04,
+          "max": 0.04
+        }
+      },
+      "notes": "See HCG blood",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/01/Human-chorionic-gonadotrophin.pdf",
+        "detail_type": "pdf",
+        "last_updated": "June 2017",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.18,
+        "has_detail_sheet": true,
+        "present": [
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "routine-haemoglobinopathy-screening",
+      "name": "Routine haemoglobinopathy screening",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "R",
+      "categories": [
+        "haemoglobinopathy",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "rubella-igg",
+      "name": "Rubella IgG",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "R",
+      "categories": [
+        "infectious-disease-serology",
+        "virology",
+        "antenatal-pregnancy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "IU/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Rubella-IgG.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "serum-ferritin",
+      "name": "Serum ferritin",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "S",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "12 - 150 μg/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Ferritin",
+        "match_method": "fuzzy:1.00",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "400"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "400"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "syphilis-confirmation-including-immunoblot",
+      "name": "Syphilis confirmation including Immunoblot",
+      "aliases": [
+        "Syphilis IgM",
+        "Treponema pallidum confirmation"
+      ],
+      "department": "Virology",
+      "letter": "S",
+      "categories": [
+        "infectious-disease-serology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf"
+        ],
+        "specimen_type_raw": "Clotted Blood, CSF",
+        "container": "6mL blood tube Clean container for CSF",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "1.5 mL blood 0.5 mL CSF",
+        "volume": {
+          "value": 1.5,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "5 days",
+        "final_raw": "7 days",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "notes": "Syphilis IgM; Treponema pallidum confirmation",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Syphilis-Confirmation-including-Immunoblot.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "thyroid-stimulating-hormone",
+      "name": "Thyroid Stimulating Hormone",
+      "aliases": [
+        "TSH"
+      ],
+      "department": "Biochemistry",
+      "letter": "T",
+      "categories": [
+        "thyroid",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mu/L",
+        "reference_range": "0.27 - 4.2 mu/L (adult; 7 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Thyroid Stimulating Hormone (TSH)",
+        "match_method": "exact",
+        "units": "mu/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 0.27,
+            "high": 4.2,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥18",
+              "age_max": "150",
+              "low": "0.27",
+              "high": "4.2"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 18.0,
+            "low": 0.27,
+            "high": 4.2,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥12",
+              "age_max": "<18",
+              "low": "0.27",
+              "high": "4.2"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 7.0,
+            "age_max": 12.0,
+            "low": 0.6,
+            "high": 4.84,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥7",
+              "age_max": "<12",
+              "low": "0.6",
+              "high": "4.84"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 7.0,
+            "low": 0.7,
+            "high": 5.97,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥1",
+              "age_max": "<7",
+              "low": "0.7",
+              "high": "5.97"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "months",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 1.02,
+            "high": 6.8,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Months",
+              "age_min": "≥1",
+              "age_max": "<12",
+              "low": "1.02",
+              "high": "6.8"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 4.0,
+            "age_max": 30.0,
+            "low": 1.23,
+            "high": 9.7,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Days",
+              "age_min": "≥4",
+              "age_max": "<30",
+              "low": "1.23",
+              "high": "9.7"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 3.0,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "days",
+              "age_min": "≥0",
+              "age_max": "≤3",
+              "low": "No ranges"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "notes": "TSH",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "toxoplasma-serology-avidity",
+      "name": "Toxoplasma serology (avidity)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "T",
+      "categories": [
+        "infectious-disease-serology",
+        "parasitology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "No special needs",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "Low avidity; High avidity",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "5 days",
+        "final_raw": "7 days",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Toxoplasma-avidity.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "toxoplasma-serology-igg",
+      "name": "Toxoplasma serology (IgG)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "T",
+      "categories": [
+        "infectious-disease-serology",
+        "parasitology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "No special needs",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "IU/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Toxoplasma-IgG.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "toxoplasma-serology-igm",
+      "name": "Toxoplasma serology (IgM)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "T",
+      "categories": [
+        "infectious-disease-serology",
+        "parasitology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "No special needs",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "units": "IU/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "5 days",
+        "final_raw": "7 days",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/12/Toxoplasma-IgM.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "treponema-pallidum-screen",
+      "name": "Treponema pallidum screen",
+      "aliases": [
+        "Syphilis antibody",
+        "Treponema pallidum (syphilis) PCR"
+      ],
+      "department": "Virology",
+      "letter": "T",
+      "categories": [
+        "infectious-disease-serology",
+        "molecular-microbiology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood",
+          "csf"
+        ],
+        "specimen_type_raw": "Venous Blood , CSF, Viterous tap",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend"
+      },
+      "analysis": {
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "notes": "Syphilis antibody; Treponema pallidum (syphilis) PCR",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Syphilis-Treponema-pallidum-screen.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "universal-antenatal-haemoglobinopathy-screening",
+      "name": "Universal Antenatal Haemoglobinopathy Screening",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "U",
+      "categories": [
+        "antenatal-pregnancy",
+        "haemoglobinopathy",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    }
+  ]
+}

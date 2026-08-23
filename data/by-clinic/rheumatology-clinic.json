@@ -1,0 +1,5073 @@
+{
+  "meta": {
+    "profile": "rheumatology-clinic",
+    "name": "Rheumatology Clinic",
+    "version": "0.1.0",
+    "rationale": "Autoantibody profiling and inflammatory markers, plus drug monitoring for DMARDs and biologics.",
+    "test_count": 67
+  },
+  "tests": [
+    {
+      "id": "acetyl-choline-receptor-antibodies",
+      "name": "Acetyl Choline Receptor Antibodies",
+      "aliases": [],
+      "description": "Acts as a confirmatory test for myasthenia gravis.",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "ELISA",
+        "reference_range": "0 - 0.60 nmol/L",
+        "interferences": "Do not use lipaemic or haemolysed serum samples.",
+        "eqa_scheme": "UK NEQAS for Acetylcholine receptor antibody"
+      },
+      "turnaround": {
+        "raw": "Median - 7",
+        "days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "clinical": {
+        "indications": "90% of patients with generalised myasthenia gravis and about 60-70% of patients with ocular myasthenia have detectable AChR antibodies. Can be used to monitor disease activity, but antibodies may persist in 60% of patients even if disease is in remission.\n\nThe assay also detects antibodies to the foetal form of the AChR in mother of foetuses with Arthrogryposis multiplex congenital.",
+        "repeat_frequency": "At change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/06/Acetylcholine-receptor-antibody.pdf",
+        "detail_type": "pdf",
+        "last_updated": "June 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "adrenal-antibody",
+      "name": "Adrenal antibody",
+      "aliases": [],
+      "description": "The results are positive in 60-70% of patients with idiopathic Addison's disease. Anti-adrenal antibodies are also present in 28% of patients with idiopathic hypothyroidism and 7% patients with Hashimoto's Disease.",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunofluorescence",
+        "reference_range": "Neg",
+        "interferences": "None",
+        "eqa_scheme": "No EQA scheme exists for this assay. We participate in a sample exchange scheme instead."
+      },
+      "turnaround": {
+        "raw": "Median - 6",
+        "days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "clinical": {
+        "indications": "• Addison's Disease with associated other organ-specific autoimmune conditions. • Patients with chronic mucocutaneous candidiasis with endocrinopathy.",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Adrenal-antibody.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "anti-c1q",
+      "name": "Anti C1q",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "EIA",
+        "reference_range": "<15U/mL",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "HIV, SLE with renal involvement",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Anti-C1q.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "anti-myelin-oligodendrocyte-glycoprotein-mog-antibodies",
+      "name": "Anti Myelin oligodendrocyte glycoprotein (MOG) Antibodies",
+      "aliases": [
+        "MOG"
+      ],
+      "description": "(Referred Test) MOG antibodies have been reported in some people who have transverse myelitis and/or optic neuritis and/or acute disseminated encephalomyelitis and Aquaporin 4 antibody negative neuromyelitis optica. MOG antibodies are found on the myelin sheath rather than the astrocyte as in Aquaporin 4 antibodies and cause damage to the myelin.",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Cell based assay",
+        "reference_range": "Negative"
+      },
+      "turnaround": {
+        "raw": "Median - 16",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "repeat_frequency": "Significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology The Churchill Hospital Old Road Headington Oxford OX3 7LJ",
+      "notes": "MOG",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Anti-Myelin-oligodendrocyte-glycoprotein-MOG-Antibodies-Referred-Test.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "antibody-screen-and-save-serum",
+      "name": "Antibody screen and save serum",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "A",
+      "categories": [
+        "transfusion",
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "antibody-titre",
+      "name": "Antibody titre",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "A",
+      "categories": [
+        "transfusion",
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "anti-cyclic-citrullinated-peptide-ccp",
+      "name": "Anti-Cyclic citrullinated peptide (CCP)",
+      "aliases": [
+        "CCP",
+        "Cyclic citrullinated peptide (CCP)"
+      ],
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "autoimmunity",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Multiplex flow immunoassay",
+        "reference_range": "0-2.9 U/mL",
+        "interferences": "None",
+        "eqa_scheme": "UK NEQAS for Rheumatoid Antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "CCP antibodies are targeted against citrullinated peptides are highly specific to rheumatoid arthritis (RA) but may also be of value in the development of radiographic joint damage. CCP antibodies are implicated in the early diagnosis of RA and offer a marker that is more specific than Rheumatoid Factor.",
+        "repeat_frequency": "At significant change of symptoms"
+      },
+      "notes": "CCP; Cyclic citrullinated peptide",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/01/Anti-Cyclic-citrullinated-peptide-CCP.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "anti-neutrophil-cytoplasmic-antibody-anca",
+      "name": "Anti-neutrophil cytoplasmic antibody (ANCA)",
+      "aliases": [
+        "ANCA"
+      ],
+      "description": "Anti-neutrophil cytoplasmic antibodies (ANCA) are found in several types of vasculitis. Samples for ANCA are initially tested by immunofluorescence on neutrophils. Positive samples are then further tested by multiplex flow immunoassay for specific antibodies against either proteinase 3 (PR3) or myeloperoxidase (MPO). In general, a classical c-ANCA pattern corresponds to PR3 reactivity whilst a perinuclear p-ANCA pattern corresponds to MPO reactivity. Atypical ANCA patterns do not usually correspond to either antigen. These tests are used to diagnose vasculitis and to monitor disease activity. Infections and autoimmunity can produce false positive tests reducing the specificity of ANCA testing.",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunofluorescence",
+        "interferences": "Positive ANA, i.e. the presence of other autoantibodies. False positives seen in infections.\n\nGuidelines are provided in the following reference: Addendum to the International Consensus Statement on Testing and reporting of ANCA Am J Clin Pathol 2003; 120; 312-318\n\nImmunology",
+        "eqa_scheme": "UK NEQAS for Autoimmune Serology ANCA and GBM"
+      },
+      "turnaround": {
+        "raw": "Median - 3 We will undertake urgent same day testing during laboratory opening hours provided that the laboratory is contacted by phone and the sample arrives before noon.",
+        "days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "clinical": {
+        "indications": "ANCA testing is helpful in patients with vasculitis affecting the kidneys",
+        "repeat_frequency": "No more frequently than every four weeks, except when plasmapheresis is being done."
+      },
+      "notes": "ANCA",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Anti-Neutrophil-cytoplasmic-antibody-ANCA.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "antinuclear-antibody-ana",
+      "name": "Antinuclear antibody (ANA)",
+      "aliases": [
+        "ANA",
+        "ENA antibodies includes: Ro (SS-A 52, SSA-60), La (SS-B), Sm, Sm/RNP, RNP (RNP A, RNP 68), Ribosomal P, Chromatin, Jo-1, and Scl-70",
+        "Ribosomal"
+      ],
+      "description": "'Antinuclear antibody' refers to an old test for IgG against nuclear components, detected by immunofluorescence (see below). This test has been superseded by faster, more reproducible parallel tests for each of the nuclear components, namely ENA (extractable nuclear antigens SS-A (SS-A52, SS-A60) (Ro), SS-B (La), Sm, Sm/RNP, RNP (RNPA, RNP 68), Ribo P, Chromatin, Jo-1 and Scl-70), DNA and centromere. Antibodies to extractable nuclear antigens are of use in the classification of clinical subsets of connective tissue diseases and in providing prognostic information. When you request ANA we will perform the above tests; if any are positive this will be indicated as a positive ANA. Please see also DNA antibodies page.",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Indirect immunofluorescence",
+        "reference_range": "ANA - Neg, ENAs <0-0.9AI, Scl-70 0-1.6",
+        "interferences": "False positives may be seen during infection and are more common with increasing patient age. For these reasons positive results have a low predictive value in the absence of clinical signs of the diseases indicated above. ANA should not, therefore, be used as a 'screen' in patients with vague symptoms and signs.\n\nImmunofluorescent antinuclear antibody (IFANA)",
+        "eqa_scheme": "UK NEQAS for Nuclear and Related Antigens and UK NEQAS for Digital ANA (Image based)"
+      },
+      "turnaround": {
+        "raw": "Median - 2",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected SLE, connective tissue disease, hepatitis or drug induced lupus, where the routine ANA is negative. This test can also be useful particularly in the context of investigation of autoimmune hepatitis. Some commonly seen staining patterns are highlighted below:\n\nImmunology • Centromere pattern - limited cutaneous systemic sclerosis, primary biliary cirrhosis • Homogeneous pattern - SLE, autoimmune hepatitis, Juvenile Idiopathic Arthritis, mixed connective tissue disease • Speckled pattern - SLE, Sjögren's syndrome, autoimmune myopathy, systemic sclerosis, mixed connective tissue disease; note speckled ANA can be associated with antibodies to SS-A and SS-B which carry a risk of neonatal lupus and congenital heart block • Nucleolar pattern - systemic sclerosis, systemic sclerosis-autoimmune myopathy overlap and can be seen in other connective tissue diseases • Multiple nuclear dots patterns - primary biliary cirrhosis, autoimmune myopathy and other autoimmune/inflammatory conditions",
+        "repeat_frequency": "Not more than once a year, unless clinical picture has changed"
+      },
+      "notes": "ENA antibodies includes: Ro (SS-A 52, SSA-60), La (SS-B), Sm, Sm/RNP, RNP (RNP A, RNP 68), Ribosomal P, Chromatin, Jo-1, and Scl-70",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/Antinuclear-antibody-ANA.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "ap100-alternative-pathway-haemolytic-complement",
+      "name": "AP100 Alternative Pathway Haemolytic Complement",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum on ice",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "All samples from outside the hospital should be transported on an ice pack. Transport at room temperature is acceptable within this hospital if the sample is delivered to the Immunology laboratory within 3 hours on weekdays only (not including bank holidays).",
+        "special_precautions": "Transport as soon as possible to lab. It is important that this is done to avoid reduction in activity that can occur with time."
+      },
+      "analysis": {
+        "method": "ELISA",
+        "reference_range": "30 - 113 % complement activity",
+        "interferences": "If screened too soon after acute infection leads to false (positive) results due to complement activation. Some complement components are temperature sensitive and it is important that the samples should be delivered to the lab in a timely manner and on ice",
+        "eqa_scheme": "INSTAND Complement Analysis EQA scheme"
+      },
+      "turnaround": {
+        "raw": "Median - 6",
+        "days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected primary immunodeficiencies involving complement components e.g. recurrent infections and in the investigation of complement mediated renal disease.",
+        "repeat_frequency": "At significant change in symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/10/AP100-Alternative-Pathway-Haemolytic-Complement.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "beta-2-glycoprotein-igg-and-igm",
+      "name": "Beta 2 Glycoprotein (IgG and IgM)",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "B",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Beta-2-Glycoprotein-IgG-and-IgM.pdf",
+        "detail_type": "pdf",
+        "retrieved": "2026-08-23",
+        "detail_available": false
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "c1-esterase-inhibitor",
+      "name": "C1 esterase inhibitor",
+      "aliases": [],
+      "description": "Should always request C4 at the same time",
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "0.16 - 0.32 g/L",
+        "interferences": "None",
+        "eqa_scheme": "UK NEQAS for C1 Inhibitor & Functional Complement and INSTAND Complement Analysis"
+      },
+      "turnaround": {
+        "raw": "Median - 4",
+        "days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected type I hereditary angioedema. This disease causes recurrent attacks of abdominal pain or swellings. The complement component C4 is almost always low in HAE. This is used as a reliable screen for the disease.",
+        "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/C1-esterase-inhibitor.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "c1-esterase-inhibitor-functional-test",
+      "name": "C1 esterase inhibitor functional test",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "citrated-plasma"
+        ],
+        "specimen_type_raw": "4ml sodium citrate blood",
+        "tube": {
+          "type": "sodium-citrate",
+          "cap_colour": "Light blue"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "All samples from outside the hospital should be transported on an ice pack. Transport at room temperature is acceptable within this hospital if the sample is delivered to the Immunology laboratory within 3 hours and before 3pm on weekdays only (not including bank holidays).",
+        "special_precautions": "The correct sample tube must be used (sodium citrate). It is important that the sample is transported to the immunology lab correctly."
+      },
+      "analysis": {
+        "method": "Colorimetric test",
+        "reference_range": "70 - 130% Normal",
+        "interferences": "Also seen in acquired C1-inhibitor deficiency in older patients where it is associated with myeloma/lymphoma.",
+        "eqa_scheme": "UK NEQAS for C1 Inhibitor & Functional Complement and INSTAND Complement Analysis"
+      },
+      "turnaround": {
+        "raw": "Median - 6",
+        "days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "clinical": {
+        "indications": "Angioedema associated with low C4 when C1-esterase inhibitor is normal or high.",
+        "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/C1-esterase-inhibitor-functional-test.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "c1q",
+      "name": "C1q",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature. Sample should be frozen if not dispatched immediately to the referral lab.",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "RID",
+        "reference_range": "50-250 mg/L",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "• Levels are reduced in acquired angioedema • Levels are also reduced in urticarial vasculitis - a complication of SLE • Sjögren's syndrome, cryoglobulinaemia and hepatitis C infection",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/C1q.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "c3-nephritic-factor",
+      "name": "C3 nephritic factor",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Electrophoresis",
+        "reference_range": "Negative",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Mesangiocapilliary glomerulonephritis, only performed if C3 is low <0.3 g/L",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/C3-nephritic-factor.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "cardiac-muscle-antibodies",
+      "name": "Cardiac muscle antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "cardiac-markers",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Indirect immunofluorescence",
+        "reference_range": "Neg",
+        "interferences": "Anti-striational muscle antibodies can cross-react between cardiac muscle and skeletal muscle by indirect immunofluorescence"
+      },
+      "turnaround": {
+        "raw": "Median - 7",
+        "days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "clinical": {
+        "indications": "Dressler's syndrome (after M.I. post-cardiac surgery, some cardiomyopathies and following acute rheumatic fever).",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Cardiac-muscle-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "cardiolipin-igg-and-igm-antibodies",
+      "name": "Cardiolipin (IgG and IgM) antibodies",
+      "aliases": [],
+      "description": "Found in the anti-phospholipid syndrome, which may be primary or occur as a secondary complication of SLE. Elevated levels are significantly associated with the presence of both venous and arterial thrombosis, thrombocytopaenia, and recurrent fetal loss.",
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Multiplex flow immunoassay",
+        "reference_range": "0 to 19.9 GPLU/MPLU /mL (both IgG and IgM class antibodies)",
+        "interferences": "False positives in infections\n\nICE reference: Cardiolipin Antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 1\n\nEQA scheme: UK NEQAS Scheme for Phospholipid antibodies",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "Thrombosis, miscarriage",
+        "repeat_frequency": "The British Society for Standards Clinical Haematology guidelines requires anticardiolipin, lupus anticoagulant or Anti-β2-glycoprotein I to be present on two or more occasions at least 12 weeks apart to diagnose anti-phospholipid syndrome antibody.",
+        "references": "• http://www.bcshguidelines.com • International Consensus Guidelines on Anticardiolipin and Anti-β2-Glycoprotein I Testing"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Cardiolipin-IgG-and-IgM-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "caspr-lgi1-antibodies",
+      "name": "CASPR & LGi1 Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "serum 1ml",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Cell based assay",
+        "reference_range": "Cell Based assay - no reference range"
+      },
+      "turnaround": {
+        "raw": "14 days",
+        "days": {
+          "min": 14.0,
+          "max": 14.0
+        }
+      },
+      "clinical": {
+        "indications": "CASPR2 (Contactin Associated Protein 2) and LGi1 (leucine-rich glioma inactivated 1) antibodies are subunits of the potassium channel complex (VGKC). When the antibodies target LGI1 or CASPR2 they cause an encephalitis often termed limbic encephalitis.",
+        "repeat_frequency": "significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology The Churchill Hospital Old Road Headington Oxford OX3 7LJ",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/01/CASPR-LGi1-Antibodies-referred-test.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "ch50-complement-activity-classical-pathway",
+      "name": "CH50 complement activity Classical Pathway",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "All samples from outside the hospital should be transported on an ice pack. Transport at room temperature is acceptable within this hospital if the sample is delivered to the Immunology laboratory within 3 hours on weekdays only (not including bank holidays).",
+        "special_precautions": "Sample must be received by the laboratory no more than 3 hours post sample collection. If samples are likely to take longer than 3 hours to be delivered post venepuncture, they must be centrifuged, and the separated serum sample transported on ice to avoid reduction in activity that can occur with time."
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "41.68 - 95.06 U/mL",
+        "interferences": "If screened too soon after acute infection leads to falsely abnormal results due to complement activation. Some complement components are temperature sensitive and it is important that the samples should be delivered to the lab in a timely manner and on ice.",
+        "eqa_scheme": "INSTAND Complement Analysis EQA scheme"
+      },
+      "turnaround": {
+        "raw": "Median - 7",
+        "days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected complement deficiency e.g. meningococcal infection",
+        "repeat_frequency": "At significant change in symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/10/CH50-complement-activity-Classical-Pathway.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "coeliac-disease-antibodies",
+      "name": "Coeliac Disease Antibodies",
+      "aliases": [],
+      "description": "Coeliac Disease Antibodies IgA anti-tissue transglutaminase, IgG anti-tissue transglutaminase & IgA Endomysial antibodies",
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "autoimmunity",
+        "gastrointestinal"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "additional_requirements": "Haemolysed samples cannot be tested"
+      },
+      "analysis": {
+        "analyte": "IgA anti-tissue transglutaminase, IgG anti-tissue transglutaminase & IgA endomysial antibodies",
+        "method": "Multiplex flow immunoassay for TTG & immunofluorescence for endomysial antibodies.",
+        "interferences": "• Becomes negative on gluten free diet. • False Negative in IgA deficiency - our test platform will detect a low IgA level",
+        "eqa_scheme": "UK NEQAS scheme for coeliac disease antibodies",
+        "frequency_of_analysis": "Only to monitor compliance with gluten free diet\n\nLaboratory Medicine Care Division\n\nImmunology"
+      },
+      "turnaround": {
+        "raw": "IgA anti-tissue transglutaminase Median 1 IgG anti-tissue transglutaminase Median 2 IgA endomysial antibody Median: 7",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "Act as a screening test for coeliac disease in patients with suspected gluten sensitivity. With reference to Coeliac Disease NICE guidance NG20 IgA tTG is the first line of investigation for adults and children. If the IgA tTG is negative in a patient on a gluten-containing diet e.g. gluten in more than 1 meal per day for at least 6 weeks prior to testing with normal/low IgA, then coeliac disease is unlikely. An IgA endomysial antibody test is done to confirm all new positives and equivocal results. Coeliac disease is associated with IgA deficiency (IgA deficiency is defined as total IgA less than < 0.04 g/L) and the IgA tTG will be falsely negative in these patients, therefore IgA levels should be checked. This test is specific for coeliac disease, but a jejunal biopsy is recommended for confirmation. Refer to ESPGHAN guidelines for biopsy recommendations in children: https://www.espghan.org/knowledge-center/publications/Clinical-Advice- Guides/2020_New_Guidelines_for_the_Diagnosis_of_Paediatric_Coeliac_Disease Sending the right sample for coeliac disease screening: https://mft.nhs.uk/the- trust/otherdepartments/laboratory-medicine/information-for-gps/laboratory-medicines-newsletter-for- gps/sendingthe-right-sample-for-coeliac-disease-screening/"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Coeliac-Disease-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "complement-c3",
+      "name": "Complement C3",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": true
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "0.75-1.65g/L",
+        "interferences": "Traumatic venepuncture or delay in transport may lead to falsely low levels.",
+        "eqa_scheme": "UK NEQAS Specific protein and UK NEQAS C1 Inhibitor and functional complement schemes"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "Monitoring of SLE. Post streptococcal glomerulonephritis and other conditions of complement activation",
+        "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Complement-C3.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "complement-c4",
+      "name": "Complement C4",
+      "aliases": [],
+      "description": "Useful in monitoring a wide range of inflammatory and autoimmune disorders. Single point determinations are of limited value and serial measurements are recommended.",
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "complement"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": true
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "0.14-0.54 g/L",
+        "interferences": "Traumatic venepuncture and delay in transport can lead to false negative results due to in vitro activation.",
+        "eqa_scheme": "UK NEQAS Specific protein and UK NEQAS C1 Inhibitor and functional complement schemes"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "Pre-eclampsia, angioedema without urticaria, genetic deficiency, active SLE (associated with low C3) and sepsis (associated with low C3).",
+        "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/06/Complement-C4.pdf",
+        "detail_type": "pdf",
+        "last_updated": "June 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "c-reactive-protein-crp",
+      "name": "C-reactive protein (CRP)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "inflammation-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma, EDTA plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma",
+          "EDTA plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mg/L",
+        "reference_range": "0.6 - 5 mg/L (adult; 3 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "C-Reactive protein (CRP) (Plasma/serum)",
+        "match_method": "exact",
+        "units": "mg/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 0.6,
+            "high": 5.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Years",
+              "age_min": "18",
+              "age_max": "150",
+              "low": "0.6",
+              "high": "5"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 17.0,
+            "low": 0.6,
+            "high": 5.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Years",
+              "age_min": "0",
+              "age_max": "17",
+              "low": "0.6",
+              "high": "5"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 90.0,
+            "low": 1.0,
+            "high": 475.0,
+            "raw": {
+              "sex": "MALE",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "90",
+              "low": "1",
+              "high": "475"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "crithidia-antibodies",
+      "name": "Crithidia antibodies",
+      "aliases": [],
+      "description": "Used for the detection of antibodies that are specific for double stranded DNA",
+      "department": "Immunology",
+      "letter": "C",
+      "categories": [
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature"
+      },
+      "analysis": {
+        "method": "Immunofluorescence",
+        "reference_range": "Negative",
+        "interferences": "None",
+        "eqa_scheme": "UK NEQAS scheme for Antibodies to Nuclear and Related Antigens"
+      },
+      "turnaround": {
+        "raw": "Median - 7",
+        "days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "clinical": {
+        "indications": "SLE",
+        "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Crithidia-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "diphtheria-igg-antibody-determination",
+      "name": "Diphtheria IgG antibody determination",
+      "aliases": [],
+      "description": "Diphtheria IgG antibody determination by flow analysis assay bead assay.",
+      "department": "Vaccine Evaluation Unit",
+      "letter": "D",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Clotted Blood/serum, paired sera",
+        "container": "Clotted blood sample tube (no preservative)",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 0.1,
+          "unit": "mL"
+        },
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "IU/mL",
+        "clinical_decision_points": "IgG of ≥ 0.1IU/mL considered protective",
+        "interferences": "none known"
+      },
+      "turnaround": {
+        "raw": "28 working days",
+        "days": {
+          "min": 28.0,
+          "max": 28.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Diphtheria-IgG-Antibody-Determination.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "double-stranded-dna-antibodies-igg",
+      "name": "Double stranded DNA antibodies (IgG)",
+      "aliases": [],
+      "description": "The presence of autoantibodies to double stranded DNA is strongly suggestive of SLE, although they are detected in only 40-60% of patients with this disease.",
+      "department": "Immunology",
+      "letter": "D",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Multiplex flow immunoassay and Immunofluorescence",
+        "reference_range": "0-9.9 IU/mL",
+        "interferences": "We use two assays to detect DNA antibodies: • Crithidia is a source of pure double stranded DNA and gives a qualitative result • The multiplex assay can be contaminated by single stranded DNA, but gives quantitative results\n\nThe following configurations can be seen: • Crithidia Positive + multiplex flow immunoassay positive = indicates active lupus • Crithidia Negative + multiplex flow immunoassay positive = indicates single stranded DNA antibodies, usually triggered by infection or drugs",
+        "eqa_scheme": "Nuclear and Related Antigens"
+      },
+      "turnaround": {
+        "raw": "Median - 2",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "clinical": {
+        "indications": "Diagnosis and monitoring of lupus",
+        "repeat_frequency": "We recommend not repeating this test more than once a month, unless the patient is undergoing plasmapheresis"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Double-stranded-DNA-antibodies-IgG.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "erythrocyte-sedimentation-rate-esr",
+      "name": "Erythrocyte Sedimentation Rate (ESR)",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "E",
+      "categories": [
+        "haematology",
+        "inflammation-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "extended-sclerosis-panel",
+      "name": "Extended Sclerosis Panel",
+      "aliases": [],
+      "description": "Extended Sclerosis Panel (referred test) Antibodies to: Scl-70, CENP-A, CENP-B, RPII, RP155, Fibrillarin (U3 RNP), NOR90, Th/To, PM-Scl75, Ku, PDGFR (platelet derived growth factor receptor), Ro52)",
+      "department": "Immunology",
+      "letter": "E",
+      "categories": [
+        "autoimmunity",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "citrated-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "2mL Serum (Gel 5mL Yellow tube) or 2mL Plasma (EDTA, heparin or citrate)",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "transport": "Transport at ambient temperature via Royal Mail or Courier.",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunoblot",
+        "reference_range": "Negative = Normal"
+      },
+      "turnaround": {
+        "raw": "10 days",
+        "days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "clinical": {
+        "indications": "Investigation of Systemic Sclerosis (diffuse and limited forms of the disease)."
+      },
+      "referred_to": "Sheffield Immunology Dept and Protein Reference Unit",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Extended-Sclerosis-Panel-referred-test.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "gabab-receptor-ampa-receptor-1-2-antibodies",
+      "name": "GABAb receptor & AMPA receptor 1/2 antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "G",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "serum 1ml",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Cell based assay",
+        "reference_range": "Cell Based assay - no reference range"
+      },
+      "turnaround": {
+        "raw": "14 days",
+        "days": {
+          "min": 14.0,
+          "max": 14.0
+        }
+      },
+      "clinical": {
+        "indications": "Antibodies against GABAb receptors (GABAb receptors are the G-protein-coupled receptors (GPCRs) for γ-aminobutyric acid (GABA), the main inhibitory neurotransmitter in the central nervous system) and α-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid (AMPA) receptors can be detected in paraneoplastic syndrome and classical limbic encephalitis with early and prominent seizures. The antibodies may be present together with other autoantibodies in around 50% of cases (antibodies against GAD-65, VGCC, and TPO).",
+        "repeat_frequency": "significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology The Churchill Hospital Old Road Headington Oxford OX3 7LJ",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/01/GABAb-receptor-AMPA-receptor-1-2-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2019",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "glomerular-basement-membrane-antibodies",
+      "name": "Glomerular basement membrane antibodies",
+      "aliases": [],
+      "description": "Diagnostic test for Goodpasture's syndrome (anti GBM disease)",
+      "department": "Immunology",
+      "letter": "G",
+      "categories": [
+        "renal-function",
+        "reproductive-hormones",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "Please notify the laboratory if you require an anti GBM antibody result urgently (phone: 0161 276 6440)."
+      },
+      "analysis": {
+        "method": "Multiplex Flow Immunoassay",
+        "reference_range": "<0-0.9 AI",
+        "interferences": "A small number of patients with other renal diseases - systemic vasculitis, SLE and mixed connective tissue disease may exhibit borderline titres.",
+        "eqa_scheme": "UK NEQAS for Autoimmune Serology ANCA and GBM"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "Rapidly progressive glomerulonephritis.",
+        "repeat_frequency": "At significant change of clinical symptoms and post treatment monitoring"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Glomerular-basement-membrane-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "glutamic-acid-decarboxylase-antibodies",
+      "name": "Glutamic Acid Decarboxylase Antibodies",
+      "aliases": [],
+      "description": "Antibodies against the 65 isoform of the enzyme glutamic acid decarboxylase (GAD65) are seen in around 80% of patients with Type 1 Diabetes Mellitus (T1DM) (Dade et al, 2020). However they are also associated with neurological disorders. The most common of these is Stiff Person Syndrome but they have also been implicated in some cases of temporal lobe epilepsy, cerebral ataxia and limbic encephalitis, as well as overlap syndromes (Dade et al, 2020). GAD antibodies can be ordered individually, or as part of an autoimmune diabetes panel containing IA-2 antibodies, ZnT8 antibodies and GAD antibodies.",
+      "department": "Immunology",
+      "letter": "G",
+      "categories": [
+        "diabetes-metabolic",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Serum (Brown top serum gel bottle)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "transport": "At room temperature",
+        "additional_requirements": "None"
+      },
+      "analysis": {
+        "analyte": "Glutamic Acid Decarboxylase (GAD) Antibodies",
+        "method": "ELISA",
+        "units": "U/mL",
+        "reference_range": "Negative is <5 U/mL\n\nBudhram, A., Sechi, E., Flanagan, E. P., Dubey, D., Zekeridou, A., Shah, S. S., Gadoth, A., Naddaf, E., McKeon, A., Pittock, S. J. & Zalewski, N. L. (2021). Clinical spectrum of high-titre GAD65 antibodies. Journal of neurology, neurosurgery, and psychiatry, 92(6), 645-654.\n\nDade, M., Berzero, G., Izquierdo, C., Giry, M., Benazra, M., Delattre, J. Y., Psimaras, D., & Alentorn, A. (2020). Neurological Syndromes Associated with Anti-GAD Antibodies. International journal of molecular sciences, 21(10),\n\nPolly J. Bingley (2010) Clinical Applications of Diabetes Antibody Testing, The Journal of Clinical Endocrinology & Metabolism, 95, 25-33",
+        "interferences": "Lipaemic or haemolysed samples should not be used.",
+        "eqa_scheme": "UK NEQAS for Diabetic Markers",
+        "frequency_of_analysis": "For autoimmune diabetes: At initial diagnosis and in patients with suspected type 1 diabetes. Highest accuracy seen at initial presentation.\n\nFor Stiff person syndrome: At initial diagnosis and at significant change of clinical symptoms"
+      },
+      "turnaround": {
+        "raw": "Median - 6",
+        "days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "clinical": {
+        "interpretation": "Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of autoantibody testing.\n\nGAD65 antibody levels are commonly much higher in serum in neurological syndromes than in T1DM, and higher in CSF in cerebella ataxia and limbic encephalitis than in stiff person syndrome (Budhram et al, 2021)"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Glutamic-Acid-Decarboxylase-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "gout-urate-crystals",
+      "name": "Gout (urate crystals)",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "G",
+      "categories": [
+        "renal-function",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "haematinics-serum-intrinisic-factor-antibodies",
+      "name": "Haematinics – Serum intrinisic factor antibodies",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "H",
+      "categories": [
+        "nutrition-micronutrients",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": false
+        },
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "haemophilius-influenze-type-b-antibody",
+      "name": "Haemophilius influenze type b antibody",
+      "aliases": [],
+      "description": "Haemophilus influenzae type b IgG antibody determination by flow analysis assay bead assay.",
+      "department": "Vaccine Evaluation Unit",
+      "letter": "H",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Clotted Blood/serum",
+        "container": "Clotted blood sample tube (no preservative)",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 0.1,
+          "unit": "mL"
+        },
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "μg/mL",
+        "clinical_decision_points": "IgG of ≥ 0.15 μg/mL for short term protection: IgG of ≥ 1.00 μg/mL for long term protection",
+        "interferences": "None known"
+      },
+      "turnaround": {
+        "raw": "28 Working Days",
+        "days": {
+          "min": 28.0,
+          "max": 28.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Haemophilus-influenzae-type-b-IgG-Antibody-Determination.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "herpes-simplex-1-2-antibody-igg-type-specific-total-igm-and-total-igg",
+      "name": "Herpes simplex 1/2 antibody (IgG type specific, Total IgM and Total IgG)",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "H",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "virology",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood"
+        ],
+        "specimen_type_raw": "Venous Blood",
+        "container": "6mL clotted blood tube",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "2 mL",
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "collection": "6mL blood tube",
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "Not applicable",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Haemolysis"
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Herpes-simplex-1-2-antibody-IgG-type-specific-Total-IgM-and-Total-IgG.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "histone-abs",
+      "name": "Histone Abs",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "H",
+      "categories": [
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "EIA",
+        "reference_range": "<40 U/ml",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Drug-induced SLE. Also positive in RA/SLE etc.",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Histone-Abs.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "insulin-antibodies",
+      "name": "Insulin Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "I",
+      "categories": [
+        "diabetes-metabolic",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "ELISA",
+        "reference_range": "Negative",
+        "interferences": "None"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Insulin resistance",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "SAS Laboratory The Royal Guilford County Hospital Egerton Road Guilford Surrey GU2 7XX",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Insulin-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "liver-autoantibody-screen",
+      "name": "Liver autoantibody screen",
+      "aliases": [
+        "GPC",
+        "Gastric Parietal Cell (GPC)",
+        "LKM",
+        "Liver Kidney Microsomal (LKM)",
+        "Mitochondrial antibodies"
+      ],
+      "description": "Liver Autoantibody Screen Smooth muscle antibodies at a high titre are associated with chronic active hepatitis, and at low titres are more likely to be triggered by infection. Mitochondrial antibodies are associated with primary biliary cirrhosis. Further information on interpretation of autoantibody patterns: Autoimmune Hepatitis: Serum Autoantibodies in Clinical Practice - PMC (nih.gov)",
+      "department": "Immunology",
+      "letter": "L",
+      "categories": [
+        "liver-function",
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunofluorescence",
+        "reference_range": "Negative",
+        "interferences": "Unable to determine gastric parietal cell antibodies in the presence of mitochondrial antibodies.",
+        "eqa_scheme": "UK NEQAS for Liver Antibodies & UK NEQAS for Anaemia Related Antigens"
+      },
+      "turnaround": {
+        "raw": "Median - 3",
+        "days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "clinical": {
+        "indications": "Gastric parietal cells: Pernicious anaemia (PA), atrophic gastritis and are seen in 5-10% of healthy individuals. Present in the early stages of PA, frequently diminish with disease progression.",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "notes": "Smooth muscle mitochondrial antibodies; Gastric Parietal Cell (GPC); Liver Kidney Microsomal (LKM); Mitochondrial antibodies",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Liver-autoantibody-screen.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "methotrexate",
+      "name": "Methotrexate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "M",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "μmol/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Methotrexate",
+        "match_method": "exact",
+        "units": "μmol/L"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.18,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units"
+        ]
+      }
+    },
+    {
+      "id": "myeloperoxidase-mpo-antibodies",
+      "name": "Myeloperoxidase (MPO) antibodies",
+      "aliases": [
+        "MPO"
+      ],
+      "description": "Autoantibodies to myeloperoxidase are found in the sera of patients with various types of systemic vasculitis including (idiopathic crescentic glomerulonephritis), Churg-Strauss syndrome, microscopic polyangiitis and polyartheritis nodosa. Also see section on ANCA.",
+      "department": "Immunology",
+      "letter": "M",
+      "categories": [
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Multiplex Flow Immunoassay",
+        "reference_range": "<0-0.9 AI",
+        "interferences": "None",
+        "eqa_scheme": "UK NEQAS for Autoimmune Serology ANCA and GBM"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "Investigation of patients with systemic vasculitis",
+        "repeat_frequency": "Used to monitor response to treatment and risk of relapse"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Myeloperoxidase-MPO-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "myositis-antibodies",
+      "name": "Myositis Antibodies",
+      "aliases": [],
+      "description": "Analysis includes: Mi-2 (α and β), TIF1γ, MDA5, NXP2, SAE1, KU, proteins of the nucleolar PM-Scl macromolecular complex (PM-Scl75 and PM-Scl100), Jo1, SRP, PL-7, PL-12, EJ, OJ, Ro52 and cN-1A. Used to detect and identify individual myositis-specific antigens characteristic of autoimmune myositides.",
+      "department": "Immunology",
+      "letter": "M",
+      "categories": [
+        "autoimmunity",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunoblot",
+        "reference_range": "Negative",
+        "interferences": "The Myositis ENA assay is very sensitive and therefore false positive results may occur. Please interpret the results in the context of the clinical feature and if you have any queries about the results, please contact the Rheumatology Neuromuscular clinic at Salford Royal Hospital",
+        "eqa_scheme": "UK NEQAS for Myositis Associated Antibodies and Euroimmun Antibodies in Autoimmune Myopathies"
+      },
+      "turnaround": {
+        "raw": "Median - 6",
+        "days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "clinical": {
+        "indications": "To diagnose and monitor suspected Inflammatory Myopathies including Dermatomyositis, Juvenile Myositis, Polymyositis, idiopathic myositis, anti-synthetase syndrome and overlapping syndrome.",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Myositis-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "neisseria-meningitidis-functional-antibody-to-serogroup-b-by-serum-bactericidal",
+      "name": "Neisseria meningitidis: Functional antibody to serogroup B by Serum Bactericidal Antibody Assay (SBA)",
+      "aliases": [
+        "Functional antibody to Neisseria meningitidis serogroup B by Serum Bactericidal Antibody Assay (SBA)"
+      ],
+      "description": "Serum Bactericidal Antibody Assay (SBA)",
+      "department": "Vaccine Evaluation Unit",
+      "letter": "N",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Clotted Blood/serum, paired sera",
+        "container": "Clotted blood sample tube (no preservative)",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "Minimum volume 0.6mL",
+        "volume": {
+          "value": 0.6,
+          "unit": "mL"
+        },
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If the serum bactericidal activity is reported with the comment ‘SBA titre includes non- complement mediated lysis', then the result must be interpreted with caution. If in doubt, please telephone 0161 276 6791 for advice. If processing is delayed, refrigeration is preferable to storage at ambient temperature.\n\nDelays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "SBA Titres expressed as the reciprocal of the final serum dilution giving ≥ 50% killing at 60 minutes calculated from the number of colony forming units (cfu) in the control",
+        "clinical_decision_points": "For putative protection against serogroup B, the SBA titre must be ≥ 4 for at least 2 of the 3 strains used.",
+        "interferences": "As this is a 'killing type' assay using live bacteria, antibiotics can impact on results. A control to monitor this is included in the assay.\n\nThe effect and impact of Eculizumab therapy on this assay is currently under investigation"
+      },
+      "turnaround": {
+        "raw": "28 Working Days",
+        "days": {
+          "min": 28.0,
+          "max": 28.0
+        }
+      },
+      "notes": "Functional antibody to Neisseria meningitidis serogroup B by Serum Bactericidal Antibody Assay (SBA)",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Functional-antibody-to-Neisseria-meningitides-serogroup-B-by-Serum-Bactericidal-Antibody-Assay-SBA.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "neisseria-meningitidis-functional-antibody-to-serogroups-a-c-w-and-y-by-internat",
+      "name": "Neisseria meningitidis: Functional antibody to serogroups A, C, W and Y by internationally standardised serum bactericidal antibody assays",
+      "aliases": [],
+      "description": "Functional antibody to serogroups A, C, W and Y by internationally standardised serum bactericidal antibody assays.",
+      "department": "Vaccine Evaluation Unit",
+      "letter": "N",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Clotted Blood/serum,paired sera",
+        "container": "Clotted Blood/serum,paired sera, no preservatives",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "Minimum volume 0.2mL per serogroup",
+        "volume": {
+          "value": 0.2,
+          "unit": "mL"
+        },
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If the serum bactericidal activity is reported with the comment ‘SBA titre includes non- complement mediated lysis', then the result must be interpreted with caution. If in doubt, please telephone 0161 276 6791 for advice. If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "SBA titres expressed as the reciprocal of the final serum dilution giving ≥ 50% killing at 60 minutes calculated from the number of colony forming units (cfu) in the control",
+        "clinical_decision_points": "The putative protective SBA titre for serogroup C is ≥ 8. A cut off of ≥ 8 is currently considered protective for serogroups A,Y and W\n\nFactors known to significantly affect the results As this is a 'killing type' assay using live bacteria, antibiotics can impact on results. A control to monitor this is included in the assay."
+      },
+      "turnaround": {
+        "raw": "28 Working Days",
+        "days": {
+          "min": 28.0,
+          "max": 28.0
+        }
+      },
+      "notes": "Meningococcal Serology; Molecular subtyping of isolates; Neisseria meningitidis serology",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Neisseria-meningitidis.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "nmda-n-methyl-d-aspartate-receptor-antibodies",
+      "name": "NMDA – N-methyl-D-aspartate receptor antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "N",
+      "categories": [
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum",
+          "plasma",
+          "csf"
+        ],
+        "specimen_type_raw": "A paired 0.5mL serum and 0.5mL CSF sample, although plasma is acceptable.",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 0.5,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Cell based assay/Immunofluorescence Microscopy",
+        "reference_range": "Negative"
+      },
+      "turnaround": {
+        "raw": "(calendar days from sample receipt to authorised result): Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "NMDA receptor antibodies are associated with the different sub units of the NMDA receptor. Antibodies to the delta or NR2 subunits of NMDA receptor are associated with limbic encephalitis, systemic lupus erythematosus (SLE), ataxia and epilepsia partialis continua. Antibodies against the NR1, NR2A and NR2B subunits of the NMDA are found in patients presenting with psychiatric symptoms, amnesia, seizures, dyskinesias, autonomic dysfunction and loss of consciousness. In women younger than 45 years, a form of encephalitis associated with ovarian teratoma and presenting with seizures and psychiatric symptoms has been described.\n\nImmunology For additional information please see our referral laboratory's user guide: http://www.ouh.nhs.uk/immunology/diagnostic-tests/tests-catalogue/nmda-antibodies.aspx",
+        "repeat_frequency": "At change of clinical symptoms"
+      },
+      "referred_to": "Clinical Laboratory Immunology Churchill Hospital Churchill Drive Old Road Headington Oxford OX3 7LE UK",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/NMDA-%E2%80%93-N-methyl-D-aspartate-receptor-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2018",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "orosomucoid",
+      "name": "Orosomucoid",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "O",
+      "categories": [
+        "clinical-chemistry",
+        "inflammation-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "g/L",
+        "reference_range": "0.3 - 1.2 g/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Orosomucoid",
+        "match_method": "exact",
+        "units": "g/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 0.3,
+            "high": 1.2,
+            "raw": {
+              "sex": "ALL",
+              "age_unit": "ALL",
+              "age_min": "ALL",
+              "age_max": "ALL",
+              "low": "0.3",
+              "high": "1.2"
+            }
+          }
+        ]
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals"
+        ]
+      }
+    },
+    {
+      "id": "ovary-antibodies",
+      "name": "Ovary antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "O",
+      "categories": [
+        "reproductive-hormones",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunofluorescence",
+        "reference_range": "Neg",
+        "interferences": "Patients may also have adrenal and thyroid antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 6, 95th percentile - 17",
+        "days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected premature ovarian failure (15-50% of patients have positive antibodies)",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Ovary-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "paraneoplastic-neuronal-antibodies",
+      "name": "Paraneoplastic Neuronal Antibodies",
+      "aliases": [],
+      "description": "Paraneoplastic Neuronal Antibodies Analysis includes antibodies to Amphiphysin, CV2, PNMA2(Ma2), Ri, Yo, Hu, Recoverin, SOX1, Titin, Zic4, and GAD65 and Tr (DNER). Used to determine if an underlying malignancy exists alongside neurological disease. Please note: Antibodies to Ma1 are no longer performed in this laboratory.",
+      "department": "Immunology",
+      "letter": "P",
+      "categories": [
+        "tumour-markers",
+        "autoimmunity",
+        "sexual-health-sti",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunoblot",
+        "reference_range": "Negative",
+        "interferences": "Interferences may be possible by administration of intravenous immunoglobulins (so-called IVIG). At present no further interferences by drugs are known. After plasmapheresis preliminary positive results may become weak or negative.",
+        "eqa_scheme": "UK NEQAS for Paraneoplastic Antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 5",
+        "days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "clinical": {
+        "indications": "Cerebellar degeneration, encephalitis, neuropathy",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/07/Paraneoplastic-Neuronal-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "June 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "pla2r-antibodies",
+      "name": "PLA2R Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "P",
+      "categories": [
+        "renal-function",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Brown Serum 4.9 mls x2",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.9,
+          "unit": "mL"
+        },
+        "transport": "At room temperature"
+      },
+      "analysis": {
+        "method": "See https://www.immqas.org.uk/pru.asp?sa=pla2r",
+        "reference_range": "See https://www.immqas.org.uk/pru.asp?sa=pla2r"
+      },
+      "clinical": {
+        "indications": "see https://www.immqas.org.uk/pru.asp?sa=pla2r"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/01/PLA2R-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "plasma-viscosity",
+      "name": "Plasma viscosity",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "P",
+      "categories": [
+        "haematology",
+        "inflammation-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "pr3-autoantibodies-canca",
+      "name": "PR3 autoantibodies (cANCA)",
+      "aliases": [
+        "cANCA"
+      ],
+      "description": "c-ANCAs are directed to proteinase 3 and are typically associated with Wegener's granulomatosis. Also see section on ANCA.",
+      "department": "Immunology",
+      "letter": "P",
+      "categories": [
+        "autoimmunity",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Multiplex flow immunoassay",
+        "reference_range": "<0-0.9 AI",
+        "interferences": "None",
+        "eqa_scheme": "UK NEQAS for Autoimmune Serology ANCA and GBM"
+      },
+      "turnaround": {
+        "raw": "Median - 1",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected Wegener's granulomatosis and monitoring treatment",
+        "repeat_frequency": "Used to monitor response to treatment and risk of relapse"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/PR3-autoantibodies-cANCA.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "procalcitonin",
+      "name": "Procalcitonin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "P",
+      "categories": [
+        "inflammation-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "μg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Procalcitonin",
+        "match_method": "exact",
+        "units": "μg/L",
+        "notes": "no reference range - autocomment \"Consider stopping antibiotics if procalcitonin concentration has decreased by more than or equal to 80% from the PEAK concentration or is less than 0.5ug/L. Review of antibiotics is STRONGLY encouraged if procalcitonin concentration is increasing AND >0.5ug/L. Refer to microbiology for further advice on interpretation & antibiotic dosing.\""
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.18,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units"
+        ]
+      }
+    },
+    {
+      "id": "quiescent-gout-urate-crystals",
+      "name": "Quiescent gout (urate crystals)",
+      "aliases": [],
+      "department": "Synovial Fluid Cytology",
+      "letter": "Q",
+      "categories": [
+        "renal-function",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "rheumatoid-factor",
+      "name": "Rheumatoid factor",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "R",
+      "categories": [
+        "autoimmunity",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Turbidimetry",
+        "reference_range": "0-13 kIU/L",
+        "interferences": "Disease activity: only 70-80% of patients with confirmed RA have positive rheumatoid factor. Detected in 2-10% of general population.\n\nElevated titres may also accompany a variety of acute immune responses particularly infections (50%), liver disease, Sarcoidosis, and SLE.",
+        "eqa_scheme": "UK NEQAS for Rheumatoid Antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 2",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "clinical": {
+        "indications": "Aid for the prognosis of RA and Sjögren's syndrome in the presence of an erosive arthropathy.\n\nRheumatoid factor is not useful in the diagnosis of rheumatoid arthritis, it has a limited role in predicting the risk of complications particularly vasculitis.",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/01/Rheumatoid-factor.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "serum-intrinisic-factor-antibodies",
+      "name": "Serum intrinisic factor antibodies",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "S",
+      "categories": [
+        "nutrition-micronutrients",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": false
+        },
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "skin-antibodies",
+      "name": "Skin antibodies",
+      "aliases": [],
+      "description": "Two types of skin autoantibodies that detect different skin components are recognised: • Intercellular cement substance (Pemphigus antibodies) • Basement membrane antibodies (Pemphigoid antibodies)",
+      "department": "Immunology",
+      "letter": "S",
+      "categories": [
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunofluorescence",
+        "reference_range": "Neg",
+        "interferences": "None",
+        "eqa_scheme": "UK NEQAS scheme for antibodies in Bullous Dermatosis"
+      },
+      "turnaround": {
+        "raw": "Median - 5",
+        "days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "clinical": {
+        "indications": "Bullous skin disorders, dermatitis herpetiformis",
+        "repeat_frequency": "Depending on changes in clinical picture"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Skin-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "smooth-muscle-mitochondrial-antibodies",
+      "name": "Smooth muscle mitochondrial antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "S",
+      "categories": [
+        "liver-function",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        }
+      ],
+      "notes": "See Liver autoantibody screen",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "testis-antibodies",
+      "name": "Testis antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "T",
+      "categories": [
+        "reproductive-hormones",
+        "autoimmunity",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunofluorescence",
+        "reference_range": "Negative",
+        "interferences": "Patients may also have adrenal, thyroid and islet cell antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 6, 95th percentile - 17",
+        "days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "clinical": {
+        "indications": "Infertility, endocrine polyglandular disorders",
+        "repeat_frequency": "significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology PO Box 894 Sheffield S5 7YT",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Testis-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "tetanus-antibodies",
+      "name": "Tetanus antibodies",
+      "aliases": [],
+      "description": "Tetanus IgG antibody determination by flow analysis assay bead assay",
+      "department": "Vaccine Evaluation Unit",
+      "letter": "T",
+      "categories": [
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Clotted Blood/serum, paired sera",
+        "container": "Clotted blood sample tube (no preservative)",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "Clotted Blood/serum, paired sera; Minimum volume 0.1mL per serogroup",
+        "volume": {
+          "value": 0.1,
+          "unit": "mL"
+        },
+        "collection": "Clotted Blood/serum, paired sera",
+        "transport": "At ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "IU/mL",
+        "clinical_decision_points": "IgG of ≥ 0.1 of IU/mL considered protective",
+        "interferences": "none known"
+      },
+      "turnaround": {
+        "raw": "28 Working Days",
+        "days": {
+          "min": 28.0,
+          "max": 28.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Tetanus-IgG-Antibody-Determination.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "therapeutic-drug-monitoring-of-anti-tnf-therapies-infliximab-and-adalimumab",
+      "name": "Therapeutic Drug Monitoring of anti-TNF therapies Infliximab and Adalimumab",
+      "aliases": [],
+      "description": "Therapeutic Drug Monitoring of anti-TNF therapies Infliximab and Adalimumab The Immunology department uses ELISA assays to measure the following: • Infliximab drug levels • Anti-Infliximab antibody levels • Adalimumab drug levels • Anti-Adalimumab antibody levels Infliximab Drug Levels Infliximab is a murine-human chimeric, therapeutic monoclonal antibody directed against TNFα and is used in the treatment of inflammatory diseases including Crohn's disease, ulcerative colitis, rheumatoid arthritis, ankylosing spondylitis and severe psoriasis. This is a recently introduced method. For information on these assays please see: https://www.exeterlaboratory.com/test/infliximab-drug-levels",
+      "department": "Immunology",
+      "letter": "T",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "transport": "At room temperature",
+        "additional_requirements": "None"
+      },
+      "analysis": {
+        "analyte": "This assay measures total anti-infliximab antibody levels",
+        "method": "ELISA method\n\nLaboratory Medicine Care Division\n\nImmunology",
+        "units": "AU/mL (arbitrary units per mL)",
+        "interferences": "High dose biotin supplementation can lead to falsely low results .",
+        "eqa_scheme": "Pilot UK NEQAS for Anti-TNF Drugs and Antibodies",
+        "frequency_of_analysis": "As required"
+      },
+      "turnaround": {
+        "raw": "Median - 10\n\nLaboratory Medicine Care Division\n\nImmunology",
+        "days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/04/Therapeutic-Drug-Monitoring-of-anti-TNF-therapies-Infliximab-and-Adalimumab.pdf",
+        "detail_type": "pdf",
+        "last_updated": "April 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "thiopurine-metabolites",
+      "name": "Thiopurine metabolites",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "T",
+      "categories": [
+        "therapeutic-drug-monitoring"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "Whole bood EDTA",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "accepted_specimens": [
+          "Whole bood EDTA"
+        ],
+        "preferred_specimen": "Whole bood EDTA"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Thiopurine metabolites",
+        "match_method": "exact",
+        "notes": "6-TGN: 235-450 pmol 6TGN/8x10^8 cells: maximum drug efficacy in IBD. >1000 pmol 6TGN/8x10^8 cells: increased risk of myelosuppression 6-MMPN: >5700 pmol 6MMPN/8x10^8 cells: Increased risk of hepatotoxicity"
+      },
+      "turnaround": {
+        "raw": "2 weeks",
+        "days": {
+          "min": 14.0,
+          "max": 14.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.18,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "thiopurine-methyl-transferase-tpmt",
+      "name": "Thiopurine Methyltransferase (TPMT)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "T",
+      "categories": [
+        "therapeutic-drug-monitoring",
+        "genetics-molecular"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "Whole blood EDTA",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "accepted_specimens": [
+          "Whole blood EDTA"
+        ],
+        "preferred_specimen": "Whole blood EDTA"
+      },
+      "analysis": {
+        "units": "mU/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Thiopurine Methyl Transferase (TPMT)",
+        "match_method": "exact",
+        "units": "mU/L",
+        "notes": "Deficient activity less than 10 mU/L Low activity 20 - 85 mU/L Normal activity 85 - 185 mU/L High activity > 185 mU/L"
+      },
+      "turnaround": {
+        "raw": "10 days",
+        "days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.27,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "thyroid-peroxidase-tpo-antibodies",
+      "name": "Thyroid peroxidase (TPO) antibodies",
+      "aliases": [
+        "TPO"
+      ],
+      "department": "Biochemistry",
+      "letter": "T",
+      "categories": [
+        "thyroid",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "IU/mL",
+        "reference_range": "0 - 34 IU/mL"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Thyroid Peroxidase Antibodies (TPO)",
+        "match_method": "exact",
+        "units": "IU/mL",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 0.0,
+            "high": 34.0,
+            "raw": {
+              "sex": "ALL",
+              "age_unit": "ALL",
+              "age_min": "ALL",
+              "age_max": "ALL",
+              "low": "0",
+              "high": "34"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "96 hours",
+        "days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "notes": "TPO",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "tsh-receptor-antibodies",
+      "name": "TSH Receptor Antibodies",
+      "aliases": [],
+      "description": "TSH Receptor Antibodies All forms of autoimmune thyrotoxicosis (Graves' disease, Hashimoto's thyrotoxicosis, neonatal thyrotoxicosis) are caused by the production of TSH-R stimulating autoantibodies. These autoantibodies bind to the receptor and activate it, leading to stimulation of the thyroid gland independent of the normal feedback-regulated thyrotropin TSH stimulation.",
+      "department": "Immunology",
+      "letter": "T",
+      "categories": [
+        "thyroid",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": false
+        },
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "analyte": "Thyroid Stimulating Hormone Receptor Antibodies",
+        "method": "ELISA",
+        "units": "IU/L",
+        "reference_range": "0 - 0.4 IU/L",
+        "interferences": "None",
+        "eqa_scheme": "UK NEQAS for Thyroid Antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 5",
+        "days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "clinical": {
+        "indications": "Autoimmune thyrotoxicosis",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/01/TSH-Receptor-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.73,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "urate-blood-and-urine",
+      "name": "Urate (blood and urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "U",
+      "categories": [
+        "renal-function",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "μmol/L",
+        "reference_range": "158 - 748 μmol/L (adult; 8 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Urate",
+        "match_method": "exact",
+        "units": "μmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 15.0,
+            "low": 158.0,
+            "high": 748.0,
+            "raw": {
+              "sex": "M/F",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "15",
+              "low": "158",
+              "high": "748"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 15.0,
+            "age_max": 365.0,
+            "low": 88.0,
+            "high": 370.0,
+            "raw": {
+              "age_unit": "Days",
+              "age_min": "15",
+              "age_max": "365",
+              "low": "88",
+              "high": "370"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 100.0,
+            "high": 282.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "12",
+              "low": "100",
+              "high": "282"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 19.0,
+            "low": 147.0,
+            "high": 342.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "12",
+              "age_max": "19",
+              "low": "147",
+              "high": "342"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 19.0,
+            "age_max": 150.0,
+            "low": 140.0,
+            "high": 360.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "19",
+              "age_max": "150",
+              "low": "140",
+              "high": "360"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 100.0,
+            "high": 282.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "12",
+              "low": "100",
+              "high": "282"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 19.0,
+            "low": 150.0,
+            "high": 446.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "12",
+              "age_max": "19",
+              "low": "150",
+              "high": "446"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 19.0,
+            "age_max": 150.0,
+            "low": 200.0,
+            "high": 430.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "19",
+              "age_max": "150",
+              "low": "200",
+              "high": "430"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "voltage-gated-calcium-channel-antibodies",
+      "name": "Voltage-Gated Calcium Channel Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "V",
+      "categories": [
+        "bone-metabolism",
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "RIA",
+        "reference_range": "0-45 pmol",
+        "interferences": "VGCC antibodies may be found with paraneoplastic neuronal antibodies"
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Lambert Eaton Myasthenic syndrome, cerebellar degeneration",
+        "repeat_frequency": "significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology The Churchill Hospital Old Road Headington Oxford OX3 7LJ",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Voltage-Gated-Calcium-Channel-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "voltage-gated-potassium-channel-antibodies",
+      "name": "Voltage-Gated Potassium Channel Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "V",
+      "categories": [
+        "clinical-chemistry",
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "RIA",
+        "reference_range": "0-100 pmol",
+        "interferences": "Approx 20% of patients with VGKC antibodies will have an underlying thymoma. Patients may have Myasthenia gravis with or without acetylcholine receptor antibodies."
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Peripheral nerve hyperexcitability, neuromyotonia, Morvan's syndrome.",
+        "repeat_frequency": "significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology The Churchill Hospital Old Road Headington Oxford OX3 7LJ",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Voltage-Gated-Potassium-Channel-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "zinc-transporter-8-znt8-antibodies",
+      "name": "Zinc Transporter 8 (ZnT8) antibodies",
+      "aliases": [],
+      "description": "The assessment of autoantibodies to pancreatic β cell antigens is an important serological marker of type 1 diabetes mellitus (Type 1 DM). The antigens recognised by these antibodies include Zinc transporter 8 (ZnT8), insulinoma associated antigen 2 (IA-2), glutamic acid decarboxylase (GAD) GAD65kDa isoform and insulin. The epitopes principally recognised by ZnT8 antibodies reside in residues 268-369 of the C terminal domain. Single nucleotide polymorphisms at the 325 residue lead to expression of arginine (R), tryptophan (W) or, rarely, glutamine (Q). Autoantibodies have been discovered that are known to be specific to either the R or W alleles or residue 325 non-specific. Autoantibodies specific to the Q allele are extremely rare. In a study of 1170 children with a genetic predisposition to diabetes, 58 went on to develop ZnT8 autoantibodies. Of these antibodies, the majority (67.7%) could recognise all alleles and only 15.5% were reactive to a single allele, none of which were reactive only to the Q allele (Achenbach et al, 2009). The RSR kit will detect the R, W and reside 325 non-specific alleles. ZnT8 antibodies can be ordered individually, or as part of a panel containing ZnT8 antibodies, IA-2 antibodies and GAD antibodies.",
+      "department": "Immunology",
+      "letter": "Z",
+      "categories": [
+        "diabetes-metabolic",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Serum (Brown top serum gel bottle)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "transport": "At room temperature",
+        "additional_requirements": "None"
+      },
+      "analysis": {
+        "analyte": "Zinc transporter 8 (ZnT8) antibodies",
+        "method": "ELISA",
+        "units": "U/mL",
+        "reference_range": "Negative is <10 U/mL\n\nAchenbach, P., Lampasona, V. and Landherr, U. (2009) Autoantibodies to zinc transporter 8 and SLC30A8 genotype stratify type 1 diabetes risk. Diabetologia, 52, 1881-1888 Polly J. Bingley (2010) Clinical Applications of Diabetes Antibody Testing, The Journal of Clinical Endocrinology & Metabolism, 95, 25-33",
+        "interferences": "Haemolysed and lipaemic samples should not be used.",
+        "eqa_scheme": "UK NEQAS for Diabetic Markers\n\nImmunology",
+        "frequency_of_analysis": "At initial diagnosis and in patients with suspected type 1 diabetes. Highest accuracy seen at initial presentation."
+      },
+      "turnaround": {
+        "raw": "10 days",
+        "days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "clinical": {
+        "interpretation": "Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of autoantibody testing."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Zinc-Transporter-8-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    }
+  ]
+}

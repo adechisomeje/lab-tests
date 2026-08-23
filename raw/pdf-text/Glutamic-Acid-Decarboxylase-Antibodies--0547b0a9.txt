@@ -1,0 +1,105 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/2 
+Glutamic Acid Decarboxylase Antibodies 
+ 
+General information 
+ 
+Antibodies against the 65 isoform of the enzyme glutamic acid decarboxylase (GAD65) are seen in around 
+80% of patients with Type 1 Diabetes Mellitus (T1DM) (Dade et al, 2020). However they are also associated 
+with neurological disorders. The most common of these is Stiff Person Syndrome but they have also been 
+implicated in some cases of temporal lobe epilepsy, cerebral ataxia and limbic encephalitis, as well as overlap 
+syndromes (Dade et al, 2020).  
+ 
+GAD antibodies can be ordered individually, or as part of an autoimmune diabetes panel containing IA-2 
+antibodies, ZnT8 antibodies and GAD antibodies. 
+ 
+Assay Interferences: Lipaemic or haemolysed samples should not be used. 
+ 
+Laboratory information 
+ 
+Analyte: Glutamic Acid Decarboxylase (GAD) Antibodies 
+ 
+Units: U/mL 
+ 
+Specimen type: Serum (Brown top serum gel bottle) 
+ 
+Frequency of analysis:  
+ 
+For autoimmune diabetes: At initial diagnosis and in patients with suspected type 1 diabetes. Highest 
+accuracy seen at initial presentation. 
+ 
+For Stiff person syndrome: At initial diagnosis and at significant change of clinical symptoms 
+ 
+Turnaround times: Median – 6 
+ 
+Specimen transport: At room temperature 
+ 
+Additional/Special requirements: None 
+ 
+Method: ELISA 
+ 
+Participation in EQA scheme: UK NEQAS for Diabetic Markers 
+ 
+Clinical information 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/2 
+Interpretation: Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical 
+symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes 
+diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity 
+increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 
+70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA 
+positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states 
+the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific 
+autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic 
+uncertainty after the use of autoantibody testing. 
+   
+GAD65 antibody levels are commonly much higher in serum in neurological syndromes than in T1DM, and 
+higher in CSF in cerebella ataxia and limbic encephalitis than in stiff person syndrome (Budhram et al, 2021) 
+ 
+Reference Range: Negative is <5 U/mL 
+ 
+ 
+Budhram, A., Sechi, E., Flanagan, E. P., Dubey, D., Zekeridou, A., Shah, S. S., Gadoth, A., Naddaf, E., McKeon, 
+A., Pittock, S. J. & Zalewski, N. L. (2021). Clinical spectrum of high-titre GAD65 antibodies. Journal of 
+neurology, neurosurgery, and psychiatry, 92(6), 645–654.  
+ 
+Dade, M., Berzero, G., Izquierdo, C., Giry, M., Benazra, M., Delattre, J. Y., Psimaras, D., & Alentorn, A. (2020). 
+Neurological Syndromes Associated with Anti-GAD Antibodies. International journal of molecular 
+sciences, 21(10),  
+ 
+Polly J. Bingley (2010) Clinical Applications of Diabetes Antibody Testing, The Journal of Clinical Endocrinology 
+& Metabolism, 95, 25–33 
+ 
+ 
+ 
+(Last updated July 2023) 

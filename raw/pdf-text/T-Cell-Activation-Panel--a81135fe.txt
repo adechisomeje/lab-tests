@@ -1,0 +1,58 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+T Cell Activation Panel 
+ 
+General information 
+ 
+Assay principles: This test is usually done in conjunction with lymphocyte subsets surface markers (ID), in 
+which case a separate sample is not required. This assay measures the levels of CD25 and HLA-DR expression 
+on CD4+ T cells which have been activated from an immune response to a pathogen. Activated T cells are a 
+hallmark of the combined immunodeficiency, Omenn’s syndrome. Rare immunodeficiencies exist where 
+activation markers can be absent from immune cells e.g. HLA-Dr in Bare Lymphocyte Syndrome (type 2) and 
+CD25 in IL-2 receptor deficiency. More specifically, analysis of CD25 expression may be useful in the 
+diagnosis of IPEX syndrome. 
+ 
+Assay interferences: Older samples may exhibit loss of surface antigens and therefore the sample should be 
+as fresh as possible. 
+ 
+Laboratory information 
+ 
+Analyte: T Cell Activation Panel 
+ 
+Units: % 
+ 
+Specimen type: Peripheral blood - EDTA  
+ 
+Frequency of analysis: Dependent on clinical indication 
+ 
+Turnaround times: 1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00 
+ 
+Specimen transport: At room temperature 
+ 
+Additional/special requirements: Note that samples should be received in the laboratory no later than 3pm 
+on a Friday. Samples should be kept at room temperature. 
+ 
+Method: Flow Cytometry 
+ 
+Participation in EQA Scheme: N/A 
+ 
+Clinical information 
+ 
+Interpretation: Use of this panel in the investigation/monitoring of immunodeficiency should be discussed 
+with the appropriate Consultant Immunologist (adult or paediatric).  
+ 
+(Last updated April 2021) 

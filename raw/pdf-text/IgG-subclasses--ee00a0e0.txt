@@ -1,0 +1,139 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/2 
+IgG subclasses 
+General information 
+IgG1, IgG2, IgG3, IgG4 
+ 
+IgG1, IgG3 & IgG4 immunoglobulins are predominantly directed against protein antigens, while IgG2 
+antibodies are directed towards polysaccharide antigens. IgG1 is the major contributor to total IgG.  
+ 
+Low IgG1 can be seen in primary or secondary immunodeficiency but often does not occur in isolation. Low 
+IgG2 concentration may be observed in individuals susceptible to bacterial infections. The clinical significance 
+of low/absent IgG3 and IgG4 is uncertain. 
+ 
+Specimen transport: At room temperature 
+ 
+Repeat frequency: Not within 6 months 
+ 
+Special precautions: None 
+Laboratory information 
+Normal reference range: Age specific 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Volume and sample type: 4ml serum 
+ 
+Method: Turbidimetry 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 4 
+Age 
+IgG1 g/l 
+IgG2 g/L 
+IgG3 g/L 
+IgG4 g/L 
+0-2 years 
+1.940-8.420 
+0.225-3.000 
+0.186-0.853 
+0.005-0.784 
+2-4 years 
+3.150-9.450 
+0.360-2.250 
+0.173-0.673 
+0.010-0.537 
+4-6 years 
+3.060-9.450 
+0.605-3.450 
+0.099-1.221 
+0.018-1.125 
+6-8 years 
+2.880-9.180 
+0.440-3.750 
+0.155-0.853 
+0.004-0.992 
+8-10 years 
+4.320-10.200 
+0.720-4.300 
+0.127-0.853 
+0.019-0.932 
+10-12 years 
+4.230-10.600 
+0.760-3.550 
+0.173-1.730 
+0.016-1.150 
+12-14 years 
+3.420-11.500 
+1.000-4.550 
+0.283-1.250 
+0.037-1.360 
+14-18 years 
+3.150-8.550 
+0.640-4.950 
+0.230-1.960 
+0.110-1.570 
+>18 years 
+3.824-9.286 
+2.418-7.003 
+0.218-1.761 
+0.039-0.864 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/2 
+ 
+Participation in EQA Scheme: UK NEQAS for IgG SUBCLASSES 
+ 
+Clinical information 
+Indications for the test: History of bacterial sinopulmonary infection and IgG between 5-16g/L. History of/or 
+failure to respond to polysaccharide vaccines, pancreatitis (history of recurrent infections - not viral), or 
+abscesses or (failure to respond to immunisation) AND (Total IgG < 0.1 g/l). 
+Samples not meeting these requirements will be rejected. 
+ 
+Factors affecting the test: None 
+  
+  
+ 
+(Last updated October 2025) 
+ 

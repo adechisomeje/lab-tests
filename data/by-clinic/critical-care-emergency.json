@@ -1,0 +1,3745 @@
+{
+  "meta": {
+    "profile": "critical-care-emergency",
+    "name": "Critical Care & Emergency Medicine",
+    "version": "0.1.0",
+    "rationale": "Rapid-turnaround chemistry, blood gases, sepsis markers, coagulation and toxicology drive acute decision-making.",
+    "test_count": 39
+  },
+  "tests": [
+    {
+      "id": "acid-base-status",
+      "name": "Acid base status",
+      "aliases": [
+        "Gases"
+      ],
+      "department": "Biochemistry",
+      "letter": "A",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "notes": "Gases",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "actual-bicarbonate",
+      "name": "Actual bicarbonate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "A",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "albumin-creatinine-ratio-acr",
+      "name": "Albumin Creatinine Ratio (ACR)",
+      "aliases": [
+        "ACR"
+      ],
+      "department": "Biochemistry",
+      "letter": "A",
+      "categories": [
+        "clinical-chemistry",
+        "renal-function"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "urine"
+        ],
+        "specimen_type_raw": "Spot urine",
+        "accepted_specimens": [
+          "Spot urine"
+        ],
+        "preferred_specimen": "Spot urine"
+      },
+      "analysis": {
+        "units": "mg/mmol",
+        "reference_range": "< 3 mg/mmol"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Albumin to Creatinine Ratio",
+        "match_method": "fuzzy:0.75",
+        "units": "mg/mmol",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "high": 3.0,
+            "high_op": "lt",
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "high": "<3"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "notes": "ACR",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "ammonia",
+      "name": "Ammonia",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "A",
+      "categories": [
+        "clinical-chemistry",
+        "liver-function"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood"
+        ],
+        "specimen_type_raw": "EDTA plasma",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "accepted_specimens": [
+          "EDTA plasma"
+        ],
+        "preferred_specimen": "EDTA plasma"
+      },
+      "analysis": {
+        "units": "μmol/L",
+        "reference_range": "0 - 100 μmol/L (adult; 2 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Ammonia",
+        "match_method": "exact",
+        "units": "μmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "months",
+            "age_min": 0.0,
+            "age_max": 1.0,
+            "low": 0.0,
+            "high": 100.0,
+            "raw": {
+              "sex": "M/F",
+              "age_unit": "Months",
+              "age_min": "0",
+              "age_max": "1",
+              "low": "0",
+              "high": "100"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "months",
+            "age_min": 1.0,
+            "age_max": 1.0,
+            "low": 0.0,
+            "high": 40.0,
+            "raw": {
+              "sex": "M/F",
+              "age_unit": "Months",
+              "age_min": "1",
+              "age_max": ">1",
+              "low": "0",
+              "high": "40"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "aptt",
+      "name": "APTT",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "A",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "beta-hydroxybutyrate",
+      "name": "Beta Hydroxybutyrate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "B",
+      "categories": [
+        "diabetes-metabolic"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": false
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "μmol/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "β-hydroxybutyrate",
+        "match_method": "exact",
+        "units": "μmol/L"
+      },
+      "turnaround": {
+        "raw": "2 weeks",
+        "days": {
+          "min": 14.0,
+          "max": 14.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.27,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "blood-cultures",
+      "name": "Blood Cultures",
+      "aliases": [],
+      "description": "Bloodstream Infection, Sepsis, Neonatal Sepsis, Infective endocarditis, Prosthetic valve endocarditis (PVE), Bacteraemia. The Blood Culture system can also be used for small volumes of the following sterile fluids to aid the recovery of fastidious organisms, for example but not limited to, CAPD/peritoneal fluids (Ascites), Joint Fluids (Prosthetic & Natural), and Stem Cell fluids. For all other sterile fluids please refer to the Sterile Fluids (Bacteriology) section.",
+      "department": "Bacteriology",
+      "letter": "B",
+      "categories": [
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "whole-blood",
+          "body-fluid"
+        ],
+        "specimen_type_raw": "Venous blood, arterial blood, peripheral blood, sterile fluids\n\nBD BACTEC bottles",
+        "container": "Collect specimens in BD Bactec bottles using aseptic technique. The bottles should be stored at room temperature before use.",
+        "volume": {
+          "value": 10.0,
+          "unit": "mL"
+        },
+        "collection": "A blood culture set is defined as one aerobic (Silver/Blue Top) and one anaerobic (Purple top) bottle. This set is also suitable for patients on antibiotics, or where fungaemia is suspected.\n\nFor infants and neonates, a single Peds aerobic bottle (Pink top) may be requested.\n\nFor small volume sterile fluids such as Pacemaker fluids & Stem cells, a single Peds aerobic bottle (Pink top) should be used.\n\nBacteriology\n\nPlease refer to MFT sepsis pathway for guidance.\n\nTake two consecutive sets from two separate venepuncture sites during any 24hr period for each septic episode. For neonates, take a single low-volume Peds aerobic bottle Take two sets during the first hour in cases of severe sepsis prior to commencing antibiotic treatment, provided this does not significantly delay antibiotic administration.\n\nTake at least three sets during a 24hr period where the patient has suspected infective endocarditis.",
+        "transport": "Collect specimens before antimicrobial therapy where possible. Samples should be taken as soon as possible after a spike of fever. Samples should not be refrigerated.\n\nInoculated bottles should be incubated as soon as possible, and within a maximum of four hours. The four hour turnaround time from collection to incubation for blood culture samples reflects their clinical significance.",
+        "special_precautions": "• Use aseptic technique. • Inspect the blood culture bottles for damage. • Do not use blood culture bottles which are bulging at the rubber seal as this may be a sign of bacterial growth and contamination. • Ensure that the blood culture bottles have not exceeded their expiry date. • Do not re-sheathe needles."
+      },
+      "analysis": {
+        "units": "Growth detected or not detected",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Any recent antimicrobial therapy can have a significant effect on blood culture results by decreasing the sensitivity of the test. This may be of particular importance in those patients receiving prophylactic antibiotics and who are at high risk of bloodstream infections. If patients have received previous antimicrobial treatment, bacteraemia should be considered even if blood culture results are negative. There is a direct relationship between blood volume and yield, with approximately a 3% increase in yield per mL of blood cultured. False negatives may occur if inadequate blood culture volumes are submitted.",
+        "limitations": "It is estimated that 2-5% of positives samples may be missed if bottles are pre-incubated, these organisms may fail to trip the threshold algorithm of the continuous monitoring blood culture machine. This may occur with Abiotrophia species (nutritionally variant streptococci), S. pneumoniae which have undergone a degree of autolysis, and fastidious organisms which are unable to grow on routine solid culture media. Organisms may include:\n\n• Campylobacter species. • Helicobacter species. • Capnophilic organisms. • Slow-growing anaerobes\n\nPlease find below the link to the local Blood Culture Policy, which outlines, among other details, the required blood culture volume and the necessity for urgent transportation of the bottles to the laboratory.\n\nhttps://intranet.mft.nhs.uk/documents/policies/1072"
+      },
+      "turnaround": {
+        "provisional_raw": "Negative result 2 days",
+        "final_raw": "6 days for final negative results, 7 days for positive results",
+        "provisional_working_days": {
+          "min": 2.0,
+          "max": 2.0
+        },
+        "final_working_days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Blood-Cultures.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "blood-group",
+      "name": "Blood group",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "B",
+      "categories": [
+        "transfusion"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "bnp-n-terminal-pro-bnp",
+      "name": "BNP (N-terminal pro BNP)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "B",
+      "categories": [
+        "cardiac-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "carboxyhaemoglobin",
+      "name": "Carboxyhaemoglobin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "toxicology",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "chain-of-custody-medico-legal-specimens",
+      "name": "Chain-of-custody medico-legal specimens",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "toxicology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "c-reactive-protein-crp",
+      "name": "C-reactive protein (CRP)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "inflammation-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma, EDTA plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma",
+          "EDTA plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mg/L",
+        "reference_range": "0.6 - 5 mg/L (adult; 3 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "C-Reactive protein (CRP) (Plasma/serum)",
+        "match_method": "exact",
+        "units": "mg/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 0.6,
+            "high": 5.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Years",
+              "age_min": "18",
+              "age_max": "150",
+              "low": "0.6",
+              "high": "5"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 17.0,
+            "low": 0.6,
+            "high": 5.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Years",
+              "age_min": "0",
+              "age_max": "17",
+              "low": "0.6",
+              "high": "5"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 90.0,
+            "low": 1.0,
+            "high": 475.0,
+            "raw": {
+              "sex": "MALE",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "90",
+              "low": "1",
+              "high": "475"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "creatinine-blood-and-urine",
+      "name": "Creatinine (blood and urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "renal-function"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "μmol/L",
+        "reference_range": "27 - 81 μmol/L (adult; 29 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Creatinine",
+        "match_method": "exact",
+        "units": "μmol/L",
+        "strata": [
+          {
+            "sex": "male",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 14.0,
+            "low": 27.0,
+            "high": 81.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "<14",
+              "low": "27",
+              "high": "81"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "days/ years",
+            "age_min": 14.0,
+            "age_max": 1.0,
+            "low": 14.0,
+            "high": 34.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Days/ Years",
+              "age_min": "14",
+              "age_max": "<1",
+              "low": "14",
+              "high": "34"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 3.0,
+            "low": 15.0,
+            "high": 31.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "< 3",
+              "low": "15",
+              "high": "31"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 3.0,
+            "age_max": 5.0,
+            "low": 23.0,
+            "high": 37.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": "3",
+              "age_max": "< 5",
+              "low": "23",
+              "high": "37"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 7.0,
+            "low": 25.0,
+            "high": 42.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": "5",
+              "age_max": "<7",
+              "low": "25",
+              "high": "42"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 7.0,
+            "age_max": 9.0,
+            "low": 30.0,
+            "high": 48.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": "7",
+              "age_max": "<9",
+              "low": "30",
+              "high": "48"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 9.0,
+            "age_max": 11.0,
+            "low": 28.0,
+            "high": 57.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": "9",
+              "age_max": "<11",
+              "low": "28",
+              "high": "57"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 11.0,
+            "age_max": 11.0,
+            "low": 36.0,
+            "high": 64.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": "11",
+              "age_max": "11",
+              "low": "36",
+              "high": "64"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 12.0,
+            "low": 36.0,
+            "high": 67.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": "12",
+              "age_max": "12",
+              "low": "36",
+              "high": "67"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 13.0,
+            "age_max": 13.0,
+            "low": 38.0,
+            "high": 76.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": "13",
+              "age_max": "13",
+              "low": "38",
+              "high": "76"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 14.0,
+            "age_max": 14.0,
+            "low": 40.0,
+            "high": 83.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": "14",
+              "age_max": "14",
+              "low": "40",
+              "high": "83"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 15.0,
+            "age_max": 15.0,
+            "low": 47.0,
+            "high": 98.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": "15",
+              "age_max": "15",
+              "low": "47",
+              "high": "98"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 16.0,
+            "age_max": 16.0,
+            "low": 54.0,
+            "high": 99.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": "16",
+              "age_max": "16",
+              "low": "54",
+              "high": "99"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 16.0,
+            "age_max": 18.0,
+            "low": 55.0,
+            "high": 104.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": "16",
+              "age_max": "18",
+              "low": "55",
+              "high": "104"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "low": 59.0,
+            "high": 104.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "Years",
+              "age_min": ">18",
+              "age_max": "unspecified",
+              "low": "59",
+              "high": "104"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 14.0,
+            "low": 27.0,
+            "high": 81.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "14",
+              "low": "27",
+              "high": "81"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "days/ years",
+            "age_min": 14.0,
+            "age_max": 1.0,
+            "low": 14.0,
+            "high": 34.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Days/ Years",
+              "age_min": "14",
+              "age_max": "<1",
+              "low": "14",
+              "high": "34"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 3.0,
+            "low": 15.0,
+            "high": 31.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "< 3",
+              "low": "15",
+              "high": "31"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 3.0,
+            "age_max": 5.0,
+            "low": 23.0,
+            "high": 37.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "3",
+              "age_max": "< 5",
+              "low": "23",
+              "high": "37"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 7.0,
+            "low": 25.0,
+            "high": 42.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "5",
+              "age_max": "<7",
+              "low": "25",
+              "high": "42"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 7.0,
+            "age_max": 9.0,
+            "low": 30.0,
+            "high": 48.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "7",
+              "age_max": "<9",
+              "low": "30",
+              "high": "48"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 9.0,
+            "age_max": 11.0,
+            "low": 28.0,
+            "high": 57.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "9",
+              "age_max": "<11",
+              "low": "28",
+              "high": "57"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 11.0,
+            "age_max": 11.0,
+            "low": 36.0,
+            "high": 64.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "11",
+              "age_max": "11",
+              "low": "36",
+              "high": "64"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 12.0,
+            "low": 36.0,
+            "high": 67.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "12",
+              "age_max": "12",
+              "low": "36",
+              "high": "67"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 13.0,
+            "age_max": 13.0,
+            "low": 38.0,
+            "high": 74.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "13",
+              "age_max": "13",
+              "low": "38",
+              "high": "74"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 14.0,
+            "age_max": 14.0,
+            "low": 43.0,
+            "high": 75.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "14",
+              "age_max": "14",
+              "low": "43",
+              "high": "75"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 15.0,
+            "age_max": 15.0,
+            "low": 44.0,
+            "high": 79.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "15",
+              "age_max": "15",
+              "low": "44",
+              "high": "79"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 16.0,
+            "age_max": 16.0,
+            "low": 48.0,
+            "high": 81.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "16",
+              "age_max": "16",
+              "low": "48",
+              "high": "81"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 16.0,
+            "low": 45.0,
+            "high": 84.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "16",
+              "age_max": "unspecified",
+              "low": "45",
+              "high": "84"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "creatinine-clearance",
+      "name": "Creatinine clearance",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "renal-function"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum",
+          "urine"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plasma, 24 hour plain urine",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plasma",
+          "24 hour plain urine"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "mL/min",
+        "reference_range": "71 - 151 mL/min"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Creatinine Clearance",
+        "match_method": "exact",
+        "units": "mL/min",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 71.0,
+            "high": 151.0,
+            "raw": {
+              "sex": "ALL",
+              "age_unit": "ALL",
+              "low": "71",
+              "high": "151"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "cross-matching",
+      "name": "Cross matching",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "C",
+      "categories": [
+        "transfusion"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "csf-glucose",
+      "name": "CSF – Glucose",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "diabetes-metabolic",
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "analysis": {
+        "units": "mmol/L",
+        "reference_range": "2.2 - 4.4 mmol/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "CSF glucose",
+        "match_method": "exact",
+        "units": "mmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 150.0,
+            "low": 2.2,
+            "high": 4.4,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "150",
+              "low": "2.2",
+              "high": "4.4"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "months",
+            "age_min": 2.0,
+            "age_max": 12.0,
+            "low": 1.9,
+            "high": 5.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Months",
+              "age_min": "2",
+              "age_max": "12",
+              "low": "1.9",
+              "high": "5"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 29.0,
+            "age_max": 58.0,
+            "low": 1.6,
+            "high": 5.6,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Days",
+              "age_min": "29",
+              "age_max": "58",
+              "low": "1.6",
+              "high": "5.6"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 28.0,
+            "low": 1.9,
+            "high": 5.6,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "28",
+              "low": "1.9",
+              "high": "5.6"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": false,
+        "present": [
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "csf-lactate",
+      "name": "CSF – Lactate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "clinical-chemistry",
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "fluoride-plasma"
+        ],
+        "specimen_type_raw": "Fluoride oxalate [F-EDTA / F- LiHep also OK]",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "accepted_specimens": [
+          "Fluoride oxalate [F-EDTA / F- LiHep also OK]"
+        ],
+        "preferred_specimen": "Fluoride oxalate [F-EDTA / F- LiHep also OK]"
+      },
+      "analysis": {
+        "units": "mmol/L",
+        "reference_range": "1.1 - 2.4 mmol/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "CSF lactate",
+        "match_method": "exact",
+        "units": "mmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 1.1,
+            "high": 2.4,
+            "raw": {
+              "sex": "all",
+              "age_unit": "all",
+              "low": "1.1",
+              "high": "2.4"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "Urgent 2 hours, routine 4 hours",
+        "days": {
+          "min": 0.08,
+          "max": 0.08
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "csf-protein",
+      "name": "CSF – Protein",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf"
+        ],
+        "specimen_type_raw": "CSF, plain",
+        "accepted_specimens": [
+          "CSF",
+          "plain"
+        ],
+        "preferred_specimen": "CSF"
+      },
+      "analysis": {
+        "units": "g/L",
+        "reference_range": "0.15 - 0.45 g/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "CSF total protein",
+        "match_method": "fuzzy:1.00",
+        "units": "g/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "months/ years",
+            "age_min": 2.0,
+            "age_max": 150.0,
+            "low": 0.15,
+            "high": 0.45,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Months/ Years",
+              "age_min": "2",
+              "age_max": "150",
+              "low": "0.15",
+              "high": "0.45"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "weeks/ months",
+            "age_min": 4.0,
+            "age_max": 2.0,
+            "low": 0.2,
+            "high": 0.7,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Weeks/ Months",
+              "age_min": "4",
+              "age_max": "2",
+              "low": "0.2",
+              "high": "0.7"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days/ weeks",
+            "age_min": 7.0,
+            "age_max": 4.0,
+            "low": 0.2,
+            "high": 0.8,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Days/ weeks",
+              "age_min": "7",
+              "age_max": "4",
+              "low": "0.2",
+              "high": "0.8"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 7.0,
+            "low": 0.4,
+            "high": 1.1,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "7",
+              "low": "0.4",
+              "high": "1.1"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "drugs-of-abuse-urine-screen",
+      "name": "Drugs of abuse (urine screen)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "D",
+      "categories": [
+        "toxicology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": false
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "urine"
+        ],
+        "specimen_type_raw": "Spot urine",
+        "accepted_specimens": [
+          "Spot urine"
+        ],
+        "preferred_specimen": "Spot urine"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Drugs of Abuse Panel (Urine)",
+        "match_method": "fuzzy:0.85"
+      },
+      "turnaround": {
+        "raw": "14 days",
+        "days": {
+          "min": 14.0,
+          "max": 14.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.18,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "ethanol-drinking-alcohol",
+      "name": "Ethanol (drinking alcohol)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "E",
+      "categories": [
+        "toxicology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "mg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Ethanol",
+        "match_method": "exact",
+        "units": "mg/L"
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.27,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "fdp-d-dimers",
+      "name": "FDP D-Dimers",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "fibrinogen",
+      "name": "Fibrinogen",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "full-blood-count-and-automated-differential",
+      "name": "Full blood count and automated differential",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "lactate",
+      "name": "Lactate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "L",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "fluoride-plasma"
+        ],
+        "specimen_type_raw": "Flouride oxalate plasma",
+        "tube": {
+          "type": "fluoride-oxalate",
+          "cap_colour": "Grey"
+        },
+        "accepted_specimens": [
+          "Flouride oxalate plasma"
+        ],
+        "preferred_specimen": "Flouride oxalate plasma"
+      },
+      "analysis": {
+        "units": "mmol/L",
+        "reference_range": "0.6 - 2.5 mmol/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Lactate (blood)",
+        "match_method": "exact",
+        "units": "mmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "y",
+            "age_min": 0.0,
+            "age_max": 150.0,
+            "low": 0.6,
+            "high": 2.5,
+            "raw": {
+              "sex": "M/F",
+              "age_unit": "y",
+              "age_min": "0",
+              "age_max": "150",
+              "low": "0.6",
+              "high": "2.5"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "2 hours",
+        "days": {
+          "min": 0.08,
+          "max": 0.08
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "lactate-dehydrogenase-ldh",
+      "name": "Lactate Dehydrogenase (LDH)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "L",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "IU/L",
+        "reference_range": "139 - 249 IU/L (adult; 6 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Lactate Dehydrogenase (LDH)",
+        "match_method": "exact",
+        "units": "IU/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 15.0,
+            "age_max": 150.0,
+            "low": 139.0,
+            "high": 249.0,
+            "raw": {
+              "sex": "ALL",
+              "age_unit": "Years",
+              "age_min": "15",
+              "age_max": "150",
+              "low": "139",
+              "high": "249"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 10.0,
+            "age_max": 14.0,
+            "low": 163.0,
+            "high": 279.0,
+            "raw": {
+              "sex": "MALE",
+              "age_unit": "Years",
+              "age_min": "10",
+              "age_max": "14",
+              "low": "163",
+              "high": "279"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 10.0,
+            "age_max": 14.0,
+            "low": 163.0,
+            "high": 269.0,
+            "raw": {
+              "sex": "FEMALE",
+              "age_unit": "Years",
+              "age_min": "10",
+              "age_max": "14",
+              "low": "163",
+              "high": "269"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 9.0,
+            "low": 196.0,
+            "high": 314.0,
+            "raw": {
+              "sex": "ALL",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "9",
+              "low": "196",
+              "high": "314"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 15.0,
+            "age_max": 364.0,
+            "low": 169.0,
+            "high": 435.0,
+            "raw": {
+              "sex": "ALL",
+              "age_unit": "Days",
+              "age_min": "15",
+              "age_max": "364",
+              "low": "169",
+              "high": "435"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 14.0,
+            "low": 30.0,
+            "high": 1143.0,
+            "raw": {
+              "sex": "ALL",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "14",
+              "low": "30",
+              "high": "1143"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "met-haemoglobin",
+      "name": "Met-haemoglobin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "M",
+      "categories": [
+        "toxicology",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "osmolality-blood-and-urine",
+      "name": "Osmolality (Blood and Urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "O",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mmol/Kg",
+        "reference_range": "275 - 295 mmol/Kg"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Osmolality (Blood)",
+        "match_method": "exact",
+        "units": "mmol/Kg",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "y",
+            "age_max": 150.0,
+            "low": 275.0,
+            "high": 295.0,
+            "raw": {
+              "sex": "all",
+              "age_unit": "Y",
+              "age_max": "150",
+              "low": "275",
+              "high": "295"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "36 hours",
+        "days": {
+          "min": 1.5,
+          "max": 1.5
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "osmolar-gap-calculated-as-calculated-osmolality-measured-osmolality-calculated-o",
+      "name": "Osmolar Gap (calculated as: calculated osmolality – measured osmolality. Calculated osmolality is 2 x (Na + K) + glucose + urea)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "O",
+      "categories": [
+        "clinical-chemistry",
+        "diabetes-metabolic"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "paracetamol",
+      "name": "Paracetamol",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "P",
+      "categories": [
+        "toxicology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Paracetamol",
+        "match_method": "exact",
+        "units": "mg/L"
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.27,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "potassium",
+      "name": "Potassium",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "P",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mmol/L",
+        "reference_range": "3.5 - 5.3 mmol/L (adult; 3 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Potassium",
+        "match_method": "exact",
+        "units": "mmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 3.5,
+            "high": 5.3,
+            "raw": {
+              "sex": "All",
+              "age_unit": "years",
+              "age_min": "18 years",
+              "age_max": "150 years",
+              "low": "3.5",
+              "high": "5.3"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "weeks / years",
+            "age_min": 4.0,
+            "age_max": 17.0,
+            "low": 3.5,
+            "high": 5.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Weeks / years",
+              "age_min": "4 weeks",
+              "age_max": "17 years",
+              "low": "3.5",
+              "high": "5"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "weeks",
+            "age_min": 0.0,
+            "age_max": 4.0,
+            "low": 3.4,
+            "high": 6.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Weeks",
+              "age_min": "0 weeks",
+              "age_max": "4 weeks",
+              "low": "3.4",
+              "high": "6"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "procalcitonin",
+      "name": "Procalcitonin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "P",
+      "categories": [
+        "inflammation-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "μg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Procalcitonin",
+        "match_method": "exact",
+        "units": "μg/L",
+        "notes": "no reference range - autocomment \"Consider stopping antibiotics if procalcitonin concentration has decreased by more than or equal to 80% from the PEAK concentration or is less than 0.5ug/L. Review of antibiotics is STRONGLY encouraged if procalcitonin concentration is increasing AND >0.5ug/L. Refer to microbiology for further advice on interpretation & antibiotic dosing.\""
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.18,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units"
+        ]
+      }
+    },
+    {
+      "id": "prothrombin-time",
+      "name": "Prothrombin time",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "P",
+      "categories": [
+        "coagulation"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "salicylate",
+      "name": "Salicylate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "S",
+      "categories": [
+        "toxicology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Salicylate",
+        "match_method": "exact",
+        "units": "mg/L"
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.27,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "sodium-blood-and-urine",
+      "name": "Sodium (blood and urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "S",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mmol/L",
+        "reference_range": "133 - 146 mmol/L (adult; 3 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Sodium",
+        "match_method": "exact",
+        "units": "mmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "weeks/y ears",
+            "age_min": 4.0,
+            "age_max": 150.0,
+            "low": 133.0,
+            "high": 146.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Weeks/y ears",
+              "age_min": "4 weeks",
+              "age_max": "150 years",
+              "low": "133",
+              "high": "146"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "weeks",
+            "age_min": 1.0,
+            "age_max": 4.0,
+            "low": 132.0,
+            "high": 142.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "weeks",
+              "age_min": "1 week",
+              "age_max": "4 weeks",
+              "low": "132",
+              "high": "142"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "weeks",
+            "age_min": 0.0,
+            "age_max": 1.0,
+            "low": 131.0,
+            "high": 144.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "weeks",
+              "age_min": "0 weeks",
+              "age_max": "1 week",
+              "low": "131",
+              "high": "144"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "total-protein",
+      "name": "Total Protein",
+      "aliases": [
+        "Protein creatinine ratio (urine)"
+      ],
+      "department": "Biochemistry",
+      "letter": "T",
+      "categories": [
+        "coagulation",
+        "clinical-chemistry",
+        "renal-function"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "analysis": {
+        "units": "g/L",
+        "reference_range": "51 - 80 g/L (adult; 5 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Protein, total",
+        "match_method": "fuzzy:1.00",
+        "units": "g/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 15.0,
+            "low": 51.0,
+            "high": 80.0,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "<15",
+              "low": "51",
+              "high": "80"
+            }
+          },
+          {
+            "age_unit": "days/ye ars",
+            "age_min": 15.0,
+            "age_max": 1.0,
+            "low": 43.0,
+            "high": 69.0,
+            "raw": {
+              "age_unit": "Days/Ye ars",
+              "age_min": "15",
+              "age_max": "<1",
+              "low": "43",
+              "high": "69"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 6.0,
+            "low": 59.0,
+            "high": 73.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "<6",
+              "low": "59",
+              "high": "73"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 6.0,
+            "age_max": 9.0,
+            "low": 62.0,
+            "high": 75.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "6",
+              "age_max": "<9",
+              "low": "62",
+              "high": "75"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 9.0,
+            "low": 63.0,
+            "high": 78.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "9",
+              "age_max": "unspecified",
+              "low": "63",
+              "high": "78"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "notes": "Protein creatine ratio",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": false,
+        "present": [
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "troponin-t",
+      "name": "Troponin T",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "T",
+      "categories": [
+        "cardiac-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "ng/L",
+        "reference_range": "0 - 14 ng/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Troponin T",
+        "match_method": "exact",
+        "units": "ng/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 0.0,
+            "high": 14.0,
+            "raw": {
+              "sex": "ALL",
+              "age_unit": "ALL",
+              "age_min": "ALL",
+              "age_max": "ALL",
+              "low": "0",
+              "high": "14"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "2 hours",
+        "days": {
+          "min": 0.08,
+          "max": 0.08
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "urea-blood-and-urine",
+      "name": "Urea (blood and urine)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "U",
+      "categories": [
+        "clinical-chemistry"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mmol/L",
+        "reference_range": "2 - 5 mmol/L (adult; 5 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Urea",
+        "match_method": "exact",
+        "units": "mmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "months",
+            "age_min": 0.0,
+            "age_max": 1.0,
+            "low": 2.0,
+            "high": 5.0,
+            "raw": {
+              "sex": "M/F",
+              "age_unit": "Months",
+              "age_min": "0",
+              "age_max": "1",
+              "low": "2",
+              "high": "5"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 2.5,
+            "high": 6.0,
+            "raw": {
+              "age_unit": "Months",
+              "age_min": "1",
+              "age_max": "12",
+              "low": "2.5",
+              "high": "6"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 2.5,
+            "high": 6.5,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "12",
+              "low": "2.5",
+              "high": "6.5"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 18.0,
+            "low": 3.0,
+            "high": 7.5,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "12",
+              "age_max": "18",
+              "low": "3",
+              "high": "7.5"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 2.5,
+            "high": 7.8,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "18",
+              "age_max": "150",
+              "low": "2.5",
+              "high": "7.8"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "voltage-gated-potassium-channel-antibodies",
+      "name": "Voltage-Gated Potassium Channel Antibodies",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "V",
+      "categories": [
+        "clinical-chemistry",
+        "autoimmunity",
+        "neurology-antibodies"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "RIA",
+        "reference_range": "0-100 pmol",
+        "interferences": "Approx 20% of patients with VGKC antibodies will have an underlying thymoma. Patients may have Myasthenia gravis with or without acetylcholine receptor antibodies."
+      },
+      "turnaround": {
+        "raw": "Median - 16, 95th percentile - 34",
+        "days": {
+          "min": 16.0,
+          "max": 16.0
+        }
+      },
+      "clinical": {
+        "indications": "Peripheral nerve hyperexcitability, neuromyotonia, Morvan's syndrome.",
+        "repeat_frequency": "significant change of clinical symptoms"
+      },
+      "referred_to": "Department of Immunology The Churchill Hospital Old Road Headington Oxford OX3 7LJ",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Voltage-Gated-Potassium-Channel-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "xanthochromia-screen-csf",
+      "name": "Xanthochromia Screen (CSF)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "X",
+      "categories": [
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf"
+        ],
+        "specimen_type_raw": "CSF plain",
+        "accepted_specimens": [
+          "CSF plain"
+        ],
+        "preferred_specimen": "CSF plain"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Xanthochromia Screen (CSF)",
+        "match_method": "exact",
+        "notes": "interpretive comments"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.09,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types"
+        ]
+      }
+    }
+  ]
+}

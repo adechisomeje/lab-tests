@@ -1,0 +1,81 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/2 
+Autoimmune diabetes marker panel 
+ 
+General information 
+ 
+The assessment of autoantibodies to pancreatic β cell antigens is an important serological marker of type 1 
+diabetes mellitus (Type 1 DM). The antigens recognised by these antibodies include insulinoma associated 
+antigen 2 (IA-2), glutamic acid decarboxylase (GAD) GAD65kDa isoform, zinc transporter 8 (ZnT8) and insulin. 
+The Autoimmune diabetes panel contains IA-2 antibodies, ZnT8 antibodies and GAD antibodies. 
+ 
+Assay interferences: Please see the user guide for individual analytes  
+ 
+Laboratory information 
+ 
+Analyte: Insulinoma associated antigen 2 (IA-2) antibodies, glutamic acid decarboxylase (GAD) GAD65kDa 
+isoform antibodies, zinc transporter 8 (ZnT8) antibodies 
+ 
+Units: Please see the user guide for individual analytes 
+ 
+Specimen type: Serum (Brown top serum gel bottle) 
+ 
+Frequency of analysis: At initial diagnosis and in patients with suspected type 1 diabetes. Highest accuracy 
+seen at initial presentation. 
+ 
+Turnaround times: 10 days 
+ 
+Specimen transport: At room temperature 
+ 
+Additional/special requirements: None 
+ 
+Method: ELISA 
+ 
+Participation in EQA Scheme: UK NEQAS for Diabetic Markers 
+ 
+Clinical information 
+ 
+Interpretation: Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms 
+and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the 
+likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 
+5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 70% when 3 
+additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be 
+lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative 
+rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at 
+least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of 
+autoantibody testing.   
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/2 
+ 
+Division of Laboratory Medicine 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/2 
+Reference range: Please see the user guide for individual analytes 
+Polly J. Bingley (2010) Clinical Applications of Diabetes Antibody Testing, The Journal of Clinical Endocrinology 
+& Metabolism, 95, 25–33 
+(Last updated July 2023) 

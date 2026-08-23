@@ -1,0 +1,234 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/4 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+1/4 
+Aspergillus galactomannan 
+ 
+Platelia assay for Aspergillus galactomannan circulating antigen in serum and other body fluids: this test is 
+indicated for presumptive diagnosis of Aspergillus infection. 
+ 
+General information 
+ 
+Turnaround time: This assay is performed every day, Monday-Friday. Turnaround time: 95% within one 
+weekday. 
+ 
+Sample type/container:  
+ 
+Blood:  
+ 
+• 
+ 4.9 ml clotted blood 
+• 
+Serum tube (Sarstedt S-Monovette white cap) or serum gel tube (brown cap). Blood collected in EDTA 
+tubes will be rejected.   
+• 
+Please do not remove the cap before sending for testing nor share the sample to avoid laboratory 
+contamination. 
+ 
+Bronchoalveolar lavage fluid (BALF): 
+ 
+ 
+• 
+Send minimum of 2 ml collected into appropriate UKCA/CE-marked sterile leakproof containers.  
+• 
+Do not send containers with trap tubing still attached. These samples are prone to leaking and 
+contamination. The trap tubing must be replaced with a secure screw cap lid prior to placing in the 
+specimen bag. 
+ 
+Other sample types: 
+• 
+The test is only validated for blood/serum and BALF 
+• 
+The test can be performed on other body fluids such as cerebrospinal fluid (CSF) but clear evidence-
+based guidance for interpretation of the results cannot be provided. 
+ 
+ 
+Transportation 
+• 
+Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic 
+Ziploc bag (preferably with a biohazard label on the outside), as shown below.  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/4 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+2/4 
+ 
+• 
+Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations 
+governing the transportation of diagnostic specimens) must be used for transport by road or between 
+Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital 
+grounds). 
+• 
+Please see below for packaging requirements.
+ 
+For more information - https://mrcm.org.uk/sample-collection/ 
+ 
+Laboratory Information 
+ 
+Biological interval/clinical decision values: 
+ 
+The Platelia galactomannan (GM) test results are expressed as an index value and are reported for blood as 
+negative or positive, and for BAL negative, weak positive, or positive – with the index value provided. 
+ 
+Interpretation of values depends on the sample type: 
+ 
+Blood/serum: GM index values of > 0.5 are interpreted as positive. 
+ 
+The accuracy of the result may be affected if the blood sample is more than 5 days old or if the serum sample 
+is more than 2 days old. 
+ 
+BALF: GM index values >1.0 are interpreted as positive. Index values 0.5-1.0 have a lower predictive value than 
+values >1.0 and are interpreted as weakly positive. Further sampling is recommended. 
+ 
+The accuracy of the result may be affected if the BALF sample is more than 1 day old. 
+ 
+A single negative result does not rule out the diagnosis of invasive aspergillosis (IA). Repeat testing and 
+additional alternative modalities of testing are recommended if the result is negative, but the disease is 
+suspected. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   3/4 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+3/4 
+ 
+Conversely, a single positive GM value does not solely constitute the diagnosis of IA and additional diagnostic 
+tests and/or testing of additional samples is needed. Recent data suggests that the combination of two 
+weak/positive GM test results, one in serum/plasma (≥ 0.7) and one in BALF (≥ 0.8), may suggest the presence 
+of IA. 
+ 
+Cerebrospinal fluid (CSF): The test is not validated for CSF samples. The cut-off value for this sample type has 
+not been established but values >0.5 and ≥1 have been used. Measuring the serum GM/CSF GM ratio may be 
+useful as high galactomannan levels in CSF are indicative of intrathecal infection.  
+ 
+Sputum: The test is not validated for sputum samples. The cut-off value for this sample type has not been 
+established. High values (>1) should only trigger further investigations in the presence of clinical suspicion. 
+ 
+Clinical Information 
+ 
+No specific time of optimal collection. First clinical indication or monitoring of invasive aspergillosis. 
+ 
+In general, the performance of the GM test varies between patient groups and sample types. Blood 
+galactomannan has high specificity in neutropenic haematology-oncology patients and solid organ transplant 
+patients, whilst it has very low sensitivity in non-neutropenic patients. High sensitivity and specificity can be 
+achieved by testing samples collected from the likely site on infection (mainly lungs, BALF). BALF is the 
+preferred sample type in non-neutropenic patients. 
+ 
+This test should be used in conjunction with other diagnostic procedures such as high-volume fungal culture, 
+Aspergillus PCR, histological examination of biopsy specimens and radiographic evidence, as an aid in the 
+diagnosis of invasive aspergillosis, in specific clinical contexts (e.g., neutropenic patients or patients treated 
+with immunosuppressants).  
+ 
+This test can also be used as an aid to monitor antifungal treatment efficacy based on galactomannan index 
+evolution. 
+ 
+In appropriate clinical settings, screening may be considered to monitor for evidence of elevated levels of 
+galactomannan, which provides a potential surrogate marker for invasive Aspergillus disease (depending on 
+sample type tested). 
+ 
+For clinical advice and guidance, please contact the laboratory via Hive or by email (mrcm@mft.nhs.uk). 
+ 
+Limitations: 
+ 
+Possible causes of false negatives: 
+The Platelia Aspergillus galactomannan assay may exhibit reduced detection of galactomannan in patients with 
+chronic granulomatous disease and hyper IgE (Job’s) syndrome. 
+ 
+The concomitant use of mould-active anti-fungal prophylaxis or therapy may result in reduced sensitivity with 
+the galactomannan test. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   4/4 
+ 
+Division of Laboratory Medicine 
+ 
+Mycology 
+mft.nhs.uk/laboratorymedicine 
+4/4 
+ 
+Blood galactomannan has very low sensitivity in non-neutropenic patients. BAL is the preferred sample type 
+in these patients when pulmonary aspergillosis is suspected. 
+ 
+Possible causes of false positives: 
+Serum specimens stored inappropriately or tested with a delay may give false positive results due to 
+contamination with fungi and/or bacteria.  
+ 
+The performance of the Platelia Aspergillus galactomannan assay has not been evaluated in neonatal samples. 
+There is a higher incidence in the number of false positive galactomannan results reported in European 
+literature in samples from the neonatal population.  
+ 
+Other genera of fungi such as Penicillium, Fusarium, Alternaria, Paecilomyces, Geotrichum and Histoplasma 
+have shown reactivity with the monoclonal antibody used in the assay for the detection of Aspergillus GM. 
+Histoplasmosis should be considered in patients with travel history to endemic areas. 
+ 
+Positive reactions in the absence of clinical signs may be observed in patients receiving products containing 
+galactomannan, either parenterally or orally (if there is an alteration of the intestinal barrier), due to 
+production processes that include fungal microorganism-based fermentation.  
+ 
+For example, galactofuranose, which can be present in various foods, particularly cereals, cereal products, cow 
+milk formula and cream desserts, may produce a positive result in patients with a damaged or immature 
+intestinal barrier. Dietary factors must therefore be considered as a potential source of antigenemia in these 
+patients particularly in the absence of clinical signs and symptoms of invasive aspergillosis.  
+ 
+Historically, positive test results were reported in patients receiving ß-lactams such as piperacillin/tazobactam, 
+amoxicillin with clavulanic acid, and ampicillin but this has been addressed now in the manufacturing processes 
+of these and other antibiotics. Therefore, these antibiotics are currently not a significant source for false-
+positive test results. 
+ 
+The Platelia Aspergillus galactomannan test may exhibit false positive results with serum specimens when 
+digestive enzymes of fungal origin, like Nortase, are used for enzyme substitution therapy in exocrine 
+pancreatic insufficiency in ICU patients. 
+ 
+ 
+References: 
+BioRad Platelia Aspergillus Ag, SEMI-QUANTITATIVE IMMUNOENZYMATIC SANDWICH MICROPLATE ASSAY FOR THE DETECTION OF ASPERGILLUS 
+GALACTOMANNAN ANTIGEN IN ADULT AND PEDIATRIC SERUM SPECIMENS AND BRONCHOALVEOLAR LAVAGE (BAL) FLUID SPECIMENS, version 
+0001315 - 2023/07. 
+ 
+Toine Mercier et al., Defining Galactomannan Positivity in the Updated EORTC/MSGERC Consensus Definitions of Invasive Fungal Diseases, Clinical 
+Infectious Diseases, Volume 72, Issue Supplement_2, 15 March 2021, Pages S89–S94, https://doi.org/10.1093/cid/ciaa1786. 
+ 
+(Last updated November 2024) 

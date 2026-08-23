@@ -1,0 +1,279 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/6 
+ 
+Laboratory Medicine Care Division 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/6 
+Therapeutic Drug Monitoring of anti-TNF therapies Infliximab 
+and Adalimumab 
+ 
+The Immunology department uses ELISA assays to measure the following: 
+• 
+Infliximab drug levels 
+• 
+Anti-Infliximab antibody levels 
+• 
+Adalimumab drug levels 
+• 
+Anti-Adalimumab antibody levels 
+ 
+Infliximab Drug Levels 
+General information  
+Infliximab is a murine-human chimeric, therapeutic monoclonal antibody directed against TNFα and is used 
+in the treatment of inflammatory diseases including Crohn’s disease, ulcerative colitis, rheumatoid arthritis, 
+ankylosing spondylitis and severe psoriasis. 
+This is a recently introduced method. For information on these assays please see: 
+https://www.exeterlaboratory.com/test/infliximab-drug-levels  
+ 
+ 
+Laboratory information  
+Analyte: This assay measures infliximab drug levels 
+Volume and sample type: Serum  
+Units: mg/L 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 10 
+Frequency of analysis: As required 
+ 
+Specimen transport: At room temperature 
+ 
+Additional/special requirements:  
+ 
+Factors affecting the test: None 
+Method: ELISA method 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   2/6 
+ 
+Laboratory Medicine Care Division 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+2/6 
+Participation in EQA scheme: Pilot UK NEQAS for Anti-TNF Drugs and Antibodies 
+Clinical information 
+Reference range and interpretation for IBD (1,2):  
+Interpretation of drug levels based on outcomes (remission) 
+• 
+Week 6 (Induction): A dose-response association was observed where drug concentrations up to 
+30–35 mg/L were associated with increasing remission at week 14. 
+• 
+Week 14 (Post-induction): 
+o 
+The initial study identified 7 mg/L as the optimal concentration associated with remission at 
+both week 14 and week 54. 
+o 
+Follow-up data over 3 years refined this range, suggesting an optimal threshold of 6.1–10.0 
+mg/L at week 14 to predict remission at any later timepoint. 
+• 
+Week 54 (Maintenance): To ensure remission at subsequent timepoints (years 2 and 3), the optimal 
+minimal concentration was estimated to be 3.6–4.5 mg/L. 
+Results for anti-TNF drug levels and antibodies against anti-TNF drugs need to be interpreted by the 
+requesting specialist clinical team in combination with the clinical features 
+ 
+Anti-Infliximab antibody levels 
+General information  
+Antibodies directed against infliximab can be associated with treatment failure and can help direct 
+subsequent treatment. 
+This is a recently introduced method. For information on these assays please see: 
+https://www.exeterlaboratory.com/test/infliximab-antibody-levels/  
+ 
+ 
+Laboratory information  
+Analyte: This assay measures total anti-infliximab antibody levels 
+Volume and sample type: Serum  
+Units: AU/mL (arbitrary units per mL) 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 10 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   3/6 
+ 
+Laboratory Medicine Care Division 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+3/6 
+Frequency of analysis: As required 
+ 
+Specimen transport: At room temperature 
+ 
+Additional/special requirements:  
+Factors affecting the test: High dose biotin supplementation can lead to falsely low results.  
+Method: ELISA method 
+Participation in EQA scheme: Pilot UK NEQAS for Anti-TNF Drugs and Antibodies 
+Clinical information 
+Reference range and interpretation: 
+Results for anti-TNF drug levels and antibodies against anti-TNF drugs need to be interpreted by the 
+requesting specialist clinical team in combination with the clinical features 
+ 
+ 
+Adalimumab Drug Levels 
+General information  
+Adalimumab is a fully human therapeutic monoclonal antibody directed against TNFα and is used in the 
+treatment of inflammatory diseases including Crohn’s disease, ulcerative colitis, rheumatoid arthritis, 
+ankylosing spondylitis and severe psoriasis. 
+This is a recently introduced method. For information on these assays please see: 
+https://www.exeterlaboratory.com/test/adalimumab-drug-levels/  
+ 
+ 
+Laboratory information  
+Analyte: This assay measures adalimumab drug levels 
+Volume and sample type: Serum  
+Units: mg/L 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 10 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   4/6 
+ 
+Laboratory Medicine Care Division 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+4/6 
+Frequency of analysis: As required 
+ 
+Specimen transport: At room temperature 
+ 
+Additional/special requirements:  
+Factors affecting the test: None  
+Method: ELISA method 
+Participation in EQA scheme: Pilot UK NEQAS for Anti-TNF Drugs and Antibodies 
+Clinical information 
+Reference range and interpretation for IBD (1,2): 
+Interpretation of drug levels based on outcomes (remission) 
+• 
+Week 14 (Post-induction): 
+o 
+The initial study identified 12 mg/L as the optimal concentration associated with remission 
+at both week 14 and week 54. 
+o 
+Long-term follow-up data (3 years) identified an optimal threshold of 10.1–12.0 mg/L at 
+week 14 to predict remission at later timepoints. 
+• 
+Week 54 (Maintenance): To ensure remission at subsequent timepoints, drug concentrations should 
+be maintained at more than 10 mg/L. 
+Results for anti-TNF drug levels and antibodies against anti-TNF drugs need to be interpreted by the 
+requesting specialist clinical team in combination with the clinical features 
+ 
+Anti-Adalimumab Antibody levels 
+General information  
+Antibodies directed against adalimumab can be associated with treatment failure and can help direct 
+subsequent treatment. 
+This is a recently introduced method. For information on these assays please see: 
+https://www.exeterlaboratory.com/test/adalimumab-antibody-levels/  
+ 
+ 
+Laboratory information  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   5/6 
+ 
+Laboratory Medicine Care Division 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+5/6 
+Analyte: This assay measures total anti adalimumab antibody levels 
+Volume and sample type: Serum  
+Units: AU/mL (arbitrary units per mL) 
+Turnaround time (calendar days from sample receipt to authorised result): Median - 10 
+Frequency of analysis: As required 
+Specimen transport: At room temperature 
+ 
+Additional/special requirements: None 
+Factors affecting the test: High dose biotin supplementation can lead to falsely low results .  
+Method: ELISA method 
+Participation in EQA scheme: Pilot UK NEQAS for Anti-TNF Drugs and Antibodies 
+Clinical information 
+Reference range and interpretation for IBD: 
+Results for anti-TNF drug levels and antibodies against anti-TNF drugs need to be interpreted by the 
+requesting specialist clinical team in combination with the clinical features 
+ 
+Summary of target drug levels associated with remission in IBD 
+Drug 
+Timepoint 
+Target Concentration Range 
+Infliximab 
+Week 14 
+6.1–10.0 mg/L 
+Week 54 
+3.6–4.5 mg/L 
+Adalimumab 
+Week 14 
+10.1–12.0 mg/L 
+Week 54 
+>10 mg/L 
+ 
+References 
+1. Kennedy, N. A., Heap, G. A., Green, H. D., Hamilton, B., Bewshea, C., Walker, G. J., Thomas, A., Nice, 
+R., Perry, M. H., Bouri, S., Chanchlani, N., Heerasing, N. M., Hendy, P., Lin, S., Gaya, D. R., Cummings, 
+J. R. F., Selinger, C. P., Lees, C. W., Hart, A. L., … Gore, S. (2019). Predictors of anti-TNF treatment 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   6/6 
+ 
+Laboratory Medicine Care Division 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+6/6 
+failure in anti-TNF-naive patients with active luminal Crohn’s disease: a prospective, multicentre, 
+cohort study. The Lancet Gastroenterology & Hepatology, 4(5), 341–353. 
+https://doi.org/10.1016/S2468-1253(19)30012-3 
+2. Chanchlani, N., Lin, S., Bewshea, C., Hamilton, B., Thomas, A., Smith, R., Roberts, C., Bishara, M., 
+Nice, R., Lees, C. W., Sebastian, S., Irving, P. M., Russell, R. K., McDonald, T. J., Goodhand, J. R., 
+Ahmad, T., Kennedy, N. A., Patel, V., Mazhar, Z., … Gore, S. (2024). Mechanisms and management of 
+loss of response to anti-TNF therapy for patients with Crohn’s disease: 3-year data from the 
+prospective, multicentre PANTS cohort study. The Lancet Gastroenterology & Hepatology, 9(6), 521–
+538. https://doi.org/10.1016/S2468-1253(24)00044-X 
+ 
+ 
+(Last updated April 2026) 

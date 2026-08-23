@@ -1,0 +1,55 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   1/1 
+ 
+Laboratory Medicine Care Division 
+ 
+Immunology 
+mft.nhs.uk/laboratorymedicine 
+1/1 
+TSH Receptor Antibodies 
+ 
+General information 
+ 
+All forms of autoimmune thyrotoxicosis (Graves’ disease, Hashimoto’s thyrotoxicosis, neonatal 
+thyrotoxicosis) are caused by the production of TSH-R stimulating autoantibodies. These autoantibodies bind 
+to the receptor and activate it, leading to stimulation of the thyroid gland independent of the normal 
+feedback-regulated thyrotropin TSH stimulation. 
+ 
+Specimen transport: At room temperature 
+ 
+Repeat frequency: At significant change of clinical symptoms 
+ 
+Special precautions: None 
+ 
+Laboratory information 
+ 
+Analyte: Thyroid Stimulating Hormone Receptor Antibodies 
+ 
+Units: IU/L 
+ 
+Normal reference range: 0 - 0.4 IU/L 
+ 
+Volume and sample type: 4ml serum 
+ 
+Method: ELISA 
+ 
+Turnaround time (calendar days from sample receipt to authorised result): Median – 5 
+ 
+Participation in EQA Scheme: UK NEQAS for Thyroid Antibodies 
+ 
+Clinical information 
+ 
+Indications for the test: Autoimmune thyrotoxicosis 
+ 
+Factors affecting the test: None 
+ 
+ 
+(Last updated January 2026) 

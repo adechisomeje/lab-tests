@@ -1,0 +1,702 @@
+{
+  "meta": {
+    "department": "Mycology",
+    "version": "0.1.0",
+    "test_count": 11
+  },
+  "tests": [
+    {
+      "id": "aspergillus-galactomannan",
+      "name": "Aspergillus galactomannan",
+      "aliases": [],
+      "description": "Platelia assay for Aspergillus galactomannan circulating antigen in serum and other body fluids: this test is indicated for presumptive diagnosis of Aspergillus infection.",
+      "department": "Mycology",
+      "letter": "A",
+      "categories": [
+        "mycology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum",
+          "csf",
+          "sputum-respiratory"
+        ],
+        "container": "Blood:\n\n• 4.9 ml clotted blood • Serum tube (Sarstedt S-Monovette white cap) or serum gel tube (brown cap). Blood collected in EDTA tubes will be rejected. • Please do not remove the cap before sending for testing nor share the sample to avoid laboratory contamination.\n\nBronchoalveolar lavage fluid (BALF):\n\n• Send minimum of 2 ml collected into appropriate UKCA/CE-marked sterile leakproof containers. • Do not send containers with trap tubing still attached. These samples are prone to leaking and contamination. The trap tubing must be replaced with a secure screw cap lid prior to placing in the specimen bag.\n\nOther sample types: • The test is only validated for blood/serum and BALF • The test can be performed on other body fluids such as cerebrospinal fluid (CSF) but clear evidence- based guidance for interpretation of the results cannot be provided.\n\nTransportation • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\nMycology\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). • Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        }
+      },
+      "analysis": {
+        "reference_range": "The Platelia galactomannan (GM) test results are expressed as an index value and are reported for blood as negative or positive, and for BAL negative, weak positive, or positive - with the index value provided.\n\nInterpretation of values depends on the sample type:\n\nBlood/serum: GM index values of > 0.5 are interpreted as positive.\n\nThe accuracy of the result may be affected if the blood sample is more than 5 days old or if the serum sample is more than 2 days old.\n\nBALF: GM index values >1.0 are interpreted as positive. Index values 0.5-1.0 have a lower predictive value than values >1.0 and are interpreted as weakly positive. Further sampling is recommended.\n\nThe accuracy of the result may be affected if the BALF sample is more than 1 day old.\n\nA single negative result does not rule out the diagnosis of invasive aspergillosis (IA). Repeat testing and additional alternative modalities of testing are recommended if the result is negative, but the disease is suspected.\n\nMycology\n\nConversely, a single positive GM value does not solely constitute the diagnosis of IA and additional diagnostic tests and/or testing of additional samples is needed. Recent data suggests that the combination of two weak/positive GM test results, one in serum/plasma (≥ 0.7) and one in BALF (≥ 0.8), may suggest the presence of IA.\n\nCerebrospinal fluid (CSF): The test is not validated for CSF samples. The cut-off value for this sample type has not been established but values >0.5 and ≥1 have been used. Measuring the serum GM/CSF GM ratio may be useful as high galactomannan levels in CSF are indicative of intrathecal infection.\n\nSputum: The test is not validated for sputum samples. The cut-off value for this sample type has not been established. High values (>1) should only trigger further investigations in the presence of clinical suspicion.",
+        "false_positives": "Serum specimens stored inappropriately or tested with a delay may give false positive results due to contamination with fungi and/or bacteria.\n\nThe performance of the Platelia Aspergillus galactomannan assay has not been evaluated in neonatal samples. There is a higher incidence in the number of false positive galactomannan results reported in European literature in samples from the neonatal population.\n\nOther genera of fungi such as Penicillium, Fusarium, Alternaria, Paecilomyces, Geotrichum and Histoplasma have shown reactivity with the monoclonal antibody used in the assay for the detection of Aspergillus GM. Histoplasmosis should be considered in patients with travel history to endemic areas.\n\nPositive reactions in the absence of clinical signs may be observed in patients receiving products containing galactomannan, either parenterally or orally (if there is an alteration of the intestinal barrier), due to production processes that include fungal microorganism-based fermentation.\n\nFor example, galactofuranose, which can be present in various foods, particularly cereals, cereal products, cow milk formula and cream desserts, may produce a positive result in patients with a damaged or immature intestinal barrier. Dietary factors must therefore be considered as a potential source of antigenemia in these patients particularly in the absence of clinical signs and symptoms of invasive aspergillosis.\n\nHistorically, positive test results were reported in patients receiving ß-lactams such as piperacillin/tazobactam, amoxicillin with clavulanic acid, and ampicillin but this has been addressed now in the manufacturing processes of these and other antibiotics. Therefore, these antibiotics are currently not a significant source for false- positive test results.\n\nThe Platelia Aspergillus galactomannan test may exhibit false positive results with serum specimens when digestive enzymes of fungal origin, like Nortase, are used for enzyme substitution therapy in exocrine pancreatic insufficiency in ICU patients.",
+        "false_negatives": "The Platelia Aspergillus galactomannan assay may exhibit reduced detection of galactomannan in patients with chronic granulomatous disease and hyper IgE (Job's) syndrome.\n\nThe concomitant use of mould-active anti-fungal prophylaxis or therapy may result in reduced sensitivity with the galactomannan test.\n\nMycology\n\nBlood galactomannan has very low sensitivity in non-neutropenic patients. BAL is the preferred sample type in these patients when pulmonary aspergillosis is suspected."
+      },
+      "turnaround": {
+        "raw": "This assay is performed every day, Monday-Friday. Turnaround time: 95% within one weekday."
+      },
+      "clinical": {
+        "references": "BioRad Platelia Aspergillus Ag, SEMI-QUANTITATIVE IMMUNOENZYMATIC SANDWICH MICROPLATE ASSAY FOR THE DETECTION OF ASPERGILLUS GALACTOMANNAN ANTIGEN IN ADULT AND PEDIATRIC SERUM SPECIMENS AND BRONCHOALVEOLAR LAVAGE (BAL) FLUID SPECIMENS, version 0001315 - 2023/07.\n\nToine Mercier et al., Defining Galactomannan Positivity in the Updated EORTC/MSGERC Consensus Definitions of Invasive Fungal Diseases, Clinical Infectious Diseases, Volume 72, Issue Supplement_2, 15 March 2021, Pages S89-S94, https://doi.org/10.1093/cid/ciaa1786."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Aspergillus-galactomannan.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "aspergillus-pcr-on-respiratory-samples",
+      "name": "Aspergillus PCR on respiratory samples",
+      "aliases": [],
+      "description": "ELITech Aspergillus PCR: this test is indicated to support a diagnosis of Aspergillus-related lung disease.",
+      "department": "Mycology",
+      "letter": "A",
+      "categories": [
+        "mycology",
+        "molecular-microbiology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf",
+          "sputum-respiratory",
+          "body-fluid"
+        ],
+        "container": "Bronchoalveolar lavage fluid (BALF) samples:\n\n• Send minimum of 1-2 mL collected into appropriate UKCA/CE-marked sterile leakproof container. • Do not send containers with trap tubing still attached. These samples are prone to leaking and contamination. The trap tubing must be replaced with a secure screw cap lid prior to placing in the specimen bag.\n\nOther sample types: • The test is only validated for BALF. • The test can be performed on other body fluids such as sputum, pleural fluid, and cerebrospinal fluid (CSF) but clear evidence-based guidance for interpretation of the results cannot be provided.\n\nTransportation\n\n• Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\nCategory B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). Please see\n\nMycology below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/"
+      },
+      "analysis": {
+        "reference_range": "The ELITech Aspergillus PCR results are expressed as copies/mL of Aspergillus spp. 18S rDNA; Cq values are also provided.\n\nValues of <120 copies/mL are interpreted as negative results.\n\nValues >210 copies/mL are interpreted as positive results.\n\nValues from 120 to 210 copies/mL are interpreted as indeterminate results and may reflect colonisation but do not exclude infection with Aspergillus. Testing of additional samples and/or use of additional diagnostic tests (Aspergillus galactomannan and high-volume fungal culture) is recommended to clarify the diagnosis.\n\nA single negative result does not rule out the diagnosis of invasive aspergillosis (IA). Repeat testing and additional alternative modalities of testing are recommended if the result is negative, but disease is suspected.\n\nConversely, a single positive Aspergillus PCR does not solely constitute the diagnosis of IA and testing of additional samples and/or use of additional diagnostic tests is needed. Recent data requires the need for 2 consecutive positive results in BAL as positive mycological criterion for IA. According to EORTC/MSGERC criteria, the combination of a positive Aspergillus PCR with two weak positive or a single positive GM test result (e.g., one in serum/plasma (≥ 0.7) or one in BALF (≥ 0.8)), may suggest the presence of IA.",
+        "false_positives": "False positive results may occur if genera closely related to Aspergillus spp., e.g. Penicillium spp., are also present in the sample and detected due to the sequence similarity in the 18S rDNA.",
+        "false_negatives": "False negative results may occur for a variety of reasons, for example inappropriate quality or volume of sample and antifungal prophylaxis interference with assay."
+      },
+      "turnaround": {
+        "raw": "This assay is performed twice weekly, on Tuesday and Friday morning. Turnaround time: 95% within 7 days of sample receipt.",
+        "days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "clinical": {
+        "references": "ELITech Aspergillus spp. ELITe MGB Kit product insert, SCH mRTS110PLD, 28/07/2023, Review 10\n\nDonnelly JP, Chen SC, Kauffman CA, et al., Revision and Update of the Consensus Definitions of Invasive Fungal Disease From the European Organization for Research and Treatment of Cancer and the Mycoses Study Group Education and Research Consortium, Clinical Infectious Diseases, Volume 71, Issue 6, 15 September 2020, Pages 1367-1376, https://doi.org/10.1093/cid/ciz1008.\n\nWhite PL, Bretagne S, Caliendo AM, et al., Aspergillus Polymerase Chain Reaction—An Update on Technical Recommendations, Clinical Applications, and Justification for Inclusion in the Second Revision of the EORTC/MSGERC Definitions of Invasive Fungal Disease, Clinical Infectious Diseases, Volume 72, Issue Supplement_2, 15 March 2021, Pages S95-S101, https://doi.org/10.1093/cid/ciaa1865.\n\nUllmann AJ, Aguado JM, Arikan-Akdagli S, et al., Diagnosis and management of Aspergillus diseases: executive summary of the 2017 ESCMID-ECMM- ERS guideline. Clin Microbiol Infect. 2018 May;24 Suppl 1:e1-e38. doi: 10.1016/j.cmi.2018.01.002."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Aspergillus-PCR-on-respiratory-samples.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cryptococcal-antigen",
+      "name": "Cryptococcal antigen",
+      "aliases": [],
+      "description": "IMMY CrAg lateral flow assay for cryptococcal antigen.",
+      "department": "Mycology",
+      "letter": "C",
+      "categories": [
+        "infectious-disease-serology",
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum",
+          "csf"
+        ],
+        "container": "Blood:\n\n• 4.9 ml clotted blood • Clotted blood - send minimum serum volume of 0.5 ml. • Serum tube (Sarstedt S-Monovette white cap) or serum gel tube (brown cap). Blood collected in EDTA tubes will be rejected. • Non-haemolysed specimens must be provided. • Please do not remove the cap before sending for testing nor share the sample to avoid laboratory contamination.\n\nCerebrospinal fluid (CSF):\n\n• Send minimum of 50 μl collected into an appropriate UKCA/CE-marked sterile leak-proof container.\n\nTransportation:\n\n• Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds).\n\nMycology • Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        }
+      },
+      "analysis": {
+        "reference_range": "Negative or positive by lateral flow (using IMMY CrAg LFA).\n\nPositive results are provided as a titre, e.g., 1:5 - 1:2560. The titre is reported as the highest dilution that yields a positive test result. Further titrations are performed if positive at 1:2560.",
+        "limitations": "The assay performance characteristics have not been established for samples other than CSF, plasma, whole blood, or serum.\n\nThe predictive value of a positive or negative serologic result depends on the pretest likelihood of cryptococcal disease being present. This test can be used in the context of screening and diagnosis of cryptococcal diseases in at-risk populations.\n\nTitres obtained by the IMMY CrAg LFA are not equivalent to titres obtained by other cryptococcal antigen tests.\n\nMycology",
+        "false_positives": "According to published reports, Trichosporon beigelii can cause false positives.\n\nHigh levels (> 40 ug/ml) of human anti-mouse antibodies (HAMA) may cause false positive test results.\n\nAt high concentrations (>0.1 mg/mL), antigens from Paracoccidiodes brasiliensis exhibited some cross- reactivity. Cross-reactivity has been described with 10% of serum samples that were Aspergillus galactomannan positive.\n\nThe CrAg lateral flow assay was evaluated for cross-reactivity against a panel of patient serum specimens. All the following showed no cross-reactivity: penicilliosis, sporothrichosis, syphilis, rubella, mycoplasmosis, toxoplasmosis, CMV, blastomycosis, coccidiodomycosis, histoplasmosis, candidiasis, rheumatoid factor.\n\nThis assay was not evaluated for cross-reactivity against the following organisms or pathologies: Fungal: Candida dubliniensis, C. tropicalis, C. parapsilosis, Pichia kudriavzevii, Nakaseomyces glabratus, Cladosporium trichoides, Pneumocystis jirovecii, zygomycetes. Non-fungal: Antinuclear antibody, hepatitis A and C virus, Staphylococcus aureus, Streptococcus pneumoniae, Neisseria meningitidis, Salmonella typhi, Mycobacterium tuberculosis.",
+        "false_negatives": "Testing haemolysed serum samples could lead to false negatives due to the high background colour on the strip.\n\nNon-encapsulated and weakly encapsulated strains that can cause disease in severely immunocompromised patients may lead to false negative results.\n\nAlthough rare, extremely high concentrations (>0.140 mg/ml) of cryptococcal antigen can result in weak test lines and, in extreme instances, yield negative test results. The risk of this affecting test interpretation is minimised by testing serial dilutions of the sample.\n\nThe assay has not been evaluated for potential interference related to specimen pre-treatment with 2- mercaptoethanol, or with specimens including the following substances: caffeine, ascorbic acid, itraconazole, amphotericin B, paracetamol or acetylsalicylic acid."
+      },
+      "turnaround": {
+        "raw": "This assay is performed on demand. Turnaround time: >95% within one working day."
+      },
+      "clinical": {
+        "references": "Cryptococcal Antigen lateral Flow assay for the detection of cryptococcal antigen, IMMY Inc. Doc PIS-00107, Rev. 2, 2024-09-19."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Cryptococcal-antigen-lateral-flow-test.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "dermatophytes-and-non-dermatophytes",
+      "name": "Dermatophytes and non-dermatophytes",
+      "aliases": [],
+      "description": "Culture and identification of dermatophytes and non- dermatophytes from skin, nail and hair Culture and microscopy Request: Superficial mycology testing, dermatophyte testing",
+      "department": "Mycology",
+      "letter": "D",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "tissue",
+          "skin-hair-nail"
+        ],
+        "container": "Dermapaks, or similar envelopes, should be used.\n\nSkin: scrapings (for subcutaneous lesions collect subcutaneous tissue and request fungal culture) Hair: plucked hair roots and hair shaft, NOT cut hair Nail: nail clippings, scrapings of sub-ungual debris\n\nAdequate scrapings and clippings are required for direct microscopy and culture"
+      },
+      "analysis": {
+        "reference_range": "Microscopy results: Positive microscopy is reported as Fungal elements SEEN Negative microscopy is reported as Fungal elements NOT seen\n\nThe British Association of Dermatologists clinical guidelines on fungal nail infections confirms positive microscopy is diagnostic for fungal infection.\n\nCulture results: Negative culture is reported as Fungal culture negative after 3 weeks\n\nNo significant fungi isolated is reported when fungal organism(s) grown are not likely to cause infection.\n\nPositive culture is reported as number of colonies grown out of number of inoculants (up to 40). A recognised cause of superficial infection is reported when a dermatophyte or other significant, non- dermatophyte fungal species is grown.\n\nLaboratory Medicine Care Division\n\nMycology"
+      },
+      "turnaround": {
+        "raw": "Direct microscopy: 1-4 days Culture and identification: 1-4 weeks. Longer for some unusual and/or slow-growing fungi.",
+        "days": {
+          "min": 1.0,
+          "max": 4.0
+        }
+      },
+      "clinical": {
+        "references": "Ameen M, Lear JT, Madan V, Mohd Mustapa MF, Richardson M. British Association of Dermatologists' guidelines for the management of onychomycosis 2014. Br J Dermatol. 2014 Nov;171(5):937-58. doi: 10.1111/bjd.13358. Chowdhary A, Singh A, Kaur A, Khurana A. The emergence and worldwide spread of the species Trichophyton indotineae causing difficult-to-treat dermatophytosis: A new challenge in the management of dermatophytosis. PLoS Pathog. 2022 Sep 29;18(9):e1010795. doi: 10.1371/journal.ppat.1010795."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Dermatophytes-and-non-dermatophytes-from-skin-nail-and-hair.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "flucytosine",
+      "name": "Flucytosine",
+      "aliases": [],
+      "description": "Bioassay for measurement of anti-fungal drug levels",
+      "department": "Mycology",
+      "letter": "F",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum",
+          "csf"
+        ],
+        "container": "Blood:\n\n• 4.9 ml clotted blood collected directly from the vein. • Serum tube (Sarstedt S-Monovette white cap) ONLY. • Serum gel tube (brown cap) should not be used as the gel may reduce the drug level detected. More accurate results will be obtained by using tubes with no additive. Blood collected in EDTA tubes will be rejected. • Please do not remove the cap before sending for testing. • It is critically important to include information on concomitant antifungal treatment at the time of blood sampling on the request form. The time of last flucytosine administration and time of sampling should be recorded accurately to allow correct interpretation. Other sample types: • The test is only validated for blood/serum. • The test can be performed on other body fluids such as cerebrospinal fluid (CSF) after discussion with an infection specialist and agreement with the laboratory. Clear evidence-based guidance for interpretation of the results cannot be provided. Transportation:\n\n• Specimens should be transported to the laboratory as soon as possible. If a delay is anticipated, samples should be refrigerated. Assays are validated for transportation of samples at room temperature for up to and including 5 days. • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\nMycology\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). • Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        }
+      },
+      "analysis": {
+        "frequency_of_analysis": "Day of receipt as required. Samples must be notified or received before 1 pm; advance warning of sending sample(s) is appreciated.\n\nMycology It is essential to inform the laboratory of any other concomitant antifungal therapy in addition to flucytosine at the time of sampling, as this will determine how the bioassay will be performed. Absence of this information will likely lead to falsely high flucytosine levels being reported."
+      },
+      "turnaround": {
+        "raw": "This assay is performed on demand. Turnaround time: 95% within one working day."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Flucytosine-assay.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "fungal-beta-d-glucan-assay",
+      "name": "Fungal beta D glucan assay",
+      "aliases": [],
+      "description": "FUNGITELL assay for (1,3)--D-glucan: the fungal glucan test is indicated for assessing the likelihood of systemic fungal infection",
+      "department": "Mycology",
+      "letter": "F",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "container": "Blood:\n\n• 4.9 ml clotted blood collected directly from the vein. • Serum tube (Sarstedt S-Monovette white cap) or serum gel tube (brown cap). Blood collected in EDTA tubes cannot be processed for this test and will be rejected. • Please do not remove the cap, do not share the sample. Samples are easily contaminated either during sample collection or laboratory procedures. • Blood samples obtained by heel or finger stick methods or other sample types are not accepted.\n\nTransportation:\n\n• Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). • Please see below for packaging requirements.\n\nMycology\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        }
+      },
+      "analysis": {
+        "reference_range": "The (1,3)--D-glucan (BDG) test results are expressed in picogram per millilitre (pg/mL) of serum and range from undetectable (<31 pg/mL) to >500 pg/mL.\n\nBDG values of <60 pg/mL are interpreted as negative results.\n\nBDG values ≥80 pg/mL are interpreted as positive. A positive result does not define the presence of disease and should be used in conjunction with other clinical and laboratory findings.\n\nValues from 60 to 79 pg/mL are interpreted as indeterminate. Additional sampling is recommended.\n\nThis test is only validated for patients 18 years old and above. Please consult the laboratory for more information if needed.",
+        "false_positives": "• Laboratory-based (mainly separating and sharing the sample in an inappropriate, non-BDG-free environment) and sample collection derived contamination • Intravenously administered products, including drugs and blood fractionation products (such as serum albumin, immunoglobulins, and filtered blood plasma) • Intestinal translocation of mycobiome-derived BDG (antigenemia in the absence of fungaemia) following intestinal barrier injury (due to chemotherapy-associated mucositis, intestinal ischemia, mesenteric hypoxia, microbial toxins, viral infection of intestinal tissue, metabolic toxicity, such as in uraemia, large total surface area burns, and protease-producing intestinal enterococci, or sepsis) • Compromised hepatic function and BDG processing • Parenteral nutrition contaminated during manufacturing processes (e.g., filtration) • Invasive use of surgical materials (e.g., gauze and surgical sponges that contain glucan) • Invasive nocardiosis • Fungal glucan levels typically rise early in infection, then decline slowly, only returning to baseline well after successful disease resolution. • Patients require 3-4 days for the restoration of baseline levels of serum (1,3)-D glucan after surgical exposure to BDG-containing sponges and gauzes.\n\nThe following sample features may interfere with the test and make processing impossible: • Haemolysis • Sample turbidity caused by lipemia • The presence of visually apparent bilirubin • Turbid or discoloured serum\n\nMycology • Elevated levels of immunoglobulin G Repeat testing is recommended in these cases.",
+        "false_negatives": "• The Fungitell (1,3)--D Glucan assay does not detect certain fungal species, such as the genus Cryptococcus, which produces very low levels of (1,3)--D-glucan. This assay also does not detect the Mucormycetes, such as Lichtheimia, Mucor and Rhizopus, which are not known to produce (1,3)--D- glucan. The yeast phase of Blastomyces dermatitidis produces little (1,3)-β-D-glucan and may not be detected by the assay. • Tissue-localised or encapsulated fungal infections that limit the amount of (1,3)-β-D-glucan produced and/or limit its translocation into the bloodstream may result in low or undetectable serum concentrations."
+      },
+      "turnaround": {
+        "raw": "This assay is performed every day, Monday-Friday. Turnaround time: 95% within two weekdays, generally available within one weekday."
+      },
+      "clinical": {
+        "references": "Finkelman, M.A. Specificity Influences in (1>3) β-D-Glucan-Supported Diagnosis of Invasive Fungal Disease. J. Fungi 2021, 7, 14. https://doi.org/10.3390/jof7010014.\n\nKarageorgopoulos DE, Qu JM, Korbila IP, Zhu YG, Vasileiou VA, Falagas ME. Accuracy of β-D-glucan for the diagnosis of Pneumocystis jirovecii pneumonia: a meta-analysis. Clin Microbiol Infect. 2013 Jan;19(1):39-49. doi: 10.1111/j.1469-0691.2011.03760.x. Assay for (1>3)-β-D-Glucan in Serum, FUNGITELL® ASSAY, Instructions For Use, PN001268-en Rev12, 2023-06-13."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Fungal-beta-D-glucan-assay.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "isavuconazole",
+      "name": "Isavuconazole",
+      "aliases": [],
+      "description": "Isavuconazole Anti-fungal drug level monitoring",
+      "department": "Mycology",
+      "letter": "I",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "minimum_volume_raw": "Adult 4.9ml, Neonate 0.5ml • Minimum blood volume is 2 ml; serum volume of 1 ml is required for testing. • Serum tube (Sarstedt S-Monovette white cap). Blood collected in EDTA tubes will be rejected. Gel separation tubes should NOT be used as the gel may reduce the drug level detected. More accurate results will be obtained by using blood tubes with no additives. Specimens should be transported to the laboratory as soon as possible. If a delay is anticipated, samples should be refrigerated. Assays are validated for transportation of samples at room temperature for up to and including 5 days. For all drugs, the time of previous dose and the time of sampling should be recorded accurately to allow correct interpretation. Transportation • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds).\n\nX\n\nLaboratory Medicine Care Division\n\nMycology • Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "volume": {
+          "value": 4.9,
+          "unit": "mL"
+        }
+      },
+      "analysis": {
+        "frequency_of_analysis": "Each weekday\n\n* These samples are most useful for clinical management\n\nLaboratory Medicine Care Division\n\nMycology"
+      },
+      "turnaround": {
+        "raw": "1-2 days",
+        "days": {
+          "min": 1.0,
+          "max": 2.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Isavuconazole.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.volume",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "itraconazole",
+      "name": "Itraconazole",
+      "aliases": [],
+      "description": "Itraconazole Anti-fungal drug level monitoring",
+      "department": "Mycology",
+      "letter": "I",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "minimum_volume_raw": "Adult 4.9ml, Neonate 0.5ml • Minimum blood volume is 2 ml; serum volume of 1 ml is required for testing. • Serum tube (Sarstedt S-Monovette white cap). Blood collected in EDTA tubes will be rejected. Gel separation tubes should NOT be used as the gel may reduce the drug level detected. More accurate results will be obtained by using blood tubes with no additives. Specimens should be transported to the laboratory as soon as possible. If a delay is anticipated, samples should be refrigerated. Assays are validated for transportation of samples at room temperature for up to and including 5 days. For all drugs, the time of previous dose and the time of sampling should be recorded accurately to allow correct interpretation. Transportation • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). X\n\nLaboratory Medicine Care Division\n\nMycology\n\n• Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "volume": {
+          "value": 4.9,
+          "unit": "mL"
+        }
+      },
+      "analysis": {
+        "frequency_of_analysis": "Each weekday\n\n* These samples are most useful for clinical management"
+      },
+      "turnaround": {
+        "raw": "1-2 days",
+        "days": {
+          "min": 1.0,
+          "max": 2.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Itraconazole.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.volume",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "posaconazole",
+      "name": "Posaconazole",
+      "aliases": [],
+      "description": "Posaconazole Anti-fungal drug level monitoring",
+      "department": "Mycology",
+      "letter": "P",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "minimum_volume_raw": "Adult 4.9ml, Neonate 0.5ml • Minimum blood volume is 2 ml; serum volume of 1 ml is required for testing. • Serum tube (Sarstedt S-Monovette white cap). Blood collected in EDTA tubes will be rejected. Gel separation tubes should NOT be used as the gel may reduce the drug level detected. More accurate results will be obtained by using blood tubes with no additives. Specimens should be transported to the laboratory as soon as possible. If a delay is anticipated, samples should be refrigerated. Assays are validated for transportation of samples at room temperature for up to and including 5 days. For all drugs, the time of previous dose and the time of sampling should be recorded accurately to allow correct interpretation. Transportation • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). X\n\nLaboratory Medicine Care Division\n\nMycology\n\n• Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "volume": {
+          "value": 4.9,
+          "unit": "mL"
+        }
+      },
+      "analysis": {
+        "frequency_of_analysis": "Each weekday\n\n* These samples are most useful for clinical management"
+      },
+      "turnaround": {
+        "raw": "1-2 days",
+        "days": {
+          "min": 1.0,
+          "max": 2.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Posaconazole.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.volume",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "voriconazole",
+      "name": "Voriconazole",
+      "aliases": [],
+      "description": "Voriconazole Anti-fungal drug level monitoring",
+      "department": "Mycology",
+      "letter": "V",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "minimum_volume_raw": "Adult 4.9ml, Neonate 0.5ml • Minimum blood volume is 2 ml; serum volume of 1 ml is required for testing. • Serum tube (Sarstedt S-Monovette white cap). Blood collected in EDTA tubes will be rejected. Gel separation tubes should NOT be used as the gel may reduce the drug level detected. More accurate results will be obtained by using blood tubes with no additives. Specimens should be transported to the laboratory as soon as possible. If a delay is anticipated, samples should be refrigerated. Assays are validated for transportation of samples at room temperature for up to and including 5 days. For all drugs, the time of previous dose and the time of sampling should be recorded accurately to allow correct interpretation. Transportation • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). X\n\nLaboratory Medicine Care Division\n\nMycology\n\n• Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "volume": {
+          "value": 4.9,
+          "unit": "mL"
+        }
+      },
+      "analysis": {
+        "frequency_of_analysis": "Each weekday\n\n* These samples are most useful for clinical management"
+      },
+      "turnaround": {
+        "raw": "1-2 days",
+        "days": {
+          "min": 1.0,
+          "max": 2.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Voriconazole.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.volume",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "yeasts-and-moulds",
+      "name": "Yeasts and Moulds",
+      "aliases": [
+        "CSF Bilirubin",
+        "CSF Xanthochromia"
+      ],
+      "description": "Identification and susceptibility testing of yeasts and moulds Identification and susceptibility testing of all medically important yeasts and moulds",
+      "department": "Mycology",
+      "letter": "Y",
+      "categories": [
+        "liver-function",
+        "mycology",
+        "csf-and-fluids"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "container": "Category 2 pure cultures as per Microbiology guidelines. Do NOT send suspected or confirmed Category 3 pathogens (contact the laboratory in advance for guidance as needed).\n\nTransportation • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between\n\nLaboratory Medicine Care Division\n\nMycology Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). • Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/"
+      },
+      "analysis": {
+        "reference_range": "MIC concentrations are provided as mg/litre.\n\nAll reported clinical breakpoints are species-specific in accordance with EUCAST guidelines, with the exception of caspofungin breakpoints, provided by Clinical Laboratory Standards Institute (CLSI).\n\nWhere interpretation of an MIC is absent, there is insufficient evidence to set a breakpoint for the species and/or drug (see EUCAST guidance for clinical interpretation)."
+      },
+      "turnaround": {
+        "raw": "shown below from when the culture is available for testing.\n\nIdentification is performed by conventional methods, including MALDI-ToF. Molecular sequencing identification is available at extra charge when required. Yeasts: 1-3 days Longer for some slow-growing yeasts and if molecular sequence-based identification is required.\n\nMoulds: 1-3 days Longer for some slow-growing moulds Longer (7-10 days) if molecular sequence-based identification is required.\n\nSusceptibility testing is performed by broth micro-dilution method using European Committee on Antimicrobial Susceptibility Testing (EUCAST) standards to establish minimum inhibitory concentrations (MICs) for yeasts and MICs and minimum effective concentrations (MECs) for moulds. Interpretations are provided for species and drugs with breakpoints. Yeasts: 1-3 days Longer for some slow-growing yeasts and some drugs.\n\nMoulds: 3-5 days Longer for some slow-growing moulds and some drugs.",
+        "days": {
+          "min": 1.0,
+          "max": 3.0
+        }
+      },
+      "clinical": {
+        "references": "https://www.eucast.org/fungi-afst/methodology-and-instructions/ast-of-yeasts/ https://www.eucast.org/fungi-afst/methodology-and-instructions/ast-of-moulds/ https://www.eucast.org/fungi-afst/clinical-breakpoints-and-interpretation/clinical-breakpoint-table/"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Identification-and-susceptibility-testing-of-yeasts-and-moulds.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.container",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "meta": {
+    "department": "Vaccine Evaluation Unit",
+    "version": "0.1.0",
+    "test_count": 6
+  },
+  "tests": [
+    {
+      "id": "diphtheria-igg-antibody-determination",
+      "name": "Diphtheria IgG antibody determination",
+      "aliases": [],
+      "description": "Diphtheria IgG antibody determination by flow analysis assay bead assay.",
+      "department": "Vaccine Evaluation Unit",
+      "letter": "D",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Clotted Blood/serum, paired sera",
+        "container": "Clotted blood sample tube (no preservative)",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 0.1,
+          "unit": "mL"
+        },
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "IU/mL",
+        "clinical_decision_points": "IgG of ≥ 0.1IU/mL considered protective",
+        "interferences": "none known"
+      },
+      "turnaround": {
+        "raw": "28 working days",
+        "days": {
+          "min": 28.0,
+          "max": 28.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Diphtheria-IgG-Antibody-Determination.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "haemophilius-influenze-type-b-antibody",
+      "name": "Haemophilius influenze type b antibody",
+      "aliases": [],
+      "description": "Haemophilus influenzae type b IgG antibody determination by flow analysis assay bead assay.",
+      "department": "Vaccine Evaluation Unit",
+      "letter": "H",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Clotted Blood/serum",
+        "container": "Clotted blood sample tube (no preservative)",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 0.1,
+          "unit": "mL"
+        },
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "μg/mL",
+        "clinical_decision_points": "IgG of ≥ 0.15 μg/mL for short term protection: IgG of ≥ 1.00 μg/mL for long term protection",
+        "interferences": "None known"
+      },
+      "turnaround": {
+        "raw": "28 Working Days",
+        "days": {
+          "min": 28.0,
+          "max": 28.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Haemophilus-influenzae-type-b-IgG-Antibody-Determination.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "neisseria-meningitidis-functional-antibody-to-serogroup-b-by-serum-bactericidal",
+      "name": "Neisseria meningitidis: Functional antibody to serogroup B by Serum Bactericidal Antibody Assay (SBA)",
+      "aliases": [
+        "Functional antibody to Neisseria meningitidis serogroup B by Serum Bactericidal Antibody Assay (SBA)"
+      ],
+      "description": "Serum Bactericidal Antibody Assay (SBA)",
+      "department": "Vaccine Evaluation Unit",
+      "letter": "N",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Clotted Blood/serum, paired sera",
+        "container": "Clotted blood sample tube (no preservative)",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "Minimum volume 0.6mL",
+        "volume": {
+          "value": 0.6,
+          "unit": "mL"
+        },
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If the serum bactericidal activity is reported with the comment ‘SBA titre includes non- complement mediated lysis', then the result must be interpreted with caution. If in doubt, please telephone 0161 276 6791 for advice. If processing is delayed, refrigeration is preferable to storage at ambient temperature.\n\nDelays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "SBA Titres expressed as the reciprocal of the final serum dilution giving ≥ 50% killing at 60 minutes calculated from the number of colony forming units (cfu) in the control",
+        "clinical_decision_points": "For putative protection against serogroup B, the SBA titre must be ≥ 4 for at least 2 of the 3 strains used.",
+        "interferences": "As this is a 'killing type' assay using live bacteria, antibiotics can impact on results. A control to monitor this is included in the assay.\n\nThe effect and impact of Eculizumab therapy on this assay is currently under investigation"
+      },
+      "turnaround": {
+        "raw": "28 Working Days",
+        "days": {
+          "min": 28.0,
+          "max": 28.0
+        }
+      },
+      "notes": "Functional antibody to Neisseria meningitidis serogroup B by Serum Bactericidal Antibody Assay (SBA)",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Functional-antibody-to-Neisseria-meningitides-serogroup-B-by-Serum-Bactericidal-Antibody-Assay-SBA.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "neisseria-meningitidis-functional-antibody-to-serogroups-a-c-w-and-y-by-internat",
+      "name": "Neisseria meningitidis: Functional antibody to serogroups A, C, W and Y by internationally standardised serum bactericidal antibody assays",
+      "aliases": [],
+      "description": "Functional antibody to serogroups A, C, W and Y by internationally standardised serum bactericidal antibody assays.",
+      "department": "Vaccine Evaluation Unit",
+      "letter": "N",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "bacteriology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Clotted Blood/serum,paired sera",
+        "container": "Clotted Blood/serum,paired sera, no preservatives",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "Minimum volume 0.2mL per serogroup",
+        "volume": {
+          "value": 0.2,
+          "unit": "mL"
+        },
+        "transport": "Ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If the serum bactericidal activity is reported with the comment ‘SBA titre includes non- complement mediated lysis', then the result must be interpreted with caution. If in doubt, please telephone 0161 276 6791 for advice. If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "SBA titres expressed as the reciprocal of the final serum dilution giving ≥ 50% killing at 60 minutes calculated from the number of colony forming units (cfu) in the control",
+        "clinical_decision_points": "The putative protective SBA titre for serogroup C is ≥ 8. A cut off of ≥ 8 is currently considered protective for serogroups A,Y and W\n\nFactors known to significantly affect the results As this is a 'killing type' assay using live bacteria, antibiotics can impact on results. A control to monitor this is included in the assay."
+      },
+      "turnaround": {
+        "raw": "28 Working Days",
+        "days": {
+          "min": 28.0,
+          "max": 28.0
+        }
+      },
+      "notes": "Meningococcal Serology; Molecular subtyping of isolates; Neisseria meningitidis serology",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Neisseria-meningitidis.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "streptococcus-pneumoniae-serology",
+      "name": "Streptococcus pneumoniae serology",
+      "aliases": [
+        "Pneumococcal serotype-specific IgG"
+      ],
+      "description": "analysis bead assay for 12 pneumococcal serotypes",
+      "department": "Vaccine Evaluation Unit",
+      "letter": "S",
+      "categories": [
+        "infectious-disease-serology",
+        "bacteriology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Clotted blood sample tube (no preservative)",
+        "container": "Clotted blood sample tube (no preservative)",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "Clotted Blood/serum, paired sera; Minimum volume 0.1mL",
+        "volume": {
+          "value": 0.1,
+          "unit": "mL"
+        },
+        "transport": "At ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable"
+      },
+      "analysis": {
+        "units": "μg/mL",
+        "clinical_decision_points": "≥ 0.35 μg/mL; putative correlate of protection",
+        "interferences": "None known"
+      },
+      "turnaround": {
+        "raw": "28 Working Days",
+        "days": {
+          "min": 28.0,
+          "max": 28.0
+        }
+      },
+      "notes": "Pneumococcal serotype-specific IgG",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Streptococcus-pneumoniae-IgG-antibody-determination.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "tetanus-antibodies",
+      "name": "Tetanus antibodies",
+      "aliases": [],
+      "description": "Tetanus IgG antibody determination by flow analysis assay bead assay",
+      "department": "Vaccine Evaluation Unit",
+      "letter": "T",
+      "categories": [
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Clotted Blood/serum, paired sera",
+        "container": "Clotted blood sample tube (no preservative)",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "minimum_volume_raw": "Clotted Blood/serum, paired sera; Minimum volume 0.1mL per serogroup",
+        "volume": {
+          "value": 0.1,
+          "unit": "mL"
+        },
+        "collection": "Clotted Blood/serum, paired sera",
+        "transport": "At ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable."
+      },
+      "analysis": {
+        "units": "IU/mL",
+        "clinical_decision_points": "IgG of ≥ 0.1 of IU/mL considered protective",
+        "interferences": "none known"
+      },
+      "turnaround": {
+        "raw": "28 Working Days",
+        "days": {
+          "min": 28.0,
+          "max": 28.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Tetanus-IgG-Antibody-Determination.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2020",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround",
+          "description"
+        ]
+      }
+    }
+  ]
+}

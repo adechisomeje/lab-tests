@@ -1,0 +1,4074 @@
+{
+  "meta": {
+    "profile": "dermatology-clinic",
+    "name": "Dermatology Clinic",
+    "version": "0.1.0",
+    "rationale": "Skin and connective tissue autoantibodies, fungal skin/nail/hair sampling, and the haematinic and thyroid panels behind alopecia.",
+    "test_count": 40
+  },
+  "tests": [
+    {
+      "id": "1-25-dihydroxy-vitamin-d-dhvd",
+      "name": "1,25-dihydroxy vitamin D (DHVD)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "0-9",
+      "categories": [
+        "bone-metabolism",
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "pmol/L",
+        "reference_range": "43 - 144 pmol/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "1,25-Dihydroxy Vitamin D",
+        "match_method": "exact",
+        "units": "pmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 43.0,
+            "high": 144.0,
+            "raw": {
+              "sex": "ALL",
+              "age_unit": "ALL",
+              "low": "43",
+              "high": "144"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 weeks",
+        "days": {
+          "min": 28.0,
+          "max": 28.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "allergen-specific-ige",
+      "name": "Allergen Specific IgE",
+      "aliases": [],
+      "description": "Allergen Specific IgE Measurement of allergen specific IgE is of value where skin testing is difficult for any reason. Over 100 specific allergens are routinely available. Any requests for allergens that are unusual should be discussed with a clinician.",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "allergy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": false
+        },
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum (8ml required for multiple allergens)",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "ImmunoCAP 1000",
+        "reference_range": "<0.35 kAU/L",
+        "interferences": "Total IgE >3000ku/L increases the incidence of false positive (low level) specific IgE. IgE <30 ku/L associated with false negative specific IgE. Similarly, very low IgE levels (<2.0 kU/L) may result in a false negative result and possibly indicate an underlying immunodeficiency; measurement of immunoglobulins is recommended.\n\nA STAR in the RAST: Allergy testing guidance for primary care: https://mft.nhs.uk/the-trust/other- departments/laboratory-medicine/information-for-gps/laboratory-medicines-newsletter-for-gps/a-star-in- the-rast-allergy-testing-guidance-for-primary-care/",
+        "eqa_scheme": "UK NEQAS for Specific IgE and UK NEQAS for Allergen Component Testing"
+      },
+      "turnaround": {
+        "raw": "Median - 3",
+        "days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "clinical": {
+        "indications": "Allergic conditions when allergen is suspected and mentioned on request",
+        "repeat_frequency": ">1 year unless marked changes in allergic condition"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Allergen-Specific-IgE.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "antinuclear-antibody-ana",
+      "name": "Antinuclear antibody (ANA)",
+      "aliases": [
+        "ANA",
+        "ENA antibodies includes: Ro (SS-A 52, SSA-60), La (SS-B), Sm, Sm/RNP, RNP (RNP A, RNP 68), Ribosomal P, Chromatin, Jo-1, and Scl-70",
+        "Ribosomal"
+      ],
+      "description": "'Antinuclear antibody' refers to an old test for IgG against nuclear components, detected by immunofluorescence (see below). This test has been superseded by faster, more reproducible parallel tests for each of the nuclear components, namely ENA (extractable nuclear antigens SS-A (SS-A52, SS-A60) (Ro), SS-B (La), Sm, Sm/RNP, RNP (RNPA, RNP 68), Ribo P, Chromatin, Jo-1 and Scl-70), DNA and centromere. Antibodies to extractable nuclear antigens are of use in the classification of clinical subsets of connective tissue diseases and in providing prognostic information. When you request ANA we will perform the above tests; if any are positive this will be indicated as a positive ANA. Please see also DNA antibodies page.",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Indirect immunofluorescence",
+        "reference_range": "ANA - Neg, ENAs <0-0.9AI, Scl-70 0-1.6",
+        "interferences": "False positives may be seen during infection and are more common with increasing patient age. For these reasons positive results have a low predictive value in the absence of clinical signs of the diseases indicated above. ANA should not, therefore, be used as a 'screen' in patients with vague symptoms and signs.\n\nImmunofluorescent antinuclear antibody (IFANA)",
+        "eqa_scheme": "UK NEQAS for Nuclear and Related Antigens and UK NEQAS for Digital ANA (Image based)"
+      },
+      "turnaround": {
+        "raw": "Median - 2",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "clinical": {
+        "indications": "Suspected SLE, connective tissue disease, hepatitis or drug induced lupus, where the routine ANA is negative. This test can also be useful particularly in the context of investigation of autoimmune hepatitis. Some commonly seen staining patterns are highlighted below:\n\nImmunology • Centromere pattern - limited cutaneous systemic sclerosis, primary biliary cirrhosis • Homogeneous pattern - SLE, autoimmune hepatitis, Juvenile Idiopathic Arthritis, mixed connective tissue disease • Speckled pattern - SLE, Sjögren's syndrome, autoimmune myopathy, systemic sclerosis, mixed connective tissue disease; note speckled ANA can be associated with antibodies to SS-A and SS-B which carry a risk of neonatal lupus and congenital heart block • Nucleolar pattern - systemic sclerosis, systemic sclerosis-autoimmune myopathy overlap and can be seen in other connective tissue diseases • Multiple nuclear dots patterns - primary biliary cirrhosis, autoimmune myopathy and other autoimmune/inflammatory conditions",
+        "repeat_frequency": "Not more than once a year, unless clinical picture has changed"
+      },
+      "notes": "ENA antibodies includes: Ro (SS-A 52, SSA-60), La (SS-B), Sm, Sm/RNP, RNP (RNP A, RNP 68), Ribosomal P, Chromatin, Jo-1, and Scl-70",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/Antinuclear-antibody-ANA.pdf",
+        "detail_type": "pdf",
+        "last_updated": "February 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "aspergillus-fumigatus-precipitins",
+      "name": "Aspergillus fumigatus precipitins",
+      "aliases": [],
+      "description": "Precipitin testing: These tests detect the presence of IgG antibodies to Aspergillus fumigatus, Aspergillus precipitins - see also: Farmer's lung and Avian Precipitins",
+      "department": "Immunology",
+      "letter": "A",
+      "categories": [
+        "allergy",
+        "infectious-disease-serology",
+        "mycology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "FEIA (Fluoroenzyme immunoassay)",
+        "reference_range": "0-40 mg/L",
+        "interferences": "Aspergillus antibodies are not a recommended test for the investigation of the majority of cases of invasive aspergillosis in immunocompromised hosts.\n\nInterpreting results: IgG antibodies are infrequent in healthy individuals.\n\nImmunology In hypersensitivity pneumonitis, IgG antibodies are usually present alone. IgG antibodies, without IgE antibodies can also be seen in some cases of sub acute invasive aspergillus.\n\nIn bronchopulmonary aspergillosis and aspergilloma a mixture of IgE and IgG antibodies are usually present. Bronchopulmonary aspergillosis can be caused by species other than A. fumigatus: if there is a high index of suspicion, we can send a sample to the reference laboratory to look for antibodies to other Aspergillus species. In allergic rhinitis and asthma, where aspergillus is a relevant allergen, IgE antibodies dominate.",
+        "eqa_scheme": "UK NEQAS for FUNGAL and RELATED ANTIGENS"
+      },
+      "turnaround": {
+        "raw": "Median - 4",
+        "days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "clinical": {
+        "indications": "Allergic bronchopulmonary aspergillosis - IgG antibodies are a useful aid to diagnosis in the following settings:\n\n• Bronchopulmonary aspergillosis; usually presents as deteriorating or brittle asthma. IgE antibodies should also be checked. • Aspergilloma; these may form in cavities or bronchiectatic lung. For example, this test is used to check for aspergilloma in patients with cystic fibrosis. • Hypersensitivity pneumonitis 24 hours after inhalation of spores.",
+        "repeat_frequency": "On appearance of new symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Aspergillus-fumigatus-precipitins.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "aspergillus-galactomannan",
+      "name": "Aspergillus galactomannan",
+      "aliases": [],
+      "description": "Platelia assay for Aspergillus galactomannan circulating antigen in serum and other body fluids: this test is indicated for presumptive diagnosis of Aspergillus infection.",
+      "department": "Mycology",
+      "letter": "A",
+      "categories": [
+        "mycology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum",
+          "csf",
+          "sputum-respiratory"
+        ],
+        "container": "Blood:\n\n• 4.9 ml clotted blood • Serum tube (Sarstedt S-Monovette white cap) or serum gel tube (brown cap). Blood collected in EDTA tubes will be rejected. • Please do not remove the cap before sending for testing nor share the sample to avoid laboratory contamination.\n\nBronchoalveolar lavage fluid (BALF):\n\n• Send minimum of 2 ml collected into appropriate UKCA/CE-marked sterile leakproof containers. • Do not send containers with trap tubing still attached. These samples are prone to leaking and contamination. The trap tubing must be replaced with a secure screw cap lid prior to placing in the specimen bag.\n\nOther sample types: • The test is only validated for blood/serum and BALF • The test can be performed on other body fluids such as cerebrospinal fluid (CSF) but clear evidence- based guidance for interpretation of the results cannot be provided.\n\nTransportation • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\nMycology\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). • Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        }
+      },
+      "analysis": {
+        "reference_range": "The Platelia galactomannan (GM) test results are expressed as an index value and are reported for blood as negative or positive, and for BAL negative, weak positive, or positive - with the index value provided.\n\nInterpretation of values depends on the sample type:\n\nBlood/serum: GM index values of > 0.5 are interpreted as positive.\n\nThe accuracy of the result may be affected if the blood sample is more than 5 days old or if the serum sample is more than 2 days old.\n\nBALF: GM index values >1.0 are interpreted as positive. Index values 0.5-1.0 have a lower predictive value than values >1.0 and are interpreted as weakly positive. Further sampling is recommended.\n\nThe accuracy of the result may be affected if the BALF sample is more than 1 day old.\n\nA single negative result does not rule out the diagnosis of invasive aspergillosis (IA). Repeat testing and additional alternative modalities of testing are recommended if the result is negative, but the disease is suspected.\n\nMycology\n\nConversely, a single positive GM value does not solely constitute the diagnosis of IA and additional diagnostic tests and/or testing of additional samples is needed. Recent data suggests that the combination of two weak/positive GM test results, one in serum/plasma (≥ 0.7) and one in BALF (≥ 0.8), may suggest the presence of IA.\n\nCerebrospinal fluid (CSF): The test is not validated for CSF samples. The cut-off value for this sample type has not been established but values >0.5 and ≥1 have been used. Measuring the serum GM/CSF GM ratio may be useful as high galactomannan levels in CSF are indicative of intrathecal infection.\n\nSputum: The test is not validated for sputum samples. The cut-off value for this sample type has not been established. High values (>1) should only trigger further investigations in the presence of clinical suspicion.",
+        "false_positives": "Serum specimens stored inappropriately or tested with a delay may give false positive results due to contamination with fungi and/or bacteria.\n\nThe performance of the Platelia Aspergillus galactomannan assay has not been evaluated in neonatal samples. There is a higher incidence in the number of false positive galactomannan results reported in European literature in samples from the neonatal population.\n\nOther genera of fungi such as Penicillium, Fusarium, Alternaria, Paecilomyces, Geotrichum and Histoplasma have shown reactivity with the monoclonal antibody used in the assay for the detection of Aspergillus GM. Histoplasmosis should be considered in patients with travel history to endemic areas.\n\nPositive reactions in the absence of clinical signs may be observed in patients receiving products containing galactomannan, either parenterally or orally (if there is an alteration of the intestinal barrier), due to production processes that include fungal microorganism-based fermentation.\n\nFor example, galactofuranose, which can be present in various foods, particularly cereals, cereal products, cow milk formula and cream desserts, may produce a positive result in patients with a damaged or immature intestinal barrier. Dietary factors must therefore be considered as a potential source of antigenemia in these patients particularly in the absence of clinical signs and symptoms of invasive aspergillosis.\n\nHistorically, positive test results were reported in patients receiving ß-lactams such as piperacillin/tazobactam, amoxicillin with clavulanic acid, and ampicillin but this has been addressed now in the manufacturing processes of these and other antibiotics. Therefore, these antibiotics are currently not a significant source for false- positive test results.\n\nThe Platelia Aspergillus galactomannan test may exhibit false positive results with serum specimens when digestive enzymes of fungal origin, like Nortase, are used for enzyme substitution therapy in exocrine pancreatic insufficiency in ICU patients.",
+        "false_negatives": "The Platelia Aspergillus galactomannan assay may exhibit reduced detection of galactomannan in patients with chronic granulomatous disease and hyper IgE (Job's) syndrome.\n\nThe concomitant use of mould-active anti-fungal prophylaxis or therapy may result in reduced sensitivity with the galactomannan test.\n\nMycology\n\nBlood galactomannan has very low sensitivity in non-neutropenic patients. BAL is the preferred sample type in these patients when pulmonary aspergillosis is suspected."
+      },
+      "turnaround": {
+        "raw": "This assay is performed every day, Monday-Friday. Turnaround time: 95% within one weekday."
+      },
+      "clinical": {
+        "references": "BioRad Platelia Aspergillus Ag, SEMI-QUANTITATIVE IMMUNOENZYMATIC SANDWICH MICROPLATE ASSAY FOR THE DETECTION OF ASPERGILLUS GALACTOMANNAN ANTIGEN IN ADULT AND PEDIATRIC SERUM SPECIMENS AND BRONCHOALVEOLAR LAVAGE (BAL) FLUID SPECIMENS, version 0001315 - 2023/07.\n\nToine Mercier et al., Defining Galactomannan Positivity in the Updated EORTC/MSGERC Consensus Definitions of Invasive Fungal Diseases, Clinical Infectious Diseases, Volume 72, Issue Supplement_2, 15 March 2021, Pages S89-S94, https://doi.org/10.1093/cid/ciaa1786."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Aspergillus-galactomannan.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "aspergillus-pcr",
+      "name": "Aspergillus PCR",
+      "aliases": [
+        "Invasive infection with Aspergillus"
+      ],
+      "department": "Molecular Microbiology",
+      "letter": "A",
+      "categories": [
+        "mycology",
+        "molecular-microbiology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "Sputum, BAL, CSF",
+        "container": "CE marked leak proof container",
+        "volume": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "transport": "Ambient or refrigerated\n\nTransport at ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650",
+        "special_precautions": "Samples should be stored at 4°C and dispatched as soon as possible after being drawn"
+      },
+      "analysis": {
+        "units": "Threshold cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend\n\nMolecular Microbiology False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay.\n\nNew and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "5 days",
+        "final_raw": "7 days\n\nIf urgent please contact the laboratory",
+        "provisional_working_days": {
+          "min": 5.0,
+          "max": 5.0
+        },
+        "final_working_days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "notes": "Invasive infection with Aspergillus",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Aspergillus-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "aspergillus-pcr-on-respiratory-samples",
+      "name": "Aspergillus PCR on respiratory samples",
+      "aliases": [],
+      "description": "ELITech Aspergillus PCR: this test is indicated to support a diagnosis of Aspergillus-related lung disease.",
+      "department": "Mycology",
+      "letter": "A",
+      "categories": [
+        "mycology",
+        "molecular-microbiology",
+        "respiratory"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf",
+          "sputum-respiratory",
+          "body-fluid"
+        ],
+        "container": "Bronchoalveolar lavage fluid (BALF) samples:\n\n• Send minimum of 1-2 mL collected into appropriate UKCA/CE-marked sterile leakproof container. • Do not send containers with trap tubing still attached. These samples are prone to leaking and contamination. The trap tubing must be replaced with a secure screw cap lid prior to placing in the specimen bag.\n\nOther sample types: • The test is only validated for BALF. • The test can be performed on other body fluids such as sputum, pleural fluid, and cerebrospinal fluid (CSF) but clear evidence-based guidance for interpretation of the results cannot be provided.\n\nTransportation\n\n• Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\nCategory B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). Please see\n\nMycology below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/"
+      },
+      "analysis": {
+        "reference_range": "The ELITech Aspergillus PCR results are expressed as copies/mL of Aspergillus spp. 18S rDNA; Cq values are also provided.\n\nValues of <120 copies/mL are interpreted as negative results.\n\nValues >210 copies/mL are interpreted as positive results.\n\nValues from 120 to 210 copies/mL are interpreted as indeterminate results and may reflect colonisation but do not exclude infection with Aspergillus. Testing of additional samples and/or use of additional diagnostic tests (Aspergillus galactomannan and high-volume fungal culture) is recommended to clarify the diagnosis.\n\nA single negative result does not rule out the diagnosis of invasive aspergillosis (IA). Repeat testing and additional alternative modalities of testing are recommended if the result is negative, but disease is suspected.\n\nConversely, a single positive Aspergillus PCR does not solely constitute the diagnosis of IA and testing of additional samples and/or use of additional diagnostic tests is needed. Recent data requires the need for 2 consecutive positive results in BAL as positive mycological criterion for IA. According to EORTC/MSGERC criteria, the combination of a positive Aspergillus PCR with two weak positive or a single positive GM test result (e.g., one in serum/plasma (≥ 0.7) or one in BALF (≥ 0.8)), may suggest the presence of IA.",
+        "false_positives": "False positive results may occur if genera closely related to Aspergillus spp., e.g. Penicillium spp., are also present in the sample and detected due to the sequence similarity in the 18S rDNA.",
+        "false_negatives": "False negative results may occur for a variety of reasons, for example inappropriate quality or volume of sample and antifungal prophylaxis interference with assay."
+      },
+      "turnaround": {
+        "raw": "This assay is performed twice weekly, on Tuesday and Friday morning. Turnaround time: 95% within 7 days of sample receipt.",
+        "days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "clinical": {
+        "references": "ELITech Aspergillus spp. ELITe MGB Kit product insert, SCH mRTS110PLD, 28/07/2023, Review 10\n\nDonnelly JP, Chen SC, Kauffman CA, et al., Revision and Update of the Consensus Definitions of Invasive Fungal Disease From the European Organization for Research and Treatment of Cancer and the Mycoses Study Group Education and Research Consortium, Clinical Infectious Diseases, Volume 71, Issue 6, 15 September 2020, Pages 1367-1376, https://doi.org/10.1093/cid/ciz1008.\n\nWhite PL, Bretagne S, Caliendo AM, et al., Aspergillus Polymerase Chain Reaction—An Update on Technical Recommendations, Clinical Applications, and Justification for Inclusion in the Second Revision of the EORTC/MSGERC Definitions of Invasive Fungal Disease, Clinical Infectious Diseases, Volume 72, Issue Supplement_2, 15 March 2021, Pages S95-S101, https://doi.org/10.1093/cid/ciaa1865.\n\nUllmann AJ, Aguado JM, Arikan-Akdagli S, et al., Diagnosis and management of Aspergillus diseases: executive summary of the 2017 ESCMID-ECMM- ERS guideline. Clin Microbiol Infect. 2018 May;24 Suppl 1:e1-e38. doi: 10.1016/j.cmi.2018.01.002."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Aspergillus-PCR-on-respiratory-samples.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "candida-pcr",
+      "name": "Candida PCR",
+      "aliases": [
+        "Invasive infection with Candida"
+      ],
+      "department": "Molecular Microbiology",
+      "letter": "C",
+      "categories": [
+        "mycology",
+        "molecular-microbiology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "csf",
+          "swab",
+          "sputum-respiratory"
+        ],
+        "specimen_type_raw": "EDTA Blood , Sputum, CSF, BAL, swabs",
+        "container": "EDTA blood collection tube",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "transport": "Ambient or refrigerated\n\nTransport at ambient temperature via porter, courier, Royal Mail or DX compliant with IATA packing instruction 650\n\nType and minimum volume of sample: 5mL of EDTA blood\n\nA minimum of 1mL of a bronchoalveolar lavage in a sterile screw-capped plastic container should arrive at the laboratory within 1 working day. The sample should not be frozen, but should be stored at 4°C before dispatch, and kept cool during transport to the laboratory. Non invasive samples such as sputum and EDTA- blood may be used if BAL is unobtainable.\n\nA minimum of 0.5mL of whole CSF. Do not centrifuge. Use a small capacity screw capped container. Special precautions Samples should be stored at 4°C and dispatched as soon as possible after being drawn. If longer storage is unavoidable, serum or plasma may be stored frozen, but should not be repeatedly frozen and thawed. In special circumstances, 0.5mL of serum or plasma can be tested, but for such small volumes avoid using a large container; use a small capacity container with a screw cap, such as an Eppendorff tube."
+      },
+      "analysis": {
+        "units": "Threshold Cycle (CT)",
+        "clinical_decision_points": "Not applicable\n\nMolecular Microbiology",
+        "interferences": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend\n\nFalse negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay.\n\nNew and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "notes": "Invasive infection with Candida",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Candida-PCR.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "analysis.units"
+        ]
+      }
+    },
+    {
+      "id": "c-reactive-protein-crp",
+      "name": "C-reactive protein (CRP)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "C",
+      "categories": [
+        "inflammation-markers"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma, EDTA plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma",
+          "EDTA plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mg/L",
+        "reference_range": "0.6 - 5 mg/L (adult; 3 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "C-Reactive protein (CRP) (Plasma/serum)",
+        "match_method": "exact",
+        "units": "mg/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 0.6,
+            "high": 5.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Years",
+              "age_min": "18",
+              "age_max": "150",
+              "low": "0.6",
+              "high": "5"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 17.0,
+            "low": 0.6,
+            "high": 5.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Years",
+              "age_min": "0",
+              "age_max": "17",
+              "low": "0.6",
+              "high": "5"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 90.0,
+            "low": 1.0,
+            "high": 475.0,
+            "raw": {
+              "sex": "MALE",
+              "age_unit": "Days",
+              "age_min": "0",
+              "age_max": "90",
+              "low": "1",
+              "high": "475"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "cryptococcal-antigen",
+      "name": "Cryptococcal antigen",
+      "aliases": [],
+      "description": "IMMY CrAg lateral flow assay for cryptococcal antigen.",
+      "department": "Mycology",
+      "letter": "C",
+      "categories": [
+        "infectious-disease-serology",
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum",
+          "csf"
+        ],
+        "container": "Blood:\n\n• 4.9 ml clotted blood • Clotted blood - send minimum serum volume of 0.5 ml. • Serum tube (Sarstedt S-Monovette white cap) or serum gel tube (brown cap). Blood collected in EDTA tubes will be rejected. • Non-haemolysed specimens must be provided. • Please do not remove the cap before sending for testing nor share the sample to avoid laboratory contamination.\n\nCerebrospinal fluid (CSF):\n\n• Send minimum of 50 μl collected into an appropriate UKCA/CE-marked sterile leak-proof container.\n\nTransportation:\n\n• Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds).\n\nMycology • Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        }
+      },
+      "analysis": {
+        "reference_range": "Negative or positive by lateral flow (using IMMY CrAg LFA).\n\nPositive results are provided as a titre, e.g., 1:5 - 1:2560. The titre is reported as the highest dilution that yields a positive test result. Further titrations are performed if positive at 1:2560.",
+        "limitations": "The assay performance characteristics have not been established for samples other than CSF, plasma, whole blood, or serum.\n\nThe predictive value of a positive or negative serologic result depends on the pretest likelihood of cryptococcal disease being present. This test can be used in the context of screening and diagnosis of cryptococcal diseases in at-risk populations.\n\nTitres obtained by the IMMY CrAg LFA are not equivalent to titres obtained by other cryptococcal antigen tests.\n\nMycology",
+        "false_positives": "According to published reports, Trichosporon beigelii can cause false positives.\n\nHigh levels (> 40 ug/ml) of human anti-mouse antibodies (HAMA) may cause false positive test results.\n\nAt high concentrations (>0.1 mg/mL), antigens from Paracoccidiodes brasiliensis exhibited some cross- reactivity. Cross-reactivity has been described with 10% of serum samples that were Aspergillus galactomannan positive.\n\nThe CrAg lateral flow assay was evaluated for cross-reactivity against a panel of patient serum specimens. All the following showed no cross-reactivity: penicilliosis, sporothrichosis, syphilis, rubella, mycoplasmosis, toxoplasmosis, CMV, blastomycosis, coccidiodomycosis, histoplasmosis, candidiasis, rheumatoid factor.\n\nThis assay was not evaluated for cross-reactivity against the following organisms or pathologies: Fungal: Candida dubliniensis, C. tropicalis, C. parapsilosis, Pichia kudriavzevii, Nakaseomyces glabratus, Cladosporium trichoides, Pneumocystis jirovecii, zygomycetes. Non-fungal: Antinuclear antibody, hepatitis A and C virus, Staphylococcus aureus, Streptococcus pneumoniae, Neisseria meningitidis, Salmonella typhi, Mycobacterium tuberculosis.",
+        "false_negatives": "Testing haemolysed serum samples could lead to false negatives due to the high background colour on the strip.\n\nNon-encapsulated and weakly encapsulated strains that can cause disease in severely immunocompromised patients may lead to false negative results.\n\nAlthough rare, extremely high concentrations (>0.140 mg/ml) of cryptococcal antigen can result in weak test lines and, in extreme instances, yield negative test results. The risk of this affecting test interpretation is minimised by testing serial dilutions of the sample.\n\nThe assay has not been evaluated for potential interference related to specimen pre-treatment with 2- mercaptoethanol, or with specimens including the following substances: caffeine, ascorbic acid, itraconazole, amphotericin B, paracetamol or acetylsalicylic acid."
+      },
+      "turnaround": {
+        "raw": "This assay is performed on demand. Turnaround time: >95% within one working day."
+      },
+      "clinical": {
+        "references": "Cryptococcal Antigen lateral Flow assay for the detection of cryptococcal antigen, IMMY Inc. Doc PIS-00107, Rev. 2, 2024-09-19."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Cryptococcal-antigen-lateral-flow-test.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "cryptococcus-antigen",
+      "name": "Cryptococcus antigen",
+      "aliases": [],
+      "department": "Virology",
+      "letter": "C",
+      "categories": [
+        "infectious-disease-serology",
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "csf"
+        ],
+        "specimen_type_raw": "Clot or CSF",
+        "container": "CE marked leak proof container",
+        "minimum_volume_raw": "150μl",
+        "transport": "No special requirements"
+      },
+      "analysis": {
+        "units": "Positive or Negative, or titre",
+        "interferences": "None known"
+      },
+      "turnaround": {
+        "raw": "24 hrs"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Cryptococcus-Antigen.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "dhea-sulfate",
+      "name": "DHEA – sulphate",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "D",
+      "categories": [
+        "endocrinology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "dermatophytes-and-non-dermatophytes",
+      "name": "Dermatophytes and non-dermatophytes",
+      "aliases": [],
+      "description": "Culture and identification of dermatophytes and non- dermatophytes from skin, nail and hair Culture and microscopy Request: Superficial mycology testing, dermatophyte testing",
+      "department": "Mycology",
+      "letter": "D",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "tissue",
+          "skin-hair-nail"
+        ],
+        "container": "Dermapaks, or similar envelopes, should be used.\n\nSkin: scrapings (for subcutaneous lesions collect subcutaneous tissue and request fungal culture) Hair: plucked hair roots and hair shaft, NOT cut hair Nail: nail clippings, scrapings of sub-ungual debris\n\nAdequate scrapings and clippings are required for direct microscopy and culture"
+      },
+      "analysis": {
+        "reference_range": "Microscopy results: Positive microscopy is reported as Fungal elements SEEN Negative microscopy is reported as Fungal elements NOT seen\n\nThe British Association of Dermatologists clinical guidelines on fungal nail infections confirms positive microscopy is diagnostic for fungal infection.\n\nCulture results: Negative culture is reported as Fungal culture negative after 3 weeks\n\nNo significant fungi isolated is reported when fungal organism(s) grown are not likely to cause infection.\n\nPositive culture is reported as number of colonies grown out of number of inoculants (up to 40). A recognised cause of superficial infection is reported when a dermatophyte or other significant, non- dermatophyte fungal species is grown.\n\nLaboratory Medicine Care Division\n\nMycology"
+      },
+      "turnaround": {
+        "raw": "Direct microscopy: 1-4 days Culture and identification: 1-4 weeks. Longer for some unusual and/or slow-growing fungi.",
+        "days": {
+          "min": 1.0,
+          "max": 4.0
+        }
+      },
+      "clinical": {
+        "references": "Ameen M, Lear JT, Madan V, Mohd Mustapa MF, Richardson M. British Association of Dermatologists' guidelines for the management of onychomycosis 2014. Br J Dermatol. 2014 Nov;171(5):937-58. doi: 10.1111/bjd.13358. Chowdhary A, Singh A, Kaur A, Khurana A. The emergence and worldwide spread of the species Trichophyton indotineae causing difficult-to-treat dermatophytosis: A new challenge in the management of dermatophytosis. PLoS Pathog. 2022 Sep 29;18(9):e1010795. doi: 10.1371/journal.ppat.1010795."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Dermatophytes-and-non-dermatophytes-from-skin-nail-and-hair.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "double-stranded-dna-antibodies-igg",
+      "name": "Double stranded DNA antibodies (IgG)",
+      "aliases": [],
+      "description": "The presence of autoantibodies to double stranded DNA is strongly suggestive of SLE, although they are detected in only 40-60% of patients with this disease.",
+      "department": "Immunology",
+      "letter": "D",
+      "categories": [
+        "autoimmunity",
+        "infectious-disease-serology",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Multiplex flow immunoassay and Immunofluorescence",
+        "reference_range": "0-9.9 IU/mL",
+        "interferences": "We use two assays to detect DNA antibodies: • Crithidia is a source of pure double stranded DNA and gives a qualitative result • The multiplex assay can be contaminated by single stranded DNA, but gives quantitative results\n\nThe following configurations can be seen: • Crithidia Positive + multiplex flow immunoassay positive = indicates active lupus • Crithidia Negative + multiplex flow immunoassay positive = indicates single stranded DNA antibodies, usually triggered by infection or drugs",
+        "eqa_scheme": "Nuclear and Related Antigens"
+      },
+      "turnaround": {
+        "raw": "Median - 2",
+        "days": {
+          "min": 2.0,
+          "max": 2.0
+        }
+      },
+      "clinical": {
+        "indications": "Diagnosis and monitoring of lupus",
+        "repeat_frequency": "We recommend not repeating this test more than once a month, unless the patient is undergoing plasmapheresis"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Double-stranded-DNA-antibodies-IgG.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "extended-sclerosis-panel",
+      "name": "Extended Sclerosis Panel",
+      "aliases": [],
+      "description": "Extended Sclerosis Panel (referred test) Antibodies to: Scl-70, CENP-A, CENP-B, RPII, RP155, Fibrillarin (U3 RNP), NOR90, Th/To, PM-Scl75, Ku, PDGFR (platelet derived growth factor receptor), Ro52)",
+      "department": "Immunology",
+      "letter": "E",
+      "categories": [
+        "autoimmunity",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "citrated-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "2mL Serum (Gel 5mL Yellow tube) or 2mL Plasma (EDTA, heparin or citrate)",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "volume": {
+          "value": 2.0,
+          "unit": "mL"
+        },
+        "transport": "Transport at ambient temperature via Royal Mail or Courier.",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunoblot",
+        "reference_range": "Negative = Normal"
+      },
+      "turnaround": {
+        "raw": "10 days",
+        "days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "clinical": {
+        "indications": "Investigation of Systemic Sclerosis (diffuse and limited forms of the disease)."
+      },
+      "referred_to": "Sheffield Immunology Dept and Protein Reference Unit",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Extended-Sclerosis-Panel-referred-test.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "ferritin",
+      "name": "Ferritin",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "F",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "12 - 150 μg/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Ferritin",
+        "match_method": "exact",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "400"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "400"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "flucytosine",
+      "name": "Flucytosine",
+      "aliases": [],
+      "description": "Bioassay for measurement of anti-fungal drug levels",
+      "department": "Mycology",
+      "letter": "F",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum",
+          "csf"
+        ],
+        "container": "Blood:\n\n• 4.9 ml clotted blood collected directly from the vein. • Serum tube (Sarstedt S-Monovette white cap) ONLY. • Serum gel tube (brown cap) should not be used as the gel may reduce the drug level detected. More accurate results will be obtained by using tubes with no additive. Blood collected in EDTA tubes will be rejected. • Please do not remove the cap before sending for testing. • It is critically important to include information on concomitant antifungal treatment at the time of blood sampling on the request form. The time of last flucytosine administration and time of sampling should be recorded accurately to allow correct interpretation. Other sample types: • The test is only validated for blood/serum. • The test can be performed on other body fluids such as cerebrospinal fluid (CSF) after discussion with an infection specialist and agreement with the laboratory. Clear evidence-based guidance for interpretation of the results cannot be provided. Transportation:\n\n• Specimens should be transported to the laboratory as soon as possible. If a delay is anticipated, samples should be refrigerated. Assays are validated for transportation of samples at room temperature for up to and including 5 days. • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\nMycology\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). • Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        }
+      },
+      "analysis": {
+        "frequency_of_analysis": "Day of receipt as required. Samples must be notified or received before 1 pm; advance warning of sending sample(s) is appreciated.\n\nMycology It is essential to inform the laboratory of any other concomitant antifungal therapy in addition to flucytosine at the time of sampling, as this will determine how the bioassay will be performed. Absence of this information will likely lead to falsely high flucytosine levels being reported."
+      },
+      "turnaround": {
+        "raw": "This assay is performed on demand. Turnaround time: 95% within one working day."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Flucytosine-assay.pdf",
+        "detail_type": "pdf",
+        "last_updated": "January 2025",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "folate-serum-and-red-cell",
+      "name": "Folate (serum and red cell)",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "F",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "3.9 - 20 μg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Folate (blood)",
+        "match_method": "exact",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 3.9,
+            "high": 20.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "low": "3.9",
+              "high": "20"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "free-t4",
+      "name": "Free thyroxine",
+      "aliases": [
+        "Free T4"
+      ],
+      "department": "Biochemistry",
+      "letter": "F",
+      "categories": [
+        "thyroid"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "pmol/L",
+        "reference_range": "11.3 - 21.6 pmol/L (adult; 6 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Free T4",
+        "match_method": "exact",
+        "units": "pmol/L",
+        "strata": [
+          {
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 11.3,
+            "high": 21.6,
+            "raw": {
+              "sex": "M&F",
+              "age_unit": "Years",
+              "age_min": "≥18",
+              "age_max": "150",
+              "low": "11.3",
+              "high": "21.6"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 18.0,
+            "low": 11.3,
+            "high": 21.6,
+            "raw": {
+              "sex": "M&F",
+              "age_unit": "Years",
+              "age_min": "≥12",
+              "age_max": "<18",
+              "low": "11.3",
+              "high": "21.6"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 7.0,
+            "age_max": 12.0,
+            "low": 12.5,
+            "high": 21.5,
+            "raw": {
+              "sex": "M&F",
+              "age_unit": "Years",
+              "age_min": "≥7",
+              "age_max": "<12",
+              "low": "12.5",
+              "high": "21.5"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 7.0,
+            "low": 12.3,
+            "high": 22.8,
+            "raw": {
+              "sex": "M&F",
+              "age_unit": "Years",
+              "age_min": "≥1",
+              "age_max": "<7",
+              "low": "12.3",
+              "high": "22.8"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 14.0,
+            "high": 22.0,
+            "raw": {
+              "sex": "M&F",
+              "age_unit": "Months",
+              "age_min": "≥1",
+              "age_max": "<12",
+              "low": "14",
+              "high": "22"
+            }
+          },
+          {
+            "age_unit": "days",
+            "age_min": 4.0,
+            "age_max": 30.0,
+            "low": 18.0,
+            "high": 31.0,
+            "raw": {
+              "sex": "M&F",
+              "age_unit": "Days",
+              "age_min": "≥4",
+              "age_max": "<30",
+              "low": "18",
+              "high": "31"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "notes": "Free T4",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "full-blood-count-and-automated-differential",
+      "name": "Full blood count and automated differential",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "F",
+      "categories": [
+        "haematology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "oncology-haematology",
+          "core": true
+        },
+        {
+          "profile": "travel-clinic",
+          "core": true
+        },
+        {
+          "profile": "occupational-health",
+          "core": true
+        },
+        {
+          "profile": "pre-operative-assessment",
+          "core": true
+        },
+        {
+          "profile": "transplant-clinic",
+          "core": true
+        },
+        {
+          "profile": "paediatrics",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "critical-care-emergency",
+          "core": true
+        },
+        {
+          "profile": "drug-alcohol-services",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "fungal-beta-d-glucan-assay",
+      "name": "Fungal beta D glucan assay",
+      "aliases": [],
+      "description": "FUNGITELL assay for (1,3)--D-glucan: the fungal glucan test is indicated for assessing the likelihood of systemic fungal infection",
+      "department": "Mycology",
+      "letter": "F",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "container": "Blood:\n\n• 4.9 ml clotted blood collected directly from the vein. • Serum tube (Sarstedt S-Monovette white cap) or serum gel tube (brown cap). Blood collected in EDTA tubes cannot be processed for this test and will be rejected. • Please do not remove the cap, do not share the sample. Samples are easily contaminated either during sample collection or laboratory procedures. • Blood samples obtained by heel or finger stick methods or other sample types are not accepted.\n\nTransportation:\n\n• Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). • Please see below for packaging requirements.\n\nMycology\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        }
+      },
+      "analysis": {
+        "reference_range": "The (1,3)--D-glucan (BDG) test results are expressed in picogram per millilitre (pg/mL) of serum and range from undetectable (<31 pg/mL) to >500 pg/mL.\n\nBDG values of <60 pg/mL are interpreted as negative results.\n\nBDG values ≥80 pg/mL are interpreted as positive. A positive result does not define the presence of disease and should be used in conjunction with other clinical and laboratory findings.\n\nValues from 60 to 79 pg/mL are interpreted as indeterminate. Additional sampling is recommended.\n\nThis test is only validated for patients 18 years old and above. Please consult the laboratory for more information if needed.",
+        "false_positives": "• Laboratory-based (mainly separating and sharing the sample in an inappropriate, non-BDG-free environment) and sample collection derived contamination • Intravenously administered products, including drugs and blood fractionation products (such as serum albumin, immunoglobulins, and filtered blood plasma) • Intestinal translocation of mycobiome-derived BDG (antigenemia in the absence of fungaemia) following intestinal barrier injury (due to chemotherapy-associated mucositis, intestinal ischemia, mesenteric hypoxia, microbial toxins, viral infection of intestinal tissue, metabolic toxicity, such as in uraemia, large total surface area burns, and protease-producing intestinal enterococci, or sepsis) • Compromised hepatic function and BDG processing • Parenteral nutrition contaminated during manufacturing processes (e.g., filtration) • Invasive use of surgical materials (e.g., gauze and surgical sponges that contain glucan) • Invasive nocardiosis • Fungal glucan levels typically rise early in infection, then decline slowly, only returning to baseline well after successful disease resolution. • Patients require 3-4 days for the restoration of baseline levels of serum (1,3)-D glucan after surgical exposure to BDG-containing sponges and gauzes.\n\nThe following sample features may interfere with the test and make processing impossible: • Haemolysis • Sample turbidity caused by lipemia • The presence of visually apparent bilirubin • Turbid or discoloured serum\n\nMycology • Elevated levels of immunoglobulin G Repeat testing is recommended in these cases.",
+        "false_negatives": "• The Fungitell (1,3)--D Glucan assay does not detect certain fungal species, such as the genus Cryptococcus, which produces very low levels of (1,3)--D-glucan. This assay also does not detect the Mucormycetes, such as Lichtheimia, Mucor and Rhizopus, which are not known to produce (1,3)--D- glucan. The yeast phase of Blastomyces dermatitidis produces little (1,3)-β-D-glucan and may not be detected by the assay. • Tissue-localised or encapsulated fungal infections that limit the amount of (1,3)-β-D-glucan produced and/or limit its translocation into the bloodstream may result in low or undetectable serum concentrations."
+      },
+      "turnaround": {
+        "raw": "This assay is performed every day, Monday-Friday. Turnaround time: 95% within two weekdays, generally available within one weekday."
+      },
+      "clinical": {
+        "references": "Finkelman, M.A. Specificity Influences in (1>3) β-D-Glucan-Supported Diagnosis of Invasive Fungal Disease. J. Fungi 2021, 7, 14. https://doi.org/10.3390/jof7010014.\n\nKarageorgopoulos DE, Qu JM, Korbila IP, Zhu YG, Vasileiou VA, Falagas ME. Accuracy of β-D-glucan for the diagnosis of Pneumocystis jirovecii pneumonia: a meta-analysis. Clin Microbiol Infect. 2013 Jan;19(1):39-49. doi: 10.1111/j.1469-0691.2011.03760.x. Assay for (1>3)-β-D-Glucan in Serum, FUNGITELL® ASSAY, Instructions For Use, PN001268-en Rev12, 2023-06-13."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Fungal-beta-D-glucan-assay.pdf",
+        "detail_type": "pdf",
+        "last_updated": "November 2024",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "fungi-special-stain",
+      "name": "Fungi – Special Stain",
+      "aliases": [],
+      "department": "Non-Gynaecology Cytology",
+      "letter": "F",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
+        "detail_type": "page",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.0,
+        "has_detail_sheet": false
+      }
+    },
+    {
+      "id": "ige-total",
+      "name": "IgE (Total)",
+      "aliases": [],
+      "department": "Immunology",
+      "letter": "I",
+      "categories": [
+        "allergy"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "allergy-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum, 8ml if multiple Specific IgE tests",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunoassay (Phadia 1000)",
+        "reference_range": "Age specific",
+        "interferences": "Total IgE >3000kU/L increases the incidence of false positive (low level) specific IgE. IgE <30 kU/L associated with false negative specific IgE. Similarly, very low IgE levels (<2.0 kU/L) may indicate an underlying immunodeficiency; measurement of immunoglobulins is recommended.",
+        "eqa_scheme": "UK NEQAS for TOTAL IgE\n\nAge range Total IgE (kU/L) 0 days to 6 weeks < 5.2 6 weeks to 3 months < 9.2 3 to 6 months < 16.4 6 to 9 months < 22.6 9 to 12 months < 29.2 1 to 2 years < 51.7 2 to 3 years < 72.0 3 to 4 years < 90.0 4 to 5 years < 108.0 5 to 6 years < 126.0 6 to 7 years < 142.0 7 to 8 years < 160.0 8 to 9 years < 176.0 9 to 10 years < 192.0 Above 10 years < 114.0\n\nImmunology"
+      },
+      "turnaround": {
+        "raw": "Median - 3",
+        "days": {
+          "min": 3.0,
+          "max": 3.0
+        }
+      },
+      "clinical": {
+        "indications": "Patients with suspected allergy (atopic disease). Main use of the test is to help interpret specific IgE levels.",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/IgE-Total.pdf",
+        "detail_type": "pdf",
+        "last_updated": "August 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.55,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications"
+        ]
+      }
+    },
+    {
+      "id": "iron",
+      "name": "Iron",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "I",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "μmol/L",
+        "reference_range": "10 - 30 μmol/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Iron",
+        "match_method": "exact",
+        "units": "μmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "weeks/ years",
+            "age_min": 4.0,
+            "age_max": 1.0,
+            "low": 10.0,
+            "high": 30.0,
+            "raw": {
+              "sex": "all",
+              "age_unit": "Weeks/ Years",
+              "age_min": "4",
+              "age_max": "1",
+              "low": "10",
+              "high": "30"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 10.0,
+            "low": 5.0,
+            "high": 25.0,
+            "raw": {
+              "sex": "all",
+              "age_unit": "Years",
+              "age_min": "1",
+              "age_max": "10",
+              "low": "5",
+              "high": "25"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 10.0,
+            "age_max": 18.0,
+            "low": 10.0,
+            "high": 25.0,
+            "raw": {
+              "sex": "all",
+              "age_unit": "Years",
+              "age_min": "10",
+              "age_max": "18",
+              "low": "10",
+              "high": "25"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 5.8,
+            "high": 34.5,
+            "raw": {
+              "sex": "all",
+              "age_unit": "Years",
+              "age_min": "18",
+              "age_max": "150",
+              "low": "5.8",
+              "high": "34.5"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "isavuconazole",
+      "name": "Isavuconazole",
+      "aliases": [],
+      "description": "Isavuconazole Anti-fungal drug level monitoring",
+      "department": "Mycology",
+      "letter": "I",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "minimum_volume_raw": "Adult 4.9ml, Neonate 0.5ml • Minimum blood volume is 2 ml; serum volume of 1 ml is required for testing. • Serum tube (Sarstedt S-Monovette white cap). Blood collected in EDTA tubes will be rejected. Gel separation tubes should NOT be used as the gel may reduce the drug level detected. More accurate results will be obtained by using blood tubes with no additives. Specimens should be transported to the laboratory as soon as possible. If a delay is anticipated, samples should be refrigerated. Assays are validated for transportation of samples at room temperature for up to and including 5 days. For all drugs, the time of previous dose and the time of sampling should be recorded accurately to allow correct interpretation. Transportation • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds).\n\nX\n\nLaboratory Medicine Care Division\n\nMycology • Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "volume": {
+          "value": 4.9,
+          "unit": "mL"
+        }
+      },
+      "analysis": {
+        "frequency_of_analysis": "Each weekday\n\n* These samples are most useful for clinical management\n\nLaboratory Medicine Care Division\n\nMycology"
+      },
+      "turnaround": {
+        "raw": "1-2 days",
+        "days": {
+          "min": 1.0,
+          "max": 2.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Isavuconazole.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.volume",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "itraconazole",
+      "name": "Itraconazole",
+      "aliases": [],
+      "description": "Itraconazole Anti-fungal drug level monitoring",
+      "department": "Mycology",
+      "letter": "I",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "minimum_volume_raw": "Adult 4.9ml, Neonate 0.5ml • Minimum blood volume is 2 ml; serum volume of 1 ml is required for testing. • Serum tube (Sarstedt S-Monovette white cap). Blood collected in EDTA tubes will be rejected. Gel separation tubes should NOT be used as the gel may reduce the drug level detected. More accurate results will be obtained by using blood tubes with no additives. Specimens should be transported to the laboratory as soon as possible. If a delay is anticipated, samples should be refrigerated. Assays are validated for transportation of samples at room temperature for up to and including 5 days. For all drugs, the time of previous dose and the time of sampling should be recorded accurately to allow correct interpretation. Transportation • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). X\n\nLaboratory Medicine Care Division\n\nMycology\n\n• Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "volume": {
+          "value": 4.9,
+          "unit": "mL"
+        }
+      },
+      "analysis": {
+        "frequency_of_analysis": "Each weekday\n\n* These samples are most useful for clinical management"
+      },
+      "turnaround": {
+        "raw": "1-2 days",
+        "days": {
+          "min": 1.0,
+          "max": 2.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Itraconazole.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.volume",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "myositis-antibodies",
+      "name": "Myositis Antibodies",
+      "aliases": [],
+      "description": "Analysis includes: Mi-2 (α and β), TIF1γ, MDA5, NXP2, SAE1, KU, proteins of the nucleolar PM-Scl macromolecular complex (PM-Scl75 and PM-Scl100), Jo1, SRP, PL-7, PL-12, EJ, OJ, Ro52 and cN-1A. Used to detect and identify individual myositis-specific antigens characteristic of autoimmune myositides.",
+      "department": "Immunology",
+      "letter": "M",
+      "categories": [
+        "autoimmunity",
+        "rheumatology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunoblot",
+        "reference_range": "Negative",
+        "interferences": "The Myositis ENA assay is very sensitive and therefore false positive results may occur. Please interpret the results in the context of the clinical feature and if you have any queries about the results, please contact the Rheumatology Neuromuscular clinic at Salford Royal Hospital",
+        "eqa_scheme": "UK NEQAS for Myositis Associated Antibodies and Euroimmun Antibodies in Autoimmune Myopathies"
+      },
+      "turnaround": {
+        "raw": "Median - 6",
+        "days": {
+          "min": 6.0,
+          "max": 6.0
+        }
+      },
+      "clinical": {
+        "indications": "To diagnose and monitor suspected Inflammatory Myopathies including Dermatomyositis, Juvenile Myositis, Polymyositis, idiopathic myositis, anti-synthetase syndrome and overlapping syndrome.",
+        "repeat_frequency": "At significant change of clinical symptoms"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Myositis-Antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "posaconazole",
+      "name": "Posaconazole",
+      "aliases": [],
+      "description": "Posaconazole Anti-fungal drug level monitoring",
+      "department": "Mycology",
+      "letter": "P",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "minimum_volume_raw": "Adult 4.9ml, Neonate 0.5ml • Minimum blood volume is 2 ml; serum volume of 1 ml is required for testing. • Serum tube (Sarstedt S-Monovette white cap). Blood collected in EDTA tubes will be rejected. Gel separation tubes should NOT be used as the gel may reduce the drug level detected. More accurate results will be obtained by using blood tubes with no additives. Specimens should be transported to the laboratory as soon as possible. If a delay is anticipated, samples should be refrigerated. Assays are validated for transportation of samples at room temperature for up to and including 5 days. For all drugs, the time of previous dose and the time of sampling should be recorded accurately to allow correct interpretation. Transportation • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). X\n\nLaboratory Medicine Care Division\n\nMycology\n\n• Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "volume": {
+          "value": 4.9,
+          "unit": "mL"
+        }
+      },
+      "analysis": {
+        "frequency_of_analysis": "Each weekday\n\n* These samples are most useful for clinical management"
+      },
+      "turnaround": {
+        "raw": "1-2 days",
+        "days": {
+          "min": 1.0,
+          "max": 2.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Posaconazole.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.volume",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "serum-ferritin",
+      "name": "Serum ferritin",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "S",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "12 - 150 μg/L (adult; 4 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Ferritin",
+        "match_method": "fuzzy:1.00",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "Years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "female",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 150.0,
+            "raw": {
+              "sex": "F",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "150"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 0.0,
+            "age_max": 5.0,
+            "low": 12.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "0",
+              "age_max": "5",
+              "low": "12",
+              "high": "400"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 5.0,
+            "age_max": 120.0,
+            "low": 15.0,
+            "high": 400.0,
+            "raw": {
+              "sex": "M",
+              "age_unit": "years",
+              "age_min": "5",
+              "age_max": "120",
+              "low": "15",
+              "high": "400"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "serum-folate",
+      "name": "Serum folate",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "S",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, (lithium heparin plasma paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "(lithium heparin plasma paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "μg/L",
+        "reference_range": "3.9 - 20 μg/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Folate (blood)",
+        "match_method": "fuzzy:1.00",
+        "units": "μg/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 3.9,
+            "high": 20.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "low": "3.9",
+              "high": "20"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "serum-vitamin-b12",
+      "name": "Serum vitamin B12",
+      "aliases": [],
+      "department": "Haematology",
+      "letter": "S",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plaqsma (paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plaqsma (paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "ng/L",
+        "reference_range": "197 - 771 ng/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Serum Vitamin B12",
+        "match_method": "exact",
+        "units": "ng/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 197.0,
+            "high": 771.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "age_min": "All",
+              "age_max": "All",
+              "low": "197",
+              "high": "771"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "shbg",
+      "name": "SHBG",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "S",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "nmol/L",
+        "reference_range": "36 - 229 nmol/L (adult; 19 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Sex Hormone Binding Globulin (SHBG)",
+        "match_method": "abbreviation",
+        "units": "nmol/L",
+        "strata": [
+          {
+            "sex": "female",
+            "age_unit": "days",
+            "age_min": 4.0,
+            "age_max": 31.0,
+            "low": 14.0,
+            "high": 120.0,
+            "raw": {
+              "sex": "Female",
+              "age_unit": "days",
+              "age_min": "4",
+              "age_max": "31",
+              "low": "14",
+              "high": "120"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 36.0,
+            "high": 229.0,
+            "raw": {
+              "age_unit": "months",
+              "age_min": "1",
+              "age_max": "12",
+              "low": "36",
+              "high": "229"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 7.0,
+            "low": 42.0,
+            "high": 189.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "1",
+              "age_max": "7 + 364 days",
+              "low": "42",
+              "high": "189"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 8.0,
+            "age_max": 10.0,
+            "low": 26.0,
+            "high": 162.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "8",
+              "age_max": "10 +364 days",
+              "low": "26",
+              "high": "162"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 11.0,
+            "age_max": 12.0,
+            "low": 15.0,
+            "high": 108.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "11",
+              "age_max": "12 + 364 days",
+              "low": "15",
+              "high": "108"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 13.0,
+            "age_max": 14.0,
+            "low": 11.0,
+            "high": 98.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "13",
+              "age_max": "14 +364 days",
+              "low": "11",
+              "high": "98"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 15.0,
+            "age_max": 16.0,
+            "low": 10.0,
+            "high": 84.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "15",
+              "age_max": "16 + 364 days",
+              "low": "10",
+              "high": "84"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 17.0,
+            "age_max": 17.0,
+            "low": 11.0,
+            "high": 155.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "17",
+              "age_max": "17 + 364 days",
+              "low": "11",
+              "high": "155"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 49.0,
+            "low": 32.0,
+            "high": 128.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "18",
+              "age_max": "49 + 364 days",
+              "low": "32",
+              "high": "128"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 50.0,
+            "low": 27.0,
+            "high": 128.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "≥50",
+              "age_max": "unspecified",
+              "low": "27",
+              "high": "128"
+            }
+          },
+          {
+            "sex": "male",
+            "age_unit": "days",
+            "age_min": 4.0,
+            "age_max": 31.0,
+            "low": 14.0,
+            "high": 120.0,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "days",
+              "age_min": "4",
+              "age_max": "31",
+              "low": "14",
+              "high": "120"
+            }
+          },
+          {
+            "age_unit": "months",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 36.0,
+            "high": 229.0,
+            "raw": {
+              "age_unit": "months",
+              "age_min": "1",
+              "age_max": "12",
+              "low": "36",
+              "high": "229"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 7.0,
+            "low": 42.0,
+            "high": 189.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "1",
+              "age_max": "7 + 364 days",
+              "low": "42",
+              "high": "189"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 8.0,
+            "age_max": 10.0,
+            "low": 26.0,
+            "high": 162.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "8",
+              "age_max": "10 + 364 days",
+              "low": "26",
+              "high": "162"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 11.0,
+            "age_max": 12.0,
+            "low": 15.0,
+            "high": 108.0,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "11",
+              "age_max": "12 + 364 days",
+              "low": "15",
+              "high": "108"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 13.0,
+            "age_max": 14.0,
+            "low": 11.0,
+            "high": 98.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "13",
+              "age_max": "14 + 364 days",
+              "low": "11",
+              "high": "98"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 15.0,
+            "age_max": 17.0,
+            "low": 10.0,
+            "high": 50.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "15",
+              "age_max": "17 + 364 days",
+              "low": "10",
+              "high": "50"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 49.0,
+            "low": 18.0,
+            "high": 54.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "18",
+              "age_max": "49 + 364 days",
+              "low": "18",
+              "high": "54"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 50.0,
+            "low": 21.0,
+            "high": 77.0,
+            "raw": {
+              "age_unit": "years",
+              "age_min": "≥50",
+              "age_max": "unspecified",
+              "low": "21",
+              "high": "77"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "240 hours",
+        "days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "skin-antibodies",
+      "name": "Skin antibodies",
+      "aliases": [],
+      "description": "Two types of skin autoantibodies that detect different skin components are recognised: • Intercellular cement substance (Pemphigus antibodies) • Basement membrane antibodies (Pemphigoid antibodies)",
+      "department": "Immunology",
+      "letter": "S",
+      "categories": [
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "4ml serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "volume": {
+          "value": 4.0,
+          "unit": "mL"
+        },
+        "transport": "At room temperature",
+        "special_precautions": "None"
+      },
+      "analysis": {
+        "method": "Immunofluorescence",
+        "reference_range": "Neg",
+        "interferences": "None",
+        "eqa_scheme": "UK NEQAS scheme for antibodies in Bullous Dermatosis"
+      },
+      "turnaround": {
+        "raw": "Median - 5",
+        "days": {
+          "min": 5.0,
+          "max": 5.0
+        }
+      },
+      "clinical": {
+        "indications": "Bullous skin disorders, dermatitis herpetiformis",
+        "repeat_frequency": "Depending on changes in clinical picture"
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Skin-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "October 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.reference_range",
+          "turnaround",
+          "clinical.indications",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "testosterone",
+      "name": "Testosterone",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "T",
+      "categories": [
+        "reproductive-hormones"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "nmol/L",
+        "reference_range": "6.7 - 25.7 nmol/L (adult; 2 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Testosterone (Roche)",
+        "match_method": "exact",
+        "units": "nmol/L",
+        "strata": [
+          {
+            "sex": "male",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 49.0,
+            "low": 8.6,
+            "high": 29.0,
+            "raw": {
+              "sex": "Male",
+              "age_unit": "years",
+              "age_min": "18",
+              "age_max": "49 + 364 days",
+              "low": "8.6",
+              "high": "29"
+            }
+          },
+          {
+            "age_unit": "years",
+            "age_min": 50.0,
+            "low": 6.7,
+            "high": 25.7,
+            "raw": {
+              "age_unit": "Years",
+              "age_min": "≥50",
+              "age_max": "unspecified",
+              "low": "6.7",
+              "high": "25.7"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "240 hours",
+        "days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "thyroid-stimulating-hormone",
+      "name": "Thyroid Stimulating Hormone",
+      "aliases": [
+        "TSH"
+      ],
+      "department": "Biochemistry",
+      "letter": "T",
+      "categories": [
+        "thyroid",
+        "sexual-health-sti"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "fertility-reproductive",
+          "core": true
+        },
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "antenatal-maternity",
+          "core": true
+        },
+        {
+          "profile": "womens-health-gynaecology",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "cardiology-clinic",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum, lithium heparin plasma",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum",
+          "lithium heparin plasma"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "mu/L",
+        "reference_range": "0.27 - 4.2 mu/L (adult; 7 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Thyroid Stimulating Hormone (TSH)",
+        "match_method": "exact",
+        "units": "mu/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 18.0,
+            "age_max": 150.0,
+            "low": 0.27,
+            "high": 4.2,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥18",
+              "age_max": "150",
+              "low": "0.27",
+              "high": "4.2"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 12.0,
+            "age_max": 18.0,
+            "low": 0.27,
+            "high": 4.2,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥12",
+              "age_max": "<18",
+              "low": "0.27",
+              "high": "4.2"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 7.0,
+            "age_max": 12.0,
+            "low": 0.6,
+            "high": 4.84,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥7",
+              "age_max": "<12",
+              "low": "0.6",
+              "high": "4.84"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "years",
+            "age_min": 1.0,
+            "age_max": 7.0,
+            "low": 0.7,
+            "high": 5.97,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Years",
+              "age_min": "≥1",
+              "age_max": "<7",
+              "low": "0.7",
+              "high": "5.97"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "months",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 1.02,
+            "high": 6.8,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Months",
+              "age_min": "≥1",
+              "age_max": "<12",
+              "low": "1.02",
+              "high": "6.8"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 4.0,
+            "age_max": 30.0,
+            "low": 1.23,
+            "high": 9.7,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "Days",
+              "age_min": "≥4",
+              "age_max": "<30",
+              "low": "1.23",
+              "high": "9.7"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "days",
+            "age_min": 0.0,
+            "age_max": 3.0,
+            "raw": {
+              "sex": "Both",
+              "age_unit": "days",
+              "age_min": "≥0",
+              "age_max": "≤3",
+              "low": "No ranges"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "4 hours",
+        "days": {
+          "min": 0.17,
+          "max": 0.17
+        }
+      },
+      "notes": "TSH",
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "vitamin-b12",
+      "name": "Vitamin B12",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "V",
+      "categories": [
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "neurology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        },
+        {
+          "profile": "haematology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "heparinised-plasma",
+          "serum"
+        ],
+        "specimen_type_raw": "Gel serum, lithium heparin plaqsma (paeds)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "accepted_specimens": [
+          "Gel serum",
+          "lithium heparin plaqsma (paeds)"
+        ],
+        "preferred_specimen": "Gel serum"
+      },
+      "analysis": {
+        "units": "ng/L",
+        "reference_range": "197 - 771 ng/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Serum Vitamin B12",
+        "match_method": "fuzzy:1.00",
+        "units": "ng/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "all",
+            "low": 197.0,
+            "high": 771.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "All",
+              "age_min": "All",
+              "age_max": "All",
+              "low": "197",
+              "high": "771"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "24 hours",
+        "days": {
+          "min": 1.0,
+          "max": 1.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "vitamin-d",
+      "name": "Vitamin D",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "V",
+      "categories": [
+        "bone-metabolism",
+        "nutrition-micronutrients"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": true
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "nephrology-renal",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum, gel serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum",
+          "gel serum"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "nmol/L"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "25-Hydroxy Vitamin D",
+        "match_method": "fuzzy:0.85",
+        "units": "nmol/L",
+        "notes": "autocomments: Thresholds for treatment are based on Total 25(OH)VitD i.e the sum of 25(OH)VitD2 and 25(OH)VitD3. For guidance refer to National Osteoporosis Society Guidelines (2018). Total 25(OH)VitD <25nmol/L: Consistent with VitD deficiency. Treatment with colecalciferol recommended. Total 25(OH)VitD 25-50 nmol/L: VitD status may be inadequate in some patient groups. Treatment with colecalciferol advised in high-risk groups. Total 25(OH)VitD >50 nmol/L: Adequate VitD status. Supplementation not usually required. Total 25(OH)VitD >375 nmol/L: VitD levels may be associated with toxicity."
+      },
+      "turnaround": {
+        "raw": "1 week",
+        "days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.27,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "voriconazole",
+      "name": "Voriconazole",
+      "aliases": [],
+      "description": "Voriconazole Anti-fungal drug level monitoring",
+      "department": "Mycology",
+      "letter": "V",
+      "categories": [
+        "mycology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "dermatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "minimum_volume_raw": "Adult 4.9ml, Neonate 0.5ml • Minimum blood volume is 2 ml; serum volume of 1 ml is required for testing. • Serum tube (Sarstedt S-Monovette white cap). Blood collected in EDTA tubes will be rejected. Gel separation tubes should NOT be used as the gel may reduce the drug level detected. More accurate results will be obtained by using blood tubes with no additives. Specimens should be transported to the laboratory as soon as possible. If a delay is anticipated, samples should be refrigerated. Assays are validated for transportation of samples at room temperature for up to and including 5 days. For all drugs, the time of previous dose and the time of sampling should be recorded accurately to allow correct interpretation. Transportation • Samples should be placed into a plastic Ziploc bag, sealed, and then placed into another sealed plastic Ziploc bag (preferably with a biohazard label on the outside), as shown below.\n\n• Category B transport boxes or an appropriate transport bag (i.e., one which adheres to regulations governing the transportation of diagnostic specimens) must be used for transport by road or between Manchester University Foundation Trust sites (but are not necessary within Wythenshawe hospital grounds). X\n\nLaboratory Medicine Care Division\n\nMycology\n\n• Please see below for packaging requirements.\n\nFor more information - https://mrcm.org.uk/sample-collection/",
+        "volume": {
+          "value": 4.9,
+          "unit": "mL"
+        }
+      },
+      "analysis": {
+        "frequency_of_analysis": "Each weekday\n\n* These samples are most useful for clinical management"
+      },
+      "turnaround": {
+        "raw": "1-2 days",
+        "days": {
+          "min": 1.0,
+          "max": 2.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Voriconazole.pdf",
+        "detail_type": "pdf",
+        "last_updated": "May 2026",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.36,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.volume",
+          "turnaround",
+          "description"
+        ]
+      }
+    },
+    {
+      "id": "zinc",
+      "name": "Zinc",
+      "aliases": [],
+      "department": "Biochemistry",
+      "letter": "Z",
+      "categories": [
+        "nutrition-micronutrients",
+        "trace-elements-toxicology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "aesthetic-beauty-clinic",
+          "core": true
+        },
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Plain serum",
+        "tube": {
+          "type": "plain-serum",
+          "cap_colour": "Red"
+        },
+        "accepted_specimens": [
+          "Plain serum"
+        ],
+        "preferred_specimen": "Plain serum"
+      },
+      "analysis": {
+        "units": "μmol/L",
+        "reference_range": "10 - 22 μmol/L (adult; 3 age/sex strata available)"
+      },
+      "reference_intervals": {
+        "source": "mft-biochemistry-reference-ranges",
+        "source_url": "https://mft.nhs.uk/app/uploads/2026/06/Biochemistry-reference-ranges-240626.pdf",
+        "matched_name": "Zinc",
+        "match_method": "exact",
+        "units": "μmol/L",
+        "strata": [
+          {
+            "sex": "all",
+            "age_unit": "months",
+            "age_min": 0.0,
+            "age_max": 1.0,
+            "low": 10.0,
+            "high": 22.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Months",
+              "age_min": "0",
+              "age_max": "1",
+              "low": "10",
+              "high": "22"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "months/ years",
+            "age_min": 1.0,
+            "age_max": 12.0,
+            "low": 10.0,
+            "high": 18.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Months/ years",
+              "age_min": ">1",
+              "age_max": "12",
+              "low": "10",
+              "high": "18"
+            }
+          },
+          {
+            "sex": "all",
+            "age_unit": "year",
+            "age_min": 12.0,
+            "age_max": 120.0,
+            "low": 10.0,
+            "high": 22.0,
+            "raw": {
+              "sex": "All",
+              "age_unit": "Year",
+              "age_min": ">12",
+              "age_max": "120",
+              "low": "10",
+              "high": "22"
+            }
+          }
+        ]
+      },
+      "turnaround": {
+        "raw": "1 week",
+        "days": {
+          "min": 7.0,
+          "max": 7.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
+        "retrieved": "2026-08-23"
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": false,
+        "present": [
+          "specimen.types",
+          "analysis.units",
+          "analysis.reference_range",
+          "reference_intervals",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "zinc-transporter-8-znt8-antibodies",
+      "name": "Zinc Transporter 8 (ZnT8) antibodies",
+      "aliases": [],
+      "description": "The assessment of autoantibodies to pancreatic β cell antigens is an important serological marker of type 1 diabetes mellitus (Type 1 DM). The antigens recognised by these antibodies include Zinc transporter 8 (ZnT8), insulinoma associated antigen 2 (IA-2), glutamic acid decarboxylase (GAD) GAD65kDa isoform and insulin. The epitopes principally recognised by ZnT8 antibodies reside in residues 268-369 of the C terminal domain. Single nucleotide polymorphisms at the 325 residue lead to expression of arginine (R), tryptophan (W) or, rarely, glutamine (Q). Autoantibodies have been discovered that are known to be specific to either the R or W alleles or residue 325 non-specific. Autoantibodies specific to the Q allele are extremely rare. In a study of 1170 children with a genetic predisposition to diabetes, 58 went on to develop ZnT8 autoantibodies. Of these antibodies, the majority (67.7%) could recognise all alleles and only 15.5% were reactive to a single allele, none of which were reactive only to the Q allele (Achenbach et al, 2009). The RSR kit will detect the R, W and reside 325 non-specific alleles. ZnT8 antibodies can be ordered individually, or as part of a panel containing ZnT8 antibodies, IA-2 antibodies and GAD antibodies.",
+      "department": "Immunology",
+      "letter": "Z",
+      "categories": [
+        "diabetes-metabolic",
+        "autoimmunity"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "general-practice",
+          "core": false
+        },
+        {
+          "profile": "weight-management-metabolic",
+          "core": true
+        },
+        {
+          "profile": "sports-performance",
+          "core": true
+        },
+        {
+          "profile": "longevity-wellness",
+          "core": true
+        },
+        {
+          "profile": "endocrinology-clinic",
+          "core": false
+        },
+        {
+          "profile": "rheumatology-clinic",
+          "core": false
+        },
+        {
+          "profile": "dermatology-clinic",
+          "core": true
+        }
+      ],
+      "specimen": {
+        "types": [
+          "serum"
+        ],
+        "specimen_type_raw": "Serum (Brown top serum gel bottle)",
+        "tube": {
+          "type": "serum-gel",
+          "cap_colour": "Gold / yellow (SST)"
+        },
+        "transport": "At room temperature",
+        "additional_requirements": "None"
+      },
+      "analysis": {
+        "analyte": "Zinc transporter 8 (ZnT8) antibodies",
+        "method": "ELISA",
+        "units": "U/mL",
+        "reference_range": "Negative is <10 U/mL\n\nAchenbach, P., Lampasona, V. and Landherr, U. (2009) Autoantibodies to zinc transporter 8 and SLC30A8 genotype stratify type 1 diabetes risk. Diabetologia, 52, 1881-1888 Polly J. Bingley (2010) Clinical Applications of Diabetes Antibody Testing, The Journal of Clinical Endocrinology & Metabolism, 95, 25-33",
+        "interferences": "Haemolysed and lipaemic samples should not be used.",
+        "eqa_scheme": "UK NEQAS for Diabetic Markers\n\nImmunology",
+        "frequency_of_analysis": "At initial diagnosis and in patients with suspected type 1 diabetes. Highest accuracy seen at initial presentation."
+      },
+      "turnaround": {
+        "raw": "10 days",
+        "days": {
+          "min": 10.0,
+          "max": 10.0
+        }
+      },
+      "clinical": {
+        "interpretation": "Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of autoantibody testing."
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Zinc-Transporter-8-antibodies.pdf",
+        "detail_type": "pdf",
+        "last_updated": "July 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.64,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.transport",
+          "analysis.method",
+          "analysis.units",
+          "analysis.reference_range",
+          "turnaround",
+          "description"
+        ]
+      }
+    }
+  ]
+}

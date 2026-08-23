@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "department": "Microbiology",
+    "version": "0.1.0",
+    "test_count": 2
+  },
+  "tests": [
+    {
+      "id": "adenovirus",
+      "name": "Adenovirus",
+      "aliases": [],
+      "department": "Microbiology",
+      "letter": "A",
+      "categories": [
+        "virology"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "container": "CE marked leak proof container",
+        "minimum_volume_raw": "Minimum volume 500μl",
+        "collection": "EDTA Blood (EDTA Tube), Eye swab (Virus Transport Media)",
+        "transport": "Ambient or refrigerated\n\nCompliance with current postal and transportation regulations is essential. Clinical samples should be collected into a leak-proof container in a sealed plastic bag. Appropriate hazard labelling according to local policy should be applied. Specimens should be transported and processed as soon as possible.",
+        "special_precautions": "If processing is delayed, refrigeration is preferable to storage at room temperature."
+      },
+      "analysis": {
+        "units": "Threshold cycle (CT)",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay.\n\nNew and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Adenovirus.pdf",
+        "detail_type": "pdf",
+        "last_updated": "December 2014",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.container",
+          "specimen.transport",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    },
+    {
+      "id": "hepatitis-b-virus-viral-load",
+      "name": "Hepatitis B virus viral load",
+      "aliases": [],
+      "department": "Microbiology",
+      "letter": "H",
+      "categories": [
+        "virology",
+        "molecular-microbiology",
+        "sexual-health-sti",
+        "hepatitis"
+      ],
+      "clinic_profiles": [
+        {
+          "profile": "sexual-health-gum",
+          "core": false
+        },
+        {
+          "profile": "gastroenterology-hepatology",
+          "core": false
+        },
+        {
+          "profile": "infectious-disease-clinic",
+          "core": false
+        },
+        {
+          "profile": "microbiology-infection-control",
+          "core": false
+        }
+      ],
+      "specimen": {
+        "types": [
+          "edta-whole-blood",
+          "serum"
+        ],
+        "specimen_type_raw": "EDTA plasma and serum samples",
+        "container": "Blood should be collected in SSTTM Serum Separation Tubes, BD Vacutainer® PPTTM Plasma Preparation Tubes or in sterile tubes using EDTA as the anticoagulant. Whole blood collected in EDTA tubes may be stored and/or transported for up to 24 hours at 2°C to 25°C. If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 48hr are undesirable.",
+        "tube": {
+          "type": "edta",
+          "cap_colour": "Purple / lavender"
+        },
+        "minimum_volume_raw": "3.0 mL",
+        "volume": {
+          "value": 3.0,
+          "unit": "mL"
+        }
+      },
+      "analysis": {
+        "units": "IU/mL\n\nDynamic range: The dynamic range for this assay is 10-1x109 copies/mL",
+        "clinical_decision_points": "Not applicable",
+        "interferences": "Factors known to significantly affect the results: False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+      },
+      "turnaround": {
+        "provisional_raw": "3 days",
+        "final_raw": "4 days",
+        "provisional_working_days": {
+          "min": 3.0,
+          "max": 3.0
+        },
+        "final_working_days": {
+          "min": 4.0,
+          "max": 4.0
+        }
+      },
+      "source": {
+        "provider": "mft-nhs",
+        "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
+        "detail_url": "https://mft.nhs.uk/app/uploads/2023/03/Hepatitis-B-virus-viral-load.pdf",
+        "detail_type": "pdf",
+        "last_updated": "March 2023",
+        "retrieved": "2026-08-23",
+        "detail_available": true
+      },
+      "completeness": {
+        "score": 0.45,
+        "has_detail_sheet": true,
+        "present": [
+          "specimen.types",
+          "specimen.container",
+          "specimen.volume",
+          "analysis.units",
+          "turnaround"
+        ]
+      }
+    }
+  ]
+}
