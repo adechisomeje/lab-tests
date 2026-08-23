@@ -1,29 +1,18 @@
 {
-  "name": "lab-tests",
-  "version": "0.1.0",
-  "description": "Open JSON library of medical laboratory tests: specimen requirements, turnaround times, reference intervals, and clinical/clinic-type categorisation.",
-  "keywords": ["laboratory", "lab-tests", "pathology", "healthcare", "nhs", "medical", "dataset", "json", "phlebotomy", "reference-ranges"],
+  "name": "lab-tests-monorepo",
+  "private": true,
+  "description": "Repo tooling only. The published npm package is packages/typescript (name: lab-tests).",
   "license": "MIT",
-  "type": "module",
-  "main": "data/tests.json",
-  "exports": {
-    ".": "./data/tests.json",
-    "./tests": "./data/tests.json",
-    "./index": "./data/index.json",
-    "./categories": "./data/categories.json",
-    "./clinics": "./data/clinic-profiles.json",
-    "./departments": "./data/departments.json",
-    "./specimens": "./data/specimens.json",
-    "./schema": "./schema/test.schema.json",
-    "./by-department/*": "./data/by-department/*.json",
-    "./by-clinic/*": "./data/by-clinic/*.json"
-  },
-  "files": ["data", "schema", "taxonomy", "DATA-LICENSE.md"],
+  "workspaces": [
+    "packages/typescript"
+  ],
   "scripts": {
-    "build": "python3 scripts/build.py",
-    "validate": "python3 scripts/validate.py",
+    "build": "npm run build --workspace lab-tests",
+    "test": "npm run test --workspace lab-tests",
     "api": "node api/server.js"
   },
-  "engines": { "node": ">=18" },
-  "repository": { "type": "git", "url": "https://github.com/adechisomeje/lab-tests.git" }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adechisomeje/lab-tests.git"
+  }
 }

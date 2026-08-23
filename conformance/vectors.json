@@ -1,0 +1,540 @@
+{
+  "$comment": "Language-neutral conformance vectors. Every port of this library MUST pass all of them. Expected values are derived from the published source data, not from any one implementation, so a port cannot be 'correct' merely by matching another port's bug. Error codes are neutral names that each port maps to its own error type.",
+  "version": "1.0.0",
+  "dataset_version": "0.1.0",
+  "error_codes": [
+    "no_range_source",
+    "unknown_test",
+    "no_intervals",
+    "no_applicable_stratum",
+    "unknown_profile",
+    "unknown_provider"
+  ],
+  "fold": [
+    {
+      "in": "Ferritin",
+      "out": "ferritin"
+    },
+    {
+      "in": "  Ferritin  ",
+      "out": "ferritin"
+    },
+    {
+      "in": "Anti-Müllerian",
+      "out": "anti-mullerian"
+    },
+    {
+      "in": "Naïve Memory",
+      "out": "naive memory"
+    },
+    {
+      "in": "ß2 Microglobulin",
+      "out": "beta2 microglobulin"
+    },
+    {
+      "in": "CSF – Protein",
+      "out": "csf - protein"
+    },
+    {
+      "in": "Farmer’s lung",
+      "out": "farmer's lung"
+    },
+    {
+      "in": "Cold agglutinin (4°C)",
+      "out": "cold agglutinin (4c)"
+    }
+  ],
+  "classify": [
+    {
+      "name": "lte at limit is normal",
+      "high": 50,
+      "high_op": "lte",
+      "value": 50,
+      "expect": "normal"
+    },
+    {
+      "name": "lte just above is high",
+      "high": 50,
+      "high_op": "lte",
+      "value": 50.1,
+      "expect": "high"
+    },
+    {
+      "name": "lt at limit is high",
+      "high": 50,
+      "high_op": "lt",
+      "value": 50,
+      "expect": "high"
+    },
+    {
+      "name": "bare high behaves as lte",
+      "high": 50,
+      "value": 50,
+      "expect": "normal"
+    },
+    {
+      "name": "low inclusive at limit",
+      "low": 15,
+      "value": 15,
+      "expect": "normal"
+    },
+    {
+      "name": "below low is low",
+      "low": 15,
+      "value": 14.9,
+      "expect": "low"
+    },
+    {
+      "name": "gt low at limit is low",
+      "low": 15,
+      "low_op": "gt",
+      "value": 15,
+      "expect": "low"
+    },
+    {
+      "name": "within both bounds",
+      "low": 15,
+      "high": 400,
+      "value": 100,
+      "expect": "normal"
+    },
+    {
+      "name": "no bounds is normal",
+      "value": 999,
+      "expect": "normal"
+    }
+  ],
+  "interpret": [
+    {
+      "name": "ALT adult male above limit",
+      "ranges": "provider:mft-nhs",
+      "test_id": "alanine-aminotransferase",
+      "value": 62,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 34,
+          "unit": "years"
+        }
+      },
+      "expect": {
+        "flag": "high",
+        "stratum_high": 50,
+        "units": "IU/L"
+      }
+    },
+    {
+      "name": "ALT adult male exactly at limit is normal",
+      "ranges": "provider:mft-nhs",
+      "test_id": "alanine-aminotransferase",
+      "value": 50,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 34,
+          "unit": "years"
+        }
+      },
+      "expect": {
+        "flag": "normal",
+        "stratum_high": 50
+      }
+    },
+    {
+      "name": "ALT adult female uses the narrower female band",
+      "ranges": "provider:mft-nhs",
+      "test_id": "alanine-aminotransferase",
+      "value": 40,
+      "patient": {
+        "sex": "female",
+        "age": {
+          "value": 34,
+          "unit": "years"
+        }
+      },
+      "expect": {
+        "flag": "high",
+        "stratum_high": 35
+      }
+    },
+    {
+      "name": "ALT neonate uses the wider all-sex band",
+      "ranges": "provider:mft-nhs",
+      "test_id": "alanine-aminotransferase",
+      "value": 85,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 10,
+          "unit": "days"
+        }
+      },
+      "expect": {
+        "flag": "normal",
+        "stratum_high": 90
+      }
+    },
+    {
+      "name": "ALT at 28 days: inclusive upper bound keeps the neonatal band",
+      "ranges": "provider:mft-nhs",
+      "test_id": "alanine-aminotransferase",
+      "value": 85,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 28,
+          "unit": "days"
+        }
+      },
+      "expect": {
+        "flag": "normal",
+        "stratum_high": 90
+      }
+    },
+    {
+      "name": "ALT at 29 days moves to the adult male band",
+      "ranges": "provider:mft-nhs",
+      "test_id": "alanine-aminotransferase",
+      "value": 85,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 29,
+          "unit": "days"
+        }
+      },
+      "expect": {
+        "flag": "high",
+        "stratum_high": 50
+      }
+    },
+    {
+      "name": "ferritin young child uses lower floor",
+      "ranges": "provider:mft-nhs",
+      "test_id": "ferritin",
+      "value": 13,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 3,
+          "unit": "years"
+        }
+      },
+      "expect": {
+        "flag": "normal",
+        "stratum_low": 12
+      }
+    },
+    {
+      "name": "ferritin adult male below floor",
+      "ranges": "provider:mft-nhs",
+      "test_id": "ferritin",
+      "value": 13,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 30,
+          "unit": "years"
+        }
+      },
+      "expect": {
+        "flag": "low",
+        "stratum_low": 15
+      }
+    },
+    {
+      "name": "ferritin adult female ceiling differs from male",
+      "ranges": "provider:mft-nhs",
+      "test_id": "ferritin",
+      "value": 200,
+      "patient": {
+        "sex": "female",
+        "age": {
+          "value": 30,
+          "unit": "years"
+        }
+      },
+      "expect": {
+        "flag": "high",
+        "stratum_high": 150
+      }
+    },
+    {
+      "name": "ALP adult all-sex band",
+      "ranges": "provider:mft-nhs",
+      "test_id": "alkaline-phosphatase",
+      "value": 140,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 30,
+          "unit": "years"
+        }
+      },
+      "expect": {
+        "flag": "high",
+        "stratum_high": 130
+      }
+    },
+    {
+      "name": "ALP child band",
+      "ranges": "provider:mft-nhs",
+      "test_id": "alkaline-phosphatase",
+      "value": 200,
+      "patient": {
+        "sex": "female",
+        "age": {
+          "value": 5,
+          "unit": "years"
+        }
+      },
+      "expect": {
+        "flag": "normal",
+        "stratum_low": 142,
+        "stratum_high": 335
+      }
+    },
+    {
+      "name": "ALP adolescent is sex-specific",
+      "ranges": "provider:mft-nhs",
+      "test_id": "alkaline-phosphatase",
+      "value": 300,
+      "patient": {
+        "sex": "female",
+        "age": {
+          "value": 14,
+          "unit": "years"
+        }
+      },
+      "expect": {
+        "flag": "high",
+        "stratum_high": 254
+      }
+    },
+    {
+      "name": "SAFETY: a band with an uninterpretable age unit must be rejected, not applied. ALP has a 'days to years' band that would otherwise swallow a 20-day-old.",
+      "ranges": "provider:mft-nhs",
+      "test_id": "alkaline-phosphatase",
+      "value": 200,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 20,
+          "unit": "days"
+        }
+      },
+      "expect_error": "no_applicable_stratum"
+    },
+    {
+      "name": "SAFETY: unknown sex must not borrow a sex-specific band",
+      "ranges": "provider:mft-nhs",
+      "test_id": "alanine-aminotransferase",
+      "value": 45,
+      "patient": {
+        "sex": "",
+        "age": {
+          "value": 34,
+          "unit": "years"
+        }
+      },
+      "expect_error": "no_applicable_stratum"
+    },
+    {
+      "name": "SAFETY: unknown age must not be applied to a banded interval",
+      "ranges": "provider:mft-nhs",
+      "test_id": "alanine-aminotransferase",
+      "value": 45,
+      "patient": {
+        "sex": "male"
+      },
+      "expect_error": "no_applicable_stratum"
+    },
+    {
+      "name": "SAFETY: interpretation refuses without an explicit range source",
+      "ranges": "none",
+      "test_id": "alanine-aminotransferase",
+      "value": 62,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 34,
+          "unit": "years"
+        }
+      },
+      "expect_error": "no_range_source"
+    },
+    {
+      "name": "unknown test id",
+      "ranges": "provider:mft-nhs",
+      "test_id": "no-such-test",
+      "value": 1,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 30,
+          "unit": "years"
+        }
+      },
+      "expect_error": "unknown_test"
+    },
+    {
+      "name": "custom ranges take effect",
+      "ranges": "custom",
+      "custom_ranges": {
+        "ferritin": [
+          {
+            "sex": "all",
+            "high": 10,
+            "high_op": "lte"
+          }
+        ]
+      },
+      "test_id": "ferritin",
+      "value": 20,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 30,
+          "unit": "years"
+        }
+      },
+      "expect": {
+        "flag": "high",
+        "stratum_high": 10
+      }
+    },
+    {
+      "name": "SAFETY: custom ranges must NOT fall back to provider data",
+      "ranges": "custom",
+      "custom_ranges": {
+        "ferritin": [
+          {
+            "sex": "all",
+            "high": 10
+          }
+        ]
+      },
+      "test_id": "alanine-aminotransferase",
+      "value": 62,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 34,
+          "unit": "years"
+        }
+      },
+      "expect_error": "no_intervals"
+    },
+    {
+      "name": "fuzzy-linked intervals must warn (serum-ferritin is linked to 'Ferritin' by name matching)",
+      "ranges": "provider:mft-nhs",
+      "test_id": "serum-ferritin",
+      "value": 500,
+      "patient": {
+        "sex": "male",
+        "age": {
+          "value": 30,
+          "unit": "years"
+        }
+      },
+      "expect": {
+        "flag": "high",
+        "stratum_high": 400,
+        "warns": true
+      }
+    }
+  ],
+  "draw": [
+    {
+      "name": "tubes ordered by the provider's documented sequence",
+      "provider": "mft-nhs",
+      "test_ids": [
+        "ammonia",
+        "lactate",
+        "ferritin"
+      ],
+      "expect_tube_order": [
+        "serum-gel",
+        "fluoride-oxalate",
+        "edta"
+      ],
+      "expect_min_warnings": 1,
+      "expect_unresolved": 0
+    },
+    {
+      "name": "tests with no published tube are reported, not dropped",
+      "provider": "mft-nhs",
+      "test_ids": [
+        "full-blood-count-and-automated-differential",
+        "ferritin"
+      ],
+      "expect_tube_order": [
+        "serum-gel"
+      ],
+      "expect_unresolved": 1
+    },
+    {
+      "name": "single tube raises no CLSI conflict warning",
+      "provider": "mft-nhs",
+      "test_ids": [
+        "ferritin"
+      ],
+      "expect_tube_order": [
+        "serum-gel"
+      ],
+      "expect_unresolved": 0
+    },
+    {
+      "name": "unknown test id is an error",
+      "provider": "mft-nhs",
+      "test_ids": [
+        "no-such-test"
+      ],
+      "expect_error": "unknown_test"
+    }
+  ],
+  "search": [
+    {
+      "query": "ferritin",
+      "expect_contains": "ferritin",
+      "expect_first": "ferritin"
+    },
+    {
+      "query": "FERRITIN",
+      "expect_contains": "ferritin"
+    },
+    {
+      "query": "mullerian",
+      "expect_contains": "anti-mullerian-hormone-amh"
+    },
+    {
+      "query": "Anti-Müllerian",
+      "expect_contains": "anti-mullerian-hormone-amh"
+    },
+    {
+      "query": "naive memory",
+      "expect_contains": "naive-memory-and-effector-t-cell-subsets"
+    },
+    {
+      "query": "",
+      "expect_empty": true
+    }
+  ],
+  "order_set": [
+    {
+      "profile": "aesthetic-beauty-clinic",
+      "core_only": true,
+      "expect_count": 38
+    },
+    {
+      "profile": "aesthetic-beauty-clinic",
+      "core_only": false,
+      "expect_count": 50
+    },
+    {
+      "profile": "no-such-clinic",
+      "core_only": true,
+      "expect_error": "unknown_profile"
+    }
+  ]
+}

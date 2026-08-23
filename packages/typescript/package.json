@@ -1,0 +1,49 @@
+{
+  "name": "lab-tests",
+  "version": "0.1.0",
+  "description": "Medical laboratory test catalogue with specimen requirements, turnaround times, reference intervals and clinic categorisation.",
+  "keywords": [
+    "laboratory",
+    "lab-tests",
+    "pathology",
+    "healthcare",
+    "emr",
+    "reference-ranges",
+    "phlebotomy",
+    "nhs"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./data/*": "./data/*"
+  },
+  "files": [
+    "dist",
+    "data"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "sync-data": "rm -rf data && cp -R ../../data data",
+    "build": "npm run sync-data && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --experimental-strip-types --test test/*.test.ts",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^5.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adechisomeje/lab-tests.git",
+    "directory": "packages/typescript"
+  }
+}

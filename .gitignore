@@ -8,9 +8,16 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
 
 # Node
 node_modules/
+packages/typescript/dist/
+# Copied from the canonical data/ at build time by `npm run sync-data`.
+packages/typescript/data/
 
 # OS
 .DS_Store

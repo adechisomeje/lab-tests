@@ -1,4 +1,4 @@
-.PHONY: all fetch parse build validate test clean refresh
+.PHONY: all fetch parse build validate test test-go test-ts test-py clean refresh
 
 all: build validate test
 
@@ -22,10 +22,18 @@ build: parse
 validate:
 	python3 scripts/validate.py
 
-## Run the Go library test suite
-test:
+## Run every implementation against the shared conformance suite
+test: test-go test-ts test-py
+
+test-go:
 	go vet ./...
 	go test ./...
+
+test-ts:
+	npm --prefix packages/typescript test
+
+test-py:
+	cd packages/python && python3 -m pytest tests -q
 
 ## Full refresh from the live site
 refresh: fetch build validate

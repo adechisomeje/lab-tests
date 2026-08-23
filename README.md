@@ -38,18 +38,33 @@ r, _ := cat.Interpret("alanine-aminotransferase", 62, labtests.Patient{
 fmt.Println(r.Flag)                                       // high
 ```
 
-**JavaScript**
+**TypeScript / Node**
 
 ```bash
 npm install lab-tests
 ```
 
-```js
-import { tests } from 'lab-tests';                    // full library
-import { profiles } from 'lab-tests/clinics';         // clinic profiles
+```ts
+import { load, years } from 'lab-tests';
 
-const beauty = profiles.find(p => p.id === 'aesthetic-beauty-clinic');
-console.log(beauty.core_test_count);                  // 38
+const cat = load({ referenceRanges: { kind: 'provider', provider: 'mft-nhs' } });
+cat.orderSet('aesthetic-beauty-clinic', true);            // 38 curated tests
+cat.interpret('alanine-aminotransferase', 62, { sex: 'male', age: years(34) }).flag;
+```
+
+**Python**
+
+```bash
+pip install lab-tests
+```
+
+```python
+import lab_tests as lt
+
+cat = lt.load(provider_ranges="mft-nhs")
+cat.order_set("aesthetic-beauty-clinic", core_only=True)  # 38 curated tests
+cat.interpret("alanine-aminotransferase", 62,
+              lt.Patient(sex="male", age=lt.years(34))).flag
 ```
 
 **Any language** — it is just JSON. No install, no build step:
@@ -251,7 +266,48 @@ keeping them as data rather than burying them in code.
 | `taxonomy/*.json` | The category and clinic rules — edit these to reclassify |
 | `data/providers.json` | Per-provider collection guidance, incl. order of draw |
 | `*.go` | Go package: `Interpret`, `Draw`, `Search`, `OrderSet` |
+| `packages/typescript` · `packages/python` | TypeScript and Python ports |
+| `conformance/vectors.json` | Shared behavioural contract for every port |
 | `docs/EMR-INTEGRATION.md` | Building a lab module on this: schema, seeding, safety |
+
+---
+
+## One behaviour, three implementations
+
+Go, TypeScript and Python all ship the same API, and all three run the same
+test vectors in [`conformance/vectors.json`](conformance/vectors.json).
+
+`interpret()` decides whether a patient's result is flagged abnormal. Porting
+that by hand to N languages is N chances to introduce a divergence nobody
+notices — one port treats `<14` as inclusive, another as exclusive, and they
+disagree about a 14-day-old's reference range. So expected values come from the
+**published source data**, not from any one implementation: a port cannot pass
+by merely agreeing with another port's bug.
+
+It has already earned its keep. It caught Go folding `ß` to `ss` while the
+dataset's ID generator folded it to `beta`, which meant a search for
+"beta2 microglobulin" could not find `beta2-microglobulin`.
+
+```bash
+make test        # runs Go, TypeScript and Python against the vectors
+```
+
+| Group | Covers |
+| --- | --- |
+| `fold` | Case, accents, Greek and multi-character glyphs |
+| `classify` | Bound operators alone — `<= 50` vs `< 50` at exactly 50 |
+| `interpret` | Band selection, age units, and the safety refusals |
+| `draw` | Tube grouping, order of draw, warnings, unresolved tests |
+| `search` / `order_set` | Ranking, accent-insensitivity, profile membership |
+
+Cases named `SAFETY:` assert that the library **declines to answer** rather than
+guessing. Adding a language? See [`conformance/README.md`](conformance/README.md).
+
+| Language | Package | Source |
+| --- | --- | --- |
+| Go | `github.com/adechisomeje/lab-tests` | repository root |
+| TypeScript | `lab-tests` (npm) | [`packages/typescript`](packages/typescript) |
+| Python | `lab-tests` (PyPI) | [`packages/python`](packages/python) |
 
 ---
 

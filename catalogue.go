@@ -281,8 +281,11 @@ const (
 )
 
 // Multi-character expansions, which cannot be handled by the paired table.
+// "ß" maps to "beta", not "ss": in this corpus it is used as a beta glyph
+// ("ß2 Microglobulin"), and the dataset's IDs are generated the same way, so
+// a search for "beta2 microglobulin" must reach beta2-microglobulin.
 var foldPairs = strings.NewReplacer(
-	"ß", "ss", "æ", "ae", "œ", "oe", "þ", "th", "ð", "d",
+	"ß", "beta", "æ", "ae", "œ", "oe", "þ", "th", "ð", "d",
 	"–", "-", "—", "-", "‐", "-", "’", "'", "°", "",
 )
 
