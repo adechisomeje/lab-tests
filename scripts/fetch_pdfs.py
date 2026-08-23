@@ -6,8 +6,10 @@ already cached in raw/pdfs/), and it never re-fetches on a rerun.
 import hashlib
 import json
 import pathlib
+import re
 import ssl
 import sys
+import unicodedata
 import threading
 import time
 import urllib.parse
@@ -47,10 +49,34 @@ SSL_CTX = ssl_context()
 _lock = threading.Lock()
 
 
+# Characters permitted in a cached filename.
+#
+# Go's module zip format (golang.org/x/mod/module.CheckFilePath) rejects any
+# non-ASCII rune that is not a Unicode letter, so a U+2010 HYPHEN or U+2013 EN
+# DASH in a path makes the whole module unpublishable. Upstream filenames
+# contain both, so names are folded to a conservative ASCII subset that is also
+# safe on Windows and macOS. The URL hash suffix preserves uniqueness, so this
+# folding cannot cause collisions.
+_SAFE_CHARS = re.compile(r"[^A-Za-z0-9._-]+")
+_DASHES = dict.fromkeys(map(ord, "\u2010\u2011\u2012\u2013\u2014\u2015\u2212"), "-")
+
+
+def safe_stem(text: str) -> str:
+    """Fold arbitrary text to an ASCII filename stem."""
+    text = text.translate(_DASHES)
+    # Decompose accents and drop the combining marks: "Müller" -> "Muller".
+    decomposed = unicodedata.normalize("NFKD", text)
+    ascii_only = "".join(c for c in decomposed if not unicodedata.combining(c))
+    ascii_only = ascii_only.encode("ascii", "ignore").decode("ascii")
+    cleaned = _SAFE_CHARS.sub("-", ascii_only)
+    cleaned = re.sub(r"-{2,}", "-", cleaned).strip("-._")
+    return cleaned[:80].strip("-._")
+
+
 def local_name(url: str) -> str:
-    """Stable, collision-free filename derived from the URL path."""
+    """Stable, collision-free, module-safe filename derived from the URL path."""
     base = urllib.parse.unquote(url.rsplit("/", 1)[-1])
-    stem = pathlib.Path(base).stem[:80]
+    stem = safe_stem(pathlib.Path(base).stem) or "document"
     digest = hashlib.sha1(url.encode()).hexdigest()[:8]
     return f"{stem}--{digest}.pdf"
 

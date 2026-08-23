@@ -500,7 +500,8 @@ scripts/
   fetch_az.py             download the A-Z page
   parse_az_list.py        A-Z tables      -> raw/az-rows.json
   fetch_pdfs.py           download 212 spec sheets (rate-limited, resumable)
-  parse_pdfs.py           spec sheets     -> raw/pdf-fields.json
+  extract_pdf_text.py     PDFs            -> raw/pdf-text/*.txt (committed)
+  parse_pdfs.py           extracted text  -> raw/pdf-fields.json
   parse_biochem_ranges.py 45-page table   -> raw/biochem-ranges.json
   match.py                fuzzy test-name matching between documents
   build.py                merge + categorise -> data/
@@ -509,6 +510,12 @@ scripts/
 
 Scraping is polite by default: 4 workers, a delay between requests, and every
 step is cached and resumable, so a rerun re-downloads nothing.
+
+Cached filenames are folded to ASCII. Go's module zip format rejects any
+non-ASCII character that is not a Unicode letter, and several upstream PDFs are
+named with U+2010 and U+2013 dashes — enough to make the Go module
+unpublishable. `make validate` fails on any tracked path that would be
+rejected, so this cannot regress silently.
 
 ---
 

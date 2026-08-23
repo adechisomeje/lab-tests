@@ -7,6 +7,7 @@ fetch:
 	python3 scripts/fetch_az.py
 	python3 scripts/parse_az_list.py
 	python3 scripts/fetch_pdfs.py
+	python3 scripts/extract_pdf_text.py
 
 ## Parse cached sources into intermediate JSON
 parse:

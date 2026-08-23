@@ -5,7 +5,9 @@ Exits non-zero on any error, so it can gate CI.
 import collections
 import json
 import pathlib
+import subprocess
 import sys
+import unicodedata
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -17,6 +19,46 @@ warnings: list[str] = []
 
 def load(p: pathlib.Path):
     return json.loads(p.read_text(encoding="utf-8"))
+
+
+# Mirrors golang.org/x/mod/module.fileNameOK. Go's module zip format rejects
+# any non-ASCII rune that is not a Unicode letter, so a single U+2010 HYPHEN in
+# a filename makes the whole Go module unpublishable -- and the failure only
+# shows up at `go get` time, long after the commit that caused it.
+_GO_ASCII_ALLOWED = set("!#$%&()+,-.=@[]^_{}~ ")
+
+
+def _go_char_ok(ch: str) -> bool:
+    if ord(ch) < 0x80:
+        return ch.isascii() and (ch.isalnum() or ch in _GO_ASCII_ALLOWED)
+    return unicodedata.category(ch).startswith("L")
+
+
+def check_module_safe_paths() -> None:
+    """Every tracked path must be legal inside a Go module zip."""
+    try:
+        out = subprocess.run(["git", "ls-files", "-z"], cwd=ROOT,
+                             capture_output=True, check=True).stdout
+    except (OSError, subprocess.CalledProcessError):
+        warnings.append("git unavailable - skipped Go module path check")
+        return
+
+    for raw in out.split(b"\0"):
+        if not raw:
+            continue
+        path = raw.decode("utf-8", "surrogateescape")
+        for element in path.split("/"):
+            if not element or element.strip(".") == "" or element.endswith("."):
+                errors.append(f"[paths] {path}: invalid path element {element!r}")
+                break
+            bad = [c for c in element if not _go_char_ok(c)]
+            if bad:
+                shown = ", ".join(
+                    f"U+{ord(c):04X} {unicodedata.name(c, '?')}" for c in dict.fromkeys(bad))
+                errors.append(
+                    f"[paths] {path}: character(s) rejected by Go's module zip "
+                    f"format: {shown}")
+                break
 
 
 def main() -> int:
@@ -70,6 +112,9 @@ def main() -> int:
     idx = load(DATA / "index.json")["tests"]
     if {t["id"] for t in idx} != id_set:
         errors.append("[index] index.json ids do not match tests.json")
+
+    # --- packaging ----------------------------------------------------------
+    check_module_safe_paths()
 
     # --- soft quality signals ----------------------------------------------
     no_cat = [t["id"] for t in tests if not t.get("categories")]

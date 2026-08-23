@@ -1271,8 +1271,8 @@
       "interferences": "None known"
     }
   },
-  "Epstein-Barr-Virus-EBNA-‐-confirmation--109ccf15": {
-    "pdf_stem": "Epstein-Barr-Virus-EBNA-‐-confirmation--109ccf15",
+  "Epstein-Barr-Virus-EBNA-confirmation--109ccf15": {
+    "pdf_stem": "Epstein-Barr-Virus-EBNA-confirmation--109ccf15",
     "pdf_title": "Epstein Barr Virus (EBNA) - confirmation",
     "pdf_department": "Virology",
     "description": null,
@@ -1290,8 +1290,8 @@
       "interferences": "Grossly haemolyzed or lipaemic samples as well as samples containing particulate matter or obvious microbial contamination may distort or mask the true result of the test."
     }
   },
-  "Epstein-Barr-Virus-EBV-IgG‐screening--3129584f": {
-    "pdf_stem": "Epstein-Barr-Virus-EBV-IgG‐screening--3129584f",
+  "Epstein-Barr-Virus-EBV-IgG-screening--3129584f": {
+    "pdf_stem": "Epstein-Barr-Virus-EBV-IgG-screening--3129584f",
     "pdf_title": "Epstein Barr Virus (EBV) IgG-screening",
     "pdf_department": "Virology",
     "description": null,
@@ -1448,8 +1448,8 @@
       "interferences": "Antigen excess can cause falsely low serum FLC results. Some monoclonal light chains (particularly k FLC) do not dilute in a linear fashion and may be underestimated. FLC results can be artificially elevated when an IgM monoclonal protein is present."
     }
   },
-  "Functional-antibody-to-Neisseria-meningitides-serogroup-B-by-Serum-Bactericidal---cd9297b5": {
-    "pdf_stem": "Functional-antibody-to-Neisseria-meningitides-serogroup-B-by-Serum-Bactericidal---cd9297b5",
+  "Functional-antibody-to-Neisseria-meningitides-serogroup-B-by-Serum-Bactericidal--cd9297b5": {
+    "pdf_stem": "Functional-antibody-to-Neisseria-meningitides-serogroup-B-by-Serum-Bactericidal--cd9297b5",
     "pdf_title": "Functional antibody to Neisseria meningitides serogroup B by",
     "pdf_department": "Vaccine Evaluation Unit",
     "description": "Serum Bactericidal Antibody Assay (SBA)",
@@ -1696,6 +1696,27 @@
       "interferences": "Spots too small, not all spots filled with blood"
     }
   },
+  "HIV-1-viral-load--41bbd74d": {
+    "pdf_stem": "HIV-1-viral-load--41bbd74d",
+    "pdf_title": "HIV-1 viral load",
+    "pdf_department": "Molecular Microbiology",
+    "description": null,
+    "last_updated": "November 2025",
+    "fields": {
+      "container": "CE marked leak proof container",
+      "specimen_type": "EDTA Blood",
+      "collection": "Freshly drawn whole blood in EDTA",
+      "transport": "Whole bloods/EDTA samples should be processed in the laboratory within 24hrs @ 2- 25C. Please send to the laboratory as soon as possible.",
+      "minimum_volume": "3.0 mL",
+      "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 24hr are undesirable.",
+      "units": "Copies/mL\n\nDynamic range: The dynamic range for this assay is 40-1x107 copies/mL",
+      "reference_units": "Not applicable",
+      "turnaround_provisional": "4 days",
+      "turnaround_final": "5 days",
+      "clinical_decision_points": "Not applicable",
+      "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
+    }
+  },
   "HIV-confirmation-screen-test-plus-at-least-2-further-tests-for-HIV-1-2--6636eb82": {
     "pdf_stem": "HIV-confirmation-screen-test-plus-at-least-2-further-tests-for-HIV-1-2--6636eb82",
     "pdf_title": "HIV confirmation (screen test plus at least 2 further tests for HIV",
@@ -1770,27 +1791,6 @@
       "turnaround_time": "3-4 days\n\nSame day testing offered, contact the laboratory for 4 hour turnaround (screen and confirmation for same day request only)",
       "clinical_decision_points": "Not applicable",
       "interferences": "Haemolysis"
-    }
-  },
-  "HIV‐1-viral-load--41bbd74d": {
-    "pdf_stem": "HIV‐1-viral-load--41bbd74d",
-    "pdf_title": "HIV-1 viral load",
-    "pdf_department": "Molecular Microbiology",
-    "description": null,
-    "last_updated": "November 2025",
-    "fields": {
-      "container": "CE marked leak proof container",
-      "specimen_type": "EDTA Blood",
-      "collection": "Freshly drawn whole blood in EDTA",
-      "transport": "Whole bloods/EDTA samples should be processed in the laboratory within 24hrs @ 2- 25C. Please send to the laboratory as soon as possible.",
-      "minimum_volume": "3.0 mL",
-      "special_precautions": "If processing is delayed, refrigeration is preferable to storage at ambient temperature. Delays of over 24hr are undesirable.",
-      "units": "Copies/mL\n\nDynamic range: The dynamic range for this assay is 40-1x107 copies/mL",
-      "reference_units": "Not applicable",
-      "turnaround_provisional": "4 days",
-      "turnaround_final": "5 days",
-      "clinical_decision_points": "Not applicable",
-      "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
     }
   },
   "Haemophilus-influenzae-type-b-IgG-Antibody-Determination--777e05ea": {
@@ -1949,8 +1949,8 @@
       "interferences": "Spots too small, not all spots filled with blood"
     }
   },
-  "Hepatitis-B-virus-HBV-e-antigen-HBeAg-and-e-antibody-Anti‐HBe--a6a4bf4c": {
-    "pdf_stem": "Hepatitis-B-virus-HBV-e-antigen-HBeAg-and-e-antibody-Anti‐HBe--a6a4bf4c",
+  "Hepatitis-B-virus-HBV-e-antigen-HBeAg-and-e-antibody-Anti-HBe--a6a4bf4c": {
+    "pdf_stem": "Hepatitis-B-virus-HBV-e-antigen-HBeAg-and-e-antibody-Anti-HBe--a6a4bf4c",
     "pdf_title": "Hepatitis B virus (HBV) e antigen (HBeAg) and e antibody (Anti-",
     "pdf_department": "Virology",
     "description": null,
@@ -2836,8 +2836,8 @@
       "interferences": "None\n\n(Last Update January 2025)"
     }
   },
-  "Mycobacteria-–-Culture-Sensitivity-and-PCR--8c0571c0": {
-    "pdf_stem": "Mycobacteria-–-Culture-Sensitivity-and-PCR--8c0571c0",
+  "Mycobacteria-Culture-Sensitivity-and-PCR--8c0571c0": {
+    "pdf_stem": "Mycobacteria-Culture-Sensitivity-and-PCR--8c0571c0",
     "pdf_title": "Mycobacteria - Culture, Sensitivity and PCR",
     "pdf_department": "Bacteriology",
     "description": null,
@@ -2932,8 +2932,8 @@
       "interferences": "The Myositis ENA assay is very sensitive and therefore false positive results may occur. Please interpret the results in the context of the clinical feature and if you have any queries about the results, please contact the Rheumatology Neuromuscular clinic at Salford Royal Hospital"
     }
   },
-  "NMDA-–-N-methyl-D-aspartate-receptor-antibodies--347890d6": {
-    "pdf_stem": "NMDA-–-N-methyl-D-aspartate-receptor-antibodies--347890d6",
+  "NMDA-N-methyl-D-aspartate-receptor-antibodies--347890d6": {
+    "pdf_stem": "NMDA-N-methyl-D-aspartate-receptor-antibodies--347890d6",
     "pdf_title": "NMDA - N-methyl-D-aspartate receptor antibodies",
     "pdf_department": "Immunology",
     "description": null,

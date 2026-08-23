@@ -115,7 +115,7 @@
   },
   {
     "url": "https://mft.nhs.uk/app/uploads/2020/10/Epstein-Barr-Virus-EBV-IgG%E2%80%90screening.pdf",
-    "file": "Epstein-Barr-Virus-EBV-IgG\u2010screening--3129584f.pdf",
+    "file": "Epstein-Barr-Virus-EBV-IgG-screening--3129584f.pdf",
     "status": "cached",
     "bytes": 87746
   },
@@ -127,7 +127,7 @@
   },
   {
     "url": "https://mft.nhs.uk/app/uploads/2020/10/Functional-antibody-to-Neisseria-meningitides-serogroup-B-by-Serum-Bactericidal-Antibody-Assay-SBA.pdf",
-    "file": "Functional-antibody-to-Neisseria-meningitides-serogroup-B-by-Serum-Bactericidal---cd9297b5.pdf",
+    "file": "Functional-antibody-to-Neisseria-meningitides-serogroup-B-by-Serum-Bactericidal--cd9297b5.pdf",
     "status": "cached",
     "bytes": 427392
   },
@@ -223,7 +223,7 @@
   },
   {
     "url": "https://mft.nhs.uk/app/uploads/2020/10/Hepatitis-B-virus-HBV-e-antigen-HBeAg-and-e-antibody-Anti%E2%80%90HBe.pdf",
-    "file": "Hepatitis-B-virus-HBV-e-antigen-HBeAg-and-e-antibody-Anti\u2010HBe--a6a4bf4c.pdf",
+    "file": "Hepatitis-B-virus-HBV-e-antigen-HBeAg-and-e-antibody-Anti-HBe--a6a4bf4c.pdf",
     "status": "cached",
     "bytes": 419056
   },
@@ -493,7 +493,7 @@
   },
   {
     "url": "https://mft.nhs.uk/app/uploads/2020/12/Mycobacteria-%E2%80%93-Culture-Sensitivity-and-PCR.pdf",
-    "file": "Mycobacteria-\u2013-Culture-Sensitivity-and-PCR--8c0571c0.pdf",
+    "file": "Mycobacteria-Culture-Sensitivity-and-PCR--8c0571c0.pdf",
     "status": "cached",
     "bytes": 176858
   },
@@ -541,7 +541,7 @@
   },
   {
     "url": "https://mft.nhs.uk/app/uploads/2022/08/NMDA-%E2%80%93-N-methyl-D-aspartate-receptor-antibodies.pdf",
-    "file": "NMDA-\u2013-N-methyl-D-aspartate-receptor-antibodies--347890d6.pdf",
+    "file": "NMDA-N-methyl-D-aspartate-receptor-antibodies--347890d6.pdf",
     "status": "cached",
     "bytes": 127225
   },
@@ -1057,8 +1057,8 @@
   },
   {
     "url": "https://mft.nhs.uk/app/uploads/2025/11/Epstein-Barr-Virus-EBNA-\u2010-confirmation.pdf",
-    "file": "Epstein-Barr-Virus-EBNA-\u2010-confirmation--109ccf15.pdf",
-    "status": "ok",
+    "file": "Epstein-Barr-Virus-EBNA-confirmation--109ccf15.pdf",
+    "status": "cached",
     "bytes": 162822
   },
   {
@@ -1087,8 +1087,8 @@
   },
   {
     "url": "https://mft.nhs.uk/app/uploads/2025/11/HIV\u20101-viral-load.pdf",
-    "file": "HIV\u20101-viral-load--41bbd74d.pdf",
-    "status": "ok",
+    "file": "HIV-1-viral-load--41bbd74d.pdf",
+    "status": "cached",
     "bytes": 161826
   },
   {
