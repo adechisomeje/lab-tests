@@ -251,6 +251,7 @@ keeping them as data rather than burying them in code.
 | `taxonomy/*.json` | The category and clinic rules — edit these to reclassify |
 | `data/providers.json` | Per-provider collection guidance, incl. order of draw |
 | `*.go` | Go package: `Interpret`, `Draw`, `Search`, `OrderSet` |
+| `docs/EMR-INTEGRATION.md` | Building a lab module on this: schema, seeding, safety |
 
 ---
 
@@ -345,6 +346,18 @@ cat.SlowestTurnaround(ids)                          // when to expect the report
 ```
 
 Run `go run ./examples/quickstart` for a working end-to-end demo.
+
+### Building an EMR laboratory module
+
+**[docs/EMR-INTEGRATION.md](docs/EMR-INTEGRATION.md)** covers the full
+integration: the database schema to mirror the catalogue into, seeding and
+version pinning, wiring your own reference ranges as the override layer, and
+the four workflow touchpoints (order entry, collection, result entry, display).
+It is explicit about what the dataset does *not* give you — no LOINC codes, no
+critical-value rules — so you can scope around the gaps.
+
+`go run ./examples/emr` is a compile-checked version of every code snippet in
+that guide.
 
 ---
 
