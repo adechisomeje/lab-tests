@@ -98,11 +98,16 @@
           "max": 28.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in pmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -169,6 +174,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Allergic conditions when allergen is suspected and mentioned on request",
         "repeat_frequency": ">1 year unless marked changes in allergic condition"
@@ -179,7 +189,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Allergen-Specific-IgE.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -259,6 +269,116 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "antinuclear-antibody-ana-derived",
+        "name": "Antinuclear antibody (ANA)",
+        "description": "Markers enumerated by the source for Antinuclear antibody (ANA).",
+        "version": "0.1.0",
+        "applies_to": [
+          "antinuclear-antibody-ana"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "ro-ss-a-52",
+            "name": "Ro (SS-A 52",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "ssa-60",
+            "name": "SSA-60)",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "la-ss-b",
+            "name": "La (SS-B)",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "sm",
+            "name": "Sm",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "rnp",
+            "name": "RNP",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "rnp-rnp-a",
+            "name": "RNP (RNP A",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "rnp-68",
+            "name": "RNP 68)",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "ribosomal-p",
+            "name": "Ribosomal P",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "chromatin",
+            "name": "Chromatin",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "jo-1",
+            "name": "Jo-1",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "and-scl-70",
+            "name": "and Scl-70",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "derived-from-source-notes",
+          "source_text": "ENA antibodies includes: Ro (SS-A 52, SSA-60), La (SS-B), Sm, Sm/RNP, RNP (RNP A, RNP 68), Ribosomal P, Chromatin, Jo-1, and Scl-70",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 11,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 11,
+          "calculated": 0
+        }
+      },
       "clinical": {
         "indications": "Suspected SLE, connective tissue disease, hepatitis or drug induced lupus, where the routine ANA is negative. This test can also be useful particularly in the context of investigation of autoimmune hepatitis. Some commonly seen staining patterns are highlighted below:\n\nImmunology • Centromere pattern - limited cutaneous systemic sclerosis, primary biliary cirrhosis • Homogeneous pattern - SLE, autoimmune hepatitis, Juvenile Idiopathic Arthritis, mixed connective tissue disease • Speckled pattern - SLE, Sjögren's syndrome, autoimmune myopathy, systemic sclerosis, mixed connective tissue disease; note speckled ANA can be associated with antibodies to SS-A and SS-B which carry a risk of neonatal lupus and congenital heart block • Nucleolar pattern - systemic sclerosis, systemic sclerosis-autoimmune myopathy overlap and can be seen in other connective tissue diseases • Multiple nuclear dots patterns - primary biliary cirrhosis, autoimmune myopathy and other autoimmune/inflammatory conditions",
         "repeat_frequency": "Not more than once a year, unless clinical picture has changed"
@@ -270,7 +390,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/Antinuclear-antibody-ANA.pdf",
         "detail_type": "pdf",
         "last_updated": "February 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -343,6 +463,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Allergic bronchopulmonary aspergillosis - IgG antibodies are a useful aid to diagnosis in the following settings:\n\n• Bronchopulmonary aspergillosis; usually presents as deteriorating or brittle asthma. IgE antibodies should also be checked. • Aspergilloma; these may form in cavities or bronchiectatic lung. For example, this test is used to check for aspergilloma in patients with cystic fibrosis. • Hypersensitivity pneumonitis 24 hours after inhalation of spores.",
         "repeat_frequency": "On appearance of new symptoms"
@@ -353,7 +478,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Aspergillus-fumigatus-precipitins.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -412,6 +537,11 @@
       "turnaround": {
         "raw": "This assay is performed every day, Monday-Friday. Turnaround time: 95% within one weekday."
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "clinical": {
         "references": "BioRad Platelia Aspergillus Ag, SEMI-QUANTITATIVE IMMUNOENZYMATIC SANDWICH MICROPLATE ASSAY FOR THE DETECTION OF ASPERGILLUS GALACTOMANNAN ANTIGEN IN ADULT AND PEDIATRIC SERUM SPECIMENS AND BRONCHOALVEOLAR LAVAGE (BAL) FLUID SPECIMENS, version 0001315 - 2023/07.\n\nToine Mercier et al., Defining Galactomannan Positivity in the Updated EORTC/MSGERC Consensus Definitions of Invasive Fungal Diseases, Clinical Infectious Diseases, Volume 72, Issue Supplement_2, 15 March 2021, Pages S89-S94, https://doi.org/10.1093/cid/ciaa1786."
       },
@@ -421,7 +551,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Aspergillus-galactomannan.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -494,6 +624,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold cycle (CT)"
+      },
       "notes": "Invasive infection with Aspergillus",
       "source": {
         "provider": "mft-nhs",
@@ -501,7 +636,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Aspergillus-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -562,6 +697,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "clinical": {
         "references": "ELITech Aspergillus spp. ELITe MGB Kit product insert, SCH mRTS110PLD, 28/07/2023, Review 10\n\nDonnelly JP, Chen SC, Kauffman CA, et al., Revision and Update of the Consensus Definitions of Invasive Fungal Disease From the European Organization for Research and Treatment of Cancer and the Mycoses Study Group Education and Research Consortium, Clinical Infectious Diseases, Volume 71, Issue 6, 15 September 2020, Pages 1367-1376, https://doi.org/10.1093/cid/ciz1008.\n\nWhite PL, Bretagne S, Caliendo AM, et al., Aspergillus Polymerase Chain Reaction—An Update on Technical Recommendations, Clinical Applications, and Justification for Inclusion in the Second Revision of the EORTC/MSGERC Definitions of Invasive Fungal Disease, Clinical Infectious Diseases, Volume 72, Issue Supplement_2, 15 March 2021, Pages S95-S101, https://doi.org/10.1093/cid/ciaa1865.\n\nUllmann AJ, Aguado JM, Arikan-Akdagli S, et al., Diagnosis and management of Aspergillus diseases: executive summary of the 2017 ESCMID-ECMM- ERS guideline. Clin Microbiol Infect. 2018 May;24 Suppl 1:e1-e38. doi: 10.1016/j.cmi.2018.01.002."
       },
@@ -571,7 +711,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Aspergillus-PCR-on-respiratory-samples.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -632,6 +772,11 @@
         "clinical_decision_points": "Not applicable\n\nMolecular Microbiology",
         "interferences": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend\n\nFalse negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay.\n\nNew and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold Cycle (CT)"
+      },
       "notes": "Invasive infection with Candida",
       "source": {
         "provider": "mft-nhs",
@@ -639,7 +784,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Candida-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -783,11 +928,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -843,6 +993,11 @@
       "turnaround": {
         "raw": "This assay is performed on demand. Turnaround time: >95% within one working day."
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "clinical": {
         "references": "Cryptococcal Antigen lateral Flow assay for the detection of cryptococcal antigen, IMMY Inc. Doc PIS-00107, Rev. 2, 2024-09-19."
       },
@@ -852,7 +1007,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Cryptococcal-antigen-lateral-flow-test.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -903,13 +1058,18 @@
       "turnaround": {
         "raw": "24 hrs"
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Positive or Negative, or titre"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Cryptococcus-Antigen.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -960,11 +1120,16 @@
           "core": true
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1008,6 +1173,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "clinical": {
         "references": "Ameen M, Lear JT, Madan V, Mohd Mustapa MF, Richardson M. British Association of Dermatologists' guidelines for the management of onychomycosis 2014. Br J Dermatol. 2014 Nov;171(5):937-58. doi: 10.1111/bjd.13358. Chowdhary A, Singh A, Kaur A, Khurana A. The emergence and worldwide spread of the species Trichophyton indotineae causing difficult-to-treat dermatophytosis: A new challenge in the management of dermatophytosis. PLoS Pathog. 2022 Sep 29;18(9):e1010795. doi: 10.1371/journal.ppat.1010795."
       },
@@ -1017,7 +1187,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Dermatophytes-and-non-dermatophytes-from-skin-nail-and-hair.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1087,6 +1257,11 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Diagnosis and monitoring of lupus",
         "repeat_frequency": "We recommend not repeating this test more than once a month, unless the patient is undergoing plasmapheresis"
@@ -1097,7 +1272,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Double-stranded-DNA-antibodies-IgG.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1164,6 +1339,11 @@
           "max": 10.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Investigation of Systemic Sclerosis (diffuse and limited forms of the disease)."
       },
@@ -1174,7 +1354,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Extended-Sclerosis-Panel-referred-test.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1342,11 +1522,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -1398,13 +1583,18 @@
       "turnaround": {
         "raw": "This assay is performed on demand. Turnaround time: 95% within one working day."
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Flucytosine-assay.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1509,11 +1699,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -1695,12 +1890,17 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in pmol/L"
+      },
       "notes": "Free T4",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -1797,11 +1997,216 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "full-blood-count",
+        "name": "Full Blood Count",
+        "description": "Automated count and differential. Units follow UK convention and differ elsewhere.",
+        "version": "0.1.0",
+        "applies_to": [
+          "full-blood-count-and-automated-differential"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "haemoglobin",
+            "name": "Haemoglobin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "g/L",
+            "alternate_units": [
+              "g/dL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "white-cell-count",
+            "name": "White cell count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "alternate_units": [
+              "x10^3/µL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "platelet-count",
+            "name": "Platelet count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "alternate_units": [
+              "x10^3/µL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "red-cell-count",
+            "name": "Red cell count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^12/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "haematocrit",
+            "name": "Haematocrit",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "L/L",
+            "alternate_units": [
+              "%"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mcv",
+            "name": "Mean cell volume (MCV)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "fL",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mch",
+            "name": "Mean cell haemoglobin (MCH)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "pg",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mchc",
+            "name": "Mean cell haemoglobin concentration (MCHC)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "g/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "rdw",
+            "name": "Red cell distribution width (RDW)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "%",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "neutrophils",
+            "name": "Neutrophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "lymphocytes",
+            "name": "Lymphocytes",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "monocytes",
+            "name": "Monocytes",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "eosinophils",
+            "name": "Eosinophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "basophils",
+            "name": "Basophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "film-comment",
+            "name": "Blood film comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "curated",
+          "units_source": "mft-biochemistry-reference-ranges",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 15,
+          "numeric_components": 14,
+          "with_suggested_units": 14,
+          "with_loinc": 0,
+          "measured": 15,
+          "calculated": 0
+        }
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1847,6 +2252,11 @@
       "turnaround": {
         "raw": "This assay is performed every day, Monday-Friday. Turnaround time: 95% within two weekdays, generally available within one weekday."
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "clinical": {
         "references": "Finkelman, M.A. Specificity Influences in (1>3) β-D-Glucan-Supported Diagnosis of Invasive Fungal Disease. J. Fungi 2021, 7, 14. https://doi.org/10.3390/jof7010014.\n\nKarageorgopoulos DE, Qu JM, Korbila IP, Zhu YG, Vasileiou VA, Falagas ME. Accuracy of β-D-glucan for the diagnosis of Pneumocystis jirovecii pneumonia: a meta-analysis. Clin Microbiol Infect. 2013 Jan;19(1):39-49. doi: 10.1111/j.1469-0691.2011.03760.x. Assay for (1>3)-β-D-Glucan in Serum, FUNGITELL® ASSAY, Instructions For Use, PN001268-en Rev12, 2023-06-13."
       },
@@ -1856,7 +2266,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Fungal-beta-D-glucan-assay.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1890,12 +2300,17 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "narrative",
+        "structured_entry": false,
+        "basis": "Non-Gynaecology Cytology reports are written findings, not numeric fields"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
         "detail_type": "page",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1950,6 +2365,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Patients with suspected allergy (atopic disease). Main use of the test is to help interpret specific IgE levels.",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -1960,7 +2380,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/IgE-Total.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2116,11 +2536,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2175,13 +2600,18 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Isavuconazole.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2236,13 +2666,18 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Itraconazole.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2306,6 +2741,11 @@
           "max": 6.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "To diagnose and monitor suspected Inflammatory Myopathies including Dermatomyositis, Juvenile Myositis, Polymyositis, idiopathic myositis, anti-synthetase syndrome and overlapping syndrome.",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -2316,7 +2756,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Myositis-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2374,13 +2814,18 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Posaconazole.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2545,11 +2990,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2654,11 +3104,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2765,11 +3220,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in ng/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -3127,11 +3587,16 @@
           "max": 10.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in nmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -3198,6 +3663,11 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Bullous skin disorders, dermatitis herpetiformis",
         "repeat_frequency": "Depending on changes in clinical picture"
@@ -3208,7 +3678,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Skin-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3329,11 +3799,16 @@
           "max": 10.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in nmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -3555,12 +4030,17 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mu/L"
+      },
       "notes": "TSH",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -3667,11 +4147,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in ng/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -3762,11 +4247,16 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in nmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.27,
@@ -3819,13 +4309,18 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Voriconazole.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3957,11 +4452,16 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -4044,6 +4544,11 @@
           "max": 10.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in U/mL"
+      },
       "clinical": {
         "interpretation": "Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of autoantibody testing."
       },
@@ -4053,7 +4558,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Zinc-Transporter-8-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {

@@ -44,13 +44,18 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Neisseria-meningitidis-Minimum-inhibitory-concentration.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -111,6 +116,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "notes": "Neisseria meningitidis isolate characterisation; Polysaccharide antigen detection",
       "source": {
         "provider": "mft-nhs",
@@ -118,7 +128,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Neisseria-meningitidis-Serogrouping-and-outer-membrane-typing.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2019",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {

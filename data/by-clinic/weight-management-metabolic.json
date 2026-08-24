@@ -98,11 +98,16 @@
           "max": 28.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in pmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -211,12 +216,17 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mg/mmol"
+      },
       "notes": "ACR",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -282,6 +292,11 @@
           "max": 10.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Please see the user guide for individual analytes"
+      },
       "clinical": {
         "interpretation": "Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of autoantibody testing.\n\nImmunology"
       },
@@ -291,7 +306,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Autoimmune-diabetes-marker-panel.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -369,11 +384,16 @@
           "max": 14.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.27,
@@ -496,11 +516,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -541,11 +566,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -663,11 +693,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -737,11 +772,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.18,
@@ -820,11 +860,16 @@
           "max": 1.5
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in nmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.27,
@@ -907,11 +952,16 @@
           "max": 14.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in pmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -1055,11 +1105,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -1623,11 +1678,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -1742,11 +1802,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mL/min"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -1911,11 +1976,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2020,11 +2090,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2095,11 +2170,16 @@
           "max": 14.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.27,
@@ -2194,11 +2274,216 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "full-blood-count",
+        "name": "Full Blood Count",
+        "description": "Automated count and differential. Units follow UK convention and differ elsewhere.",
+        "version": "0.1.0",
+        "applies_to": [
+          "full-blood-count-and-automated-differential"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "haemoglobin",
+            "name": "Haemoglobin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "g/L",
+            "alternate_units": [
+              "g/dL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "white-cell-count",
+            "name": "White cell count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "alternate_units": [
+              "x10^3/µL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "platelet-count",
+            "name": "Platelet count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "alternate_units": [
+              "x10^3/µL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "red-cell-count",
+            "name": "Red cell count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^12/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "haematocrit",
+            "name": "Haematocrit",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "L/L",
+            "alternate_units": [
+              "%"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mcv",
+            "name": "Mean cell volume (MCV)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "fL",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mch",
+            "name": "Mean cell haemoglobin (MCH)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "pg",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mchc",
+            "name": "Mean cell haemoglobin concentration (MCHC)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "g/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "rdw",
+            "name": "Red cell distribution width (RDW)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "%",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "neutrophils",
+            "name": "Neutrophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "lymphocytes",
+            "name": "Lymphocytes",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "monocytes",
+            "name": "Monocytes",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "eosinophils",
+            "name": "Eosinophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "basophils",
+            "name": "Basophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "film-comment",
+            "name": "Blood film comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "curated",
+          "units_source": "mft-biochemistry-reference-ranges",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 15,
+          "numeric_components": 14,
+          "with_suggested_units": 14,
+          "with_loinc": 0,
+          "measured": 15,
+          "calculated": 0
+        }
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -2365,12 +2650,17 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in U/L"
+      },
       "notes": "GGT",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2423,11 +2713,16 @@
           "core": true
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -2491,6 +2786,11 @@
           "max": 6.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in U/mL"
+      },
       "clinical": {
         "interpretation": "Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of autoantibody testing.\n\nGAD65 antibody levels are commonly much higher in serum in neurological syndromes than in T1DM, and higher in CSF in cerebella ataxia and limbic encephalitis than in stiff person syndrome (Budhram et al, 2021)"
       },
@@ -2500,7 +2800,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Glutamic-Acid-Decarboxylase-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2563,12 +2863,72 @@
           "core": true
         }
       ],
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "hba1c",
+        "name": "Glycated Haemoglobin (HbA1c)",
+        "description": "Glycaemic control. IFCC and DCCT/NGSP units are both in use.",
+        "version": "0.1.0",
+        "applies_to": [
+          "glycated-haemoglobin"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "hba1c-ifcc",
+            "name": "HbA1c (IFCC)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mmol/mol",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "hba1c-dcct",
+            "name": "HbA1c (DCCT/NGSP)",
+            "type": "numeric",
+            "entry_mode": "calculated",
+            "required": false,
+            "suggested_units": "%",
+            "units_provenance": {
+              "source": "curated"
+            },
+            "calculation": {
+              "name": "DCCT/NGSP conversion",
+              "expression": "IFCC-to-DCCT master equation",
+              "caveats": "Report in the unit system your clinicians expect; do not report both without labelling.",
+              "clinic_approval_required": true
+            }
+          }
+        ],
+        "provenance": {
+          "template_source": "curated",
+          "units_source": "mft-biochemistry-reference-ranges",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 2,
+          "with_suggested_units": 2,
+          "with_loinc": 0,
+          "measured": 1,
+          "calculated": 1
+        }
+      },
       "notes": "HbA1c",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -2607,12 +2967,17 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "narrative",
+        "structured_entry": false,
+        "basis": "Synovial Fluid Cytology reports are written findings, not numeric fields"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
         "detail_type": "page",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -2671,6 +3036,11 @@
           "max": 10.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in U/mL"
+      },
       "clinical": {
         "interpretation": "Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to\n\nImmunology 70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of autoantibody testing."
       },
@@ -2680,7 +3050,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/IA2.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2758,11 +3128,16 @@
           "max": 14.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in pmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.27,
@@ -2834,6 +3209,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Insulin resistance",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -2845,7 +3225,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Insulin-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2932,12 +3312,17 @@
           "max": 14.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "notes": "IGF-1",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.27,
@@ -2983,12 +3368,17 @@
           "core": true
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "notes": "IGFBP-3",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -3135,11 +3525,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -3184,11 +3579,143 @@
           "core": true
         }
       ],
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "lipid-profile",
+        "name": "Lipid Profile",
+        "description": "Cardiovascular risk lipid panel.",
+        "version": "0.1.0",
+        "applies_to": [
+          "lipid-profile-incl-total-cholesterol-ldl-hdl-triglyceride"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "total-cholesterol",
+            "name": "Total cholesterol",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mmol/L",
+            "alternate_units": [
+              "mg/dL"
+            ],
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Total Cholesterol"
+            },
+            "catalogue_ref": "cholesterol"
+          },
+          {
+            "id": "hdl-cholesterol",
+            "name": "HDL cholesterol",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mmol/L",
+            "alternate_units": [
+              "mg/dL"
+            ],
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "HDL - blood"
+            }
+          },
+          {
+            "id": "ldl-cholesterol",
+            "name": "LDL cholesterol",
+            "type": "numeric",
+            "entry_mode": "either",
+            "required": true,
+            "suggested_units": "mmol/L",
+            "alternate_units": [
+              "mg/dL"
+            ],
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "LDL"
+            },
+            "calculation": {
+              "name": "Friedewald equation",
+              "expression": "total_cholesterol - hdl_cholesterol - (triglycerides / 2.2)",
+              "units_basis": "mmol/L",
+              "caveats": "Not valid at high triglycerides (commonly cited limit ~4.5 mmol/L) or in non-fasting samples; many laboratories now measure LDL directly. Divisor differs in mg/dL-based systems.",
+              "clinic_approval_required": true
+            }
+          },
+          {
+            "id": "triglycerides",
+            "name": "Triglycerides",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mmol/L",
+            "alternate_units": [
+              "mg/dL"
+            ],
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Triglycerides"
+            },
+            "catalogue_ref": "triglycerides"
+          },
+          {
+            "id": "non-hdl-cholesterol",
+            "name": "Non-HDL cholesterol",
+            "type": "numeric",
+            "entry_mode": "calculated",
+            "required": false,
+            "suggested_units": "mmol/L",
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "NON HDL Cholesterol (calculation)"
+            },
+            "calculation": {
+              "name": "Non-HDL cholesterol",
+              "expression": "total_cholesterol - hdl_cholesterol",
+              "units_basis": "mmol/L",
+              "clinic_approval_required": true
+            }
+          },
+          {
+            "id": "cholesterol-hdl-ratio",
+            "name": "Cholesterol / HDL ratio",
+            "type": "numeric",
+            "entry_mode": "calculated",
+            "required": false,
+            "unitless": true,
+            "calculation": {
+              "name": "Cholesterol to HDL ratio",
+              "expression": "total_cholesterol / hdl_cholesterol",
+              "clinic_approval_required": true
+            }
+          }
+        ],
+        "provenance": {
+          "template_source": "curated",
+          "units_source": "mft-biochemistry-reference-ranges",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 6,
+          "numeric_components": 5,
+          "with_suggested_units": 5,
+          "with_loinc": 0,
+          "measured": 3,
+          "calculated": 3
+        }
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -3246,11 +3773,143 @@
           "core": true
         }
       ],
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "liver-function-tests",
+        "name": "Liver Function Tests",
+        "description": "Standard hepatic panel.",
+        "version": "0.1.0",
+        "applies_to": [
+          "liver-function-tests"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "bilirubin-total",
+            "name": "Bilirubin (total)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μmol/L",
+            "alternate_units": [
+              "mg/dL"
+            ],
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Bilirubin Total"
+            },
+            "catalogue_ref": "bilirubin-total"
+          },
+          {
+            "id": "alt",
+            "name": "Alanine aminotransferase (ALT)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "IU/L",
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Alanine aminotransferase (ALT)"
+            },
+            "catalogue_ref": "alanine-aminotransferase"
+          },
+          {
+            "id": "ast",
+            "name": "Aspartate aminotransferase (AST)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "U/L",
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Aspartate aminotransferase (AST)"
+            },
+            "catalogue_ref": "aspartate-aminotransferase"
+          },
+          {
+            "id": "alp",
+            "name": "Alkaline phosphatase (ALP)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "U/L",
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Alkaline Phosphatase (ALP)"
+            },
+            "catalogue_ref": "alkaline-phosphatase"
+          },
+          {
+            "id": "ggt",
+            "name": "Gamma-glutamyl transferase (GGT)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "U/L",
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Gamma-Glutamyl Transferase (blood)"
+            },
+            "catalogue_ref": "gamma-glutamyl-transferase"
+          },
+          {
+            "id": "albumin",
+            "name": "Albumin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "g/L",
+            "alternate_units": [
+              "g/dL"
+            ],
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Albumin"
+            },
+            "catalogue_ref": "albumin"
+          },
+          {
+            "id": "total-protein",
+            "name": "Total protein",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "g/L",
+            "alternate_units": [
+              "g/dL"
+            ],
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Protein, total"
+            },
+            "catalogue_ref": "total-protein"
+          }
+        ],
+        "provenance": {
+          "template_source": "curated",
+          "units_source": "mft-biochemistry-reference-ranges",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 7,
+          "numeric_components": 7,
+          "with_suggested_units": 7,
+          "with_loinc": 0,
+          "measured": 7,
+          "calculated": 0
+        }
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -3317,11 +3976,16 @@
           "core": true
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -3470,12 +4134,17 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in pmol/L"
+      },
       "notes": "PTH",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -3521,12 +4190,17 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "narrative",
+        "structured_entry": false,
+        "basis": "Synovial Fluid Cytology reports are written findings, not numeric fields"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/synovial-fluid-cytology/",
         "detail_type": "page",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -3727,11 +4401,16 @@
           "max": 14.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -3896,11 +4575,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -4005,11 +4689,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -4116,11 +4805,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in ng/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -4342,12 +5036,17 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mu/L"
+      },
       "notes": "TSH",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -4511,12 +5210,17 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in g/L"
+      },
       "notes": "Protein creatine ratio",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.36,
@@ -4652,11 +5356,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -4857,11 +5566,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -5035,11 +5749,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -5188,11 +5907,16 @@
           "max": 14.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -5299,11 +6023,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in ng/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -5394,11 +6123,16 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in nmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.27,
@@ -5531,11 +6265,16 @@
           "max": 14.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in VITE μmol/L, CHOL mmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -5614,6 +6353,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Lambert Eaton Myasthenic syndrome, cerebellar degeneration",
         "repeat_frequency": "significant change of clinical symptoms"
@@ -5625,7 +6369,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Voltage-Gated-Calcium-Channel-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5759,11 +6503,16 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -5846,6 +6595,11 @@
           "max": 10.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in U/mL"
+      },
       "clinical": {
         "interpretation": "Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of autoantibody testing."
       },
@@ -5855,7 +6609,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Zinc-Transporter-8-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {

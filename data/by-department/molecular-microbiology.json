@@ -63,6 +63,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold cycle (CT)"
+      },
       "notes": "Invasive infection with Aspergillus",
       "source": {
         "provider": "mft-nhs",
@@ -70,7 +75,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Aspergillus-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -149,6 +154,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Copies/mL"
+      },
       "notes": "Polyoma viruses (BK)",
       "source": {
         "provider": "mft-nhs",
@@ -156,7 +166,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/BK-virus-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -192,11 +202,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/manchester-medical-microbiology-partnership/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -245,6 +260,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold cycle (CT)"
+      },
       "notes": "Bordetella pertussis culture; Pernasal swab (for pertussis)",
       "source": {
         "provider": "mft-nhs",
@@ -252,7 +272,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Bordetella-pertussis-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -313,6 +333,11 @@
         "clinical_decision_points": "Not applicable\n\nMolecular Microbiology",
         "interferences": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend\n\nFalse negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay.\n\nNew and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold Cycle (CT)"
+      },
       "notes": "Invasive infection with Candida",
       "source": {
         "provider": "mft-nhs",
@@ -320,7 +345,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Candida-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -397,13 +422,18 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Relative Light Units (RLU)"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Chlamydia-trachomatis-Neisseria-gonorrhoea-Trichomonas-vaginalis-NAATs.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -481,6 +511,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mL Wild type / resistant mutation"
+      },
       "notes": "Cytomegalovirus anitviral resistance markers",
       "source": {
         "provider": "mft-nhs",
@@ -488,7 +523,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/12/CMV-Cytomegalovirus-antiviral-resistance-markers.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -540,6 +575,11 @@
       "analysis": {
         "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "notes": "Cytomegalovirus viral load",
       "source": {
         "provider": "mft-nhs",
@@ -547,7 +587,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Cytomegalovirus-viral-load.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2017",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -594,13 +634,18 @@
         "units": "Positive or Negative",
         "clinical_decision_points": "Not applicable\n\nPlace samples into a bubble wrap envelope with absorbent pad and seal Place samples into plastic cylinder and seal the top. Include the request form outside of the cylinder Place cylinder into Cat B transport box Seal the box using the blue sticker provided"
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Positive or Negative"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Coronavirus-COVID-19.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -671,13 +716,18 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold cycle (CT)"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Enterovirus-and-Parechovirus-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -751,6 +801,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Copies/mL"
+      },
       "notes": "EBV viral load",
       "source": {
         "provider": "mft-nhs",
@@ -758,7 +813,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/10/Epstein-Barr-virus-viral-load.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -825,13 +880,18 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Results presented as genotype"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/12/HCV-Genotyping.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2020",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -906,6 +966,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "notes": "HBV resistance markers",
       "source": {
         "provider": "mft-nhs",
@@ -913,7 +978,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/HBV-Resistance-Markers.pdf",
         "detail_type": "pdf",
         "last_updated": "September 2019",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -988,13 +1053,18 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in IU/mL\n\nDynamic range: The dynamic range for this assay is 15-1x108 copies/mL"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/03/Hepatitis-C-viral-load.pdf",
         "detail_type": "pdf",
         "last_updated": "March 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1067,13 +1137,18 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold Cycle (CT)"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Herpes-simplex-virus-types-1-and-2-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1145,13 +1220,18 @@
           "max": 10.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/HIV-resistance-integrase-tropism.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1227,13 +1307,18 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Copies/mL\n\nDynamic range: The dynamic range for this assay is 40-1x107 copies/mL"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/HIV‐1-viral-load.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1304,6 +1389,11 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold Cycle (CT)"
+      },
       "notes": "HHV6 & 7 PCR",
       "source": {
         "provider": "mft-nhs",
@@ -1311,7 +1401,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/HHV6-7-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1363,13 +1453,18 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold cycle (CT)"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/12/Human-Papilloma-Virus-Screening-Assay.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1435,6 +1530,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Copies/mL"
+      },
       "notes": "Parvovirus B19 viral load",
       "source": {
         "provider": "mft-nhs",
@@ -1442,7 +1542,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Human-Parvovirus-B19-viral-load.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2017",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1512,13 +1612,18 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Copies/mL"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/JC-virus-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1597,6 +1702,11 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold Cycle (CT)"
+      },
       "notes": "Pneumococcal PCR",
       "source": {
         "provider": "mft-nhs",
@@ -1604,7 +1714,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Meningococcal-DNA-detection-by-PCR-including-Pneumococcal-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "February 2019",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1669,13 +1779,18 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold cycle (CT)"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Mycoplasma-pneumoniae-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2017",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1748,13 +1863,18 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold Cyle (CT)"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/12/Pneumocystis-jirovecii-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1824,6 +1944,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold cycle (CT)"
+      },
       "notes": "Respiratory screen; adenovirus",
       "source": {
         "provider": "mft-nhs",
@@ -1831,7 +1956,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Respiratory-virus-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "February 2019",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1904,13 +2029,18 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold Cycle (CT)"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Toxoplasma-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1980,13 +2110,18 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold Cycle (CT)"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Varicella-zoster-virus-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {

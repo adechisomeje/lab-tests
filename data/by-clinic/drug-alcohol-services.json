@@ -31,11 +31,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -65,11 +70,16 @@
           "core": true
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -134,13 +144,18 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Dried-blood-Spot-Hepatitis-C-RNA-Screening.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -216,13 +231,18 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Dried-Blood-Spot-Syphilis-antibody.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -285,11 +305,16 @@
           "max": 14.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.18,
@@ -354,11 +379,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.27,
@@ -453,11 +483,216 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "full-blood-count",
+        "name": "Full Blood Count",
+        "description": "Automated count and differential. Units follow UK convention and differ elsewhere.",
+        "version": "0.1.0",
+        "applies_to": [
+          "full-blood-count-and-automated-differential"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "haemoglobin",
+            "name": "Haemoglobin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "g/L",
+            "alternate_units": [
+              "g/dL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "white-cell-count",
+            "name": "White cell count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "alternate_units": [
+              "x10^3/µL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "platelet-count",
+            "name": "Platelet count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "alternate_units": [
+              "x10^3/µL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "red-cell-count",
+            "name": "Red cell count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^12/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "haematocrit",
+            "name": "Haematocrit",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "L/L",
+            "alternate_units": [
+              "%"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mcv",
+            "name": "Mean cell volume (MCV)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "fL",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mch",
+            "name": "Mean cell haemoglobin (MCH)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "pg",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mchc",
+            "name": "Mean cell haemoglobin concentration (MCHC)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "g/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "rdw",
+            "name": "Red cell distribution width (RDW)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "%",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "neutrophils",
+            "name": "Neutrophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "lymphocytes",
+            "name": "Lymphocytes",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "monocytes",
+            "name": "Monocytes",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "eosinophils",
+            "name": "Eosinophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "basophils",
+            "name": "Basophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "film-comment",
+            "name": "Blood film comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "curated",
+          "units_source": "mft-biochemistry-reference-ranges",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 15,
+          "numeric_components": 14,
+          "with_suggested_units": 14,
+          "with_loinc": 0,
+          "measured": 15,
+          "calculated": 0
+        }
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -624,12 +859,17 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in U/L"
+      },
       "notes": "GGT",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -711,13 +951,18 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Hepatitis-A-Total-antibody-IgG-and-IgM.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2020",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -822,6 +1067,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "notes": "HBV surface antibody; anti HBs; HBsAg",
       "source": {
         "provider": "mft-nhs",
@@ -829,7 +1079,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Hepatitis-B-virus-HBV-surface-antigen-HBsAg.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -921,6 +1171,11 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "notes": "Dried blood spot Hepatitis B surface antigen",
       "source": {
         "provider": "mft-nhs",
@@ -928,7 +1183,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Hepatitis-B-virus-HBV-surface-antigen-HBsAg-Dried-Blood-Spot.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1019,6 +1274,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "notes": "Anti-HCV antibody screen and confirmation",
       "source": {
         "provider": "mft-nhs",
@@ -1026,7 +1286,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Hepatitis-C-antibody-HCV-screen-and-confirmation.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1113,6 +1373,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "notes": "Dried blood spot Hepatitis C genotyping",
       "source": {
         "provider": "mft-nhs",
@@ -1120,7 +1385,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Hepatitis-C-antibody-HCV-screen-and-confirmation-Dried-Blood-Spot.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1207,6 +1472,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "notes": "Anti-HIV 1 and 2 antibody and p24 antigen screen",
       "source": {
         "provider": "mft-nhs",
@@ -1214,7 +1484,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/HIV-screen-4th-generation-HIV1-and-2-antibody-and-p24-antigen.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1281,11 +1551,143 @@
           "core": true
         }
       ],
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "liver-function-tests",
+        "name": "Liver Function Tests",
+        "description": "Standard hepatic panel.",
+        "version": "0.1.0",
+        "applies_to": [
+          "liver-function-tests"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "bilirubin-total",
+            "name": "Bilirubin (total)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μmol/L",
+            "alternate_units": [
+              "mg/dL"
+            ],
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Bilirubin Total"
+            },
+            "catalogue_ref": "bilirubin-total"
+          },
+          {
+            "id": "alt",
+            "name": "Alanine aminotransferase (ALT)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "IU/L",
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Alanine aminotransferase (ALT)"
+            },
+            "catalogue_ref": "alanine-aminotransferase"
+          },
+          {
+            "id": "ast",
+            "name": "Aspartate aminotransferase (AST)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "U/L",
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Aspartate aminotransferase (AST)"
+            },
+            "catalogue_ref": "aspartate-aminotransferase"
+          },
+          {
+            "id": "alp",
+            "name": "Alkaline phosphatase (ALP)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "U/L",
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Alkaline Phosphatase (ALP)"
+            },
+            "catalogue_ref": "alkaline-phosphatase"
+          },
+          {
+            "id": "ggt",
+            "name": "Gamma-glutamyl transferase (GGT)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "U/L",
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Gamma-Glutamyl Transferase (blood)"
+            },
+            "catalogue_ref": "gamma-glutamyl-transferase"
+          },
+          {
+            "id": "albumin",
+            "name": "Albumin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "g/L",
+            "alternate_units": [
+              "g/dL"
+            ],
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Albumin"
+            },
+            "catalogue_ref": "albumin"
+          },
+          {
+            "id": "total-protein",
+            "name": "Total protein",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "g/L",
+            "alternate_units": [
+              "g/dL"
+            ],
+            "units_provenance": {
+              "source": "mft-biochemistry-reference-ranges",
+              "analyte": "Protein, total"
+            },
+            "catalogue_ref": "total-protein"
+          }
+        ],
+        "provenance": {
+          "template_source": "curated",
+          "units_source": "mft-biochemistry-reference-ranges",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 7,
+          "numeric_components": 7,
+          "with_suggested_units": 7,
+          "with_loinc": 0,
+          "measured": 7,
+          "calculated": 0
+        }
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1316,11 +1718,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1380,11 +1787,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.27,
@@ -1449,11 +1861,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.27,

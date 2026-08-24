@@ -18,3 +18,6 @@ var rawCategories []byte
 
 //go:embed data/providers.json
 var rawProviders []byte
+
+//go:embed data/result-templates.json
+var rawTemplates []byte

@@ -17,6 +17,7 @@ import type {
   DayRange,
   Meta,
   Provider,
+  ResultTemplate,
   Stratum,
   Test,
 } from './types.js';
@@ -48,6 +49,7 @@ interface Dataset {
   profiles: Map<string, ClinicProfile>;
   categories: Map<string, Category>;
   providers: Map<string, Provider>;
+  templates: Map<string, ResultTemplate>;
 }
 
 function resolveDataDir(explicit?: string): string {
@@ -89,6 +91,7 @@ export function load(opts: LoadOptions = {}): Catalogue {
   const profDoc = readJson<{ profiles: ClinicProfile[] }>(dir, 'clinic-profiles.json');
   const catDoc = readJson<{ categories: Category[] }>(dir, 'categories.json');
   const provDoc = readJson<{ providers: Provider[] }>(dir, 'providers.json');
+  const tplDoc = readJson<{ templates: ResultTemplate[] }>(dir, 'result-templates.json');
 
   const data: Dataset = {
     meta: testDoc.meta,
@@ -96,6 +99,7 @@ export function load(opts: LoadOptions = {}): Catalogue {
     profiles: new Map(profDoc.profiles.map((p) => [p.id, p])),
     categories: new Map(catDoc.categories.map((c) => [c.id, c])),
     providers: new Map(provDoc.providers.map((p) => [p.id, p])),
+    templates: new Map(tplDoc.templates.map((t) => [t.id, t])),
   };
 
   const ranges = opts.referenceRanges ?? { kind: 'none' as const };
@@ -199,6 +203,32 @@ export class Catalogue {
       b.score !== a.score ? b.score - a.score : a.test.name < b.test.name ? -1 : 1,
     );
     return limit > 0 ? out.slice(0, limit) : out;
+  }
+
+  /**
+   * The starter template seeding structured result entry for a test.
+   *
+   * A starting point, not a specification: copy it into your own catalogue,
+   * confirm every component and unit against your analyser, and treat your
+   * versioned copy as authoritative. Check `test.result_format` first --
+   * narrative and document results should not be captured as fields at all.
+   */
+  resultTemplate(testId: string): ResultTemplate | undefined {
+    return this.#byId.get(testId)?.result_template;
+  }
+
+  /**
+   * A starter template by its own id. Some templates -- such as
+   * `urea-and-electrolytes` -- are reusable starting points with no matching
+   * test in this catalogue.
+   */
+  template(templateId: string): ResultTemplate | undefined {
+    return this.#data.templates.get(templateId);
+  }
+
+  /** Every starter template, ordered by id. */
+  templates(): ResultTemplate[] {
+    return [...this.#data.templates.values()].sort((a, b) => (a.id < b.id ? -1 : 1));
   }
 
   /** Expected time to a final result, in days. */

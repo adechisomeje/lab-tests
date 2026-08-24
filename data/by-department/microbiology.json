@@ -44,13 +44,18 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold cycle (CT)"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Adenovirus.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -129,13 +134,18 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in IU/mL\n\nDynamic range: The dynamic range for this assay is 10-1x109 copies/mL"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/03/Hepatitis-B-virus-viral-load.pdf",
         "detail_type": "pdf",
         "last_updated": "March 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {

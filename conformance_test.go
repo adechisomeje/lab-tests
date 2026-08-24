@@ -3,6 +3,7 @@ package labtests
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"os"
 	"strings"
 	"testing"
@@ -53,6 +54,30 @@ type vectors struct {
 		ExpectFirst    string `json:"expect_first"`
 		ExpectEmpty    bool   `json:"expect_empty"`
 	} `json:"search"`
+	ResultFormat []struct {
+		Name   string `json:"name"`
+		TestID string `json:"test_id"`
+		Expect struct {
+			Kind            string `json:"kind"`
+			StructuredEntry bool   `json:"structured_entry"`
+		} `json:"expect"`
+	} `json:"result_format"`
+	ResultTemplate []struct {
+		Name             string `json:"name"`
+		TestID           string `json:"test_id"`
+		TemplateID       string `json:"template_id"`
+		ExpectNoTemplate bool   `json:"expect_no_template"`
+		Expect           struct {
+			TemplateID        string                    `json:"template_id"`
+			ComponentIDs      []string                  `json:"component_ids"`
+			ComponentCount    int                       `json:"component_count"`
+			CompletenessScore *float64                  `json:"completeness_score"`
+			AppliesTo         []string                  `json:"applies_to"`
+			TemplateSource    string                    `json:"template_source"`
+			NoComponentKeys   []string                  `json:"no_component_keys"`
+			Components        map[string]map[string]any `json:"components"`
+		} `json:"expect"`
+	} `json:"result_template"`
 	OrderSet []struct {
 		Profile     string `json:"profile"`
 		CoreOnly    bool   `json:"core_only"`
@@ -263,6 +288,149 @@ func TestConformanceOrderSet(t *testing.T) {
 		if len(got) != tc.ExpectCount {
 			t.Errorf("OrderSet(%q, core=%v) = %d, want %d",
 				tc.Profile, tc.CoreOnly, len(got), tc.ExpectCount)
+		}
+	}
+}
+
+func TestConformanceResultFormat(t *testing.T) {
+	c := load(t)
+	for _, tc := range loadVectors(t).ResultFormat {
+		test, ok := c.Get(tc.TestID)
+		if !ok {
+			t.Errorf("%s: unknown test %s", tc.Name, tc.TestID)
+			continue
+		}
+		if test.ResultFormat.Kind != tc.Expect.Kind {
+			t.Errorf("%s: kind = %q, want %q", tc.Name, test.ResultFormat.Kind, tc.Expect.Kind)
+		}
+		if test.ResultFormat.StructuredEntry != tc.Expect.StructuredEntry {
+			t.Errorf("%s: structured_entry = %v, want %v",
+				tc.Name, test.ResultFormat.StructuredEntry, tc.Expect.StructuredEntry)
+		}
+	}
+}
+
+func TestConformanceResultTemplate(t *testing.T) {
+	c := load(t)
+	for _, tc := range loadVectors(t).ResultTemplate {
+		t.Run(tc.Name, func(t *testing.T) {
+			var tpl *ResultTemplate
+			var ok bool
+			if tc.TestID != "" {
+				tpl, ok = c.ResultTemplate(tc.TestID)
+			} else {
+				tpl, ok = c.Template(tc.TemplateID)
+			}
+			if tc.ExpectNoTemplate {
+				if ok {
+					t.Fatalf("expected no template, got %s", tpl.ID)
+				}
+				return
+			}
+			if !ok {
+				t.Fatal("expected a template, got none")
+			}
+			e := tc.Expect
+			if e.TemplateID != "" && tpl.ID != e.TemplateID {
+				t.Errorf("template id = %s, want %s", tpl.ID, e.TemplateID)
+			}
+			if len(e.ComponentIDs) > 0 {
+				got := make([]string, len(tpl.Components))
+				for i, comp := range tpl.Components {
+					got[i] = comp.ID
+				}
+				if strings.Join(got, ",") != strings.Join(e.ComponentIDs, ",") {
+					t.Errorf("component ids = %v, want %v", got, e.ComponentIDs)
+				}
+			}
+			if e.ComponentCount > 0 && len(tpl.Components) != e.ComponentCount {
+				t.Errorf("component count = %d, want %d", len(tpl.Components), e.ComponentCount)
+			}
+			if e.CompletenessScore != nil && tpl.Completeness.Score != *e.CompletenessScore {
+				t.Errorf("completeness = %v, want %v", tpl.Completeness.Score, *e.CompletenessScore)
+			}
+			if e.AppliesTo != nil && len(tpl.AppliesTo) != len(e.AppliesTo) {
+				t.Errorf("applies_to = %v, want %v", tpl.AppliesTo, e.AppliesTo)
+			}
+			if e.TemplateSource != "" && tpl.Provenance["template_source"] != e.TemplateSource {
+				t.Errorf("template_source = %q, want %q",
+					tpl.Provenance["template_source"], e.TemplateSource)
+			}
+			for id, want := range e.Components {
+				comp := findComponent(tpl, id)
+				if comp == nil {
+					t.Errorf("component %s missing", id)
+					continue
+				}
+				checkComponent(t, id, comp, want)
+			}
+			// Templates must never assert reference ranges or critical limits:
+			// those belong to the activating clinic, not a global library.
+			if len(e.NoComponentKeys) > 0 {
+				checkAbsentKeys(t, tpl.ID, e.NoComponentKeys)
+			}
+		})
+	}
+}
+
+func findComponent(tpl *ResultTemplate, id string) *ResultComponent {
+	for i := range tpl.Components {
+		if tpl.Components[i].ID == id {
+			return &tpl.Components[i]
+		}
+	}
+	return nil
+}
+
+func checkComponent(t *testing.T, id string, c *ResultComponent, want map[string]any) {
+	t.Helper()
+	for k, v := range want {
+		var got any
+		switch k {
+		case "type":
+			got = c.Type
+		case "entry_mode":
+			got = c.EntryMode
+		case "required":
+			got = c.Required
+		case "unitless":
+			got = c.Unitless
+		case "suggested_units":
+			got = c.SuggestedUnits
+		case "has_calculation":
+			got = c.Calculation != nil
+		default:
+			t.Errorf("%s: vector checks unknown field %q", id, k)
+			continue
+		}
+		if fmt.Sprint(got) != fmt.Sprint(v) {
+			t.Errorf("%s.%s = %v, want %v", id, k, got, v)
+		}
+	}
+}
+
+// checkAbsentKeys walks the raw published JSON, so it catches a forbidden key
+// even though the Go struct would silently drop it.
+func checkAbsentKeys(t *testing.T, templateID string, forbidden []string) {
+	t.Helper()
+	var doc struct {
+		Templates []map[string]any `json:"templates"`
+	}
+	if err := json.Unmarshal(rawTemplates, &doc); err != nil {
+		t.Fatalf("parsing raw templates: %v", err)
+	}
+	for _, raw := range doc.Templates {
+		if raw["id"] != templateID {
+			continue
+		}
+		comps, _ := raw["components"].([]any)
+		for _, ci := range comps {
+			cm, _ := ci.(map[string]any)
+			for _, key := range forbidden {
+				if _, present := cm[key]; present {
+					t.Errorf("component %v carries forbidden key %q", cm["id"], key)
+				}
+			}
 		}
 	}
 }

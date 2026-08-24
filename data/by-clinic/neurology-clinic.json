@@ -57,6 +57,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "90% of patients with generalised myasthenia gravis and about 60-70% of patients with ocular myasthenia have detectable AChR antibodies. Can be used to monitor disease activity, but antibodies may persist in 60% of patients even if disease is in remission.\n\nThe assay also detects antibodies to the foetal form of the AChR in mother of foetuses with Arthrogryposis multiplex congenital.",
         "repeat_frequency": "At change of clinical symptoms"
@@ -67,7 +72,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/06/Acetylcholine-receptor-antibody.pdf",
         "detail_type": "pdf",
         "last_updated": "June 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -134,6 +139,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "repeat_frequency": "Significant change of clinical symptoms"
       },
@@ -145,7 +155,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Anti-Myelin-oligodendrocyte-glycoprotein-MOG-Antibodies-Referred-Test.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -204,6 +214,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Sydenham's chorea",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -215,7 +230,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Anti-Basal-Ganglia-Abs.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -274,6 +289,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Neuromyelitis Optica (optic neuritis, transverse myelitis), Devic's disease",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -285,7 +305,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Aquaporin-4-NMO-Neuro-Myelitis-Optica-Abs.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -316,12 +336,17 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "narrative",
+        "structured_entry": false,
+        "basis": "Non-Gynaecology Cytology reports are written findings, not numeric fields"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
         "detail_type": "page",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -378,11 +403,16 @@
           "max": 0.08
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.27,
@@ -418,11 +448,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -476,6 +511,11 @@
           "max": 14.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "CASPR2 (Contactin Associated Protein 2) and LGi1 (leucine-rich glioma inactivated 1) antibodies are subunits of the potassium channel complex (VGKC). When the antibodies target LGI1 or CASPR2 they cause an encephalitis often termed limbic encephalitis.",
         "repeat_frequency": "significant change of clinical symptoms"
@@ -487,7 +527,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/01/CASPR-LGi1-Antibodies-referred-test.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2019",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -518,12 +558,17 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "narrative",
+        "structured_entry": false,
+        "basis": "Non-Gynaecology Cytology reports are written findings, not numeric fields"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
         "detail_type": "page",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -574,13 +619,18 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Cell count x106/L\n\nBacteriology"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/12/CSF.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2020",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -713,11 +763,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.36,
@@ -801,11 +856,16 @@
           "max": 0.08
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -933,11 +993,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in g/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -981,11 +1046,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1039,6 +1109,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in X10 6/L for cell count"
+      },
       "notes": "Joint fluids; sterile fluids",
       "source": {
         "provider": "mft-nhs",
@@ -1046,7 +1121,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Fluids-from-Normally-Sterile-Sites.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1154,11 +1229,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -1219,6 +1299,11 @@
           "max": 14.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Antibodies against GABAb receptors (GABAb receptors are the G-protein-coupled receptors (GPCRs) for γ-aminobutyric acid (GABA), the main inhibitory neurotransmitter in the central nervous system) and α-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid (AMPA) receptors can be detected in paraneoplastic syndrome and classical limbic encephalitis with early and prominent seizures. The antibodies may be present together with other autoantibodies in around 50% of cases (antibodies against GAD-65, VGCC, and TPO).",
         "repeat_frequency": "significant change of clinical symptoms"
@@ -1230,7 +1315,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/01/GABAb-receptor-AMPA-receptor-1-2-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2019",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1289,6 +1374,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Guillian-barre syndrome, chronic demyelinating polyneuropathy, Multifocal motorneuropathy",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -1300,7 +1390,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/03/Ganglioside-Abs-GM1.pdf",
         "detail_type": "pdf",
         "last_updated": "March 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1359,6 +1449,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Miller-Fisher Syndrome",
         "repeat_frequency": "At significant change of clinical symptom"
@@ -1370,7 +1465,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/03/Ganglioside-Abs-GQ1b.pdf",
         "detail_type": "pdf",
         "last_updated": "March 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1432,12 +1527,72 @@
           "core": true
         }
       ],
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "hba1c",
+        "name": "Glycated Haemoglobin (HbA1c)",
+        "description": "Glycaemic control. IFCC and DCCT/NGSP units are both in use.",
+        "version": "0.1.0",
+        "applies_to": [
+          "glycated-haemoglobin"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "hba1c-ifcc",
+            "name": "HbA1c (IFCC)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mmol/mol",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "hba1c-dcct",
+            "name": "HbA1c (DCCT/NGSP)",
+            "type": "numeric",
+            "entry_mode": "calculated",
+            "required": false,
+            "suggested_units": "%",
+            "units_provenance": {
+              "source": "curated"
+            },
+            "calculation": {
+              "name": "DCCT/NGSP conversion",
+              "expression": "IFCC-to-DCCT master equation",
+              "caveats": "Report in the unit system your clinicians expect; do not report both without labelling.",
+              "clinic_approval_required": true
+            }
+          }
+        ],
+        "provenance": {
+          "template_source": "curated",
+          "units_source": "mft-biochemistry-reference-ranges",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 2,
+          "with_suggested_units": 2,
+          "with_loinc": 0,
+          "measured": 1,
+          "calculated": 1
+        }
+      },
       "notes": "HbA1c",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1468,11 +1623,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1494,11 +1654,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1589,11 +1754,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -1631,11 +1801,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1687,6 +1862,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Patients suspected of Myasthenia gravis and who are acetylcholine receptor antibody negative.",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -1698,7 +1878,7 @@
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/01/Muscle-Specific-Tyrosine-Kinase-MUSK.pdf",
         "detail_type": "pdf",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1759,6 +1939,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "IgM monoclonal neuropathy",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -1771,7 +1956,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Myelin-Associated-Glycoprotein-MAG.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1836,6 +2021,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "NMDA receptor antibodies are associated with the different sub units of the NMDA receptor. Antibodies to the delta or NR2 subunits of NMDA receptor are associated with limbic encephalitis, systemic lupus erythematosus (SLE), ataxia and epilepsia partialis continua. Antibodies against the NR1, NR2A and NR2B subunits of the NMDA are found in patients presenting with psychiatric symptoms, amnesia, seizures, dyskinesias, autonomic dysfunction and loss of consciousness. In women younger than 45 years, a form of encephalitis associated with ovarian teratoma and presenting with seizures and psychiatric symptoms has been described.\n\nImmunology For additional information please see our referral laboratory's user guide: http://www.ouh.nhs.uk/immunology/diagnostic-tests/tests-catalogue/nmda-antibodies.aspx",
         "repeat_frequency": "At change of clinical symptoms"
@@ -1847,7 +2037,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/NMDA-%E2%80%93-N-methyl-D-aspartate-receptor-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2018",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1923,6 +2113,11 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Cerebellar degeneration, encephalitis, neuropathy",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -1933,7 +2128,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/07/Paraneoplastic-Neuronal-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "June 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1965,12 +2160,17 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "narrative",
+        "structured_entry": false,
+        "basis": "Non-Gynaecology Cytology reports are written findings, not numeric fields"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
         "detail_type": "page",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -2016,13 +2216,18 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Cell count x 106 per litre"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Peritoneal-Fluids.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2053,12 +2258,17 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "narrative",
+        "structured_entry": false,
+        "basis": "Non-Gynaecology Cytology reports are written findings, not numeric fields"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
         "detail_type": "page",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -2129,11 +2339,16 @@
           "max": 0.08
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2197,11 +2412,16 @@
           "max": 0.08
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.27,
@@ -2228,12 +2448,17 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "narrative",
+        "structured_entry": false,
+        "basis": "Non-Gynaecology Cytology reports are written findings, not numeric fields"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
         "detail_type": "page",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -2260,12 +2485,17 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "narrative",
+        "structured_entry": false,
+        "basis": "Non-Gynaecology Cytology reports are written findings, not numeric fields"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/cytology/non-gynaecological-cytology/",
         "detail_type": "page",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -2296,11 +2526,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -2398,11 +2633,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2509,11 +2749,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in ng/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2552,11 +2797,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -2627,11 +2877,16 @@
           "max": 0.08
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2738,11 +2993,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in ng/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2821,6 +3081,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Lambert Eaton Myasthenic syndrome, cerebellar degeneration",
         "repeat_frequency": "significant change of clinical symptoms"
@@ -2832,7 +3097,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Voltage-Gated-Calcium-Channel-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2921,6 +3186,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Peripheral nerve hyperexcitability, neuromyotonia, Morvan's syndrome.",
         "repeat_frequency": "significant change of clinical symptoms"
@@ -2932,7 +3202,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Voltage-Gated-Potassium-Channel-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2984,11 +3254,16 @@
         "match_method": "exact",
         "notes": "interpretive comments"
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.09,
@@ -3040,6 +3315,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "clinical": {
         "references": "https://www.eucast.org/fungi-afst/methodology-and-instructions/ast-of-yeasts/ https://www.eucast.org/fungi-afst/methodology-and-instructions/ast-of-moulds/ https://www.eucast.org/fungi-afst/clinical-breakpoints-and-interpretation/clinical-breakpoint-table/"
       },
@@ -3049,7 +3329,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Identification-and-susceptibility-testing-of-yeasts-and-moulds.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {

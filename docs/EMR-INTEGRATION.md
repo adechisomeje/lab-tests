@@ -363,6 +363,140 @@ applied and whether anything about it is uncertain.
 
 ---
 
+## 5a. Structured result entry
+
+Your team's design is right, and the library now supports it: **the library
+seeds templates; your clinic's activated, versioned definition stays
+authoritative.**
+
+### Decide whether to render a form at all
+
+Before templates, check `result_format`. Not every test has fields to fill in.
+
+```go
+t, _ := cat.Get(testID)
+switch t.ResultFormat.Kind {
+case "panel":          // several defined components -> render the template
+case "single-analyte": // one measured quantity -> render one field
+case "qualitative":    // organism / susceptibility report
+case "narrative":      // cytology, histopathology -> free-text report, no fields
+case "document":       // referral laboratory returns its own report
+case "unstructured":   // nothing published to structure entry around
+}
+```
+
+Across the 508 tests:
+
+| Kind | Count | Internal entry |
+| --- | --- | --- |
+| `single-analyte` | 187 | one numeric field |
+| `qualitative` | 83 | coded/organism report |
+| `narrative` | 65 | free text — **never** fields |
+| `panel` | 7 | render the template |
+| `document` | 24 | attach the report |
+| `unstructured` | 142 | free text |
+
+`narrative` and `document` map directly onto your PDF-only path. Cytology and
+histopathology results are written findings; forcing them into numeric fields
+would lose the diagnosis.
+
+### Seed the template, then own it
+
+```go
+tpl, ok := cat.ResultTemplate("lipid-profile-incl-total-cholesterol-ldl-hdl-triglyceride")
+// tpl.Version == "0.1.0"
+for _, c := range tpl.Components {
+    // c.ID, c.Name, c.Type, c.EntryMode, c.Required
+    // c.SuggestedUnits, c.AlternateUnits, c.UnitsProvenance
+    // c.Calculation (nil unless derived)
+}
+```
+
+Which produces exactly the table your team specified:
+
+| Component | Type | Entry mode | Required | Suggested units |
+| --- | --- | --- | --- | --- |
+| Total cholesterol | numeric | measured | yes | mmol/L |
+| HDL cholesterol | numeric | measured | yes | mmol/L |
+| LDL cholesterol | numeric | **either** | yes | mmol/L |
+| Triglycerides | numeric | measured | yes | mmol/L |
+| Non-HDL cholesterol | numeric | calculated | no | mmol/L |
+| Cholesterol / HDL ratio | numeric | calculated | no | *(ratio)* |
+
+`entry_mode: "either"` is the LDL case your team raised: measure directly, or
+apply a clinic-approved calculation. The library supplies the Friedewald
+expression with its caveats and `clinic_approval_required: true`, but **never
+computes it** — which equation to use is a clinical policy decision.
+
+Some templates have no matching catalogue entry and are pure starting points
+(`urea-and-electrolytes`, `bone-profile`, `thyroid-function-tests`,
+`coagulation-screen`, `iron-studies`). Reach those by id:
+
+```go
+tpl, _ := cat.Template("urea-and-electrolytes")
+```
+
+### What the library deliberately withholds
+
+**No reference ranges. No critical limits.** A conformance vector enforces this:
+if a component ever gained a `reference_range` or `critical_high` key, the build
+fails in all three languages. Those values vary by analyser and population, so a
+global library asserting them would be actively unsafe. They belong in your
+`lab_reference_range` table (§4) and your own critical-limit policy.
+
+Units are **suggestions**, carrying `units_provenance` so you can see where each
+came from. `alternate_units` names other measurement systems (mmol/L vs mg/dL)
+but supplies **no conversion factors** — a wrong factor is worse than none.
+
+### Persist the activated copy, versioned
+
+```sql
+CREATE TABLE lab_test_template (
+    id              UUID PRIMARY KEY,
+    test_id         TEXT NOT NULL REFERENCES lab_test(id),
+    version         INT  NOT NULL,           -- your version, incremented on edit
+    seeded_from     TEXT,                    -- e.g. 'lipid-profile'
+    seeded_version  TEXT,                    -- library template version pinned
+    status          TEXT NOT NULL,           -- draft | active | retired
+    activated_at    TIMESTAMPTZ,
+    activated_by    UUID,
+    UNIQUE (test_id, version)
+);
+
+CREATE TABLE lab_test_template_component (
+    template_id  UUID NOT NULL REFERENCES lab_test_template(id) ON DELETE CASCADE,
+    component_id TEXT NOT NULL,
+    name         TEXT NOT NULL,
+    type         TEXT NOT NULL,
+    entry_mode   TEXT NOT NULL,
+    required     BOOLEAN NOT NULL,
+    units        TEXT,                       -- CONFIRMED by your lab, not suggested
+    sort_order   INT NOT NULL,
+    PRIMARY KEY (template_id, component_id)
+);
+```
+
+Then store `lab_order_item.template_id` at **order** time, so the result screen
+renders the exact version the clinician ordered against — as your team
+specified. Editing a template creates a new version; in-flight orders keep
+theirs.
+
+`lab_result` becomes one row per component rather than per order item, with the
+`interpreted_with` audit field from §4 unchanged.
+
+### Coverage, honestly
+
+12 templates ship: 9 curated, 3 derived from panel markers the source lists in
+its own notes (flagged `derived-from-source-notes`, confidence `low`). Only
+**7 of 508 tests** have a bound template today.
+
+That is the honest state, and it is fine for your build order: the templates
+cover the common panels a clinic actually runs, and the 187 `single-analyte`
+tests need no template at all — one field, with units already in
+`analysis.units`. Everything else is a report.
+
+---
+
 ## 6. What this does not give you
 
 Be clear-eyed about the boundary:
@@ -373,6 +507,8 @@ Be clear-eyed about the boundary:
   wrong code silently corrupts downstream records, so partial and correct beats
   complete and guessed.
 - **No fasting or patient-prep field.** Present only as free text, if at all.
+- **Result templates for only 7 of 508 tests**, and no reference ranges or
+  critical limits inside them, by design (§5a).
 - **Reference intervals for 17% of tests**, and provider-specific even then.
 - **No pricing, billing codes, or turnaround SLAs** for your own lab.
 - **No result validation rules** (delta checks, critical values, auto-verify).

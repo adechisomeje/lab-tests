@@ -1,0 +1,1328 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied."
+  },
+  "templates": [
+    {
+      "id": "lipid-profile",
+      "name": "Lipid Profile",
+      "description": "Cardiovascular risk lipid panel.",
+      "version": "0.1.0",
+      "applies_to": [
+        "lipid-profile-incl-total-cholesterol-ldl-hdl-triglyceride"
+      ],
+      "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+      "components": [
+        {
+          "id": "total-cholesterol",
+          "name": "Total cholesterol",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "mmol/L",
+          "alternate_units": [
+            "mg/dL"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Total Cholesterol"
+          },
+          "catalogue_ref": "cholesterol"
+        },
+        {
+          "id": "hdl-cholesterol",
+          "name": "HDL cholesterol",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "mmol/L",
+          "alternate_units": [
+            "mg/dL"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "HDL - blood"
+          }
+        },
+        {
+          "id": "ldl-cholesterol",
+          "name": "LDL cholesterol",
+          "type": "numeric",
+          "entry_mode": "either",
+          "required": true,
+          "suggested_units": "mmol/L",
+          "alternate_units": [
+            "mg/dL"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "LDL"
+          },
+          "calculation": {
+            "name": "Friedewald equation",
+            "expression": "total_cholesterol - hdl_cholesterol - (triglycerides / 2.2)",
+            "units_basis": "mmol/L",
+            "caveats": "Not valid at high triglycerides (commonly cited limit ~4.5 mmol/L) or in non-fasting samples; many laboratories now measure LDL directly. Divisor differs in mg/dL-based systems.",
+            "clinic_approval_required": true
+          }
+        },
+        {
+          "id": "triglycerides",
+          "name": "Triglycerides",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "mmol/L",
+          "alternate_units": [
+            "mg/dL"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Triglycerides"
+          },
+          "catalogue_ref": "triglycerides"
+        },
+        {
+          "id": "non-hdl-cholesterol",
+          "name": "Non-HDL cholesterol",
+          "type": "numeric",
+          "entry_mode": "calculated",
+          "required": false,
+          "suggested_units": "mmol/L",
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "NON HDL Cholesterol (calculation)"
+          },
+          "calculation": {
+            "name": "Non-HDL cholesterol",
+            "expression": "total_cholesterol - hdl_cholesterol",
+            "units_basis": "mmol/L",
+            "clinic_approval_required": true
+          }
+        },
+        {
+          "id": "cholesterol-hdl-ratio",
+          "name": "Cholesterol / HDL ratio",
+          "type": "numeric",
+          "entry_mode": "calculated",
+          "required": false,
+          "unitless": true,
+          "calculation": {
+            "name": "Cholesterol to HDL ratio",
+            "expression": "total_cholesterol / hdl_cholesterol",
+            "clinic_approval_required": true
+          }
+        }
+      ],
+      "provenance": {
+        "template_source": "curated",
+        "units_source": "mft-biochemistry-reference-ranges",
+        "reference_ranges": "not supplied; owned by the activating clinic",
+        "critical_limits": "not supplied; owned by the activating clinic"
+      },
+      "completeness": {
+        "score": 1.0,
+        "components": 6,
+        "numeric_components": 5,
+        "with_suggested_units": 5,
+        "with_loinc": 0,
+        "measured": 3,
+        "calculated": 3
+      }
+    },
+    {
+      "id": "liver-function-tests",
+      "name": "Liver Function Tests",
+      "description": "Standard hepatic panel.",
+      "version": "0.1.0",
+      "applies_to": [
+        "liver-function-tests"
+      ],
+      "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+      "components": [
+        {
+          "id": "bilirubin-total",
+          "name": "Bilirubin (total)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "μmol/L",
+          "alternate_units": [
+            "mg/dL"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Bilirubin Total"
+          },
+          "catalogue_ref": "bilirubin-total"
+        },
+        {
+          "id": "alt",
+          "name": "Alanine aminotransferase (ALT)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "IU/L",
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Alanine aminotransferase (ALT)"
+          },
+          "catalogue_ref": "alanine-aminotransferase"
+        },
+        {
+          "id": "ast",
+          "name": "Aspartate aminotransferase (AST)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "U/L",
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Aspartate aminotransferase (AST)"
+          },
+          "catalogue_ref": "aspartate-aminotransferase"
+        },
+        {
+          "id": "alp",
+          "name": "Alkaline phosphatase (ALP)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "U/L",
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Alkaline Phosphatase (ALP)"
+          },
+          "catalogue_ref": "alkaline-phosphatase"
+        },
+        {
+          "id": "ggt",
+          "name": "Gamma-glutamyl transferase (GGT)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "U/L",
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Gamma-Glutamyl Transferase (blood)"
+          },
+          "catalogue_ref": "gamma-glutamyl-transferase"
+        },
+        {
+          "id": "albumin",
+          "name": "Albumin",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "g/L",
+          "alternate_units": [
+            "g/dL"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Albumin"
+          },
+          "catalogue_ref": "albumin"
+        },
+        {
+          "id": "total-protein",
+          "name": "Total protein",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "g/L",
+          "alternate_units": [
+            "g/dL"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Protein, total"
+          },
+          "catalogue_ref": "total-protein"
+        }
+      ],
+      "provenance": {
+        "template_source": "curated",
+        "units_source": "mft-biochemistry-reference-ranges",
+        "reference_ranges": "not supplied; owned by the activating clinic",
+        "critical_limits": "not supplied; owned by the activating clinic"
+      },
+      "completeness": {
+        "score": 1.0,
+        "components": 7,
+        "numeric_components": 7,
+        "with_suggested_units": 7,
+        "with_loinc": 0,
+        "measured": 7,
+        "calculated": 0
+      }
+    },
+    {
+      "id": "urea-and-electrolytes",
+      "name": "Urea and Electrolytes",
+      "description": "Core renal and electrolyte panel. No single catalogue entry in this dataset; provided as a reusable starter template.",
+      "version": "0.1.0",
+      "applies_to": [],
+      "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+      "components": [
+        {
+          "id": "sodium",
+          "name": "Sodium",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "mmol/L",
+          "alternate_units": [
+            "mEq/L"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Sodium"
+          },
+          "catalogue_ref": "sodium-blood-and-urine"
+        },
+        {
+          "id": "potassium",
+          "name": "Potassium",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "mmol/L",
+          "alternate_units": [
+            "mEq/L"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Potassium"
+          },
+          "catalogue_ref": "potassium"
+        },
+        {
+          "id": "chloride",
+          "name": "Chloride",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "mmol/L",
+          "alternate_units": [
+            "mEq/L"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Chloride"
+          },
+          "catalogue_ref": "chloride"
+        },
+        {
+          "id": "bicarbonate",
+          "name": "Bicarbonate",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "mmol/L",
+          "alternate_units": [
+            "mEq/L"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Bicarbonate"
+          },
+          "catalogue_ref": "bicarbonate"
+        },
+        {
+          "id": "urea",
+          "name": "Urea",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "mmol/L",
+          "alternate_units": [
+            "mg/dL (as BUN)"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Urea"
+          },
+          "catalogue_ref": "urea-blood-and-urine"
+        },
+        {
+          "id": "creatinine",
+          "name": "Creatinine",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "μmol/L",
+          "alternate_units": [
+            "mg/dL"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Creatinine"
+          },
+          "catalogue_ref": "creatinine-blood-and-urine"
+        },
+        {
+          "id": "egfr",
+          "name": "Estimated GFR",
+          "type": "numeric",
+          "entry_mode": "calculated",
+          "required": false,
+          "suggested_units": "ml/min/1.73 m2",
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Estimated Glomerular Filtration Rate CKD-EPI 2012 (EGFR)"
+          },
+          "catalogue_ref": "egfr-estimated-gfr",
+          "calculation": {
+            "name": "Estimated glomerular filtration rate",
+            "expression": "equation-based (e.g. CKD-EPI 2021); depends on creatinine, age and sex",
+            "caveats": "Equation choice is a clinical policy decision and differs between laboratories and countries. Do not hardcode.",
+            "clinic_approval_required": true
+          }
+        }
+      ],
+      "provenance": {
+        "template_source": "curated",
+        "units_source": "mft-biochemistry-reference-ranges",
+        "reference_ranges": "not supplied; owned by the activating clinic",
+        "critical_limits": "not supplied; owned by the activating clinic"
+      },
+      "completeness": {
+        "score": 1.0,
+        "components": 7,
+        "numeric_components": 7,
+        "with_suggested_units": 7,
+        "with_loinc": 0,
+        "measured": 6,
+        "calculated": 1
+      }
+    },
+    {
+      "id": "bone-profile",
+      "name": "Bone Profile",
+      "description": "Calcium and bone metabolism panel. Provided as a reusable starter template.",
+      "version": "0.1.0",
+      "applies_to": [],
+      "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+      "components": [
+        {
+          "id": "adjusted-calcium",
+          "name": "Adjusted calcium",
+          "type": "numeric",
+          "entry_mode": "either",
+          "required": true,
+          "suggested_units": "mmol/L",
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Adjusted Calcium"
+          },
+          "calculation": {
+            "name": "Albumin-adjusted calcium",
+            "expression": "albumin-adjusted; the adjustment constant is laboratory-specific",
+            "caveats": "Adjustment formulae differ between laboratories. Do not hardcode.",
+            "clinic_approval_required": true
+          }
+        },
+        {
+          "id": "calcium",
+          "name": "Calcium (total)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "mmol/L",
+          "alternate_units": [
+            "mg/dL"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Calcium (serum/plasma)"
+          },
+          "catalogue_ref": "calcium-blood-and-urine"
+        },
+        {
+          "id": "phosphate",
+          "name": "Phosphate",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "mmol/L",
+          "alternate_units": [
+            "mg/dL"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Phosphate (blood)"
+          },
+          "catalogue_ref": "phosphate-blood-and-urine"
+        },
+        {
+          "id": "alp",
+          "name": "Alkaline phosphatase (ALP)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "U/L",
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Alkaline Phosphatase (ALP)"
+          },
+          "catalogue_ref": "alkaline-phosphatase"
+        },
+        {
+          "id": "albumin",
+          "name": "Albumin",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "g/L",
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Albumin"
+          },
+          "catalogue_ref": "albumin"
+        }
+      ],
+      "provenance": {
+        "template_source": "curated",
+        "units_source": "mft-biochemistry-reference-ranges",
+        "reference_ranges": "not supplied; owned by the activating clinic",
+        "critical_limits": "not supplied; owned by the activating clinic"
+      },
+      "completeness": {
+        "score": 1.0,
+        "components": 5,
+        "numeric_components": 5,
+        "with_suggested_units": 5,
+        "with_loinc": 0,
+        "measured": 4,
+        "calculated": 1
+      }
+    },
+    {
+      "id": "thyroid-function-tests",
+      "name": "Thyroid Function Tests",
+      "description": "Thyroid axis panel. Reflex testing policy is clinic-specific.",
+      "version": "0.1.0",
+      "applies_to": [],
+      "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+      "components": [
+        {
+          "id": "tsh",
+          "name": "Thyroid stimulating hormone (TSH)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "mu/L",
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Thyroid Stimulating Hormone (TSH)"
+          },
+          "catalogue_ref": "thyroid-stimulating-hormone"
+        },
+        {
+          "id": "free-t4",
+          "name": "Free thyroxine (FT4)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "pmol/L",
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Free T4"
+          },
+          "catalogue_ref": "free-t4"
+        },
+        {
+          "id": "free-t3",
+          "name": "Free tri-iodothyronine (FT3)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "pmol/L",
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Free T3"
+          },
+          "catalogue_ref": "free-t3"
+        }
+      ],
+      "provenance": {
+        "template_source": "curated",
+        "units_source": "mft-biochemistry-reference-ranges",
+        "reference_ranges": "not supplied; owned by the activating clinic",
+        "critical_limits": "not supplied; owned by the activating clinic"
+      },
+      "completeness": {
+        "score": 1.0,
+        "components": 3,
+        "numeric_components": 3,
+        "with_suggested_units": 3,
+        "with_loinc": 0,
+        "measured": 3,
+        "calculated": 0
+      }
+    },
+    {
+      "id": "full-blood-count",
+      "name": "Full Blood Count",
+      "description": "Automated count and differential. Units follow UK convention and differ elsewhere.",
+      "version": "0.1.0",
+      "applies_to": [
+        "full-blood-count-and-automated-differential"
+      ],
+      "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+      "components": [
+        {
+          "id": "haemoglobin",
+          "name": "Haemoglobin",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "g/L",
+          "alternate_units": [
+            "g/dL"
+          ],
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "white-cell-count",
+          "name": "White cell count",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "x10^9/L",
+          "alternate_units": [
+            "x10^3/µL"
+          ],
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "platelet-count",
+          "name": "Platelet count",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "x10^9/L",
+          "alternate_units": [
+            "x10^3/µL"
+          ],
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "red-cell-count",
+          "name": "Red cell count",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "x10^12/L",
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "haematocrit",
+          "name": "Haematocrit",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "L/L",
+          "alternate_units": [
+            "%"
+          ],
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "mcv",
+          "name": "Mean cell volume (MCV)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "fL",
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "mch",
+          "name": "Mean cell haemoglobin (MCH)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "pg",
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "mchc",
+          "name": "Mean cell haemoglobin concentration (MCHC)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "g/L",
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "rdw",
+          "name": "Red cell distribution width (RDW)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "%",
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "neutrophils",
+          "name": "Neutrophils",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "x10^9/L",
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "lymphocytes",
+          "name": "Lymphocytes",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "x10^9/L",
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "monocytes",
+          "name": "Monocytes",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "x10^9/L",
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "eosinophils",
+          "name": "Eosinophils",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "x10^9/L",
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "basophils",
+          "name": "Basophils",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "x10^9/L",
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "film-comment",
+          "name": "Blood film comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ],
+      "provenance": {
+        "template_source": "curated",
+        "units_source": "mft-biochemistry-reference-ranges",
+        "reference_ranges": "not supplied; owned by the activating clinic",
+        "critical_limits": "not supplied; owned by the activating clinic"
+      },
+      "completeness": {
+        "score": 1.0,
+        "components": 15,
+        "numeric_components": 14,
+        "with_suggested_units": 14,
+        "with_loinc": 0,
+        "measured": 15,
+        "calculated": 0
+      }
+    },
+    {
+      "id": "coagulation-screen",
+      "name": "Coagulation Screen",
+      "description": "Baseline clotting screen. Provided as a reusable starter template.",
+      "version": "0.1.0",
+      "applies_to": [],
+      "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+      "components": [
+        {
+          "id": "prothrombin-time",
+          "name": "Prothrombin time (PT)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "seconds",
+          "units_provenance": {
+            "source": "curated"
+          },
+          "catalogue_ref": "prothrombin-time"
+        },
+        {
+          "id": "inr",
+          "name": "INR",
+          "type": "numeric",
+          "entry_mode": "either",
+          "required": true,
+          "unitless": true,
+          "catalogue_ref": "inr",
+          "calculation": {
+            "name": "International normalised ratio",
+            "expression": "(patient PT / mean normal PT) ^ ISI",
+            "caveats": "Depends on the reagent's ISI and the laboratory's mean normal PT. Analyser-specific.",
+            "clinic_approval_required": true
+          }
+        },
+        {
+          "id": "aptt",
+          "name": "Activated partial thromboplastin time (APTT)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "seconds",
+          "units_provenance": {
+            "source": "curated"
+          },
+          "catalogue_ref": "aptt"
+        },
+        {
+          "id": "fibrinogen",
+          "name": "Fibrinogen",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "g/L",
+          "units_provenance": {
+            "source": "curated"
+          },
+          "catalogue_ref": "fibrinogen"
+        }
+      ],
+      "provenance": {
+        "template_source": "curated",
+        "units_source": "mft-biochemistry-reference-ranges",
+        "reference_ranges": "not supplied; owned by the activating clinic",
+        "critical_limits": "not supplied; owned by the activating clinic"
+      },
+      "completeness": {
+        "score": 1.0,
+        "components": 4,
+        "numeric_components": 3,
+        "with_suggested_units": 3,
+        "with_loinc": 0,
+        "measured": 3,
+        "calculated": 1
+      }
+    },
+    {
+      "id": "iron-studies",
+      "name": "Iron Studies",
+      "description": "Iron status panel. Provided as a reusable starter template.",
+      "version": "0.1.0",
+      "applies_to": [],
+      "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+      "components": [
+        {
+          "id": "iron",
+          "name": "Iron",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "μmol/L",
+          "alternate_units": [
+            "µg/dL"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Iron"
+          },
+          "catalogue_ref": "iron"
+        },
+        {
+          "id": "transferrin",
+          "name": "Transferrin",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "suggested_units": "g/L",
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Transferrin"
+          },
+          "catalogue_ref": "transferrin-and-saturation"
+        },
+        {
+          "id": "transferrin-saturation",
+          "name": "Transferrin saturation",
+          "type": "numeric",
+          "entry_mode": "calculated",
+          "required": false,
+          "suggested_units": "%",
+          "units_provenance": {
+            "source": "curated"
+          },
+          "calculation": {
+            "name": "Transferrin saturation",
+            "expression": "iron / total iron binding capacity x 100",
+            "caveats": "TIBC may be measured directly or derived from transferrin; the derivation is laboratory-specific.",
+            "clinic_approval_required": true
+          }
+        },
+        {
+          "id": "ferritin",
+          "name": "Ferritin",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "μg/L",
+          "alternate_units": [
+            "ng/mL"
+          ],
+          "units_provenance": {
+            "source": "mft-biochemistry-reference-ranges",
+            "analyte": "Ferritin"
+          },
+          "catalogue_ref": "ferritin"
+        }
+      ],
+      "provenance": {
+        "template_source": "curated",
+        "units_source": "mft-biochemistry-reference-ranges",
+        "reference_ranges": "not supplied; owned by the activating clinic",
+        "critical_limits": "not supplied; owned by the activating clinic"
+      },
+      "completeness": {
+        "score": 1.0,
+        "components": 4,
+        "numeric_components": 4,
+        "with_suggested_units": 4,
+        "with_loinc": 0,
+        "measured": 3,
+        "calculated": 1
+      }
+    },
+    {
+      "id": "hba1c",
+      "name": "Glycated Haemoglobin (HbA1c)",
+      "description": "Glycaemic control. IFCC and DCCT/NGSP units are both in use.",
+      "version": "0.1.0",
+      "applies_to": [
+        "glycated-haemoglobin"
+      ],
+      "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+      "components": [
+        {
+          "id": "hba1c-ifcc",
+          "name": "HbA1c (IFCC)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_units": "mmol/mol",
+          "units_provenance": {
+            "source": "curated"
+          }
+        },
+        {
+          "id": "hba1c-dcct",
+          "name": "HbA1c (DCCT/NGSP)",
+          "type": "numeric",
+          "entry_mode": "calculated",
+          "required": false,
+          "suggested_units": "%",
+          "units_provenance": {
+            "source": "curated"
+          },
+          "calculation": {
+            "name": "DCCT/NGSP conversion",
+            "expression": "IFCC-to-DCCT master equation",
+            "caveats": "Report in the unit system your clinicians expect; do not report both without labelling.",
+            "clinic_approval_required": true
+          }
+        }
+      ],
+      "provenance": {
+        "template_source": "curated",
+        "units_source": "mft-biochemistry-reference-ranges",
+        "reference_ranges": "not supplied; owned by the activating clinic",
+        "critical_limits": "not supplied; owned by the activating clinic"
+      },
+      "completeness": {
+        "score": 1.0,
+        "components": 2,
+        "numeric_components": 2,
+        "with_suggested_units": 2,
+        "with_loinc": 0,
+        "measured": 1,
+        "calculated": 1
+      }
+    },
+    {
+      "id": "acute-leukaemia-panel-derived",
+      "name": "Acute Leukaemia Panel",
+      "description": "Markers enumerated by the source for Acute Leukaemia Panel.",
+      "version": "0.1.0",
+      "applies_to": [
+        "acute-leukaemia-panel"
+      ],
+      "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+      "components": [
+        {
+          "id": "cd2",
+          "name": "CD2",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd10",
+          "name": "CD10",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd13",
+          "name": "CD13",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd14",
+          "name": "CD14",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd19",
+          "name": "CD19",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd33",
+          "name": "CD33",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd34",
+          "name": "CD34",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cytocd79a",
+          "name": "cytoCD79a",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd117",
+          "name": "CD117",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cytotdt",
+          "name": "cytoTdT",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cytompo",
+          "name": "cytoMPO",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ],
+      "provenance": {
+        "template_source": "derived-from-source-notes",
+        "source_text": "Can include: CD2, CD10, CD13, CD14, CD19, CD33, CD34, cytoCD79a, CD117, cytoTdT, cytoMPO",
+        "confidence": "low",
+        "reference_ranges": "not supplied; owned by the activating clinic",
+        "critical_limits": "not supplied; owned by the activating clinic"
+      },
+      "completeness": {
+        "score": 0.0,
+        "components": 11,
+        "numeric_components": 0,
+        "with_suggested_units": 0,
+        "with_loinc": 0,
+        "measured": 11,
+        "calculated": 0
+      }
+    },
+    {
+      "id": "antinuclear-antibody-ana-derived",
+      "name": "Antinuclear antibody (ANA)",
+      "description": "Markers enumerated by the source for Antinuclear antibody (ANA).",
+      "version": "0.1.0",
+      "applies_to": [
+        "antinuclear-antibody-ana"
+      ],
+      "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+      "components": [
+        {
+          "id": "ro-ss-a-52",
+          "name": "Ro (SS-A 52",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "ssa-60",
+          "name": "SSA-60)",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "la-ss-b",
+          "name": "La (SS-B)",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "sm",
+          "name": "Sm",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "rnp",
+          "name": "RNP",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "rnp-rnp-a",
+          "name": "RNP (RNP A",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "rnp-68",
+          "name": "RNP 68)",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "ribosomal-p",
+          "name": "Ribosomal P",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "chromatin",
+          "name": "Chromatin",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "jo-1",
+          "name": "Jo-1",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "and-scl-70",
+          "name": "and Scl-70",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ],
+      "provenance": {
+        "template_source": "derived-from-source-notes",
+        "source_text": "ENA antibodies includes: Ro (SS-A 52, SSA-60), La (SS-B), Sm, Sm/RNP, RNP (RNP A, RNP 68), Ribosomal P, Chromatin, Jo-1, and Scl-70",
+        "confidence": "low",
+        "reference_ranges": "not supplied; owned by the activating clinic",
+        "critical_limits": "not supplied; owned by the activating clinic"
+      },
+      "completeness": {
+        "score": 0.0,
+        "components": 11,
+        "numeric_components": 0,
+        "with_suggested_units": 0,
+        "with_loinc": 0,
+        "measured": 11,
+        "calculated": 0
+      }
+    },
+    {
+      "id": "chronic-lymphocytic-lymphoma-panel-derived",
+      "name": "Chronic lymphocytic/lymphoma panel",
+      "description": "Markers enumerated by the source for Chronic lymphocytic/lymphoma panel.",
+      "version": "0.1.0",
+      "applies_to": [
+        "chronic-lymphocytic-lymphoma-panel"
+      ],
+      "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+      "components": [
+        {
+          "id": "cd2",
+          "name": "CD2",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd3",
+          "name": "CD3",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd4",
+          "name": "CD4",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd5",
+          "name": "CD5",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd8",
+          "name": "CD8",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd10",
+          "name": "CD10",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd11c",
+          "name": "CD11c",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd16",
+          "name": "CD16",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd56",
+          "name": "CD56",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd19",
+          "name": "CD19",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd23",
+          "name": "CD23",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd25",
+          "name": "CD25",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd38",
+          "name": "CD38",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "cd79b",
+          "name": "CD79b",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "fmc7",
+          "name": "FMC7",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ],
+      "provenance": {
+        "template_source": "derived-from-source-notes",
+        "source_text": "Can include: CD2, CD3, CD4, CD5, CD8, CD10, CD11c, CD16/CD56, CD19, CD23, CD25, CD38, CD79b, FMC7, Kappa and lambda light chains on B cells",
+        "confidence": "low",
+        "reference_ranges": "not supplied; owned by the activating clinic",
+        "critical_limits": "not supplied; owned by the activating clinic"
+      },
+      "completeness": {
+        "score": 0.0,
+        "components": 15,
+        "numeric_components": 0,
+        "with_suggested_units": 0,
+        "with_loinc": 0,
+        "measured": 15,
+        "calculated": 0
+      }
+    }
+  ]
+}

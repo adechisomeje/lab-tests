@@ -47,6 +47,11 @@
       "turnaround": {
         "raw": "This assay is performed every day, Monday-Friday. Turnaround time: 95% within one weekday."
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "clinical": {
         "references": "BioRad Platelia Aspergillus Ag, SEMI-QUANTITATIVE IMMUNOENZYMATIC SANDWICH MICROPLATE ASSAY FOR THE DETECTION OF ASPERGILLUS GALACTOMANNAN ANTIGEN IN ADULT AND PEDIATRIC SERUM SPECIMENS AND BRONCHOALVEOLAR LAVAGE (BAL) FLUID SPECIMENS, version 0001315 - 2023/07.\n\nToine Mercier et al., Defining Galactomannan Positivity in the Updated EORTC/MSGERC Consensus Definitions of Invasive Fungal Diseases, Clinical Infectious Diseases, Volume 72, Issue Supplement_2, 15 March 2021, Pages S89-S94, https://doi.org/10.1093/cid/ciaa1786."
       },
@@ -56,7 +61,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Aspergillus-galactomannan.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -117,6 +122,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "clinical": {
         "references": "ELITech Aspergillus spp. ELITe MGB Kit product insert, SCH mRTS110PLD, 28/07/2023, Review 10\n\nDonnelly JP, Chen SC, Kauffman CA, et al., Revision and Update of the Consensus Definitions of Invasive Fungal Disease From the European Organization for Research and Treatment of Cancer and the Mycoses Study Group Education and Research Consortium, Clinical Infectious Diseases, Volume 71, Issue 6, 15 September 2020, Pages 1367-1376, https://doi.org/10.1093/cid/ciz1008.\n\nWhite PL, Bretagne S, Caliendo AM, et al., Aspergillus Polymerase Chain Reaction—An Update on Technical Recommendations, Clinical Applications, and Justification for Inclusion in the Second Revision of the EORTC/MSGERC Definitions of Invasive Fungal Disease, Clinical Infectious Diseases, Volume 72, Issue Supplement_2, 15 March 2021, Pages S95-S101, https://doi.org/10.1093/cid/ciaa1865.\n\nUllmann AJ, Aguado JM, Arikan-Akdagli S, et al., Diagnosis and management of Aspergillus diseases: executive summary of the 2017 ESCMID-ECMM- ERS guideline. Clin Microbiol Infect. 2018 May;24 Suppl 1:e1-e38. doi: 10.1016/j.cmi.2018.01.002."
       },
@@ -126,7 +136,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Aspergillus-PCR-on-respiratory-samples.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -183,6 +193,11 @@
       "turnaround": {
         "raw": "This assay is performed on demand. Turnaround time: >95% within one working day."
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "clinical": {
         "references": "Cryptococcal Antigen lateral Flow assay for the detection of cryptococcal antigen, IMMY Inc. Doc PIS-00107, Rev. 2, 2024-09-19."
       },
@@ -192,7 +207,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Cryptococcal-antigen-lateral-flow-test.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -244,6 +259,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "clinical": {
         "references": "Ameen M, Lear JT, Madan V, Mohd Mustapa MF, Richardson M. British Association of Dermatologists' guidelines for the management of onychomycosis 2014. Br J Dermatol. 2014 Nov;171(5):937-58. doi: 10.1111/bjd.13358. Chowdhary A, Singh A, Kaur A, Khurana A. The emergence and worldwide spread of the species Trichophyton indotineae causing difficult-to-treat dermatophytosis: A new challenge in the management of dermatophytosis. PLoS Pathog. 2022 Sep 29;18(9):e1010795. doi: 10.1371/journal.ppat.1010795."
       },
@@ -253,7 +273,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Dermatophytes-and-non-dermatophytes-from-skin-nail-and-hair.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -306,13 +326,18 @@
       "turnaround": {
         "raw": "This assay is performed on demand. Turnaround time: 95% within one working day."
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Flucytosine-assay.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -365,6 +390,11 @@
       "turnaround": {
         "raw": "This assay is performed every day, Monday-Friday. Turnaround time: 95% within two weekdays, generally available within one weekday."
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "clinical": {
         "references": "Finkelman, M.A. Specificity Influences in (1>3) β-D-Glucan-Supported Diagnosis of Invasive Fungal Disease. J. Fungi 2021, 7, 14. https://doi.org/10.3390/jof7010014.\n\nKarageorgopoulos DE, Qu JM, Korbila IP, Zhu YG, Vasileiou VA, Falagas ME. Accuracy of β-D-glucan for the diagnosis of Pneumocystis jirovecii pneumonia: a meta-analysis. Clin Microbiol Infect. 2013 Jan;19(1):39-49. doi: 10.1111/j.1469-0691.2011.03760.x. Assay for (1>3)-β-D-Glucan in Serum, FUNGITELL® ASSAY, Instructions For Use, PN001268-en Rev12, 2023-06-13."
       },
@@ -374,7 +404,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/11/Fungal-beta-D-glucan-assay.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -430,13 +460,18 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Isavuconazole.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -491,13 +526,18 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Itraconazole.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -552,13 +592,18 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Posaconazole.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -613,13 +658,18 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Voriconazole.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -675,6 +725,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "clinical": {
         "references": "https://www.eucast.org/fungi-afst/methodology-and-instructions/ast-of-yeasts/ https://www.eucast.org/fungi-afst/methodology-and-instructions/ast-of-moulds/ https://www.eucast.org/fungi-afst/clinical-breakpoints-and-interpretation/clinical-breakpoint-table/"
       },
@@ -684,7 +739,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/05/Identification-and-susceptibility-testing-of-yeasts-and-moulds.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {

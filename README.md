@@ -263,12 +263,63 @@ keeping them as data rather than burying them in code.
 | `data/by-department/*.json` | Per-department slices (14 files) |
 | `data/by-clinic/*.json` | Per-clinic slices (28 files) |
 | `schema/test.schema.json` | JSON Schema (draft 2020-12) for a test record |
-| `taxonomy/*.json` | The category and clinic rules — edit these to reclassify |
+| `taxonomy/*.json` | The category, clinic and result-template rules — edit to change |
+| `data/result-templates.json` | Starter templates for structured result entry |
 | `data/providers.json` | Per-provider collection guidance, incl. order of draw |
 | `*.go` | Go package: `Interpret`, `Draw`, `Search`, `OrderSet` |
 | `packages/typescript` · `packages/python` | TypeScript and Python ports |
 | `conformance/vectors.json` | Shared behavioural contract for every port |
 | `docs/EMR-INTEGRATION.md` | Building a lab module on this: schema, seeding, safety |
+
+---
+
+## Structured result entry
+
+For a clinic capturing results in-house, a test needs to say *what fields to
+record*. `result_format` says whether structured entry is appropriate at all,
+and `result_template` supplies the components when it is.
+
+```ts
+const t = cat.get(testId);
+t.result_format;           // panel | single-analyte | qualitative
+                           // narrative | document | unstructured
+cat.resultTemplate(testId) // components, when the test is a panel
+```
+
+Of the 508 tests: 187 are `single-analyte` (one field), 83 `qualitative`,
+65 `narrative` (cytology and histopathology — written findings, never fields),
+24 `document` (referral laboratory returns its own report), and 7 have a bound
+panel template.
+
+A lipid profile seeds:
+
+| Component | Entry mode | Required | Suggested units |
+| --- | --- | --- | --- |
+| Total cholesterol | measured | yes | mmol/L |
+| HDL cholesterol | measured | yes | mmol/L |
+| LDL cholesterol | **either** | yes | mmol/L |
+| Triglycerides | measured | yes | mmol/L |
+| Non-HDL cholesterol | calculated | no | mmol/L |
+| Cholesterol / HDL ratio | calculated | no | *(ratio)* |
+
+`either` means measure directly or apply a clinic-approved calculation. The
+library supplies the equation and its caveats; it never computes it.
+
+**These are starter templates, never authoritative.** They carry **no reference
+ranges and no critical limits** — a conformance vector fails the build if a
+component ever gains one. Those vary by analyser and population and belong to
+the clinic's activated, versioned definition. Units are suggestions carrying
+`units_provenance`; `alternate_units` names other measurement systems but
+supplies no conversion factors.
+
+12 templates ship (9 curated, 3 derived from markers the source lists in its own
+notes). Five — `urea-and-electrolytes`, `bone-profile`,
+`thyroid-function-tests`, `coagulation-screen`, `iron-studies` — are reusable
+starting points with no matching catalogue test, reachable by id.
+
+Full integration model, including how to version an activated copy so a result
+screen renders the template the clinician ordered against:
+[docs/EMR-INTEGRATION.md §5a](docs/EMR-INTEGRATION.md).
 
 ---
 
@@ -299,6 +350,7 @@ make test        # runs Go, TypeScript and Python against the vectors
 | `interpret` | Band selection, age units, and the safety refusals |
 | `draw` | Tube grouping, order of draw, warnings, unresolved tests |
 | `search` / `order_set` | Ranking, accent-insensitivity, profile membership |
+| `result_format` / `result_template` | Entry shape, components, and that templates never carry ranges |
 
 Cases named `SAFETY:` assert that the library **declines to answer** rather than
 guessing. Adding a language? See [`conformance/README.md`](conformance/README.md).

@@ -102,12 +102,17 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mg/mmol"
+      },
       "notes": "ACR",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -185,6 +190,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Copies/mL"
+      },
       "notes": "Polyoma viruses (BK)",
       "source": {
         "provider": "mft-nhs",
@@ -192,7 +202,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/BK-virus-PCR.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -239,11 +249,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -303,6 +318,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Stem Cell Transplantation, CAR-T cell therapy and DLI",
         "repeat_frequency": "Each day or stem cell harvest"
@@ -313,7 +333,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/CD34-Stem-cells.pdf",
         "detail_type": "pdf",
         "last_updated": "June 2021",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -388,6 +408,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "For use as a monitoring tool in serologically confirmed HIV infection. Should not be used in an attempt to diagnose HIV infection.",
         "repeat_frequency": "Three times a year in asymptomatic patients, more frequently in those with symptoms or when medication is being changed."
@@ -398,7 +423,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/CD4-count-T-cell-count.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2020",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -477,6 +502,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mL Wild type / resistant mutation"
+      },
       "notes": "Cytomegalovirus anitviral resistance markers",
       "source": {
         "provider": "mft-nhs",
@@ -484,7 +514,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/12/CMV-Cytomegalovirus-antiviral-resistance-markers.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -564,6 +594,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in AU/mL"
+      },
       "notes": "Cytomegalovirus (CMV) IgG",
       "source": {
         "provider": "mft-nhs",
@@ -571,7 +606,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Cytomegalovirus-CMV-IgG.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -649,6 +684,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "notes": "Cytomegalovirus (CMV) IgG avidity",
       "source": {
         "provider": "mft-nhs",
@@ -656,7 +696,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Cytomegalovirus-CMV-IgG-avidity.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -735,6 +775,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "notes": "Cytomegalovirus (CMV) IgM",
       "source": {
         "provider": "mft-nhs",
@@ -742,7 +787,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Cytomegalovirus-CMV-IgM.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -794,6 +839,11 @@
       "analysis": {
         "interferences": "False negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay. New and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
       },
+      "result_format": {
+        "kind": "qualitative",
+        "structured_entry": true,
+        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+      },
       "notes": "Cytomegalovirus viral load",
       "source": {
         "provider": "mft-nhs",
@@ -801,7 +851,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Cytomegalovirus-viral-load.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2017",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1362,11 +1412,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -1481,11 +1536,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mL/min"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -1530,11 +1590,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1594,12 +1659,17 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in ug/L"
+      },
       "notes": "Ciclosporin",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.27,
@@ -1666,6 +1736,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in U/mL"
+      },
       "notes": "EBNA, Epstein Barr Virus (EBNA)",
       "source": {
         "provider": "mft-nhs",
@@ -1673,7 +1748,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/11/Epstein-Barr-Virus-EBNA-‐-confirmation.pdf",
         "detail_type": "pdf",
         "last_updated": "November 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1777,11 +1852,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in ml/min/1.73 m2"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -1857,6 +1937,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in U/mL"
+      },
       "notes": "EBV VCA IgG, IgM",
       "source": {
         "provider": "mft-nhs",
@@ -1864,7 +1949,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Epstein-Barr-Virus-EBV-IgG%E2%80%90screening.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1938,6 +2023,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Copies/mL"
+      },
       "notes": "EBV viral load",
       "source": {
         "provider": "mft-nhs",
@@ -1945,7 +2035,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/10/Epstein-Barr-virus-viral-load.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2044,11 +2134,216 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "full-blood-count",
+        "name": "Full Blood Count",
+        "description": "Automated count and differential. Units follow UK convention and differ elsewhere.",
+        "version": "0.1.0",
+        "applies_to": [
+          "full-blood-count-and-automated-differential"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "haemoglobin",
+            "name": "Haemoglobin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "g/L",
+            "alternate_units": [
+              "g/dL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "white-cell-count",
+            "name": "White cell count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "alternate_units": [
+              "x10^3/µL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "platelet-count",
+            "name": "Platelet count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "alternate_units": [
+              "x10^3/µL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "red-cell-count",
+            "name": "Red cell count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^12/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "haematocrit",
+            "name": "Haematocrit",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "L/L",
+            "alternate_units": [
+              "%"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mcv",
+            "name": "Mean cell volume (MCV)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "fL",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mch",
+            "name": "Mean cell haemoglobin (MCH)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "pg",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mchc",
+            "name": "Mean cell haemoglobin concentration (MCHC)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "g/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "rdw",
+            "name": "Red cell distribution width (RDW)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "%",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "neutrophils",
+            "name": "Neutrophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "lymphocytes",
+            "name": "Lymphocytes",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "monocytes",
+            "name": "Monocytes",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "eosinophils",
+            "name": "Eosinophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "basophils",
+            "name": "Basophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "film-comment",
+            "name": "Blood film comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "curated",
+          "units_source": "mft-biochemistry-reference-ranges",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 15,
+          "numeric_components": 14,
+          "with_suggested_units": 14,
+          "with_loinc": 0,
+          "measured": 15,
+          "calculated": 0
+        }
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -2115,11 +2410,16 @@
           "core": true
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -2188,11 +2488,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2272,11 +2577,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2440,12 +2750,17 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in g/L"
+      },
       "notes": "Protein creatine ratio",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.36,
@@ -2618,11 +2933,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in mmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,

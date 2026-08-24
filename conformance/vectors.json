@@ -536,5 +536,133 @@
       "core_only": true,
       "expect_error": "unknown_profile"
     }
+  ],
+  "result_format": [
+    {
+      "name": "panel",
+      "test_id": "lipid-profile-incl-total-cholesterol-ldl-hdl-triglyceride",
+      "expect": {
+        "kind": "panel",
+        "structured_entry": true
+      }
+    },
+    {
+      "name": "narrative results must not be entered as fields",
+      "test_id": "cervical-cytology",
+      "expect": {
+        "kind": "narrative",
+        "structured_entry": false
+      }
+    },
+    {
+      "name": "referral work returns its own report",
+      "test_id": "anti-c1q",
+      "expect": {
+        "kind": "document",
+        "structured_entry": false
+      }
+    },
+    {
+      "name": "single measured quantity",
+      "test_id": "alanine-aminotransferase",
+      "expect": {
+        "kind": "single-analyte",
+        "structured_entry": true
+      }
+    },
+    {
+      "name": "culture report",
+      "test_id": "abscesses-and-deep-seated-wound-infections",
+      "expect": {
+        "kind": "qualitative",
+        "structured_entry": true
+      }
+    },
+    {
+      "name": "nothing published to structure entry around",
+      "test_id": "acetyl-choline-receptor-antibodies",
+      "expect": {
+        "kind": "unstructured",
+        "structured_entry": false
+      }
+    }
+  ],
+  "result_template": [
+    {
+      "name": "lipid profile seeds the components the EMR expects",
+      "test_id": "lipid-profile-incl-total-cholesterol-ldl-hdl-triglyceride",
+      "expect": {
+        "template_id": "lipid-profile",
+        "component_ids": [
+          "total-cholesterol",
+          "hdl-cholesterol",
+          "ldl-cholesterol",
+          "triglycerides",
+          "non-hdl-cholesterol",
+          "cholesterol-hdl-ratio"
+        ],
+        "completeness_score": 1.0,
+        "components": {
+          "total-cholesterol": {
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mmol/L"
+          },
+          "ldl-cholesterol": {
+            "entry_mode": "either",
+            "required": true,
+            "has_calculation": true
+          },
+          "non-hdl-cholesterol": {
+            "entry_mode": "calculated",
+            "required": false
+          },
+          "cholesterol-hdl-ratio": {
+            "unitless": true,
+            "entry_mode": "calculated"
+          }
+        }
+      }
+    },
+    {
+      "name": "SAFETY: templates must never carry reference ranges or critical limits",
+      "test_id": "lipid-profile-incl-total-cholesterol-ldl-hdl-triglyceride",
+      "expect": {
+        "no_component_keys": [
+          "reference_range",
+          "reference_intervals",
+          "critical_low",
+          "critical_high",
+          "critical_limits"
+        ]
+      }
+    },
+    {
+      "name": "standalone starter template with no matching catalogue test",
+      "template_id": "urea-and-electrolytes",
+      "expect": {
+        "component_count": 7,
+        "applies_to": []
+      }
+    },
+    {
+      "name": "template derived from the source's own notes is flagged low confidence",
+      "test_id": "acute-leukaemia-panel",
+      "expect": {
+        "template_id": "acute-leukaemia-panel-derived",
+        "template_source": "derived-from-source-notes"
+      }
+    },
+    {
+      "name": "a narrative test has no result template",
+      "test_id": "cervical-cytology",
+      "expect_no_template": true
+    },
+    {
+      "name": "unknown template id resolves to nothing",
+      "template_id": "no-such-template",
+      "expect_no_template": true
+    }
   ]
 }

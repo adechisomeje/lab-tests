@@ -19,7 +19,13 @@ from .errors import (
 from .fold import fold
 from .interpret import Interpretation, Patient, classify, select_stratum
 
-_DATA_FILES = ("tests.json", "clinic-profiles.json", "categories.json", "providers.json")
+_DATA_FILES = (
+    "tests.json",
+    "clinic-profiles.json",
+    "categories.json",
+    "providers.json",
+    "result-templates.json",
+)
 
 
 def _resolve_data_dir(explicit: str | pathlib.Path | None = None) -> pathlib.Path:
@@ -61,6 +67,9 @@ class Catalogue:
         self._profiles = {p["id"]: p for p in docs["clinic-profiles.json"]["profiles"]}
         self._categories = {c["id"]: c for c in docs["categories.json"]["categories"]}
         self._providers = {p["id"]: p for p in docs["providers.json"]["providers"]}
+        self._templates = {
+            t["id"]: t for t in docs["result-templates.json"]["templates"]
+        }
 
         self._haystack = {
             t["id"]: fold(" ".join([t["name"], *t.get("aliases", [])])) for t in self._tests
@@ -135,6 +144,29 @@ class Catalogue:
                 out.append(Match(test=t, score=score))
         out.sort(key=lambda m: (-m.score, m.test["name"]))
         return out[:limit] if limit > 0 else out
+
+    def result_template(self, test_id: str) -> dict[str, Any] | None:
+        """The starter template seeding structured result entry for a test.
+
+        A starting point, not a specification: copy it into your own catalogue,
+        confirm every component and unit against your analyser, and treat your
+        versioned copy as authoritative. Check ``test["result_format"]`` first --
+        narrative and document results should not be captured as fields at all.
+        """
+        t = self._by_id.get(test_id)
+        return (t or {}).get("result_template")
+
+    def template(self, template_id: str) -> dict[str, Any] | None:
+        """A starter template by its own id.
+
+        Some templates, such as ``urea-and-electrolytes``, are reusable starting
+        points with no matching test in this catalogue.
+        """
+        return self._templates.get(template_id)
+
+    def templates(self) -> list[dict[str, Any]]:
+        """Every starter template, ordered by id."""
+        return sorted(self._templates.values(), key=lambda t: t["id"])
 
     def turnaround(self, test_id: str) -> dict[str, float] | None:
         t = self._by_id.get(test_id)

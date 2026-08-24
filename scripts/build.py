@@ -20,6 +20,11 @@ import unicodedata
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from match import Matcher, fold  # noqa: E402
+from result_templates import (  # noqa: E402
+    build_templates,
+    classify_result_format,
+    derive_from_notes,
+)
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 RAW = ROOT / "raw"
@@ -491,6 +496,47 @@ def score_completeness(records):
 
 
 
+def attach_result_templates(records) -> dict:
+    """Attach starter result templates and classify each test's result shape."""
+    tax = json.loads((TAX / "result-templates.json").read_text(encoding="utf-8"))
+    ids = {r["id"] for r in records}
+    templates, warns = build_templates(ids)
+    for w in warns:
+        print(f"  WARN template: {w}")
+
+    by_test = {}
+    for tpl in templates:
+        for tid in tpl["applies_to"]:
+            by_test[tid] = tpl
+
+    # Panels whose constituent markers the source lists in its notes column.
+    derived = 0
+    for rec in records:
+        if rec["id"] in by_test:
+            continue
+        d = derive_from_notes(rec, tax["version"], tax["notice"])
+        if d:
+            by_test[rec["id"]] = d
+            templates.append(d)
+            derived += 1
+
+    for rec in records:
+        tpl = by_test.get(rec["id"])
+        if tpl:
+            rec["result_template"] = tpl
+        rec["result_format"] = classify_result_format(rec, bool(tpl))
+
+    kinds = collections.Counter(r["result_format"]["kind"] for r in records)
+    return {
+        "templates": len(templates),
+        "curated": len(templates) - derived,
+        "derived": derived,
+        "tests_with_template": len(by_test),
+        "formats": dict(kinds),
+        "_templates": templates,
+    }
+
+
 def strip_nulls(obj):
     """Drop null/empty leaves so the published JSON stays readable."""
     if isinstance(obj, dict):
@@ -517,6 +563,7 @@ def main():
 
     records, unresolved = build_records()
     range_stats = merge_reference_ranges(records)
+    template_stats = attach_result_templates(records)
     score_completeness(records)
     apply_categories(records, categories)
     apply_profiles(records, profiles)
@@ -536,8 +583,9 @@ def main():
 
     KEY_ORDER = ["id", "name", "aliases", "description", "department", "letter",
                  "categories", "clinic_profiles", "specimen", "analysis",
-                 "reference_intervals", "turnaround", "clinical", "referred_to",
-                 "notes", "source", "completeness"]
+                 "reference_intervals", "turnaround", "result_format",
+                 "result_template", "clinical", "referred_to", "notes",
+                 "source", "completeness"]
     clean = []
     for r in records:
         c = strip_nulls(r)
@@ -598,6 +646,15 @@ def main():
         {**v, "test_count": len(v["test_ids"]), "core_test_count": len(v["core_test_ids"])}
         for v in prof_index.values()]})
 
+    write(DATA / "result-templates.json", {
+        "meta": {
+            "version": VERSION,
+            "notice": json.loads(
+                (TAX / "result-templates.json").read_text(encoding="utf-8"))["notice"],
+        },
+        "templates": template_stats.pop("_templates"),
+    })
+
     guidance = json.loads((TAX / "collection-guidance.json").read_text(encoding="utf-8"))
     write(DATA / "providers.json", {
         "meta": {"version": VERSION},
@@ -630,6 +687,7 @@ def main():
     # Report
     print(f"tests: {len(clean)}   departments: {len(dept)}")
     print(f"reference-range linkage: {range_stats}")
+    print(f"result templates: {template_stats}")
     print(f"unresolved aliases: {len(unresolved)}")
     with_pdf = sum(1 for t in clean if t.get("completeness", {}).get("has_detail_sheet"))
     avg = sum(t["completeness"]["score"] for t in clean) / len(clean)

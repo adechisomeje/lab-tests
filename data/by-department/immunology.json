@@ -55,6 +55,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "90% of patients with generalised myasthenia gravis and about 60-70% of patients with ocular myasthenia have detectable AChR antibodies. Can be used to monitor disease activity, but antibodies may persist in 60% of patients even if disease is in remission.\n\nThe assay also detects antibodies to the foetal form of the AChR in mother of foetuses with Arthrogryposis multiplex congenital.",
         "repeat_frequency": "At change of clinical symptoms"
@@ -65,7 +70,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/06/Acetylcholine-receptor-antibody.pdf",
         "detail_type": "pdf",
         "last_updated": "June 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -130,6 +135,116 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "acute-leukaemia-panel-derived",
+        "name": "Acute Leukaemia Panel",
+        "description": "Markers enumerated by the source for Acute Leukaemia Panel.",
+        "version": "0.1.0",
+        "applies_to": [
+          "acute-leukaemia-panel"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "cd2",
+            "name": "CD2",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd10",
+            "name": "CD10",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd13",
+            "name": "CD13",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd14",
+            "name": "CD14",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd19",
+            "name": "CD19",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd33",
+            "name": "CD33",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd34",
+            "name": "CD34",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cytocd79a",
+            "name": "cytoCD79a",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd117",
+            "name": "CD117",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cytotdt",
+            "name": "cytoTdT",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cytompo",
+            "name": "cytoMPO",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "derived-from-source-notes",
+          "source_text": "Can include: CD2, CD10, CD13, CD14, CD19, CD33, CD34, cytoCD79a, CD117, cytoTdT, cytoMPO",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 11,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 11,
+          "calculated": 0
+        }
+      },
       "clinical": {
         "indications": "Suspected acute leukaemia, to confirm relapse, to confirm remission",
         "repeat_frequency": "Post treatment monitoring, suspected relapse and MRD"
@@ -141,7 +256,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/03/Acute-Leukaemia-panel.pdf",
         "detail_type": "pdf",
         "last_updated": "March 2022",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -207,6 +322,11 @@
           "max": 6.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "• Addison's Disease with associated other organ-specific autoimmune conditions. • Patients with chronic mucocutaneous candidiasis with endocrinopathy.",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -217,7 +337,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Adrenal-antibody.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -287,6 +407,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Allergic conditions when allergen is suspected and mentioned on request",
         "repeat_frequency": ">1 year unless marked changes in allergic condition"
@@ -297,7 +422,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Allergen-Specific-IgE.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -361,6 +486,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "HIV, SLE with renal involvement",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -372,7 +502,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Anti-C1q.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -438,6 +568,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "repeat_frequency": "Significant change of clinical symptoms"
       },
@@ -449,7 +584,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Anti-Myelin-oligodendrocyte-glycoprotein-MOG-Antibodies-Referred-Test.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -508,6 +643,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Sydenham's chorea",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -519,7 +659,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Anti-Basal-Ganglia-Abs.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -583,6 +723,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "CCP antibodies are targeted against citrullinated peptides are highly specific to rheumatoid arthritis (RA) but may also be of value in the development of radiographic joint damage. CCP antibodies are implicated in the early diagnosis of RA and offer a marker that is more specific than Rheumatoid Factor.",
         "repeat_frequency": "At significant change of symptoms"
@@ -594,7 +739,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/01/Anti-Cyclic-citrullinated-peptide-CCP.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -666,6 +811,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "ANCA testing is helpful in patients with vasculitis affecting the kidneys",
         "repeat_frequency": "No more frequently than every four weeks, except when plasmapheresis is being done."
@@ -677,7 +827,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Anti-Neutrophil-cytoplasmic-antibody-ANCA.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -756,6 +906,116 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "antinuclear-antibody-ana-derived",
+        "name": "Antinuclear antibody (ANA)",
+        "description": "Markers enumerated by the source for Antinuclear antibody (ANA).",
+        "version": "0.1.0",
+        "applies_to": [
+          "antinuclear-antibody-ana"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "ro-ss-a-52",
+            "name": "Ro (SS-A 52",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "ssa-60",
+            "name": "SSA-60)",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "la-ss-b",
+            "name": "La (SS-B)",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "sm",
+            "name": "Sm",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "rnp",
+            "name": "RNP",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "rnp-rnp-a",
+            "name": "RNP (RNP A",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "rnp-68",
+            "name": "RNP 68)",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "ribosomal-p",
+            "name": "Ribosomal P",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "chromatin",
+            "name": "Chromatin",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "jo-1",
+            "name": "Jo-1",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "and-scl-70",
+            "name": "and Scl-70",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "derived-from-source-notes",
+          "source_text": "ENA antibodies includes: Ro (SS-A 52, SSA-60), La (SS-B), Sm, Sm/RNP, RNP (RNP A, RNP 68), Ribosomal P, Chromatin, Jo-1, and Scl-70",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 11,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 11,
+          "calculated": 0
+        }
+      },
       "clinical": {
         "indications": "Suspected SLE, connective tissue disease, hepatitis or drug induced lupus, where the routine ANA is negative. This test can also be useful particularly in the context of investigation of autoimmune hepatitis. Some commonly seen staining patterns are highlighted below:\n\nImmunology • Centromere pattern - limited cutaneous systemic sclerosis, primary biliary cirrhosis • Homogeneous pattern - SLE, autoimmune hepatitis, Juvenile Idiopathic Arthritis, mixed connective tissue disease • Speckled pattern - SLE, Sjögren's syndrome, autoimmune myopathy, systemic sclerosis, mixed connective tissue disease; note speckled ANA can be associated with antibodies to SS-A and SS-B which carry a risk of neonatal lupus and congenital heart block • Nucleolar pattern - systemic sclerosis, systemic sclerosis-autoimmune myopathy overlap and can be seen in other connective tissue diseases • Multiple nuclear dots patterns - primary biliary cirrhosis, autoimmune myopathy and other autoimmune/inflammatory conditions",
         "repeat_frequency": "Not more than once a year, unless clinical picture has changed"
@@ -767,7 +1027,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/Antinuclear-antibody-ANA.pdf",
         "detail_type": "pdf",
         "last_updated": "February 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -832,6 +1092,11 @@
           "max": 6.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Suspected primary immunodeficiencies involving complement components e.g. recurrent infections and in the investigation of complement mediated renal disease.",
         "repeat_frequency": "At significant change in symptoms"
@@ -842,7 +1107,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/10/AP100-Alternative-Pathway-Haemolytic-Complement.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -901,6 +1166,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Neuromyelitis Optica (optic neuritis, transverse myelitis), Devic's disease",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -912,7 +1182,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Aquaporin-4-NMO-Neuro-Myelitis-Optica-Abs.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -984,6 +1254,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Allergic bronchopulmonary aspergillosis - IgG antibodies are a useful aid to diagnosis in the following settings:\n\n• Bronchopulmonary aspergillosis; usually presents as deteriorating or brittle asthma. IgE antibodies should also be checked. • Aspergilloma; these may form in cavities or bronchiectatic lung. For example, this test is used to check for aspergilloma in patients with cystic fibrosis. • Hypersensitivity pneumonitis 24 hours after inhalation of spores.",
         "repeat_frequency": "On appearance of new symptoms"
@@ -994,7 +1269,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Aspergillus-fumigatus-precipitins.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1063,6 +1338,11 @@
           "max": 10.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Please see the user guide for individual analytes"
+      },
       "clinical": {
         "interpretation": "Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of autoantibody testing.\n\nImmunology"
       },
@@ -1072,7 +1352,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Autoimmune-diabetes-marker-panel.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1140,6 +1420,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Respiratory symptoms associated with avian exposure",
         "repeat_frequency": "On appearance of new symptoms"
@@ -1150,7 +1435,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Avian-precipitins.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1212,6 +1497,11 @@
       "turnaround": {
         "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in % (as percentage of all CD19+ B cells)"
+      },
       "clinical": {
         "interpretation": "Use of B cell phenotyping in the investigation/monitoring of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric).\n\nImmunology The B cell subsets that are reported are detailed in the below table. Reference ranges are not available for most of these cells groups and any results should be discussed with a consultant immunologist.\n\nB cell subset Immunophenotype Clinical comments Naïve IgM+ IgD+ CD27-\n\nUnswitched memory IgM+ IgD+ CD27+\n\nReduced in CVID Reduction may be associated with granulomatous disease Switched memory IgM- IgD- CD27+ *also see reference range below\n\nInverse correlates with serum IgA and IgG levels Reduced in CVID Severe reduction associated with granulomatous disease < 2% CSM classifies as SmB- (EUROCLASS) - Associated with low IgG and IgA at time of diagnosis; low absolute numbers of marginal zone B-cells and low absolute and relative numbers of plasmablasts - increased association with splenomegaly and granulomatous disease Transitional IgD+ IgM+ CD27- CD24+ CD38+\n\nExpansion associated with lymphadenopathy CD 21 low CD21- CD38- Increased in autoimmune (AI) disease and immunodeficiencies Rare in healthy controls but found in AI disease (EUROCLASS) Increased numbers associated with splenomegaly and granulomatous disease in CVID Plasmablasts IgD-IgM-CD24- CD27+CD38hi Expanded in IgG4 Related Disease, low in healthy controls. Elevated counts may also be seen in other immune conditions Serum IgG4 levels do not correlate with disease activity or treatment Reduced in numbers in CVID\n\nImmunology",
         "references": "1. Morbach, H., Eichhorn, E.M., Liese, J.G. and Girschick, H.J. (2010). Reference values for B cell subpopulations from infancy to adulthood. Clinical and Experimental Immunology, [online] 162(2), pp.271-279. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2996594/\n\n2. Wehr, C., Kivioja, T., Schmitt, C., Ferry, B., Witte, T., Eren, E., Vlkova, M., Hernandez, M., Detkova, D., Bos, P.R., Poerksen, G., von Bernuth, H., Baumann, U., Goldacker, S., Gutenberger, S., Schlesier, M., Bergeron-van der Cruyssen, F., Le Garff, M., Debré, P. and Jacobs, R. (2008). The EUROclass trial: defining subgroups in common variable immunodeficiency. Blood, [online] 111(1), pp.77-85. Available at: https://pubmed.ncbi.nlm.nih.gov/17898316/.\n\nAge dependent CD27+ IgD- Reference ranges suggested by H Morbach et al (2010)1** Age (years) 0-1 2-3 4-5 6-10 11-18 19-25 26-50 Median (% of all CD19+ B cell) 1 2.6 5.6 6.5 5.4 9.4 13.2 Interquartile ranges (25th and 75th percentile) 0.1-1.9 1.5-4.1 3.3-7.4 5.2-12.1 3.3-9.6 7.2-12.7 9.2-18.9 ** Mobarch H et al (2010): This was a study done on 221 healthy individuals aged 1 month to 50 years in Germany."
@@ -1222,7 +1512,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/B-Cell-Maturation-Panel.pdf",
         "detail_type": "pdf",
         "last_updated": "February 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1280,6 +1570,11 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Suspected myeloma, Waldenström's macroglobulinaemia, rarely lymphoma.",
         "repeat_frequency": "Post treatment monitoring and MRD as required"
@@ -1290,7 +1585,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/Bence-Jones-Protein-Urinary-light-chains-Urine-immunofixation.pdf",
         "detail_type": "pdf",
         "last_updated": "September 2021",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1331,12 +1626,17 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Beta-2-Glycoprotein-IgG-and-IgM.pdf",
         "detail_type": "pdf",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": false
       },
       "completeness": {
@@ -1393,6 +1693,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Suspected type I hereditary angioedema. This disease causes recurrent attacks of abdominal pain or swellings. The complement component C4 is almost always low in HAE. This is used as a reliable screen for the disease.",
         "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment."
@@ -1403,7 +1708,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/C1-esterase-inhibitor.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1468,6 +1773,11 @@
           "max": 6.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Angioedema associated with low C4 when C1-esterase inhibitor is normal or high.",
         "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment."
@@ -1478,7 +1788,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/C1-esterase-inhibitor-functional-test.pdf",
         "detail_type": "pdf",
         "last_updated": "February 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1541,6 +1851,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "• Levels are reduced in acquired angioedema • Levels are also reduced in urticarial vasculitis - a complication of SLE • Sjögren's syndrome, cryoglobulinaemia and hepatitis C infection",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -1552,7 +1867,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/C1q.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1615,6 +1930,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Mesangiocapilliary glomerulonephritis, only performed if C3 is low <0.3 g/L",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -1626,7 +1946,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/C3-nephritic-factor.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1690,6 +2010,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Dressler's syndrome (after M.I. post-cardiac surgery, some cardiomyopathies and following acute rheumatic fever).",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -1701,7 +2026,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Cardiac-muscle-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1770,6 +2095,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Thrombosis, miscarriage",
         "repeat_frequency": "The British Society for Standards Clinical Haematology guidelines requires anticardiolipin, lupus anticoagulant or Anti-β2-glycoprotein I to be present on two or more occasions at least 12 weeks apart to diagnose anti-phospholipid syndrome antibody.",
@@ -1781,7 +2111,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Cardiolipin-IgG-and-IgM-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1845,6 +2175,11 @@
           "max": 14.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "CASPR2 (Contactin Associated Protein 2) and LGi1 (leucine-rich glioma inactivated 1) antibodies are subunits of the potassium channel complex (VGKC). When the antibodies target LGI1 or CASPR2 they cause an encephalitis often termed limbic encephalitis.",
         "repeat_frequency": "significant change of clinical symptoms"
@@ -1856,7 +2191,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/01/CASPR-LGi1-Antibodies-referred-test.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2019",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1925,6 +2260,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Stem Cell Transplantation, CAR-T cell therapy and DLI",
         "repeat_frequency": "Each day or stem cell harvest"
@@ -1935,7 +2275,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/CD34-Stem-cells.pdf",
         "detail_type": "pdf",
         "last_updated": "June 2021",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2010,6 +2350,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "For use as a monitoring tool in serologically confirmed HIV infection. Should not be used in an attempt to diagnose HIV infection.",
         "repeat_frequency": "Three times a year in asymptomatic patients, more frequently in those with symptoms or when medication is being changed."
@@ -2020,7 +2365,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/CD4-count-T-cell-count.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2020",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2085,6 +2430,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Suspected complement deficiency e.g. meningococcal infection",
         "repeat_frequency": "At significant change in symptoms"
@@ -2095,7 +2445,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/10/CH50-complement-activity-Classical-Pathway.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2159,6 +2509,144 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "chronic-lymphocytic-lymphoma-panel-derived",
+        "name": "Chronic lymphocytic/lymphoma panel",
+        "description": "Markers enumerated by the source for Chronic lymphocytic/lymphoma panel.",
+        "version": "0.1.0",
+        "applies_to": [
+          "chronic-lymphocytic-lymphoma-panel"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "cd2",
+            "name": "CD2",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd3",
+            "name": "CD3",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd4",
+            "name": "CD4",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd5",
+            "name": "CD5",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd8",
+            "name": "CD8",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd10",
+            "name": "CD10",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd11c",
+            "name": "CD11c",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd16",
+            "name": "CD16",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd56",
+            "name": "CD56",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd19",
+            "name": "CD19",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd23",
+            "name": "CD23",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd25",
+            "name": "CD25",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd38",
+            "name": "CD38",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd79b",
+            "name": "CD79b",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "fmc7",
+            "name": "FMC7",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "derived-from-source-notes",
+          "source_text": "Can include: CD2, CD3, CD4, CD5, CD8, CD10, CD11c, CD16/CD56, CD19, CD23, CD25, CD38, CD79b, FMC7, Kappa and lambda light chains on B cells",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 15,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 15,
+          "calculated": 0
+        }
+      },
       "clinical": {
         "indications": "Haematological malignancies involving lymphoid cells, to confirm relapse, to confirm remission",
         "repeat_frequency": "Post treatment monitoring, suspected relapse and MRD"
@@ -2170,7 +2658,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/Chronic-lymphocytic-lymphoma-panel.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2022",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2241,6 +2729,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Act as a screening test for coeliac disease in patients with suspected gluten sensitivity. With reference to Coeliac Disease NICE guidance NG20 IgA tTG is the first line of investigation for adults and children. If the IgA tTG is negative in a patient on a gluten-containing diet e.g. gluten in more than 1 meal per day for at least 6 weeks prior to testing with normal/low IgA, then coeliac disease is unlikely. An IgA endomysial antibody test is done to confirm all new positives and equivocal results. Coeliac disease is associated with IgA deficiency (IgA deficiency is defined as total IgA less than < 0.04 g/L) and the IgA tTG will be falsely negative in these patients, therefore IgA levels should be checked. This test is specific for coeliac disease, but a jejunal biopsy is recommended for confirmation. Refer to ESPGHAN guidelines for biopsy recommendations in children: https://www.espghan.org/knowledge-center/publications/Clinical-Advice- Guides/2020_New_Guidelines_for_the_Diagnosis_of_Paediatric_Coeliac_Disease Sending the right sample for coeliac disease screening: https://mft.nhs.uk/the- trust/otherdepartments/laboratory-medicine/information-for-gps/laboratory-medicines-newsletter-for- gps/sendingthe-right-sample-for-coeliac-disease-screening/"
       },
@@ -2250,7 +2743,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Coeliac-Disease-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2318,6 +2811,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Monitoring of SLE. Post streptococcal glomerulonephritis and other conditions of complement activation",
         "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment."
@@ -2328,7 +2826,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Complement-C3.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2397,6 +2895,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Pre-eclampsia, angioedema without urticaria, genetic deficiency, active SLE (associated with low C3) and sepsis (associated with low C3).",
         "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment"
@@ -2407,7 +2910,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/06/Complement-C4.pdf",
         "detail_type": "pdf",
         "last_updated": "June 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2468,6 +2971,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "SLE",
         "repeat_frequency": "At significant change of clinical symptoms, monitoring of treatment."
@@ -2478,7 +2986,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Crithidia-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2540,6 +3048,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "• Lymphoproliferative disease (Monoclonal) • Connective tissue disease: SLE, Sjogren's, Raynaud's and cutaneous vasculitis. • There is almost always a low C4 in cryoglobulinaemia",
         "repeat_frequency": "At significant change of clinical symptoms."
@@ -2550,7 +3063,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Cryoglobulins.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2610,6 +3123,11 @@
       "turnaround": {
         "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in %"
+      },
       "clinical": {
         "interpretation": "Use of this panel in the investigation of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric).",
         "references": "Immunology • Revised diagnostic criteria and classification for the autoimmune lymphoproliferative syndrome (ALPS): report from the 2009 NIH International Workshop. Joao B Oliveira et al. Blood, 2010 Oct 7;116(14):e35-40."
@@ -2620,7 +3138,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/Double-Negative-T-cells.pdf",
         "detail_type": "pdf",
         "last_updated": "February 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2691,6 +3209,11 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Diagnosis and monitoring of lupus",
         "repeat_frequency": "We recommend not repeating this test more than once a month, unless the patient is undergoing plasmapheresis"
@@ -2701,7 +3224,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Double-stranded-DNA-antibodies-IgG.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2762,6 +3285,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Diagnosis of Hereditary Spherocytosis",
         "repeat_frequency": "At significant change of clinical symptoms, or if the patient is <6 months of age and the results are not consistent with the clinical pattern please repeat when >6 months of age."
@@ -2772,7 +3300,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/EMA-Binding-Assay-HS-Screen.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2839,6 +3367,11 @@
           "max": 10.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Investigation of Systemic Sclerosis (diffuse and limited forms of the disease)."
       },
@@ -2849,7 +3382,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Extended-Sclerosis-Panel-referred-test.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2917,6 +3450,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Hypersensitivity to Micropolysporium faeni is a common cause of Farmer's lung, hypersensitivity pneumonitis occurring 12 to 24 hours after exposure to mouldy hay.",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -2927,7 +3465,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Farmers-lung-precipitins.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2994,6 +3532,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "May be used as part of the diagnostic strategy for myeloma. This test has largely superseded Bence Jones protein (urine immunofixation). Monitoring in some cases of myeloma.",
         "repeat_frequency": "Initial diagnosis, post treatment monitoring for suspected relapse"
@@ -3004,7 +3547,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/01/Free-Light-Chains.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3068,6 +3611,11 @@
           "max": 14.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Antibodies against GABAb receptors (GABAb receptors are the G-protein-coupled receptors (GPCRs) for γ-aminobutyric acid (GABA), the main inhibitory neurotransmitter in the central nervous system) and α-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid (AMPA) receptors can be detected in paraneoplastic syndrome and classical limbic encephalitis with early and prominent seizures. The antibodies may be present together with other autoantibodies in around 50% of cases (antibodies against GAD-65, VGCC, and TPO).",
         "repeat_frequency": "significant change of clinical symptoms"
@@ -3079,7 +3627,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/01/GABAb-receptor-AMPA-receptor-1-2-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2019",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3138,6 +3686,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Guillian-barre syndrome, chronic demyelinating polyneuropathy, Multifocal motorneuropathy",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -3149,7 +3702,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/03/Ganglioside-Abs-GM1.pdf",
         "detail_type": "pdf",
         "last_updated": "March 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3208,6 +3761,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Miller-Fisher Syndrome",
         "repeat_frequency": "At significant change of clinical symptom"
@@ -3219,7 +3777,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/03/Ganglioside-Abs-GQ1b.pdf",
         "detail_type": "pdf",
         "last_updated": "March 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3302,6 +3860,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Rapidly progressive glomerulonephritis.",
         "repeat_frequency": "At significant change of clinical symptoms and post treatment monitoring"
@@ -3312,7 +3875,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Glomerular-basement-membrane-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3386,6 +3949,11 @@
           "max": 6.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in U/mL"
+      },
       "clinical": {
         "interpretation": "Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of autoantibody testing.\n\nGAD65 antibody levels are commonly much higher in serum in neurological syndromes than in T1DM, and higher in CSF in cerebella ataxia and limbic encephalitis than in stiff person syndrome (Budhram et al, 2021)"
       },
@@ -3395,7 +3963,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Glutamic-Acid-Decarboxylase-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3455,6 +4023,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Drug-induced SLE. Also positive in RA/SLE etc.",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -3466,7 +4039,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Histone-Abs.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3534,6 +4107,11 @@
           "max": 10.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in U/mL"
+      },
       "clinical": {
         "interpretation": "Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to\n\nImmunology 70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of autoantibody testing."
       },
@@ -3543,7 +4121,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/IA2.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3608,6 +4186,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Patients with suspected allergy (atopic disease). Main use of the test is to help interpret specific IgE levels.",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -3618,7 +4201,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/IgE-Total.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3684,6 +4267,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "History of bacterial sinopulmonary infection and IgG between 5-16g/L. History of/or failure to respond to polysaccharide vaccines, pancreatitis (history of recurrent infections - not viral), or abscesses or (failure to respond to immunisation) AND (Total IgG < 0.1 g/l). Samples not meeting these requirements will be rejected.",
         "repeat_frequency": "Not within 6 months"
@@ -3694,7 +4282,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/10/IgG-subclasses.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3763,6 +4351,11 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Suspected cellular immunodeficiency",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -3774,7 +4367,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Immunodeficiency-TB-Lymphocyte-Subsets.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3834,6 +4427,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Familial Mediterranean Fever, underlying immunodeficiency.",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -3845,7 +4443,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Immunoglobulin-D-IgD.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3911,6 +4509,11 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "• Recurrent infections • Suspected myeloma, Waldenstrom's macroglobulinaemia, lymphoma, connective tissue disease.",
         "repeat_frequency": "Not within six months - exempt for monitoring myeloma and immunodeficiency"
@@ -3921,7 +4524,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/10/Immunoglobulins-IgG-IgA-IgM.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -3998,6 +4601,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Insulin resistance",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -4009,7 +4617,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Insulin-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -4062,6 +4670,11 @@
       "turnaround": {
         "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in %"
+      },
       "clinical": {
         "repeat_frequency": "Repeat only indicated following bone marrow transplantation of an affected individual."
       },
@@ -4071,7 +4684,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/11/Leukocyte-Adhesion-Deficiency-LAD-Markers.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -4153,6 +4766,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Gastric parietal cells: Pernicious anaemia (PA), atrophic gastritis and are seen in 5-10% of healthy individuals. Present in the early stages of PA, frequently diminish with disease progression.",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -4164,7 +4782,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/08/Liver-autoantibody-screen.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -4216,6 +4834,11 @@
         "eqa_scheme": "An EQA scheme is not available for this assay\n\nImmunology",
         "frequency_of_analysis": "Repeat only indicated if the test has failed (particularly if the control sample has failed).\n\nTurnaround times (calendar days from sample receipt to authorised result): Mean - 2."
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in % of neutrophils positive for CD62L expression"
+      },
       "clinical": {
         "interpretation": "Patients with IRAK-4 or MyD88 deficiency will still express CD62L after treatment with lipopolysaccharide (LPS, TLR4 agonist) and the compound CL097 (TLR7/8 agonist) but have lost CD62L expression as a result of treatment with PMA. UNC-93B deficient patients will still express CD62L with CL097 but have lost CD62L with both LPS and PMA."
       },
@@ -4225,7 +4848,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/L-Selectin-Shedding-assay.pdf",
         "detail_type": "pdf",
         "last_updated": "February 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -4284,6 +4907,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Recurrent infections in childhood",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -4295,7 +4923,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Mannose-Binding-Lectins.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -4359,6 +4987,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Suspected acute allergic reactions, anaphylaxis, suspected Mastocytosis",
         "repeat_frequency": "For suspected anaphylaxis samples should be taken as soon as possible after emergency treatment, 1-2 hours post treatment (but no later than 4 hours post) and a baseline sample at >24 hrs post treatment. For mastocytosis repeat after 1 year or following significant clinical change."
@@ -4369,7 +5002,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Mast-Cell-Tryptase.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -4430,6 +5063,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Patients suspected of Myasthenia gravis and who are acetylcholine receptor antibody negative.",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -4441,7 +5079,7 @@
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/01/Muscle-Specific-Tyrosine-Kinase-MUSK.pdf",
         "detail_type": "pdf",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -4502,6 +5140,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "IgM monoclonal neuropathy",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -4514,7 +5157,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Myelin-Associated-Glycoprotein-MAG.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -4577,6 +5220,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Investigation of patients with systemic vasculitis",
         "repeat_frequency": "Used to monitor response to treatment and risk of relapse"
@@ -4587,7 +5235,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Myeloperoxidase-MPO-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -4654,6 +5302,11 @@
           "max": 6.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "To diagnose and monitor suspected Inflammatory Myopathies including Dermatomyositis, Juvenile Myositis, Polymyositis, idiopathic myositis, anti-synthetase syndrome and overlapping syndrome.",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -4664,7 +5317,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Myositis-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -4720,6 +5373,11 @@
       "turnaround": {
         "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in %"
+      },
       "clinical": {
         "interpretation": "Use of this panel in the investigation/monitoring of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric).\n\nThe T cell subsets that are reported are detailed in the below table. These subsets are reported for both helper (CD4) and cytotoxic (CD8) T cells. Reference ranges are not available for most of these cells groups and any results should be discussed with a consultant immunologist.\n\nImmunology\n\nT cell subset *either CD4 or CD8 Immunophenotype Clinical comments Naïve CD197+ (CCR7) CD45RA+ Decreased in autoimmune disease (AI) / lymphoproliferation in CVID Central memory CD197+ (CCR7) CD45RA- Possibly decreased in AI cytopenia Effector memory CD197- (CCR7) CD45RA- No clear clinical association Effector / terminally differentiated CD197- (CCR7) CD45RA+ Possibly increased in AI / lymphoproliferation in CVID Early differentiated CD28+ CD27+ Decreased in AI / lymphoproliferation in CVID Intermediate differentiated CD28- CD27+ No clear clinical association Late differentiated CD28- CD27- Possibly increased in AI / lymphoproliferation in CVID + Senescent CD57+ (based on CD57 and SS) Increased in Activated PI3K delta syndrome (APDS) Exhausted CD279+ (PD1) No clear clinical association\n\nNaïve T cells are also assessed as part of newborn Severe Combined Immunodeficiency (SCID) screening, in which context low numbers of naïve cells may support SCID."
       },
@@ -4729,7 +5387,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/Naive-Memory-and-Effector-T-Cell-Subsets.pdf",
         "detail_type": "pdf",
         "last_updated": "February 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -4790,6 +5448,11 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Stimulation Index."
+      },
       "clinical": {
         "indications": "This assay can be used to identify patients with CGD as well as carriers of the defective gene responsible for the condition.",
         "repeat_frequency": "Repeat only indicated if the test has failed (particularly if the control sample has failed) or following bone marrow transplantation of an affected individual."
@@ -4800,7 +5463,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/Neutrophil-Function-DHR-Test.pdf",
         "detail_type": "pdf",
         "last_updated": "February 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -4867,6 +5530,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "NMDA receptor antibodies are associated with the different sub units of the NMDA receptor. Antibodies to the delta or NR2 subunits of NMDA receptor are associated with limbic encephalitis, systemic lupus erythematosus (SLE), ataxia and epilepsia partialis continua. Antibodies against the NR1, NR2A and NR2B subunits of the NMDA are found in patients presenting with psychiatric symptoms, amnesia, seizures, dyskinesias, autonomic dysfunction and loss of consciousness. In women younger than 45 years, a form of encephalitis associated with ovarian teratoma and presenting with seizures and psychiatric symptoms has been described.\n\nImmunology For additional information please see our referral laboratory's user guide: http://www.ouh.nhs.uk/immunology/diagnostic-tests/tests-catalogue/nmda-antibodies.aspx",
         "repeat_frequency": "At change of clinical symptoms"
@@ -4878,7 +5546,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/NMDA-%E2%80%93-N-methyl-D-aspartate-receptor-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2018",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -4950,6 +5618,11 @@
           "max": 6.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Suspected premature ovarian failure (15-50% of patients have positive antibodies)",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -4961,7 +5634,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Ovary-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5037,6 +5710,11 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Cerebellar degeneration, encephalitis, neuropathy",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -5047,7 +5725,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/07/Paraneoplastic-Neuronal-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "June 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5107,6 +5785,11 @@
         "method": "See https://www.immqas.org.uk/pru.asp?sa=pla2r",
         "reference_range": "See https://www.immqas.org.uk/pru.asp?sa=pla2r"
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "see https://www.immqas.org.uk/pru.asp?sa=pla2r"
       },
@@ -5117,7 +5800,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/01/PLA2R-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5177,6 +5860,11 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Prolonged bleeding in infancy, haemorrhage, family history",
         "interpretation": "In Bernard-Soulier syndrome GPIb/IX/V (CD42b) is absent or dysfunctional. In Glanzmann thrombasthenia GPIIb/IIIa (CD41/CD61) is absent or dysfunctional. A mild decrease in the expression suggest a variant or heterozygous state.\n\nThe CD61 clone (SZ21) bears the platelet alloantigen PlA1 (HPA-1a). Used in flow cytometry, it shows a markedly reduced reactivity with platelets bearing the PlA2 (HPA-1b) allele. As described in the IFU, studies indicate that 70% of individuals are PlA1/PlA1, 27% PlA1/PlA2, and 3% PlA2/PlA2. Therefore, reduced CD61 binding may be observed in a percentage of healthy individuals.",
@@ -5188,7 +5876,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/06/Platelet-Glycoprotein-Expression.pdf",
         "detail_type": "pdf",
         "last_updated": "June 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5253,6 +5941,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Suspected Wegener's granulomatosis and monitoring treatment",
         "repeat_frequency": "Used to monitor response to treatment and risk of relapse"
@@ -5263,7 +5956,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/PR3-autoantibodies-cANCA.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5325,6 +6018,11 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Aid for the prognosis of RA and Sjögren's syndrome in the presence of an erosive arthropathy.\n\nRheumatoid factor is not useful in the diagnosis of rheumatoid arthritis, it has a limited role in predicting the risk of complications particularly vasculitis.",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -5335,7 +6033,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/01/Rheumatoid-factor.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5398,6 +6096,11 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Paraproteinaemia, MGUS, chronic lymphoid malignancy. Serum paraprotein quantitation for monitoring myeloma treatment.",
         "repeat_frequency": "Initial diagnosis, post treatment. Monitoring for suspected relapse."
@@ -5409,7 +6112,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/01/Serum-Protein-Electrophoresis-PPC.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5479,6 +6182,11 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Bullous skin disorders, dermatitis herpetiformis",
         "repeat_frequency": "Depending on changes in clinical picture"
@@ -5489,7 +6197,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Skin-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5530,11 +6238,16 @@
           "core": true
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "notes": "See Liver autoantibody screen",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -5586,6 +6299,11 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Useful for monitoring turnover in myeloma and lymphoma. For diagnostic purposes, the results should always be assessed in conjunction with the patient's medical history, clinical examination, and other findings",
         "repeat_frequency": "Post treatment monitoring"
@@ -5596,7 +6314,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/s2-Microglobulin.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5657,6 +6375,11 @@
       "turnaround": {
         "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in %"
+      },
       "clinical": {
         "interpretation": "Use of this panel in the investigation/monitoring of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric)."
       },
@@ -5666,7 +6389,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/T-Cell-Activation-Panel.pdf",
         "detail_type": "pdf",
         "last_updated": "April 2021",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5721,6 +6444,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "The test is used to help diagnose latent TB infection and is indicated in individuals with a positive delayed hypersensitivity skin test.",
         "repeat_frequency": "At significant change of clinical symptoms."
@@ -5731,7 +6459,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2025/07/TB-Gamma-Interferon-Quantiferon.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2025",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5808,6 +6536,11 @@
           "max": 6.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Infertility, endocrine polyglandular disorders",
         "repeat_frequency": "significant change of clinical symptoms"
@@ -5819,7 +6552,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Testis-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5878,13 +6611,18 @@
           "max": 10.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in AU/mL (arbitrary units per mL)"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/04/Therapeutic-Drug-Monitoring-of-anti-TNF-therapies-Infliximab-and-Adalimumab.pdf",
         "detail_type": "pdf",
         "last_updated": "April 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -5960,6 +6698,11 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in IU/L"
+      },
       "clinical": {
         "indications": "Autoimmune thyrotoxicosis",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -5970,7 +6713,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/01/TSH-Receptor-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -6053,6 +6796,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Lambert Eaton Myasthenic syndrome, cerebellar degeneration",
         "repeat_frequency": "significant change of clinical symptoms"
@@ -6064,7 +6812,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Voltage-Gated-Calcium-Channel-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -6153,6 +6901,11 @@
           "max": 16.0
         }
       },
+      "result_format": {
+        "kind": "document",
+        "structured_entry": false,
+        "basis": "performed by a referral laboratory, which returns its own report"
+      },
       "clinical": {
         "indications": "Peripheral nerve hyperexcitability, neuromyotonia, Morvan's syndrome.",
         "repeat_frequency": "significant change of clinical symptoms"
@@ -6164,7 +6917,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/10/Voltage-Gated-Potassium-Channel-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -6249,6 +7002,11 @@
           "max": 10.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in U/mL"
+      },
       "clinical": {
         "interpretation": "Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of autoantibody testing."
       },
@@ -6258,7 +7016,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Zinc-Transporter-8-antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {

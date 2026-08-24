@@ -30,6 +30,7 @@ type Catalogue struct {
 	profiles   map[string]*ClinicProfile
 	categories map[string]*Category
 	providers  map[string]*Provider
+	templates  map[string]*ResultTemplate
 
 	rangeMode     rangeMode
 	rangeProvider string
@@ -95,6 +96,7 @@ func Load(opts ...Option) (*Catalogue, error) {
 		profiles:   map[string]*ClinicProfile{},
 		categories: map[string]*Category{},
 		providers:  map[string]*Provider{},
+		templates:  map[string]*ResultTemplate{},
 	}
 	for _, t := range testDoc.Tests {
 		c.byID[t.ID] = t
@@ -130,6 +132,16 @@ func Load(opts ...Option) (*Catalogue, error) {
 	}
 	for _, p := range provDoc.Providers {
 		c.providers[p.ID] = p
+	}
+
+	var tplDoc struct {
+		Templates []*ResultTemplate `json:"templates"`
+	}
+	if err := json.Unmarshal(rawTemplates, &tplDoc); err != nil {
+		return nil, fmt.Errorf("labtests: parsing result templates: %w", err)
+	}
+	for _, t := range tplDoc.Templates {
+		c.templates[t.ID] = t
 	}
 
 	for _, opt := range opts {
@@ -216,6 +228,39 @@ func (c *Catalogue) ByCategory(categoryID string) ([]*Test, error) {
 		}
 	}
 	return out, nil
+}
+
+// ResultTemplate returns the starter template seeding structured result entry
+// for a test, if one is defined.
+//
+// The template is a starting point, not a specification: copy it into your own
+// catalogue, confirm every component and unit against your analyser, and treat
+// your versioned copy as authoritative. Check Test.ResultFormat first --
+// narrative and document results should not be captured as fields at all.
+func (c *Catalogue) ResultTemplate(testID string) (*ResultTemplate, bool) {
+	t, ok := c.byID[testID]
+	if !ok || t.ResultTemplate == nil {
+		return nil, false
+	}
+	return t.ResultTemplate, true
+}
+
+// Template returns a starter template by its own id. Some templates -- such as
+// urea-and-electrolytes -- are reusable starting points with no matching test
+// in this catalogue.
+func (c *Catalogue) Template(templateID string) (*ResultTemplate, bool) {
+	t, ok := c.templates[templateID]
+	return t, ok
+}
+
+// Templates returns every starter template, ordered by id.
+func (c *Catalogue) Templates() []*ResultTemplate {
+	out := make([]*ResultTemplate, 0, len(c.templates))
+	for _, t := range c.templates {
+		out = append(out, t)
+	}
+	sort.Slice(out, func(i, j int) bool { return out[i].ID < out[j].ID })
+	return out
 }
 
 // Match is a search hit. Higher Score is a better match.

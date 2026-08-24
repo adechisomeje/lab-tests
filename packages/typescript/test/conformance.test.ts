@@ -143,3 +143,67 @@ test('order_set', () => {
     assert.equal(cat.orderSet(tc.profile, tc.core_only).length, tc.expect_count, tc.profile);
   }
 });
+
+test('result_format', () => {
+  const cat = load();
+  for (const tc of vectors.result_format) {
+    const t = cat.get(tc.test_id);
+    assert.ok(t, `${tc.name}: unknown test ${tc.test_id}`);
+    assert.equal(t.result_format?.kind, tc.expect.kind, `${tc.name}: kind`);
+    assert.equal(
+      t.result_format?.structured_entry,
+      tc.expect.structured_entry,
+      `${tc.name}: structured_entry`,
+    );
+  }
+});
+
+test('result_template', () => {
+  const cat = load();
+  for (const tc of vectors.result_template) {
+    const tpl = tc.test_id ? cat.resultTemplate(tc.test_id) : cat.template(tc.template_id);
+
+    if (tc.expect_no_template) {
+      assert.equal(tpl, undefined, `${tc.name}: expected no template`);
+      continue;
+    }
+    assert.ok(tpl, `${tc.name}: expected a template`);
+    const e = tc.expect;
+
+    if (e.template_id) assert.equal(tpl.id, e.template_id, `${tc.name}: id`);
+    if (e.component_ids) {
+      assert.deepEqual(
+        tpl.components.map((c) => c.id),
+        e.component_ids,
+        `${tc.name}: component ids`,
+      );
+    }
+    if (e.component_count != null) {
+      assert.equal(tpl.components.length, e.component_count, `${tc.name}: count`);
+    }
+    if (e.completeness_score != null) {
+      assert.equal(tpl.completeness.score, e.completeness_score, `${tc.name}: completeness`);
+    }
+    if (e.applies_to) {
+      assert.deepEqual(tpl.applies_to ?? [], e.applies_to, `${tc.name}: applies_to`);
+    }
+    if (e.template_source) {
+      assert.equal(tpl.provenance.template_source, e.template_source, `${tc.name}: source`);
+    }
+    for (const [id, want] of Object.entries(e.components ?? {})) {
+      const c = tpl.components.find((x) => x.id === id);
+      assert.ok(c, `${tc.name}: component ${id} missing`);
+      for (const [k, v] of Object.entries(want as Record<string, unknown>)) {
+        const got = k === 'has_calculation' ? c.calculation != null : (c as never)[k];
+        assert.equal(got, v, `${tc.name}: ${id}.${k}`);
+      }
+    }
+    // Templates must never assert reference ranges or critical limits: those
+    // belong to the activating clinic, not a global library.
+    for (const key of e.no_component_keys ?? []) {
+      for (const c of tpl.components) {
+        assert.ok(!(key in c), `${tc.name}: ${c.id} carries forbidden key ${key}`);
+      }
+    }
+  }
+});

@@ -431,6 +431,248 @@
           }
         }
       }
+    },
+    "result_format": {
+      "type": "object",
+      "description": "How a result for this test should be captured. Tells a consuming system whether to render a structured entry form at all.",
+      "required": [
+        "kind",
+        "structured_entry"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "panel",
+            "single-analyte",
+            "qualitative",
+            "narrative",
+            "document",
+            "unstructured"
+          ],
+          "description": "panel: several defined components. single-analyte: one measured quantity. qualitative: organism/antigen/susceptibility report. narrative: written findings (cytology, histopathology). document: performed elsewhere; the referral laboratory returns its own report. unstructured: nothing published to structure entry around."
+        },
+        "structured_entry": {
+          "type": "boolean",
+          "description": "Whether structured field entry is appropriate. False means capture a report or document instead."
+        },
+        "basis": {
+          "type": "string",
+          "description": "Why this classification was assigned."
+        }
+      }
+    },
+    "result_template": {
+      "type": "object",
+      "description": "A STARTER template for structured result entry. It seeds a clinic's own catalogue and is never authoritative. Reference ranges and critical limits are deliberately absent: they belong to the clinic's activated, versioned definition.",
+      "required": [
+        "id",
+        "name",
+        "version",
+        "components",
+        "provenance",
+        "completeness"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string",
+          "description": "Template version. Pin this when a clinic activates a copy, so a later library upgrade cannot silently change an in-use form."
+        },
+        "applies_to": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Test ids this template seeds."
+        },
+        "notice": {
+          "type": "string",
+          "description": "Text to surface to whoever activates the template."
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "type",
+              "entry_mode",
+              "required"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Component identifier, unique within the template."
+              },
+              "name": {
+                "type": "string",
+                "description": "Display name for the entry field."
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "numeric",
+                  "text",
+                  "coded"
+                ]
+              },
+              "entry_mode": {
+                "type": "string",
+                "enum": [
+                  "measured",
+                  "calculated",
+                  "either"
+                ],
+                "description": "measured: entered by the operator. calculated: derived from other components. either: the clinic decides whether to measure directly or calculate."
+              },
+              "required": {
+                "type": "boolean",
+                "description": "Suggested requiredness. The activating clinic decides."
+              },
+              "unitless": {
+                "type": "boolean",
+                "description": "True for ratios and indices, which carry no units."
+              },
+              "suggested_units": {
+                "type": "string",
+                "description": "SUGGESTION ONLY. Units vary by laboratory, analyser, population and measurement system. Confirm before activating."
+              },
+              "alternate_units": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Units in common use in other measurement systems. No conversion factors are supplied deliberately."
+              },
+              "units_provenance": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "source": {
+                    "type": "string",
+                    "description": "Where the suggested units came from."
+                  },
+                  "analyte": {
+                    "type": "string",
+                    "description": "Analyte name in the source document."
+                  }
+                }
+              },
+              "catalogue_ref": {
+                "type": "string",
+                "description": "Test id in this catalogue measuring this component, when one exists."
+              },
+              "loinc": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Suggested LOINC codes. NOT POPULATED in this release; the field is defined so consumers can rely on its shape."
+              },
+              "calculation": {
+                "type": "object",
+                "description": "Guidance for a derived component. Never applied automatically: the equation is a clinical policy decision.",
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "expression": {
+                    "type": "string",
+                    "description": "Informative, not executable."
+                  },
+                  "units_basis": {
+                    "type": "string",
+                    "description": "Unit system the expression assumes."
+                  },
+                  "caveats": {
+                    "type": "string"
+                  },
+                  "clinic_approval_required": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "template_source": {
+              "type": "string",
+              "enum": [
+                "curated",
+                "derived-from-source-notes"
+              ]
+            },
+            "units_source": {
+              "type": "string"
+            },
+            "source_text": {
+              "type": "string"
+            },
+            "confidence": {
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high"
+              ]
+            },
+            "reference_ranges": {
+              "type": "string"
+            },
+            "critical_limits": {
+              "type": "string"
+            }
+          }
+        },
+        "completeness": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "How much of the template this library could supply. Units are the only field it can meaningfully provide, so the score is unit coverage of numeric components.",
+          "properties": {
+            "score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "components": {
+              "type": "integer"
+            },
+            "numeric_components": {
+              "type": "integer"
+            },
+            "with_suggested_units": {
+              "type": "integer"
+            },
+            "with_loinc": {
+              "type": "integer"
+            },
+            "measured": {
+              "type": "integer"
+            },
+            "calculated": {
+              "type": "integer"
+            }
+          }
+        }
+      }
     }
   },
   "$defs": {
@@ -452,6 +694,217 @@
         }
       },
       "description": "Parsed turnaround expressed in days; min equals max for a single stated figure."
+    },
+    "resultTemplate": {
+      "type": "object",
+      "description": "A STARTER template for structured result entry. It seeds a clinic's own catalogue and is never authoritative. Reference ranges and critical limits are deliberately absent: they belong to the clinic's activated, versioned definition.",
+      "required": [
+        "id",
+        "name",
+        "version",
+        "components",
+        "provenance",
+        "completeness"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string",
+          "description": "Template version. Pin this when a clinic activates a copy, so a later library upgrade cannot silently change an in-use form."
+        },
+        "applies_to": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Test ids this template seeds."
+        },
+        "notice": {
+          "type": "string",
+          "description": "Text to surface to whoever activates the template."
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "type",
+              "entry_mode",
+              "required"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Component identifier, unique within the template."
+              },
+              "name": {
+                "type": "string",
+                "description": "Display name for the entry field."
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "numeric",
+                  "text",
+                  "coded"
+                ]
+              },
+              "entry_mode": {
+                "type": "string",
+                "enum": [
+                  "measured",
+                  "calculated",
+                  "either"
+                ],
+                "description": "measured: entered by the operator. calculated: derived from other components. either: the clinic decides whether to measure directly or calculate."
+              },
+              "required": {
+                "type": "boolean",
+                "description": "Suggested requiredness. The activating clinic decides."
+              },
+              "unitless": {
+                "type": "boolean",
+                "description": "True for ratios and indices, which carry no units."
+              },
+              "suggested_units": {
+                "type": "string",
+                "description": "SUGGESTION ONLY. Units vary by laboratory, analyser, population and measurement system. Confirm before activating."
+              },
+              "alternate_units": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Units in common use in other measurement systems. No conversion factors are supplied deliberately."
+              },
+              "units_provenance": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "source": {
+                    "type": "string",
+                    "description": "Where the suggested units came from."
+                  },
+                  "analyte": {
+                    "type": "string",
+                    "description": "Analyte name in the source document."
+                  }
+                }
+              },
+              "catalogue_ref": {
+                "type": "string",
+                "description": "Test id in this catalogue measuring this component, when one exists."
+              },
+              "loinc": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Suggested LOINC codes. NOT POPULATED in this release; the field is defined so consumers can rely on its shape."
+              },
+              "calculation": {
+                "type": "object",
+                "description": "Guidance for a derived component. Never applied automatically: the equation is a clinical policy decision.",
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "expression": {
+                    "type": "string",
+                    "description": "Informative, not executable."
+                  },
+                  "units_basis": {
+                    "type": "string",
+                    "description": "Unit system the expression assumes."
+                  },
+                  "caveats": {
+                    "type": "string"
+                  },
+                  "clinic_approval_required": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "template_source": {
+              "type": "string",
+              "enum": [
+                "curated",
+                "derived-from-source-notes"
+              ]
+            },
+            "units_source": {
+              "type": "string"
+            },
+            "source_text": {
+              "type": "string"
+            },
+            "confidence": {
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high"
+              ]
+            },
+            "reference_ranges": {
+              "type": "string"
+            },
+            "critical_limits": {
+              "type": "string"
+            }
+          }
+        },
+        "completeness": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "How much of the template this library could supply. Units are the only field it can meaningfully provide, so the score is unit coverage of numeric components.",
+          "properties": {
+            "score": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "components": {
+              "type": "integer"
+            },
+            "numeric_components": {
+              "type": "integer"
+            },
+            "with_suggested_units": {
+              "type": "integer"
+            },
+            "with_loinc": {
+              "type": "integer"
+            },
+            "measured": {
+              "type": "integer"
+            },
+            "calculated": {
+              "type": "integer"
+            }
+          }
+        }
+      }
     }
   }
 }

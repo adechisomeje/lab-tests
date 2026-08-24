@@ -36,6 +36,80 @@ const (
 	TubePlainSerum      TubeType = "plain-serum"
 )
 
+// ResultFormat describes how a result for a test should be captured. It is what
+// tells a consuming system whether to render a structured entry form at all.
+type ResultFormat struct {
+	// Kind is one of: panel, single-analyte, qualitative, narrative,
+	// document, unstructured.
+	Kind string `json:"kind"`
+	// StructuredEntry is false when the result is a written report or an
+	// externally produced document rather than a set of fields.
+	StructuredEntry bool   `json:"structured_entry"`
+	Basis           string `json:"basis"`
+}
+
+// ResultTemplate is a STARTER template for structured result entry.
+//
+// It seeds a clinic's own catalogue and is never authoritative. Reference
+// ranges and critical limits are deliberately absent: they vary by laboratory,
+// analyser and population, and belong to the clinic's activated, versioned
+// test definition. Pin Version when activating a copy so a later library
+// upgrade cannot silently change a form already in use.
+type ResultTemplate struct {
+	ID           string               `json:"id"`
+	Name         string               `json:"name"`
+	Description  string               `json:"description"`
+	Version      string               `json:"version"`
+	AppliesTo    []string             `json:"applies_to"`
+	Notice       string               `json:"notice"`
+	Components   []ResultComponent    `json:"components"`
+	Provenance   map[string]string    `json:"provenance"`
+	Completeness TemplateCompleteness `json:"completeness"`
+}
+
+// ResultComponent is one field on a result-entry form.
+type ResultComponent struct {
+	ID   string `json:"id"`
+	Name string `json:"name"`
+	// Type is numeric, text or coded.
+	Type string `json:"type"`
+	// EntryMode is measured, calculated, or either (the clinic decides
+	// whether to measure directly or derive).
+	EntryMode string `json:"entry_mode"`
+	Required  bool   `json:"required"`
+	Unitless  bool   `json:"unitless"`
+	// SuggestedUnits is a SUGGESTION ONLY. Units vary by laboratory,
+	// analyser, population and measurement system.
+	SuggestedUnits  string            `json:"suggested_units"`
+	AlternateUnits  []string          `json:"alternate_units"`
+	UnitsProvenance map[string]string `json:"units_provenance"`
+	// CatalogueRef names a test in this catalogue measuring this component.
+	CatalogueRef string `json:"catalogue_ref"`
+	// LOINC is not populated in this release.
+	LOINC       []string     `json:"loinc"`
+	Calculation *Calculation `json:"calculation"`
+}
+
+// Calculation is guidance for a derived component. It is never applied
+// automatically: which equation to use is a clinical policy decision.
+type Calculation struct {
+	Name                   string `json:"name"`
+	Expression             string `json:"expression"`
+	UnitsBasis             string `json:"units_basis"`
+	Caveats                string `json:"caveats"`
+	ClinicApprovalRequired bool   `json:"clinic_approval_required"`
+}
+
+type TemplateCompleteness struct {
+	Score              float64 `json:"score"`
+	Components         int     `json:"components"`
+	NumericComponents  int     `json:"numeric_components"`
+	WithSuggestedUnits int     `json:"with_suggested_units"`
+	WithLOINC          int     `json:"with_loinc"`
+	Measured           int     `json:"measured"`
+	Calculated         int     `json:"calculated"`
+}
+
 type Test struct {
 	ID                 string              `json:"id"`
 	Name               string              `json:"name"`
@@ -49,6 +123,8 @@ type Test struct {
 	Analysis           Analysis            `json:"analysis"`
 	ReferenceIntervals *ReferenceIntervals `json:"reference_intervals"`
 	Turnaround         Turnaround          `json:"turnaround"`
+	ResultFormat       ResultFormat        `json:"result_format"`
+	ResultTemplate     *ResultTemplate     `json:"result_template"`
 	Clinical           Clinical            `json:"clinical"`
 	ReferredTo         string              `json:"referred_to"`
 	Notes              string              `json:"notes"`

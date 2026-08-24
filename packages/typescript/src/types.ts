@@ -120,6 +120,85 @@ export interface ClinicMembership {
   core: boolean;
 }
 
+/**
+ * How a result for a test should be captured. Tells a consuming system whether
+ * to render a structured entry form at all.
+ */
+export interface ResultFormat {
+  kind: 'panel' | 'single-analyte' | 'qualitative' | 'narrative' | 'document' | 'unstructured';
+  /** False when the result is a written report or an externally produced document. */
+  structured_entry: boolean;
+  basis?: string;
+}
+
+/**
+ * Guidance for a derived component. Never applied automatically: which equation
+ * to use is a clinical policy decision.
+ */
+export interface Calculation {
+  name?: string;
+  /** Informative, not executable. */
+  expression?: string;
+  units_basis?: string;
+  caveats?: string;
+  clinic_approval_required?: boolean;
+}
+
+/** One field on a result-entry form. */
+export interface ResultComponent {
+  id: string;
+  name: string;
+  type: 'numeric' | 'text' | 'coded';
+  /** `either` means the clinic decides whether to measure directly or derive. */
+  entry_mode: 'measured' | 'calculated' | 'either';
+  required: boolean;
+  /** True for ratios and indices, which carry no units. */
+  unitless?: boolean;
+  /**
+   * SUGGESTION ONLY. Units vary by laboratory, analyser, population and
+   * measurement system. Confirm before activating.
+   */
+  suggested_units?: string;
+  alternate_units?: string[];
+  units_provenance?: { source?: string; analyte?: string };
+  /** Test id in this catalogue measuring this component, when one exists. */
+  catalogue_ref?: string;
+  /** Not populated in this release. */
+  loinc?: string[];
+  calculation?: Calculation;
+}
+
+export interface TemplateCompleteness {
+  score: number;
+  components: number;
+  numeric_components: number;
+  with_suggested_units: number;
+  with_loinc: number;
+  measured: number;
+  calculated: number;
+}
+
+/**
+ * A STARTER template for structured result entry.
+ *
+ * It seeds a clinic's own catalogue and is never authoritative. Reference
+ * ranges and critical limits are deliberately absent: they vary by laboratory,
+ * analyser and population, and belong to the clinic's activated, versioned
+ * definition. Pin `version` when activating a copy so a later library upgrade
+ * cannot silently change a form already in use.
+ */
+export interface ResultTemplate {
+  id: string;
+  name: string;
+  description?: string;
+  version: string;
+  applies_to?: string[];
+  notice?: string;
+  components: ResultComponent[];
+  provenance: Record<string, string>;
+  completeness: TemplateCompleteness;
+}
+
 export interface Test {
   id: string;
   name: string;
@@ -133,6 +212,8 @@ export interface Test {
   analysis?: Analysis;
   reference_intervals?: ReferenceIntervals;
   turnaround?: Turnaround;
+  result_format?: ResultFormat;
+  result_template?: ResultTemplate;
   clinical?: Clinical;
   referred_to?: string;
   notes?: string;

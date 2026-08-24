@@ -132,3 +132,56 @@ def test_order_set(tc):
         ]
         return
     assert len(cat.order_set(tc["profile"], tc["core_only"])) == tc["expect_count"]
+
+
+@pytest.mark.parametrize("tc", VECTORS["result_format"], ids=lambda tc: tc["name"][:50])
+def test_result_format(tc):
+    cat = lt.load()
+    t = cat.get(tc["test_id"])
+    assert t is not None, f"unknown test {tc['test_id']}"
+    fmt = t.get("result_format") or {}
+    assert fmt.get("kind") == tc["expect"]["kind"]
+    assert fmt.get("structured_entry") == tc["expect"]["structured_entry"]
+
+
+@pytest.mark.parametrize("tc", VECTORS["result_template"], ids=lambda tc: tc["name"][:50])
+def test_result_template(tc):
+    cat = lt.load()
+    tpl = (
+        cat.result_template(tc["test_id"])
+        if tc.get("test_id")
+        else cat.template(tc["template_id"])
+    )
+
+    if tc.get("expect_no_template"):
+        assert tpl is None
+        return
+
+    assert tpl is not None
+    e = tc["expect"]
+
+    if "template_id" in e:
+        assert tpl["id"] == e["template_id"]
+    if "component_ids" in e:
+        assert [c["id"] for c in tpl["components"]] == e["component_ids"]
+    if "component_count" in e:
+        assert len(tpl["components"]) == e["component_count"]
+    if "completeness_score" in e:
+        assert tpl["completeness"]["score"] == e["completeness_score"]
+    if "applies_to" in e:
+        assert tpl.get("applies_to", []) == e["applies_to"]
+    if "template_source" in e:
+        assert tpl["provenance"]["template_source"] == e["template_source"]
+
+    for cid, want in (e.get("components") or {}).items():
+        comp = next((c for c in tpl["components"] if c["id"] == cid), None)
+        assert comp is not None, f"component {cid} missing"
+        for key, value in want.items():
+            got = (comp.get("calculation") is not None) if key == "has_calculation" else comp.get(key)
+            assert got == value, f"{cid}.{key}"
+
+    # Templates must never assert reference ranges or critical limits: those
+    # belong to the activating clinic, not a global library.
+    for key in e.get("no_component_keys", []):
+        for comp in tpl["components"]:
+            assert key not in comp, f"{comp['id']} carries forbidden key {key}"

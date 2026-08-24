@@ -55,13 +55,18 @@
           "max": 28.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in IU/mL"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Diphtheria-IgG-Antibody-Determination.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -127,13 +132,18 @@
           "max": 28.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/mL"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Haemophilus-influenzae-type-b-IgG-Antibody-Determination.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -207,6 +217,11 @@
           "max": 28.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in SBA Titres expressed as the reciprocal of the final serum dilution giving ≥ 50% killing at 60 minutes calculated from the number of colony forming units (cfu) in the control"
+      },
       "notes": "Functional antibody to Neisseria meningitidis serogroup B by Serum Bactericidal Antibody Assay (SBA)",
       "source": {
         "provider": "mft-nhs",
@@ -214,7 +229,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Functional-antibody-to-Neisseria-meningitides-serogroup-B-by-Serum-Bactericidal-Antibody-Assay-SBA.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -286,6 +301,11 @@
           "max": 28.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in SBA titres expressed as the reciprocal of the final serum dilution giving ≥ 50% killing at 60 minutes calculated from the number of colony forming units (cfu) in the control"
+      },
       "notes": "Meningococcal Serology; Molecular subtyping of isolates; Neisseria meningitidis serology",
       "source": {
         "provider": "mft-nhs",
@@ -293,7 +313,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Neisseria-meningitidis.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -364,6 +384,11 @@
           "max": 28.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/mL"
+      },
       "notes": "Pneumococcal serotype-specific IgG",
       "source": {
         "provider": "mft-nhs",
@@ -371,7 +396,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Streptococcus-pneumoniae-IgG-antibody-determination.pdf",
         "detail_type": "pdf",
         "last_updated": "December 2014",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -435,13 +460,18 @@
           "max": 28.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in IU/mL"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Tetanus-IgG-Antibody-Determination.pdf",
         "detail_type": "pdf",
         "last_updated": "May 2020",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {

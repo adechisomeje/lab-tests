@@ -55,6 +55,116 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "acute-leukaemia-panel-derived",
+        "name": "Acute Leukaemia Panel",
+        "description": "Markers enumerated by the source for Acute Leukaemia Panel.",
+        "version": "0.1.0",
+        "applies_to": [
+          "acute-leukaemia-panel"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "cd2",
+            "name": "CD2",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd10",
+            "name": "CD10",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd13",
+            "name": "CD13",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd14",
+            "name": "CD14",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd19",
+            "name": "CD19",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd33",
+            "name": "CD33",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd34",
+            "name": "CD34",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cytocd79a",
+            "name": "cytoCD79a",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd117",
+            "name": "CD117",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cytotdt",
+            "name": "cytoTdT",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cytompo",
+            "name": "cytoMPO",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "derived-from-source-notes",
+          "source_text": "Can include: CD2, CD10, CD13, CD14, CD19, CD33, CD34, cytoCD79a, CD117, cytoTdT, cytoMPO",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 11,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 11,
+          "calculated": 0
+        }
+      },
       "clinical": {
         "indications": "Suspected acute leukaemia, to confirm relapse, to confirm remission",
         "repeat_frequency": "Post treatment monitoring, suspected relapse and MRD"
@@ -66,7 +176,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/03/Acute-Leukaemia-panel.pdf",
         "detail_type": "pdf",
         "last_updated": "March 2022",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -330,12 +440,17 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in kIU/L"
+      },
       "notes": "Alpha-feto-protein",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -394,6 +509,11 @@
       "turnaround": {
         "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in % (as percentage of all CD19+ B cells)"
+      },
       "clinical": {
         "interpretation": "Use of B cell phenotyping in the investigation/monitoring of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric).\n\nImmunology The B cell subsets that are reported are detailed in the below table. Reference ranges are not available for most of these cells groups and any results should be discussed with a consultant immunologist.\n\nB cell subset Immunophenotype Clinical comments Naïve IgM+ IgD+ CD27-\n\nUnswitched memory IgM+ IgD+ CD27+\n\nReduced in CVID Reduction may be associated with granulomatous disease Switched memory IgM- IgD- CD27+ *also see reference range below\n\nInverse correlates with serum IgA and IgG levels Reduced in CVID Severe reduction associated with granulomatous disease < 2% CSM classifies as SmB- (EUROCLASS) - Associated with low IgG and IgA at time of diagnosis; low absolute numbers of marginal zone B-cells and low absolute and relative numbers of plasmablasts - increased association with splenomegaly and granulomatous disease Transitional IgD+ IgM+ CD27- CD24+ CD38+\n\nExpansion associated with lymphadenopathy CD 21 low CD21- CD38- Increased in autoimmune (AI) disease and immunodeficiencies Rare in healthy controls but found in AI disease (EUROCLASS) Increased numbers associated with splenomegaly and granulomatous disease in CVID Plasmablasts IgD-IgM-CD24- CD27+CD38hi Expanded in IgG4 Related Disease, low in healthy controls. Elevated counts may also be seen in other immune conditions Serum IgG4 levels do not correlate with disease activity or treatment Reduced in numbers in CVID\n\nImmunology",
         "references": "1. Morbach, H., Eichhorn, E.M., Liese, J.G. and Girschick, H.J. (2010). Reference values for B cell subpopulations from infancy to adulthood. Clinical and Experimental Immunology, [online] 162(2), pp.271-279. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2996594/\n\n2. Wehr, C., Kivioja, T., Schmitt, C., Ferry, B., Witte, T., Eren, E., Vlkova, M., Hernandez, M., Detkova, D., Bos, P.R., Poerksen, G., von Bernuth, H., Baumann, U., Goldacker, S., Gutenberger, S., Schlesier, M., Bergeron-van der Cruyssen, F., Le Garff, M., Debré, P. and Jacobs, R. (2008). The EUROclass trial: defining subgroups in common variable immunodeficiency. Blood, [online] 111(1), pp.77-85. Available at: https://pubmed.ncbi.nlm.nih.gov/17898316/.\n\nAge dependent CD27+ IgD- Reference ranges suggested by H Morbach et al (2010)1** Age (years) 0-1 2-3 4-5 6-10 11-18 19-25 26-50 Median (% of all CD19+ B cell) 1 2.6 5.6 6.5 5.4 9.4 13.2 Interquartile ranges (25th and 75th percentile) 0.1-1.9 1.5-4.1 3.3-7.4 5.2-12.1 3.3-9.6 7.2-12.7 9.2-18.9 ** Mobarch H et al (2010): This was a study done on 221 healthy individuals aged 1 month to 50 years in Germany."
@@ -404,7 +524,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/B-Cell-Maturation-Panel.pdf",
         "detail_type": "pdf",
         "last_updated": "February 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -462,6 +582,11 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Suspected myeloma, Waldenström's macroglobulinaemia, rarely lymphoma.",
         "repeat_frequency": "Post treatment monitoring and MRD as required"
@@ -472,7 +597,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/Bence-Jones-Protein-Urinary-light-chains-Urine-immunofixation.pdf",
         "detail_type": "pdf",
         "last_updated": "September 2021",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -508,11 +633,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -534,11 +664,16 @@
           "core": true
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -611,11 +746,16 @@
           }
         ]
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in kU/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.36,
@@ -681,6 +821,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Stem Cell Transplantation, CAR-T cell therapy and DLI",
         "repeat_frequency": "Each day or stem cell harvest"
@@ -691,7 +836,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/CD34-Stem-cells.pdf",
         "detail_type": "pdf",
         "last_updated": "June 2021",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -766,6 +911,11 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "For use as a monitoring tool in serologically confirmed HIV infection. Should not be used in an attempt to diagnose HIV infection.",
         "repeat_frequency": "Three times a year in asymptomatic patients, more frequently in those with symptoms or when medication is being changed."
@@ -776,7 +926,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/CD4-count-T-cell-count.pdf",
         "detail_type": "pdf",
         "last_updated": "October 2020",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -833,11 +983,16 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.18,
@@ -896,6 +1051,144 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "chronic-lymphocytic-lymphoma-panel-derived",
+        "name": "Chronic lymphocytic/lymphoma panel",
+        "description": "Markers enumerated by the source for Chronic lymphocytic/lymphoma panel.",
+        "version": "0.1.0",
+        "applies_to": [
+          "chronic-lymphocytic-lymphoma-panel"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "cd2",
+            "name": "CD2",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd3",
+            "name": "CD3",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd4",
+            "name": "CD4",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd5",
+            "name": "CD5",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd8",
+            "name": "CD8",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd10",
+            "name": "CD10",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd11c",
+            "name": "CD11c",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd16",
+            "name": "CD16",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd56",
+            "name": "CD56",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd19",
+            "name": "CD19",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd23",
+            "name": "CD23",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd25",
+            "name": "CD25",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd38",
+            "name": "CD38",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "cd79b",
+            "name": "CD79b",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "fmc7",
+            "name": "FMC7",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "derived-from-source-notes",
+          "source_text": "Can include: CD2, CD3, CD4, CD5, CD8, CD10, CD11c, CD16/CD56, CD19, CD23, CD25, CD38, CD79b, FMC7, Kappa and lambda light chains on B cells",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 15,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 15,
+          "calculated": 0
+        }
+      },
       "clinical": {
         "indications": "Haematological malignancies involving lymphoid cells, to confirm relapse, to confirm remission",
         "repeat_frequency": "Post treatment monitoring, suspected relapse and MRD"
@@ -907,7 +1200,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/Chronic-lymphocytic-lymphoma-panel.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2022",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -968,6 +1261,11 @@
           "max": 7.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "• Lymphoproliferative disease (Monoclonal) • Connective tissue disease: SLE, Sjogren's, Raynaud's and cutaneous vasculitis. • There is almost always a low C4 in cryoglobulinaemia",
         "repeat_frequency": "At significant change of clinical symptoms."
@@ -978,7 +1276,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/Cryoglobulins.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1038,6 +1336,11 @@
       "turnaround": {
         "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in %"
+      },
       "clinical": {
         "interpretation": "Use of this panel in the investigation of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric).",
         "references": "Immunology • Revised diagnostic criteria and classification for the autoimmune lymphoproliferative syndrome (ALPS): report from the 2009 NIH International Workshop. Joao B Oliveira et al. Blood, 2010 Oct 7;116(14):e35-40."
@@ -1048,7 +1351,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2024/02/Double-Negative-T-cells.pdf",
         "detail_type": "pdf",
         "last_updated": "February 2024",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1108,6 +1411,11 @@
           "max": 4.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Diagnosis of Hereditary Spherocytosis",
         "repeat_frequency": "At significant change of clinical symptoms, or if the patient is <6 months of age and the results are not consistent with the clinical pattern please repeat when >6 months of age."
@@ -1118,7 +1426,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/EMA-Binding-Assay-HS-Screen.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1185,6 +1493,11 @@
           "max": 3.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "May be used as part of the diagnostic strategy for myeloma. This test has largely superseded Bence Jones protein (urine immunofixation). Monitoring in some cases of myeloma.",
         "repeat_frequency": "Initial diagnosis, post treatment monitoring for suspected relapse"
@@ -1195,7 +1508,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/01/Free-Light-Chains.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1295,11 +1608,216 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "panel",
+        "structured_entry": true,
+        "basis": "a result template defines this test's components"
+      },
+      "result_template": {
+        "id": "full-blood-count",
+        "name": "Full Blood Count",
+        "description": "Automated count and differential. Units follow UK convention and differ elsewhere.",
+        "version": "0.1.0",
+        "applies_to": [
+          "full-blood-count-and-automated-differential"
+        ],
+        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "components": [
+          {
+            "id": "haemoglobin",
+            "name": "Haemoglobin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "g/L",
+            "alternate_units": [
+              "g/dL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "white-cell-count",
+            "name": "White cell count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "alternate_units": [
+              "x10^3/µL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "platelet-count",
+            "name": "Platelet count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "alternate_units": [
+              "x10^3/µL"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "red-cell-count",
+            "name": "Red cell count",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^12/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "haematocrit",
+            "name": "Haematocrit",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "L/L",
+            "alternate_units": [
+              "%"
+            ],
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mcv",
+            "name": "Mean cell volume (MCV)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "fL",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mch",
+            "name": "Mean cell haemoglobin (MCH)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "pg",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "mchc",
+            "name": "Mean cell haemoglobin concentration (MCHC)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "g/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "rdw",
+            "name": "Red cell distribution width (RDW)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "%",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "neutrophils",
+            "name": "Neutrophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "lymphocytes",
+            "name": "Lymphocytes",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "monocytes",
+            "name": "Monocytes",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "eosinophils",
+            "name": "Eosinophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "basophils",
+            "name": "Basophils",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "x10^9/L",
+            "units_provenance": {
+              "source": "curated"
+            }
+          },
+          {
+            "id": "film-comment",
+            "name": "Blood film comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "curated",
+          "units_source": "mft-biochemistry-reference-ranges",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 15,
+          "numeric_components": 14,
+          "with_suggested_units": 14,
+          "with_loinc": 0,
+          "measured": 15,
+          "calculated": 0
+        }
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1341,12 +1859,17 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "notes": "Pregnancy test (blood); Human Chorionic Gonadotrophin",
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1405,6 +1928,11 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Suspected cellular immunodeficiency",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -1416,7 +1944,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/08/Immunodeficiency-TB-Lymphocyte-Subsets.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1601,11 +2129,16 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in IU/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -1638,11 +2171,16 @@
           "core": false
         }
       ],
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/haematology/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.0,
@@ -1692,11 +2230,16 @@
         "match_method": "exact",
         "units": "μmol/L"
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μmol/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.18,
@@ -1767,6 +2310,11 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Cerebellar degeneration, encephalitis, neuropathy",
         "repeat_frequency": "At significant change of clinical symptoms"
@@ -1777,7 +2325,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/07/Paraneoplastic-Neuronal-Antibodies.pdf",
         "detail_type": "pdf",
         "last_updated": "June 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -1839,6 +2387,11 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Prolonged bleeding in infancy, haemorrhage, family history",
         "interpretation": "In Bernard-Soulier syndrome GPIb/IX/V (CD42b) is absent or dysfunctional. In Glanzmann thrombasthenia GPIIb/IIIa (CD41/CD61) is absent or dysfunctional. A mild decrease in the expression suggest a variant or heterozygous state.\n\nThe CD61 clone (SZ21) bears the platelet alloantigen PlA1 (HPA-1a). Used in flow cytometry, it shows a markedly reduced reactivity with platelets bearing the PlA2 (HPA-1b) allele. As described in the IFU, studies indicate that 70% of individuals are PlA1/PlA1, 27% PlA1/PlA2, and 3% PlA2/PlA2. Therefore, reduced CD61 binding may be observed in a percentage of healthy individuals.",
@@ -1850,7 +2403,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/06/Platelet-Glycoprotein-Expression.pdf",
         "detail_type": "pdf",
         "last_updated": "June 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2001,11 +2554,16 @@
           "max": 1.0
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in μg/L"
+      },
       "source": {
         "provider": "mft-nhs",
         "az_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/a-z-list-of-laboratory-tests/",
         "department_url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/biochemistry/",
-        "retrieved": "2026-08-23"
+        "retrieved": "2026-08-24"
       },
       "completeness": {
         "score": 0.45,
@@ -2061,6 +2619,11 @@
           "max": 0.17
         }
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in Threshold Cycle (CT)"
+      },
       "notes": "CPE screen; Carbapenemase-Producing Enterobacteriaceae (CPE) Screen",
       "source": {
         "provider": "mft-nhs",
@@ -2068,7 +2631,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2020/10/Rapid-Routine-Carbapenemase-Producing-Enterobacteriaceae-CPE-Screen.pdf",
         "detail_type": "pdf",
         "last_updated": "August 2019",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2131,6 +2694,11 @@
           "max": 5.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Paraproteinaemia, MGUS, chronic lymphoid malignancy. Serum paraprotein quantitation for monitoring myeloma treatment.",
         "repeat_frequency": "Initial diagnosis, post treatment. Monitoring for suspected relapse."
@@ -2142,7 +2710,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2026/01/Serum-Protein-Electrophoresis-PPC.pdf",
         "detail_type": "pdf",
         "last_updated": "January 2026",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2204,6 +2772,11 @@
           "max": 2.0
         }
       },
+      "result_format": {
+        "kind": "unstructured",
+        "structured_entry": false,
+        "basis": "no component definitions or units published for this test"
+      },
       "clinical": {
         "indications": "Useful for monitoring turnover in myeloma and lymphoma. For diagnostic purposes, the results should always be assessed in conjunction with the patient's medical history, clinical examination, and other findings",
         "repeat_frequency": "Post treatment monitoring"
@@ -2214,7 +2787,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2023/07/s2-Microglobulin.pdf",
         "detail_type": "pdf",
         "last_updated": "July 2023",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
@@ -2275,6 +2848,11 @@
       "turnaround": {
         "raw": "1-2 routine working days, Assay run daily Monday to Friday 09:00-15:00"
       },
+      "result_format": {
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "basis": "single measured quantity in %"
+      },
       "clinical": {
         "interpretation": "Use of this panel in the investigation/monitoring of immunodeficiency should be discussed with the appropriate Consultant Immunologist (adult or paediatric)."
       },
@@ -2284,7 +2862,7 @@
         "detail_url": "https://mft.nhs.uk/app/uploads/2022/08/T-Cell-Activation-Panel.pdf",
         "detail_type": "pdf",
         "last_updated": "April 2021",
-        "retrieved": "2026-08-23",
+        "retrieved": "2026-08-24",
         "detail_available": true
       },
       "completeness": {
