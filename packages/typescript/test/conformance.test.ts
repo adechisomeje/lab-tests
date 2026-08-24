@@ -147,6 +147,12 @@ test('order_set', () => {
 test('result_format', () => {
   const cat = load();
   for (const tc of vectors.result_format) {
+    if (tc.coverage?.all_tests_have_format) {
+      for (const t of cat.tests()) {
+        assert.ok(t.result_format?.kind, `${t.id} has no result format`);
+      }
+      continue;
+    }
     const t = cat.get(tc.test_id);
     assert.ok(t, `${tc.name}: unknown test ${tc.test_id}`);
     assert.equal(t.result_format?.kind, tc.expect.kind, `${tc.name}: kind`);
@@ -161,6 +167,11 @@ test('result_format', () => {
 test('result_template', () => {
   const cat = load();
   for (const tc of vectors.result_template) {
+    if (tc.coverage?.all_tests_have_template) {
+      const missing = cat.tests().filter((t) => !t.result_template).map((t) => t.id);
+      assert.equal(missing.length, 0, `tests without a template: ${missing.slice(0, 3)}`);
+      continue;
+    }
     const tpl = tc.test_id ? cat.resultTemplate(tc.test_id) : cat.template(tc.template_id);
 
     if (tc.expect_no_template) {
@@ -189,6 +200,12 @@ test('result_template', () => {
     }
     if (e.template_source) {
       assert.equal(tpl.provenance.template_source, e.template_source, `${tc.name}: source`);
+    }
+    if (e.confidence) {
+      assert.equal(tpl.provenance.confidence, e.confidence, `${tc.name}: confidence`);
+    }
+    if (e.entry_style) {
+      assert.equal(tpl.entry_style, e.entry_style, `${tc.name}: entry_style`);
     }
     for (const [id, want] of Object.entries(e.components ?? {})) {
       const c = tpl.components.find((x) => x.id === id);

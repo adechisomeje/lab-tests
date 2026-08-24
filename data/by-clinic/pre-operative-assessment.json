@@ -32,9 +32,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "activated-partial-thromboplastin-time--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "activated-partial-thromboplastin-time"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Activated partial thromboplastin time",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -145,7 +189,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mg/mmol"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "albumin-creatinine-ratio-acr--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "albumin-creatinine-ratio-acr"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Albumin Creatinine Ratio (ACR)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mg/mmol",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "ACR",
       "source": {
@@ -200,9 +292,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "antibody-screen-and-save-serum--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "antibody-screen-and-save-serum"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Antibody screen and save serum",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -243,9 +379,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "anticoagulant-control-heparin-control-oral-anticoagulant-control-inr--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "anticoagulant-control-heparin-control-oral-anticoagulant-control-inr"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Anticoagulant Control – Heparin control; Oral Anticoagulant Control (INR)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -286,9 +466,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "aptt--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "aptt"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "APTT",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -333,9 +557,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "blood-group--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "blood-group"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Blood group",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -901,7 +1169,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "creatinine-blood-and-urine--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "creatinine-blood-and-urine"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Creatinine (blood and urine)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1025,7 +1341,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mL/min"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "creatinine-clearance--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "creatinine-clearance"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Creatinine clearance",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mL/min",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1077,9 +1441,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "cross-matching--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "cross-matching"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Cross matching",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1211,7 +1619,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "csf-glucose--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "csf-glucose"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "CSF – Glucose",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1321,7 +1777,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in ml/min/1.73 m2"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "egfr-estimated-gfr--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "egfr-estimated-gfr"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "eGfR (estimated GfR)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "ml/min/1.73 m2",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1365,9 +1869,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "fibrinogen--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "fibrinogen"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Fibrinogen",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1466,7 +2014,8 @@
       "result_format": {
         "kind": "panel",
         "structured_entry": true,
-        "basis": "a result template defines this test's components"
+        "entry_style": "fields",
+        "basis": "a curated result template defines this test's components"
       },
       "result_template": {
         "id": "full-blood-count",
@@ -1719,9 +2268,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "glucose--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "glucose"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Glucose",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1783,7 +2376,8 @@
       "result_format": {
         "kind": "panel",
         "structured_entry": true,
-        "basis": "a result template defines this test's components"
+        "entry_style": "fields",
+        "basis": "a curated result template defines this test's components"
       },
       "result_template": {
         "id": "hba1c",
@@ -1876,9 +2470,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "hbs-screening-test-urgent-pre-operative-pts-1-yr-old--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hbs-screening-test-urgent-pre-operative-pts-1-yr-old"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "HbS Screening Test – Urgent/pre-operative (Pts >1 yr Old)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1915,9 +2553,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "inr--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "inr"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "INR",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1984,7 +2666,8 @@
       "result_format": {
         "kind": "panel",
         "structured_entry": true,
-        "basis": "a result template defines this test's components"
+        "entry_style": "fields",
+        "basis": "a curated result template defines this test's components"
       },
       "result_template": {
         "id": "liver-function-tests",
@@ -2180,7 +2863,79 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the culture-and-susceptibility shape rule"
+      },
+      "result_template": {
+        "id": "mrsa--culture-and-susceptibility",
+        "name": "Culture and Susceptibility",
+        "description": "Bacterial or fungal culture with organism identification and susceptibility reporting.",
+        "version": "0.1.0",
+        "applies_to": [
+          "mrsa"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "microscopy",
+            "name": "Microscopy / stain",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "culture-result",
+            "name": "Culture result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "No growth",
+              "Normal flora",
+              "Mixed growth",
+              "Organism isolated",
+              "Sample unsuitable"
+            ]
+          },
+          {
+            "id": "organism",
+            "name": "Organism(s) isolated",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "susceptibility",
+            "name": "Antimicrobial susceptibility",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "culture-and-susceptibility",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2233,9 +2988,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "oral-anticoagulant-control-inr--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "oral-anticoagulant-control-inr"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Oral Anticoagulant Control (INR)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2309,9 +3108,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "osmolar-gap-calculated-as-calculated-osmolality-measured-osmolality-calculated-o--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "osmolar-gap-calculated-as-calculated-osmolality-measured-osmolality-calculated-o"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Osmolar Gap (calculated as: calculated osmolality – measured osmolality. Calculated osmolality is 2 x (Na + K) + glucose + urea)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2447,7 +3290,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "potassium--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "potassium"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Potassium",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2491,9 +3382,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "prothrombin-time--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "prothrombin-time"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Prothrombin time",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2625,7 +3560,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "sodium-blood-and-urine--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "sodium-blood-and-urine"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Sodium (blood and urine)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2798,7 +3781,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in g/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "total-protein--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "total-protein"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Total Protein",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "g/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "Protein creatine ratio",
       "source": {
@@ -2981,7 +4012,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "urea-blood-and-urine--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "urea-blood-and-urine"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Urea (blood and urine)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -3077,7 +4156,58 @@
       "result_format": {
         "kind": "document",
         "structured_entry": false,
-        "basis": "performed by a referral laboratory, which returns its own report"
+        "entry_style": "document",
+        "basis": "matched the referral-report shape rule"
+      },
+      "result_template": {
+        "id": "voltage-gated-potassium-channel-antibodies--referral-report",
+        "name": "Referral Laboratory Report",
+        "description": "Performed elsewhere. The referral laboratory's own report is the record; these fields are optional metadata alongside the attached document.",
+        "version": "0.1.0",
+        "applies_to": [
+          "voltage-gated-potassium-channel-antibodies"
+        ],
+        "entry_style": "document",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "reporting-laboratory",
+            "name": "Reporting laboratory",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "report-date",
+            "name": "Report date",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "conclusion",
+            "name": "Reported conclusion",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "referral-report",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 3,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 3,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "Peripheral nerve hyperexcitability, neuromyotonia, Morvan's syndrome.",

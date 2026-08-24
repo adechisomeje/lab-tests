@@ -101,7 +101,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in pmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "1-25-dihydroxy-vitamin-d-dhvd--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "1-25-dihydroxy-vitamin-d-dhvd"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "1,25-dihydroxy vitamin D (DHVD)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "pmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -175,9 +223,53 @@
         }
       },
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "allergen-specific-ige--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "allergen-specific-ige"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Allergen Specific IgE",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "Allergic conditions when allergen is suspected and mentioned on request",
@@ -234,9 +326,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "anticoagulant-control-heparin-control-oral-anticoagulant-control-inr--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "anticoagulant-control-heparin-control-oral-anticoagulant-control-inr"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Anticoagulant Control – Heparin control; Oral Anticoagulant Control (INR)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -313,112 +449,77 @@
         }
       },
       "result_format": {
-        "kind": "panel",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "a result template defines this test's components"
+        "entry_style": "fields",
+        "basis": "matched the autoantibody shape rule"
       },
       "result_template": {
-        "id": "antinuclear-antibody-ana-derived",
-        "name": "Antinuclear antibody (ANA)",
-        "description": "Markers enumerated by the source for Antinuclear antibody (ANA).",
+        "id": "antinuclear-antibody-ana--autoantibody",
+        "name": "Autoantibody",
+        "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
         "version": "0.1.0",
         "applies_to": [
           "antinuclear-antibody-ana"
         ],
-        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
         "components": [
           {
-            "id": "ro-ss-a-52",
-            "name": "Ro (SS-A 52",
+            "id": "result",
+            "name": "Result",
             "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Positive",
+              "Negative",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level",
+            "type": "numeric",
             "entry_mode": "measured",
             "required": false
           },
           {
-            "id": "ssa-60",
-            "name": "SSA-60)",
-            "type": "coded",
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
             "entry_mode": "measured",
             "required": false
           },
           {
-            "id": "la-ss-b",
-            "name": "La (SS-B)",
-            "type": "coded",
+            "id": "pattern",
+            "name": "Pattern",
+            "type": "text",
             "entry_mode": "measured",
             "required": false
           },
           {
-            "id": "sm",
-            "name": "Sm",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "rnp",
-            "name": "RNP",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "rnp-rnp-a",
-            "name": "RNP (RNP A",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "rnp-68",
-            "name": "RNP 68)",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "ribosomal-p",
-            "name": "Ribosomal P",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "chromatin",
-            "name": "Chromatin",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "jo-1",
-            "name": "Jo-1",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "and-scl-70",
-            "name": "and Scl-70",
-            "type": "coded",
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
             "entry_mode": "measured",
             "required": false
           }
         ],
         "provenance": {
-          "template_source": "derived-from-source-notes",
-          "source_text": "ENA antibodies includes: Ro (SS-A 52, SSA-60), La (SS-B), Sm, Sm/RNP, RNP (RNP A, RNP 68), Ribosomal P, Chromatin, Jo-1, and Scl-70",
+          "template_source": "pattern",
+          "pattern": "autoantibody",
           "confidence": "low",
           "reference_ranges": "not supplied; owned by the activating clinic",
           "critical_limits": "not supplied; owned by the activating clinic"
         },
         "completeness": {
           "score": 0.0,
-          "components": 11,
-          "numeric_components": 0,
+          "components": 5,
+          "numeric_components": 1,
           "with_suggested_units": 0,
           "with_loinc": 0,
-          "measured": 11,
+          "measured": 5,
           "calculated": 0
         }
       },
@@ -478,9 +579,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "aptt--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "aptt"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "APTT",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -552,7 +697,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "cholesterol--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "cholesterol"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Cholesterol",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -742,7 +935,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "copper-blood-and-urine--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "copper-blood-and-urine"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Copper (blood and urine)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -833,7 +1074,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in nmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "cortisol--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "cortisol"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Cortisol",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "nmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -984,7 +1273,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "c-reactive-protein-crp--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "c-reactive-protein-crp"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "C-reactive protein (CRP)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1040,9 +1377,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "dhea-sulfate--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "dhea-sulfate"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "DHEA – sulphate",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1088,9 +1469,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "erythrocyte-sedimentation-rate-esr--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "erythrocyte-sedimentation-rate-esr"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Erythrocyte Sedimentation Rate (ESR)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1257,7 +1682,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "ferritin--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "ferritin"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Ferritin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1371,7 +1844,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "folate-serum-and-red-cell--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "folate-serum-and-red-cell"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Folate (serum and red cell)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1562,7 +2083,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in pmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "free-t4--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "free-t4"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Free thyroxine",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "pmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "Free T4",
       "source": {
@@ -1738,7 +2307,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in pmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "free-t3--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "free-t3"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Free Tri-iodothyronine",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "pmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "Free T3",
       "source": {
@@ -1845,7 +2462,8 @@
       "result_format": {
         "kind": "panel",
         "structured_entry": true,
-        "basis": "a result template defines this test's components"
+        "entry_style": "fields",
+        "basis": "a curated result template defines this test's components"
       },
       "result_template": {
         "id": "full-blood-count",
@@ -2098,9 +2716,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "glucose--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "glucose"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Glucose",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2162,7 +2824,8 @@
       "result_format": {
         "kind": "panel",
         "structured_entry": true,
-        "basis": "a result template defines this test's components"
+        "entry_style": "fields",
+        "basis": "a curated result template defines this test's components"
       },
       "result_template": {
         "id": "hba1c",
@@ -2260,9 +2923,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "haematinics-serum-intrinisic-factor-antibodies--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "haematinics-serum-intrinisic-factor-antibodies"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Haematinics – Serum intrinisic factor antibodies",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2368,7 +3075,71 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-b-hbv-surface-antigen-hbsag--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-b-hbv-surface-antigen-hbsag"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "HBV surface antibody; anti HBs; HBsAg",
       "source": {
@@ -2469,7 +3240,71 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-c-antibody-hcv-screen-and-confirmation--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-c-antibody-hcv-screen-and-confirmation"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "Anti-HCV antibody screen and confirmation",
       "source": {
@@ -2567,7 +3402,71 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hiv-screen-4th-generation-hiv1-and-2-antibody-and-p24-antigen--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hiv-screen-4th-generation-hiv1-and-2-antibody-and-p24-antigen"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "Anti-HIV 1 and 2 antibody and p24 antigen screen",
       "source": {
@@ -2735,7 +3634,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "iron--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "iron"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Iron",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2789,7 +3736,8 @@
       "result_format": {
         "kind": "panel",
         "structured_entry": true,
-        "basis": "a result template defines this test's components"
+        "entry_style": "fields",
+        "basis": "a curated result template defines this test's components"
       },
       "result_template": {
         "id": "lipid-profile",
@@ -2983,7 +3931,8 @@
       "result_format": {
         "kind": "panel",
         "structured_entry": true,
-        "basis": "a result template defines this test's components"
+        "entry_style": "fields",
+        "basis": "a curated result template defines this test's components"
       },
       "result_template": {
         "id": "liver-function-tests",
@@ -3210,7 +4159,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "magnesium-blood-and-urine--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "magnesium-blood-and-urine"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Magnesium (Blood and Urine)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -3279,9 +4276,53 @@
         }
       },
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "mast-cell-tryptase--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "mast-cell-tryptase"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Mast Cell Tryptase",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "Suspected acute allergic reactions, anaphylaxis, suspected Mastocytosis",
@@ -3578,7 +4619,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in pmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "estradiol--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "estradiol"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Oestradiol",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "pmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -3626,9 +4715,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "oral-anticoagulant-control-inr--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "oral-anticoagulant-control-inr"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Oral Anticoagulant Control (INR)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -3786,7 +4919,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in pmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "parathyroid-hormone--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "parathyroid-hormone"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Parathyroid hormone",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "pmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "PTH",
       "source": {
@@ -4214,7 +5395,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mU/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "prolactin--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "prolactin"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Prolactin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mU/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4430,7 +5659,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "selenium--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "selenium"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Selenium",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4604,7 +5881,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "serum-ferritin--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "serum-ferritin"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Serum ferritin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4718,7 +6043,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "serum-folate--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "serum-folate"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Serum folate",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4767,9 +6140,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "serum-intrinisic-factor-antibodies--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "serum-intrinisic-factor-antibodies"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Serum intrinisic factor antibodies",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4878,7 +6295,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in ng/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "serum-vitamin-b12--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "serum-vitamin-b12"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Serum vitamin B12",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "ng/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -5245,7 +6710,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in nmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "shbg--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "shbg"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "SHBG",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "nmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -5319,9 +6832,79 @@
         }
       },
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "qualitative",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the autoantibody shape rule"
+      },
+      "result_template": {
+        "id": "skin-antibodies--autoantibody",
+        "name": "Autoantibody",
+        "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
+        "version": "0.1.0",
+        "applies_to": [
+          "skin-antibodies"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Positive",
+              "Negative",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "pattern",
+            "name": "Pattern",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "autoantibody",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "Bullous skin disorders, dermatitis herpetiformis",
@@ -5457,7 +7040,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in nmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "testosterone--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "testosterone"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Testosterone",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "nmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -5508,7 +7139,65 @@
       "result_format": {
         "kind": "narrative",
         "structured_entry": false,
-        "basis": "Non-Gynaecology Cytology reports are written findings, not numeric fields"
+        "entry_style": "report",
+        "basis": "matched the narrative-report shape rule"
+      },
+      "result_template": {
+        "id": "thyroid-fna--narrative-report",
+        "name": "Narrative Report",
+        "description": "Written findings with the conventional report sections.",
+        "version": "0.1.0",
+        "applies_to": [
+          "thyroid-fna"
+        ],
+        "entry_style": "report",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "specimen-description",
+            "name": "Specimen / macroscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "microscopic-description",
+            "name": "Microscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "diagnosis",
+            "name": "Diagnosis / conclusion",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "reported-by",
+            "name": "Reported by",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "narrative-report",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -5606,7 +7295,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in IU/mL"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "thyroid-peroxidase-tpo-antibodies--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "thyroid-peroxidase-tpo-antibodies"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Thyroid peroxidase (TPO) antibodies",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "IU/mL",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "TPO",
       "source": {
@@ -5838,7 +7575,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mu/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "thyroid-stimulating-hormone--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "thyroid-stimulating-hormone"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Thyroid Stimulating Hormone",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mu/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "TSH",
       "source": {
@@ -5978,7 +7763,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in g/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "transferrin-and-saturation--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "transferrin-and-saturation"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Transferrin (and saturation)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "g/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -6151,7 +7984,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in pmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "t3-free-t3--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "t3-free-t3"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Triiodothyronine (free T3)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "pmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -6232,9 +8113,83 @@
         }
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in IU/L"
+        "entry_style": "fields",
+        "basis": "matched the autoantibody shape rule"
+      },
+      "result_template": {
+        "id": "tsh-receptor-antibodies--autoantibody",
+        "name": "Autoantibody",
+        "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
+        "version": "0.1.0",
+        "applies_to": [
+          "tsh-receptor-antibodies"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Positive",
+              "Negative",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "IU/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "pattern",
+            "name": "Pattern",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "autoantibody",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 5,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "Autoimmune thyrotoxicosis",
@@ -6402,7 +8357,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "vitamin-a-retinol--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "vitamin-a-retinol"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Vitamin A (retinol)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -6518,7 +8521,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in ng/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "vitamin-b12--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "vitamin-b12"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Vitamin B12",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "ng/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -6618,7 +8669,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in nmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "vitamin-d--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "vitamin-d"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Vitamin D",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "nmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -6760,7 +8859,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in VITE μmol/L, CHOL mmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "vitamin-e-tocopherol--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "vitamin-e-tocopherol"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Vitamin E (Tocopherol)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "VITE μmol/L, CHOL mmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -6901,7 +9048,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "zinc--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "zinc"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Zinc",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",

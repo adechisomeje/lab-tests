@@ -55,8 +55,11 @@ type vectors struct {
 		ExpectEmpty    bool   `json:"expect_empty"`
 	} `json:"search"`
 	ResultFormat []struct {
-		Name   string `json:"name"`
-		TestID string `json:"test_id"`
+		Name     string `json:"name"`
+		TestID   string `json:"test_id"`
+		Coverage struct {
+			AllTestsHaveFormat bool `json:"all_tests_have_format"`
+		} `json:"coverage"`
 		Expect struct {
 			Kind            string `json:"kind"`
 			StructuredEntry bool   `json:"structured_entry"`
@@ -67,13 +70,18 @@ type vectors struct {
 		TestID           string `json:"test_id"`
 		TemplateID       string `json:"template_id"`
 		ExpectNoTemplate bool   `json:"expect_no_template"`
-		Expect           struct {
+		Coverage         struct {
+			AllTestsHaveTemplate bool `json:"all_tests_have_template"`
+		} `json:"coverage"`
+		Expect struct {
 			TemplateID        string                    `json:"template_id"`
 			ComponentIDs      []string                  `json:"component_ids"`
 			ComponentCount    int                       `json:"component_count"`
 			CompletenessScore *float64                  `json:"completeness_score"`
 			AppliesTo         []string                  `json:"applies_to"`
 			TemplateSource    string                    `json:"template_source"`
+			Confidence        string                    `json:"confidence"`
+			EntryStyle        string                    `json:"entry_style"`
 			NoComponentKeys   []string                  `json:"no_component_keys"`
 			Components        map[string]map[string]any `json:"components"`
 		} `json:"expect"`
@@ -295,6 +303,14 @@ func TestConformanceOrderSet(t *testing.T) {
 func TestConformanceResultFormat(t *testing.T) {
 	c := load(t)
 	for _, tc := range loadVectors(t).ResultFormat {
+		if tc.Coverage.AllTestsHaveFormat {
+			for _, test := range c.Tests() {
+				if test.ResultFormat.Kind == "" {
+					t.Errorf("%s: %s has no result format", tc.Name, test.ID)
+				}
+			}
+			continue
+		}
 		test, ok := c.Get(tc.TestID)
 		if !ok {
 			t.Errorf("%s: unknown test %s", tc.Name, tc.TestID)
@@ -314,6 +330,19 @@ func TestConformanceResultTemplate(t *testing.T) {
 	c := load(t)
 	for _, tc := range loadVectors(t).ResultTemplate {
 		t.Run(tc.Name, func(t *testing.T) {
+			if tc.Coverage.AllTestsHaveTemplate {
+				var missing []string
+				for _, test := range c.Tests() {
+					if test.ResultTemplate == nil {
+						missing = append(missing, test.ID)
+					}
+				}
+				if len(missing) > 0 {
+					t.Errorf("%d tests have no result template (e.g. %v)",
+						len(missing), missing[:min(3, len(missing))])
+				}
+				return
+			}
 			var tpl *ResultTemplate
 			var ok bool
 			if tc.TestID != "" {
@@ -355,6 +384,13 @@ func TestConformanceResultTemplate(t *testing.T) {
 			if e.TemplateSource != "" && tpl.Provenance["template_source"] != e.TemplateSource {
 				t.Errorf("template_source = %q, want %q",
 					tpl.Provenance["template_source"], e.TemplateSource)
+			}
+			if e.Confidence != "" && tpl.Provenance["confidence"] != e.Confidence {
+				t.Errorf("confidence = %q, want %q",
+					tpl.Provenance["confidence"], e.Confidence)
+			}
+			if e.EntryStyle != "" && tpl.EntryStyle != e.EntryStyle {
+				t.Errorf("entry_style = %q, want %q", tpl.EntryStyle, e.EntryStyle)
 			}
 			for id, want := range e.Components {
 				comp := findComponent(tpl, id)

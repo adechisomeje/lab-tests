@@ -114,7 +114,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in IU/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "alanine-aminotransferase--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "alanine-aminotransferase"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Alanine Aminotransferase",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "IU/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "ALT",
       "source": {
@@ -369,7 +417,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in U/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "alkaline-phosphatase--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "alkaline-phosphatase"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Alkaline Phosphatase",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "U/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "ALP",
       "source": {
@@ -631,7 +727,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in U/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "alkaline-phosphate-isoenzymes--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "alkaline-phosphate-isoenzymes"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Alkaline Phosphate isoenzymes",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "U/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -724,7 +868,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in g/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "alpha-1-antitrypsin--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "alpha-1-antitrypsin"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Alpha-1-Antitrypsin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "g/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "A1AT",
       "source": {
@@ -765,9 +957,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "aminotransferase--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "aminotransferase"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Aminotransferase",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -881,7 +1117,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "ammonia--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "ammonia"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Ammonia",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -968,9 +1252,77 @@
         }
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in mI U/mL"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "anti-hepatitis-bs-antibody-virology--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "anti-hepatitis-bs-antibody-virology"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "mI U/mL",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1117,7 +1469,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in U/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "aspartate-aminotransferase--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "aspartate-aminotransferase"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Aspartate Aminotransferase",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "U/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "AST",
       "source": {
@@ -1224,7 +1624,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "bile-acids--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "bile-acids"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Bile acids",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1268,9 +1716,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "bilirubin-conjugated-direct--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "bilirubin-conjugated-direct"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Bilirubin (conjugated/direct)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1373,7 +1865,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "bilirubin-total--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "bilirubin-total"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Bilirubin (total)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1431,7 +1971,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in ppm (parts per million)"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "breath-hydrogen-test--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "breath-hydrogen-test"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Breath Hydrogen Test",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "ppm (parts per million)",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1571,7 +2159,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "caeruloplasmin--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "caeruloplasmin"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Caeruloplasmin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1607,9 +2243,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "calprotectin-faecal--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "calprotectin-faecal"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Calprotectin (faeces)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1678,9 +2358,79 @@
         }
       },
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "qualitative",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the autoantibody shape rule"
+      },
+      "result_template": {
+        "id": "coeliac-disease-antibodies--autoantibody",
+        "name": "Autoantibody",
+        "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
+        "version": "0.1.0",
+        "applies_to": [
+          "coeliac-disease-antibodies"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Positive",
+              "Negative",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "pattern",
+            "name": "Pattern",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "autoantibody",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "Act as a screening test for coeliac disease in patients with suspected gluten sensitivity. With reference to Coeliac Disease NICE guidance NG20 IgA tTG is the first line of investigation for adults and children. If the IgA tTG is negative in a patient on a gluten-containing diet e.g. gluten in more than 1 meal per day for at least 6 weeks prior to testing with normal/low IgA, then coeliac disease is unlikely. An IgA endomysial antibody test is done to confirm all new positives and equivocal results. Coeliac disease is associated with IgA deficiency (IgA deficiency is defined as total IgA less than < 0.04 g/L) and the IgA tTG will be falsely negative in these patients, therefore IgA levels should be checked. This test is specific for coeliac disease, but a jejunal biopsy is recommended for confirmation. Refer to ESPGHAN guidelines for biopsy recommendations in children: https://www.espghan.org/knowledge-center/publications/Clinical-Advice- Guides/2020_New_Guidelines_for_the_Diagnosis_of_Paediatric_Coeliac_Disease Sending the right sample for coeliac disease screening: https://mft.nhs.uk/the- trust/otherdepartments/laboratory-medicine/information-for-gps/laboratory-medicines-newsletter-for- gps/sendingthe-right-sample-for-coeliac-disease-screening/"
@@ -1768,7 +2518,72 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the molecular-detection shape rule"
+      },
+      "result_template": {
+        "id": "dried-blood-spot-hepatitis-c-rna-screening--molecular-detection",
+        "name": "Molecular Detection (PCR / NAAT)",
+        "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+        "version": "0.1.0",
+        "applies_to": [
+          "dried-blood-spot-hepatitis-c-rna-screening"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal",
+              "Inhibitory",
+              "Insufficient sample"
+            ]
+          },
+          {
+            "id": "target",
+            "name": "Target / assay",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "quantitative-result",
+            "name": "Quantitative result",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "molecular-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1851,7 +2666,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/g"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "elastase-faecal--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "elastase-faecal"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Elastase (faeces)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μg/g",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1933,7 +2796,72 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the molecular-detection shape rule"
+      },
+      "result_template": {
+        "id": "enteric-virus-panel--molecular-detection",
+        "name": "Molecular Detection (PCR / NAAT)",
+        "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+        "version": "0.1.0",
+        "applies_to": [
+          "enteric-virus-panel"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal",
+              "Inhibitory",
+              "Insufficient sample"
+            ]
+          },
+          {
+            "id": "target",
+            "name": "Target / assay",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "quantitative-result",
+            "name": "Quantitative result",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "molecular-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "Adenovirus 40/41 (Enteric) PCR; Astrovirus PCR; Norovirus PCR; Rotavirus PCR; Sapovirus PCR",
       "source": {
@@ -1984,9 +2912,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "faecal-immunochemical-testing--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "faecal-immunochemical-testing"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Faecal immunochemical testing",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "FIT",
       "source": {
@@ -2022,9 +2994,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "faecal-reducing-substances--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "faecal-reducing-substances"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Faecal reducing substances",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2101,7 +3117,72 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the molecular-detection shape rule"
+      },
+      "result_template": {
+        "id": "faecal-bacteria-parasite-pcr-serosep-dx--molecular-detection",
+        "name": "Molecular Detection (PCR / NAAT)",
+        "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+        "version": "0.1.0",
+        "applies_to": [
+          "faecal-bacteria-parasite-pcr-serosep-dx"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal",
+              "Inhibitory",
+              "Insufficient sample"
+            ]
+          },
+          {
+            "id": "target",
+            "name": "Target / assay",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "quantitative-result",
+            "name": "Quantitative result",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "molecular-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2280,7 +3361,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "ferritin--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "ferritin"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Ferritin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2463,7 +3592,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in U/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "gamma-glutamyl-transferase--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "gamma-glutamyl-transferase"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Gamma-glutamyl transferase",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "U/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "GGT",
       "source": {
@@ -2504,9 +3681,74 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "qualitative",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the molecular-detection shape rule"
+      },
+      "result_template": {
+        "id": "haemochromatosis-c282y-h63d-and-s65c-genotyping--molecular-detection",
+        "name": "Molecular Detection (PCR / NAAT)",
+        "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+        "version": "0.1.0",
+        "applies_to": [
+          "haemochromatosis-c282y-h63d-and-s65c-genotyping"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal",
+              "Inhibitory",
+              "Insufficient sample"
+            ]
+          },
+          {
+            "id": "target",
+            "name": "Target / assay",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "quantitative-result",
+            "name": "Quantitative result",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "molecular-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2571,9 +3813,78 @@
         }
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in Results presented as genotype"
+        "entry_style": "fields",
+        "basis": "matched the molecular-detection shape rule"
+      },
+      "result_template": {
+        "id": "hcv-genotyping--molecular-detection",
+        "name": "Molecular Detection (PCR / NAAT)",
+        "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hcv-genotyping"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal",
+              "Inhibitory",
+              "Insufficient sample"
+            ]
+          },
+          {
+            "id": "target",
+            "name": "Target / assay",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "quantitative-result",
+            "name": "Quantitative result",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "Results presented as genotype",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "molecular-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2669,7 +3980,71 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-a-total-antibody-igg-and-igm--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-a-total-antibody-igg-and-igm"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2757,7 +4132,71 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-a-virus-hav-igm--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-a-virus-hav-igm"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2841,7 +4280,71 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-b-hbv-confirmation--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-b-hbv-confirmation"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "HBV confirmation",
       "source": {
@@ -2931,7 +4434,58 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infection-result-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-b-hbv-core-antibodies--infection-result-unspecified",
+        "name": "Infection Result, Shape Unconfirmed",
+        "description": "A microbiology or virology result whose reporting shape this library could not confirm. The activating clinic defines the fields.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-b-hbv-core-antibodies"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Reactive",
+              "Non-reactive",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infection-result-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "HBV core antibodies",
       "source": {
@@ -3015,7 +4569,71 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-b-hbv-core-antibody-dried-blood-spot--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-b-hbv-core-antibody-dried-blood-spot"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "Dried blood spot Hepatitis B core antibody",
       "source": {
@@ -3106,9 +4724,77 @@
         }
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in S/CO"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-b-hbv-core-igm-anti-hbc-igm--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-b-hbv-core-igm-anti-hbc-igm"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "S/CO",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -3225,7 +4911,71 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-b-hbv-surface-antigen-hbsag--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-b-hbv-surface-antigen-hbsag"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "HBV surface antibody; anti HBs; HBsAg",
       "source": {
@@ -3329,7 +5079,71 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-b-hbv-surface-antigen-hbsag-dried-blood-spot--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-b-hbv-surface-antigen-hbsag-dried-blood-spot"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "Dried blood spot Hepatitis B surface antigen",
       "source": {
@@ -3421,7 +5235,71 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-b-virus-hbv-e-antigen-hbeag-and-e-antibody-anti-hbe--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-b-virus-hbv-e-antigen-hbeag-and-e-antibody-anti-hbe"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "Hepatitis B e antibody; Hepatitis B e antigen",
       "source": {
@@ -3505,7 +5383,72 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the molecular-detection shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-b-virus-genotyping-and-resistance-markers--molecular-detection",
+        "name": "Molecular Detection (PCR / NAAT)",
+        "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-b-virus-genotyping-and-resistance-markers"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal",
+              "Inhibitory",
+              "Insufficient sample"
+            ]
+          },
+          {
+            "id": "target",
+            "name": "Target / assay",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "quantitative-result",
+            "name": "Quantitative result",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "molecular-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "HBV resistance markers",
       "source": {
@@ -3595,9 +5538,78 @@
         }
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in IU/mL\n\nDynamic range: The dynamic range for this assay is 10-1x109 copies/mL"
+        "entry_style": "fields",
+        "basis": "matched the molecular-detection shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-b-virus-viral-load--molecular-detection",
+        "name": "Molecular Detection (PCR / NAAT)",
+        "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-b-virus-viral-load"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal",
+              "Inhibitory",
+              "Insufficient sample"
+            ]
+          },
+          {
+            "id": "target",
+            "name": "Target / assay",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "quantitative-result",
+            "name": "Quantitative result",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "IU/mL\n\nDynamic range: The dynamic range for this assay is 10-1x109 copies/mL",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "molecular-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -3697,7 +5709,71 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-c-antibody-hcv-screen-and-confirmation--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-c-antibody-hcv-screen-and-confirmation"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "Anti-HCV antibody screen and confirmation",
       "source": {
@@ -3796,7 +5872,72 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the molecular-detection shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-c-antibody-hcv-screen-and-confirmation-dried-blood-spot--molecular-detection",
+        "name": "Molecular Detection (PCR / NAAT)",
+        "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-c-antibody-hcv-screen-and-confirmation-dried-blood-spot"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal",
+              "Inhibitory",
+              "Insufficient sample"
+            ]
+          },
+          {
+            "id": "target",
+            "name": "Target / assay",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "quantitative-result",
+            "name": "Quantitative result",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "molecular-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "Dried blood spot Hepatitis C genotyping",
       "source": {
@@ -3885,7 +6026,72 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the molecular-detection shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-c-qualitative-pcr-and-genotype-if-hcv-antibody-is-reactive-dried-blood--molecular-detection",
+        "name": "Molecular Detection (PCR / NAAT)",
+        "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-c-qualitative-pcr-and-genotype-if-hcv-antibody-is-reactive-dried-blood"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal",
+              "Inhibitory",
+              "Insufficient sample"
+            ]
+          },
+          {
+            "id": "target",
+            "name": "Target / assay",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "quantitative-result",
+            "name": "Quantitative result",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "molecular-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -3970,9 +6176,78 @@
         }
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in IU/mL\n\nDynamic range: The dynamic range for this assay is 15-1x108 copies/mL"
+        "entry_style": "fields",
+        "basis": "matched the molecular-detection shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-c-viral-load--molecular-detection",
+        "name": "Molecular Detection (PCR / NAAT)",
+        "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-c-viral-load"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal",
+              "Inhibitory",
+              "Insufficient sample"
+            ]
+          },
+          {
+            "id": "target",
+            "name": "Target / assay",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "quantitative-result",
+            "name": "Quantitative result",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "IU/mL\n\nDynamic range: The dynamic range for this assay is 15-1x108 copies/mL",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "molecular-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4052,7 +6327,71 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-d-delta-antibody--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-d-delta-antibody"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4102,9 +6441,60 @@
         }
       ],
       "result_format": {
-        "kind": "qualitative",
-        "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "kind": "document",
+        "structured_entry": false,
+        "entry_style": "document",
+        "basis": "matched the referral-report shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-e-igg-referral--referral-report",
+        "name": "Referral Laboratory Report",
+        "description": "Performed elsewhere. The referral laboratory's own report is the record; these fields are optional metadata alongside the attached document.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-e-igg-referral"
+        ],
+        "entry_style": "document",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "reporting-laboratory",
+            "name": "Reporting laboratory",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "report-date",
+            "name": "Report date",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "conclusion",
+            "name": "Reported conclusion",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "referral-report",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 3,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 3,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4176,7 +6566,71 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "hepatitis-e-igm--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hepatitis-e-igm"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4216,9 +6670,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "hfe--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "hfe"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "HFE",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4251,9 +6749,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "jejunal-disaccharidases--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "jejunal-disaccharidases"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Jejunal Disaccharidases",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4332,9 +6874,79 @@
         }
       },
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "qualitative",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the autoantibody shape rule"
+      },
+      "result_template": {
+        "id": "liver-autoantibody-screen--autoantibody",
+        "name": "Autoantibody",
+        "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
+        "version": "0.1.0",
+        "applies_to": [
+          "liver-autoantibody-screen"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Positive",
+              "Negative",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "pattern",
+            "name": "Pattern",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "autoantibody",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "Gastric parietal cells: Pernicious anaemia (PA), atrophic gastritis and are seen in 5-10% of healthy individuals. Present in the early stages of PA, frequently diminish with disease progression.",
@@ -4418,7 +7030,8 @@
       "result_format": {
         "kind": "panel",
         "structured_entry": true,
-        "basis": "a result template defines this test's components"
+        "entry_style": "fields",
+        "basis": "a curated result template defines this test's components"
       },
       "result_template": {
         "id": "liver-function-tests",
@@ -5116,7 +7729,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "procollagen-iii-peptide--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "procollagen-iii-peptide"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Procollagen III Peptide",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "P3NP; PIIINP",
       "source": {
@@ -5157,9 +7818,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "reducing-substances-faecal-only--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "reducing-substances-faecal-only"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Reducing substances (faeces only)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -5326,7 +8031,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "serum-ferritin--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "serum-ferritin"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Serum ferritin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -5371,9 +8124,79 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "qualitative",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the autoantibody shape rule"
+      },
+      "result_template": {
+        "id": "smooth-muscle-mitochondrial-antibodies--autoantibody",
+        "name": "Autoantibody",
+        "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
+        "version": "0.1.0",
+        "applies_to": [
+          "smooth-muscle-mitochondrial-antibodies"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Positive",
+              "Negative",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "pattern",
+            "name": "Pattern",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "autoantibody",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "notes": "See Liver autoantibody screen",
       "source": {
@@ -5441,7 +8264,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mU/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "thiopurine-methyl-transferase-tpmt--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "thiopurine-methyl-transferase-tpmt"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Thiopurine Methyltransferase (TPMT)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mU/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -5504,7 +8375,79 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the culture-and-susceptibility shape rule"
+      },
+      "result_template": {
+        "id": "yeasts-and-moulds--culture-and-susceptibility",
+        "name": "Culture and Susceptibility",
+        "description": "Bacterial or fungal culture with organism identification and susceptibility reporting.",
+        "version": "0.1.0",
+        "applies_to": [
+          "yeasts-and-moulds"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "microscopy",
+            "name": "Microscopy / stain",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "culture-result",
+            "name": "Culture result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "No growth",
+              "Normal flora",
+              "Mixed growth",
+              "Organism isolated",
+              "Sample unsuitable"
+            ]
+          },
+          {
+            "id": "organism",
+            "name": "Organism(s) isolated",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "susceptibility",
+            "name": "Antimicrobial susceptibility",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "culture-and-susceptibility",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "clinical": {
         "references": "https://www.eucast.org/fungi-afst/methodology-and-instructions/ast-of-yeasts/ https://www.eucast.org/fungi-afst/methodology-and-instructions/ast-of-moulds/ https://www.eucast.org/fungi-afst/clinical-breakpoints-and-interpretation/clinical-breakpoint-table/"

@@ -101,7 +101,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in pmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "1-25-dihydroxy-vitamin-d-dhvd--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "1-25-dihydroxy-vitamin-d-dhvd"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "1,25-dihydroxy vitamin D (DHVD)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "pmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -175,9 +223,53 @@
         }
       },
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "allergen-specific-ige--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "allergen-specific-ige"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Allergen Specific IgE",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "Allergic conditions when allergen is suspected and mentioned on request",
@@ -270,112 +362,77 @@
         }
       },
       "result_format": {
-        "kind": "panel",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "a result template defines this test's components"
+        "entry_style": "fields",
+        "basis": "matched the autoantibody shape rule"
       },
       "result_template": {
-        "id": "antinuclear-antibody-ana-derived",
-        "name": "Antinuclear antibody (ANA)",
-        "description": "Markers enumerated by the source for Antinuclear antibody (ANA).",
+        "id": "antinuclear-antibody-ana--autoantibody",
+        "name": "Autoantibody",
+        "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
         "version": "0.1.0",
         "applies_to": [
           "antinuclear-antibody-ana"
         ],
-        "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
         "components": [
           {
-            "id": "ro-ss-a-52",
-            "name": "Ro (SS-A 52",
+            "id": "result",
+            "name": "Result",
             "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Positive",
+              "Negative",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level",
+            "type": "numeric",
             "entry_mode": "measured",
             "required": false
           },
           {
-            "id": "ssa-60",
-            "name": "SSA-60)",
-            "type": "coded",
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
             "entry_mode": "measured",
             "required": false
           },
           {
-            "id": "la-ss-b",
-            "name": "La (SS-B)",
-            "type": "coded",
+            "id": "pattern",
+            "name": "Pattern",
+            "type": "text",
             "entry_mode": "measured",
             "required": false
           },
           {
-            "id": "sm",
-            "name": "Sm",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "rnp",
-            "name": "RNP",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "rnp-rnp-a",
-            "name": "RNP (RNP A",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "rnp-68",
-            "name": "RNP 68)",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "ribosomal-p",
-            "name": "Ribosomal P",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "chromatin",
-            "name": "Chromatin",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "jo-1",
-            "name": "Jo-1",
-            "type": "coded",
-            "entry_mode": "measured",
-            "required": false
-          },
-          {
-            "id": "and-scl-70",
-            "name": "and Scl-70",
-            "type": "coded",
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
             "entry_mode": "measured",
             "required": false
           }
         ],
         "provenance": {
-          "template_source": "derived-from-source-notes",
-          "source_text": "ENA antibodies includes: Ro (SS-A 52, SSA-60), La (SS-B), Sm, Sm/RNP, RNP (RNP A, RNP 68), Ribosomal P, Chromatin, Jo-1, and Scl-70",
+          "template_source": "pattern",
+          "pattern": "autoantibody",
           "confidence": "low",
           "reference_ranges": "not supplied; owned by the activating clinic",
           "critical_limits": "not supplied; owned by the activating clinic"
         },
         "completeness": {
           "score": 0.0,
-          "components": 11,
-          "numeric_components": 0,
+          "components": 5,
+          "numeric_components": 1,
           "with_suggested_units": 0,
           "with_loinc": 0,
-          "measured": 11,
+          "measured": 5,
           "calculated": 0
         }
       },
@@ -464,9 +521,79 @@
         }
       },
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "qualitative",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the autoantibody shape rule"
+      },
+      "result_template": {
+        "id": "aspergillus-fumigatus-precipitins--autoantibody",
+        "name": "Autoantibody",
+        "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
+        "version": "0.1.0",
+        "applies_to": [
+          "aspergillus-fumigatus-precipitins"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Positive",
+              "Negative",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "pattern",
+            "name": "Pattern",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "autoantibody",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "Allergic bronchopulmonary aspergillosis - IgG antibodies are a useful aid to diagnosis in the following settings:\n\n• Bronchopulmonary aspergillosis; usually presents as deteriorating or brittle asthma. IgE antibodies should also be checked. • Aspergilloma; these may form in cavities or bronchiectatic lung. For example, this test is used to check for aspergilloma in patients with cystic fibrosis. • Hypersensitivity pneumonitis 24 hours after inhalation of spores.",
@@ -540,7 +667,63 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the antigen-detection shape rule"
+      },
+      "result_template": {
+        "id": "aspergillus-galactomannan--antigen-detection",
+        "name": "Antigen Detection",
+        "description": "Direct antigen detection assay.",
+        "version": "0.1.0",
+        "applies_to": [
+          "aspergillus-galactomannan"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "index",
+            "name": "Index / optical density",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "antigen-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 3,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 3,
+          "calculated": 0
+        }
       },
       "clinical": {
         "references": "BioRad Platelia Aspergillus Ag, SEMI-QUANTITATIVE IMMUNOENZYMATIC SANDWICH MICROPLATE ASSAY FOR THE DETECTION OF ASPERGILLUS GALACTOMANNAN ANTIGEN IN ADULT AND PEDIATRIC SERUM SPECIMENS AND BRONCHOALVEOLAR LAVAGE (BAL) FLUID SPECIMENS, version 0001315 - 2023/07.\n\nToine Mercier et al., Defining Galactomannan Positivity in the Updated EORTC/MSGERC Consensus Definitions of Invasive Fungal Diseases, Clinical Infectious Diseases, Volume 72, Issue Supplement_2, 15 March 2021, Pages S89-S94, https://doi.org/10.1093/cid/ciaa1786."
@@ -625,9 +808,78 @@
         }
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in Threshold cycle (CT)"
+        "entry_style": "fields",
+        "basis": "matched the molecular-detection shape rule"
+      },
+      "result_template": {
+        "id": "aspergillus-pcr--molecular-detection",
+        "name": "Molecular Detection (PCR / NAAT)",
+        "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+        "version": "0.1.0",
+        "applies_to": [
+          "aspergillus-pcr"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal",
+              "Inhibitory",
+              "Insufficient sample"
+            ]
+          },
+          {
+            "id": "target",
+            "name": "Target / assay",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "quantitative-result",
+            "name": "Quantitative result",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "Threshold cycle (CT)",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "molecular-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "Invasive infection with Aspergillus",
       "source": {
@@ -700,7 +952,72 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the molecular-detection shape rule"
+      },
+      "result_template": {
+        "id": "aspergillus-pcr-on-respiratory-samples--molecular-detection",
+        "name": "Molecular Detection (PCR / NAAT)",
+        "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+        "version": "0.1.0",
+        "applies_to": [
+          "aspergillus-pcr-on-respiratory-samples"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal",
+              "Inhibitory",
+              "Insufficient sample"
+            ]
+          },
+          {
+            "id": "target",
+            "name": "Target / assay",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "quantitative-result",
+            "name": "Quantitative result",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "molecular-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "clinical": {
         "references": "ELITech Aspergillus spp. ELITe MGB Kit product insert, SCH mRTS110PLD, 28/07/2023, Review 10\n\nDonnelly JP, Chen SC, Kauffman CA, et al., Revision and Update of the Consensus Definitions of Invasive Fungal Disease From the European Organization for Research and Treatment of Cancer and the Mycoses Study Group Education and Research Consortium, Clinical Infectious Diseases, Volume 71, Issue 6, 15 September 2020, Pages 1367-1376, https://doi.org/10.1093/cid/ciz1008.\n\nWhite PL, Bretagne S, Caliendo AM, et al., Aspergillus Polymerase Chain Reaction—An Update on Technical Recommendations, Clinical Applications, and Justification for Inclusion in the Second Revision of the EORTC/MSGERC Definitions of Invasive Fungal Disease, Clinical Infectious Diseases, Volume 72, Issue Supplement_2, 15 March 2021, Pages S95-S101, https://doi.org/10.1093/cid/ciaa1865.\n\nUllmann AJ, Aguado JM, Arikan-Akdagli S, et al., Diagnosis and management of Aspergillus diseases: executive summary of the 2017 ESCMID-ECMM- ERS guideline. Clin Microbiol Infect. 2018 May;24 Suppl 1:e1-e38. doi: 10.1016/j.cmi.2018.01.002."
@@ -773,9 +1090,78 @@
         "interferences": "All samples are suitable for overnight refrigeration only, they must not be stored over a weekend\n\nFalse negative results may occur for a variety of reasons, for example inappropriate timing of sample collection, inappropriate sample, presence of virus below the detectable limit of the assay.\n\nNew and emerging variants may also occur which may not be detected by this assay. Towards the limit of detection of an assay sampling variation will result in lower reproducibility."
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in Threshold Cycle (CT)"
+        "entry_style": "fields",
+        "basis": "matched the molecular-detection shape rule"
+      },
+      "result_template": {
+        "id": "candida-pcr--molecular-detection",
+        "name": "Molecular Detection (PCR / NAAT)",
+        "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+        "version": "0.1.0",
+        "applies_to": [
+          "candida-pcr"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal",
+              "Inhibitory",
+              "Insufficient sample"
+            ]
+          },
+          {
+            "id": "target",
+            "name": "Target / assay",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "quantitative-result",
+            "name": "Quantitative result",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "Threshold Cycle (CT)",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "molecular-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "Invasive infection with Candida",
       "source": {
@@ -931,7 +1317,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "c-reactive-protein-crp--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "c-reactive-protein-crp"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "C-reactive protein (CRP)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -996,7 +1430,63 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the antigen-detection shape rule"
+      },
+      "result_template": {
+        "id": "cryptococcal-antigen--antigen-detection",
+        "name": "Antigen Detection",
+        "description": "Direct antigen detection assay.",
+        "version": "0.1.0",
+        "applies_to": [
+          "cryptococcal-antigen"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Detected",
+              "Not detected",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "index",
+            "name": "Index / optical density",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "antigen-detection",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 3,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 3,
+          "calculated": 0
+        }
       },
       "clinical": {
         "references": "Cryptococcal Antigen lateral Flow assay for the detection of cryptococcal antigen, IMMY Inc. Doc PIS-00107, Rev. 2, 2024-09-19."
@@ -1059,9 +1549,77 @@
         "raw": "24 hrs"
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in Positive or Negative, or titre"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "cryptococcus-antigen--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "cryptococcus-antigen"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "Positive or Negative, or titre",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1121,9 +1679,53 @@
         }
       ],
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "dhea-sulfate--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "dhea-sulfate"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "DHEA – sulphate",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1176,7 +1778,79 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the culture-and-susceptibility shape rule"
+      },
+      "result_template": {
+        "id": "dermatophytes-and-non-dermatophytes--culture-and-susceptibility",
+        "name": "Culture and Susceptibility",
+        "description": "Bacterial or fungal culture with organism identification and susceptibility reporting.",
+        "version": "0.1.0",
+        "applies_to": [
+          "dermatophytes-and-non-dermatophytes"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "microscopy",
+            "name": "Microscopy / stain",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "culture-result",
+            "name": "Culture result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "No growth",
+              "Normal flora",
+              "Mixed growth",
+              "Organism isolated",
+              "Sample unsuitable"
+            ]
+          },
+          {
+            "id": "organism",
+            "name": "Organism(s) isolated",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "susceptibility",
+            "name": "Antimicrobial susceptibility",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "culture-and-susceptibility",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "clinical": {
         "references": "Ameen M, Lear JT, Madan V, Mohd Mustapa MF, Richardson M. British Association of Dermatologists' guidelines for the management of onychomycosis 2014. Br J Dermatol. 2014 Nov;171(5):937-58. doi: 10.1111/bjd.13358. Chowdhary A, Singh A, Kaur A, Khurana A. The emergence and worldwide spread of the species Trichophyton indotineae causing difficult-to-treat dermatophytosis: A new challenge in the management of dermatophytosis. PLoS Pathog. 2022 Sep 29;18(9):e1010795. doi: 10.1371/journal.ppat.1010795."
@@ -1258,9 +1932,79 @@
         }
       },
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "qualitative",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the autoantibody shape rule"
+      },
+      "result_template": {
+        "id": "double-stranded-dna-antibodies-igg--autoantibody",
+        "name": "Autoantibody",
+        "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
+        "version": "0.1.0",
+        "applies_to": [
+          "double-stranded-dna-antibodies-igg"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Positive",
+              "Negative",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "pattern",
+            "name": "Pattern",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "autoantibody",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "Diagnosis and monitoring of lupus",
@@ -1342,7 +2086,58 @@
       "result_format": {
         "kind": "document",
         "structured_entry": false,
-        "basis": "performed by a referral laboratory, which returns its own report"
+        "entry_style": "document",
+        "basis": "matched the referral-report shape rule"
+      },
+      "result_template": {
+        "id": "extended-sclerosis-panel--referral-report",
+        "name": "Referral Laboratory Report",
+        "description": "Performed elsewhere. The referral laboratory's own report is the record; these fields are optional metadata alongside the attached document.",
+        "version": "0.1.0",
+        "applies_to": [
+          "extended-sclerosis-panel"
+        ],
+        "entry_style": "document",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "reporting-laboratory",
+            "name": "Reporting laboratory",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "report-date",
+            "name": "Report date",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "conclusion",
+            "name": "Reported conclusion",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "referral-report",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 3,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 3,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "Investigation of Systemic Sclerosis (diffuse and limited forms of the disease)."
@@ -1525,7 +2320,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "ferritin--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "ferritin"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Ferritin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1586,7 +2429,79 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the culture-and-susceptibility shape rule"
+      },
+      "result_template": {
+        "id": "flucytosine--culture-and-susceptibility",
+        "name": "Culture and Susceptibility",
+        "description": "Bacterial or fungal culture with organism identification and susceptibility reporting.",
+        "version": "0.1.0",
+        "applies_to": [
+          "flucytosine"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "microscopy",
+            "name": "Microscopy / stain",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "culture-result",
+            "name": "Culture result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "No growth",
+              "Normal flora",
+              "Mixed growth",
+              "Organism isolated",
+              "Sample unsuitable"
+            ]
+          },
+          {
+            "id": "organism",
+            "name": "Organism(s) isolated",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "susceptibility",
+            "name": "Antimicrobial susceptibility",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "culture-and-susceptibility",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1702,7 +2617,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "folate-serum-and-red-cell--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "folate-serum-and-red-cell"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Folate (serum and red cell)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -1893,7 +2856,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in pmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "free-t4--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "free-t4"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Free thyroxine",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "pmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "Free T4",
       "source": {
@@ -2000,7 +3011,8 @@
       "result_format": {
         "kind": "panel",
         "structured_entry": true,
-        "basis": "a result template defines this test's components"
+        "entry_style": "fields",
+        "basis": "a curated result template defines this test's components"
       },
       "result_template": {
         "id": "full-blood-count",
@@ -2255,7 +3267,79 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the culture-and-susceptibility shape rule"
+      },
+      "result_template": {
+        "id": "fungal-beta-d-glucan-assay--culture-and-susceptibility",
+        "name": "Culture and Susceptibility",
+        "description": "Bacterial or fungal culture with organism identification and susceptibility reporting.",
+        "version": "0.1.0",
+        "applies_to": [
+          "fungal-beta-d-glucan-assay"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "microscopy",
+            "name": "Microscopy / stain",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "culture-result",
+            "name": "Culture result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "No growth",
+              "Normal flora",
+              "Mixed growth",
+              "Organism isolated",
+              "Sample unsuitable"
+            ]
+          },
+          {
+            "id": "organism",
+            "name": "Organism(s) isolated",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "susceptibility",
+            "name": "Antimicrobial susceptibility",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "culture-and-susceptibility",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "clinical": {
         "references": "Finkelman, M.A. Specificity Influences in (1>3) β-D-Glucan-Supported Diagnosis of Invasive Fungal Disease. J. Fungi 2021, 7, 14. https://doi.org/10.3390/jof7010014.\n\nKarageorgopoulos DE, Qu JM, Korbila IP, Zhu YG, Vasileiou VA, Falagas ME. Accuracy of β-D-glucan for the diagnosis of Pneumocystis jirovecii pneumonia: a meta-analysis. Clin Microbiol Infect. 2013 Jan;19(1):39-49. doi: 10.1111/j.1469-0691.2011.03760.x. Assay for (1>3)-β-D-Glucan in Serum, FUNGITELL® ASSAY, Instructions For Use, PN001268-en Rev12, 2023-06-13."
@@ -2303,7 +3387,65 @@
       "result_format": {
         "kind": "narrative",
         "structured_entry": false,
-        "basis": "Non-Gynaecology Cytology reports are written findings, not numeric fields"
+        "entry_style": "report",
+        "basis": "matched the narrative-report shape rule"
+      },
+      "result_template": {
+        "id": "fungi-special-stain--narrative-report",
+        "name": "Narrative Report",
+        "description": "Written findings with the conventional report sections.",
+        "version": "0.1.0",
+        "applies_to": [
+          "fungi-special-stain"
+        ],
+        "entry_style": "report",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "specimen-description",
+            "name": "Specimen / macroscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "microscopic-description",
+            "name": "Microscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "diagnosis",
+            "name": "Diagnosis / conclusion",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "reported-by",
+            "name": "Reported by",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "narrative-report",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2366,9 +3508,53 @@
         }
       },
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "single-analyte",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the quantitative-unspecified shape rule"
+      },
+      "result_template": {
+        "id": "ige-total--quantitative-unspecified",
+        "name": "Single Result, Units Unconfirmed",
+        "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+        "version": "0.1.0",
+        "applies_to": [
+          "ige-total"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "IgE (Total)",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-unspecified",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "Patients with suspected allergy (atopic disease). Main use of the test is to help interpret specific IgE levels.",
@@ -2539,7 +3725,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "iron--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "iron"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Iron",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2603,7 +3837,79 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the culture-and-susceptibility shape rule"
+      },
+      "result_template": {
+        "id": "isavuconazole--culture-and-susceptibility",
+        "name": "Culture and Susceptibility",
+        "description": "Bacterial or fungal culture with organism identification and susceptibility reporting.",
+        "version": "0.1.0",
+        "applies_to": [
+          "isavuconazole"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "microscopy",
+            "name": "Microscopy / stain",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "culture-result",
+            "name": "Culture result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "No growth",
+              "Normal flora",
+              "Mixed growth",
+              "Organism isolated",
+              "Sample unsuitable"
+            ]
+          },
+          {
+            "id": "organism",
+            "name": "Organism(s) isolated",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "susceptibility",
+            "name": "Antimicrobial susceptibility",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "culture-and-susceptibility",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2669,7 +3975,79 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the culture-and-susceptibility shape rule"
+      },
+      "result_template": {
+        "id": "itraconazole--culture-and-susceptibility",
+        "name": "Culture and Susceptibility",
+        "description": "Bacterial or fungal culture with organism identification and susceptibility reporting.",
+        "version": "0.1.0",
+        "applies_to": [
+          "itraconazole"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "microscopy",
+            "name": "Microscopy / stain",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "culture-result",
+            "name": "Culture result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "No growth",
+              "Normal flora",
+              "Mixed growth",
+              "Organism isolated",
+              "Sample unsuitable"
+            ]
+          },
+          {
+            "id": "organism",
+            "name": "Organism(s) isolated",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "susceptibility",
+            "name": "Antimicrobial susceptibility",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "culture-and-susceptibility",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2742,9 +4120,79 @@
         }
       },
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "qualitative",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the autoantibody shape rule"
+      },
+      "result_template": {
+        "id": "myositis-antibodies--autoantibody",
+        "name": "Autoantibody",
+        "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
+        "version": "0.1.0",
+        "applies_to": [
+          "myositis-antibodies"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Positive",
+              "Negative",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "pattern",
+            "name": "Pattern",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "autoantibody",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "To diagnose and monitor suspected Inflammatory Myopathies including Dermatomyositis, Juvenile Myositis, Polymyositis, idiopathic myositis, anti-synthetase syndrome and overlapping syndrome.",
@@ -2817,7 +4265,79 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the culture-and-susceptibility shape rule"
+      },
+      "result_template": {
+        "id": "posaconazole--culture-and-susceptibility",
+        "name": "Culture and Susceptibility",
+        "description": "Bacterial or fungal culture with organism identification and susceptibility reporting.",
+        "version": "0.1.0",
+        "applies_to": [
+          "posaconazole"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "microscopy",
+            "name": "Microscopy / stain",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "culture-result",
+            "name": "Culture result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "No growth",
+              "Normal flora",
+              "Mixed growth",
+              "Organism isolated",
+              "Sample unsuitable"
+            ]
+          },
+          {
+            "id": "organism",
+            "name": "Organism(s) isolated",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "susceptibility",
+            "name": "Antimicrobial susceptibility",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "culture-and-susceptibility",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -2993,7 +4513,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "serum-ferritin--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "serum-ferritin"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Serum ferritin",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -3107,7 +4675,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "serum-folate--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "serum-folate"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Serum folate",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μg/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -3223,7 +4839,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in ng/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "serum-vitamin-b12--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "serum-vitamin-b12"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Serum vitamin B12",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "ng/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -3590,7 +5254,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in nmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "shbg--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "shbg"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "SHBG",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "nmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -3664,9 +5376,79 @@
         }
       },
       "result_format": {
-        "kind": "unstructured",
-        "structured_entry": false,
-        "basis": "no component definitions or units published for this test"
+        "kind": "qualitative",
+        "structured_entry": true,
+        "entry_style": "fields",
+        "basis": "matched the autoantibody shape rule"
+      },
+      "result_template": {
+        "id": "skin-antibodies--autoantibody",
+        "name": "Autoantibody",
+        "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
+        "version": "0.1.0",
+        "applies_to": [
+          "skin-antibodies"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Positive",
+              "Negative",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "pattern",
+            "name": "Pattern",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "autoantibody",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 1,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "clinical": {
         "indications": "Bullous skin disorders, dermatitis herpetiformis",
@@ -3802,7 +5584,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in nmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "testosterone--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "testosterone"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Testosterone",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "nmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4033,7 +5863,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in mu/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "thyroid-stimulating-hormone--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "thyroid-stimulating-hormone"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Thyroid Stimulating Hormone",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "mu/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "notes": "TSH",
       "source": {
@@ -4150,7 +6028,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in ng/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "vitamin-b12--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "vitamin-b12"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Vitamin B12",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "ng/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4250,7 +6176,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in nmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "vitamin-d--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "vitamin-d"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Vitamin D",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "nmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4312,7 +6286,79 @@
       "result_format": {
         "kind": "qualitative",
         "structured_entry": true,
-        "basis": "organism, antigen or susceptibility report rather than a measured quantity"
+        "entry_style": "fields",
+        "basis": "matched the culture-and-susceptibility shape rule"
+      },
+      "result_template": {
+        "id": "voriconazole--culture-and-susceptibility",
+        "name": "Culture and Susceptibility",
+        "description": "Bacterial or fungal culture with organism identification and susceptibility reporting.",
+        "version": "0.1.0",
+        "applies_to": [
+          "voriconazole"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "microscopy",
+            "name": "Microscopy / stain",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "culture-result",
+            "name": "Culture result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "No growth",
+              "Normal flora",
+              "Mixed growth",
+              "Organism isolated",
+              "Sample unsuitable"
+            ]
+          },
+          {
+            "id": "organism",
+            "name": "Organism(s) isolated",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "susceptibility",
+            "name": "Antimicrobial susceptibility",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "culture-and-susceptibility",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 5,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4455,7 +6501,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in μmol/L"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "zinc--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "zinc"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Zinc",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "μmol/L",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -4545,9 +6639,83 @@
         }
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in U/mL"
+        "entry_style": "fields",
+        "basis": "matched the autoantibody shape rule"
+      },
+      "result_template": {
+        "id": "zinc-transporter-8-znt8-antibodies--autoantibody",
+        "name": "Autoantibody",
+        "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
+        "version": "0.1.0",
+        "applies_to": [
+          "zinc-transporter-8-znt8-antibodies"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Positive",
+              "Negative",
+              "Equivocal"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "U/mL",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "pattern",
+            "name": "Pattern",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "autoantibody",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 5,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 5,
+          "calculated": 0
+        }
       },
       "clinical": {
         "interpretation": "Autoimmune diabetes associated autoantibodies (ADAA) can be seen before clinical symptoms and used to stratify risk of progression to overt diabetes. In patients without a current diabetes diagnosis the likelihood of progression to diabetes within 5 years increases as additional antibody positivity increases. The 5-year risk of progression with only Islet cell antibody positivity is 2.2% but this increases up to 70% when 3 additional antibodies (including ZnT8, IA-2 and GAD65) are also present (Polly, 2010). ADAA positivity can be lost as islet cell destruction progresses leading to misleading negative results. NG17 states the false negative rate can be reduced by carrying out quantitative tests for 2 different diabetes specific autoantibodies (with at least 1 being positive). Serum C-peptide should be used if there is still diagnostic uncertainty after the use of autoantibody testing."

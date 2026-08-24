@@ -18,7 +18,65 @@
       "result_format": {
         "kind": "narrative",
         "structured_entry": false,
-        "basis": "Histopathology reports are written findings, not numeric fields"
+        "entry_style": "report",
+        "basis": "matched the narrative-report shape rule"
+      },
+      "result_template": {
+        "id": "electron-microscopy--narrative-report",
+        "name": "Narrative Report",
+        "description": "Written findings with the conventional report sections.",
+        "version": "0.1.0",
+        "applies_to": [
+          "electron-microscopy"
+        ],
+        "entry_style": "report",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "specimen-description",
+            "name": "Specimen / macroscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "microscopic-description",
+            "name": "Microscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "diagnosis",
+            "name": "Diagnosis / conclusion",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "reported-by",
+            "name": "Reported by",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "narrative-report",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -45,7 +103,65 @@
       "result_format": {
         "kind": "narrative",
         "structured_entry": false,
-        "basis": "Histopathology reports are written findings, not numeric fields"
+        "entry_style": "report",
+        "basis": "matched the narrative-report shape rule"
+      },
+      "result_template": {
+        "id": "enzyme-histochemistry--narrative-report",
+        "name": "Narrative Report",
+        "description": "Written findings with the conventional report sections.",
+        "version": "0.1.0",
+        "applies_to": [
+          "enzyme-histochemistry"
+        ],
+        "entry_style": "report",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "specimen-description",
+            "name": "Specimen / macroscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "microscopic-description",
+            "name": "Microscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "diagnosis",
+            "name": "Diagnosis / conclusion",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "reported-by",
+            "name": "Reported by",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "narrative-report",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -72,7 +188,65 @@
       "result_format": {
         "kind": "narrative",
         "structured_entry": false,
-        "basis": "Histopathology reports are written findings, not numeric fields"
+        "entry_style": "report",
+        "basis": "matched the narrative-report shape rule"
+      },
+      "result_template": {
+        "id": "histopathology-paediatric-histopathology--narrative-report",
+        "name": "Narrative Report",
+        "description": "Written findings with the conventional report sections.",
+        "version": "0.1.0",
+        "applies_to": [
+          "histopathology-paediatric-histopathology"
+        ],
+        "entry_style": "report",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "specimen-description",
+            "name": "Specimen / macroscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "microscopic-description",
+            "name": "Microscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "diagnosis",
+            "name": "Diagnosis / conclusion",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "reported-by",
+            "name": "Reported by",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "narrative-report",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -99,7 +273,65 @@
       "result_format": {
         "kind": "narrative",
         "structured_entry": false,
-        "basis": "Histopathology reports are written findings, not numeric fields"
+        "entry_style": "report",
+        "basis": "matched the narrative-report shape rule"
+      },
+      "result_template": {
+        "id": "histopathology-routine-adult-histopathology--narrative-report",
+        "name": "Narrative Report",
+        "description": "Written findings with the conventional report sections.",
+        "version": "0.1.0",
+        "applies_to": [
+          "histopathology-routine-adult-histopathology"
+        ],
+        "entry_style": "report",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "specimen-description",
+            "name": "Specimen / macroscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "microscopic-description",
+            "name": "Microscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "diagnosis",
+            "name": "Diagnosis / conclusion",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "reported-by",
+            "name": "Reported by",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "narrative-report",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -126,7 +358,65 @@
       "result_format": {
         "kind": "narrative",
         "structured_entry": false,
-        "basis": "Histopathology reports are written findings, not numeric fields"
+        "entry_style": "report",
+        "basis": "matched the narrative-report shape rule"
+      },
+      "result_template": {
+        "id": "immunofluorescence-histopathology--narrative-report",
+        "name": "Narrative Report",
+        "description": "Written findings with the conventional report sections.",
+        "version": "0.1.0",
+        "applies_to": [
+          "immunofluorescence-histopathology"
+        ],
+        "entry_style": "report",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "specimen-description",
+            "name": "Specimen / macroscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "microscopic-description",
+            "name": "Microscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "diagnosis",
+            "name": "Diagnosis / conclusion",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "reported-by",
+            "name": "Reported by",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "narrative-report",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -153,7 +443,65 @@
       "result_format": {
         "kind": "narrative",
         "structured_entry": false,
-        "basis": "Histopathology reports are written findings, not numeric fields"
+        "entry_style": "report",
+        "basis": "matched the narrative-report shape rule"
+      },
+      "result_template": {
+        "id": "perinatal-post-mortems--narrative-report",
+        "name": "Narrative Report",
+        "description": "Written findings with the conventional report sections.",
+        "version": "0.1.0",
+        "applies_to": [
+          "perinatal-post-mortems"
+        ],
+        "entry_style": "report",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "specimen-description",
+            "name": "Specimen / macroscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "microscopic-description",
+            "name": "Microscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "diagnosis",
+            "name": "Diagnosis / conclusion",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "reported-by",
+            "name": "Reported by",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "narrative-report",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -180,7 +528,65 @@
       "result_format": {
         "kind": "narrative",
         "structured_entry": false,
-        "basis": "Histopathology reports are written findings, not numeric fields"
+        "entry_style": "report",
+        "basis": "matched the narrative-report shape rule"
+      },
+      "result_template": {
+        "id": "resin-embedding-thin-sectioning-electron-microscopy--narrative-report",
+        "name": "Narrative Report",
+        "description": "Written findings with the conventional report sections.",
+        "version": "0.1.0",
+        "applies_to": [
+          "resin-embedding-thin-sectioning-electron-microscopy"
+        ],
+        "entry_style": "report",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "specimen-description",
+            "name": "Specimen / macroscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "microscopic-description",
+            "name": "Microscopic description",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "diagnosis",
+            "name": "Diagnosis / conclusion",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": true
+          },
+          {
+            "id": "reported-by",
+            "name": "Reported by",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "narrative-report",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 0.0,
+          "components": 4,
+          "numeric_components": 0,
+          "with_suggested_units": 0,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",

@@ -56,9 +56,77 @@
         }
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in IU/mL"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "diphtheria-igg-antibody-determination--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "diphtheria-igg-antibody-determination"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "IU/mL",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -133,9 +201,77 @@
         }
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/mL"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "haemophilius-influenze-type-b-antibody--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "haemophilius-influenze-type-b-antibody"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "μg/mL",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",
@@ -218,9 +354,77 @@
         }
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in SBA Titres expressed as the reciprocal of the final serum dilution giving ≥ 50% killing at 60 minutes calculated from the number of colony forming units (cfu) in the control"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "neisseria-meningitidis-functional-antibody-to-serogroup-b-by-serum-bactericidal--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "neisseria-meningitidis-functional-antibody-to-serogroup-b-by-serum-bactericidal"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "SBA Titres expressed as the reciprocal of the final serum dilution giving ≥ 50% killing at 60 minutes calculated from the number of colony forming units (cfu) in the control",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "Functional antibody to Neisseria meningitidis serogroup B by Serum Bactericidal Antibody Assay (SBA)",
       "source": {
@@ -302,9 +506,77 @@
         }
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in SBA titres expressed as the reciprocal of the final serum dilution giving ≥ 50% killing at 60 minutes calculated from the number of colony forming units (cfu) in the control"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "neisseria-meningitidis-functional-antibody-to-serogroups-a-c-w-and-y-by-internat--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "neisseria-meningitidis-functional-antibody-to-serogroups-a-c-w-and-y-by-internat"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "SBA titres expressed as the reciprocal of the final serum dilution giving ≥ 50% killing at 60 minutes calculated from the number of colony forming units (cfu) in the control",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "Meningococcal Serology; Molecular subtyping of isolates; Neisseria meningitidis serology",
       "source": {
@@ -385,9 +657,77 @@
         }
       },
       "result_format": {
-        "kind": "single-analyte",
+        "kind": "qualitative",
         "structured_entry": true,
-        "basis": "single measured quantity in μg/mL"
+        "entry_style": "fields",
+        "basis": "matched the infectious-serology shape rule"
+      },
+      "result_template": {
+        "id": "streptococcus-pneumoniae-serology--infectious-serology",
+        "name": "Infectious Serology",
+        "description": "Antibody or antigen serology for an infectious agent.",
+        "version": "0.1.0",
+        "applies_to": [
+          "streptococcus-pneumoniae-serology"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Result",
+            "type": "coded",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_values": [
+              "Reactive",
+              "Non-reactive",
+              "Equivocal",
+              "Indeterminate"
+            ]
+          },
+          {
+            "id": "level",
+            "name": "Level / index",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": false,
+            "suggested_units": "μg/mL",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "titre",
+            "name": "Titre",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          },
+          {
+            "id": "interpretation",
+            "name": "Interpretation",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "infectious-serology",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 4,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 4,
+          "calculated": 0
+        }
       },
       "notes": "Pneumococcal serotype-specific IgG",
       "source": {
@@ -463,7 +803,55 @@
       "result_format": {
         "kind": "single-analyte",
         "structured_entry": true,
-        "basis": "single measured quantity in IU/mL"
+        "entry_style": "fields",
+        "basis": "matched the quantitative-single shape rule"
+      },
+      "result_template": {
+        "id": "tetanus-antibodies--quantitative-single",
+        "name": "Single Quantitative Result",
+        "description": "One measured quantity.",
+        "version": "0.1.0",
+        "applies_to": [
+          "tetanus-antibodies"
+        ],
+        "entry_style": "fields",
+        "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+        "components": [
+          {
+            "id": "result",
+            "name": "Tetanus antibodies",
+            "type": "numeric",
+            "entry_mode": "measured",
+            "required": true,
+            "suggested_units": "IU/mL",
+            "units_provenance": {
+              "source": "test record"
+            }
+          },
+          {
+            "id": "comment",
+            "name": "Comment",
+            "type": "text",
+            "entry_mode": "measured",
+            "required": false
+          }
+        ],
+        "provenance": {
+          "template_source": "pattern",
+          "pattern": "quantitative-single",
+          "confidence": "low",
+          "reference_ranges": "not supplied; owned by the activating clinic",
+          "critical_limits": "not supplied; owned by the activating clinic"
+        },
+        "completeness": {
+          "score": 1.0,
+          "components": 2,
+          "numeric_components": 1,
+          "with_suggested_units": 1,
+          "with_loinc": 0,
+          "measured": 2,
+          "calculated": 0
+        }
       },
       "source": {
         "provider": "mft-nhs",

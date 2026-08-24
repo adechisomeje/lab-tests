@@ -264,7 +264,7 @@ keeping them as data rather than burying them in code.
 | `data/by-clinic/*.json` | Per-clinic slices (28 files) |
 | `schema/test.schema.json` | JSON Schema (draft 2020-12) for a test record |
 | `taxonomy/*.json` | The category, clinic and result-template rules — edit to change |
-| `data/result-templates.json` | Starter templates for structured result entry |
+| `data/result-templates.json` | Reusable templates plus the shape vocabulary |
 | `data/providers.json` | Per-provider collection guidance, incl. order of draw |
 | `*.go` | Go package: `Interpret`, `Draw`, `Search`, `OrderSet` |
 | `packages/typescript` · `packages/python` | TypeScript and Python ports |
@@ -275,23 +275,35 @@ keeping them as data rather than burying them in code.
 
 ## Structured result entry
 
-For a clinic capturing results in-house, a test needs to say *what fields to
-record*. `result_format` says whether structured entry is appropriate at all,
-and `result_template` supplies the components when it is.
+Every one of the 508 tests carries a `result_template` saying what fields to
+record, and a `result_format` saying whether a form is the right shape at all.
 
 ```ts
 const t = cat.get(testId);
-t.result_format;           // panel | single-analyte | qualitative
-                           // narrative | document | unstructured
-cat.resultTemplate(testId) // components, when the test is a panel
+t.result_format;            // kind + entry_style
+cat.resultTemplate(testId); // the components to render
 ```
 
-Of the 508 tests: 187 are `single-analyte` (one field), 83 `qualitative`,
-65 `narrative` (cytology and histopathology — written findings, never fields),
-24 `document` (referral laboratory returns its own report), and 7 have a bound
-panel template.
+`entry_style` drives the UI: **405** tests render as discrete fields, **65** as
+a sectioned free-text report (cytology and histopathology — written findings,
+never numeric fields), and **38** as an attached document from a referral
+laboratory. By result kind: 234 single-analyte, 157 qualitative, 65 narrative,
+38 document, 14 panel.
 
-A lipid profile seeds:
+### Three confidence tiers, labelled
+
+| Tier | Tests | What it is |
+| --- | --- | --- |
+| `curated` | 4 | Hand-written panels — lipid profile, LFTs, FBC, HbA1c |
+| `derived-from-source-notes` | 2 | Markers the source enumerates itself |
+| `pattern` | 502 | A shape rule matched the test; confidence `low` |
+
+Every template names its tier in `provenance`, so a clinic knows which need the
+most review. The 12 shape rules live in
+[`taxonomy/result-patterns.json`](taxonomy/result-patterns.json) — editable
+data, evaluated in order, first match wins.
+
+A lipid profile (curated) seeds:
 
 | Component | Entry mode | Required | Suggested units |
 | --- | --- | --- | --- |
@@ -312,10 +324,10 @@ the clinic's activated, versioned definition. Units are suggestions carrying
 `units_provenance`; `alternate_units` names other measurement systems but
 supplies no conversion factors.
 
-12 templates ship (9 curated, 3 derived from markers the source lists in its own
-notes). Five — `urea-and-electrolytes`, `bone-profile`,
-`thyroid-function-tests`, `coagulation-screen`, `iron-studies` — are reusable
-starting points with no matching catalogue test, reachable by id.
+Eleven reusable templates ship in `data/result-templates.json` alongside the
+shape vocabulary. Five — `urea-and-electrolytes`, `bone-profile`,
+`thyroid-function-tests`, `coagulation-screen`, `iron-studies` — have no
+matching catalogue test and are pure starting points, reachable by id.
 
 Full integration model, including how to version an activated copy so a result
 screen renders the template the clinician ordered against:

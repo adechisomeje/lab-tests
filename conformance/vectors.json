@@ -579,11 +579,17 @@
       }
     },
     {
-      "name": "nothing published to structure entry around",
+      "name": "an Immunology antibody test now resolves to a shape rule rather than falling through as unstructured",
       "test_id": "acetyl-choline-receptor-antibodies",
       "expect": {
-        "kind": "unstructured",
-        "structured_entry": false
+        "kind": "qualitative",
+        "structured_entry": true
+      }
+    },
+    {
+      "name": "every test resolves to a result format",
+      "coverage": {
+        "all_tests_have_format": true
       }
     }
   ],
@@ -655,14 +661,63 @@
       }
     },
     {
-      "name": "a narrative test has no result template",
-      "test_id": "cervical-cytology",
-      "expect_no_template": true
-    },
-    {
       "name": "unknown template id resolves to nothing",
       "template_id": "no-such-template",
       "expect_no_template": true
+    },
+    {
+      "name": "COVERAGE: every test has a template so no result screen is blank",
+      "coverage": {
+        "all_tests_have_template": true
+      }
+    },
+    {
+      "name": "pattern-assigned templates declare low confidence",
+      "test_id": "aptt",
+      "expect": {
+        "template_source": "pattern",
+        "confidence": "low"
+      }
+    },
+    {
+      "name": "narrative tests get a sectioned report, not numeric fields",
+      "test_id": "cervical-cytology",
+      "expect": {
+        "entry_style": "report",
+        "component_ids": [
+          "specimen-description",
+          "microscopic-description",
+          "diagnosis",
+          "reported-by"
+        ]
+      }
+    },
+    {
+      "name": "referral work gets document metadata only",
+      "test_id": "anti-c1q",
+      "expect": {
+        "entry_style": "document",
+        "template_source": "pattern"
+      }
+    },
+    {
+      "name": "SAFETY: notes-derived components must not split inside parentheses",
+      "test_id": "acute-leukaemia-panel",
+      "expect": {
+        "component_ids": [
+          "cd2",
+          "cd10",
+          "cd13",
+          "cd14",
+          "cd19",
+          "cd33",
+          "cd34",
+          "cytocd79a",
+          "cd117",
+          "cytotdt",
+          "cytompo"
+        ]
+      }
     }
   ]
 }

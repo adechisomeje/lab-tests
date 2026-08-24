@@ -44,8 +44,10 @@ type ResultFormat struct {
 	Kind string `json:"kind"`
 	// StructuredEntry is false when the result is a written report or an
 	// externally produced document rather than a set of fields.
-	StructuredEntry bool   `json:"structured_entry"`
-	Basis           string `json:"basis"`
+	StructuredEntry bool `json:"structured_entry"`
+	// EntryStyle is fields, report or document.
+	EntryStyle string `json:"entry_style"`
+	Basis      string `json:"basis"`
 }
 
 // ResultTemplate is a STARTER template for structured result entry.
@@ -56,11 +58,13 @@ type ResultFormat struct {
 // test definition. Pin Version when activating a copy so a later library
 // upgrade cannot silently change a form already in use.
 type ResultTemplate struct {
-	ID           string               `json:"id"`
-	Name         string               `json:"name"`
-	Description  string               `json:"description"`
-	Version      string               `json:"version"`
-	AppliesTo    []string             `json:"applies_to"`
+	ID          string   `json:"id"`
+	Name        string   `json:"name"`
+	Description string   `json:"description"`
+	Version     string   `json:"version"`
+	AppliesTo   []string `json:"applies_to"`
+	// EntryStyle is fields, report or document.
+	EntryStyle   string               `json:"entry_style"`
 	Notice       string               `json:"notice"`
 	Components   []ResultComponent    `json:"components"`
 	Provenance   map[string]string    `json:"provenance"`
@@ -85,6 +89,9 @@ type ResultComponent struct {
 	UnitsProvenance map[string]string `json:"units_provenance"`
 	// CatalogueRef names a test in this catalogue measuring this component.
 	CatalogueRef string `json:"catalogue_ref"`
+	// SuggestedValues is a starting vocabulary for a coded component, not a
+	// closed set.
+	SuggestedValues []string `json:"suggested_values"`
 	// LOINC is not populated in this release.
 	LOINC       []string     `json:"loinc"`
 	Calculation *Calculation `json:"calculation"`

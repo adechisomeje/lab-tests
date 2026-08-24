@@ -128,6 +128,8 @@ export interface ResultFormat {
   kind: 'panel' | 'single-analyte' | 'qualitative' | 'narrative' | 'document' | 'unstructured';
   /** False when the result is a written report or an externally produced document. */
   structured_entry: boolean;
+  /** How to present entry: discrete fields, a sectioned report, or a document. */
+  entry_style?: 'fields' | 'report' | 'document';
   basis?: string;
 }
 
@@ -163,6 +165,8 @@ export interface ResultComponent {
   units_provenance?: { source?: string; analyte?: string };
   /** Test id in this catalogue measuring this component, when one exists. */
   catalogue_ref?: string;
+  /** Starting vocabulary for a coded component, not a closed set. */
+  suggested_values?: string[];
   /** Not populated in this release. */
   loinc?: string[];
   calculation?: Calculation;
@@ -193,6 +197,7 @@ export interface ResultTemplate {
   description?: string;
   version: string;
   applies_to?: string[];
+  entry_style?: 'fields' | 'report' | 'document';
   notice?: string;
   components: ResultComponent[];
   provenance: Record<string, string>;

@@ -137,6 +137,10 @@ def test_order_set(tc):
 @pytest.mark.parametrize("tc", VECTORS["result_format"], ids=lambda tc: tc["name"][:50])
 def test_result_format(tc):
     cat = lt.load()
+    if tc.get("coverage", {}).get("all_tests_have_format"):
+        missing = [x["id"] for x in cat.tests() if not (x.get("result_format") or {}).get("kind")]
+        assert not missing, f"tests without a result format: {missing[:3]}"
+        return
     t = cat.get(tc["test_id"])
     assert t is not None, f"unknown test {tc['test_id']}"
     fmt = t.get("result_format") or {}
@@ -147,6 +151,10 @@ def test_result_format(tc):
 @pytest.mark.parametrize("tc", VECTORS["result_template"], ids=lambda tc: tc["name"][:50])
 def test_result_template(tc):
     cat = lt.load()
+    if tc.get("coverage", {}).get("all_tests_have_template"):
+        missing = [x["id"] for x in cat.tests() if not x.get("result_template")]
+        assert not missing, f"tests without a template: {missing[:3]}"
+        return
     tpl = (
         cat.result_template(tc["test_id"])
         if tc.get("test_id")
@@ -172,6 +180,10 @@ def test_result_template(tc):
         assert tpl.get("applies_to", []) == e["applies_to"]
     if "template_source" in e:
         assert tpl["provenance"]["template_source"] == e["template_source"]
+    if "confidence" in e:
+        assert tpl["provenance"]["confidence"] == e["confidence"]
+    if "entry_style" in e:
+        assert tpl["entry_style"] == e["entry_style"]
 
     for cid, want in (e.get("components") or {}).items():
         comp = next((c for c in tpl["components"] if c["id"] == cid), None)

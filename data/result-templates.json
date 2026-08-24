@@ -1,7 +1,8 @@
 {
   "meta": {
     "version": "0.1.0",
-    "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied."
+    "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
+    "pattern_notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating."
   },
   "templates": [
     {
@@ -1087,111 +1088,6 @@
       }
     },
     {
-      "id": "antinuclear-antibody-ana-derived",
-      "name": "Antinuclear antibody (ANA)",
-      "description": "Markers enumerated by the source for Antinuclear antibody (ANA).",
-      "version": "0.1.0",
-      "applies_to": [
-        "antinuclear-antibody-ana"
-      ],
-      "notice": "Starter templates. Confirm every component, unit and entry mode against your own laboratory's method before activating. Reference ranges and critical limits are intentionally not supplied.",
-      "components": [
-        {
-          "id": "ro-ss-a-52",
-          "name": "Ro (SS-A 52",
-          "type": "coded",
-          "entry_mode": "measured",
-          "required": false
-        },
-        {
-          "id": "ssa-60",
-          "name": "SSA-60)",
-          "type": "coded",
-          "entry_mode": "measured",
-          "required": false
-        },
-        {
-          "id": "la-ss-b",
-          "name": "La (SS-B)",
-          "type": "coded",
-          "entry_mode": "measured",
-          "required": false
-        },
-        {
-          "id": "sm",
-          "name": "Sm",
-          "type": "coded",
-          "entry_mode": "measured",
-          "required": false
-        },
-        {
-          "id": "rnp",
-          "name": "RNP",
-          "type": "coded",
-          "entry_mode": "measured",
-          "required": false
-        },
-        {
-          "id": "rnp-rnp-a",
-          "name": "RNP (RNP A",
-          "type": "coded",
-          "entry_mode": "measured",
-          "required": false
-        },
-        {
-          "id": "rnp-68",
-          "name": "RNP 68)",
-          "type": "coded",
-          "entry_mode": "measured",
-          "required": false
-        },
-        {
-          "id": "ribosomal-p",
-          "name": "Ribosomal P",
-          "type": "coded",
-          "entry_mode": "measured",
-          "required": false
-        },
-        {
-          "id": "chromatin",
-          "name": "Chromatin",
-          "type": "coded",
-          "entry_mode": "measured",
-          "required": false
-        },
-        {
-          "id": "jo-1",
-          "name": "Jo-1",
-          "type": "coded",
-          "entry_mode": "measured",
-          "required": false
-        },
-        {
-          "id": "and-scl-70",
-          "name": "and Scl-70",
-          "type": "coded",
-          "entry_mode": "measured",
-          "required": false
-        }
-      ],
-      "provenance": {
-        "template_source": "derived-from-source-notes",
-        "source_text": "ENA antibodies includes: Ro (SS-A 52, SSA-60), La (SS-B), Sm, Sm/RNP, RNP (RNP A, RNP 68), Ribosomal P, Chromatin, Jo-1, and Scl-70",
-        "confidence": "low",
-        "reference_ranges": "not supplied; owned by the activating clinic",
-        "critical_limits": "not supplied; owned by the activating clinic"
-      },
-      "completeness": {
-        "score": 0.0,
-        "components": 11,
-        "numeric_components": 0,
-        "with_suggested_units": 0,
-        "with_loinc": 0,
-        "measured": 11,
-        "calculated": 0
-      }
-    },
-    {
       "id": "chronic-lymphocytic-lymphoma-panel-derived",
       "name": "Chronic lymphocytic/lymphoma panel",
       "description": "Markers enumerated by the source for Chronic lymphocytic/lymphoma panel.",
@@ -1251,15 +1147,8 @@
           "required": false
         },
         {
-          "id": "cd16",
-          "name": "CD16",
-          "type": "coded",
-          "entry_mode": "measured",
-          "required": false
-        },
-        {
-          "id": "cd56",
-          "name": "CD56",
+          "id": "cd16-cd56",
+          "name": "CD16/CD56",
           "type": "coded",
           "entry_mode": "measured",
           "required": false
@@ -1316,13 +1205,464 @@
       },
       "completeness": {
         "score": 0.0,
-        "components": 15,
+        "components": 14,
         "numeric_components": 0,
         "with_suggested_units": 0,
         "with_loinc": 0,
-        "measured": 15,
+        "measured": 14,
         "calculated": 0
       }
+    }
+  ],
+  "patterns": [
+    {
+      "id": "narrative-report",
+      "name": "Narrative Report",
+      "description": "Written findings with the conventional report sections.",
+      "entry_style": "report",
+      "result_kind": "narrative",
+      "structured_entry": false,
+      "components": [
+        {
+          "id": "specimen-description",
+          "name": "Specimen / macroscopic description",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "microscopic-description",
+          "name": "Microscopic description",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "diagnosis",
+          "name": "Diagnosis / conclusion",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": true
+        },
+        {
+          "id": "reported-by",
+          "name": "Reported by",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "referral-report",
+      "name": "Referral Laboratory Report",
+      "description": "Performed elsewhere. The referral laboratory's own report is the record; these fields are optional metadata alongside the attached document.",
+      "entry_style": "document",
+      "result_kind": "document",
+      "structured_entry": false,
+      "components": [
+        {
+          "id": "reporting-laboratory",
+          "name": "Reporting laboratory",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "report-date",
+          "name": "Report date",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "conclusion",
+          "name": "Reported conclusion",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "direct-detection",
+      "name": "Direct Detection / Microscopy",
+      "description": "Organism or parasite sought directly by microscopy or stain.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "Detected",
+            "Not detected",
+            "Sample unsuitable"
+          ]
+        },
+        {
+          "id": "organism",
+          "name": "Organism / species identified",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "quantitation",
+          "name": "Quantitation (e.g. parasitaemia)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "molecular-detection",
+      "name": "Molecular Detection (PCR / NAAT)",
+      "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "Detected",
+            "Not detected",
+            "Equivocal",
+            "Inhibitory",
+            "Insufficient sample"
+          ]
+        },
+        {
+          "id": "target",
+          "name": "Target / assay",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "quantitative-result",
+          "name": "Quantitative result",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "units_from_test": true
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "antigen-detection",
+      "name": "Antigen Detection",
+      "description": "Direct antigen detection assay.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "Detected",
+            "Not detected",
+            "Equivocal"
+          ]
+        },
+        {
+          "id": "index",
+          "name": "Index / optical density",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "units_from_test": true
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "culture-and-susceptibility",
+      "name": "Culture and Susceptibility",
+      "description": "Bacterial or fungal culture with organism identification and susceptibility reporting.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "components": [
+        {
+          "id": "microscopy",
+          "name": "Microscopy / stain",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "culture-result",
+          "name": "Culture result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "No growth",
+            "Normal flora",
+            "Mixed growth",
+            "Organism isolated",
+            "Sample unsuitable"
+          ]
+        },
+        {
+          "id": "organism",
+          "name": "Organism(s) isolated",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "susceptibility",
+          "name": "Antimicrobial susceptibility",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "infectious-serology",
+      "name": "Infectious Serology",
+      "description": "Antibody or antigen serology for an infectious agent.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "Reactive",
+            "Non-reactive",
+            "Equivocal",
+            "Indeterminate"
+          ]
+        },
+        {
+          "id": "level",
+          "name": "Level / index",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "units_from_test": true
+        },
+        {
+          "id": "titre",
+          "name": "Titre",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "interpretation",
+          "name": "Interpretation",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "autoantibody",
+      "name": "Autoantibody",
+      "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "Positive",
+            "Negative",
+            "Equivocal"
+          ]
+        },
+        {
+          "id": "level",
+          "name": "Level",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "units_from_test": true
+        },
+        {
+          "id": "titre",
+          "name": "Titre",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "pattern",
+          "name": "Pattern",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cell-marker-panel",
+      "name": "Cell Marker Panel",
+      "description": "Flow cytometry or cell-subset panel reported as marker values.",
+      "entry_style": "fields",
+      "result_kind": "panel",
+      "structured_entry": true,
+      "components": [
+        {
+          "id": "markers",
+          "name": "Marker results",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": true
+        },
+        {
+          "id": "interpretation",
+          "name": "Interpretation",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "quantitative-single",
+      "name": "Single Quantitative Result",
+      "description": "One measured quantity.",
+      "entry_style": "fields",
+      "result_kind": "single-analyte",
+      "structured_entry": true,
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "units_from_test": true,
+          "name_from_test": true
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "quantitative-unspecified",
+      "name": "Single Result, Units Unconfirmed",
+      "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+      "entry_style": "fields",
+      "result_kind": "single-analyte",
+      "structured_entry": true,
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "name_from_test": true
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "infection-result-unspecified",
+      "name": "Infection Result, Shape Unconfirmed",
+      "description": "A microbiology or virology result whose reporting shape this library could not confirm. The activating clinic defines the fields.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "Detected",
+            "Not detected",
+            "Reactive",
+            "Non-reactive",
+            "Equivocal"
+          ]
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
     }
   ]
 }

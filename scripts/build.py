@@ -21,9 +21,12 @@ import unicodedata
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from match import Matcher, fold  # noqa: E402
 from result_templates import (  # noqa: E402
+    assign_pattern,
     build_templates,
     classify_result_format,
     derive_from_notes,
+    instantiate_pattern,
+    load_patterns,
 )
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -520,18 +523,32 @@ def attach_result_templates(records) -> dict:
             templates.append(d)
             derived += 1
 
+    # Shape rules fill the long tail, so every test gets a renderable form
+    # rather than a blank. Curated and note-derived templates always win.
+    pat_doc = load_patterns()
+    patterns = pat_doc["patterns"]
+    pattern_used = collections.Counter()
+
     for rec in records:
         tpl = by_test.get(rec["id"])
+        pattern = None
+        if tpl is None:
+            pattern = assign_pattern(rec, patterns)
+            if pattern is not None:
+                tpl = instantiate_pattern(pattern, rec, pat_doc["version"],
+                                          pat_doc["notice"])
+                pattern_used[pattern["id"]] += 1
         if tpl:
             rec["result_template"] = tpl
-        rec["result_format"] = classify_result_format(rec, bool(tpl))
+        rec["result_format"] = classify_result_format(rec, tpl, pattern)
 
     kinds = collections.Counter(r["result_format"]["kind"] for r in records)
     return {
-        "templates": len(templates),
         "curated": len(templates) - derived,
-        "derived": derived,
-        "tests_with_template": len(by_test),
+        "derived_from_notes": derived,
+        "pattern_assigned": sum(pattern_used.values()),
+        "tests_with_template": sum(1 for r in records if r.get("result_template")),
+        "patterns": dict(pattern_used.most_common()),
         "formats": dict(kinds),
         "_templates": templates,
     }
@@ -646,13 +663,29 @@ def main():
         {**v, "test_count": len(v["test_ids"]), "core_test_count": len(v["core_test_ids"])}
         for v in prof_index.values()]})
 
+    pattern_doc = json.loads((TAX / "result-patterns.json").read_text(encoding="utf-8"))
     write(DATA / "result-templates.json", {
         "meta": {
             "version": VERSION,
             "notice": json.loads(
                 (TAX / "result-templates.json").read_text(encoding="utf-8"))["notice"],
+            "pattern_notice": pattern_doc["notice"],
         },
+        # Reusable templates: curated panels plus those derived from the
+        # source's own notes. Per-test instantiations of a shape rule live on
+        # the test record itself, reached via resultTemplate(testId).
         "templates": template_stats.pop("_templates"),
+        # The shape vocabulary, so a consumer can see which forms exist and
+        # how each was assigned.
+        "patterns": [{
+            "id": p["id"],
+            "name": p["name"],
+            "description": p["description"],
+            "entry_style": p["entry_style"],
+            "result_kind": p["result_kind"],
+            "structured_entry": p["structured_entry"],
+            "components": p["components"],
+        } for p in pattern_doc["patterns"]],
     })
 
     guidance = json.loads((TAX / "collection-guidance.json").read_text(encoding="utf-8"))

@@ -18,6 +18,7 @@ import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TAX = ROOT / "taxonomy" / "result-templates.json"
+PATTERNS = ROOT / "taxonomy" / "result-patterns.json"
 RANGES = ROOT / "raw" / "biochem-ranges.json"
 
 UNITS_SOURCE = "mft-biochemistry-reference-ranges"
@@ -159,6 +160,26 @@ def build_templates(test_ids: set[str]) -> tuple[list[dict], list[str]]:
 _INCLUDES = re.compile(r"(?:can include|includes)\s*:\s*(.+)", re.I)
 
 
+def _split_markers(text: str) -> list[str]:
+    """Split a marker list on commas that are not inside parentheses.
+
+    "Ro (SS-A 52, SSA-60), La (SS-B), Sm" must yield three markers, not five.
+    """
+    parts, depth, current = [], 0, []
+    for ch in text:
+        if ch in "([":
+            depth += 1
+        elif ch in ")]":
+            depth = max(0, depth - 1)
+        if ch == "," and depth == 0:
+            parts.append("".join(current))
+            current = []
+        else:
+            current.append(ch)
+    parts.append("".join(current))
+    return [p.strip(" .;") for p in parts]
+
+
 def derive_from_notes(test: dict, version: str, notice: str) -> dict | None:
     """Build a low-confidence template from a notes column that lists markers.
 
@@ -166,12 +187,17 @@ def derive_from_notes(test: dict, version: str, notice: str) -> dict | None:
     "Can include: CD2, CD10, CD13, ...". These become coded components with no
     units, flagged as derived so a clinic reviews them before use.
     """
+    # Only genuine panels. A test like "Antinuclear antibody (ANA)" mentions the
+    # reflex ENA specificities in its notes, but those are not ANA's own result
+    # fields -- ANA is reported as a result, titre and pattern.
+    if "panel" not in test["name"].lower():
+        return None
+
     note = test.get("notes") or ""
     m = _INCLUDES.search(note)
     if not m:
         return None
-    raw = [p.strip(" .;") for p in re.split(r",|/(?![0-9])", m.group(1))]
-    markers = [p for p in raw if p and len(p) <= 24]
+    markers = [p for p in _split_markers(m.group(1)) if p and len(p) <= 24]
     if len(markers) < 3:
         return None
 
@@ -217,31 +243,140 @@ def derive_from_notes(test: dict, version: str, notice: str) -> dict | None:
 
 
 # --------------------------------------------------------------------------
+# Shape templates assigned by rule
+# --------------------------------------------------------------------------
+
+def _name_blob(test: dict) -> str:
+    return " | ".join([test["name"], *test.get("aliases", [])]).lower()
+
+
+def _test_units(test: dict) -> str | None:
+    units = (test.get("analysis") or {}).get("units") or (
+        test.get("reference_intervals") or {}).get("units")
+    return units if meaningful(units) else None
+
+
+def pattern_matches(pattern: dict, test: dict) -> bool:
+    """Evaluate a pattern's match block against a test.
+
+    match_mode "all" (the default) requires every stated condition, so a
+    Virology antibody rule cannot claim an Immunology autoantibody. "any"
+    requires just one, for rules that should fire on either a department or a
+    name cue.
+    """
+    m = pattern["match"]
+    name = _name_blob(test)
+
+    if any(x.lower() in name for x in m.get("exclude_name_any", [])):
+        return False
+
+    checks = []
+    if "department_any" in m:
+        checks.append(test["department"] in m["department_any"])
+    if "name_any" in m:
+        checks.append(any(x.lower() in name for x in m["name_any"]))
+    if "has_units" in m:
+        checks.append(bool(_test_units(test)) == m["has_units"])
+    if "has_referred_to" in m:
+        checks.append(bool(test.get("referred_to")) == m["has_referred_to"])
+
+    if not checks:
+        return False
+    if pattern.get("match_mode") == "any":
+        return any(checks)
+    return all(checks)
+
+
+def instantiate_pattern(pattern: dict, test: dict, version: str, notice: str) -> dict:
+    """Build a concrete template for one test from a shape pattern."""
+    units = _test_units(test)
+    components = []
+    for c in pattern["components"]:
+        comp = {
+            "id": c["id"],
+            "name": test["name"] if c.get("name_from_test") else c["name"],
+            "type": c["type"],
+            "entry_mode": c.get("entry_mode", "measured"),
+            "required": bool(c.get("required")),
+        }
+        if c.get("units_from_test") and units:
+            comp["suggested_units"] = units
+            comp["units_provenance"] = {"source": "test record"}
+        elif c.get("suggested_units"):
+            comp["suggested_units"] = c["suggested_units"]
+        if c.get("suggested_values"):
+            comp["suggested_values"] = c["suggested_values"]
+        components.append(comp)
+
+    numeric = [c for c in components if c["type"] == "numeric"]
+    with_units = [c for c in numeric if c.get("suggested_units")]
+    return {
+        "id": f"{test['id']}--{pattern['id']}",
+        "name": pattern["name"],
+        "description": pattern["description"],
+        "version": version,
+        "applies_to": [test["id"]],
+        "entry_style": pattern["entry_style"],
+        "notice": notice,
+        "components": components,
+        "provenance": {
+            "template_source": "pattern",
+            "pattern": pattern["id"],
+            "confidence": "low",
+            "reference_ranges": "not supplied; owned by the activating clinic",
+            "critical_limits": "not supplied; owned by the activating clinic",
+        },
+        "completeness": {
+            "score": round(len(with_units) / len(numeric), 2) if numeric else 0.0,
+            "components": len(components),
+            "numeric_components": len(numeric),
+            "with_suggested_units": len(with_units),
+            "with_loinc": 0,
+            "measured": sum(1 for c in components if c["entry_mode"] == "measured"),
+            "calculated": sum(1 for c in components
+                              if c["entry_mode"] in ("calculated", "either")),
+        },
+    }
+
+
+def load_patterns() -> dict:
+    return json.loads(PATTERNS.read_text(encoding="utf-8"))
+
+
+def assign_pattern(test: dict, patterns: list[dict]) -> dict | None:
+    """First matching pattern wins; rules are ordered most specific first."""
+    for pattern in patterns:
+        if pattern_matches(pattern, test):
+            return pattern
+    return None
+
+
+# --------------------------------------------------------------------------
 # Result-shape classification
 # --------------------------------------------------------------------------
 
-def classify_result_format(test: dict, has_template: bool) -> dict:
+def classify_result_format(test: dict, template: dict | None,
+                           pattern: dict | None) -> dict:
     """Describe how a result for this test should be captured.
 
-    This is what tells an EMR whether to render a structured entry form at all.
+    This is what tells a consuming system whether to render a structured entry
+    form at all, and of what shape.
     """
-    units = (test.get("analysis") or {}).get("units") or (
-        test.get("reference_intervals") or {}).get("units")
-
-    if has_template:
-        return {"kind": "panel", "structured_entry": True,
-                "basis": "a result template defines this test's components"}
+    if pattern is not None:
+        return {
+            "kind": pattern["result_kind"],
+            "structured_entry": bool(pattern["structured_entry"]),
+            "entry_style": pattern["entry_style"],
+            "basis": f"matched the {pattern['id']} shape rule",
+        }
+    if template is not None:
+        return {"kind": "panel", "structured_entry": True, "entry_style": "fields",
+                "basis": "a curated result template defines this test's components"}
     if test["department"] in NARRATIVE_DEPARTMENTS:
-        return {"kind": "narrative", "structured_entry": False,
+        return {"kind": "narrative", "structured_entry": False, "entry_style": "report",
                 "basis": f"{test['department']} reports are written findings, not numeric fields"}
     if test.get("referred_to"):
-        return {"kind": "document", "structured_entry": False,
+        return {"kind": "document", "structured_entry": False, "entry_style": "document",
                 "basis": "performed by a referral laboratory, which returns its own report"}
-    if meaningful(units):
-        return {"kind": "single-analyte", "structured_entry": True,
-                "basis": f"single measured quantity in {units}"}
-    if test["department"] in QUALITATIVE_DEPARTMENTS:
-        return {"kind": "qualitative", "structured_entry": True,
-                "basis": "organism, antigen or susceptibility report rather than a measured quantity"}
     return {"kind": "unstructured", "structured_entry": False,
             "basis": "no component definitions or units published for this test"}

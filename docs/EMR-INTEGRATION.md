@@ -484,16 +484,37 @@ theirs.
 `lab_result` becomes one row per component rather than per order item, with the
 `interpreted_with` audit field from §4 unchanged.
 
-### Coverage, honestly
+### Coverage, and how much to trust each template
 
-12 templates ship: 9 curated, 3 derived from panel markers the source lists in
-its own notes (flagged `derived-from-source-notes`, confidence `low`). Only
-**7 of 508 tests** have a bound template today.
+**All 508 tests now carry a template**, but they are not equally trustworthy,
+and `provenance.template_source` tells you which is which:
 
-That is the honest state, and it is fine for your build order: the templates
-cover the common panels a clinic actually runs, and the 187 `single-analyte`
-tests need no template at all — one field, with units already in
-`analysis.units`. Everything else is a report.
+| Tier | Tests | Review effort |
+| --- | --- | --- |
+| `curated` | 4 | Components and units hand-checked. Confirm units against your analyser. |
+| `derived-from-source-notes` | 2 | Markers the source enumerates itself. Verify the list. |
+| `pattern` | 502 | A shape rule matched. Marked `confidence: low`. **Review before activating.** |
+
+A pattern template gets the *shape* right — a culture reports an organism and a
+susceptibility, a PCR reports detected/not detected, an autoantibody reports a
+result, titre and pattern — but it was assigned by rule, not curated for that
+specific test. Treat it as a first draft of the form, not a specification.
+
+`entry_style` is what your UI should branch on:
+
+| Style | Tests | Render |
+| --- | --- | --- |
+| `fields` | 405 | Discrete component fields |
+| `report` | 65 | Sectioned free text: macroscopic, microscopic, diagnosis |
+| `document` | 38 | Attach the referral laboratory's report; fields are optional metadata |
+
+The 12 shape rules are editable data in `taxonomy/result-patterns.json`,
+evaluated in order with first match winning. If a rule mis-assigns a test your
+clinics care about, that is a one-line change plus a rebuild — not a code fix.
+
+Coded components carry `suggested_values` (for example
+`Detected / Not detected / Equivocal / Inhibitory`). It is a starting
+vocabulary, not a closed set.
 
 ---
 

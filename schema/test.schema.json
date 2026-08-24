@@ -460,6 +460,15 @@
         "basis": {
           "type": "string",
           "description": "Why this classification was assigned."
+        },
+        "entry_style": {
+          "type": "string",
+          "enum": [
+            "fields",
+            "report",
+            "document"
+          ],
+          "description": "How to present entry: discrete fields, a sectioned free-text report, or an attached document with optional metadata."
         }
       }
     },
@@ -605,6 +614,13 @@
                     "type": "boolean"
                   }
                 }
+              },
+              "suggested_values": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Suggested values for a coded component. A starting vocabulary, not a closed set; the activating clinic decides."
               }
             }
           }
@@ -617,7 +633,8 @@
               "type": "string",
               "enum": [
                 "curated",
-                "derived-from-source-notes"
+                "derived-from-source-notes",
+                "pattern"
               ]
             },
             "units_source": {
@@ -639,6 +656,10 @@
             },
             "critical_limits": {
               "type": "string"
+            },
+            "pattern": {
+              "type": "string",
+              "description": "Shape rule that produced this template, when template_source is 'pattern'."
             }
           }
         },
@@ -671,6 +692,15 @@
               "type": "integer"
             }
           }
+        },
+        "entry_style": {
+          "type": "string",
+          "enum": [
+            "fields",
+            "report",
+            "document"
+          ],
+          "description": "How this template should be presented."
         }
       }
     }
@@ -837,6 +867,13 @@
                     "type": "boolean"
                   }
                 }
+              },
+              "suggested_values": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Suggested values for a coded component. A starting vocabulary, not a closed set; the activating clinic decides."
               }
             }
           }
@@ -849,7 +886,8 @@
               "type": "string",
               "enum": [
                 "curated",
-                "derived-from-source-notes"
+                "derived-from-source-notes",
+                "pattern"
               ]
             },
             "units_source": {
@@ -871,6 +909,10 @@
             },
             "critical_limits": {
               "type": "string"
+            },
+            "pattern": {
+              "type": "string",
+              "description": "Shape rule that produced this template, when template_source is 'pattern'."
             }
           }
         },
@@ -903,6 +945,15 @@
               "type": "integer"
             }
           }
+        },
+        "entry_style": {
+          "type": "string",
+          "enum": [
+            "fields",
+            "report",
+            "document"
+          ],
+          "description": "How this template should be presented."
         }
       }
     }

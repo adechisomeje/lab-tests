@@ -1,0 +1,584 @@
+{
+  "$comment": "Shape templates assigned by rule to whole classes of tests. Curated panels always win; these fill the long tail so every test has a renderable form instead of a blank. They describe the SHAPE of a result (what kind of fields to show), not its values. Like the curated templates they carry no reference ranges and no critical limits. Rules are evaluated in order and the first match wins. A component with units_from_test takes the test's own published units; name_from_test takes the test's name as its label.",
+  "version": "0.1.0",
+  "confidence": "low",
+  "notice": "Shape template assigned by rule, not curated for this specific test. Review every component before activating.",
+  "patterns": [
+    {
+      "id": "narrative-report",
+      "name": "Narrative Report",
+      "description": "Written findings with the conventional report sections.",
+      "entry_style": "report",
+      "result_kind": "narrative",
+      "structured_entry": false,
+      "match": {
+        "department_any": [
+          "Histopathology",
+          "Non-Gynaecology Cytology",
+          "Gynaecological Cytology",
+          "Synovial Fluid Cytology"
+        ]
+      },
+      "components": [
+        {
+          "id": "specimen-description",
+          "name": "Specimen / macroscopic description",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "microscopic-description",
+          "name": "Microscopic description",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "diagnosis",
+          "name": "Diagnosis / conclusion",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": true
+        },
+        {
+          "id": "reported-by",
+          "name": "Reported by",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "referral-report",
+      "name": "Referral Laboratory Report",
+      "description": "Performed elsewhere. The referral laboratory's own report is the record; these fields are optional metadata alongside the attached document.",
+      "entry_style": "document",
+      "result_kind": "document",
+      "structured_entry": false,
+      "match": {
+        "has_referred_to": true,
+        "name_any": [
+          "(referral)",
+          "referred test",
+          "referral test"
+        ]
+      },
+      "components": [
+        {
+          "id": "reporting-laboratory",
+          "name": "Reporting laboratory",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "report-date",
+          "name": "Report date",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "conclusion",
+          "name": "Reported conclusion",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ],
+      "match_mode": "any"
+    },
+    {
+      "id": "direct-detection",
+      "name": "Direct Detection / Microscopy",
+      "description": "Organism or parasite sought directly by microscopy or stain.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "match_mode": "any",
+      "match": {
+        "name_any": [
+          "malarial parasites",
+          "ova, cysts",
+          "parasites",
+          "microscopy",
+          "electron microscopy"
+        ]
+      },
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "Detected",
+            "Not detected",
+            "Sample unsuitable"
+          ]
+        },
+        {
+          "id": "organism",
+          "name": "Organism / species identified",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "quantitation",
+          "name": "Quantitation (e.g. parasitaemia)",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "molecular-detection",
+      "name": "Molecular Detection (PCR / NAAT)",
+      "description": "Nucleic acid amplification. Qualitative detection, with an optional quantitative result where the assay reports one.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "match": {
+        "department_any": [
+          "Molecular Microbiology"
+        ],
+        "name_any": [
+          "pcr",
+          "naat",
+          "nucleic acid",
+          "viral load",
+          "genotype",
+          "rna screening",
+          "dna testing",
+          "mutation screen",
+          "genotyping"
+        ]
+      },
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "Detected",
+            "Not detected",
+            "Equivocal",
+            "Inhibitory",
+            "Insufficient sample"
+          ]
+        },
+        {
+          "id": "target",
+          "name": "Target / assay",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "quantitative-result",
+          "name": "Quantitative result",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "units_from_test": true
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ],
+      "match_mode": "any"
+    },
+    {
+      "id": "antigen-detection",
+      "name": "Antigen Detection",
+      "description": "Direct antigen detection assay.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "match": {
+        "name_any": [
+          "antigen detection",
+          "urinary antigen",
+          "antigen test",
+          "lateral flow",
+          "galactomannan",
+          "cryptococcal antigen"
+        ]
+      },
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "Detected",
+            "Not detected",
+            "Equivocal"
+          ]
+        },
+        {
+          "id": "index",
+          "name": "Index / optical density",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "units_from_test": true
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ],
+      "match_mode": "any"
+    },
+    {
+      "id": "culture-and-susceptibility",
+      "name": "Culture and Susceptibility",
+      "description": "Bacterial or fungal culture with organism identification and susceptibility reporting.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "match": {
+        "department_any": [
+          "Bacteriology",
+          "Mycology",
+          "Microbiology",
+          "Meningococcal Reference Unit"
+        ]
+      },
+      "components": [
+        {
+          "id": "microscopy",
+          "name": "Microscopy / stain",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "culture-result",
+          "name": "Culture result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "No growth",
+            "Normal flora",
+            "Mixed growth",
+            "Organism isolated",
+            "Sample unsuitable"
+          ]
+        },
+        {
+          "id": "organism",
+          "name": "Organism(s) isolated",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "susceptibility",
+          "name": "Antimicrobial susceptibility",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "infectious-serology",
+      "name": "Infectious Serology",
+      "description": "Antibody or antigen serology for an infectious agent.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "match": {
+        "department_any": [
+          "Virology",
+          "Vaccine Evaluation Unit"
+        ],
+        "name_any": [
+          "serology",
+          "igg",
+          "igm",
+          "avidity",
+          "antibody",
+          "antigen",
+          "precipitin",
+          "screen",
+          "confirmation"
+        ]
+      },
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "Reactive",
+            "Non-reactive",
+            "Equivocal",
+            "Indeterminate"
+          ]
+        },
+        {
+          "id": "level",
+          "name": "Level / index",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "units_from_test": true
+        },
+        {
+          "id": "titre",
+          "name": "Titre",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "interpretation",
+          "name": "Interpretation",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "autoantibody",
+      "name": "Autoantibody",
+      "description": "Autoantibody testing, commonly reported as a qualitative result with a level, titre or staining pattern.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "match": {
+        "department_any": [
+          "Immunology"
+        ],
+        "name_any": [
+          "antibody",
+          "antibodies",
+          "abs",
+          "autoantibod",
+          "factor",
+          "precipitins",
+          "crithidia"
+        ]
+      },
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "Positive",
+            "Negative",
+            "Equivocal"
+          ]
+        },
+        {
+          "id": "level",
+          "name": "Level",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": false,
+          "units_from_test": true
+        },
+        {
+          "id": "titre",
+          "name": "Titre",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "pattern",
+          "name": "Pattern",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "cell-marker-panel",
+      "name": "Cell Marker Panel",
+      "description": "Flow cytometry or cell-subset panel reported as marker values.",
+      "entry_style": "fields",
+      "result_kind": "panel",
+      "structured_entry": true,
+      "match": {
+        "name_any": [
+          "panel",
+          "subsets",
+          "cd4 count",
+          "cd34",
+          "immunophenotyp",
+          "lymphocyte subsets",
+          "maturation"
+        ]
+      },
+      "components": [
+        {
+          "id": "markers",
+          "name": "Marker results",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": true
+        },
+        {
+          "id": "interpretation",
+          "name": "Interpretation",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ],
+      "match_mode": "any"
+    },
+    {
+      "id": "quantitative-single",
+      "name": "Single Quantitative Result",
+      "description": "One measured quantity.",
+      "entry_style": "fields",
+      "result_kind": "single-analyte",
+      "structured_entry": true,
+      "match": {
+        "has_units": true
+      },
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "units_from_test": true,
+          "name_from_test": true
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "quantitative-unspecified",
+      "name": "Single Result, Units Unconfirmed",
+      "description": "A single result field for a test whose units this library could not confirm. The activating clinic supplies the units.",
+      "entry_style": "fields",
+      "result_kind": "single-analyte",
+      "structured_entry": true,
+      "match": {
+        "department_any": [
+          "Biochemistry",
+          "Haematology",
+          "Immunology"
+        ]
+      },
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "numeric",
+          "entry_mode": "measured",
+          "required": true,
+          "name_from_test": true
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "infection-result-unspecified",
+      "name": "Infection Result, Shape Unconfirmed",
+      "description": "A microbiology or virology result whose reporting shape this library could not confirm. The activating clinic defines the fields.",
+      "entry_style": "fields",
+      "result_kind": "qualitative",
+      "structured_entry": true,
+      "match": {
+        "department_any": [
+          "Virology",
+          "Bacteriology",
+          "Mycology",
+          "Microbiology",
+          "Molecular Microbiology",
+          "Meningococcal Reference Unit",
+          "Vaccine Evaluation Unit"
+        ]
+      },
+      "components": [
+        {
+          "id": "result",
+          "name": "Result",
+          "type": "coded",
+          "entry_mode": "measured",
+          "required": true,
+          "suggested_values": [
+            "Detected",
+            "Not detected",
+            "Reactive",
+            "Non-reactive",
+            "Equivocal"
+          ]
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "text",
+          "entry_mode": "measured",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
